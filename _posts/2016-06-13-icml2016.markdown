@@ -2,6 +2,7 @@
 layout: post
 title:  "intrested in ICML2016 :smirk:"
 date:   2016-06-13
+tag: conference research machinelearning
 ---
 
 Finally open the ICML2016 Proceedings web site.
