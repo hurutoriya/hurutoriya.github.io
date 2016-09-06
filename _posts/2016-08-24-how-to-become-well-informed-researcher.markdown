@@ -11,6 +11,7 @@ tag: report seminar machinelearning research
 少し前に学部3年生の友達から情報収集方法を聞かれたので、自分なりにまとめたものを下記に残しておきます。
 
 ## Google Scholar
+
 ### キーワードドリブン
 気になる研究分野があれば、そのトピックに関する言葉でGoogle Scholar Alert を設定しておく。
 論文がAcceptされて、即時Google Scholar からお知らせが来る。
