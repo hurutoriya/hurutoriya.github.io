@@ -48,7 +48,8 @@ Quoraでのセッションでは、著名な研究者に対する質問セッシ
 
 - [Session with Andrej Karpathy | Research Scientist at OpenAI. Previously ML/CV PhD student at Stanford.
 ](https://www.quora.com/session/Andrej-Karpathy/1)
-- [Yann LeCun | Director of AI Research at Facebook and Professor at NYU](https://www.quora.com/profile/Yann-LeCun)
+- [Yann LeCun](https://www.quora.com/profile/Yann-LeCun)
+
 
 ## 参考
 - [Deep LearningとNLPの最新論文の情報を集める方法](http://aonotas.hateblo.jp/entry/2016/05/28/180411)
