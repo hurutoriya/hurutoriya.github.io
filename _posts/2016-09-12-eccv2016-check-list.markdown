@@ -21,4 +21,3 @@ It is interesting for me : )>
 - P-3C-15. Interactive Image Segmentation Using Constrained Dominant Sets, Eyasu Zemene, Ca’Foscari University; Marcello Pelillo, University of Venice
 - P-3C-41. Crossing-line Crowd Counting with Two-phase Deep Neural Networks, Zhuoyi Zhao, CUHK; Hongsheng Li, CUHK; Rui Zhao, The Chinese University of Hong Kong; Xiaogang Wang, The Chinese University of Hong Kong
 - P-4A-33. Angry Crowds: Detecting Violent Events in Videos, Seyed Sadegh Mohammadi, Istituto Italiano di Tecnologi; Alessandro Perina, Microsoft; Hamed Kiani, ; Vittorio Murino, Istituto Italiano di Tecnologia
--
