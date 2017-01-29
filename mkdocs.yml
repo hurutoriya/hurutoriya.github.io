@@ -1,0 +1,33 @@
+site_name: Shunya UETA (上田 隼也)
+site_description: 'Shunya Ueta : I am a Master Student who studies Applied mathematics and Machine Learning at the University of Tsukuba.'
+site_author: 'Shunya UETA'
+site_url: 'http://www.mma.cs.tsukuba.ac.jp/~ueta/'
+theme: 'material'
+google_analytics: ['UA-39994406-6', 'www.mma.cs.tsukuba.ac.jp/~ueta/']
+
+pages:
+- Shunya UETA: index.md
+- 上田隼也: ja.md
+- Link: note/link-tool.md
+- Docs and Not: note/paper.md
+- 学振関連: note/dc.md
+
+# Copyright
+copyright: 'Copyright (c) 2015 Shunya UETA'
+
+markdown_extensions:
+    - toc:
+        permalink: True
+        separator: "_"
+# Options
+extra:
+  palette:
+    primary: 'blue grey'
+    accent: 'amber blue'
+  logo: 'images/logo.png'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  author:
+    github: 'hurutoriya'
+    twitter: 'hurutoriya'
