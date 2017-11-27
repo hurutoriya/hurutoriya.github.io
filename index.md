@@ -1,14 +1,14 @@
 - [Github](https://github.com/hurutoriya)
 - [twitter](https://twitter.com/hurutoriya)
-- [Blog](goo.gl/PFy4rg)
-- [メルマガ](goo.gl/JQkWn4)
 - [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 - [slideshare](http://www.slideshare.net/shunyaueta)
+- [Blog](goo.gl/PFy4rg)
+- [メルマガ](goo.gl/JQkWn4)
 
 ## 略歴
 - 筑波大学大学院 システム情報工学研究科 コンピュータサイエンス専攻 修士(工学) 2017.03
-- 筑波大学情報学群情報科学類 卒業 学士(情報科学) 2015.03
-- 詫間電波工業高等専門学校 卒業 準学士(情報工学) 2013.03
+- 筑波大学 情報学群 情報科学類 卒業 学士(情報科学) 2015.03
+- 詫間電波工業高等専門学校 情報工学科 卒業 準学士(情報工学) 2013.03
 
 ## 業績
 
@@ -45,7 +45,7 @@
     - `Business 2 weeks`  [アメリカ横断インターンシップ](http://recruit-jinji.jp/growthhackinus2014/report/)
     - Boston→NewYork→San Franciscoと2週間にわたってアメリカを横断
     - 『ビジネス』『デザイン』『プログラミング』の力を伸ばすインターンシップ
-- 2014.09 株式会社ABEJA
+- 2014.08 株式会社ABEJA
     - `Software engineer 3 weeks` Pythonを用いたクローラー開発
 - 2013.07-09 株式会社ミクシィ DeployGate team
     - `Software engineer 2 month` Ruby on Railsを用いたサービス改善
