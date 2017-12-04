@@ -2,8 +2,8 @@
 - [twitter](https://twitter.com/hurutoriya)
 - [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 - [slideshare](http://www.slideshare.net/shunyaueta)
-- [Blog](goo.gl/PFy4rg)
-- [メルマガ](goo.gl/JQkWn4)
+- [Blog](https://goo.gl/PFy4rg)
+- [メルマガ](https://goo.gl/JQkWn4)
 
 ## 略歴
 - 筑波大学大学院 システム情報工学研究科 コンピュータサイエンス専攻 修士(工学) 2017.03
