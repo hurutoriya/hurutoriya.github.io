@@ -53,6 +53,7 @@
     - `Software engineer` Ruby on Railsを用いたサービス開発
 
 ## Award
+### Public
 - MIRU2017: MIRU学生優秀賞 「Dynamic Fashion Cultures」 [Link](http://cvim.ipsj.or.jp/MIRU2017/index.php?id=awards)
 - プロトタイピングラボ2013 第一回準優勝 [link](https://klabint.wordpress.com/2013/08/22/ptlab2013-1-day3-2/)
     - **準優勝 賞金¥100,000 獲得**
@@ -62,6 +63,9 @@
     - アクセル社製 AG4 LSIを用いたゲームの開発
     - **最優秀賞**
 
+## Product
+- 2013.04 高専生の編入体験体験談投稿サービス「HenTai」を開発。 100件超の体験談が集まり、体験談共有サイトでも最大規模を誇る [site][http://kosen.herokuapp.com/) 
+現在はメンテナンス停止中 Ruby on Rails 3, Herokuで3日間で開発を終え公開した。
 
 ## Misc
 - [Old Blog](https://hurutoriya.github.io/blog/)
