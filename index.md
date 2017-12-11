@@ -1,8 +1,11 @@
 - [Github](https://github.com/hurutoriya)
+- [kaggle](https://www.kaggle.com/shunyaueta)
 - [twitter](https://twitter.com/hurutoriya)
 - [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 - [slideshare](http://www.slideshare.net/shunyaueta)
+- [Youtube](https://www.youtube.com/channel/UCTKJn_73Bp0_A7xyBwbznuA)
 - [Blog](https://goo.gl/PFy4rg)
+- [読んだ論文まとめ | arXivTimes](https://arxivtimes.herokuapp.com/user/hurutoriya)
 - [メルマガ](https://goo.gl/JQkWn4)
 
 ## 略歴
@@ -65,7 +68,7 @@
 
 ## Product
 - 2013.04 高専生の編入体験体験談投稿サービス「HenTai」を開発。 100件超の体験談が集まり、体験談共有サイトでも最大規模を誇る [site](http://kosen.herokuapp.com/) 
-現在はメンテナンス停止中 Ruby on Rails 3, Herokuで3日間で開発を終え公開した。
+現在はメンテナンス停止中 Ruby on Rails 3, Herokuを用いて3日間で開発を終え公開した。
 
 ## Misc
 - [Old Blog](https://hurutoriya.github.io/blog/)
