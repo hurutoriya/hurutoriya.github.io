@@ -5,7 +5,7 @@
 - [slideshare](http://www.slideshare.net/shunyaueta)
 - [Youtube](https://www.youtube.com/channel/UCTKJn_73Bp0_A7xyBwbznuA)
 - [Blog](https://goo.gl/PFy4rg)
-- [読んだ論文まとめ | arXivTimes](https://arxivtimes.herokuapp.com/user/hurutoriya)
+- [arXivTimes](https://arxivtimes.herokuapp.com/user/hurutoriya)
 - [メルマガ](https://goo.gl/JQkWn4)
 
 ## 略歴
