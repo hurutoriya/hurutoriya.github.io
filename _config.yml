@@ -1,15 +1,5 @@
-remote_theme: BenKalsky/lanyon-sass
-google_analytics: UA-39994406-11
-
-# Setup
-title:               Shunya Ueta
-tagline:             '@hurutoriya | Computer Vision Engineer'
-description:         '<a href="https://twitter.com/hurutoriya" target="_blank">@hurutoriya</a> who interesred in Computer Vision, Machine Leaning'
-url:                 https://hurutoriya.github.io/
-baseurl:             ''
-paginate:            5
-
-# About/contact
-author:
-  name:              Shunya Ueta (@hurutoroya)
-  url:               https://twitter.com/hurutoriya
+theme: jekyll-theme-cayman
+ title: Shunya Ueta
+ author: Shunya Ueta (@hurutoroya)
+ description: Shunya Ueta who interesred in Computer Vision, Machine Leaning.
+ google_analytics: UA-39994406-11
