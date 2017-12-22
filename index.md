@@ -1,15 +1,18 @@
 * [Github](https://github.com/hurutoriya)
+* [kaggle](https://www.kaggle.com/shunyaueta)
 * [twitter](https://twitter.com/hurutoriya)
-* [Blog](goo.gl/PFy4rg)
-* [メルマガ](goo.gl/JQkWn4)
 * [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 * [slideshare](http://www.slideshare.net/shunyaueta)
+* [Youtube](https://www.youtube.com/channel/UCTKJn_73Bp0_A7xyBwbznuA)
+* [Blog](https://goo.gl/PFy4rg)
+* [arXivTimes](https://arxivtimes.herokuapp.com/user/hurutoriya)
+* [メルマガ](https://goo.gl/JQkWn4)
 
 ## 略歴
 
-* 筑波大学情報学群情報科学類卒業 修士(工学) 2017.03
-* 筑波大学情報学群情報科学類卒業 学士(情報科学) 2015.03
-* 詫間電波工業高等専門学校卒業 準学士(情報工学) 2013.03
+* 筑波大学大学院 システム情報工学研究科 コンピュータサイエンス専攻 修士(工学) 2017.03
+* 筑波大学 情報学群 情報科学類 卒業 学士(情報科学) 2015.03
+* 詫間電波工業高等専門学校 情報工学科 卒業 準学士(情報工学) 2013.03
 
 ## 業績
 
@@ -52,7 +55,7 @@
   * `Business 2 weeks` [アメリカ横断インターンシップ](http://recruit-jinji.jp/growthhackinus2014/report/)
   * Boston→NewYork→San Francisco と 2 週間にわたってアメリカを横断
   * 『ビジネス』『デザイン』『プログラミング』の力を伸ばすインターンシップ
-* 2014.09 株式会社 ABEJA
+* 2014.08 株式会社 ABEJA
   * `Software engineer 3 weeks` Python を用いたクローラー開発
 * 2013.07-09 株式会社ミクシィ DeployGate team
   * `Software engineer 2 month` Ruby on Rails を用いたサービス改善
@@ -60,6 +63,8 @@
   * `Software engineer` Ruby on Rails を用いたサービス開発
 
 ## Award
+
+### Public
 
 * MIRU2017: MIRU 学生優秀賞 「Dynamic Fashion Cultures」 [Link](http://cvim.ipsj.or.jp/MIRU2017/index.php?id=awards)
 * プロトタイピングラボ 2013 第一回準優勝 [link](https://klabint.wordpress.com/2013/08/22/ptlab2013-1-day3-2/)
@@ -70,6 +75,11 @@
 * 筑波大学情報学群 組み込み技術キャンパス OJT 後期課題
   * アクセル社製 AG4 LSI を用いたゲームの開発
   * **最優秀賞**
+
+## Product
+
+* 2013.04 高専生の編入体験体験談投稿サービス「HenTai」を開発。 100 件超の体験談が集まり、体験談共有サイトでも最大規模を誇る [site](http://kosen.herokuapp.com/)
+  現在はメンテナンス停止中 Ruby on Rails 3, Heroku を用いて 3 日間で開発を終え公開した。
 
 ## Misc
 
