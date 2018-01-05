@@ -52,7 +52,7 @@
 
 * 2016.06-2017.03 産業技術総合研究所人工知能研究センター `Research Assistant`
   * 監視カメラを用いた群衆解析、cvpaper.chanllange に参加
-* 2014.09 株式会社リクルートホールディングス アメリカ横断インターン
+* 2014.09 株式会社リクルートホールディングス アメリカ横断インターン [movie](https://www.youtube.com/watch?v=r_r-Ww2Wuak)
   * `Business 2 weeks` [アメリカ横断インターンシップ](http://recruit-jinji.jp/growthhackinus2014/report/)
   * Boston→NewYork→San Francisco と 2 週間にわたってアメリカを横断
   * 『ビジネス』『デザイン』『プログラミング』の力を伸ばすインターンシップ
