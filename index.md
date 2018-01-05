@@ -69,6 +69,7 @@
 
 * MIRU2017: MIRU 学生優秀賞 「Dynamic Fashion Cultures」 [Link](http://cvim.ipsj.or.jp/MIRU2017/index.php?id=awards)
 * プロトタイピングラボ 2013 第一回準優勝 [link](https://klabint.wordpress.com/2013/08/22/ptlab2013-1-day3-2/)
+  * 3日間でテーマに沿ったアプリを企画し，実際にプロトタイプまで作成してプレゼンをするイベント
   * **準優勝 賞金 ¥100,000 獲得**
 
 ### Domestic
