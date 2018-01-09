@@ -31,17 +31,19 @@
   <div class="container">
     <div class="row">
         <h1>Shunya Ueta | 上田隼也</h1>
-      <ul>
-  <li>Item 1</li>
-  <li>
-    Item 2
-    <ul>
-      <li>Item 2.1</li>
-      <li>Item 2.2</li>
-    </ul>
-  </li>
-  <li>Item 3</li>
-</ul>
+        <ul>
+    <li><a href="https://github.com/hurutoriya">Github</a></li>
+    <li><a href="https://www.kaggle.com/shunyaueta">kaggle</a></li>
+    <li><a href="https://goo.gl/PFy4rg">Blog</a></li>
+    <li><a href="https://twitter.com/hurutoriya">twitter</a></li>
+    <li><a href="https://goo.gl/PFy4rg">Blog</a></li>
+    <li><a href="https://www.linkedin.com/in/shunya-ueta-2a0b96a4/">Linkedin</a></li>
+    <li><a href="http://www.slideshare.net/shunyaueta">Slideshare</a></li>
+    <li><a href="https://scholar.google.com.au/citations?hl=en&amp;user=ghbIA8gAAAAJ">Google Scholar</a></li>
+    <li><a href="https://www.youtube.com/channel/UCTKJn_73Bp0_A7xyBwbznuA">Youtube</a></li>
+    <li><a href="https://arxivtimes.herokuapp.com/user/hurutoriya">arXivTimes</a></li>
+    <li><a href="https://goo.gl/JQkWn4">メルマガ</a></li>
+  </ul>
     </div>
   </div>
   <!-- FireBase App
@@ -58,6 +60,13 @@ var config = {
     messagingSenderId: '655816652581'
 };
 firebase.initializeApp(config);
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').then(function() {
+        console.log('Service Worker Registered');
+    });
+}
 </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
