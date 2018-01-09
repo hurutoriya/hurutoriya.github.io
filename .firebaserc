@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "shunyaueta-site",
+    "deploy": "shunyaueta-site"
+  }
+}
