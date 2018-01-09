@@ -1,4 +1,4 @@
-var cacheName = 'Shunya Ueta | Machine Learning Engineer';
+var cacheName = 'Shunya Ueta';
 var filesToCache = [
     '/',
     '/index.html',
