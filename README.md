@@ -20,7 +20,8 @@
 ## 業績
 
 ### Paper
-
+* cvpaper. challenge in 2016: Futuristic Computer Vision through 1,600 Papers Survey
+H Kataoka, S Shirakabe, Y He, S Ueta, T Suzuki, K Abe, A Kanezaki, at el. [link](https://arxiv.org/abs/1707.06436)
 * Kaori Abe*, Teppei Suzuki*, Shunya Ueta, Akio Nakamura, Yutaka Satoh, Hirokatsu Kataoka, "Changing Fashion Cultures", in arXiv pre-print 1703.07920, Mar., 2017 [link](https://arxiv.org/abs/1703.07920)
 
 #### 国内会議公演 (First author)
