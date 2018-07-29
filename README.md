@@ -1,9 +1,9 @@
 ## Template information
 
+* [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 * [Github](https://github.com/hurutoriya)
 * [kaggle](https://www.kaggle.com/shunyaueta)
 * [twitter](https://twitter.com/hurutoriya)
-* [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 * [Slideshare](http://www.slideshare.net/shunyaueta)
 * [Google Scholar](https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ)
 * [Youtube](https://www.youtube.com/channel/UCTKJn_73Bp0_A7xyBwbznuA)
@@ -48,10 +48,10 @@
 
 ## スキル
 
-* MATLAB, Python(Numpy, Scikit-leran, Django),Ruby(Rails)
+* Python(Numpy, Scikit-leran, Django), MATLAB, Ruby(Rails)
 
 ## Internship & Work experience
-
+* 2018.02- now 株式会社メルカリ `Machine Learning Engineer`
 * 2016.06-2017.03 産業技術総合研究所人工知能研究センター `Research Assistant`
   * 監視カメラを用いた群衆解析、cvpaper.chanllange に参加
 * 2014.09 株式会社リクルートホールディングス アメリカ横断インターン [movie](https://www.youtube.com/watch?v=r_r-Ww2Wuak)
