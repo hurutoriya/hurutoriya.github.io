@@ -87,6 +87,9 @@
 * 2013.04 高専生の編入体験体験談投稿サービス「HenTai」を開発。 100 件超の体験談が集まり、体験談共有サイトでも最大規模を誇る [site](http://kosen.herokuapp.com/)
   現在はメンテナンス停止中 Ruby on Rails 3, Heroku を用いて 3 日間で開発を終え公開した。
 
+## Article
+- 2018/07/03: [世界のデータサイエンティスト、2,384チームが競った「Mercari Price Suggestion Challenge」―メルカリが機械学習活用のコンペを開催した狙いとは？](https://techplay.jp/column/290) 
+
 ## Misc
 
 * [Old Blog](https://hurutoriya.github.io/blog/)
