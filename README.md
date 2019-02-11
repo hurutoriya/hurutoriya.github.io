@@ -3,13 +3,11 @@
 * [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 * [Github](https://github.com/hurutoriya)
 * [kaggle](https://www.kaggle.com/shunyaueta)
-* [Machine Learning Newsletter](https://www.getrevue.co/profile/hurutoriya)
-* [twitter](https://twitter.com/hurutoriya)
+* [Rumors of ML | Machine Learning Newsletter](https://www.getrevue.co/profile/hurutoriya)
+* [Twitter](https://twitter.com/hurutoriya)
 * [Slideshare](http://www.slideshare.net/shunyaueta)
 * [Google Scholar](https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ)
 * [Youtube](https://www.youtube.com/channel/UCTKJn_73Bp0_A7xyBwbznuA)
-* [Blog](https://goo.gl/PFy4rg)
-* [arXivTimes](https://arxivtimes.herokuapp.com/user/hurutoriya)
 
 ## 略歴
 
@@ -40,6 +38,8 @@
 
 ### Tech Talks
 
+* 2018.09.26 [Kubeflow Meetup #1 Introduction to Argo](https://crash.academy/video/343/1671)
+  * [slideshare](https://www.slideshare.net/shunyaueta/introduction-to-argo-116672516)
 * 2018.09.18 [Introduction to TFX Family](https://d3m.connpass.com/event/98934/) at Data Driven Developer Meetup #1
   * [slideshare](https://www.slideshare.net/shunyaueta/introduction-to-tfx-tfdvtfttfma)
 * 2018.09.01 [Introduction to Kubeflow](https://tokyo2018.gdgjapan.org/ml) at GDG DevFest 2018 Tokyo
@@ -103,10 +103,10 @@
   現在はメンテナンス停止中 Ruby on Rails 3, Heroku を用いて 3 日間で開発を終え公開した。
 
 ## Article
-- 2018/07/03: [世界のデータサイエンティスト、2,384チームが競った「Mercari Price Suggestion Challenge」―メルカリが機械学習活用のコンペを開催した狙いとは？](https://techplay.jp/column/290) 
+* 2019.01.16: [「AIと機械学習への質問、なんでも答えるよ！」なオープンドアを開催したよ #メルカリな日々](https://mercan.mercari.com/entry/2019/01/16/200645)
+* 2018.07.03: [世界のデータサイエンティスト、2,384チームが競った「Mercari Price Suggestion Challenge」―メルカリが機械学習活用のコンペを開催した狙いとは？](https://techplay.jp/column/290) 
 
 ## Misc
 
-* [Old Blog](https://hurutoriya.github.io/blog/)
 * [パターン認識と機械学習の勉強会 @筑波大学](http://prml-seminar.github.io/)
   * 2015.03-2017.03 まで主催していた機械学習に関する勉強会です。
