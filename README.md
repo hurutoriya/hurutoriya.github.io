@@ -1,4 +1,4 @@
-## Template information
+## Shunya UETA::上田 隼也
 
 * [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 * [GitHub](https://github.com/hurutoriya)
