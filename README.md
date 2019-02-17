@@ -1,9 +1,9 @@
 ## Template information
 
 * [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
-* [Github](https://github.com/hurutoriya)
+* [GitHub](https://github.com/hurutoriya)
 * [kaggle](https://www.kaggle.com/shunyaueta)
-* [Rumors of ML | Machine Learning Newsletter](https://www.getrevue.co/profile/hurutoriya)
+* [Bi weekly Machine Learning Newsletter](https://www.getrevue.co/profile/hurutoriya)
 * [Twitter](https://twitter.com/hurutoriya)
 * [Slideshare](http://www.slideshare.net/shunyaueta)
 * [Google Scholar](https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ)
