@@ -3,7 +3,7 @@
 * [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 * [GitHub](https://github.com/hurutoriya)
 * [kaggle](https://www.kaggle.com/shunyaueta)
-* [Bi weekly Machine Learning Newsletter](https://www.getrevue.co/profile/hurutoriya)
+* [Machine Learning Newsletter](https://www.getrevue.co/profile/hurutoriya)
 * [Twitter](https://twitter.com/hurutoriya)
 * [Slideshare](http://www.slideshare.net/shunyaueta)
 * [Google Scholar](https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ)
@@ -39,7 +39,7 @@
 ### Tech Talks
 
 * 2018.09.26 [Kubeflow Meetup #1 Introduction to Argo](https://crash.academy/video/343/1671)
-  * [slideshare](https://www.slideshare.net/shunyaueta/introduction-to-argo-116672516)
+  * [slideshare](https://www.slideshare.net/shunyaueta/introduction-to-argo-116672516), [movie](https://crash.academy/video/343/1671)
 * 2018.09.18 [Introduction to TFX Family](https://d3m.connpass.com/event/98934/) at Data Driven Developer Meetup #1
   * [slideshare](https://www.slideshare.net/shunyaueta/introduction-to-tfx-tfdvtfttfma)
 * 2018.09.01 [Introduction to Kubeflow](https://tokyo2018.gdgjapan.org/ml) at GDG DevFest 2018 Tokyo
@@ -100,7 +100,7 @@
 ## Product
 
 * 2013.04 高専生の編入体験体験談投稿サービス「HenTai」を開発。 100 件超の体験談が集まり、体験談共有サイトでも最大規模を誇る [site](http://kosen.herokuapp.com/)
-  現在はメンテナンス停止中 Ruby on Rails 3, Heroku を用いて 3 日間で開発を終え公開した。
+  現在はメンテナンス停止中, Ruby on Rails 3, Heroku を用いて 3 日間で開発を終え公開した。
 
 ## Article
 * 2019.01.16: [「AIと機械学習への質問、なんでも答えるよ！」なオープンドアを開催したよ #メルカリな日々](https://mercan.mercari.com/entry/2019/01/16/200645)
