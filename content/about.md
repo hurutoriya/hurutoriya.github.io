@@ -1,4 +1,8 @@
-# Shunya UETA::上田 隼也
+---
+title: "About"
+date: 2019-06-15T19:25:33+09:00
+type: "page"
+---
 
 * [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 * [GitHub](https://github.com/hurutoriya)
@@ -38,7 +42,6 @@
 
 ### Tech Talks
 
-* 2019.04.12 [How to evaluate & Manage Machine Learning Model](https://www.slideshare.net/shunyaueta/how-to-evaluate-manage-machine-learning-model-daft)
 * 2018.09.26 [Kubeflow Meetup #1 Introduction to Argo](https://crash.academy/video/343/1671)
   * [slideshare](https://www.slideshare.net/shunyaueta/introduction-to-argo-116672516), [movie](https://crash.academy/video/343/1671)
 * 2018.09.18 [Introduction to TFX Family](https://d3m.connpass.com/event/98934/) at Data Driven Developer Meetup #1
@@ -105,7 +108,6 @@
   現在はメンテナンス停止中, Ruby on Rails 3, Heroku を用いて 3 日間で開発を終え公開した。
 
 ## Article
-
 * 2019.01.16: [「AIと機械学習への質問、なんでも答えるよ！」なオープンドアを開催したよ #メルカリな日々](https://mercan.mercari.com/entry/2019/01/16/200645)
 * 2018.07.03: [世界のデータサイエンティスト、2,384チームが競った「Mercari Price Suggestion Challenge」―メルカリが機械学習活用のコンペを開催した狙いとは？](https://techplay.jp/column/290) 
 

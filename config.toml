@@ -1,0 +1,44 @@
+baseURL = "https://shunyaueta.com/"
+languageCode = "en-us"
+title = "Shunya UETA"
+theme = "ezhil"
+
+[params]
+	# Blog subtitle which appears below blog title. Supports markdown.
+	subtitle = "Software Engineer Note"
+
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+[[params.social]]
+name = "Linkedin"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/hurutoriya/"
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/hurutoriya"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/hurutoriya"
