@@ -4,8 +4,7 @@ title = "Shunya UETA"
 theme = "ezhil"
 
 [params]
-	# Blog subtitle which appears below blog title. Supports markdown.
-	subtitle = "Software Engineer Note"
+	subtitle = "Software Engineer As Data Scientist"
 
 # Main menu which appears below site header.
 [[menu.main]]
