@@ -50,3 +50,8 @@ url = "https://github.com/hurutoriya"
 name = "Twitter"
 icon = "twitter"
 url = "https://twitter.com/hurutoriya"
+
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"

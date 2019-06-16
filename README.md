@@ -29,7 +29,6 @@
 * 2013.04-09 BearTail
   * `Software engineer` Ruby on Rails を用いたサービス開発
 
-
 ### Education
 
 * 筑波大学大学院 システム情報工学研究科 コンピュータサイエンス専攻 修士(工学) 2017.03

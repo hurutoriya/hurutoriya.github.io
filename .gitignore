@@ -32,6 +32,9 @@ Icon
 # Thumbnails
 ._*
 
+# Generate file
+public/
+
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd
