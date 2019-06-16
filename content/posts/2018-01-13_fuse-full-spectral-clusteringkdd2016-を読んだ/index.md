@@ -1,0 +1,56 @@
+---
+title: "FUSE: Full Spectral Clustering(KDD2016) を読んだ"
+author: "Shunya Ueta"
+date: 2018-01-13T17:30:28.693Z
+lastmod: 2019-06-16T18:17:39+09:00
+
+description: ""
+
+subtitle: "べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案"
+tags:
+ - ML 
+ - Paper 
+ - Clustering 
+ - 日本語 
+ - Kdd 
+
+image: "/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-を読んだ/images/1.png" 
+images:
+ - "/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-を読んだ/images/1.png" 
+
+
+aliases:
+    - "/fuse-full-spectral-clustering-kdd2017-7aa71399bf57"
+---
+
+べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案
+
+
+
+![image](/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-を読んだ/images/1.png)
+
+*   べき乗法では近似固有ベクトル(Pseudo-eigenvectors)は複数の真の固有ベクトルの線形結合からなる。有益でない固有ベクトルも含まれるのでいかにそれを除去するか
+*   Fig.1 で言ってることがいまいちわからない。ｃ,ｄも変化がないように見える。論文で言及してるstripeが何を指してるかが不明
+分かった。赤・青・黒の３つのクラスタで分かれている。最初は黒色がクラスタ境界面に見えた。論文内でのmulti scaleというのは、データの幾何的な分布を指している？
+*   固有値計算はO(n³）かかるから計算量が~~って毎回言われるが、行列の状態に依存するので毎回最悪の場合を主張されてるも困る
+*   ZP self-turining spectral clusteringをなぜ対抗馬にして比較してるのかは謎。
+*   ICA[¹](http://www.kecl.ntt.co.jp/icl/signal/sawada/mypaper/subspace2010rev.pdf)を行ったあとにその行列に対して回転処理を行い情報量の最小化を狙う
+*   クラスタ数が多い場合、PICでは良い結果が出づらい
+multi scale なデータの場合標準のspectral clusteringでは失敗することが多々ある
+*   fig.2 (a) 見ればわかるが_k_-meansでは分離が困難
+*   fig.2(b) ４－５本目の固有ベクトルを基底ベクトルにもつ空間ではクラスタのオーバーラップが少ない
+*   つまり１－５本目の固有ベクトル全て含めてクラスタリングすれば結果が良好になるのではないか？（仮説）
+*   fig.2 © ４回べき乗法を行った。結果が似てる。（縦軸が何を表してるかは不明）。四回が上から四本求めたのか、一番上の固有ベクトルを４回求めたのか分からない
+*   fig. (d) 提案手法を適用。k-meansで分離可能 行列**V**を_p_回べき乗法を行って構築 **E=MV**の最小化を行う
+*   ICAを最小化するためにJacobi Rotationを用いる。探索には貪欲法を採用
+
+### Contribution
+
+*   マルチスケール（多種多様な）データ分布に対してクラスタリングが可能
+*   計算時間は従来（ncut)と同等
+
+### 感想
+
+*   PIC(Power Itetaion Clusterg)をまさか拡張してくるとは思わなかったなので、興味深い論文。(実装して再現実験したけど、Early stoppingの段階で高確率でクラスタリングが失敗していて使い物にならなかった印象があるので…)
+*   データの分布が多様な場合、上位数本のベクトルではなく、そこから更に下の固有ベクトルに着目したほうが結果が良好になるのは面白い
+*   KDDの論文、相変わらず読みやすかった。
