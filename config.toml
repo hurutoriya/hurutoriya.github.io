@@ -5,6 +5,7 @@ hasCJKLanguage = true
 
 googleAnalytics = "UA-39994406-11"
 disqusShortname = "hurutoriya"
+rssuri = "feed.xml"
 
 title = "Shunya UETA"
 theme = "ezhil"
