@@ -2,7 +2,10 @@ baseURL = "https://shunyaueta.com/"
 DefaultContentLanguage = "ja"
 languageCode = "ja"
 hasCJKLanguage = true
-defaultContentLanguageInSubdir = true
+
+googleAnalytics = "UA-39994406-11"
+disqusShortname = "hurutoriya"
+
 title = "Shunya UETA"
 theme = "ezhil"
 
