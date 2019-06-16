@@ -6,16 +6,16 @@ tags:
 - hugo
 ---
 
-Hugo 0.32から page bundleが使用可能に。この機能で画像ファイルを以下のファイル構成で構築できる
-これにより、markdownとアセットファイルが同一ディレクトリ内に収まるのでアセットファイルの管理が用意になる。
-
-> https://gohugo.io/about/new-in-032/
+- [Hugo 0.32](https://gohugo.io/about/new-in-032/)から page bundleが使用可能に
+- この機能で画像ファイルを以下のファイル構成で構築できる
 
 ```bash
 - hoge/
     - index.md
     - hoge.png
 ```
+これにより、markdownとアセットファイルが同一ディレクトリ内に収まるのでアセットファイルの管理が用意になる。
+
 
 - `hugo new` で特定のエディタを開く
 
