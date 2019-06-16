@@ -1,10 +1,15 @@
 baseURL = "https://shunyaueta.com/"
-languageCode = "en-us"
+DefaultContentLanguage = "ja"
+languageCode = "ja"
+hasCJKLanguage = true
+defaultContentLanguageInSubdir = true
 title = "Shunya UETA"
 theme = "ezhil"
 
 [params]
 	subtitle = "Software Engineer As Data Scientist"
+  author = "hurutoriya"
+  description = "Shunya UETA, a Software Engineer Machine Learning at Mercari, inc."
 
 # Main menu which appears below site header.
 [[menu.main]]
