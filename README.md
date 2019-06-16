@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/hurutoriya/hurutoriya.github.io/tree/source.svg?style=svg)](https://circleci.com/gh/hurutoriya/hurutoriya.github.io/tree/source)
+
 # Shunya UETA::上田 隼也
 
 * [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
