@@ -5,7 +5,12 @@ hasCJKLanguage = true
 
 googleAnalytics = "UA-39994406-11"
 disqusShortname = "hurutoriya"
-rssuri = "feed.xml"
+
+# Enable syntax highlighting.
+pygmentsstyle = "vs"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
 
 title = "Shunya UETA"
 theme = "ezhil"
