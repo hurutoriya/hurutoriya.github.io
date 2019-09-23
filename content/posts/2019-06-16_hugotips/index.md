@@ -14,10 +14,10 @@ tags:
     - index.md
     - hoge.png
 ```
+
 これにより、markdownとアセットファイルが同一ディレクトリ内に収まるのでアセットファイルの管理が用意になる。
 
-
-- `hugo new` で特定のエディタを開く
+- `hugo new` で特定のエディタを開くには?
 
 ```bash
 hugo new posts/hoge.md --editor="code"
@@ -26,5 +26,11 @@ hugo new posts/hoge.md --editor="code"
 - pange bundl作成時にディレクトリ名に日付を含める
 
 ```bash
-hugo new posts/$(date '+%Y')-$(date '+%m')-$(date '+%d')_mlct10/index.md
+hugo new posts/$(date '+%Y')-$(date '+%m')-$(date '+%d')_title/index.md
+```
+
+- pageをビルドして結果を確認する
+
+```base
+hugo server
 ```
