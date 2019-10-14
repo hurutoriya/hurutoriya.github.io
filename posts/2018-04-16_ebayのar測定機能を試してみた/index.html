@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>eBayのAR測定機能を試してみた - Shunya UETA</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="eBayのAR測定機能を試してみた" />
+<meta property="og:description" content="eBayが ARCoreを使った商品の梱包測定機能を提供しているので試した 梱包測定の仕組みとしては、ARCore(今回は Pixel2 XLで試した)で平面" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/" />
+
+<meta property="og:image" content="https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/images/1.png" />
+
+<meta property="og:image" content="https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/images/2.png" />
+
+<meta property="og:image" content="https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/images/3.png" />
+
+<meta property="og:image" content="https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/images/4.png" />
+
+<meta property="og:image" content="https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/images/5.png" />
+
+<meta property="og:image" content="https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/images/6.png" />
+<meta property="article:published_time" content="2018-04-16T14:57:41+00:00" />
+<meta property="article:modified_time" content="2019-06-16T18:17:59+09:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/images/1.png"/>
+
+<meta name="twitter:title" content="eBayのAR測定機能を試してみた"/>
+<meta name="twitter:description" content="eBayが ARCoreを使った商品の梱包測定機能を提供しているので試した 梱包測定の仕組みとしては、ARCore(今回は Pixel2 XLで試した)で平面"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><script src="/js/feather.min.js"></script><script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title">Shunya UETA</h1>
+	<div class="site-description"><h2>Software Engineer As Data Scientist</h2><nav class="nav social">
+			<ul class="flat"><a href="https://www.linkedin.com/in/hurutoriya/" title="Linkedin"><i data-feather="linkedin"></i></a><a href="https://github.com/hurutoriya" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hurutoriya" title="Twitter"><i data-feather="twitter"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">eBayのAR測定機能を試してみた</h1>
+			<div class="meta">Posted at &mdash; Apr 16, 2018</div>
+		</div>
+
+		<div class="markdown">
+			
+
+<p>eBayが ARCoreを使った商品の梱包測定機能を提供しているので試した</p>
+
+<p><img src="/posts/2018-04-16_ebayのar測定機能を試してみた/images/1.png" alt="image" /></p>
+
+<p><img src="/posts/2018-04-16_ebayのar測定機能を試してみた/images/2.png" alt="image" /></p>
+
+<p><img src="/posts/2018-04-16_ebayのar測定機能を試してみた/images/3.png" alt="image" /></p>
+
+<p>梱包測定の仕組みとしては、ARCore(今回は Pixel2 XLで試した)で平面検出を行って、そこにeBayのダンボールオブジェクトを設置することで、ダンボールに入るかどうかを判定できる。</p>
+
+<p><img src="/posts/2018-04-16_ebayのar測定機能を試してみた/images/4.png" alt="image" /></p>
+
+<p><img src="/posts/2018-04-16_ebayのar測定機能を試してみた/images/5.png" alt="image" /></p>
+
+<p><img src="/posts/2018-04-16_ebayのar測定機能を試してみた/images/6.png" alt="image" /></p>
+
+<p>下のダンボールアイコンを選択して、検出された平面をタップするとダンボールオブジェクトを設置できる</p>
+
+<p><img src="/posts/2018-04-16_ebayのar測定機能を試してみた/images/7.png" alt="image" /></p>
+
+<p><img src="/posts/2018-04-16_ebayのar測定機能を試してみた/images/8.png" alt="image" /></p>
+
+<p><img src="/posts/2018-04-16_ebayのar測定機能を試してみた/images/9.png" alt="image" /></p>
+
+<p>今回例として用いたMBPの空箱だとARCoreが空箱自体を平面と認識してしまうという罠があるので、床で平面検知を終えてから商品を置くという裏技が必要</p>
+
+<h3 id="まとめ">まとめ</h3>
+
+<ul>
+<li>ARCoreを用いたAR機能のUXとしては 🙆</li>
+<li>実用性は 🙅、平面検出しかしてないので、荷物に合わせて最適なダンボールを選ぶのは結局ユーザー。そこまで自動化してこそ革新的な機能になると思った</li>
+</ul>
+
+<p>Related Post</p>
+
+<p><a href="https://venturebeat.com/2018/03/19/ebay-uses-augmented-reality-to-help-sellers-find-the-right-box-for-their-product/">eBay uses augmented reality to help sellers find the right box for their product</a></p>
+
+		</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'hurutoriya';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+</body>
+</html>

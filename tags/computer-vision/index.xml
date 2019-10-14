@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/computer-vision/</link>
+    <description>Recent content in Computer Vision on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 16 Apr 2018 14:57:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>eBayのAR測定機能を試してみた</title>
+      <link>https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Mon, 16 Apr 2018 14:57:41 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>eBayが ARCoreを使った商品の梱包測定機能を提供しているので試した 梱包測定の仕組みとしては、ARCore(今回は Pixel2 XLで試した)で平面</description>
+    </item>
+    
+    <item>
+      <title>Slicing Convolutional Neural Network for Crowd Video Understanding (CVPR2016)を読んだ</title>
+      <link>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Wed, 17 Jan 2018 06:04:37 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>群衆解析の手法に興味があるので、サーベイの結果を放流しておきます。 Jing Shao, Chen Change Loy, Kai Kang, and Xiaogang Wang, “Slicing Convolutional Neural Network for Crowd Video Understanding</description>
+    </item>
+    
+    <item>
+      <title>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ</title>
+      <link>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Wed, 17 Jan 2018 05:55:41 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ Mikel Rodriguez, Josef Sivic, Ivan Laptev, Jean-Yves Audibert, “Data-driven Crowd Analysis in Videos”, in ICCV2011. Project Page を読んだので、メモです。 Summary tl;dr 高密</description>
+    </item>
+    
+    <item>
+      <title>Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ</title>
+      <link>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Wed, 17 Jan 2018 05:41:44 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 link Summry を読んだので、軽くメモ。 VQA(Visual Question Answer) 画像に対する質問に対して応答するタスクに</description>
+    </item>
+    
+    <item>
+      <title>Analyzing Free-standing Conversational Groups: A Multimodal Approach (ACMMM15) を読んだ</title>
+      <link>https://shunyaueta.com/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Sun, 14 Jan 2018 10:41:12 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>スタンディングディスカッション形式での会話を評価した研究 Summary Slide X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe “Analyzing Free-standing Conversational Groups: A Multimodal Approach”, in 2015 ACM Multimedia Conference</description>
+    </item>
+    
+    <item>
+      <title>OpenCV 3.3から使えるDNNモジュールを使って物体検出</title>
+      <link>https://shunyaueta.com/posts/2017-11-14_opencv-3.3%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%88%E3%82%8Bdnn%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</link>
+      <pubDate>Tue, 14 Nov 2017 11:36:43 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-11-14_opencv-3.3%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%88%E3%82%8Bdnn%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</guid>
+      <description>OpenCVとMobileNetを使って物体検出を行った Object Detection with OpenCV dnn modules and MobileNetSSD on Jupyter Notebook Introduction 物体検出をDeep LeaningとOpenCVを用いて行う OpenCV</description>
+    </item>
+    
+    <item>
+      <title>Djangoで顔認識の結果をJSONで返す最小構成のAPIサーバーを作った</title>
+      <link>https://shunyaueta.com/posts/2017-11-13_django%E3%81%A7%E9%A1%94%E8%AA%8D%E8%AD%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92json%E3%81%A7%E8%BF%94%E3%81%99%E6%9C%80%E5%B0%8F%E6%A7%8B%E6%88%90%E3%81%AEapi%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/</link>
+      <pubDate>Mon, 13 Nov 2017 17:22:38 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-11-13_django%E3%81%A7%E9%A1%94%E8%AA%8D%E8%AD%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92json%E3%81%A7%E8%BF%94%E3%81%99%E6%9C%80%E5%B0%8F%E6%A7%8B%E6%88%90%E3%81%AEapi%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/</guid>
+      <description>DEMO githubでコードを公開してます。 hurutoriya/face_detector_api Djangoの勉強は、基本的なイントロダクションとしてオフィシャルサイトのドキュメントが充実している</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Companies Tech Blog</title>
+      <link>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</link>
+      <pubDate>Wed, 25 Oct 2017 11:32:31 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</guid>
+      <description>Machine Leaning Blog
+We collect a Machine Learning companies Tech Blog lists based on Sponsor of Google Scholar Top Publications list
+ https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_artificialintelligence https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_computervisionpatternrecognition https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_datamininganalysis  Machine Leaning &amp;amp; Computer Vision &amp;amp; Data Mining Top Conference Our Sponsors -
+ICML 2017 Sponsors
+NIPS 2017 Sponsors
+KDD 2017 | Sponsors and Sponsorship Opportunities
+AAAI-17: Thirty-First AAAI Conference on Artificial Intelligence
+CVPR2017
+ICCV 2017
+Machine Learning Company’s Tech Blog Alibaba
+https://cloudfocus.alibabacloud.com/?spm=a2c1b.detail207110.a2c1b31.22.1d234c96CMbTQt&amp;amp;tag_id=16493</description>
+    </item>
+    
+    <item>
+      <title>Joining Arxivtimes</title>
+      <link>https://shunyaueta.com/posts/2017-09-25_joining-arxivtimes/</link>
+      <pubDate>Mon, 25 Sep 2017 07:49:32 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-09-25_joining-arxivtimes/</guid>
+      <description>論文読みとまとめを怠っていると、研究関係のトピックスのインデックスが全て破壊されていることに気がついた。 arXivTimesという面白い取り</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Review on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/review/</link>
+    <description>Recent content in Review on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 23 Sep 2019 18:48:47 +0900</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[書評]ビジネスでインパクトが出せるデータサイエンティストになるには</title>
+      <link>https://shunyaueta.com/posts/2019-09-23_how_to_become_great_ds/</link>
+      <pubDate>Mon, 23 Sep 2019 18:48:47 +0900</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2019-09-23_how_to_become_great_ds/</guid>
+      <description>@pseudo_finite さんから 「ビジネスでインパクトが出せるデータサイエンティストになるためには」 をご恵贈していただいたので、感想をここに記します。 経営システム</description>
+    </item>
+    
+    <item>
+      <title>イベント運営に便利なsli.do の使いこなしかた</title>
+      <link>https://shunyaueta.com/posts/2018-06-17_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%81%8B%E5%96%B6%E3%81%AB%E4%BE%BF%E5%88%A9%E3%81%AAsli.do-%E3%81%AE%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%8B%E3%81%9F/</link>
+      <pubDate>Sun, 17 Jun 2018 15:03:27 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-06-17_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%81%8B%E5%96%B6%E3%81%AB%E4%BE%BF%E5%88%A9%E3%81%AAsli.do-%E3%81%AE%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%8B%E3%81%9F/</guid>
+      <description>イベント運営者必見 sli.do の使い方 sli.do のディスプレイ画面 sli.doという便利な質問投稿・回答サービスがあります。このサービスですが、イベント運営者</description>
+    </item>
+    
+    <item>
+      <title>eBayのAR測定機能を試してみた</title>
+      <link>https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Mon, 16 Apr 2018 14:57:41 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>eBayが ARCoreを使った商品の梱包測定機能を提供しているので試した 梱包測定の仕組みとしては、ARCore(今回は Pixel2 XLで試した)で平面</description>
+    </item>
+    
+  </channel>
+</rss>

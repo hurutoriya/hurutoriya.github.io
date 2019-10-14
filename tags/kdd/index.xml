@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kdd on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/kdd/</link>
+    <description>Recent content in Kdd on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 13 Jan 2018 17:30:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/kdd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FUSE: Full Spectral Clustering(KDD2016) を読んだ</title>
+      <link>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Sat, 13 Jan 2018 17:30:28 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案 べき乗法では近似固有ベクトル(Pseudo-eigenvecto</description>
+    </item>
+    
+    <item>
+      <title>Edge-Weighted Personalized PageRank: Breaking A Decade-Old Performance Barrier を読んだ</title>
+      <link>https://shunyaueta.com/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Mon, 04 Dec 2017 13:06:15 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>応用数理研究者が機械学習界に進出していく研究 youtube clip 応用数理界隈ではクラシックな解き方でPageRankが解かれているので最新の数値計算手法に置</description>
+    </item>
+    
+    <item>
+      <title>KDD2017 ピックアップ</title>
+      <link>https://shunyaueta.com/posts/2017-10-25_kdd2017-%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</link>
+      <pubDate>Wed, 25 Oct 2017 11:52:09 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-10-25_kdd2017-%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</guid>
+      <description>KDD2017 開催されてから時間が経ってしまいましたが、データマイニングのトップ国際会議のKDD2017で面白そうなものをピックアップしました。 Movie KDD</description>
+    </item>
+    
+  </channel>
+</rss>

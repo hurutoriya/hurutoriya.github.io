@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jupyter on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/jupyter/</link>
+    <description>Recent content in Jupyter on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 24 Sep 2019 23:16:07 +0900</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tensorboard を わずか2行で Jupyter Notebook上で表示</title>
+      <link>https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/</link>
+      <pubDate>Tue, 24 Sep 2019 23:16:07 +0900</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/</guid>
+      <description>Pytorch 1.2からは公式にTensorboardがサポートされている Tensorboard とは、学習の状況を可視化できるTensorFlow Family の一種 Jupyte Notebook</description>
+    </item>
+    
+    <item>
+      <title>Jupyter Notebookの差分を明瞭に確認する事ができるpackage : nbdime</title>
+      <link>https://shunyaueta.com/posts/2018-01-13_jupyter-notebook%E3%81%AE%E5%B7%AE%E5%88%86%E3%82%92%E6%98%8E%E7%9E%AD%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E4%BA%8B%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8Bpackage-nbdime/</link>
+      <pubDate>Sat, 13 Jan 2018 17:14:54 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-13_jupyter-notebook%E3%81%AE%E5%B7%AE%E5%88%86%E3%82%92%E6%98%8E%E7%9E%AD%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E4%BA%8B%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8Bpackage-nbdime/</guid>
+      <description>Jupyter notebookをご利用の皆さん、朗報です。 例えば、下記の２つのnotebookの差分を比較したい際に、 nb_1.ipynb nb_2.ipynb diffコマンドを用いると下記</description>
+    </item>
+    
+    <item>
+      <title>PythonでGaussian Kernelのアニメーションを作成</title>
+      <link>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</link>
+      <pubDate>Sat, 13 Jan 2018 17:03:43 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</guid>
+      <description>Pythonでアニメーションを作成したかったのでメモ Gaussian Kernel GIF Animation 当然ながら、HTML5のVideoは再生されないのでGIFに変換した結果が以下。</description>
+    </item>
+    
+  </channel>
+</rss>

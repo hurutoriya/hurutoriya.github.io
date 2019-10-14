@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Report on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/report/</link>
+    <description>Recent content in Report on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 13 Feb 2018 15:35:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/report/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title>
+      <link>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</link>
+      <pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</guid>
+      <description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい 発表者の顔は</description>
+    </item>
+    
+  </channel>
+</rss>

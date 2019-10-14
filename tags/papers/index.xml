@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Papers on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/papers/</link>
+    <description>Recent content in Papers on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 25 Oct 2017 11:52:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/papers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>KDD2017 ピックアップ</title>
+      <link>https://shunyaueta.com/posts/2017-10-25_kdd2017-%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</link>
+      <pubDate>Wed, 25 Oct 2017 11:52:09 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-10-25_kdd2017-%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</guid>
+      <description>KDD2017 開催されてから時間が経ってしまいましたが、データマイニングのトップ国際会議のKDD2017で面白そうなものをピックアップしました。 Movie KDD</description>
+    </item>
+    
+  </channel>
+</rss>

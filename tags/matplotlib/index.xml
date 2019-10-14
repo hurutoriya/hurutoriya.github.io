@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matplotlib on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/matplotlib/</link>
+    <description>Recent content in Matplotlib on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 13 Jan 2018 17:03:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PythonでGaussian Kernelのアニメーションを作成</title>
+      <link>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</link>
+      <pubDate>Sat, 13 Jan 2018 17:03:43 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</guid>
+      <description>Pythonでアニメーションを作成したかったのでメモ Gaussian Kernel GIF Animation 当然ながら、HTML5のVideoは再生されないのでGIFに変換した結果が以下。</description>
+    </item>
+    
+  </channel>
+</rss>

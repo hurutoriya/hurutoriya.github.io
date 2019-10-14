@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/education/</link>
+    <description>Recent content in Education on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 23 Dec 2017 17:48:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp; 講義でJupyterhubを利用する</title>
+      <link>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sat, 23 Dec 2017 17:48:12 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</guid>
+      <description>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp;amp; 講義でJupyterhubを利用するお話です。 GIF画像は下</description>
+    </item>
+    
+  </channel>
+</rss>

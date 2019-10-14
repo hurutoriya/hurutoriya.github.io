@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>抄訳 on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/%E6%8A%84%E8%A8%B3/</link>
+    <description>Recent content in 抄訳 on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 24 Apr 2018 02:18:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/%E6%8A%84%E8%A8%B3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[抄訳] Data engineers vs. data scientists</title>
+      <link>https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/</link>
+      <pubDate>Tue, 24 Apr 2018 02:18:46 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/</guid>
+      <description>データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア 紹介記事 Data engineers vs. data scientists 紹介記事を</description>
+    </item>
+    
+  </channel>
+</rss>

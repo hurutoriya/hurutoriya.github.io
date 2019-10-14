@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>[抄訳] Data engineers vs. data scientists - Shunya UETA</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="[抄訳] Data engineers vs. data scientists" />
+<meta property="og:description" content="データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア 紹介記事 Data engineers vs. data scientists 紹介記事を" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/" />
+
+<meta property="og:image" content="https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/images/1.png" />
+
+<meta property="og:image" content="https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/images/2.png" />
+<meta property="article:published_time" content="2018-04-24T02:18:46+00:00" />
+<meta property="article:modified_time" content="2019-06-16T18:18:07+09:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/images/1.png"/>
+
+<meta name="twitter:title" content="[抄訳] Data engineers vs. data scientists"/>
+<meta name="twitter:description" content="データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア 紹介記事 Data engineers vs. data scientists 紹介記事を"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><script src="/js/feather.min.js"></script><script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title">Shunya UETA</h1>
+	<div class="site-description"><h2>Software Engineer As Data Scientist</h2><nav class="nav social">
+			<ul class="flat"><a href="https://www.linkedin.com/in/hurutoriya/" title="Linkedin"><i data-feather="linkedin"></i></a><a href="https://github.com/hurutoriya" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hurutoriya" title="Twitter"><i data-feather="twitter"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">[抄訳] Data engineers vs. data scientists</h1>
+			<div class="meta">Posted at &mdash; Apr 24, 2018</div>
+		</div>
+
+		<div class="markdown">
+			
+
+<p>データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア</p>
+
+<h4 id="紹介記事">紹介記事</h4>
+
+<p><a href="https://www.oreilly.com/ideas/data-engineers-vs-data-scientists">Data engineers vs. data scientists</a></p>
+
+<p>紹介記事を同僚から教えてもらい、面白かったので抄訳した</p>
+
+<blockquote>
+<p>[](<a href="https://twitter.com/chezou/status/980349709339394048">https://twitter.com/chezou/status/980349709339394048</a>)
+<a href="https://medium.com/u/d2572dc96c55">Aki Ariga</a> さんが言及していた記事と方向性が同一で面白かった。</p>
+</blockquote>
+
+<p><strong>Data Scientists</strong> : ビジネスサイドを理解し、他者にわかりやすく可視化と言語化できる職能。そして高度な数学的知識に基づいたモデリングやアルゴリズム提案スキルも持っている。Data Scientistsには高度なProgramming skillは必ずしも必須ではない、なぜならモデリングやアルゴリズムを実装するためにプログラミングを習得した人が多いからだ。システムデザインやProgramming スキルは、Software Engineer やDataEngineerからみると見れたものではない(そしてそうでなくてはならない、なぜならスペシャリストだから)</p>
+
+<p><strong>Data Engineer</strong> : 分散プログラミングを意識して構築できる職能。DEは卓越したプログラミングスキルとシステム構成力を持つ。定義 : つまりビッグデータに対してシステム的に解決できるスキル。クラスタ設計までがData Engineerの役割であり運用(Ops)はやらない</p>
+
+<p><img src="/posts/2018-04-24_抄訳-data-engineers-vs.-data-scientists/images/1.png" alt="image" /></p>
+
+<p>from : <a href="https://www.oreilly.com/ideas/data-engineers-vs-data-scientists">https://www.oreilly.com/ideas/data-engineers-vs-data-scientists</a></p>
+
+<ul>
+<li>Data Scientists とData Engineer の互いの特化したスキルは補完しあってこそ輝く。</li>
+<li>Data Scientist がデータパイプラインを作ると悲劇が起きてしまう。多くの企業がData ScientistをData Engineer として雇っているが、それはData Scientistsのスペックを活かしきれず、20–30%の効率で働かせてしまっている。そしてそのROIはめちゃくちゃ悪い。Data Scientists は適切なツールと選択肢を熟知していない(そしてData Engineerはシステムデザインと熟知しているのでミスは侵さない)</li>
+<li>e.g.</li>
+<li>実際著者が聞いたこんな話がある。 Data ScientistsがApache Sparkを使って10GBのデータ処理を行うのに1回15mの時間がかかっていた。(だがRDBMSを使えば、10msで終わる) Data Scientistは彼らの流儀を疑うこと無く1日に16回Sparkの処理を実行しており、15mx16=240mつまり4hの時間を無駄にしてる。RDBMSを使えば、160msで終わるというのに…</li>
+<li>Data Scientist が頑張ってシステムを構築するが、職能の限界で Data Engineerしか作れないシステムなので時間とお金の浪費になった</li>
+<li><strong>実情 :</strong> Data Scientist として雇われたのに、Data Engineer として働かざるを得ない人がほとんどだ
+<strong>理想的な人材配置
+Case : 初期の組織</strong>: 2–3人のData Engineer : DataScientist Group
+<strong>Case : 更に複雑な事に取り組みたい</strong> 4–5人の Data Engineer : 1 Data Scientist</li>
+<li><code>Data Engineer change to Data Scientist</code> の王道→それが新しい職種 : <strong>Machine Learning Engineer</strong>!!</li>
+</ul>
+
+<p><img src="/posts/2018-04-24_抄訳-data-engineers-vs.-data-scientists/images/2.png" alt="image" /></p>
+
+<p>from : <a href="https://www.oreilly.com/ideas/data-engineers-vs-data-scientists">https://www.oreilly.com/ideas/data-engineers-vs-data-scientists</a></p>
+
+<ul>
+<li><strong>Machine Learning Engineer</strong> は両方の職種の経験がある。Machine Learning Engineer はData Scientist が規律を守っていないコードのラストワンマイルを守り、データパイプラインを作る職種である。</li>
+<li>(<em>ここで バランスを取るようにData Engineer のディスりが突然入る</em>) Data Engineerは白黒、0–1の世界が好きなので推測の世界(DS)が好きではない。そのため、Machine Learning Engineer はData Scientists ,Data Engineer のふたつにまたがる存在である</li>
+<li>時代の流れにより、最適化や機械学習のパッケージが揃いつつあり、既存の有名なアルゴリズムは簡単に使える。また Google Auto ML, Data Robotのように、Data Scientistの領域も代替可能なtoolsが普及しつつある</li>
+<li><strong>結論</strong>: Data Scientist, Data Engineer の役割が判明した今、組織の構造変革が必要</li>
+<li>Data Engineer を雇ってData Scientist の代わりにデータパイプラインのシステム構築させれば皆幸せになる。</li>
+</ul>
+
+		</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'hurutoriya';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+</body>
+</html>

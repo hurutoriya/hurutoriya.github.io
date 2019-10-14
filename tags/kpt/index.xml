@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kpt on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/kpt/</link>
+    <description>Recent content in Kpt on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 09 Feb 2018 14:00:31 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/kpt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2018.01 KPT</title>
+      <link>https://shunyaueta.com/posts/2018-02-09_2018.01-kpt/</link>
+      <pubDate>Fri, 09 Feb 2018 14:00:31 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-02-09_2018.01-kpt/</guid>
+      <description>2018年1月の振り返りをざっくりと Keep Mercari Competitionにて初Kaggleコンペ参加。 Best 116位まで言ったんですが、NLP周りの知見が</description>
+    </item>
+    
+  </channel>
+</rss>

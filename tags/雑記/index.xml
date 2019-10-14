@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>雑記 on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/%E9%9B%91%E8%A8%98/</link>
+    <description>Recent content in 雑記 on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 06 Dec 2017 13:36:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/%E9%9B%91%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CoreMLがTensorFlow Liteをサポート</title>
+      <link>https://shunyaueta.com/posts/2017-12-06_coreml%E3%81%8Ctensorflow-lite%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88/</link>
+      <pubDate>Wed, 06 Dec 2017 13:36:38 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-12-06_coreml%E3%81%8Ctensorflow-lite%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88/</guid>
+      <description>TensorFlow無双 TensorFlow Lite meets CoreML!! 個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日TensorFlow LiteがCo</description>
+    </item>
+    
+  </channel>
+</rss>

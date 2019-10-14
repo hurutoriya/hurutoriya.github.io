@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/python/</link>
+    <description>Recent content in Python on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 24 Sep 2019 23:16:07 +0900</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tensorboard を わずか2行で Jupyter Notebook上で表示</title>
+      <link>https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/</link>
+      <pubDate>Tue, 24 Sep 2019 23:16:07 +0900</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/</guid>
+      <description>Pytorch 1.2からは公式にTensorboardがサポートされている Tensorboard とは、学習の状況を可視化できるTensorFlow Family の一種 Jupyte Notebook</description>
+    </item>
+    
+    <item>
+      <title>How to concat image using skimage</title>
+      <link>https://shunyaueta.com/posts/2019-06-17_concatimage_with_skimage/</link>
+      <pubDate>Mon, 17 Jun 2019 00:07:33 +0900</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2019-06-17_concatimage_with_skimage/</guid>
+      <description>When you need to concat same size image to make figure.
+skimage &amp;amp; numpy combination is too powerfull to concat images.
+This is sample script.
+from skimage import data, io import numpy as np img = skimage.data.astronaut() imgs= [img for i in range(10)] skimage.io.imsave(&amp;#34;sample_h.png&amp;#34;,np.hstack(imgs)) skimage.io.imsave(&amp;#34;sample_v.png&amp;#34;,np.vstack(imgs)) After that you can get below images.
+    Via Gist: https://gist.github.com/hurutoriya/fedf059ad3db5c67b16d8d5dd6d3df70</description>
+    </item>
+    
+    <item>
+      <title>How to install faiss</title>
+      <link>https://shunyaueta.com/posts/2018-02-27_how-to-install-faiss/</link>
+      <pubDate>Tue, 27 Feb 2018 05:50:27 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-02-27_how-to-install-faiss/</guid>
+      <description>faiss : Billion-scale similarity search with GPUs
+faiss : Billion-scale similarity search with GPUs
+You mainly follow : https://github.com/facebookresearch/faiss/blob/master/INSTALL.md
+Env : Mac OS X 10.12.6
+Not Tag, Note commit hash:commit cd884114d0a8e1789f257b524e5345bc5b26e6b2 _2018.02.24 : New version of Faiss! What&amp;amp;#39;s new? - Support for on-disk inverted lists (see https://github.com/…/f…/blob/master/demos/demo_ondisk_ivf.py). Enables handling of datasets that do not fit in RAM. We tested it on up to 53B vectors, with a 2TB index. - Tutorial and examples for using Faiss on one or more GPUs (see https://github.</description>
+    </item>
+    
+    <item>
+      <title>Jupyter Notebookの差分を明瞭に確認する事ができるpackage : nbdime</title>
+      <link>https://shunyaueta.com/posts/2018-01-13_jupyter-notebook%E3%81%AE%E5%B7%AE%E5%88%86%E3%82%92%E6%98%8E%E7%9E%AD%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E4%BA%8B%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8Bpackage-nbdime/</link>
+      <pubDate>Sat, 13 Jan 2018 17:14:54 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-13_jupyter-notebook%E3%81%AE%E5%B7%AE%E5%88%86%E3%82%92%E6%98%8E%E7%9E%AD%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E4%BA%8B%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8Bpackage-nbdime/</guid>
+      <description>Jupyter notebookをご利用の皆さん、朗報です。 例えば、下記の２つのnotebookの差分を比較したい際に、 nb_1.ipynb nb_2.ipynb diffコマンドを用いると下記</description>
+    </item>
+    
+    <item>
+      <title>PythonでGaussian Kernelのアニメーションを作成</title>
+      <link>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</link>
+      <pubDate>Sat, 13 Jan 2018 17:03:43 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</guid>
+      <description>Pythonでアニメーションを作成したかったのでメモ Gaussian Kernel GIF Animation 当然ながら、HTML5のVideoは再生されないのでGIFに変換した結果が以下。</description>
+    </item>
+    
+    <item>
+      <title>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp; 講義でJupyterhubを利用する</title>
+      <link>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sat, 23 Dec 2017 17:48:12 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</guid>
+      <description>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp;amp; 講義でJupyterhubを利用するお話です。 GIF画像は下</description>
+    </item>
+    
+    <item>
+      <title>Jupyter上でSVGのイラストやアニメーションが作成できるプラグイン egel</title>
+      <link>https://shunyaueta.com/posts/2017-11-22_jupyter%E4%B8%8A%E3%81%A7svg%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-egel/</link>
+      <pubDate>Wed, 22 Nov 2017 12:04:30 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-11-22_jupyter%E4%B8%8A%E3%81%A7svg%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-egel/</guid>
+      <description>アイデアは面白い… けど easy drawingではない Jupyter使ってると作図もJupyter上で完結させたいなぁ~って思うときがあるんですが、</description>
+    </item>
+    
+    <item>
+      <title>OpenCV 3.3から使えるDNNモジュールを使って物体検出</title>
+      <link>https://shunyaueta.com/posts/2017-11-14_opencv-3.3%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%88%E3%82%8Bdnn%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</link>
+      <pubDate>Tue, 14 Nov 2017 11:36:43 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-11-14_opencv-3.3%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%88%E3%82%8Bdnn%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</guid>
+      <description>OpenCVとMobileNetを使って物体検出を行った Object Detection with OpenCV dnn modules and MobileNetSSD on Jupyter Notebook Introduction 物体検出をDeep LeaningとOpenCVを用いて行う OpenCV</description>
+    </item>
+    
+    <item>
+      <title>Djangoで顔認識の結果をJSONで返す最小構成のAPIサーバーを作った</title>
+      <link>https://shunyaueta.com/posts/2017-11-13_django%E3%81%A7%E9%A1%94%E8%AA%8D%E8%AD%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92json%E3%81%A7%E8%BF%94%E3%81%99%E6%9C%80%E5%B0%8F%E6%A7%8B%E6%88%90%E3%81%AEapi%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/</link>
+      <pubDate>Mon, 13 Nov 2017 17:22:38 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-11-13_django%E3%81%A7%E9%A1%94%E8%AA%8D%E8%AD%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92json%E3%81%A7%E8%BF%94%E3%81%99%E6%9C%80%E5%B0%8F%E6%A7%8B%E6%88%90%E3%81%AEapi%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/</guid>
+      <description>DEMO githubでコードを公開してます。 hurutoriya/face_detector_api Djangoの勉強は、基本的なイントロダクションとしてオフィシャルサイトのドキュメントが充実している</description>
+    </item>
+    
+  </channel>
+</rss>

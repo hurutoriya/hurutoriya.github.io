@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Django on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/django/</link>
+    <description>Recent content in Django on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 13 Nov 2017 17:22:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Djangoで顔認識の結果をJSONで返す最小構成のAPIサーバーを作った</title>
+      <link>https://shunyaueta.com/posts/2017-11-13_django%E3%81%A7%E9%A1%94%E8%AA%8D%E8%AD%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92json%E3%81%A7%E8%BF%94%E3%81%99%E6%9C%80%E5%B0%8F%E6%A7%8B%E6%88%90%E3%81%AEapi%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/</link>
+      <pubDate>Mon, 13 Nov 2017 17:22:38 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-11-13_django%E3%81%A7%E9%A1%94%E8%AA%8D%E8%AD%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92json%E3%81%A7%E8%BF%94%E3%81%99%E6%9C%80%E5%B0%8F%E6%A7%8B%E6%88%90%E3%81%AEapi%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/</guid>
+      <description>DEMO githubでコードを公開してます。 hurutoriya/face_detector_api Djangoの勉強は、基本的なイントロダクションとしてオフィシャルサイトのドキュメントが充実している</description>
+    </item>
+    
+  </channel>
+</rss>

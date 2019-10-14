@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clustering on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/clustering/</link>
+    <description>Recent content in Clustering on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 13 Jan 2018 17:30:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FUSE: Full Spectral Clustering(KDD2016) を読んだ</title>
+      <link>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Sat, 13 Jan 2018 17:30:28 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案 べき乗法では近似固有ベクトル(Pseudo-eigenvecto</description>
+    </item>
+    
+    <item>
+      <title>“Learning Deep Representations for Graph Clustering (AAAI2014)” を読んだ</title>
+      <link>https://shunyaueta.com/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Sat, 23 Dec 2017 17:38:19 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>自己符号化器とSpectral Clusteingの関連性を示した論文 Paper link Author Fei Tian : http://home.ustc.edu.cn/~tianfei/ 中国科学技術大学Ph.D １年生 MSRAと共同研究、2014</description>
+    </item>
+    
+  </channel>
+</rss>

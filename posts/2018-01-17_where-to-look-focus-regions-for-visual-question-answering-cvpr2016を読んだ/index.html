@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ - Shunya UETA</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ" />
+<meta property="og:description" content="Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 link Summry を読んだので、軽くメモ。 VQA(Visual Question Answer) 画像に対する質問に対して応答するタスクに" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/" />
+
+<meta property="og:image" content="https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/images/1.png" />
+
+<meta property="og:image" content="https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/images/2.png" />
+<meta property="article:published_time" content="2018-01-17T05:41:44+00:00" />
+<meta property="article:modified_time" content="2019-06-16T18:17:50+09:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/images/1.png"/>
+
+<meta name="twitter:title" content="Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ"/>
+<meta name="twitter:description" content="Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 link Summry を読んだので、軽くメモ。 VQA(Visual Question Answer) 画像に対する質問に対して応答するタスクに"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><script src="/js/feather.min.js"></script><script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title">Shunya UETA</h1>
+	<div class="site-description"><h2>Software Engineer As Data Scientist</h2><nav class="nav social">
+			<ul class="flat"><a href="https://www.linkedin.com/in/hurutoriya/" title="Linkedin"><i data-feather="linkedin"></i></a><a href="https://github.com/hurutoriya" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hurutoriya" title="Twitter"><i data-feather="twitter"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ</h1>
+			<div class="meta">Posted at &mdash; Jan 17, 2018</div>
+		</div>
+
+		<div class="markdown">
+			
+
+<p>Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Shih_Where_to_Look_CVPR_2016_paper.pdf">link</a></p>
+
+<p><img src="/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016を読んだ/images/1.png" alt="image" /></p>
+
+<p>Summry</p>
+
+<p>を読んだので、軽くメモ。</p>
+
+<p>VQA(Visual Question Answer) 画像に対する質問に対して応答するタスクに対し、その質問クエリに対して画像のどの領域に注目すべきかのモデルの学習方法について論じた論文。</p>
+
+<h3 id="contribution">Contribution</h3>
+
+<ul>
+<li><a href="http://www.visualqa.org/">VQA dataset</a>に対して、提案手法を適用。従来手法を全て上回った。</li>
+<li>画像に対してCNNを用いて物体領域の検出を行った後にベクトル化、質問クエリは<code>word2vec</code>を用いてベクトル化を行う。</li>
+<li>その2つのベクトルを用いて内積計算により重み付けを行うことで、どの領域に注目すべきかを計算する。</li>
+</ul>
+
+<h3 id="comments">Comments</h3>
+
+<p>引用文献の訳9割が2014–2015(直近2年間)で発表された論文で、改めてこの分野の最先端を駆け抜けるのは凄まじい能力が必要になるなと思いました。<br />
+そして相変わらずCVPRの論文のネーミングセンスは良いですね。(ジャケ買いならぬジャケ読み)</p>
+
+<p>単純な質問なら、人間でも瞬間的に解答可能な物が多いなと感じた。</p>
+
+<p><img src="/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016を読んだ/images/2.png" alt="image" /></p>
+
+<p>fig. 1</p>
+
+<p>セマンティックな疑問(Fig.1 雨は降っていますか?)の場合、人間に注目した場合は傘をさしているから雨と判断しても良いがもっと広い範囲で画像を見てみると空は快晴なので人間に注目するのは筋が悪くVQAはとても難しくチャレンジングな問題だと書かれていた。(それでも充分すごい領域に到達しているなと思うが)</p>
+
+		</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'hurutoriya';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+</body>
+</html>

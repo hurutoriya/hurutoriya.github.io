@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/deep-learning/</link>
+    <description>Recent content in Deep Learning on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 23 Dec 2017 17:38:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>“Learning Deep Representations for Graph Clustering (AAAI2014)” を読んだ</title>
+      <link>https://shunyaueta.com/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Sat, 23 Dec 2017 17:38:19 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>自己符号化器とSpectral Clusteingの関連性を示した論文 Paper link Author Fei Tian : http://home.ustc.edu.cn/~tianfei/ 中国科学技術大学Ph.D １年生 MSRAと共同研究、2014</description>
+    </item>
+    
+    <item>
+      <title>OpenCV 3.3から使えるDNNモジュールを使って物体検出</title>
+      <link>https://shunyaueta.com/posts/2017-11-14_opencv-3.3%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%88%E3%82%8Bdnn%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</link>
+      <pubDate>Tue, 14 Nov 2017 11:36:43 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-11-14_opencv-3.3%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%88%E3%82%8Bdnn%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</guid>
+      <description>OpenCVとMobileNetを使って物体検出を行った Object Detection with OpenCV dnn modules and MobileNetSSD on Jupyter Notebook Introduction 物体検出をDeep LeaningとOpenCVを用いて行う OpenCV</description>
+    </item>
+    
+  </channel>
+</rss>

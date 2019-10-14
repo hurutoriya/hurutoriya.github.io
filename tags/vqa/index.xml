@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vqa on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/vqa/</link>
+    <description>Recent content in Vqa on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 17 Jan 2018 05:41:44 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/vqa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ</title>
+      <link>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Wed, 17 Jan 2018 05:41:44 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 link Summry を読んだので、軽くメモ。 VQA(Visual Question Answer) 画像に対する質問に対して応答するタスクに</description>
+    </item>
+    
+  </channel>
+</rss>

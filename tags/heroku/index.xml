@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heroku on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/heroku/</link>
+    <description>Recent content in Heroku on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 27 Dec 2017 08:12:17 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HerokuのDBにpgadmin4で接続してローカルにデータをダウンロードする</title>
+      <link>https://shunyaueta.com/posts/2017-12-27_heroku%E3%81%AEdb%E3%81%ABpgadmin4%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%97%E3%81%A6%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</link>
+      <pubDate>Wed, 27 Dec 2017 08:12:17 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-12-27_heroku%E3%81%AEdb%E3%81%ABpgadmin4%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%97%E3%81%A6%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</guid>
+      <description>pyadmin4でHeroku上のDBに接続する記事が日本語になかったので、メモ 接続前の準備 Herokuにログインして、対象のAppのDBの</description>
+    </item>
+    
+  </channel>
+</rss>

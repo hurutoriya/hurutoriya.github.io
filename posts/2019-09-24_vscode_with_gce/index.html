@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>How to connect the Google Compute Engine via Visual Studio Code - Shunya UETA</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="How to connect the Google Compute Engine via Visual Studio Code" />
+<meta property="og:description" content="1. Generate SSH config file using gcloud command line gcloud compute config-ssh https://cloud.google.com/sdk/gcloud/reference/compute/config-ssh
+You cant get ssh config for your Google Compute Engine project!
+Notice: you need choose target GCP project before run below command.
+gcloud config set project &lt;your-project-id&gt; 2. Install Remote SSH extention in Visual Studio Code.  https://code.visualstudio.com/blogs/2019/07/25/remote-ssh  3. Press ⇧⌘P &amp; Select target connection in Visual Studio Code!  Finaly you can connect in Visual Studio Code." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shunyaueta.com/posts/2019-09-24_vscode_with_gce/" />
+<meta property="article:published_time" content="2019-09-24T17:35:05+09:00" />
+<meta property="article:modified_time" content="2019-09-24T17:35:05+09:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to connect the Google Compute Engine via Visual Studio Code"/>
+<meta name="twitter:description" content="1. Generate SSH config file using gcloud command line gcloud compute config-ssh https://cloud.google.com/sdk/gcloud/reference/compute/config-ssh
+You cant get ssh config for your Google Compute Engine project!
+Notice: you need choose target GCP project before run below command.
+gcloud config set project &lt;your-project-id&gt; 2. Install Remote SSH extention in Visual Studio Code.  https://code.visualstudio.com/blogs/2019/07/25/remote-ssh  3. Press ⇧⌘P &amp; Select target connection in Visual Studio Code!  Finaly you can connect in Visual Studio Code."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><script src="/js/feather.min.js"></script><script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title">Shunya UETA</h1>
+	<div class="site-description"><h2>Software Engineer As Data Scientist</h2><nav class="nav social">
+			<ul class="flat"><a href="https://www.linkedin.com/in/hurutoriya/" title="Linkedin"><i data-feather="linkedin"></i></a><a href="https://github.com/hurutoriya" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hurutoriya" title="Twitter"><i data-feather="twitter"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">How to connect the Google Compute Engine via Visual Studio Code</h1>
+			<div class="meta">Posted at &mdash; Sep 24, 2019</div>
+		</div>
+
+		<div class="markdown">
+			
+
+<h2 id="1-generate-ssh-config-file-using-gcloud-command-line">1. Generate SSH config file using <code>gcloud</code> command line</h2>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">gcloud compute config-ssh</pre></div>
+<p><a href="https://cloud.google.com/sdk/gcloud/reference/compute/config-ssh">https://cloud.google.com/sdk/gcloud/reference/compute/config-ssh</a></p>
+
+<p>You cant get ssh config for your Google Compute Engine project!</p>
+
+<p>Notice: you need choose target GCP project before run below command.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">gcloud config set project &lt;your-project-id&gt;</pre></div>
+<h2 id="2-install-remote-ssh-extention-in-visual-studio-code">2. Install <code>Remote SSH</code> extention in Visual Studio Code.</h2>
+
+<ul>
+<li><a href="https://code.visualstudio.com/blogs/2019/07/25/remote-ssh">https://code.visualstudio.com/blogs/2019/07/25/remote-ssh</a></li>
+</ul>
+
+<h2 id="3-press-p-select-target-connection-in-visual-studio-code">3. Press <code>⇧⌘P</code> &amp; Select target connection in Visual Studio Code!</h2>
+
+<ul>
+<li>Finaly you can connect in Visual Studio Code. Welcome to VS code when you write the code in SSH connection.</li>
+</ul>
+
+		</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'hurutoriya';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+</body>
+</html>

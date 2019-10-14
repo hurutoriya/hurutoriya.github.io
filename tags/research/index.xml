@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Shunya UETA</title>
+    <link>https://shunyaueta.com/tags/research/</link>
+    <description>Recent content in Research on Shunya UETA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 17 Jan 2018 06:04:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://shunyaueta.com/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slicing Convolutional Neural Network for Crowd Video Understanding (CVPR2016)を読んだ</title>
+      <link>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Wed, 17 Jan 2018 06:04:37 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>群衆解析の手法に興味があるので、サーベイの結果を放流しておきます。 Jing Shao, Chen Change Loy, Kai Kang, and Xiaogang Wang, “Slicing Convolutional Neural Network for Crowd Video Understanding</description>
+    </item>
+    
+    <item>
+      <title>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ</title>
+      <link>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Wed, 17 Jan 2018 05:55:41 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ Mikel Rodriguez, Josef Sivic, Ivan Laptev, Jean-Yves Audibert, “Data-driven Crowd Analysis in Videos”, in ICCV2011. Project Page を読んだので、メモです。 Summary tl;dr 高密</description>
+    </item>
+    
+    <item>
+      <title>Call center stress recognition with person-specific models を読んだ</title>
+      <link>https://shunyaueta.com/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
+      <pubDate>Sat, 13 Jan 2018 17:19:48 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
+      <description>Affective Computing: 計算機と人間の感情や情緒の関係性を考える領域 MIT Media Lab Affective Computing Groupのプロジェクト。 2年前にMIT Media Labへ訪問した際に、色々と見せてもらっ</description>
+    </item>
+    
+    <item>
+      <title>NIPS2017 Note</title>
+      <link>https://shunyaueta.com/posts/2017-12-04_nips2017-note/</link>
+      <pubDate>Mon, 04 Dec 2017 12:45:10 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-12-04_nips2017-note/</guid>
+      <description> NIPS2017 accepted paper is open!
+NIPS 2017
+NIPS 2017
+I note interesting Research Paper, Workshop on NIPS2017.
+e.g. Machine Learning on the Phone and other Consumer Devices(Wow! NIPS is strong theoretical conference but Nowadays Machine Leaning used Industrial Field!)
+Accepted Papers  Deep Learning: Practice and Trends Reinforcement Learning with People Powering the next 100 years Do Deep Neural Networks Suffer from Crowding? PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space Hunt For The Unique, Stable, Sparse And Fast Feature Learning On Graphs Deep Subspace Clustering Networks Learning Graph Representations with Embedding Propagation Practical Hash Functions for Similarity Estimation and Dimensionality Reduction Improved Graph Laplacian via Geometric Self-Consistency Multitask Spectral Learning of Weighted Automata FALKON: An Optimal Large Scale Kernel Method Recursive Sampling for the Nystrom Method SafetyNets: Verifiable Execution of Deep Neural Networks on an Untrusted Cloud Semi-Supervised Learning for Optical Flow with Generative Adversarial Networks Pose Guided Person Image Generation Reconstruct &amp;amp; Crush Network Real Time Image Saliency for Black Box Classifiers Protein Interface Prediction using Graph Convolutional Networks A simple model of recognition and recall memory Cross-Spectral Factor Analysis Clone MCMC: Parallel High-Dimensional Gaussian Gibbs Sampling Nearest-Neighbor Sample Compression: Efficiency, Consistency, Infinite Dimensions From which world is your graph On clustering network-valued data K-Medoids For K-Means Seeding Clustering Billions of Reads for DNA Data Storage Eigen-Distortions of Hierarchical Representations Sparse Embedded k-Means Clustering A New Theory for Matrix Completion Deep Mean-Shift Priors for Image Restoration Learning Affinity via Spatial Propagation Networks Non-Stationary Spectral Kernels Hierarchical Clustering Beyond the Worst-Case CTRL-Labs: Non-invasive Neural Interface Deep Robotic Learning using Visual Imagination and Meta-Learning Sensomind: Democratizing deep learning for the food industry Deep Learning for Robotics Inverse Reward Design Online Learning with a Hint  Symposium &amp;amp; Workshop  Interpretable Machine Learning Transparent and interpretable Machine Learning in Safety Critical Environments Machine Learning for the Developing World ML Systems Workshop @ NIPS 2017 Machine Learning on the Phone and other Consumer Devices NIPS Highlights (MLTrain), Learn How to code a paper with state of the art frameworks 2017 NIPS Workshop on Machine Learning for Intelligent Transportation Systems Teaching Machines, Robots, and Humans  </description>
+    </item>
+    
+    <item>
+      <title>KDD2017 ピックアップ</title>
+      <link>https://shunyaueta.com/posts/2017-10-25_kdd2017-%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</link>
+      <pubDate>Wed, 25 Oct 2017 11:52:09 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-10-25_kdd2017-%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</guid>
+      <description>KDD2017 開催されてから時間が経ってしまいましたが、データマイニングのトップ国際会議のKDD2017で面白そうなものをピックアップしました。 Movie KDD</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Companies Tech Blog</title>
+      <link>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</link>
+      <pubDate>Wed, 25 Oct 2017 11:32:31 +0000</pubDate>
+      
+      <guid>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</guid>
+      <description>Machine Leaning Blog
+We collect a Machine Learning companies Tech Blog lists based on Sponsor of Google Scholar Top Publications list
+ https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_artificialintelligence https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_computervisionpatternrecognition https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_datamininganalysis  Machine Leaning &amp;amp; Computer Vision &amp;amp; Data Mining Top Conference Our Sponsors -
+ICML 2017 Sponsors
+NIPS 2017 Sponsors
+KDD 2017 | Sponsors and Sponsorship Opportunities
+AAAI-17: Thirty-First AAAI Conference on Artificial Intelligence
+CVPR2017
+ICCV 2017
+Machine Learning Company’s Tech Blog Alibaba
+https://cloudfocus.alibabacloud.com/?spm=a2c1b.detail207110.a2c1b31.22.1d234c96CMbTQt&amp;amp;tag_id=16493</description>
+    </item>
+    
+  </channel>
+</rss>
