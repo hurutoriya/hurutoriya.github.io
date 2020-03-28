@@ -1,62 +1,27 @@
 baseURL = "https://shunyaueta.com/"
-DefaultContentLanguage = "ja"
-languageCode = "ja"
-hasCJKLanguage = true
-
-googleAnalytics = "UA-39994406-11"
-disqusShortname = "hurutoriya"
-
-# Enable syntax highlighting.
-pygmentsstyle = "vs"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-
 title = "Shunya UETA"
-theme = "ezhil"
+theme ="hugo-theme-basic"
+languageCode = "ja"
+googleAnalytics = "UA-39994406-11"
+enableEmoji = true 
+copyright = "© 2016-20  <a href='https://twitter.com/hurutoriya'>@hurutoriya</a>."
+description = "Shunya UETA, a Software Engineer Machine Learning at Mercari, inc."
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
 
 [params]
-	subtitle = "Software Engineer As Data Scientist"
-  author = "hurutoriya"
-  description = "Shunya UETA, a Software Engineer Machine Learning at Mercari, inc."
+  titleEmoji = ":tada:"
+  twitter = "hurutoriya"
 
-# Main menu which appears below site header.
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+[Permalinks]
+  post = "posts/:slug"
 
-[[menu.main]]
-name = "All posts"
-url = "/posts"
-weight = 2
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 4
-
-[[params.social]]
-name = "Linkedin"
-icon = "linkedin"
-url = "https://www.linkedin.com/in/hurutoriya/"
-
-[[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/hurutoriya"
-
-[[params.social]]
-name = "Twitter"
-icon = "twitter"
-url = "https://twitter.com/hurutoriya"
-
-[[params.social]]
-name = "RSS"
-icon = "rss"
-url = "/index.xml"
+[[params.menu]]
+  name = "about"
+  url = "about/"
+[[params.menu]]
+  name = "blog"
+  url = "posts/"
