@@ -25,3 +25,6 @@ description = "Shunya UETA, a Software Engineer Machine Learning at Mercari, inc
 [[params.menu]]
   name = "blog"
   url = "posts/"
+[[params.menu]]
+  name = "tags"
+  url = "tags/"
