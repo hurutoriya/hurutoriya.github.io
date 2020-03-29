@@ -5,7 +5,6 @@ title = "Software Engineer as Data Scientist"
 
 theme = "minimo"
 
-disqusShortname = "hurutoriya"
 googleAnalytics = "UA-39994406-11"
 
 Paginate = 10
@@ -83,13 +82,13 @@ facebook = "shunyaueta"
 enable = true
 
 # Utterances: https://utteranc.es
-# [params.comments.utterances]
-# enable = false
-# issueTerm = "pathname" # pathname / url / title
+[params.comments.utterances]
+enable = true
+issueTerm = "url" # pathname / url / title
 
-# [params.comments.utterances.github]
-# username = "MunifTanjim"
-# repository = "minimo"
+[params.comments.utterances.github]
+username = "hurutoriya"
+repository = "hurutoriya.github.io"
 
 [taxonomies]
 # author = "authors"
@@ -99,13 +98,6 @@ tag = "tags"
 
 [permalinks]
 page = "/:slug/"
-
-[[menu.main]]
-    identifier = "about"
-    name = "About"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/about/"
-    weight = -110
 
 [blackfriday]
 hrefTargetBlank = true
