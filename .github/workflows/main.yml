@@ -1,4 +1,4 @@
-name: build hugo for github pages
+name: github page
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.64.0"
+          hugo-version: "0.67.1"
 
       - name: Build
         run: HUGO_ENV=production hugo --minify
@@ -24,6 +24,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.TOKEN }}
+          deploy_key: ${{ secrets.PERSONAL_TOKEN }}
           publish_branch: master # deploying branch
           publish_dir: ./public
