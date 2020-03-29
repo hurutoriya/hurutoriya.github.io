@@ -1,24 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>hugo on Shunya UETA</title>
-    <link>https://shunyaueta.com/tags/hugo/</link>
-    <description>Recent content in hugo on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 16 Jun 2019 23:09:18 +0900</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Hugo Tips</title>
-      <link>https://shunyaueta.com/posts/2019-06-16_hugotips/</link>
-      <pubDate>Sun, 16 Jun 2019 23:09:18 +0900</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-06-16_hugotips/</guid>
-      <description>Hugo 0.32から page bundleが使用可能に この機能で画像ファイルを以下のファイル構成で構築できる - hoge/ - index.md - hoge.png これにより、markdownとアセ</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on Shunya UETA</title><link>https://shunyaueta.com/tags/hugo/</link><description>Recent content in hugo on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Sun, 16 Jun 2019 23:09:18 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Tips</title><link>https://shunyaueta.com/posts/2019-06-16_hugotips/</link><pubDate>Sun, 16 Jun 2019 23:09:18 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-06-16_hugotips/</guid><description> Hugo 0.32から page bundleが使用可能に この機能で画像ファイルを以下のファイル構成で構築できる - hoge/ - index.md - hoge.png これにより、markdownとアセットファイルが同一ディレクトリ内に収まるのでアセットファイルの管理が簡単になる
+hugo new で特定のエディタを開くには? hugo new posts/hoge.md --editor=&amp;#34;code&amp;#34; pange bundl作成時にディレクトリ名に日付を含める hugo new posts/$(date &amp;#39;+%Y&amp;#39;)-$(date &amp;#39;+%m&amp;#39;)-$(date &amp;#39;+%d&amp;#39;)_title/index.md pageをビルドして結果を確認する hugo server</description></item></channel></rss>

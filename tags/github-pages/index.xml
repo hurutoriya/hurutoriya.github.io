@@ -1,24 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Github Pages on Shunya UETA</title>
-    <link>https://shunyaueta.com/tags/github-pages/</link>
-    <description>Recent content in Github Pages on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Tue, 09 Jan 2018 18:59:59 +0000</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>サイトのPWA化、ホスティングをGithub PagesからFirebaseへ移行</title>
-      <link>https://shunyaueta.com/posts/2018-01-09_%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AEpwa%E5%8C%96%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92github-pages%E3%81%8B%E3%82%89firebase%E3%81%B8%E7%A7%BB%E8%A1%8C/</link>
-      <pubDate>Tue, 09 Jan 2018 18:59:59 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-09_%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AEpwa%E5%8C%96%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92github-pages%E3%81%8B%E3%82%89firebase%E3%81%B8%E7%A7%BB%E8%A1%8C/</guid>
-      <description>PWAとFireBaseを試してみたかった firebase init で現れる画面、テンション上がる Github Pages + CloudFlareで独自ドメインの shunyaueta.com をホスティングしてた</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github Pages on Shunya UETA</title><link>https://shunyaueta.com/tags/github-pages/</link><description>Recent content in Github Pages on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Tue, 09 Jan 2018 18:59:59 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/github-pages/index.xml" rel="self" type="application/rss+xml"/><item><title>サイトのPWA化、ホスティングをGithub PagesからFirebaseへ移行</title><link>https://shunyaueta.com/posts/2018-01-09_%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AEpwa%E5%8C%96%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92github-pages%E3%81%8B%E3%82%89firebase%E3%81%B8%E7%A7%BB%E8%A1%8C/</link><pubDate>Tue, 09 Jan 2018 18:59:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-09_%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AEpwa%E5%8C%96%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92github-pages%E3%81%8B%E3%82%89firebase%E3%81%B8%E7%A7%BB%E8%A1%8C/</guid><description>PWA と FireBase を試してみたかった
+firebase init で現れる画面、テンション上がる
+Github Pages + CloudFlare で独自ドメインの shunyaueta.com をホスティングしてたんですが、Firebase でホスティングできると聞いて Firebase に移行しました。
+PWA にしたのは完全に趣味です。
+TL;DR; Web App を作ってる人は manifest.json を設置するだけでも Android の使用感が改善されそう 独自ドメインでお手軽に SSL ホスティングしたいなら Firebase hosting めっちゃおすすめです(1GB のホスティングは無料) FireBase Hosting だけだと Firebase 本来の旨味は味わえません PWA 1 年前ですが、簡潔に PWA の事が書かれています
+プログレッシブウェブアプリ詳解 ─ 過去・現在・未来
+左: PWA 化以前 右: PWA 化以降
+ServiceWorker と manifest.json,あとは&amp;lt;meta name=”theme-color”&amp;gt;を指定すると PWA のスコアが 100 点になる 🎉
+manihest.json によるホームアイコン作成誘導
+Favicon の各画像の生成は下記のサイトが便利でした。要求される解像度毎の画像(Favicon,Home icon, Apple home icon)が生成されて mahifest.</description></item></channel></rss>

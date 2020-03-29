@@ -1,24 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Mercari on Shunya UETA</title>
-    <link>https://shunyaueta.com/tags/mercari/</link>
-    <description>Recent content in Mercari on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Tue, 13 Feb 2018 15:35:48 +0000</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/tags/mercari/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title>
-      <link>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</link>
-      <pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</guid>
-      <description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい 発表者の顔は</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mercari on Shunya UETA</title><link>https://shunyaueta.com/tags/mercari/</link><description>Recent content in Mercari on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Tue, 13 Feb 2018 15:35:48 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/mercari/index.xml" rel="self" type="application/rss+xml"/><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
+発表者の顔は隠しています。なにか問題があればお伝え下さい。
+Team AI Meetup #1 (2018/02/13 19:00〜)
+Twitter: #mercari_ai
+山口さん Image Net とmercariの持ってるデータセットは似てるのでいけるのでは! ルカリはクラス数 over 1100 始期の推定値 Top5 29.3% エラー例 :画像からサイズを推定しないと男女のシューズを区別不可(人間でも不可能なエラー例が多い) 意外と認識がうまくいく事例がかなりある(クラス設計の影響で推定が上手く出来ていないらしい) データセットはユーザーが作成してるので最高、画像が正方形なのもGood 学習はGPU,推論はCPU環境下で行っている 画像検索自体はプロトタイプは出来ているが、実運用は計算量やリアルタイム性を担保するのが難しいので一旦保留中 大筋は以下の記事と資料で把握できます。k8sで運用しているなどの実運用の構成が今回の発表では差分として語られていました。
+画像での商品検索に向けて - Mercari Engineering Blog
+【Mercari Summer Internship】商品画像の色推定を行いました! - Mercari Engineering Blog
+工藤さん 運用を継続すると色んな問題が出てきたので、それを解決する基盤環境を作成しはじめた e.g. 学習データのバージョン管理、モデルのデプロイ, etc 最終的にはOSSとしての公開も考えているとのこと メルカリの今年1年間の機械学習の取り組みとこれから - Mercari Engineering Blog
+[ML Ops Study (仮) #1] (http://rindai87.hatenablog.jp/entry/2018/01/04/005931)の発表内容も今回の機械学習の運用周りのTipsが共有されているので興味のある方はオススメです
+機械学習基盤といえば、最近PolyaxonというOSSが公開されてました。
+Polyaxon
+Q.A.セッション Q. 論文などは参考にされますか？
+A. ある程度枯れた手法をメインに実装している</description></item></channel></rss>

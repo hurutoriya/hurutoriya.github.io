@@ -1,24 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Thinking on Shunya UETA</title>
-    <link>https://shunyaueta.com/tags/thinking/</link>
-    <description>Recent content in Thinking on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Fri, 01 Dec 2017 07:55:12 +0000</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/tags/thinking/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Machine Learning that Matters (ICML2012) を読んだ</title>
-      <link>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Fri, 01 Dec 2017 07:55:12 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>機械学習の研究してる人は全員読んだ方がいい。そう断言できるぐらい良い内容が書かれています。 ICML2012で発表された最近の機械学習に関する</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thinking on Shunya UETA</title><link>https://shunyaueta.com/tags/thinking/</link><description>Recent content in Thinking on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Fri, 01 Dec 2017 07:55:12 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/thinking/index.xml" rel="self" type="application/rss+xml"/><item><title>Machine Learning that Matters (ICML2012) を読んだ</title><link>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Fri, 01 Dec 2017 07:55:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>機械学習の研究してる人は全員読んだ方がいい。そう断言できるぐらい良い内容が書かれています。 ICML2012で発表された最近の機械学習に関する研究の問題点を論じた論文。
+Summaly
+「あなたは現実世界で役立つデータに対して機械学習の研究を行っていますか?」
+著者はNASAのJPL(ジェット推進研究所)、カリフォルニア工科大学に所属するKiri L.
+Kiri L. Wagstaff
+発表動画を探してみたんですが、ICML2012で発表した際のビデオはサーバのクラッシュにより喪失したとのこと。
+The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPointは下記リンク先に配布されています。http://www.wkiri.com/research/papers/wagstaff-MLmatters-slides-AAAI.pptx
+時間のある人は是非原著論文を呼んでみてください!
+概要 最近の機械学習は問題を社会・科学世界から持ち込むための深刻なギャップがある。 データセットに明確な制約をかけた物を私達は調査し、それを評価指標のために利用する。 データセットがある問題領域に戻って考えよう。 機械学習が持つインパクト(影響)を増加するためは私達の研究で何を変えればいいだろう？ 我々は機械学習の問題について焦点と議論を交わす。</description></item></channel></rss>

@@ -1,449 +1,432 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Shunya UETA</title>
-    <link>https://shunyaueta.com/posts/</link>
-    <description>Recent content in Posts on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Thu, 03 Oct 2019 23:52:54 +0900</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>遅すぎる pandas.read_gbq を使わずに、Google BigQueryから巨大なデータをダウンロードする</title>
-      <link>https://shunyaueta.com/posts/2019-10-03_how_to_download_learge_data_from_google_bq/</link>
-      <pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-10-03_how_to_download_learge_data_from_google_bq/</guid>
-      <description>pandas.read_gbq 便利ですよね。 クレデンシャルファイルを認証画面からコピペすればJupyter上でさっと動き、Google Big Queryが実行されてその結果が</description>
-    </item>
-    
-    <item>
-      <title>Tensorboard を わずか2行で Jupyter Notebook上で表示</title>
-      <link>https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/</link>
-      <pubDate>Tue, 24 Sep 2019 23:16:07 +0900</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/</guid>
-      <description>Pytorch 1.2からは公式にTensorboardがサポートされている Tensorboard とは、学習の状況を可視化できるTensorFlow Family の一種 Jupyte Notebook</description>
-    </item>
-    
-    <item>
-      <title>How to connect the Google Compute Engine via Visual Studio Code</title>
-      <link>https://shunyaueta.com/posts/2019-09-24_vscode_with_gce/</link>
-      <pubDate>Tue, 24 Sep 2019 17:35:05 +0900</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-09-24_vscode_with_gce/</guid>
-      <description>1. Generate SSH config file using gcloud command line gcloud compute config-ssh https://cloud.google.com/sdk/gcloud/reference/compute/config-ssh
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Shunya UETA</title><link>https://shunyaueta.com/posts/</link><description>Recent content in Posts on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Thu, 03 Oct 2019 23:52:54 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>遅すぎる pandas.read_gbq を使わずに、Google BigQueryから巨大なデータをダウンロードする</title><link>https://shunyaueta.com/posts/2019-10-03_how_to_download_learge_data_from_google_bq/</link><pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-10-03_how_to_download_learge_data_from_google_bq/</guid><description>pandas.read_gbq 便利ですよね。 クレデンシャルファイルを認証画面からコピペすれば Jupyter 上でさっと動き、Google Big Query が実行されてその結果がそのままデータフレームとして扱えます。 Jupyter と Google BQ を連携させたいときはいつも使っています
+問題点 そこそこ大きなデータを持ってこようとするとめちゃくちゃ遅くてストレスが半端ない 解決方法として、Google Big Query で巨大なデータをダウンロードする方法について書く
+実は Google の公式ドキュメントでも記載されている。
+https://cloud.google.com/bigquery/docs/pandas-gbq-migration https://cloud.google.com/bigquery/docs/bigquery-storage-python-pandas 方法は以下の２つ。
+google-cloud-bigquery をインストールして、マジックコマンドで Google BQ を実行 BQ 実行 →BigQuery table として保存 →GCS へ保存 → gsutil でマシンへコピー 1 番目は、Jupyter 上でマジックコマンドで Google BQ が実行できて、速度も pandas.rad_gbq よりも高速です 2 番目はそもそも実行結果が巨大な場合で、目安としては1GB以上なら 2 番目の方法を使えば楽です。
+1, google-cloud-bigquery をインストールして、マジックコマンドで Google BQ を実行 pip install --upgrade google-cloud-bigquery[bqstorage,pandas] magic command を実行</description></item><item><title>Tensorboard を わずか2行で Jupyter Notebook上で表示</title><link>https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/</link><pubDate>Tue, 24 Sep 2019 23:16:07 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/</guid><description>Pytorch 1.2からは公式にTensorboardがサポートされている
+Tensorboard とは、学習の状況を可視化できるTensorFlow Family の一種
+Jupyte Notebook上で学習状況を確認したい場合に Tensorboardをそのまま表示して確認できれば楽なので、試してみる
+sample code: https://pytorch.org/docs/stable/tensorboard.html
+import torch import torchvision from torch.utils.tensorboard import SummaryWriter from torchvision import datasets, transforms # Writer will output to ./runs/ directory by default writer = SummaryWriter() transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))]) trainset = datasets.MNIST(&amp;#39;mnist_train&amp;#39;, train=True, download=True, transform=transform) trainloader = torch.utils.data.DataLoader(trainset, batch_size=64, shuffle=True) model = torchvision.models.resnet50(False) # Have ResNet model take in grayscale rather than RGB model.conv1 = torch.nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False) images, labels = next(iter(trainloader)) grid = torchvision.</description></item><item><title>How to connect the Google Compute Engine via Visual Studio Code</title><link>https://shunyaueta.com/posts/2019-09-24_vscode_with_gce/</link><pubDate>Tue, 24 Sep 2019 17:35:05 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-09-24_vscode_with_gce/</guid><description>1. Generate SSH config file using gcloud command line gcloud compute config-ssh https://cloud.google.com/sdk/gcloud/reference/compute/config-ssh
 You cant get ssh config for your Google Compute Engine project!
 Notice: you need choose target GCP project before run below command.
-gcloud config set project &amp;lt;your-project-id&amp;gt; 2. Install Remote SSH extention in Visual Studio Code.  https://code.visualstudio.com/blogs/2019/07/25/remote-ssh  3. Press ⇧⌘P &amp;amp; Select target connection in Visual Studio Code!  Finaly you can connect in Visual Studio Code.</description>
-    </item>
-    
-    <item>
-      <title>[書評]ビジネスでインパクトが出せるデータサイエンティストになるには</title>
-      <link>https://shunyaueta.com/posts/2019-09-23_how_to_become_great_ds/</link>
-      <pubDate>Mon, 23 Sep 2019 18:48:47 +0900</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-09-23_how_to_become_great_ds/</guid>
-      <description>@pseudo_finite さんから 「ビジネスでインパクトが出せるデータサイエンティストになるためには」 をご恵贈していただいたので、感想をここに記します。 経営システム</description>
-    </item>
-    
-    <item>
-      <title>How to concat image using skimage</title>
-      <link>https://shunyaueta.com/posts/2019-06-17_concatimage_with_skimage/</link>
-      <pubDate>Mon, 17 Jun 2019 00:07:33 +0900</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-06-17_concatimage_with_skimage/</guid>
-      <description>When you need to concat same size image to make figure.
+gcloud config set project &amp;lt;your-project-id&amp;gt; 2. Install Remote SSH extention in Visual Studio Code. https://code.visualstudio.com/blogs/2019/07/25/remote-ssh 3. Press ⇧⌘P &amp;amp; Select target connection in Visual Studio Code! Finaly you can connect in Visual Studio Code.</description></item><item><title>[書評]ビジネスでインパクトが出せるデータサイエンティストになるには</title><link>https://shunyaueta.com/posts/2019-09-23_how_to_become_great_ds/</link><pubDate>Mon, 23 Sep 2019 18:48:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-09-23_how_to_become_great_ds/</guid><description>@pseudo_finite さんから
+「ビジネスでインパクトが出せるデータサイエンティストになるためには」
+をご恵贈していただいたので、感想をここに記します。
+批評 1. データサイエンティストが力を発揮する場 データサイエンティストとして成果を発揮するには、事業ドメイン・そしてデータの規模と質に依存する
+圧倒的に同意です。自分も現職に就職する際には、データ規模・質・種類や社内のデータに関する文化などを考慮して会社を選びました。 最後の一文も完全に同意で、良いデータさえあれば基本的に問題は解きやすく簡単になると思っています。
+2. 課題設定 データサイエンティストの仕事の肝は適切な課題設定
+本質的な課題設定とはそもそもなんなのかと考えてみます。
+ここで、本質的な課題設定を解明するための大きな障壁になるのは、
+自社が事業会社か ドッグフーディングできるサービスを運営しているか どうかではないでしょうか?
+日常的に自社のサービスを使っていると、顧客視点での改善点や課題点などを見つけることができる。 また、サービスをより深く知ることで深い考察や客観的な観察をすることができる。 スタートアップ界隈では浸透している リーンスタートアップの考え方は、本質的な課題の発見に非常に相性が良いと思っています。
+また、データ分析では、単なる集計や相関ではなく、顧客がどんな状況で何をしたいのかを考えてユーザーリサーチをすることも非常に重要です。 ジョブ理論 イノベーションを予測可能にする消費のメカニズム で語られているトピックですが、非常に勉強になります。
+3. 解決方法の設定 自然なモデリングと実現可能性のあるモデリング
+自分はデータサイエンティストではなく、機械学習エンジニアとして働いているので、その立場からの視点です。 実感するのはまず何よりも実装力が大事だと思います。
+実装ができるからこそ、実験ができる。その実験から知見を得て改善のサイクルが回り始める。
+関連する暦本先生のtweetが面白かったので、ご参考まで
+4. 検証 施策実行後の検証は必須
+個人的には自分が最も重要だと思う点はここである。 確かに施策が成功したら、燃え尽きたくなる気持ちはわかるが、なぜ成功したのかを解明して再現性を担保しなければ知見としてストックされない。 そして知見の溜め込みの速さ・多さこそがビジネスとしての優位性につながるのではないのだろうか? これこそ、まさに科学的思考の本幹ですね。
+5. 育成 データサイエンティストの育成は非常に難しい
+育成の点は、自分も最近考えていたことですが、
+例えば研究室のセミナーや論文の赤入れなどで議論をしたからこそ科学的思考方法が身についたのか? を考えていました。
+僕の結論では、 強い相関はあれど研究室での議論により全員が身科学的思考方法を会得するのは難しいのではないかと思っています。 (もちろん全員が身につけることこそ、研究室の本懐だと思います)
+Software Enginnering やアカデミアの世界では、レビュー文化を体験してあくまで内容に関する批判であり、 フィードバックを受け入れて改善する姿勢を身に着けていることも大事だなと最近感じています。
+Team Geek ―Googleのギークたちはいかにしてチームを作るのか の書籍で語られるHRTの精神ですね。</description></item><item><title>How to concat image using skimage</title><link>https://shunyaueta.com/posts/2019-06-17_concatimage_with_skimage/</link><pubDate>Mon, 17 Jun 2019 00:07:33 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-06-17_concatimage_with_skimage/</guid><description>When you need to concat same size image to make figure.
 skimage &amp;amp; numpy combination is too powerfull to concat images.
 This is sample script.
 from skimage import data, io import numpy as np img = skimage.data.astronaut() imgs= [img for i in range(10)] skimage.io.imsave(&amp;#34;sample_h.png&amp;#34;,np.hstack(imgs)) skimage.io.imsave(&amp;#34;sample_v.png&amp;#34;,np.vstack(imgs)) After that you can get below images.
-    Via Gist: https://gist.github.com/hurutoriya/fedf059ad3db5c67b16d8d5dd6d3df70</description>
-    </item>
-    
-    <item>
-      <title>Hugo Tips</title>
-      <link>https://shunyaueta.com/posts/2019-06-16_hugotips/</link>
-      <pubDate>Sun, 16 Jun 2019 23:09:18 +0900</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-06-16_hugotips/</guid>
-      <description>Hugo 0.32から page bundleが使用可能に この機能で画像ファイルを以下のファイル構成で構築できる - hoge/ - index.md - hoge.png これにより、markdownとアセ</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Casual Talks #10 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2019-06-16_mlct10/</link>
-      <pubDate>Sun, 16 Jun 2019 22:01:27 +0900</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-06-16_mlct10/</guid>
-      <description>MLCT #10 を開催しました。 Machine Learning Casual Talks とは 実サービスにおける機械学習の経験をカジュアルに語り合おう を目的としたコミュニティです。 スポンサー 前回と同じく</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Casual Talks #8 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2019-02-02_machine-learning-casual-talks-sharp8-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link>
-      <pubDate>Sat, 02 Feb 2019 18:41:32 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-02-02_machine-learning-casual-talks-sharp8-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid>
-      <description>Machine Learning Casual Talks 第8回の開催を無事終えました MLCT とは 実サービスにおける機械学習の経験をカジュアルに語り合う コミュニティです スポンサー 今回も同じく本イベ</description>
-    </item>
-    
-    <item>
-      <title>2017, 2018年振り返り</title>
-      <link>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</link>
-      <pubDate>Thu, 03 Jan 2019 16:26:59 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</guid>
-      <description>ここ2年間の活動を振り返ってみた これはポーランド出張で発見した角が折れかけてるユニコーンです 🐴 2017年 修士時代はメインの大学の研究室以外で</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Casual Talks #7 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link>
-      <pubDate>Sat, 15 Dec 2018 19:29:59 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid>
-      <description>Machine Learning Casual Talks 第七回を無事開催しました Machine Learning Casual Talks #7 (2018/11/20 18:30〜) MLCT とは 実サービスにおける機械学習の経験をカジュアルに語り合おう というコミュニティで</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Casual Talks #6 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link>
-      <pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid>
-      <description>機械学習の信頼性が熱いよねというお話 柚餅子 さんの発表風景 2018/09/25 のMLCT #6 を開催しました。 MLCT とは 実務における機械学習の話や経験をカジュアルに語り</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Casual Talks #5 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link>
-      <pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid>
-      <description>2018/07/13 にMLCT #5を開催してきたお話 Opening Talk by Aki Ariga Machine Learning Casual Talks #5 (2018/07/13 19:30〜) 本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け</description>
-    </item>
-    
-    <item>
-      <title>イベント運営に便利なsli.do の使いこなしかた</title>
-      <link>https://shunyaueta.com/posts/2018-06-17_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%81%8B%E5%96%B6%E3%81%AB%E4%BE%BF%E5%88%A9%E3%81%AAsli.do-%E3%81%AE%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%8B%E3%81%9F/</link>
-      <pubDate>Sun, 17 Jun 2018 15:03:27 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-06-17_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%81%8B%E5%96%B6%E3%81%AB%E4%BE%BF%E5%88%A9%E3%81%AAsli.do-%E3%81%AE%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%8B%E3%81%9F/</guid>
-      <description>イベント運営者必見 sli.do の使い方 sli.do のディスプレイ画面 sli.doという便利な質問投稿・回答サービスがあります。このサービスですが、イベント運営者</description>
-    </item>
-    
-    <item>
-      <title>[抄訳] Data engineers vs. data scientists</title>
-      <link>https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/</link>
-      <pubDate>Tue, 24 Apr 2018 02:18:46 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/</guid>
-      <description>データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア 紹介記事 Data engineers vs. data scientists 紹介記事を</description>
-    </item>
-    
-    <item>
-      <title>Google Colaboratory で Mecab-ipadic-Neologd を使うまで</title>
-      <link>https://shunyaueta.com/posts/2018-04-23_google-colaboratory-%E3%81%A7-mecabipadicneologd-%E3%82%92%E4%BD%BF%E3%81%86%E3%81%BE%E3%81%A7/</link>
-      <pubDate>Mon, 23 Apr 2018 15:38:10 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-04-23_google-colaboratory-%E3%81%A7-mecabipadicneologd-%E3%82%92%E4%BD%BF%E3%81%86%E3%81%BE%E3%81%A7/</guid>
-      <description>Colab上で 日本語のNLPをしたいときありませんか？ Success Code Google Colabratory https://colab.research.google.com/drive/1YK8XFnfD29775lEYWhwz3wh4h8boR9iE</description>
-    </item>
-    
-    <item>
-      <title>eBayのAR測定機能を試してみた</title>
-      <link>https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
-      <pubDate>Mon, 16 Apr 2018 14:57:41 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
-      <description>eBayが ARCoreを使った商品の梱包測定機能を提供しているので試した 梱包測定の仕組みとしては、ARCore(今回は Pixel2 XLで試した)で平面</description>
-    </item>
-    
-    <item>
-      <title>Google, Facebookが提供する機械学習基盤まとめ</title>
-      <link>https://shunyaueta.com/posts/2018-04-09_google-facebook%E3%81%8C%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%9F%BA%E7%9B%A4%E3%81%BE%E3%81%A8%E3%82%81/</link>
-      <pubDate>Mon, 09 Apr 2018 13:55:44 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-04-09_google-facebook%E3%81%8C%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%9F%BA%E7%9B%A4%E3%81%BE%E3%81%A8%E3%82%81/</guid>
-      <description>Google, Facebookの機械学習基盤情報をまとめました TFX 社内の勉強会でGoogle, Facebookが提供する機械学習基盤に関する論文を紹介した</description>
-    </item>
-    
-    <item>
-      <title>Courseraの”Machine Learning”を修了した</title>
-      <link>https://shunyaueta.com/posts/2018-03-25_coursera%E3%81%AEmachine-learning%E3%82%92%E4%BF%AE%E4%BA%86%E3%81%97%E3%81%9F/</link>
-      <pubDate>Sun, 25 Mar 2018 15:36:18 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-03-25_coursera%E3%81%AEmachine-learning%E3%82%92%E4%BF%AE%E4%BA%86%E3%81%97%E3%81%9F/</guid>
-      <description>Andrew Ng先生の MLコースを修了した 🎉 Certificate 機械学習界隈だとスタンダード過ぎて、「え、Ng先生の講義を今更受講したの?遅くない?」と言われそうですが</description>
-    </item>
-    
-    <item>
-      <title>How to install faiss</title>
-      <link>https://shunyaueta.com/posts/2018-02-27_how-to-install-faiss/</link>
-      <pubDate>Tue, 27 Feb 2018 05:50:27 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-02-27_how-to-install-faiss/</guid>
-      <description>faiss : Billion-scale similarity search with GPUs
+Via Gist: https://gist.github.com/hurutoriya/fedf059ad3db5c67b16d8d5dd6d3df70</description></item><item><title>Hugo Tips</title><link>https://shunyaueta.com/posts/2019-06-16_hugotips/</link><pubDate>Sun, 16 Jun 2019 23:09:18 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-06-16_hugotips/</guid><description> Hugo 0.32から page bundleが使用可能に この機能で画像ファイルを以下のファイル構成で構築できる - hoge/ - index.md - hoge.png これにより、markdownとアセットファイルが同一ディレクトリ内に収まるのでアセットファイルの管理が簡単になる
+hugo new で特定のエディタを開くには? hugo new posts/hoge.md --editor=&amp;#34;code&amp;#34; pange bundl作成時にディレクトリ名に日付を含める hugo new posts/$(date &amp;#39;+%Y&amp;#39;)-$(date &amp;#39;+%m&amp;#39;)-$(date &amp;#39;+%d&amp;#39;)_title/index.md pageをビルドして結果を確認する hugo server</description></item><item><title>Machine Learning Casual Talks #10 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2019-06-16_mlct10/</link><pubDate>Sun, 16 Jun 2019 22:01:27 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-06-16_mlct10/</guid><description>MLCT #10 を開催しました。
+Machine Learning Casual Talks とは
+実サービスにおける機械学習の経験をカジュアルに語り合おう
+を目的としたコミュニティです。
+スポンサー 前回と同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会の提供を受け開催することができました。 スポンサー依頼を快諾いただきありがとうございました!
+配信動画はこちら!
+Sli.do がパネルディスカッションでめっちゃ便利な件 今回は、パネルディスカッションで sli.do をスクリーンにフルスクリーンで表示してモデレーションを行いました。
+手元のスマートフォンで質問をハイライトして、回答を終えたものはアーカイブという運用でしたが、とても快適なのでみなさんぜひお試しください。 スクリーンでの表示画面がSPAで同期されているので、手元のスマートフォンで更新すればリアルタイムで同期されるのがとても便利です。</description></item><item><title>Machine Learning Casual Talks #8 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2019-02-02_machine-learning-casual-talks-sharp8-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sat, 02 Feb 2019 18:41:32 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-02-02_machine-learning-casual-talks-sharp8-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>Machine Learning Casual Talks 第8回の開催を無事終えました
+MLCT とは
+実サービスにおける機械学習の経験をカジュアルに語り合う
+コミュニティです
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました!
+Machine Learning Casual Talks #8 (2019/01/28 18:30〜)
+当日の配信動画はこちら
+当日の発表資料はすべてこちらにあります
+Machine Learning Casual Talks #8 - 資料一覧 - connpass
+エムスリー 西場さん
+BEDORE すみのさん
+TL;DR; エムスリーの西場さん、すべてをこなす toBの機械学習サービス、システムアーキテクチャデザインかなり考えないとキツイ 懇親会での🍣の需給予測失敗しかけた 次回挑戦したいこと 今回会場撤収時に有志の参加者、登壇者の方が撤収作業を手伝っていただき非常に助かりました。次回は有志で会場撤収ボランティアの参加枠を作ろうかなと思いました。運営コストを下げるのは、継続で一番大事だなと思っているので、お手伝いいただいた皆様ありがとうございました。助かるという感情が出てくる前に、素直にめちゃくちゃ嬉しかったです!
+参加率も 8割を超えていて欠席率が非常に少なかったのも継続していきたい</description></item><item><title>2017, 2018年振り返り</title><link>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</link><pubDate>Thu, 03 Jan 2019 16:26:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</guid><description>ここ2年間の活動を振り返ってみた
+これはポーランド出張で発見した角が折れかけてるユニコーンです 🐴
+2017年 修士時代はメインの大学の研究室以外で、産総研RAやcvpaper.challangeの経験は今の業務に活きていて、RAの機会を創出してくれた @tsujimotter さんにめちゃくちゃ感謝しています
+情報科学若手の会で知り合った縁が活きてきて、何があるかわからんなと思った
+RA同期はMIRU2018で再会したんですが、なんと全員社会人博士課程に進学(or 予定) で最高ってなりました 🔥
+そのあと03月に修論出した後はPRMU準備・発表、奨学金応募や留学受験などなどドタバタしていつの間にか09月
+この時にCS関係の基礎を再びやり直したけれど、自己知識でたくさん欠けているところを学び直せたのでやってよかったなと思う。
+必要があって物事を学び直す時に基礎知識という貯金があるとレバレッジが効くので良かった
+大学院留学試験の結果は不合格でしたが、受験したことに悔いは無い。
+だが、進路などは未決定だったので過去に戻れるならリスクヘッジちゃんとしようなと説教をしてあげたい 😇
+その後はボーッとしてこの先どうしようかなと考えてたら、知り合いから仕事を紹介してもらい、ARと画像認識をかけあわせたデモアプリの開発をしてました
+この時にフリーランスの業である
+孤独 成長限界(納期こそ至高、学習できない、データセットがそもそも無い問題) 交渉(給与・納期など) を経験することができた
+2018年 フリーランスに疲弊した結果
+自分が一番弱い環境で働きたい 大規模データを取り扱いたい(特に画像) 様々な機械学習プロジェクト経験を積みたい の考えが高まり、2月にメルカリに機械学習エンジニアとして入社しました。
+機械学習チームを知ったきっかけは、下記の技術ブログを読んだことがきっかけ
+画像での商品検索に向けて - Mercari Engineering Blog
+機械学習システムがPOCで終わらずに既にメルカリのアプリで既にリリース済というのは、自分にとって非常に魅力的に見えた記憶があります
+入社後にいろいろと考えたこと 機械学習プロジェクトをうまく推進するの大変だけど超楽しい 取り組んでるプロジェクトの難度やインパクトの大きさなどが段違いなので日々揉まれて、鍛えられてる 💪 英語を使って働く経験ができる環境 ためらわない心で日々フィードバックをもらって英語に触れていける (福利厚生で英会話教室のサポートもあって最高) 🇺🇸 良きメンターとは? インターンシップ学生などのメンターもここ一年で7名こなした。インターンに参加する学生全員が猛者揃いなのでめっちゃ楽しいです。 まだまだ要改善 👴 結論 社会人経験はメルカリが初めてですが、めちゃくちゃ楽しい 🎉
+就職・結婚など人生の大きなターニングポイントを迎えた2018年でした
+2019年の抱負 インパクトの大きい問題を嗅ぎ分けて、エレガントに解ける世界トップレベルのエンジニアを目指す
+これからずっと現役でいるために、更に意識的に業務と関係ない学習の時間を作って習慣化 20代前半と比較すると集中力の衰えを感じるので、基礎となる体を鍛える 読書量もっと増やす(通勤中にもっと読めるはず) 業務速度の高速化(更にスケールさせたい) News Letter 更新を週一で継続させる 英語の基礎力向上: 自分は基礎が全くできてないことがわかった。出川英会話の限界を感じている 業務成果を海外カンファレンスで発表(開発・研究)👇細かい話が気になる方、機械学習のお話がしたい方ご飯行きましょう。DMください 📣 Shunya Ueta (@hurutoriya) | Twitter</description></item><item><title>Machine Learning Casual Talks #7 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sat, 15 Dec 2018 19:29:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>Machine Learning Casual Talks 第七回を無事開催しました
+Machine Learning Casual Talks #7 (2018/11/20 18:30〜)
+MLCT とは
+実サービスにおける機械学習の経験をカジュアルに語り合おう
+というコミュニティです。
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました!
+遺伝異常により髪が青く変色してしまったタカヤナギ=サン
+ABEJA の機械学習導入事例と辛い話を大田黒さんにお話していただきました!
+今回の勉強会資料は以下にまとまっています。
+Machine Learning Casual Talks #7 — 資料一覧 — connpass
+今回の内容を今北産業
+機械学習エンジニアとしてのキャリアのお話を タカヤナギ=サン 実世界に根付いたIOTと機械学習サービスはかなり辛い 各社の機械学習エンジニアの定義が揺らいでいるので、世界が壊れる 今回の改善点 参加枠の多様性 絶対参加するぞ枠 一般参加枠 初回参加枠 SNS枠 Blog枠 と今までは一つの枠で扱っていたものを、5つの枠に分散して用意してみました。
+なぜかというとドタキャンやノーショーの方の影響で本当に参加したい方や初回参加の方の機会が喪失してしまうのはいただけないので、それを解決したなと思ったのが始まりです。
+初回参加枠を設けることで、新規参加者が増えて内輪感が解消されるのも狙ってみました。その影響か前回と比較して2割ほど参加率が増えてよかったです :)
+パネルディスカッション 登壇者2名と僕がモデレーターを行い、パネルディスカッションを行いました。単なる発表保の質疑応答時よりも話が盛り上がってなによりでした~
+次回予告 次回 MLCT第8回は 2019/01/28 に参加予定です!
+現実世界での機械学習の辛みを共有したい・語りたいという方はゼヒご参加ください~
+Machine Learning Casual Talks #8 (2019/01/28 18:30〜)</description></item><item><title>Machine Learning Casual Talks #6 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>機械学習の信頼性が熱いよねというお話
+柚餅子 さんの発表風景
+2018/09/25 のMLCT #6 を開催しました。
+MLCT とは
+実務における機械学習の話や経験をカジュアルに語り合おう
+というコミュニティです。
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました!
+Machine Learning Casual Talks #6 (2018/09/25 19:00〜)
+発表資料一覧 👇(スライドと配信動画) Machine Learning Casual Talks #6 - 資料一覧 - connpass
+柚餅子さん リブセンスにおける機械学習システムの信頼性エンジニアリング SREの考えを機械学習システムに取り入れるというお話ですが、筋が良さそう。特にSLO周りはうちでも取り入れないなぁと思いました Naomichi Agata さん ユーザーフィードバックと機械学習 半教師あり学習で解くというアプローチは非常に筋が良さそうで気になった。技術書典の書籍も気になる 👀 gamella さん マーケット予測モデルのPCDAの回し方 ms単位のデータを学習データにして株価のUP/DOWNを予測する。。。。適用するドメインの難易度が鬼ゲーすぎて、ハラハラしそうだけど解きがいがありそう @yu-ya4 さん Big Query ML を使ってみた話 さらっとBQMLを試して成果が出ましたと言っていたが、良い問題を探し出す嗅覚がすごいなと思いました。実際BQだけで過不足なくモデリングが終わるなら理想の世界ですね~ Kosuke Kitahara さん 発表資料は後日公開されます。謎の力によりYoutube配信はされていません KPT Keep 動画配信を問題なく完了できた 魅力ある発表内容を維持できた Problem 参加率が低かった。前回は65%程度の参加率でしたが、今回は雨の影響もありますが40% と低くなっていた 倍率も毎回1.</description></item><item><title>Machine Learning Casual Talks #5 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>2018/07/13 にMLCT #5を開催してきたお話
+Opening Talk by Aki Ariga
+Machine Learning Casual Talks #5 (2018/07/13 19:30〜)
+本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました。
+発表資料はこちら 👉 here (YouTube配信もあります)* この記事では、技術的なお話というよりも開催に至るまでの話をメインに書いていきます。
+Start 構想開始時期は2018/04頃に考えていて、弊社開催の
+MLOps Nightと呼ばれるイベントの準備を行っているときに、社内だけではなく
+_社外の人の機械学習の辛い話をうんうんと頷きながら聞きたいなぁ
+_と思ったのが事の始まりです
+そのあと、とりあえず日程と発表者は事前に集めておかねばと思いTakashi Nishibayashi さんにラブコールを送っていた
+発表依頼の様子
+chezou さんとの出会いとMLCT復活の狼煙 その後、
+勉強会の名前どうしよう 🤔 運営の方針どうすべきか 🤔 を迷いつつ時間が過ぎていき業務の一環として機械学習工学キックオフシンポジウム に参加していたら、そういえば Aki Ariga さんってMLCT開催してたよな、あの勉強会すごく参考になること多かったから復活できないかなと思い始め、気がついたら懇親会で hagino3000 さんに chezou さんを紹介してもらい
+「MLCT復活させたいです!!! 場所と運営準備は僕主体でやります!」
+と提案したら、あっさりと快諾され運営者に混ぜてもらえることになりました
+メッセージ投げかけから1分で承認される
+あらためて、突然飛び込んできた見知らぬ人物の運営への参加を快諾してくださった、 Aki Ariga, Atsushi KOMIYA, @tetsuroito さんありがとうございました 🙇
+また社内にはコミュニティを運営する人たちが集まる #z-organizer という夢のようなSlackチャンネルがあり、そこの方々からも今回の運営準備や行動理念など沢山の助言をいただきました! ありがとうございました!
+MLCT #5 開催の感想 定員は100名で募集したところ、応募者が200人強、実参加者は71人と盛況にイベントを開催することができました。
+運営初回ということもあり、発表者は事前に僕と hagino3000さん、同僚の hnakagawa, ynqa にお願いして数を揃えました。イベント告知後には soonraahさん、 overs_5121 さんにLT参加応募をいただき定員に達してホッと覚えがあります。</description></item><item><title>イベント運営に便利なsli.do の使いこなしかた</title><link>https://shunyaueta.com/posts/2018-06-17_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%81%8B%E5%96%B6%E3%81%AB%E4%BE%BF%E5%88%A9%E3%81%AAsli.do-%E3%81%AE%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%8B%E3%81%9F/</link><pubDate>Sun, 17 Jun 2018 15:03:27 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-06-17_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%81%8B%E5%96%B6%E3%81%AB%E4%BE%BF%E5%88%A9%E3%81%AAsli.do-%E3%81%AE%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%8B%E3%81%9F/</guid><description>イベント運営者必見 sli.do の使い方
+sli.do のディスプレイ画面
+sli.doという便利な質問投稿・回答サービスがあります。このサービスですが、イベント運営者あるあるの
+オフラインだと活発に質問が出ない Twitterは盛り上がってるが実際の反応はわからない Google Formはいまいち回答率が悪い などの問題点を解決してくれるサービスです
+Slido - Audience Interaction Made Easy
+基本的な使い方は以下の公式動画がサクッとまとめられていて分かりやすいです
+これ見ればsli.doの機能は全て俯瞰できる
+UIが良く操作に迷うことはないので、各機能のスクショを貼りつつ紹介していきます
+イベント設定 設定画面
+イベントの名前や、 短縮コード(イベントのハッシュタグにしておくと分かりやすい)を設定して導線をわかりやすくできる
+投票機能 無料版だと3つの投票までできる。大きなイベントでなければ十分。もちろん回答結果はシークレットにもできます。
+3つの投票機能
+複数選択肢
+自由記入式
+星によるレーティング
+各投票機能はアクティブにすると参加者は一つだけ投票可能になる
+参加者からの質問・回答結果のライブ表示 右上のトグルボタンをクリックすると、投票結果をライブ表示できる。勉強会の発表中にサイドディスプレイがあれば常時表示しておくとライブ感が出て良いと思う
+ライブ画面への切り替え
+質問一覧
+回答ライブ画面
+上部のスイッチ画面から次の投票に切り替えることができる
+回答解析機能 管理画面から回答のインフォグラフィックを生成することもできる
+といたせりつくせりの機能が提供されています。
+まとめると
+イベント参加者からのオープンな質問投稿(匿名・非匿名) 各質問・回答のライブ表示 運営者からのサーベイ(イベントの感想など) の3点が sli.doでは使えます
+Tips 唯一惜しい機能としては、イベント管理者が単一ユーザーでしか管理できない点ですが共同アカウント作れば大丈夫そうです。
+How do I add more admins to my event?
+Google SlidesでもQA機能ありませんかとかありますが、sli.doに比べてOpenではないのでsli.doを選択しています。あとGoogle Slidesは1スライド:1Questionでまとめるのが難しい</description></item><item><title>[抄訳] Data engineers vs. data scientists</title><link>https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/</link><pubDate>Tue, 24 Apr 2018 02:18:46 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/</guid><description>データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア
+紹介記事 Data engineers vs. data scientists
+紹介記事を同僚から教えてもらい、面白かったので抄訳した
+[](https://twitter.com/chezou/status/980349709339394048) Aki Ariga さんが言及していた記事と方向性が同一で面白かった。
+Data Scientists : ビジネスサイドを理解し、他者にわかりやすく可視化と言語化できる職能。そして高度な数学的知識に基づいたモデリングやアルゴリズム提案スキルも持っている。Data Scientistsには高度なProgramming skillは必ずしも必須ではない、なぜならモデリングやアルゴリズムを実装するためにプログラミングを習得した人が多いからだ。システムデザインやProgramming スキルは、Software Engineer やDataEngineerからみると見れたものではない(そしてそうでなくてはならない、なぜならスペシャリストだから)
+Data Engineer : 分散プログラミングを意識して構築できる職能。DEは卓越したプログラミングスキルとシステム構成力を持つ。定義 : つまりビッグデータに対してシステム的に解決できるスキル。クラスタ設計までがData Engineerの役割であり運用(Ops)はやらない
+from : https://www.oreilly.com/ideas/data-engineers-vs-data-scientists
+Data Scientists とData Engineer の互いの特化したスキルは補完しあってこそ輝く。 Data Scientist がデータパイプラインを作ると悲劇が起きてしまう。多くの企業がData ScientistをData Engineer として雇っているが、それはData Scientistsのスペックを活かしきれず、20–30%の効率で働かせてしまっている。そしてそのROIはめちゃくちゃ悪い。Data Scientists は適切なツールと選択肢を熟知していない(そしてData Engineerはシステムデザインと熟知しているのでミスは侵さない) e.g. 実際著者が聞いたこんな話がある。 Data ScientistsがApache Sparkを使って10GBのデータ処理を行うのに1回15mの時間がかかっていた。(だがRDBMSを使えば、10msで終わる) Data Scientistは彼らの流儀を疑うこと無く1日に16回Sparkの処理を実行しており、15mx16=240mつまり4hの時間を無駄にしてる。RDBMSを使えば、160msで終わるというのに… Data Scientist が頑張ってシステムを構築するが、職能の限界で Data Engineerしか作れないシステムなので時間とお金の浪費になった 実情 : Data Scientist として雇われたのに、Data Engineer として働かざるを得ない人がほとんどだ 理想的な人材配置 Case : 初期の組織: 2–3人のData Engineer : DataScientist Group Case : 更に複雑な事に取り組みたい 4–5人の Data Engineer : 1 Data Scientist Data Engineer change to Data Scientist の王道→それが新しい職種 : Machine Learning Engineer!</description></item><item><title>Google Colaboratory で Mecab-ipadic-Neologd を使うまで</title><link>https://shunyaueta.com/posts/2018-04-23_google-colaboratory-%E3%81%A7-mecabipadicneologd-%E3%82%92%E4%BD%BF%E3%81%86%E3%81%BE%E3%81%A7/</link><pubDate>Mon, 23 Apr 2018 15:38:10 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-23_google-colaboratory-%E3%81%A7-mecabipadicneologd-%E3%82%92%E4%BD%BF%E3%81%86%E3%81%BE%E3%81%A7/</guid><description>Colab上で 日本語のNLPをしたいときありませんか？
+Success
+Code Google Colabratory https://colab.research.google.com/drive/1YK8XFnfD29775lEYWhwz3wh4h8boR9iE</description></item><item><title>eBayのAR測定機能を試してみた</title><link>https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Mon, 16 Apr 2018 14:57:41 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-16_ebay%E3%81%AEar%E6%B8%AC%E5%AE%9A%E6%A9%9F%E8%83%BD%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>eBayが ARCoreを使った商品の梱包測定機能を提供しているので試した
+梱包測定の仕組みとしては、ARCore(今回は Pixel2 XLで試した)で平面検出を行って、そこにeBayのダンボールオブジェクトを設置することで、ダンボールに入るかどうかを判定できる。
+下のダンボールアイコンを選択して、検出された平面をタップするとダンボールオブジェクトを設置できる
+今回例として用いたMBPの空箱だとARCoreが空箱自体を平面と認識してしまうという罠があるので、床で平面検知を終えてから商品を置くという裏技が必要
+まとめ ARCoreを用いたAR機能のUXとしては 🙆 実用性は 🙅、平面検出しかしてないので、荷物に合わせて最適なダンボールを選ぶのは結局ユーザー。そこまで自動化してこそ革新的な機能になると思った Related Post
+eBay uses augmented reality to help sellers find the right box for their product</description></item><item><title>Google, Facebookが提供する機械学習基盤まとめ</title><link>https://shunyaueta.com/posts/2018-04-09_google-facebook%E3%81%8C%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%9F%BA%E7%9B%A4%E3%81%BE%E3%81%A8%E3%82%81/</link><pubDate>Mon, 09 Apr 2018 13:55:44 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-09_google-facebook%E3%81%8C%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%9F%BA%E7%9B%A4%E3%81%BE%E3%81%A8%E3%82%81/</guid><description>Google, Facebookの機械学習基盤情報をまとめました
+TFX
+社内の勉強会でGoogle, Facebookが提供する機械学習基盤に関する論文を紹介したので、その資料を公開します#### 経緯
+機械学習をサービスとして提供開始すると、継続的な学習やプロダクション環境での機械学習の提供はモデル構築以外にもいろいろと考える問題が多くなります¹
+[1] Hidden technical debt in Machine learning systems NIPS’15
+要するに機械学習をサービスとして届けるには、実はめちゃんこ大変なんだよという話なんですが、みんな同じ問題にぶち当たります。
+そのためプロダクションレディなレベルで機械学習を提供できるプラットフォームを各社が提案しておりその中でもGoogle, Facebookの事例を提供します。
+TL; DR; FBLearner: MLaaSの事例として最初に読むべき論文、MLaaSをどのような戦略で提供しているかを抽象的にまなべるため、鳥瞰図として読みましょう TFXは逆に機械学習基盤が必要とする技術スタックや要件などを詳細に説明しており、教科書的な立ち位置です。社内で機械学習基盤を内製したい場合に詳しく読み込むこと必須 両社ともMLaaSをスケーラブルに提供する環境ができており、サービスのコアテクノロジーになっている Google : Tensorflow Expand TFX: A tensor flow-based production-scale machine learning platform
+Facebook : FBLeaner Applied machine learning at facebook a datacenter infrastructure perspective HPCA18
+ONNX を見ていると TensorFlow VS. ONNX 陣営が出来つつありどちらのプラットフォームに乗るかの戦略が大事だなと思います。
+Googleはモバイル上のMLから超大規模分散学習までTFシリーズで提供、実際のサービング環境も TFServingというスタックを提供しはじめていて個人的にTensorFlowが何歩も先にいっているという所感
+(逆にTensorFlow 一強状態になると、競争状態がなくなるので是非ONNX陣営には頑張ってほしい)</description></item><item><title>Courseraの”Machine Learning”を修了した</title><link>https://shunyaueta.com/posts/2018-03-25_coursera%E3%81%AEmachine-learning%E3%82%92%E4%BF%AE%E4%BA%86%E3%81%97%E3%81%9F/</link><pubDate>Sun, 25 Mar 2018 15:36:18 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-03-25_coursera%E3%81%AEmachine-learning%E3%82%92%E4%BF%AE%E4%BA%86%E3%81%97%E3%81%9F/</guid><description>Andrew Ng先生の MLコースを修了した 🎉
+Certificate
+機械学習界隈だとスタンダード過ぎて、「**え、Ng先生の講義を今更受講したの?遅くない?」**と言われそうですが最高の講義だったのでその気持ちを記しておきます。
+基本的に各週ごとに動画視聴、動画の途中に Mini Quiz、週のまとめにQuiz, Programming Assignment が用意されています。
+自学自習よりも優れているなと思った点
+Ng先生による明瞭かつ直感的に理解できるように配慮された講義 途中のMini QuizやQuizはちゃんと理解できたかを知るため+刺激になるので良い。(自分はQuizがある方が理解しようとやる気がでるのでありがたい) 最後の証明書が発行されるのでやりきった感がでる Ng先生が数値計算などの最適化などは関数ハンドルで全て既存のパッケージに投げてしまいましょうという姿勢なので、Octaveは簡単な線形代数処理のみだったので全く問題がなく課題を解けました。(学生時代はMATLAB派でひたすら数値計算や toolbox最高などと恩恵を受けてましたが、Octaveはドキュメント不足や細々とした挙動がMATLABと違うのですごくストレスフルだった)
+講義の流れは、線形回帰からロジスティック回帰に移る際に
+N g先生「ほら、実際線形回帰とロジスティック回帰は似たようなものだということが分かったでしょ?」
+の部分がすごく説明が上手でストンと理解できたのが気持ちよかった
+投資した時間 2018/01/05から開始、2018/03/25に全て終えて、計60h 弱でコースを修了することができた。
+Toggl での計測時間
+How to write a lot の戦略が習慣化の鍵 🗝で事前にGoogle Calendar で先に勉強する時間を予定として確保して淡々と実行していくスタイルのおかげで継続することができました。
+時間割
+証明書もNg先生に恩返し的な意味で、購入しました 😄
+まとめ 各種機械学習の手法を改めて理解できた(その道の第一人者かつ教え方が最高に上手い人から説明される凄さを実感できた。MOOC凄い。世界が変わる) 基本的に頭(Quiz)と手(Programming)を同時に動かしたほうが学習効率が遥かに良い 社会人でも習慣化すれば継続的な勉強が可能だという確信 英語での講義も少し慣れてきたので、このまま習慣化して英語の情報を取得する癖をつけていきたい
+あとはボトムアップで勉強するスタイルよりも、トップダウンで勉強するほうが自分はモチベーションも維持できるしスキルセットも整いやすい事を学べてよかった
+次はKaggleの講義を受講する予定です。
+How to Win a Data Science Competition: Learn from Top Kagglers | Coursera
+Kaggle マスターになりたい 😇</description></item><item><title>How to install faiss</title><link>https://shunyaueta.com/posts/2018-02-27_how-to-install-faiss/</link><pubDate>Tue, 27 Feb 2018 05:50:27 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-27_how-to-install-faiss/</guid><description>faiss : Billion-scale similarity search with GPUs
 faiss : Billion-scale similarity search with GPUs
 You mainly follow : https://github.com/facebookresearch/faiss/blob/master/INSTALL.md
 Env : Mac OS X 10.12.6
-Not Tag, Note commit hash:commit cd884114d0a8e1789f257b524e5345bc5b26e6b2 _2018.02.24 : New version of Faiss! What&amp;amp;#39;s new? - Support for on-disk inverted lists (see https://github.com/…/f…/blob/master/demos/demo_ondisk_ivf.py). Enables handling of datasets that do not fit in RAM. We tested it on up to 53B vectors, with a 2TB index. - Tutorial and examples for using Faiss on one or more GPUs (see https://github.</description>
-    </item>
-    
-    <item>
-      <title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title>
-      <link>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</link>
-      <pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</guid>
-      <description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい 発表者の顔は</description>
-    </item>
-    
-    <item>
-      <title>2018.01 KPT</title>
-      <link>https://shunyaueta.com/posts/2018-02-09_2018.01-kpt/</link>
-      <pubDate>Fri, 09 Feb 2018 14:00:31 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-02-09_2018.01-kpt/</guid>
-      <description>2018年1月の振り返りをざっくりと Keep Mercari Competitionにて初Kaggleコンペ参加。 Best 116位まで言ったんですが、NLP周りの知見が</description>
-    </item>
-    
-    <item>
-      <title>2018 resolution</title>
-      <link>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</link>
-      <pubDate>Mon, 29 Jan 2018 16:08:35 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</guid>
-      <description>2018年の抱負です。 Works 機械学習エンジニアとして六本木で働く事になりました。機械学習エンジニアとしてスペシャリストになれるように周辺スキルを</description>
-    </item>
-    
-    <item>
-      <title>Slicing Convolutional Neural Network for Crowd Video Understanding (CVPR2016)を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Wed, 17 Jan 2018 06:04:37 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>群衆解析の手法に興味があるので、サーベイの結果を放流しておきます。 Jing Shao, Chen Change Loy, Kai Kang, and Xiaogang Wang, “Slicing Convolutional Neural Network for Crowd Video Understanding</description>
-    </item>
-    
-    <item>
-      <title>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Wed, 17 Jan 2018 05:55:41 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ Mikel Rodriguez, Josef Sivic, Ivan Laptev, Jean-Yves Audibert, “Data-driven Crowd Analysis in Videos”, in ICCV2011. Project Page を読んだので、メモです。 Summary tl;dr 高密</description>
-    </item>
-    
-    <item>
-      <title>Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Wed, 17 Jan 2018 05:41:44 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 link Summry を読んだので、軽くメモ。 VQA(Visual Question Answer) 画像に対する質問に対して応答するタスクに</description>
-    </item>
-    
-    <item>
-      <title>Analyzing Free-standing Conversational Groups: A Multimodal Approach (ACMMM15) を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Sun, 14 Jan 2018 10:41:12 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>スタンディングディスカッション形式での会話を評価した研究 Summary Slide X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe “Analyzing Free-standing Conversational Groups: A Multimodal Approach”, in 2015 ACM Multimedia Conference</description>
-    </item>
-    
-    <item>
-      <title>FUSE: Full Spectral Clustering(KDD2016) を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Sat, 13 Jan 2018 17:30:28 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案 べき乗法では近似固有ベクトル(Pseudo-eigenvecto</description>
-    </item>
-    
-    <item>
-      <title>Call center stress recognition with person-specific models を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Sat, 13 Jan 2018 17:19:48 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>Affective Computing: 計算機と人間の感情や情緒の関係性を考える領域 MIT Media Lab Affective Computing Groupのプロジェクト。 2年前にMIT Media Labへ訪問した際に、色々と見せてもらっ</description>
-    </item>
-    
-    <item>
-      <title>Jupyter Notebookの差分を明瞭に確認する事ができるpackage : nbdime</title>
-      <link>https://shunyaueta.com/posts/2018-01-13_jupyter-notebook%E3%81%AE%E5%B7%AE%E5%88%86%E3%82%92%E6%98%8E%E7%9E%AD%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E4%BA%8B%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8Bpackage-nbdime/</link>
-      <pubDate>Sat, 13 Jan 2018 17:14:54 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-13_jupyter-notebook%E3%81%AE%E5%B7%AE%E5%88%86%E3%82%92%E6%98%8E%E7%9E%AD%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E4%BA%8B%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8Bpackage-nbdime/</guid>
-      <description>Jupyter notebookをご利用の皆さん、朗報です。 例えば、下記の２つのnotebookの差分を比較したい際に、 nb_1.ipynb nb_2.ipynb diffコマンドを用いると下記</description>
-    </item>
-    
-    <item>
-      <title>PythonでGaussian Kernelのアニメーションを作成</title>
-      <link>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</link>
-      <pubDate>Sat, 13 Jan 2018 17:03:43 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</guid>
-      <description>Pythonでアニメーションを作成したかったのでメモ Gaussian Kernel GIF Animation 当然ながら、HTML5のVideoは再生されないのでGIFに変換した結果が以下。</description>
-    </item>
-    
-    <item>
-      <title>サイトのPWA化、ホスティングをGithub PagesからFirebaseへ移行</title>
-      <link>https://shunyaueta.com/posts/2018-01-09_%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AEpwa%E5%8C%96%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92github-pages%E3%81%8B%E3%82%89firebase%E3%81%B8%E7%A7%BB%E8%A1%8C/</link>
-      <pubDate>Tue, 09 Jan 2018 18:59:59 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-09_%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AEpwa%E5%8C%96%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92github-pages%E3%81%8B%E3%82%89firebase%E3%81%B8%E7%A7%BB%E8%A1%8C/</guid>
-      <description>PWAとFireBaseを試してみたかった firebase init で現れる画面、テンション上がる Github Pages + CloudFlareで独自ドメインの shunyaueta.com をホスティングしてた</description>
-    </item>
-    
-    <item>
-      <title>HerokuのDBにpgadmin4で接続してローカルにデータをダウンロードする</title>
-      <link>https://shunyaueta.com/posts/2017-12-27_heroku%E3%81%AEdb%E3%81%ABpgadmin4%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%97%E3%81%A6%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</link>
-      <pubDate>Wed, 27 Dec 2017 08:12:17 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-27_heroku%E3%81%AEdb%E3%81%ABpgadmin4%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%97%E3%81%A6%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</guid>
-      <description>pyadmin4でHeroku上のDBに接続する記事が日本語になかったので、メモ 接続前の準備 Herokuにログインして、対象のAppのDBの</description>
-    </item>
-    
-    <item>
-      <title>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp; 講義でJupyterhubを利用する</title>
-      <link>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</link>
-      <pubDate>Sat, 23 Dec 2017 17:48:12 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</guid>
-      <description>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp;amp; 講義でJupyterhubを利用するお話です。 GIF画像は下</description>
-    </item>
-    
-    <item>
-      <title>“Learning Deep Representations for Graph Clustering (AAAI2014)” を読んだ</title>
-      <link>https://shunyaueta.com/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Sat, 23 Dec 2017 17:38:19 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>自己符号化器とSpectral Clusteingの関連性を示した論文 Paper link Author Fei Tian : http://home.ustc.edu.cn/~tianfei/ 中国科学技術大学Ph.D １年生 MSRAと共同研究、2014</description>
-    </item>
-    
-    <item>
-      <title>機械学習・コンピュータビジョンを活かしたビジネスを手掛ける株式会社ABEJAでインターンしてきました #2013</title>
-      <link>https://shunyaueta.com/posts/2017-12-23_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E6%B4%BB%E3%81%8B%E3%81%97%E3%81%9F%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%82%92%E6%89%8B%E6%8E%9B%E3%81%91%E3%82%8B%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEabeja%E3%81%A7%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%97%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F-sharp2013/</link>
-      <pubDate>Sat, 23 Dec 2017 17:18:02 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-23_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E6%B4%BB%E3%81%8B%E3%81%97%E3%81%9F%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%82%92%E6%89%8B%E6%8E%9B%E3%81%91%E3%82%8B%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEabeja%E3%81%A7%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%97%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F-sharp2013/</guid>
-      <description>株式会社ABEJAという会社に2013/8/25~2013/9/26間に2週間弱インターンシップに参加してきました。 2013年当時のサイトの</description>
-    </item>
-    
-    <item>
-      <title>ミクシィにインターンしてきた #2013 #DeployGate</title>
-      <link>https://shunyaueta.com/posts/2017-12-23_%E3%83%9F%E3%82%AF%E3%82%B7%E3%82%A3%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharp2013-sharpdeploygate/</link>
-      <pubDate>Sat, 23 Dec 2017 17:04:38 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-23_%E3%83%9F%E3%82%AF%E3%82%B7%E3%82%A3%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharp2013-sharpdeploygate/</guid>
-      <description>株式会社ミクシイに2013/8/9~2013/9/20までインターンしてきました。 2013年当時のスクリーンショットを探してたが、無かったの</description>
-    </item>
-    
-    <item>
-      <title>CoreMLがTensorFlow Liteをサポート</title>
-      <link>https://shunyaueta.com/posts/2017-12-06_coreml%E3%81%8Ctensorflow-lite%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88/</link>
-      <pubDate>Wed, 06 Dec 2017 13:36:38 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-06_coreml%E3%81%8Ctensorflow-lite%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88/</guid>
-      <description>TensorFlow無双 TensorFlow Lite meets CoreML!! 個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日TensorFlow LiteがCo</description>
-    </item>
-    
-    <item>
-      <title>Visualized Approximate Eigen Vector by Power Iteration on 3 dimensions.</title>
-      <link>https://shunyaueta.com/posts/2017-12-04_visualized-approximate-eigen-vector-by-power-iteration-on-3-dimensions./</link>
-      <pubDate>Mon, 04 Dec 2017 13:20:41 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-04_visualized-approximate-eigen-vector-by-power-iteration-on-3-dimensions./</guid>
-      <description>You can intuitively lean Power Iteration by Visualization Power.
+Not Tag, Note commit hash:commit cd884114d0a8e1789f257b524e5345bc5b26e6b2 ``_2018.02.24 : New version of Faiss!
+What's new?
+Support for on-disk inverted lists (see https://github.com/…/f…/blob/master/demos/demo_ondisk_ivf.py). Enables handling of datasets that do not fit in RAM. We tested it on up to 53B vectors, with a 2TB index. Tutorial and examples for using Faiss on one or more GPUs (see https://github.</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
+発表者の顔は隠しています。なにか問題があればお伝え下さい。
+Team AI Meetup #1 (2018/02/13 19:00〜)
+Twitter: #mercari_ai
+山口さん Image Net とmercariの持ってるデータセットは似てるのでいけるのでは! ルカリはクラス数 over 1100 始期の推定値 Top5 29.3% エラー例 :画像からサイズを推定しないと男女のシューズを区別不可(人間でも不可能なエラー例が多い) 意外と認識がうまくいく事例がかなりある(クラス設計の影響で推定が上手く出来ていないらしい) データセットはユーザーが作成してるので最高、画像が正方形なのもGood 学習はGPU,推論はCPU環境下で行っている 画像検索自体はプロトタイプは出来ているが、実運用は計算量やリアルタイム性を担保するのが難しいので一旦保留中 大筋は以下の記事と資料で把握できます。k8sで運用しているなどの実運用の構成が今回の発表では差分として語られていました。
+画像での商品検索に向けて - Mercari Engineering Blog
+【Mercari Summer Internship】商品画像の色推定を行いました! - Mercari Engineering Blog
+工藤さん 運用を継続すると色んな問題が出てきたので、それを解決する基盤環境を作成しはじめた e.g. 学習データのバージョン管理、モデルのデプロイ, etc 最終的にはOSSとしての公開も考えているとのこと メルカリの今年1年間の機械学習の取り組みとこれから - Mercari Engineering Blog
+[ML Ops Study (仮) #1] (http://rindai87.hatenablog.jp/entry/2018/01/04/005931)の発表内容も今回の機械学習の運用周りのTipsが共有されているので興味のある方はオススメです
+機械学習基盤といえば、最近PolyaxonというOSSが公開されてました。
+Polyaxon
+Q.A.セッション Q. 論文などは参考にされますか？
+A. ある程度枯れた手法をメインに実装している</description></item><item><title>2018.01 KPT</title><link>https://shunyaueta.com/posts/2018-02-09_2018.01-kpt/</link><pubDate>Fri, 09 Feb 2018 14:00:31 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-09_2018.01-kpt/</guid><description>2018年1月の振り返りをざっくりと
+Keep Mercari Competitionにて初Kaggleコンペ参加。 Best 116位まで言ったんですが、NLP周りの知見が無いのと、Kaggle周りの力不足で現在は 317位… ブロンズまで引き戻せるか… [](https://twitter.com/hurutoriya/status/952573577357770753) ぬか喜びしている図
+CourseraでNg先生のMLコースを始めた。あと5日位で無事終わりそう。とても分かりやすい(何故もっと早く受けなかったのか…) 終わったら、How to Win a Data Science Competition: Learn from Top KagglersかNg先生の deeplearning.ai を始める予定 本を2冊読めた。案外読む始めるのがハードル高いだけで、読み始めれば1日30分*5日で読み終わることがわかったので今度から通勤途中に読むことにした。これで月4冊読んでいくようにしたい。2–3月はメタ学習関連の本を読み進めていく。 学力の経済学
+[](https://twitter.com/hurutoriya/status/960525598610268160)
+お金持ちになれる黄金の羽根の拾い方
+[](https://twitter.com/hurutoriya/status/952046931307458560)
+Duolingoで英語学習を再開した。学習アプリとしてとても出来が良い。(名詞の複数形や冠詞などの細かい間違いを都度指摘されるのが好き。モバイルアプリ(iOS)は問題が重複して出題されるのでPCメインで利用) 100%達成するぞ! Linkedinに成績が反映されなくなったのは残念。おそらく言語学習は継続性がないと意味がないのでそれを考慮してシステム変更したんだろうな
+住信SBIネット銀行を開設した。ネット銀行最高。 Google Family **を始めた。**予定管理はTimeTreeを使ってデザインや使い勝手は不安が無かったんですが、Google Calendarに比べてアプリのインテグレーションや持続性(日本のベンチャー企業なのでいつまでそのサービスが持つのか)が不安になったのでGoogle Familyに乗り換えました。 Problem Kaggleのゴールドの壁を痛感。もっと精進せねば 論文読みが止まってしまってた。機械学習基盤とプロダクション環境における機械学習関連の論文をテーマにしてまとめて書き上げる Try 02月から仕事が始まるので(初社会人、入社完了したらまた振り返りBlogを書く)、社会人としてのメタスキルを実践できるようにしておく(e.g. 入社一年目の教科書 ) 日本語ニュース(TechCrunch Japan)を読むのを廃止、英語ニュースに切り替え 英会話学習を始める、リスニング力も強化する(Podcast) 対外発表の実績を積んでいく</description></item><item><title>2018 resolution</title><link>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</link><pubDate>Mon, 29 Jan 2018 16:08:35 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</guid><description>2018年の抱負です。
+Works 機械学習エンジニアとして六本木で働く事になりました。機械学習エンジニアとしてスペシャリストになれるように周辺スキルを伸ばしていきます。
+Kaggle Masterに到達(1 gold medal, 2 silver medals) 初参加のコンペもずるずる下降してしまいブロンズ圏外に…
+Coursera, Udacity (MOOC)でCV, Robotics 周辺を学習していく Githubで50 star overのOSSを作る(CV or ML) 勉強会に登壇 or 主催 する メタ学習(学習の効率化)について小話
+うまくなる技術¹などのメタ学習関連の本を色々と読み漁って学習のコツをいろいろ勉強してるんですが、外的指標(Github Star, Kaggle Rank, Toggl tracking,Coursera Certificate)を目的にすると人間気持ちよく継続できるらしいのでそれに沿った行動をするよう心がけています。後5–6冊メタ学習の本を読み終えてまとまったらまた記事にする。
+サンシャイン丸の内さん¹や ふろむださん¹の記事も参考になるのでオススメです
+個人的に最近心に響いたのはのじゃろりおじさんの勉強の姿勢です。
+３Dやunityの勉強方法について。：ねこみみメモ
+おそらく、やり続けて成功した人は「やり続ければ報われる！」と言うと思うのですが、年齢や経済状況や自分の才能を疑ったり等……現実は難しいと思います。
+私は偶然このタイミングで「オリジナルモデルのVyoutuberを出せた」から幸運に恵まれただけで、純粋な技術ではおそらく就職は無理だったのではないかと思います。2018~19年で見切りつけて諦めなきゃなと思ってたぐらいです。
+なので「やり続ければ報われる」とはとても言えません。ただ**「やり続けて報われなくてもいいと思える事は、やり続けた方がいい」**とは思います。
+他者の評価がどうであれ、やてって楽しくて満足できるのであればある意味常に成功している状態で、やればやるほど成功続きなわけです。
+English DMM 英会話 TOEFLE で90点、英語で働けるレベルを目指す 英語Blog記事を定期的に書く Health カラダステーションで内臓脂肪が少し高めになってたので走る(筋トレしかやってなかったツケが…) 筋肉量も左右でバラツキ(利き手側じゃないほうが100g程度筋肉量が少ない)があるので整える 筋トレはケトルベル16kgで色々とやってるので継続する。
+筋トレとランニング楽しむためにGarmin Vivoactive3¹ を注文しました。
+使えない筋肉だと意味が無いのでプリズナートレーニング²の本を読み込んで、筋肉全体の神経郡を発達させるような自重トレーニングをはじめました。
+プロテインは人工甘味料が入っていない以下の2種類で固定されました。
+過度な甘みは無く水単体でも飲めるくらいには自然な甘さなのでオススメです。
+Optimum Nutrition, ゴールドスタンダード、100%ホエイ、ナチュラル、チョコレート、4.8ポンド (2.</description></item><item><title>Slicing Convolutional Neural Network for Crowd Video Understanding (CVPR2016)を読んだ</title><link>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Wed, 17 Jan 2018 06:04:37 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>群衆解析の手法に興味があるので、サーベイの結果を放流しておきます。
+Jing Shao, Chen Change Loy, Kai Kang, and Xiaogang Wang, “Slicing Convolutional Neural Network for Crowd Video Understanding”, in CVPR, 2016.
+Project Page
+Summary
+一言説明 時系列・空間的特徴からCNNで特徴を学習、群衆の動画に対してstate-of-the-artを達成
+3個のCNNを用いて下記の３つの特徴を表現学習
+xy- : 空間的特徴 xt- : x軸の時系列特徴 yt- : y軸の時系列特徴 Comments Dataset としてWWW Crowd Dataset
+が公開されている。10,000本の群衆の動画を収集公開しているとのこと。
+Demo Movie
+紹介動画を見てみたら分かるが、群衆の動画というよりも数が増大した結果一般的な画像認識のデモ動画になっている Jing ShaoさんはCVPR2014から群衆解析のためのdescriptorを提案したりしてたんだけど、2016年からDeepな手法での群衆解析の研究をやっているのは手が早いなと 所属グループはISLVRC2015の物体認識タスクで優勝した香港大学のグループ Multimedia Laboratory The Chinese University of Hong Kong データセット、実装コードを必ず公開しているのは尊敬、またそれくらいやらないとトップには通過しないんだろうな CNNのアーキテクチャ毎の比較実験と考察をかなり入念に行っていた。数年後には各データのフォーマットに合わせたベストなDNNのアーキテクチャが決まってくるんじゃないだろうか</description></item><item><title>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ</title><link>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Wed, 17 Jan 2018 05:55:41 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ
+Mikel Rodriguez, Josef Sivic, Ivan Laptev, Jean-Yves Audibert, “Data-driven Crowd Analysis in Videos”, in ICCV2011.
+Project Page
+を読んだので、メモです。
+Summary
+tl;dr 高密度な群集内の個人を追跡を転移学習によって精度を向上させる手法 Contribution 追跡の精度を転移学習によって向上させた 転移学習を行うためのデータセットとそのフレームワークを考案 論文内では、転移学習の例としてマラソンAの群集を対象に追跡する際に、以下の流れで転移学習を行う。
+大域的な群衆状況のマッチング : 同じようなシーンを探索(この場合DB内にあるマラソン動画) 局所的な群衆状況のマッチング : 1でマッチした動画においてオプティカルフローが類似するパッチを探索して転移学習 また、Rare Events(デモの最中に群集を横断するカメラマンなど、群衆の流れに対して同調しない動きを行う人物)に対しても実験を行い評価。
+Comments 転移学習は自分のイメージだと、自然言語処理のイメージ(一般的な文書を学習したモデルを法律文書に対して適用するなど)しかなかったので新鮮な気持ちで読めた。
+動画なら転移学習を行ったとしても、直感的に良い特徴を学べそうなので、良い仮説を立てている論文でした。
+最後に示されてる個人追跡における平均誤検出の単位がpixelだが、Ground-Truthと提案手法の追跡軌跡の重複度具合を見てると誤検出が更に高そうに見えるけどどうなんでしょうか？
+(テストデータのみ学習が58.82、転移学習を行った提案手法だと46.88[pixel]になっていてもっと相対的な差が出てくるはず?)</description></item><item><title>Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ</title><link>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Wed, 17 Jan 2018 05:41:44 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 link
+Summry
+を読んだので、軽くメモ。
+VQA(Visual Question Answer) 画像に対する質問に対して応答するタスクに対し、その質問クエリに対して画像のどの領域に注目すべきかのモデルの学習方法について論じた論文。
+Contribution VQA datasetに対して、提案手法を適用。従来手法を全て上回った。 画像に対してCNNを用いて物体領域の検出を行った後にベクトル化、質問クエリはword2vecを用いてベクトル化を行う。 その2つのベクトルを用いて内積計算により重み付けを行うことで、どの領域に注目すべきかを計算する。 Comments 引用文献の訳9割が2014–2015(直近2年間)で発表された論文で、改めてこの分野の最先端を駆け抜けるのは凄まじい能力が必要になるなと思いました。
+そして相変わらずCVPRの論文のネーミングセンスは良いですね。(ジャケ買いならぬジャケ読み)
+単純な質問なら、人間でも瞬間的に解答可能な物が多いなと感じた。
+fig. 1
+セマンティックな疑問(Fig.1 雨は降っていますか?)の場合、人間に注目した場合は傘をさしているから雨と判断しても良いがもっと広い範囲で画像を見てみると空は快晴なので人間に注目するのは筋が悪くVQAはとても難しくチャレンジングな問題だと書かれていた。(それでも充分すごい領域に到達しているなと思うが)</description></item><item><title>Analyzing Free-standing Conversational Groups: A Multimodal Approach (ACMMM15) を読んだ</title><link>https://shunyaueta.com/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Sun, 14 Jan 2018 10:41:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>スタンディングディスカッション形式での会話を評価した研究
+Summary Slide
+X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe
+“Analyzing Free-standing Conversational Groups: A Multimodal Approach”, in 2015 ACM Multimedia Conference
+link
+を読んだので、軽くメモ。
+マルチモーダル系の論文初めて読んだんですが、まとめるとコントリビューションが5つあると主張。
+Contribution 音声・近接情報、そして監視カメラからの身体と頭の姿勢推定からマルチモーダルに解析 フリースタンディングディスカッションを身体・頭の姿勢推定から解析 カメラと音声・近接センサーからなるマルチモーダルな解析するためのフレームワークを提案 ラベリングされてないデータに対する行列補間問題の考案 SALSA(データ・セット)を公開・評価 SALSAというポスターセッションの動画と音声のデータも公開されている
+SALSA: Synergetic sociAL Scene Analysis
+動画はGoogle Driveで公開されていて時代の波を感じる。
+データセットを公開 論文も読みやすい 新しい行列補完計画法(アルゴリズム)を提案 実問題に取り組む と盛り沢山な内容で面白かった。
+スライド内のリンクはGoogle Slideで共有しているのでこちらを参照すると便利です。
+X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe &amp;quot;Analyzing Free-standing Conversational Groups: A…</description></item><item><title>FUSE: Full Spectral Clustering(KDD2016) を読んだ</title><link>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Sat, 13 Jan 2018 17:30:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案
+べき乗法では近似固有ベクトル(Pseudo-eigenvectors)は複数の真の固有ベクトルの線形結合からなる。有益でない固有ベクトルも含まれるのでいかにそれを除去するか Fig.1 で言ってることがいまいちわからない。ｃ,ｄも変化がないように見える。論文で言及してる stripe が何を指してるかが不明 分かった。赤・青・黒の３つのクラスタで分かれている。最初は黒色がクラスタ境界面に見えた。論文内での multi scale というのは、データの幾何的な分布を指している？ 固有値計算は O(n³）かかるから計算量が~~って毎回言われるが、行列の状態に依存するので毎回最悪の場合を主張されてるも困る ZP self-turining spectral clustering をなぜ対抗馬にして比較してるのかは謎。 ICA¹を行ったあとにその行列に対して回転処理を行い情報量の最小化を狙う クラスタ数が多い場合、PIC では良い結果が出づらい multi scale なデータの場合標準の spectral clustering では失敗することが多々ある fig.2 (a) 見ればわかるがk-means では分離が困難 fig.2(b) ４－５本目の固有ベクトルを基底ベクトルにもつ空間ではクラスタのオーバーラップが少ない つまり１－５本目の固有ベクトル全て含めてクラスタリングすれば結果が良好になるのではないか？（仮説） fig.2 © ４回べき乗法を行った。結果が似てる。（縦軸が何を表してるかは不明）。四回が上から四本求めたのか、一番上の固有ベクトルを４回求めたのか分からない fig. (d) 提案手法を適用。k-means で分離可能 行列Vをp回べき乗法を行って構築 E=MVの最小化を行う ICA を最小化するために Jacobi Rotation を用いる。探索には貪欲法を採用 Contribution マルチスケール（多種多様な）データ分布に対してクラスタリングが可能 計算時間は従来（ncut)と同等 感想 PIC(Power Itetaion Clusterg)をまさか拡張してくるとは思わなかったなので、興味深い論文。(実装して再現実験したけど、Early stopping の段階で高確率でクラスタリングが失敗していて使い物にならなかった印象があるので…) データの分布が多様な場合、上位数本のベクトルではなく、そこから更に下の固有ベクトルに着目したほうが結果が良好になるのは面白い KDD の論文、相変わらず読みやすかった。</description></item><item><title>Call center stress recognition with person-specific models を読んだ</title><link>https://shunyaueta.com/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Sat, 13 Jan 2018 17:19:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>Affective Computing: 計算機と人間の感情や情緒の関係性を考える領域
+MIT Media Lab Affective Computing Group のプロジェクト。
+2 年前に MIT Media Lab へ訪問した際に、色々と見せてもらったけどかなり野心的な事に取り組んでいて感動してた。(デバイスも自分たちでプロトタイプを作りまくっていて、Deploy or Dieの意思を感じ取れる)
+論文のまとめスライドは以下
+One Slide Summary
+HCI 系の論文は初めてまともに読んだんですが、
+実験デザインが一番難しそう 人と計算機の関係を研究するので、必然的に人間の感性をどう評価する話にもつながってきてる? 手法に重きを置くというよりも、問題に重きを置いている印象 普段自分は、数値線形代数や機械学習、コンピュータビジョンを主にやっていて、精度をどれだけ出せるか、正解率をどれだけ向上や、速度をどれだけ上げれるかを理論的に保証、提案したりしていますが、面白い問題や興味深いデータを集めることも大事だなと思った。
+実験計画法¹もかなり重要で、メンターの人から実験計画法の成り立ちを教えてもらってとてもおもしろかった。
+実験計画法についてのまとめスライド</description></item><item><title>Jupyter Notebookの差分を明瞭に確認する事ができるpackage : nbdime</title><link>https://shunyaueta.com/posts/2018-01-13_jupyter-notebook%E3%81%AE%E5%B7%AE%E5%88%86%E3%82%92%E6%98%8E%E7%9E%AD%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E4%BA%8B%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8Bpackage-nbdime/</link><pubDate>Sat, 13 Jan 2018 17:14:54 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-13_jupyter-notebook%E3%81%AE%E5%B7%AE%E5%88%86%E3%82%92%E6%98%8E%E7%9E%AD%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E4%BA%8B%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8Bpackage-nbdime/</guid><description>Jupyter notebookをご利用の皆さん、朗報です。
+例えば、下記の２つのnotebookの差分を比較したい際に、
+nb_1.ipynb nb_2.ipynb diffコマンドを用いると下記のような結果になってしまいます。 &amp;amp;gt;&amp;amp;gt; diff nb_1.ipynb nb_2.ipynb [master] 14c14 &amp;amp;lt; “image/png”: “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\nAAAAAElFTkSuQmCC\n”, — - &amp;amp;gt; “image/png”: “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\nG/41NTUcOXIk6jJyksJfRHJqYbcw7dq1K+oSctbSpUvZu3cvnTp1iroUSXLgwAHefvtt1q1bx5Yt\nW9i2bRu7du1i//79HD58GDOjtraWiy66iK5du1JaWsqFF17IxRdfzBe+8AXOOOOMqIcgeUThH0P1\n9fXMmzePm2++OepSYu3gwYNUVFRQVlbGwoULeeutt1L6a3XJkiXNPn7xxRdzxRVXcPXVV3PttdfS\nv39/2rdvH3bZUiAU/jH18ssvK/wj0NDQwIIFC5gyZQovvvgitbW1oe1706ZNbNq0ienTpwPQoUMH\n/uIv/oLBgwdzww03cPnll9OmTcHO9EorFWz47969O+oSctqcOXNwd8ws6lJi4cCBA0yePJlf//rX\nWbvA0MGDB1mwYAELFizgH/7hHygpKeHGG29k+PDhDBkyhNNPPz0rdUhuKtjDAB35n9q2bdtYuXJl\n1GUUvIMHD/L444/Tq1cvHnjggUivLPfxxx/zhz/8gZtuuolu3boxcuRIpk6dyr59+yKrSaKj8I+x\nWbNmRV1CwXJ3pk+fzhe/+EUeeuihnPvY8YEDB5gxYwajR4+me/fujBw5kueff54DBw5EXZpkicI/\nxhT+mbFlyxaGDh3KLbfcwvvvvx91OS06ePAgM2bMYNSoUXTv3p2//uu/Zvbs2dTV1UVdmmSQwj/G\nli9frrOgQ+Tu/Ou//itf/vKXeeWVV6IuJy379+/n2Wef5Zvf/CalpaXcd999VFZW6pyZAlSw4a83\nfFMze/bsqEsoCJ9++inDhw/n/vvvL5ipk127djFp0iQGDhzIBRdcwA9+8ANee+013D3q0iQEoYS/\nmQ01s/VmttHMHm7m6+3N7LnE118zs55h9Hsyhw4d0ptYKXrppZeiLiHvLVu2jCuuuKKgp9E++ugj\nnnjiCa655hp69erF2LFjef311/WLII8FDn8zKwImAsOAvsBoM+vbpNndwG53/zzwODAhaL+nkmtv\nruWy+fPn68LuATz11FN87Wtfo7q6OupSsub999/nl7/8JVdffTU9e/bk+9//PgsXLqS+vj7q0qQV\nwjjyvwrY6O6b3b0OmAqMaNJmBDAlcX86cL1l8APmWso5dQcPHqSsrCzqMvLOkSNH+OEPf8g999zD\n4cOHoy4nMh988AG//vWvGTBgAOeccw533HEH06ZNY8+ePVGXJi0I4ySv84APk7argatP1sbd682s\n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\nJIb+P2c9rHcimwD6AAAAAElFTkSuQmCC\n”, 16c16 &amp;amp;lt; “&amp;amp;lt;matplotlib.figure.Figure at 0x10ba48cc0&amp;amp;gt;” — - &amp;amp;gt; “&amp;amp;lt;matplotlib.figure.Figure at 0x11037dcc0&amp;amp;gt;” 34c34 &amp;amp;lt; “ax.fill(x, y, zorder=10,facecolor=’green’)\n”, — - &amp;amp;gt; “ax.fill(x, y, zorder=10,facecolor=’black’)\n”,
+diffは単純な文字列の差分比較を行うだけなので、notebookがjsonで管理されており、matplotlibで生成される出力結果の保存内容にも差異がでるのでこうなってしまいます。
+jupyter/nbdimeを用いることで、notebook形式のjsonをパースしたうえでの差分比較が可能になります。
+提供されるコマンド一覧
+nbdiff : ノートブックの差分比較をターミナルで行う nbdiff-web : Notebookの差分をブラウザで行う 簡単な実行結果
+差分比較 ターミナル上での差分比較 `&amp;gt;&amp;gt; nbdiff nb_1.ipynb nb_2.ipynb
+nbdiff nb_1.ipynb nb_2.ipynb
+— — nb_1.ipynb 2017–02–02 11:00:48</description></item><item><title>PythonでGaussian Kernelのアニメーションを作成</title><link>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</link><pubDate>Sat, 13 Jan 2018 17:03:43 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</guid><description>Pythonでアニメーションを作成したかったのでメモ
+Gaussian Kernel GIF Animation
+当然ながら、HTML5のVideoは再生されないのでGIFに変換した結果が以下。
+これでHTML5で再生される。
+**GIF**で表示する方法として %matplotlib nbagg
+というオプションが存在しているが、Kernelがbusy状態を何度も繰り返すので、自分はmp4で出力するようにした。
+実験結果も以前はGIFで保存してたが、最近は全てmp4で管理するようにした。
+あと、**np.linspace()**がiterableではないので、イマイチな書き方になった。。
+**np.arange()**を使うべきなのか…
+Thanks Embedding Matplotlib Animations in Jupyter Notebooks
+Jupyter上でmatplotlibのアニメーションを再生する - Qiita</description></item><item><title>サイトのPWA化、ホスティングをGithub PagesからFirebaseへ移行</title><link>https://shunyaueta.com/posts/2018-01-09_%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AEpwa%E5%8C%96%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92github-pages%E3%81%8B%E3%82%89firebase%E3%81%B8%E7%A7%BB%E8%A1%8C/</link><pubDate>Tue, 09 Jan 2018 18:59:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-09_%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AEpwa%E5%8C%96%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92github-pages%E3%81%8B%E3%82%89firebase%E3%81%B8%E7%A7%BB%E8%A1%8C/</guid><description>PWA と FireBase を試してみたかった
+firebase init で現れる画面、テンション上がる
+Github Pages + CloudFlare で独自ドメインの shunyaueta.com をホスティングしてたんですが、Firebase でホスティングできると聞いて Firebase に移行しました。
+PWA にしたのは完全に趣味です。
+TL;DR; Web App を作ってる人は manifest.json を設置するだけでも Android の使用感が改善されそう 独自ドメインでお手軽に SSL ホスティングしたいなら Firebase hosting めっちゃおすすめです(1GB のホスティングは無料) FireBase Hosting だけだと Firebase 本来の旨味は味わえません PWA 1 年前ですが、簡潔に PWA の事が書かれています
+プログレッシブウェブアプリ詳解 ─ 過去・現在・未来
+左: PWA 化以前 右: PWA 化以降
+ServiceWorker と manifest.json,あとは&amp;lt;meta name=”theme-color”&amp;gt;を指定すると PWA のスコアが 100 点になる 🎉
+manihest.json によるホームアイコン作成誘導
+Favicon の各画像の生成は下記のサイトが便利でした。要求される解像度毎の画像(Favicon,Home icon, Apple home icon)が生成されて mahifest.</description></item><item><title>HerokuのDBにpgadmin4で接続してローカルにデータをダウンロードする</title><link>https://shunyaueta.com/posts/2017-12-27_heroku%E3%81%AEdb%E3%81%ABpgadmin4%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%97%E3%81%A6%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</link><pubDate>Wed, 27 Dec 2017 08:12:17 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-27_heroku%E3%81%AEdb%E3%81%ABpgadmin4%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%97%E3%81%A6%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</guid><description>pyadmin4でHeroku上のDBに接続する記事が日本語になかったので、メモ
+接続前の準備 Herokuにログインして、対象のAppのDBのページへ
+Heroku App DB page
+そこからDBのセッティングページにあるcredentialボタンをクリック
+click credential button
+そこに記載されている各種情報をpgadmin4に入力してHeroku上のDBに接続する
+Copy information
+pgadmin4でHerokuのDBに接続 以下のページからpgAdmin4をダウンロード
+Download
+そこからアプリを開くと下記の画面になるので、Add new Serverをクリック
+Click Add New Server
+Heroku上のDBの情報を入力していく。Serverの名前は適当で大丈夫です。
+接続されるとこんな感じになります。
+Query Tool Query Toolを使うことでHeroku上のDBに対してSQLクエリを投げる事ができます。
+Query Toolは上部のツールバーからアクセス可能です。 注意) 左カラムのテーブルをクリックした後でないとアクティブになりません。
+SQLの実行結果
+雷ボタンでSQLを実行可能 ↓ボタンでSQL結果をローカルにCSV形式で保存できます。</description></item><item><title>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp; 講義でJupyterhubを利用する</title><link>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</link><pubDate>Sat, 23 Dec 2017 17:48:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</guid><description>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp;amp; 講義でJupyterhubを利用するお話です。
+GIF画像は下記の記事で知ったtqdmというパッケージを使いたくなった衝動の成れの果てです。
+私が選ぶ2015年の”新しい”Pythonモジュール トップ5 IPythonデータサイエンスクックブック ―対話型コンピューティングと可視化のためのレシピ集 IPythonデータサイエンスクックブックをキッカケに研究室でもJupyterNotebookの凄さを皆が知り、MATLABのkernelを通して利用を始めたりしています。自分はPython2→MATLAB→MATLAB &amp;amp; Python3という流れで移り変わっています。
+JupyterNotebookをリモートサーバー上で公開 コードは以下の通りです。特に問題なく公開することができました。
+環境 CentOS 7系 下記の記事を参考にセットアップする。
+pyenvとvirtualenvで環境構築 今回はpyenvを使ってPython3.5.1でホストしています。
+昨日この記事を読んで、Anacondaがオススメされているので今度セットアップするときに使ってみよう。
+Running a public notebook server | JupyterNotebook Docment こまかい設定等は以下の記事で説明されています。IPython Notebookを対象にした記事ですが、ほとんど一緒なので問題ありません。(config.py自体がコメントで丁寧に各設定が記述されています。)
+IPython notebook サーバーを立ち上げる ipython notebookをリモートサーバ上で動かす。 参考記事 iPython notebookで研究開発生活 Juptyerhub : 講義でJupyterを利用する。 JupyterNotebookを講義でも活用できるようにならないかなと先生と探していたのですが、Jupyternotebookを公開するだけだとユーザー管理が不可能です。例えば ~tarou/というディレクトリでjupyternotebookを公開すると~tarou/にnotebookが沢山できだれがどのノートを作ったのかが把握できないという問題点があります。
+その問題点を解消するのがJupyterHubです。
+Jupyterhub Jupyterhubは標準のユーザー認証でPAMを利用しているので、Cent OSのユーザー名とパスワードでログインすることができます。
+2016/01/29 現時点で、PAMの認証方式だと上手く認証されるときとされないときが存在しています。
+PAM以外の認証方法としてはAuthで記述されているが以下の
+GitHub/BitBucket/MediaWiki/CILogon OAuth Google OAuth Local+Google OAuth (from within a Docker container) LDAP Authenticator が用意されている。大学でLADPサーバーが公開されているならそれと連携するのが一番だが、Githubなどを認証に使うのも良いんじゃないかと。</description></item><item><title>“Learning Deep Representations for Graph Clustering (AAAI2014)” を読んだ</title><link>https://shunyaueta.com/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Sat, 23 Dec 2017 17:38:19 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>自己符号化器とSpectral Clusteingの関連性を示した論文
+Paper link Author Fei Tian : http://home.ustc.edu.cn/~tianfei/ 中国科学技術大学Ph.D １年生 MSRAと共同研究、2014年にAAAI2本,COLING1本を1stで通してる。 この資料も面白い。ILSVRC2015で152層のDeep Residual Learningを提案し優勝(Error Rate : 3.57%) MSRA @ ILSVRC2015 資料 Motivation (研究背景・動機) Deep Learningが数多くの応用でめざましい成果をあげている。 音声認識 画像認識 自然言語処理 DLにおいて Clustering に関する適切な調査が行われてない。 論文の目的として、DLにおける Clusteringの調査を行う 概要 Graph Clusteringはクラスタリングでも重要な手法の一つ Graph Clusteringの応用 Image segmentation Community Detection VLSI Design 嬉しい点 : ベクトル空間におけるクラスタリングの問題 → データの類似度グラフ問題への変換が可能 自己符号化器とSpectral Clusteringの類似性 Spectral Clustering : グラフラプラシアンに対してEVDを行いk本の非零固有ベクトルを用いた空間に対してk-meansを行ったもの。 自己符号化器 : 入力データを低次元化、情報が最大限になるようにデータの次元を再構築する 計算量 : 対象とするグラフはn個のノードを持つ EVD : ナイーブに実装するとO(n3)の計算量、最速の実装はO(n2)の計算量 自己符号化器 : ノードがスパースな際は計算量はO(kn) スパース表現 : データが大きくなるならスパース性を有効活用したい EVD : 固有ベクトルが高い確率で密になるため、スパース性が保証されない 自己符号化器 : スパース性を用いるのは容易 既存研究で未検証な事柄、何を解決・解明したいのか？ Graph Clusteringのための Deep Learning の活用方法と調査 自己符号化器とSpectral Clusteringの類似性とその比較・検証 Method (提案手法) GraphEncoder(for graph clustering.</description></item><item><title>機械学習・コンピュータビジョンを活かしたビジネスを手掛ける株式会社ABEJAでインターンしてきました #2013</title><link>https://shunyaueta.com/posts/2017-12-23_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E6%B4%BB%E3%81%8B%E3%81%97%E3%81%9F%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%82%92%E6%89%8B%E6%8E%9B%E3%81%91%E3%82%8B%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEabeja%E3%81%A7%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%97%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F-sharp2013/</link><pubDate>Sat, 23 Dec 2017 17:18:02 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-23_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E6%B4%BB%E3%81%8B%E3%81%97%E3%81%9F%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%82%92%E6%89%8B%E6%8E%9B%E3%81%91%E3%82%8B%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEabeja%E3%81%A7%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%97%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F-sharp2013/</guid><description>株式会社ABEJAという会社に2013/8/25~2013/9/26間に2週間弱インターンシップに参加してきました。
+2013年当時のサイトのスクショ
+What’S ABEJA? ABEJAについて詳しく知りたい方は下記のリンクを見るとわかりやすいです。
+マーケティングから決済まで、人認証技術×ビジネスプロデュースで未来を変えるABEJAの挑戦【連載:NEOジェネ！】 いまそこにある、リアルタイムデータ解析。ぼくらの暮らしを変える、日本のスタートアップ3社 この会社をはじめて知ったのは、ミクシィでのインターンシップに参加してた時に別グループでインターンしていた知り合いの人に教えてもらったのがキッカケです。 機械学習や画像解析を用いて、現実世界の問題を解決して更にビジネスにまで昇華させている点に痺れました。
+本来なら一ヶ月近くコミットできる予定だったんですが、もう一つ挑戦していた別のインターンに運良く合格したので結果的には2週間弱という短めのインターンになりました。
+What do you doing in ABEJA intern? インターンの内容はPythonを使って社内用のツールをゴニョゴニョしてました。
+郷に従います。(StyleGuide見てなかった…) / 他2コメント http://t.co/5I0nThs4rU “PEP 8 — Style Guide for Python Code” http://t.co/in7q9lD6cy&amp;gt; — UEDA (@hurutoriya) 2014, 9月 25
+普段はmatlabかRuby書いてるんですが、普段書いてない言語を書くとあまりよろしくないコードになったのでStyleGuide導入しました。
+“vim で python 開発するとき pyflakes + PEP8 = flake8 が便利 — AtAsAtAmAtArA” http://t.co/ga33wqUytL&amp;gt; — UEDA (@hurutoriya) 2014, 9月 25
+ABEJAのエンジニアの人たちは、全員が自分の強みを持っていて凄く良いチームが出来上がっていました! 一緒に働くことができて心の底から心地よかったです。
+ランチや晩御飯は他のインターン生や社員さんと色んな話ができて最高でした。(ご馳走してくれた方々ありがとうございました) 人事の方が他のインターン生や社員さんとの交流の機会を積極的に設けてくれたのが大きかったです!!
+中間報告会で「ビジネスサイドの人とご飯食べに行きたいです!!」と要望を出したら時間調整をしてくれてありがたかったです!!
+行列の次元圧縮とその応用が僕の研究分野なのですが、今回のインターンで色んなアドバイスが聞けて研究に対してかなりモチベーションが上がりました。研究内容について相談することができるのは、本当にありがたかったです。
+お客さんが来たり誰かが営業に行ったりした時に、全員から挨拶の言葉が出ているので”めっちゃ元気があるし、この会社雰囲気最高だな!!“と肌で感じてました。</description></item><item><title>CoreMLがTensorFlow Liteをサポート</title><link>https://shunyaueta.com/posts/2017-12-06_coreml%E3%81%8Ctensorflow-lite%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88/</link><pubDate>Wed, 06 Dec 2017 13:36:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-06_coreml%E3%81%8Ctensorflow-lite%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88/</guid><description>TensorFlow無双
+TensorFlow Lite meets CoreML!!
+個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日TensorFlow LiteがCoreMLでサポートされるというアナウンスがありました!
+[](https://twitter.com/TensorFlow/status/938127069095002112)
+Announcing Core ML support in TensorFlow Lite
+CoreMLの最大の利点はiPhoneのアーキテクチャを最大限に利用した推論の高速化なので、Googleも何かしらの手を打ってくると思っていましたがまさかそのままCoreMLにサポートされたのは驚きです。
+個人的にkeras2, Caffe¹だけがサポートされてる今の状態は選択肢が少なくて微妙だなと思っていたので良いことだと思います。
+少し横道にそれますが、ONNXと呼ばれるMachine Leaningのモデルを相互変換できるプロジェクトも立ち上がっているので、近いうちにフレームワーク間の差異は消えていき、書きたいフレームワークで書き、動かしたい環境にモデルを変換して運用するという流れになる未来がくるかもしれません。
+ONNX: Open Neural Network Exchange Format
+Pixel²もiPhone8³以降に搭載されているA11チップに機械学習の計算を高速化させるチップが採用されているのでこれからMachine Learning on Mobileはドンドン加速していくとおもいます。iOS11の吉田さんが担当しているCoreMLの章を見てましたが、利点と欠点が明快に知れるのでオススメです。
+iOS 11 Programming - PEAKS
+TensorFlow LiteもデフォルトでAndroidをサポートしているので、こりゃほんとにプロダクション環境だとTensorFlow一択になりつつありますね
+にしてもTensorFlowの勢いはほんとに凄い…</description></item><item><title>Visualized Approximate Eigen Vector by Power Iteration on 3 dimensions.</title><link>https://shunyaueta.com/posts/2017-12-04_visualized-approximate-eigen-vector-by-power-iteration-on-3-dimensions./</link><pubDate>Mon, 04 Dec 2017 13:20:41 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-04_visualized-approximate-eigen-vector-by-power-iteration-on-3-dimensions./</guid><description>You can intuitively lean Power Iteration by Visualization Power.
 Animation of Power Iteration by MATLAB
 Power iteration - Wikipedia
-Finally you put a command line $ convert -layers optimize -loop 0 -delay 40 eigenvector*.png anim.gif</description>
-    </item>
-    
-    <item>
-      <title>Edge-Weighted Personalized PageRank: Breaking A Decade-Old Performance Barrier を読んだ</title>
-      <link>https://shunyaueta.com/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Mon, 04 Dec 2017 13:06:15 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>応用数理研究者が機械学習界に進出していく研究 youtube clip 応用数理界隈ではクラシックな解き方でPageRankが解かれているので最新の数値計算手法に置</description>
-    </item>
-    
-    <item>
-      <title>NIPS2017 Note</title>
-      <link>https://shunyaueta.com/posts/2017-12-04_nips2017-note/</link>
-      <pubDate>Mon, 04 Dec 2017 12:45:10 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-04_nips2017-note/</guid>
-      <description> NIPS2017 accepted paper is open!
+Finally you put a command line $ convert -layers optimize -loop 0 -delay 40 eigenvector*.png anim.gif</description></item><item><title>Edge-Weighted Personalized PageRank: Breaking A Decade-Old Performance Barrier を読んだ</title><link>https://shunyaueta.com/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Mon, 04 Dec 2017 13:06:15 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>応用数理研究者が機械学習界に進出していく研究
+youtube clip
+応用数理界隈ではクラシックな解き方でPageRankが解かれているので最新の数値計算手法に置き換えることで劇的にパフォーマンスが向上して10年前のパフォーマンスの鎖を解き放った論文
+KDD2015 Best student paper award Slide(PDF) Poster(PDF) Spectral network analysis wenleix/EdgePPR
+Presentation Movie is uploaded in Youtube. Author
+W. Xie Ph.D Candidate at Cornell University http://wenleix.github.io/ iterative computation on big graph data D. Bindel http://www.cs.cornell.edu/~bindel/ http://www.cs.cornell.edu/~bindel/talks.html He is frequently research activ like ideal young researcher. Nonlinear eigenvalue problem. Alan J. Demers Prof. Johannes Gehrke http://www.cs.cornell.edu/johannes/ Prof. VLDB,SIGMOD,KDD Motivation ページランクは重要な指標。遷移確率を求めるにはランダムサーファーモデル(ランダムウォーク)が必要。 様々な高速解法が提案されている。 Reseatch Question しかし10年以上前、PageRankの黎明期から Personalization based の手法は問題がある。 一般的なPageRankの解法の説明、その後にModel Reductionをベースにした約5倍の性能を誇る提案手法を説明。 提案手法の性能によって、パフォーマンス上のボトムネックは消えた。 Proposed Method PageRank 初期:WEBPageのランクに使用→現在:推薦、ソーシャルネットワーク Random Suffer Model Transition : αの確率でRandom Walk(滞在ノードから無作為に遷移) Teleporting : 1−α Random Junmp(滞在ノードに依存せずに全てのノードを対象に無作為遷移) x(t+1)=αPxt+(1−α)v,where P=AD−1 v is represents telepotation probabilitie xt Walkerの確率分布 サーファーが来る確率 = RandomWalkの確率_RandomWalkによる遷移確率 + RandomJumpの確率_RandomJumpの遷移確率 = α× RandomWalkによる遷移確率 + (1−α)×RandomJumpの遷移確率 = α×+(1−α)×v x: Stationary vector(不動ベクトル、定常ベクトル、不動点定理など) xが定常状態になった際に、xの確率分布がPageRankを表す。 x(t),x(t+1)が同一(残差が無い)だと仮定することで、次式の線形方程式を解くことでPagerankを求める。 Mx=b,where M=(I−αP),b=(1−α)v.</description></item><item><title>NIPS2017 Note</title><link>https://shunyaueta.com/posts/2017-12-04_nips2017-note/</link><pubDate>Mon, 04 Dec 2017 12:45:10 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-04_nips2017-note/</guid><description>NIPS2017 accepted paper is open!
 NIPS 2017
 NIPS 2017
 I note interesting Research Paper, Workshop on NIPS2017.
 e.g. Machine Learning on the Phone and other Consumer Devices(Wow! NIPS is strong theoretical conference but Nowadays Machine Leaning used Industrial Field!)
-Accepted Papers  Deep Learning: Practice and Trends Reinforcement Learning with People Powering the next 100 years Do Deep Neural Networks Suffer from Crowding? PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space Hunt For The Unique, Stable, Sparse And Fast Feature Learning On Graphs Deep Subspace Clustering Networks Learning Graph Representations with Embedding Propagation Practical Hash Functions for Similarity Estimation and Dimensionality Reduction Improved Graph Laplacian via Geometric Self-Consistency Multitask Spectral Learning of Weighted Automata FALKON: An Optimal Large Scale Kernel Method Recursive Sampling for the Nystrom Method SafetyNets: Verifiable Execution of Deep Neural Networks on an Untrusted Cloud Semi-Supervised Learning for Optical Flow with Generative Adversarial Networks Pose Guided Person Image Generation Reconstruct &amp;amp; Crush Network Real Time Image Saliency for Black Box Classifiers Protein Interface Prediction using Graph Convolutional Networks A simple model of recognition and recall memory Cross-Spectral Factor Analysis Clone MCMC: Parallel High-Dimensional Gaussian Gibbs Sampling Nearest-Neighbor Sample Compression: Efficiency, Consistency, Infinite Dimensions From which world is your graph On clustering network-valued data K-Medoids For K-Means Seeding Clustering Billions of Reads for DNA Data Storage Eigen-Distortions of Hierarchical Representations Sparse Embedded k-Means Clustering A New Theory for Matrix Completion Deep Mean-Shift Priors for Image Restoration Learning Affinity via Spatial Propagation Networks Non-Stationary Spectral Kernels Hierarchical Clustering Beyond the Worst-Case CTRL-Labs: Non-invasive Neural Interface Deep Robotic Learning using Visual Imagination and Meta-Learning Sensomind: Democratizing deep learning for the food industry Deep Learning for Robotics Inverse Reward Design Online Learning with a Hint  Symposium &amp;amp; Workshop  Interpretable Machine Learning Transparent and interpretable Machine Learning in Safety Critical Environments Machine Learning for the Developing World ML Systems Workshop @ NIPS 2017 Machine Learning on the Phone and other Consumer Devices NIPS Highlights (MLTrain), Learn How to code a paper with state of the art frameworks 2017 NIPS Workshop on Machine Learning for Intelligent Transportation Systems Teaching Machines, Robots, and Humans  </description>
-    </item>
-    
-    <item>
-      <title>Machine Learning that Matters (ICML2012) を読んだ</title>
-      <link>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Fri, 01 Dec 2017 07:55:12 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>機械学習の研究してる人は全員読んだ方がいい。そう断言できるぐらい良い内容が書かれています。 ICML2012で発表された最近の機械学習に関する</description>
-    </item>
-    
-    <item>
-      <title>Jupyter上でSVGのイラストやアニメーションが作成できるプラグイン egel</title>
-      <link>https://shunyaueta.com/posts/2017-11-22_jupyter%E4%B8%8A%E3%81%A7svg%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-egel/</link>
-      <pubDate>Wed, 22 Nov 2017 12:04:30 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-11-22_jupyter%E4%B8%8A%E3%81%A7svg%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-egel/</guid>
-      <description>アイデアは面白い… けど easy drawingではない Jupyter使ってると作図もJupyter上で完結させたいなぁ~って思うときがあるんですが、</description>
-    </item>
-    
-    <item>
-      <title>OpenCV 3.3から使えるDNNモジュールを使って物体検出</title>
-      <link>https://shunyaueta.com/posts/2017-11-14_opencv-3.3%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%88%E3%82%8Bdnn%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</link>
-      <pubDate>Tue, 14 Nov 2017 11:36:43 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-11-14_opencv-3.3%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%88%E3%82%8Bdnn%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</guid>
-      <description>OpenCVとMobileNetを使って物体検出を行った Object Detection with OpenCV dnn modules and MobileNetSSD on Jupyter Notebook Introduction 物体検出をDeep LeaningとOpenCVを用いて行う OpenCV</description>
-    </item>
-    
-    <item>
-      <title>Djangoで顔認識の結果をJSONで返す最小構成のAPIサーバーを作った</title>
-      <link>https://shunyaueta.com/posts/2017-11-13_django%E3%81%A7%E9%A1%94%E8%AA%8D%E8%AD%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92json%E3%81%A7%E8%BF%94%E3%81%99%E6%9C%80%E5%B0%8F%E6%A7%8B%E6%88%90%E3%81%AEapi%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/</link>
-      <pubDate>Mon, 13 Nov 2017 17:22:38 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-11-13_django%E3%81%A7%E9%A1%94%E8%AA%8D%E8%AD%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92json%E3%81%A7%E8%BF%94%E3%81%99%E6%9C%80%E5%B0%8F%E6%A7%8B%E6%88%90%E3%81%AEapi%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/</guid>
-      <description>DEMO githubでコードを公開してます。 hurutoriya/face_detector_api Djangoの勉強は、基本的なイントロダクションとしてオフィシャルサイトのドキュメントが充実している</description>
-    </item>
-    
-    <item>
-      <title>KDD2017 ピックアップ</title>
-      <link>https://shunyaueta.com/posts/2017-10-25_kdd2017-%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</link>
-      <pubDate>Wed, 25 Oct 2017 11:52:09 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-10-25_kdd2017-%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</guid>
-      <description>KDD2017 開催されてから時間が経ってしまいましたが、データマイニングのトップ国際会議のKDD2017で面白そうなものをピックアップしました。 Movie KDD</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Companies Tech Blog</title>
-      <link>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</link>
-      <pubDate>Wed, 25 Oct 2017 11:32:31 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</guid>
-      <description>Machine Leaning Blog
+Accepted Papers Deep Learning: Practice and Trends Reinforcement Learning with People Powering the next 100 years Do Deep Neural Networks Suffer from Crowding? PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space Hunt For The Unique, Stable, Sparse And Fast Feature Learning On Graphs Deep Subspace Clustering Networks Learning Graph Representations with Embedding Propagation Practical Hash Functions for Similarity Estimation and Dimensionality Reduction Improved Graph Laplacian via Geometric Self-Consistency Multitask Spectral Learning of Weighted Automata FALKON: An Optimal Large Scale Kernel Method Recursive Sampling for the Nystrom Method SafetyNets: Verifiable Execution of Deep Neural Networks on an Untrusted Cloud Semi-Supervised Learning for Optical Flow with Generative Adversarial Networks Pose Guided Person Image Generation Reconstruct &amp;amp; Crush Network Real Time Image Saliency for Black Box Classifiers Protein Interface Prediction using Graph Convolutional Networks A simple model of recognition and recall memory Cross-Spectral Factor Analysis Clone MCMC: Parallel High-Dimensional Gaussian Gibbs Sampling Nearest-Neighbor Sample Compression: Efficiency, Consistency, Infinite Dimensions From which world is your graph On clustering network-valued data K-Medoids For K-Means Seeding Clustering Billions of Reads for DNA Data Storage Eigen-Distortions of Hierarchical Representations Sparse Embedded k-Means Clustering A New Theory for Matrix Completion Deep Mean-Shift Priors for Image Restoration Learning Affinity via Spatial Propagation Networks Non-Stationary Spectral Kernels Hierarchical Clustering Beyond the Worst-Case CTRL-Labs: Non-invasive Neural Interface Deep Robotic Learning using Visual Imagination and Meta-Learning Sensomind: Democratizing deep learning for the food industry Deep Learning for Robotics Inverse Reward Design Online Learning with a Hint Symposium &amp;amp; Workshop Interpretable Machine Learning Transparent and interpretable Machine Learning in Safety Critical Environments Machine Learning for the Developing World ML Systems Workshop @ NIPS 2017 Machine Learning on the Phone and other Consumer Devices NIPS Highlights (MLTrain), Learn How to code a paper with state of the art frameworks 2017 NIPS Workshop on Machine Learning for Intelligent Transportation Systems Teaching Machines, Robots, and Humans</description></item><item><title>Machine Learning that Matters (ICML2012) を読んだ</title><link>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Fri, 01 Dec 2017 07:55:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>機械学習の研究してる人は全員読んだ方がいい。そう断言できるぐらい良い内容が書かれています。 ICML2012で発表された最近の機械学習に関する研究の問題点を論じた論文。
+Summaly
+「あなたは現実世界で役立つデータに対して機械学習の研究を行っていますか?」
+著者はNASAのJPL(ジェット推進研究所)、カリフォルニア工科大学に所属するKiri L.
+Kiri L. Wagstaff
+発表動画を探してみたんですが、ICML2012で発表した際のビデオはサーバのクラッシュにより喪失したとのこと。
+The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPointは下記リンク先に配布されています。http://www.wkiri.com/research/papers/wagstaff-MLmatters-slides-AAAI.pptx
+時間のある人は是非原著論文を呼んでみてください!
+概要 最近の機械学習は問題を社会・科学世界から持ち込むための深刻なギャップがある。 データセットに明確な制約をかけた物を私達は調査し、それを評価指標のために利用する。 データセットがある問題領域に戻って考えよう。 機械学習が持つインパクト(影響)を増加するためは私達の研究で何を変えればいいだろう？ 我々は機械学習の問題について焦点と議論を交わす。</description></item><item><title>Jupyter上でSVGのイラストやアニメーションが作成できるプラグイン egel</title><link>https://shunyaueta.com/posts/2017-11-22_jupyter%E4%B8%8A%E3%81%A7svg%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-egel/</link><pubDate>Wed, 22 Nov 2017 12:04:30 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-22_jupyter%E4%B8%8A%E3%81%A7svg%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-egel/</guid><description>アイデアは面白い… けど easy drawingではない
+Jupyter使ってると作図もJupyter上で完結させたいなぁ~って思うときがあるんですが、スクリプトで作図はけっこう辛いものがあります
+そのためJupyter上でフリースタイルに作図できる機能ないかなと探してたらegalという面白そうな拡張機能があったので使ってみました
+uclmr/egal
+egal GIF animation
+以下のリポジトリから $pip3 install git+https://github.com/uclmr/egal.gi
+でクローンしてきて $jupyter nbextension install --py egal $jupyter nbextension enable --py egal
+で拡張機能を有効にして使えるようになります。
+ブラシアイコンをクリックすると新たなセルが生成される
+👉ボタンをクリックすると各オブジェクトの詳細なプロパティが調整できる
+フレーム毎にオブジェクトを設定してアニメーションっぽくもできる
+5–6分使ってみて感じましたが、めちゃくちゃ操作がしづらい…
+やはりブラウザ上での図形作成はめちゃくちゃストレスたまるので、ローカルでkeynote使って図形作成したほうがマシな感じです。
+遊んだ結果をnotebookでgithubにアップしておきました。
+残念ながらSVGがGithub上ではレンダリングされないので残念な感じになっております&amp;hellip; ローカルにクローンしてきてegalを有効にしておくと見れます。
+hurutoriya/notebook
+結論 Jupyterで全てを完結させるのは難しい</description></item><item><title>OpenCV 3.3から使えるDNNモジュールを使って物体検出</title><link>https://shunyaueta.com/posts/2017-11-14_opencv-3.3%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%88%E3%82%8Bdnn%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</link><pubDate>Tue, 14 Nov 2017 11:36:43 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-14_opencv-3.3%E3%81%8B%E3%82%89%E4%BD%BF%E3%81%88%E3%82%8Bdnn%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA/</guid><description>OpenCVとMobileNetを使って物体検出を行った
+Object Detection with OpenCV dnn modules and MobileNetSSD on Jupyter Notebook
+Introduction 物体検出をDeep LeaningとOpenCVを用いて行う
+OpenCV 3.3からdnnモジュールが正式にリリースされた
+The main news is that we promoted DNN module from opencv_contrib to the main repository, improved and accelerated it a lot. An external BLAS implementation is not needed anymore. For GPU there is experimental DNN acceleration using Halide (http://halide-lang.org_). The detailed information about the module can be found in our wiki: Deep Learning in OpenCV.</description></item><item><title>Djangoで顔認識の結果をJSONで返す最小構成のAPIサーバーを作った</title><link>https://shunyaueta.com/posts/2017-11-13_django%E3%81%A7%E9%A1%94%E8%AA%8D%E8%AD%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92json%E3%81%A7%E8%BF%94%E3%81%99%E6%9C%80%E5%B0%8F%E6%A7%8B%E6%88%90%E3%81%AEapi%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/</link><pubDate>Mon, 13 Nov 2017 17:22:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-13_django%E3%81%A7%E9%A1%94%E8%AA%8D%E8%AD%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92json%E3%81%A7%E8%BF%94%E3%81%99%E6%9C%80%E5%B0%8F%E6%A7%8B%E6%88%90%E3%81%AEapi%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/</guid><description>DEMO
+githubでコードを公開してます。
+hurutoriya/face_detector_api
+Djangoの勉強は、基本的なイントロダクションとしてオフィシャルサイトのドキュメントが充実しているのでオススメです 。
+pyimagesearchのBlog記事で最小限の構成で顔検出を行うAPIサーバーを作る記事があり、今回はそれを基本に作成した。
+以下所感です。
+DjangoはRailsと比べるとそんなにレールが敷かれていない 日本語の記事がほぼ存在しないので、英語の記事を読む良い練習になった OpenCVやScikit-leanがそのまま動くのは相当魅力的で、サーバからのレスポンスが帰ってきた時には地味に感動 API設計や非同期処理なんかの知識が全く足りない 次の課題 今回の発展形としてdjango-rest-frameworkを使って、モデルを組み込んで作り上げてGoogle Apps Engine上で公開してみよう。 REST Frameworkはこの記事2を参考に画像をアップロードできる雛形は作り上げた。 後はOpenCVで処理を施す部分を書き上げたらいけそう。
+django-rest-frameworkで使える管理画面
+Thanks hurutoriya/face_detector_api Django REST Frameworkを使って爆速でAPIを実装する,ChristianKreuzberger/django-rest-imageupload-example Creating a face detection API with Python and OpenCV (in just 5 minutes) Django 1.11 Documentation Django REST framework is a powerful and flexible toolkit for building Web APIs. Djangoで顔認識の結果をJSONで返す最小構成のAPIサーバーを作った 以前のBlog記事から転載しました</description></item><item><title>KDD2017 ピックアップ</title><link>https://shunyaueta.com/posts/2017-10-25_kdd2017-%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</link><pubDate>Wed, 25 Oct 2017 11:52:09 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-10-25_kdd2017-%E3%83%94%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97/</guid><description>KDD2017
+開催されてから時間が経ってしまいましたが、データマイニングのトップ国際会議のKDD2017で面白そうなものをピックアップしました。
+Movie KDD2017で公開されている動画。最近は動画も全てオンラインに上げられて見られるのでとても良い。発表動画を見れば、言いたいことの骨子はサッと掴めるので動画があれば必ず見るようにしてる。
+KDD2017 video
+Keynote Speaks KDD2017の動画を探しても見つからなかったが、同等の事を話している動画を見つけた
+Three Principles of Data Science: Predictability, Stability, and Computability
+Hand on Tutorials KDD 2017 | Hands-On Tutorials
+TensorFlow: A Hands-on Introduction random-forests/tensorflow-workshop KDD 2017 PLENARY PANEL The Future of Artificially Intelligent Assistants
+APPLIED DATA SCIENCE INVITED PANELS Benchmarks and Process Management in Data Science: Will We Ever Get Over the Mess?
+https://dl.acm.org/citation.cfm?id=3120998
+凄い面白そうなんですが、ACMの論文は有料… 動画も見つからないので悲しい。 Tutorials KDDはResearch TrackとIndustry Trackに分割されてる影響かチュートリアルが実務向けと研究向けに豊富に用意されている。</description></item><item><title>Machine Learning Companies Tech Blog</title><link>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</link><pubDate>Wed, 25 Oct 2017 11:32:31 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</guid><description>Machine Leaning Blog
 We collect a Machine Learning companies Tech Blog lists based on Sponsor of Google Scholar Top Publications list
- https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_artificialintelligence https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_computervisionpatternrecognition https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_datamininganalysis  Machine Leaning &amp;amp; Computer Vision &amp;amp; Data Mining Top Conference Our Sponsors -
+https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_artificialintelligence https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_computervisionpatternrecognition https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_datamininganalysis Machine Leaning &amp;amp; Computer Vision &amp;amp; Data Mining Top Conference Our Sponsors -
 ICML 2017 Sponsors
 NIPS 2017 Sponsors
 KDD 2017 | Sponsors and Sponsorship Opportunities
@@ -451,26 +434,38 @@ AAAI-17: Thirty-First AAAI Conference on Artificial Intelligence
 CVPR2017
 ICCV 2017
 Machine Learning Company’s Tech Blog Alibaba
-https://cloudfocus.alibabacloud.com/?spm=a2c1b.detail207110.a2c1b31.22.1d234c96CMbTQt&amp;amp;tag_id=16493</description>
-    </item>
-    
-    <item>
-      <title>TexPadのおかげでLatex人生が変わりました</title>
-      <link>https://shunyaueta.com/posts/2017-10-08_texpad%E3%81%AE%E3%81%8A%E3%81%8B%E3%81%92%E3%81%A7latex%E4%BA%BA%E7%94%9F%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</link>
-      <pubDate>Sun, 08 Oct 2017 02:22:24 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-10-08_texpad%E3%81%AE%E3%81%8A%E3%81%8B%E3%81%92%E3%81%A7latex%E4%BA%BA%E7%94%9F%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</guid>
-      <description>Latexの煩わしい点が全て解決されるMacのソフトウェアです。 自動補完 synctex対応(コマンド+クリックでPDF、texファイル同期)</description>
-    </item>
-    
-    <item>
-      <title>Joining Arxivtimes</title>
-      <link>https://shunyaueta.com/posts/2017-09-25_joining-arxivtimes/</link>
-      <pubDate>Mon, 25 Sep 2017 07:49:32 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-09-25_joining-arxivtimes/</guid>
-      <description>論文読みとまとめを怠っていると、研究関係のトピックスのインデックスが全て破壊されていることに気がついた。 arXivTimesという面白い取り</description>
-    </item>
-    
-  </channel>
-</rss>
+https://cloudfocus.alibabacloud.com/?spm=a2c1b.detail207110.a2c1b31.22.1d234c96CMbTQt&amp;amp;tag_id=16493
+Amazon</description></item><item><title>TexPadのおかげでLatex人生が変わりました</title><link>https://shunyaueta.com/posts/2017-10-08_texpad%E3%81%AE%E3%81%8A%E3%81%8B%E3%81%92%E3%81%A7latex%E4%BA%BA%E7%94%9F%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</link><pubDate>Sun, 08 Oct 2017 02:22:24 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-10-08_texpad%E3%81%AE%E3%81%8A%E3%81%8B%E3%81%92%E3%81%A7latex%E4%BA%BA%E7%94%9F%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</guid><description>Latexの煩わしい点が全て解決されるMacのソフトウェアです。
+自動補完 synctex対応(コマンド+クリックでPDF、texファイル同期) 自動タイプセット Texpad · Smoothest way to write LaTeX 以前はatom+latexmkでLatexを扱ってましたが、texpadの方が断トツに使い心地が最高です。
+購入方法 Appstoreか、クレジットカードでAppstoreを経由せずに買うかの２つの方法があります。
+Appstoreはだいぶ前に更新を停止しているみたいなので、クレジットカードを持っている人はクレジットカードを使ってMacAppstoreを経由せずに購入することをオススメします。
+$24.99しましたが、それ以上の価値があるソフトウェアです。
+2週間の無料体験期間があるので是非お試し下さい。
+下記のスクリーンショットのように、beamerもtexpadで動くのは感動モノ。
+beamer on texpad
+日本語でTexPadを扱いたいときは下記のスクリプトを読み込んだら、bibtexのバグが治ります。</description></item><item><title>Joining Arxivtimes</title><link>https://shunyaueta.com/posts/2017-09-25_joining-arxivtimes/</link><pubDate>Mon, 25 Sep 2017 07:49:32 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-09-25_joining-arxivtimes/</guid><description>論文読みとまとめを怠っていると、研究関係のトピックスのインデックスが全て破壊されていることに気がついた。
+arXivTimesという面白い取り組みがあるので、それに参加する形で論文読みとまとめを行っていくことにした。
+arXivTimes/arXivTimes
+最近は arXivTimes Indicatorというサービスも公開されていて、投稿するとarxivtimesのユーザーページが作られるので論文読みのモチベーションが上がる施策作りがうまい。
+arXivTimes Indicator
+arXivTimes Indicator
+最新のトレンドや論文のインデックスを強固に張るために
+論文を1枚にまとめたものをTwitterに投稿していく こんなかんじでまとめていきます。
+[](https://twitter.com/hurutoriya/status/909997636391911424)
+revue(メルマガサービス)に機械学習・Computer Visionの海外での最新動向をまとめてコメント・ログ付け・まわりへ共有 メルマガ講読は以下で↓
+Scoop in CV, ML, Dev - Revue
+呼吸のように学習と成長を継続可能な環境を整えていきたい</description></item><item><title>ミクシィにインターンしてきた #2013 #DeployGate</title><link>https://shunyaueta.com/posts/2013-12-23_%E3%83%9F%E3%82%AF%E3%82%B7%E3%82%A3%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharp2013-sharpdeploygate/</link><pubDate>Mon, 23 Dec 2013 17:04:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-12-23_%E3%83%9F%E3%82%AF%E3%82%B7%E3%82%A3%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharp2013-sharpdeploygate/</guid><description>株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。 2013 年当時のスクリーンショットを探してたが、無かったので 2017/12/24 のを撮ってきた。良い意味であまり変わってない(ライさんの謎のくるまアプリとか)
+Dive into mixi
+なぜインターンに行こうと思ったのか 僕は高専から筑波大学の情報系に今年度から編入したんですが、
+編入してから同期の編入生や先輩、内部生の人達に会って 「このままじゃダメだ、もっと面白く!もっと楽しく生きる!!」 と感じたので参加しました。
+…つまり、面白そうな事をしたかったので参加しました。 選考過程 エントリーリーシートを提出、希望する配属先はここで提出します。 2 回の面接があるのですが、つくばから渋谷への道のりは遠いので一回にしてくれました。ありがとうございます！！
+面接の服装は、スーツじゃなくて良いので楽です！(むしろスーツはやめてねと言われました)
+自己紹介と自分のこれまでの成果物を面接官に説明した後に、質疑応答を 30 分、時間が 20 分ほど余ったので面接官の方から「気になってることをなんでも聞いて下さい」と言われて質問をしていると面接がいつの間にか終わりました。
+合否発表は翌日に連絡がきて無事合格することができました、嬉しい!!
+配属先 僕は第一希望のDeployGateに配属されました。
+DeployGate チームは社員二人、インターン三人という謎構成でした。
+「DepoyGate」とは、ミクシィ社の新規事業第 1 弾として登場した Android アプリ提供者向けのテスト版アプリ配信サービスです。 アプリをワイヤレスで配布することができ、アップデータ配信や動作ログがリアルタイムに取得できるので、プロジェクトメンバー全員が常に最新版アプリに触れることができます。 2012 年 9 月のサービス開始から、世界 93 ヵ国 3600 以上のアプリ開発に利用され、そのユーザーの 76％は英語圏というグローバルなサービスでもあります。 「DepoyGate」エンジニアからの発案で生まれたサービスです。 最新の技術に触れ、一緒に開発を進めていきたいという、あなたのチャレンジをお待ちしております。### メリット
+今回のミクシィインターンは 6 週間を超える長期のインターンで実際に提供されているサービスの開発に参加すること t ができます。
+デメリット 基本的に無いです。
+強いて言うなら夏休みが 4/5 ほど持ってかれたことですね。
+何をやった？ 基本的に Github に issue に上がってるチケットを消化していく感じでした。 自分でこれがあったら便利だなと思う機能を追加したり、不便な箇所を改修したりして、GO サインが出たら Depoloy していきます。</description></item></channel></rss>

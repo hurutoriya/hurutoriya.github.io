@@ -1,24 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Japanese on Shunya UETA</title>
-    <link>https://shunyaueta.com/tags/japanese/</link>
-    <description>Recent content in Japanese on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 14 Oct 2018 03:01:01 +0000</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/tags/japanese/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Machine Learning Casual Talks #6 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link>
-      <pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid>
-      <description>機械学習の信頼性が熱いよねというお話 柚餅子 さんの発表風景 2018/09/25 のMLCT #6 を開催しました。 MLCT とは 実務における機械学習の話や経験をカジュアルに語り</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Japanese on Shunya UETA</title><link>https://shunyaueta.com/tags/japanese/</link><description>Recent content in Japanese on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Sun, 14 Oct 2018 03:01:01 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/japanese/index.xml" rel="self" type="application/rss+xml"/><item><title>Machine Learning Casual Talks #6 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>機械学習の信頼性が熱いよねというお話
+柚餅子 さんの発表風景
+2018/09/25 のMLCT #6 を開催しました。
+MLCT とは
+実務における機械学習の話や経験をカジュアルに語り合おう
+というコミュニティです。
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました!
+Machine Learning Casual Talks #6 (2018/09/25 19:00〜)
+発表資料一覧 👇(スライドと配信動画) Machine Learning Casual Talks #6 - 資料一覧 - connpass
+柚餅子さん リブセンスにおける機械学習システムの信頼性エンジニアリング SREの考えを機械学習システムに取り入れるというお話ですが、筋が良さそう。特にSLO周りはうちでも取り入れないなぁと思いました Naomichi Agata さん ユーザーフィードバックと機械学習 半教師あり学習で解くというアプローチは非常に筋が良さそうで気になった。技術書典の書籍も気になる 👀 gamella さん マーケット予測モデルのPCDAの回し方 ms単位のデータを学習データにして株価のUP/DOWNを予測する。。。。適用するドメインの難易度が鬼ゲーすぎて、ハラハラしそうだけど解きがいがありそう @yu-ya4 さん Big Query ML を使ってみた話 さらっとBQMLを試して成果が出ましたと言っていたが、良い問題を探し出す嗅覚がすごいなと思いました。実際BQだけで過不足なくモデリングが終わるなら理想の世界ですね~ Kosuke Kitahara さん 発表資料は後日公開されます。謎の力によりYoutube配信はされていません KPT Keep 動画配信を問題なく完了できた 魅力ある発表内容を維持できた Problem 参加率が低かった。前回は65%程度の参加率でしたが、今回は雨の影響もありますが40% と低くなっていた 倍率も毎回1.</description></item></channel></rss>

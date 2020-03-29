@@ -1,24 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>雑記 on Shunya UETA</title>
-    <link>https://shunyaueta.com/tags/%E9%9B%91%E8%A8%98/</link>
-    <description>Recent content in 雑記 on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Wed, 06 Dec 2017 13:36:38 +0000</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/tags/%E9%9B%91%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>CoreMLがTensorFlow Liteをサポート</title>
-      <link>https://shunyaueta.com/posts/2017-12-06_coreml%E3%81%8Ctensorflow-lite%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88/</link>
-      <pubDate>Wed, 06 Dec 2017 13:36:38 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-06_coreml%E3%81%8Ctensorflow-lite%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88/</guid>
-      <description>TensorFlow無双 TensorFlow Lite meets CoreML!! 個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日TensorFlow LiteがCo</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>雑記 on Shunya UETA</title><link>https://shunyaueta.com/tags/%E9%9B%91%E8%A8%98/</link><description>Recent content in 雑記 on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Wed, 06 Dec 2017 13:36:38 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/%E9%9B%91%E8%A8%98/index.xml" rel="self" type="application/rss+xml"/><item><title>CoreMLがTensorFlow Liteをサポート</title><link>https://shunyaueta.com/posts/2017-12-06_coreml%E3%81%8Ctensorflow-lite%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88/</link><pubDate>Wed, 06 Dec 2017 13:36:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-06_coreml%E3%81%8Ctensorflow-lite%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88/</guid><description>TensorFlow無双
+TensorFlow Lite meets CoreML!!
+個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日TensorFlow LiteがCoreMLでサポートされるというアナウンスがありました!
+[](https://twitter.com/TensorFlow/status/938127069095002112)
+Announcing Core ML support in TensorFlow Lite
+CoreMLの最大の利点はiPhoneのアーキテクチャを最大限に利用した推論の高速化なので、Googleも何かしらの手を打ってくると思っていましたがまさかそのままCoreMLにサポートされたのは驚きです。
+個人的にkeras2, Caffe¹だけがサポートされてる今の状態は選択肢が少なくて微妙だなと思っていたので良いことだと思います。
+少し横道にそれますが、ONNXと呼ばれるMachine Leaningのモデルを相互変換できるプロジェクトも立ち上がっているので、近いうちにフレームワーク間の差異は消えていき、書きたいフレームワークで書き、動かしたい環境にモデルを変換して運用するという流れになる未来がくるかもしれません。
+ONNX: Open Neural Network Exchange Format
+Pixel²もiPhone8³以降に搭載されているA11チップに機械学習の計算を高速化させるチップが採用されているのでこれからMachine Learning on Mobileはドンドン加速していくとおもいます。iOS11の吉田さんが担当しているCoreMLの章を見てましたが、利点と欠点が明快に知れるのでオススメです。
+iOS 11 Programming - PEAKS
+TensorFlow LiteもデフォルトでAndroidをサポートしているので、こりゃほんとにプロダクション環境だとTensorFlow一択になりつつありますね
+にしてもTensorFlowの勢いはほんとに凄い…</description></item></channel></rss>

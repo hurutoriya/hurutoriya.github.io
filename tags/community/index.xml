@@ -1,60 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Community on Shunya UETA</title>
-    <link>https://shunyaueta.com/tags/community/</link>
-    <description>Recent content in Community on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 16 Jun 2019 22:01:27 +0900</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/tags/community/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Machine Learning Casual Talks #10 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2019-06-16_mlct10/</link>
-      <pubDate>Sun, 16 Jun 2019 22:01:27 +0900</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-06-16_mlct10/</guid>
-      <description>MLCT #10 を開催しました。 Machine Learning Casual Talks とは 実サービスにおける機械学習の経験をカジュアルに語り合おう を目的としたコミュニティです。 スポンサー 前回と同じく</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Casual Talks #8 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2019-02-02_machine-learning-casual-talks-sharp8-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link>
-      <pubDate>Sat, 02 Feb 2019 18:41:32 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2019-02-02_machine-learning-casual-talks-sharp8-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid>
-      <description>Machine Learning Casual Talks 第8回の開催を無事終えました MLCT とは 実サービスにおける機械学習の経験をカジュアルに語り合う コミュニティです スポンサー 今回も同じく本イベ</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Casual Talks #7 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link>
-      <pubDate>Sat, 15 Dec 2018 19:29:59 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid>
-      <description>Machine Learning Casual Talks 第七回を無事開催しました Machine Learning Casual Talks #7 (2018/11/20 18:30〜) MLCT とは 実サービスにおける機械学習の経験をカジュアルに語り合おう というコミュニティで</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Casual Talks #6 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link>
-      <pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid>
-      <description>機械学習の信頼性が熱いよねというお話 柚餅子 さんの発表風景 2018/09/25 のMLCT #6 を開催しました。 MLCT とは 実務における機械学習の話や経験をカジュアルに語り</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Casual Talks #5 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link>
-      <pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid>
-      <description>2018/07/13 にMLCT #5を開催してきたお話 Opening Talk by Aki Ariga Machine Learning Casual Talks #5 (2018/07/13 19:30〜) 本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Community on Shunya UETA</title><link>https://shunyaueta.com/tags/community/</link><description>Recent content in Community on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Sun, 16 Jun 2019 22:01:27 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/community/index.xml" rel="self" type="application/rss+xml"/><item><title>Machine Learning Casual Talks #10 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2019-06-16_mlct10/</link><pubDate>Sun, 16 Jun 2019 22:01:27 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-06-16_mlct10/</guid><description>MLCT #10 を開催しました。
+Machine Learning Casual Talks とは
+実サービスにおける機械学習の経験をカジュアルに語り合おう
+を目的としたコミュニティです。
+スポンサー 前回と同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会の提供を受け開催することができました。 スポンサー依頼を快諾いただきありがとうございました!
+配信動画はこちら!
+Sli.do がパネルディスカッションでめっちゃ便利な件 今回は、パネルディスカッションで sli.do をスクリーンにフルスクリーンで表示してモデレーションを行いました。
+手元のスマートフォンで質問をハイライトして、回答を終えたものはアーカイブという運用でしたが、とても快適なのでみなさんぜひお試しください。 スクリーンでの表示画面がSPAで同期されているので、手元のスマートフォンで更新すればリアルタイムで同期されるのがとても便利です。</description></item><item><title>Machine Learning Casual Talks #8 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2019-02-02_machine-learning-casual-talks-sharp8-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sat, 02 Feb 2019 18:41:32 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-02-02_machine-learning-casual-talks-sharp8-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>Machine Learning Casual Talks 第8回の開催を無事終えました
+MLCT とは
+実サービスにおける機械学習の経験をカジュアルに語り合う
+コミュニティです
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました!
+Machine Learning Casual Talks #8 (2019/01/28 18:30〜)
+当日の配信動画はこちら
+当日の発表資料はすべてこちらにあります
+Machine Learning Casual Talks #8 - 資料一覧 - connpass
+エムスリー 西場さん
+BEDORE すみのさん
+TL;DR; エムスリーの西場さん、すべてをこなす toBの機械学習サービス、システムアーキテクチャデザインかなり考えないとキツイ 懇親会での🍣の需給予測失敗しかけた 次回挑戦したいこと 今回会場撤収時に有志の参加者、登壇者の方が撤収作業を手伝っていただき非常に助かりました。次回は有志で会場撤収ボランティアの参加枠を作ろうかなと思いました。運営コストを下げるのは、継続で一番大事だなと思っているので、お手伝いいただいた皆様ありがとうございました。助かるという感情が出てくる前に、素直にめちゃくちゃ嬉しかったです!
+参加率も 8割を超えていて欠席率が非常に少なかったのも継続していきたい</description></item><item><title>Machine Learning Casual Talks #7 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sat, 15 Dec 2018 19:29:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>Machine Learning Casual Talks 第七回を無事開催しました
+Machine Learning Casual Talks #7 (2018/11/20 18:30〜)
+MLCT とは
+実サービスにおける機械学習の経験をカジュアルに語り合おう
+というコミュニティです。
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました!
+遺伝異常により髪が青く変色してしまったタカヤナギ=サン
+ABEJA の機械学習導入事例と辛い話を大田黒さんにお話していただきました!
+今回の勉強会資料は以下にまとまっています。
+Machine Learning Casual Talks #7 — 資料一覧 — connpass
+今回の内容を今北産業
+機械学習エンジニアとしてのキャリアのお話を タカヤナギ=サン 実世界に根付いたIOTと機械学習サービスはかなり辛い 各社の機械学習エンジニアの定義が揺らいでいるので、世界が壊れる 今回の改善点 参加枠の多様性 絶対参加するぞ枠 一般参加枠 初回参加枠 SNS枠 Blog枠 と今までは一つの枠で扱っていたものを、5つの枠に分散して用意してみました。
+なぜかというとドタキャンやノーショーの方の影響で本当に参加したい方や初回参加の方の機会が喪失してしまうのはいただけないので、それを解決したなと思ったのが始まりです。
+初回参加枠を設けることで、新規参加者が増えて内輪感が解消されるのも狙ってみました。その影響か前回と比較して2割ほど参加率が増えてよかったです :)
+パネルディスカッション 登壇者2名と僕がモデレーターを行い、パネルディスカッションを行いました。単なる発表保の質疑応答時よりも話が盛り上がってなによりでした~
+次回予告 次回 MLCT第8回は 2019/01/28 に参加予定です!
+現実世界での機械学習の辛みを共有したい・語りたいという方はゼヒご参加ください~
+Machine Learning Casual Talks #8 (2019/01/28 18:30〜)</description></item><item><title>Machine Learning Casual Talks #6 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-10-14_machine-learning-casual-talks-sharp6-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>機械学習の信頼性が熱いよねというお話
+柚餅子 さんの発表風景
+2018/09/25 のMLCT #6 を開催しました。
+MLCT とは
+実務における機械学習の話や経験をカジュアルに語り合おう
+というコミュニティです。
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました!
+Machine Learning Casual Talks #6 (2018/09/25 19:00〜)
+発表資料一覧 👇(スライドと配信動画) Machine Learning Casual Talks #6 - 資料一覧 - connpass
+柚餅子さん リブセンスにおける機械学習システムの信頼性エンジニアリング SREの考えを機械学習システムに取り入れるというお話ですが、筋が良さそう。特にSLO周りはうちでも取り入れないなぁと思いました Naomichi Agata さん ユーザーフィードバックと機械学習 半教師あり学習で解くというアプローチは非常に筋が良さそうで気になった。技術書典の書籍も気になる 👀 gamella さん マーケット予測モデルのPCDAの回し方 ms単位のデータを学習データにして株価のUP/DOWNを予測する。。。。適用するドメインの難易度が鬼ゲーすぎて、ハラハラしそうだけど解きがいがありそう @yu-ya4 さん Big Query ML を使ってみた話 さらっとBQMLを試して成果が出ましたと言っていたが、良い問題を探し出す嗅覚がすごいなと思いました。実際BQだけで過不足なくモデリングが終わるなら理想の世界ですね~ Kosuke Kitahara さん 発表資料は後日公開されます。謎の力によりYoutube配信はされていません KPT Keep 動画配信を問題なく完了できた 魅力ある発表内容を維持できた Problem 参加率が低かった。前回は65%程度の参加率でしたが、今回は雨の影響もありますが40% と低くなっていた 倍率も毎回1.</description></item><item><title>Machine Learning Casual Talks #5 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>2018/07/13 にMLCT #5を開催してきたお話
+Opening Talk by Aki Ariga
+Machine Learning Casual Talks #5 (2018/07/13 19:30〜)
+本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました。
+発表資料はこちら 👉 here (YouTube配信もあります)* この記事では、技術的なお話というよりも開催に至るまでの話をメインに書いていきます。
+Start 構想開始時期は2018/04頃に考えていて、弊社開催の
+MLOps Nightと呼ばれるイベントの準備を行っているときに、社内だけではなく
+_社外の人の機械学習の辛い話をうんうんと頷きながら聞きたいなぁ
+_と思ったのが事の始まりです
+そのあと、とりあえず日程と発表者は事前に集めておかねばと思いTakashi Nishibayashi さんにラブコールを送っていた
+発表依頼の様子
+chezou さんとの出会いとMLCT復活の狼煙 その後、
+勉強会の名前どうしよう 🤔 運営の方針どうすべきか 🤔 を迷いつつ時間が過ぎていき業務の一環として機械学習工学キックオフシンポジウム に参加していたら、そういえば Aki Ariga さんってMLCT開催してたよな、あの勉強会すごく参考になること多かったから復活できないかなと思い始め、気がついたら懇親会で hagino3000 さんに chezou さんを紹介してもらい
+「MLCT復活させたいです!!! 場所と運営準備は僕主体でやります!」
+と提案したら、あっさりと快諾され運営者に混ぜてもらえることになりました
+メッセージ投げかけから1分で承認される
+あらためて、突然飛び込んできた見知らぬ人物の運営への参加を快諾してくださった、 Aki Ariga, Atsushi KOMIYA, @tetsuroito さんありがとうございました 🙇
+また社内にはコミュニティを運営する人たちが集まる #z-organizer という夢のようなSlackチャンネルがあり、そこの方々からも今回の運営準備や行動理念など沢山の助言をいただきました! ありがとうございました!
+MLCT #5 開催の感想 定員は100名で募集したところ、応募者が200人強、実参加者は71人と盛況にイベントを開催することができました。
+運営初回ということもあり、発表者は事前に僕と hagino3000さん、同僚の hnakagawa, ynqa にお願いして数を揃えました。イベント告知後には soonraahさん、 overs_5121 さんにLT参加応募をいただき定員に達してホッと覚えがあります。</description></item></channel></rss>

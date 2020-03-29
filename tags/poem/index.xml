@@ -1,33 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Poem on Shunya UETA</title>
-    <link>https://shunyaueta.com/tags/poem/</link>
-    <description>Recent content in Poem on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 15 Jul 2018 09:31:28 +0000</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/tags/poem/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Machine Learning Casual Talks #5 を開催しました #MLCT</title>
-      <link>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link>
-      <pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid>
-      <description>2018/07/13 にMLCT #5を開催してきたお話 Opening Talk by Aki Ariga Machine Learning Casual Talks #5 (2018/07/13 19:30〜) 本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け</description>
-    </item>
-    
-    <item>
-      <title>2018 resolution</title>
-      <link>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</link>
-      <pubDate>Mon, 29 Jan 2018 16:08:35 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</guid>
-      <description>2018年の抱負です。 Works 機械学習エンジニアとして六本木で働く事になりました。機械学習エンジニアとしてスペシャリストになれるように周辺スキルを</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Poem on Shunya UETA</title><link>https://shunyaueta.com/tags/poem/</link><description>Recent content in Poem on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Sun, 15 Jul 2018 09:31:28 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/poem/index.xml" rel="self" type="application/rss+xml"/><item><title>Machine Learning Casual Talks #5 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>2018/07/13 にMLCT #5を開催してきたお話
+Opening Talk by Aki Ariga
+Machine Learning Casual Talks #5 (2018/07/13 19:30〜)
+本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました。
+発表資料はこちら 👉 here (YouTube配信もあります)* この記事では、技術的なお話というよりも開催に至るまでの話をメインに書いていきます。
+Start 構想開始時期は2018/04頃に考えていて、弊社開催の
+MLOps Nightと呼ばれるイベントの準備を行っているときに、社内だけではなく
+_社外の人の機械学習の辛い話をうんうんと頷きながら聞きたいなぁ
+_と思ったのが事の始まりです
+そのあと、とりあえず日程と発表者は事前に集めておかねばと思いTakashi Nishibayashi さんにラブコールを送っていた
+発表依頼の様子
+chezou さんとの出会いとMLCT復活の狼煙 その後、
+勉強会の名前どうしよう 🤔 運営の方針どうすべきか 🤔 を迷いつつ時間が過ぎていき業務の一環として機械学習工学キックオフシンポジウム に参加していたら、そういえば Aki Ariga さんってMLCT開催してたよな、あの勉強会すごく参考になること多かったから復活できないかなと思い始め、気がついたら懇親会で hagino3000 さんに chezou さんを紹介してもらい
+「MLCT復活させたいです!!! 場所と運営準備は僕主体でやります!」
+と提案したら、あっさりと快諾され運営者に混ぜてもらえることになりました
+メッセージ投げかけから1分で承認される
+あらためて、突然飛び込んできた見知らぬ人物の運営への参加を快諾してくださった、 Aki Ariga, Atsushi KOMIYA, @tetsuroito さんありがとうございました 🙇
+また社内にはコミュニティを運営する人たちが集まる #z-organizer という夢のようなSlackチャンネルがあり、そこの方々からも今回の運営準備や行動理念など沢山の助言をいただきました! ありがとうございました!
+MLCT #5 開催の感想 定員は100名で募集したところ、応募者が200人強、実参加者は71人と盛況にイベントを開催することができました。
+運営初回ということもあり、発表者は事前に僕と hagino3000さん、同僚の hnakagawa, ynqa にお願いして数を揃えました。イベント告知後には soonraahさん、 overs_5121 さんにLT参加応募をいただき定員に達してホッと覚えがあります。</description></item><item><title>2018 resolution</title><link>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</link><pubDate>Mon, 29 Jan 2018 16:08:35 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</guid><description>2018年の抱負です。
+Works 機械学習エンジニアとして六本木で働く事になりました。機械学習エンジニアとしてスペシャリストになれるように周辺スキルを伸ばしていきます。
+Kaggle Masterに到達(1 gold medal, 2 silver medals) 初参加のコンペもずるずる下降してしまいブロンズ圏外に…
+Coursera, Udacity (MOOC)でCV, Robotics 周辺を学習していく Githubで50 star overのOSSを作る(CV or ML) 勉強会に登壇 or 主催 する メタ学習(学習の効率化)について小話
+うまくなる技術¹などのメタ学習関連の本を色々と読み漁って学習のコツをいろいろ勉強してるんですが、外的指標(Github Star, Kaggle Rank, Toggl tracking,Coursera Certificate)を目的にすると人間気持ちよく継続できるらしいのでそれに沿った行動をするよう心がけています。後5–6冊メタ学習の本を読み終えてまとまったらまた記事にする。
+サンシャイン丸の内さん¹や ふろむださん¹の記事も参考になるのでオススメです
+個人的に最近心に響いたのはのじゃろりおじさんの勉強の姿勢です。
+３Dやunityの勉強方法について。：ねこみみメモ
+おそらく、やり続けて成功した人は「やり続ければ報われる！」と言うと思うのですが、年齢や経済状況や自分の才能を疑ったり等……現実は難しいと思います。
+私は偶然このタイミングで「オリジナルモデルのVyoutuberを出せた」から幸運に恵まれただけで、純粋な技術ではおそらく就職は無理だったのではないかと思います。2018~19年で見切りつけて諦めなきゃなと思ってたぐらいです。
+なので「やり続ければ報われる」とはとても言えません。ただ**「やり続けて報われなくてもいいと思える事は、やり続けた方がいい」**とは思います。
+他者の評価がどうであれ、やてって楽しくて満足できるのであればある意味常に成功している状態で、やればやるほど成功続きなわけです。
+English DMM 英会話 TOEFLE で90点、英語で働けるレベルを目指す 英語Blog記事を定期的に書く Health カラダステーションで内臓脂肪が少し高めになってたので走る(筋トレしかやってなかったツケが…) 筋肉量も左右でバラツキ(利き手側じゃないほうが100g程度筋肉量が少ない)があるので整える 筋トレはケトルベル16kgで色々とやってるので継続する。
+筋トレとランニング楽しむためにGarmin Vivoactive3¹ を注文しました。
+使えない筋肉だと意味が無いのでプリズナートレーニング²の本を読み込んで、筋肉全体の神経郡を発達させるような自重トレーニングをはじめました。
+プロテインは人工甘味料が入っていない以下の2種類で固定されました。
+過度な甘みは無く水単体でも飲めるくらいには自然な甘さなのでオススメです。
+Optimum Nutrition, ゴールドスタンダード、100%ホエイ、ナチュラル、チョコレート、4.8ポンド (2.</description></item></channel></rss>

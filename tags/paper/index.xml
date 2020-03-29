@@ -1,106 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Paper on Shunya UETA</title>
-    <link>https://shunyaueta.com/tags/paper/</link>
-    <description>Recent content in Paper on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Mon, 09 Apr 2018 13:55:44 +0000</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/tags/paper/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Google, Facebookが提供する機械学習基盤まとめ</title>
-      <link>https://shunyaueta.com/posts/2018-04-09_google-facebook%E3%81%8C%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%9F%BA%E7%9B%A4%E3%81%BE%E3%81%A8%E3%82%81/</link>
-      <pubDate>Mon, 09 Apr 2018 13:55:44 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-04-09_google-facebook%E3%81%8C%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%9F%BA%E7%9B%A4%E3%81%BE%E3%81%A8%E3%82%81/</guid>
-      <description>Google, Facebookの機械学習基盤情報をまとめました TFX 社内の勉強会でGoogle, Facebookが提供する機械学習基盤に関する論文を紹介した</description>
-    </item>
-    
-    <item>
-      <title>Slicing Convolutional Neural Network for Crowd Video Understanding (CVPR2016)を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Wed, 17 Jan 2018 06:04:37 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>群衆解析の手法に興味があるので、サーベイの結果を放流しておきます。 Jing Shao, Chen Change Loy, Kai Kang, and Xiaogang Wang, “Slicing Convolutional Neural Network for Crowd Video Understanding</description>
-    </item>
-    
-    <item>
-      <title>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Wed, 17 Jan 2018 05:55:41 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ Mikel Rodriguez, Josef Sivic, Ivan Laptev, Jean-Yves Audibert, “Data-driven Crowd Analysis in Videos”, in ICCV2011. Project Page を読んだので、メモです。 Summary tl;dr 高密</description>
-    </item>
-    
-    <item>
-      <title>Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Wed, 17 Jan 2018 05:41:44 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 link Summry を読んだので、軽くメモ。 VQA(Visual Question Answer) 画像に対する質問に対して応答するタスクに</description>
-    </item>
-    
-    <item>
-      <title>Analyzing Free-standing Conversational Groups: A Multimodal Approach (ACMMM15) を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Sun, 14 Jan 2018 10:41:12 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>スタンディングディスカッション形式での会話を評価した研究 Summary Slide X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe “Analyzing Free-standing Conversational Groups: A Multimodal Approach”, in 2015 ACM Multimedia Conference</description>
-    </item>
-    
-    <item>
-      <title>FUSE: Full Spectral Clustering(KDD2016) を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Sat, 13 Jan 2018 17:30:28 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案 べき乗法では近似固有ベクトル(Pseudo-eigenvecto</description>
-    </item>
-    
-    <item>
-      <title>Call center stress recognition with person-specific models を読んだ</title>
-      <link>https://shunyaueta.com/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Sat, 13 Jan 2018 17:19:48 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>Affective Computing: 計算機と人間の感情や情緒の関係性を考える領域 MIT Media Lab Affective Computing Groupのプロジェクト。 2年前にMIT Media Labへ訪問した際に、色々と見せてもらっ</description>
-    </item>
-    
-    <item>
-      <title>Edge-Weighted Personalized PageRank: Breaking A Decade-Old Performance Barrier を読んだ</title>
-      <link>https://shunyaueta.com/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Mon, 04 Dec 2017 13:06:15 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>応用数理研究者が機械学習界に進出していく研究 youtube clip 応用数理界隈ではクラシックな解き方でPageRankが解かれているので最新の数値計算手法に置</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning that Matters (ICML2012) を読んだ</title>
-      <link>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link>
-      <pubDate>Fri, 01 Dec 2017 07:55:12 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid>
-      <description>機械学習の研究してる人は全員読んだ方がいい。そう断言できるぐらい良い内容が書かれています。 ICML2012で発表された最近の機械学習に関する</description>
-    </item>
-    
-    <item>
-      <title>Machine Learning Companies Tech Blog</title>
-      <link>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</link>
-      <pubDate>Wed, 25 Oct 2017 11:32:31 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</guid>
-      <description>Machine Leaning Blog
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Paper on Shunya UETA</title><link>https://shunyaueta.com/tags/paper/</link><description>Recent content in Paper on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Mon, 09 Apr 2018 13:55:44 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/paper/index.xml" rel="self" type="application/rss+xml"/><item><title>Google, Facebookが提供する機械学習基盤まとめ</title><link>https://shunyaueta.com/posts/2018-04-09_google-facebook%E3%81%8C%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%9F%BA%E7%9B%A4%E3%81%BE%E3%81%A8%E3%82%81/</link><pubDate>Mon, 09 Apr 2018 13:55:44 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-09_google-facebook%E3%81%8C%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%9F%BA%E7%9B%A4%E3%81%BE%E3%81%A8%E3%82%81/</guid><description>Google, Facebookの機械学習基盤情報をまとめました
+TFX
+社内の勉強会でGoogle, Facebookが提供する機械学習基盤に関する論文を紹介したので、その資料を公開します#### 経緯
+機械学習をサービスとして提供開始すると、継続的な学習やプロダクション環境での機械学習の提供はモデル構築以外にもいろいろと考える問題が多くなります¹
+[1] Hidden technical debt in Machine learning systems NIPS’15
+要するに機械学習をサービスとして届けるには、実はめちゃんこ大変なんだよという話なんですが、みんな同じ問題にぶち当たります。
+そのためプロダクションレディなレベルで機械学習を提供できるプラットフォームを各社が提案しておりその中でもGoogle, Facebookの事例を提供します。
+TL; DR; FBLearner: MLaaSの事例として最初に読むべき論文、MLaaSをどのような戦略で提供しているかを抽象的にまなべるため、鳥瞰図として読みましょう TFXは逆に機械学習基盤が必要とする技術スタックや要件などを詳細に説明しており、教科書的な立ち位置です。社内で機械学習基盤を内製したい場合に詳しく読み込むこと必須 両社ともMLaaSをスケーラブルに提供する環境ができており、サービスのコアテクノロジーになっている Google : Tensorflow Expand TFX: A tensor flow-based production-scale machine learning platform
+Facebook : FBLeaner Applied machine learning at facebook a datacenter infrastructure perspective HPCA18
+ONNX を見ていると TensorFlow VS. ONNX 陣営が出来つつありどちらのプラットフォームに乗るかの戦略が大事だなと思います。
+Googleはモバイル上のMLから超大規模分散学習までTFシリーズで提供、実際のサービング環境も TFServingというスタックを提供しはじめていて個人的にTensorFlowが何歩も先にいっているという所感
+(逆にTensorFlow 一強状態になると、競争状態がなくなるので是非ONNX陣営には頑張ってほしい)</description></item><item><title>Slicing Convolutional Neural Network for Crowd Video Understanding (CVPR2016)を読んだ</title><link>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Wed, 17 Jan 2018 06:04:37 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>群衆解析の手法に興味があるので、サーベイの結果を放流しておきます。
+Jing Shao, Chen Change Loy, Kai Kang, and Xiaogang Wang, “Slicing Convolutional Neural Network for Crowd Video Understanding”, in CVPR, 2016.
+Project Page
+Summary
+一言説明 時系列・空間的特徴からCNNで特徴を学習、群衆の動画に対してstate-of-the-artを達成
+3個のCNNを用いて下記の３つの特徴を表現学習
+xy- : 空間的特徴 xt- : x軸の時系列特徴 yt- : y軸の時系列特徴 Comments Dataset としてWWW Crowd Dataset
+が公開されている。10,000本の群衆の動画を収集公開しているとのこと。
+Demo Movie
+紹介動画を見てみたら分かるが、群衆の動画というよりも数が増大した結果一般的な画像認識のデモ動画になっている Jing ShaoさんはCVPR2014から群衆解析のためのdescriptorを提案したりしてたんだけど、2016年からDeepな手法での群衆解析の研究をやっているのは手が早いなと 所属グループはISLVRC2015の物体認識タスクで優勝した香港大学のグループ Multimedia Laboratory The Chinese University of Hong Kong データセット、実装コードを必ず公開しているのは尊敬、またそれくらいやらないとトップには通過しないんだろうな CNNのアーキテクチャ毎の比較実験と考察をかなり入念に行っていた。数年後には各データのフォーマットに合わせたベストなDNNのアーキテクチャが決まってくるんじゃないだろうか</description></item><item><title>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ</title><link>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Wed, 17 Jan 2018 05:55:41 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ
+Mikel Rodriguez, Josef Sivic, Ivan Laptev, Jean-Yves Audibert, “Data-driven Crowd Analysis in Videos”, in ICCV2011.
+Project Page
+を読んだので、メモです。
+Summary
+tl;dr 高密度な群集内の個人を追跡を転移学習によって精度を向上させる手法 Contribution 追跡の精度を転移学習によって向上させた 転移学習を行うためのデータセットとそのフレームワークを考案 論文内では、転移学習の例としてマラソンAの群集を対象に追跡する際に、以下の流れで転移学習を行う。
+大域的な群衆状況のマッチング : 同じようなシーンを探索(この場合DB内にあるマラソン動画) 局所的な群衆状況のマッチング : 1でマッチした動画においてオプティカルフローが類似するパッチを探索して転移学習 また、Rare Events(デモの最中に群集を横断するカメラマンなど、群衆の流れに対して同調しない動きを行う人物)に対しても実験を行い評価。
+Comments 転移学習は自分のイメージだと、自然言語処理のイメージ(一般的な文書を学習したモデルを法律文書に対して適用するなど)しかなかったので新鮮な気持ちで読めた。
+動画なら転移学習を行ったとしても、直感的に良い特徴を学べそうなので、良い仮説を立てている論文でした。
+最後に示されてる個人追跡における平均誤検出の単位がpixelだが、Ground-Truthと提案手法の追跡軌跡の重複度具合を見てると誤検出が更に高そうに見えるけどどうなんでしょうか？
+(テストデータのみ学習が58.82、転移学習を行った提案手法だと46.88[pixel]になっていてもっと相対的な差が出てくるはず?)</description></item><item><title>Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ</title><link>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Wed, 17 Jan 2018 05:41:44 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 link
+Summry
+を読んだので、軽くメモ。
+VQA(Visual Question Answer) 画像に対する質問に対して応答するタスクに対し、その質問クエリに対して画像のどの領域に注目すべきかのモデルの学習方法について論じた論文。
+Contribution VQA datasetに対して、提案手法を適用。従来手法を全て上回った。 画像に対してCNNを用いて物体領域の検出を行った後にベクトル化、質問クエリはword2vecを用いてベクトル化を行う。 その2つのベクトルを用いて内積計算により重み付けを行うことで、どの領域に注目すべきかを計算する。 Comments 引用文献の訳9割が2014–2015(直近2年間)で発表された論文で、改めてこの分野の最先端を駆け抜けるのは凄まじい能力が必要になるなと思いました。
+そして相変わらずCVPRの論文のネーミングセンスは良いですね。(ジャケ買いならぬジャケ読み)
+単純な質問なら、人間でも瞬間的に解答可能な物が多いなと感じた。
+fig. 1
+セマンティックな疑問(Fig.1 雨は降っていますか?)の場合、人間に注目した場合は傘をさしているから雨と判断しても良いがもっと広い範囲で画像を見てみると空は快晴なので人間に注目するのは筋が悪くVQAはとても難しくチャレンジングな問題だと書かれていた。(それでも充分すごい領域に到達しているなと思うが)</description></item><item><title>Analyzing Free-standing Conversational Groups: A Multimodal Approach (ACMMM15) を読んだ</title><link>https://shunyaueta.com/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Sun, 14 Jan 2018 10:41:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>スタンディングディスカッション形式での会話を評価した研究
+Summary Slide
+X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe
+“Analyzing Free-standing Conversational Groups: A Multimodal Approach”, in 2015 ACM Multimedia Conference
+link
+を読んだので、軽くメモ。
+マルチモーダル系の論文初めて読んだんですが、まとめるとコントリビューションが5つあると主張。
+Contribution 音声・近接情報、そして監視カメラからの身体と頭の姿勢推定からマルチモーダルに解析 フリースタンディングディスカッションを身体・頭の姿勢推定から解析 カメラと音声・近接センサーからなるマルチモーダルな解析するためのフレームワークを提案 ラベリングされてないデータに対する行列補間問題の考案 SALSA(データ・セット)を公開・評価 SALSAというポスターセッションの動画と音声のデータも公開されている
+SALSA: Synergetic sociAL Scene Analysis
+動画はGoogle Driveで公開されていて時代の波を感じる。
+データセットを公開 論文も読みやすい 新しい行列補完計画法(アルゴリズム)を提案 実問題に取り組む と盛り沢山な内容で面白かった。
+スライド内のリンクはGoogle Slideで共有しているのでこちらを参照すると便利です。
+X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe &amp;quot;Analyzing Free-standing Conversational Groups: A…</description></item><item><title>FUSE: Full Spectral Clustering(KDD2016) を読んだ</title><link>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Sat, 13 Jan 2018 17:30:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案
+べき乗法では近似固有ベクトル(Pseudo-eigenvectors)は複数の真の固有ベクトルの線形結合からなる。有益でない固有ベクトルも含まれるのでいかにそれを除去するか Fig.1 で言ってることがいまいちわからない。ｃ,ｄも変化がないように見える。論文で言及してる stripe が何を指してるかが不明 分かった。赤・青・黒の３つのクラスタで分かれている。最初は黒色がクラスタ境界面に見えた。論文内での multi scale というのは、データの幾何的な分布を指している？ 固有値計算は O(n³）かかるから計算量が~~って毎回言われるが、行列の状態に依存するので毎回最悪の場合を主張されてるも困る ZP self-turining spectral clustering をなぜ対抗馬にして比較してるのかは謎。 ICA¹を行ったあとにその行列に対して回転処理を行い情報量の最小化を狙う クラスタ数が多い場合、PIC では良い結果が出づらい multi scale なデータの場合標準の spectral clustering では失敗することが多々ある fig.2 (a) 見ればわかるがk-means では分離が困難 fig.2(b) ４－５本目の固有ベクトルを基底ベクトルにもつ空間ではクラスタのオーバーラップが少ない つまり１－５本目の固有ベクトル全て含めてクラスタリングすれば結果が良好になるのではないか？（仮説） fig.2 © ４回べき乗法を行った。結果が似てる。（縦軸が何を表してるかは不明）。四回が上から四本求めたのか、一番上の固有ベクトルを４回求めたのか分からない fig. (d) 提案手法を適用。k-means で分離可能 行列Vをp回べき乗法を行って構築 E=MVの最小化を行う ICA を最小化するために Jacobi Rotation を用いる。探索には貪欲法を採用 Contribution マルチスケール（多種多様な）データ分布に対してクラスタリングが可能 計算時間は従来（ncut)と同等 感想 PIC(Power Itetaion Clusterg)をまさか拡張してくるとは思わなかったなので、興味深い論文。(実装して再現実験したけど、Early stopping の段階で高確率でクラスタリングが失敗していて使い物にならなかった印象があるので…) データの分布が多様な場合、上位数本のベクトルではなく、そこから更に下の固有ベクトルに着目したほうが結果が良好になるのは面白い KDD の論文、相変わらず読みやすかった。</description></item><item><title>Call center stress recognition with person-specific models を読んだ</title><link>https://shunyaueta.com/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Sat, 13 Jan 2018 17:19:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>Affective Computing: 計算機と人間の感情や情緒の関係性を考える領域
+MIT Media Lab Affective Computing Group のプロジェクト。
+2 年前に MIT Media Lab へ訪問した際に、色々と見せてもらったけどかなり野心的な事に取り組んでいて感動してた。(デバイスも自分たちでプロトタイプを作りまくっていて、Deploy or Dieの意思を感じ取れる)
+論文のまとめスライドは以下
+One Slide Summary
+HCI 系の論文は初めてまともに読んだんですが、
+実験デザインが一番難しそう 人と計算機の関係を研究するので、必然的に人間の感性をどう評価する話にもつながってきてる? 手法に重きを置くというよりも、問題に重きを置いている印象 普段自分は、数値線形代数や機械学習、コンピュータビジョンを主にやっていて、精度をどれだけ出せるか、正解率をどれだけ向上や、速度をどれだけ上げれるかを理論的に保証、提案したりしていますが、面白い問題や興味深いデータを集めることも大事だなと思った。
+実験計画法¹もかなり重要で、メンターの人から実験計画法の成り立ちを教えてもらってとてもおもしろかった。
+実験計画法についてのまとめスライド</description></item><item><title>Edge-Weighted Personalized PageRank: Breaking A Decade-Old Performance Barrier を読んだ</title><link>https://shunyaueta.com/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Mon, 04 Dec 2017 13:06:15 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>応用数理研究者が機械学習界に進出していく研究
+youtube clip
+応用数理界隈ではクラシックな解き方でPageRankが解かれているので最新の数値計算手法に置き換えることで劇的にパフォーマンスが向上して10年前のパフォーマンスの鎖を解き放った論文
+KDD2015 Best student paper award Slide(PDF) Poster(PDF) Spectral network analysis wenleix/EdgePPR
+Presentation Movie is uploaded in Youtube. Author
+W. Xie Ph.D Candidate at Cornell University http://wenleix.github.io/ iterative computation on big graph data D. Bindel http://www.cs.cornell.edu/~bindel/ http://www.cs.cornell.edu/~bindel/talks.html He is frequently research activ like ideal young researcher. Nonlinear eigenvalue problem. Alan J. Demers Prof. Johannes Gehrke http://www.cs.cornell.edu/johannes/ Prof. VLDB,SIGMOD,KDD Motivation ページランクは重要な指標。遷移確率を求めるにはランダムサーファーモデル(ランダムウォーク)が必要。 様々な高速解法が提案されている。 Reseatch Question しかし10年以上前、PageRankの黎明期から Personalization based の手法は問題がある。 一般的なPageRankの解法の説明、その後にModel Reductionをベースにした約5倍の性能を誇る提案手法を説明。 提案手法の性能によって、パフォーマンス上のボトムネックは消えた。 Proposed Method PageRank 初期:WEBPageのランクに使用→現在:推薦、ソーシャルネットワーク Random Suffer Model Transition : αの確率でRandom Walk(滞在ノードから無作為に遷移) Teleporting : 1−α Random Junmp(滞在ノードに依存せずに全てのノードを対象に無作為遷移) x(t+1)=αPxt+(1−α)v,where P=AD−1 v is represents telepotation probabilitie xt Walkerの確率分布 サーファーが来る確率 = RandomWalkの確率_RandomWalkによる遷移確率 + RandomJumpの確率_RandomJumpの遷移確率 = α× RandomWalkによる遷移確率 + (1−α)×RandomJumpの遷移確率 = α×+(1−α)×v x: Stationary vector(不動ベクトル、定常ベクトル、不動点定理など) xが定常状態になった際に、xの確率分布がPageRankを表す。 x(t),x(t+1)が同一(残差が無い)だと仮定することで、次式の線形方程式を解くことでPagerankを求める。 Mx=b,where M=(I−αP),b=(1−α)v.</description></item><item><title>Machine Learning that Matters (ICML2012) を読んだ</title><link>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</link><pubDate>Fri, 01 Dec 2017 07:55:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-01_machine-learning-that-matters-icml2012-%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0/</guid><description>機械学習の研究してる人は全員読んだ方がいい。そう断言できるぐらい良い内容が書かれています。 ICML2012で発表された最近の機械学習に関する研究の問題点を論じた論文。
+Summaly
+「あなたは現実世界で役立つデータに対して機械学習の研究を行っていますか?」
+著者はNASAのJPL(ジェット推進研究所)、カリフォルニア工科大学に所属するKiri L.
+Kiri L. Wagstaff
+発表動画を探してみたんですが、ICML2012で発表した際のビデオはサーバのクラッシュにより喪失したとのこと。
+The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPointは下記リンク先に配布されています。http://www.wkiri.com/research/papers/wagstaff-MLmatters-slides-AAAI.pptx
+時間のある人は是非原著論文を呼んでみてください!
+概要 最近の機械学習は問題を社会・科学世界から持ち込むための深刻なギャップがある。 データセットに明確な制約をかけた物を私達は調査し、それを評価指標のために利用する。 データセットがある問題領域に戻って考えよう。 機械学習が持つインパクト(影響)を増加するためは私達の研究で何を変えればいいだろう？ 我々は機械学習の問題について焦点と議論を交わす。</description></item><item><title>Machine Learning Companies Tech Blog</title><link>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</link><pubDate>Wed, 25 Oct 2017 11:32:31 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-10-25_machine-learning-companies-tech-blog/</guid><description>Machine Leaning Blog
 We collect a Machine Learning companies Tech Blog lists based on Sponsor of Google Scholar Top Publications list
- https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_artificialintelligence https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_computervisionpatternrecognition https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_datamininganalysis  Machine Leaning &amp;amp; Computer Vision &amp;amp; Data Mining Top Conference Our Sponsors -
+https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_artificialintelligence https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_computervisionpatternrecognition https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=en&amp;amp;vq=eng_datamininganalysis Machine Leaning &amp;amp; Computer Vision &amp;amp; Data Mining Top Conference Our Sponsors -
 ICML 2017 Sponsors
 NIPS 2017 Sponsors
 KDD 2017 | Sponsors and Sponsorship Opportunities
@@ -108,8 +80,5 @@ AAAI-17: Thirty-First AAAI Conference on Artificial Intelligence
 CVPR2017
 ICCV 2017
 Machine Learning Company’s Tech Blog Alibaba
-https://cloudfocus.alibabacloud.com/?spm=a2c1b.detail207110.a2c1b31.22.1d234c96CMbTQt&amp;amp;tag_id=16493</description>
-    </item>
-    
-  </channel>
-</rss>
+https://cloudfocus.alibabacloud.com/?spm=a2c1b.detail207110.a2c1b31.22.1d234c96CMbTQt&amp;amp;tag_id=16493
+Amazon</description></item></channel></rss>

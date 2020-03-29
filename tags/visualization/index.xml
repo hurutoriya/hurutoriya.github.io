@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Visualization on Shunya UETA</title>
-    <link>https://shunyaueta.com/tags/visualization/</link>
-    <description>Recent content in Visualization on Shunya UETA</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Mon, 04 Dec 2017 13:20:41 +0000</lastBuildDate>
-    
-	<atom:link href="https://shunyaueta.com/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Visualized Approximate Eigen Vector by Power Iteration on 3 dimensions.</title>
-      <link>https://shunyaueta.com/posts/2017-12-04_visualized-approximate-eigen-vector-by-power-iteration-on-3-dimensions./</link>
-      <pubDate>Mon, 04 Dec 2017 13:20:41 +0000</pubDate>
-      
-      <guid>https://shunyaueta.com/posts/2017-12-04_visualized-approximate-eigen-vector-by-power-iteration-on-3-dimensions./</guid>
-      <description>You can intuitively lean Power Iteration by Visualization Power.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Visualization on Shunya UETA</title><link>https://shunyaueta.com/tags/visualization/</link><description>Recent content in Visualization on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Mon, 04 Dec 2017 13:20:41 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/visualization/index.xml" rel="self" type="application/rss+xml"/><item><title>Visualized Approximate Eigen Vector by Power Iteration on 3 dimensions.</title><link>https://shunyaueta.com/posts/2017-12-04_visualized-approximate-eigen-vector-by-power-iteration-on-3-dimensions./</link><pubDate>Mon, 04 Dec 2017 13:20:41 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-04_visualized-approximate-eigen-vector-by-power-iteration-on-3-dimensions./</guid><description>You can intuitively lean Power Iteration by Visualization Power.
 Animation of Power Iteration by MATLAB
 Power iteration - Wikipedia
-Finally you put a command line $ convert -layers optimize -loop 0 -delay 40 eigenvector*.png anim.gif</description>
-    </item>
-    
-  </channel>
-</rss>
+Finally you put a command line $ convert -layers optimize -loop 0 -delay 40 eigenvector*.png anim.gif</description></item></channel></rss>

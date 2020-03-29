@@ -1,126 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Tensorboard を わずか2行で Jupyter Notebook上で表示 - Shunya UETA</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Tensorboard を わずか2行で Jupyter Notebook上で表示" />
-<meta property="og:description" content="Pytorch 1.2からは公式にTensorboardがサポートされている Tensorboard とは、学習の状況を可視化できるTensorFlow Family の一種 Jupyte Notebook" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/" />
-<meta property="article:published_time" content="2019-09-24T23:16:07+09:00" />
-<meta property="article:modified_time" content="2019-09-24T23:16:07+09:00" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tensorboard を わずか2行で Jupyter Notebook上で表示"/>
-<meta name="twitter:description" content="Pytorch 1.2からは公式にTensorboardがサポートされている Tensorboard とは、学習の状況を可視化できるTensorFlow Family の一種 Jupyte Notebook"/>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+<!doctype html><html lang=ja prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=description content><meta name=HandheldFriendly content="True"><meta name=MobileOptimized content="320"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=keywords content="Jupyter,
+Python,
+Pytorch,"><meta property="og:type" content="article"><meta property="og:description" content><meta property="og:title" content="Tensorboard を わずか2行で Jupyter Notebook上で表示"><meta property="og:site_name" content="Shunya UETA"><meta property="og:image" content><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content><meta property="og:image:height" content><meta property="og:url" content="https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/"><meta property="og:locale" content="ja"><meta property="article:published_time" content="2019-09-24"><meta property="article:modified_time" content="2019-09-24"><meta property="article:tag" content="Jupyter"><meta property="article:tag" content="Python"><meta property="article:tag" content="Pytorch"><meta name=twitter:card content="summary"><meta name=twitter:site content="@hurutoriya"><meta name=twitter:creator content="@hurutoriya"><meta name=twitter:title content="Tensorboard を わずか2行で Jupyter Notebook上で表示 | Shunya UETA"><meta name=twitter:description content="Pytorch 1.2からは公式にTensorboardがサポートされている
+Tensorboard とは、学習の状況を可視化できるTensorFlow Family の一種
+Jupyte Notebook上で学習状況を確認したい場合に Tensorboardをそのまま表示して確認できれば楽なので、試してみる
+sample code: https://pytorch.org/docs/stable/tensorboard.html
+import torch import torchvision from torch.utils.tensorboard import SummaryWriter from torchvision import datasets, transforms # Writer will output to ./runs/ directory by default writer = SummaryWriter() transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))]) trainset = datasets.MNIST('mnist_train', train=True, download=True, transform=transform) trainloader = torch.utils.data.DataLoader(trainset, batch_size=64, shuffle=True) model = torchvision.models.resnet50(False) # Have ResNet model take in grayscale rather than RGB model.conv1 = torch.nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False) images, labels = next(iter(trainloader)) grid = torchvision.|"><meta name=twitter:image:src content><meta name=twitter:domain content="https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/"><title>Tensorboard を わずか2行で Jupyter Notebook上で表示</title><link rel=canonical href=https://shunyaueta.com/posts/2019-09-24_open_tensorboard_in_jupyter/><link rel=stylesheet href=https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css><link rel=stylesheet href=https://shunyaueta.com/css/style.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-39994406-11','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link rel=apple-touch-icon href=/apple-touch-icon.png></head><body lang=ja class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns" itemscope itemtype=http://schema.org/Article><span class=b>/</span>
+<a href=https://shunyaueta.com/ class="b bb bw1 pb1 no-underline black">Shunya UETA</a><section id=main class=mt5><h1 itemprop=name id=title>Tensorboard を わずか2行で Jupyter Notebook上で表示</h1><article itemprop=articleBody id=content class="w-90 lh-copy"><p>Pytorch 1.2からは公式にTensorboardがサポートされている</p><p>Tensorboard とは、学習の状況を可視化できるTensorFlow Family の一種</p><p>Jupyte Notebook上で学習状況を確認したい場合に Tensorboardをそのまま表示して確認できれば楽なので、試してみる</p><p>sample code: <a href=https://pytorch.org/docs/stable/tensorboard.html>https://pytorch.org/docs/stable/tensorboard.html</a></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> torch
+<span style=color:#f92672>import</span> torchvision
+<span style=color:#f92672>from</span> torch.utils.tensorboard <span style=color:#f92672>import</span> SummaryWriter
+<span style=color:#f92672>from</span> torchvision <span style=color:#f92672>import</span> datasets, transforms
 
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><script src="/js/feather.min.js"></script><script src="/js/main.js"></script>
-</head>
+<span style=color:#75715e># Writer will output to ./runs/ directory by default</span>
+writer <span style=color:#f92672>=</span> SummaryWriter()
 
-<body>
-	<div class="container wrapper post">
-		<div class="header">
-	<h1 class="site-title">Shunya UETA</h1>
-	<div class="site-description"><h2>Software Engineer As Data Scientist</h2><nav class="nav social">
-			<ul class="flat"><a href="https://www.linkedin.com/in/hurutoriya/" title="Linkedin"><i data-feather="linkedin"></i></a><a href="https://github.com/hurutoriya" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hurutoriya" title="Twitter"><i data-feather="twitter"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
-		</nav>
-	</div>
+transform <span style=color:#f92672>=</span> transforms<span style=color:#f92672>.</span>Compose([transforms<span style=color:#f92672>.</span>ToTensor(), transforms<span style=color:#f92672>.</span>Normalize((<span style=color:#ae81ff>0.5</span>,), (<span style=color:#ae81ff>0.5</span>,))])
+trainset <span style=color:#f92672>=</span> datasets<span style=color:#f92672>.</span>MNIST(<span style=color:#e6db74>&#39;mnist_train&#39;</span>, train<span style=color:#f92672>=</span>True, download<span style=color:#f92672>=</span>True, transform<span style=color:#f92672>=</span>transform)
+trainloader <span style=color:#f92672>=</span> torch<span style=color:#f92672>.</span>utils<span style=color:#f92672>.</span>data<span style=color:#f92672>.</span>DataLoader(trainset, batch_size<span style=color:#f92672>=</span><span style=color:#ae81ff>64</span>, shuffle<span style=color:#f92672>=</span>True)
+model <span style=color:#f92672>=</span> torchvision<span style=color:#f92672>.</span>models<span style=color:#f92672>.</span>resnet50(False)
+<span style=color:#75715e># Have ResNet model take in grayscale rather than RGB</span>
+model<span style=color:#f92672>.</span>conv1 <span style=color:#f92672>=</span> torch<span style=color:#f92672>.</span>nn<span style=color:#f92672>.</span>Conv2d(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>64</span>, kernel_size<span style=color:#f92672>=</span><span style=color:#ae81ff>7</span>, stride<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>, padding<span style=color:#f92672>=</span><span style=color:#ae81ff>3</span>, bias<span style=color:#f92672>=</span>False)
+images, labels <span style=color:#f92672>=</span> next(iter(trainloader))
 
-	<nav class="nav">
-		<ul class="flat">
-			
-			<li>
-				<a href="/">Home</a>
-			</li>
-			
-			<li>
-				<a href="/posts">All posts</a>
-			</li>
-			
-			<li>
-				<a href="/about">About</a>
-			</li>
-			
-			<li>
-				<a href="/tags">Tags</a>
-			</li>
-			
-		</ul>
-	</nav>
-</div>
-
-
-		<div class="post-header">
-			<h1 class="title">Tensorboard を わずか2行で Jupyter Notebook上で表示</h1>
-			<div class="meta">Posted at &mdash; Sep 24, 2019</div>
-		</div>
-
-		<div class="markdown">
-			<p>Pytorch 1.2からは公式にTensorboardがサポートされている</p>
-
-<p>Tensorboard とは、学習の状況を可視化できるTensorFlow Family の一種</p>
-
-<p>Jupyte Notebook上で学習状況を確認したい場合に Tensorboardをそのまま表示して確認できれば楽なので、試してみる</p>
-
-<p>sample code: <a href="https://pytorch.org/docs/stable/tensorboard.html">https://pytorch.org/docs/stable/tensorboard.html</a></p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">import</span> torch
-<span style="color:#00f">import</span> torchvision
-<span style="color:#00f">from</span> torch.utils.tensorboard <span style="color:#00f">import</span> SummaryWriter
-<span style="color:#00f">from</span> torchvision <span style="color:#00f">import</span> datasets, transforms
-
-<span style="color:#008000"># Writer will output to ./runs/ directory by default</span>
-writer = SummaryWriter()
-
-transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
-trainset = datasets.MNIST(<span style="color:#a31515">&#39;mnist_train&#39;</span>, train=True, download=True, transform=transform)
-trainloader = torch.utils.data.DataLoader(trainset, batch_size=64, shuffle=True)
-model = torchvision.models.resnet50(False)
-<span style="color:#008000"># Have ResNet model take in grayscale rather than RGB</span>
-model.conv1 = torch.nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False)
-images, labels = next(iter(trainloader))
-
-grid = torchvision.utils.make_grid(images)
-writer.add_image(<span style="color:#a31515">&#39;images&#39;</span>, grid, 0)
-writer.add_graph(model, images)
-writer.close()</code></pre></div>
-<p>その結果をJupyter上で確認したい場合、以下のマジックコマンドを実行する</p>
-
-<ul>
-<li><p><a href="https://www.tensorflow.org/tensorboard/r2/tensorboard_in_notebooks">https://www.tensorflow.org/tensorboard/r2/tensorboard_in_notebooks</a></p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">%load_ext tensorboard
-%tensorboard  --logdir runs</code></pre></div></li>
-</ul>
-
-<p>結果を1画面で完結して見せたい場合に便利そう</p>
-
-<p><img src="/posts/2019-09-24_open_tensorboard_in_jupyter/images/1.png" alt="tensorboard in jupyter notebook" /></p>
-
-<p>完了!</p>
-
-		</div><div id="disqus_thread"></div>
-<script type="text/javascript">
-	(function () {
-		
-		
-		if (window.location.hostname == "localhost")
-			return;
-
-		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		var disqus_shortname = 'hurutoriya';
-		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-		Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-	<div class="footer wrapper">
-	<nav class="nav">
-		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="gohugo.io">Hugo</a></div>
-	</nav>
-</div>
-
-</body>
-</html>
+grid <span style=color:#f92672>=</span> torchvision<span style=color:#f92672>.</span>utils<span style=color:#f92672>.</span>make_grid(images)
+writer<span style=color:#f92672>.</span>add_image(<span style=color:#e6db74>&#39;images&#39;</span>, grid, <span style=color:#ae81ff>0</span>)
+writer<span style=color:#f92672>.</span>add_graph(model, images)
+writer<span style=color:#f92672>.</span>close()
+</code></pre></div><p>その結果をJupyter上で確認したい場合、以下のマジックコマンドを実行する</p><ul><li><a href=https://www.tensorflow.org/tensorboard/r2/tensorboard_in_notebooks>https://www.tensorflow.org/tensorboard/r2/tensorboard_in_notebooks</a></li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>%load_ext tensorboard
+%tensorboard  --logdir runs
+</code></pre></div><p>結果を1画面で完結して見せたい場合に便利そう</p><p><img src=/posts/2019-09-24_open_tensorboard_in_jupyter/images/1.png alt="tensorboard in jupyter notebook"></p><p>完了!</p></article></section><footer><div><p class="f6 gray mt6 lh-copy">© 2016-20 <a href=https://twitter.com/hurutoriya>@hurutoriya</a>.</p></div></footer><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script></body></html>
