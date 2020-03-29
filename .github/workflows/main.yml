@@ -27,3 +27,4 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_branch: master # deploying branch
           publish_dir: ./public
+          cname: shunyaueta.com 
