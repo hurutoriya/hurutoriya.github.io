@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - sourse # kick branch
+      - source # kick branch
 publish_branch: master # deploying branch
 
 jobs:
