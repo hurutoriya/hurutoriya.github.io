@@ -5,7 +5,7 @@ languageCode = "ja"
 googleAnalytics = "UA-39994406-11"
 enableEmoji = true 
 copyright = "© 2016-20  <a href='https://twitter.com/hurutoriya'>@hurutoriya</a>."
-description = "Shunya UETA, a Software Engineer Machine Learning at Mercari, inc."
+description = "Shunya UETA, a Software Engineer at Mercari, inc."
 
 [taxonomies]
   category = "categories"

@@ -4,6 +4,8 @@ date: 2019-06-15T19:25:33+09:00
 type: "page"
 ---
 
+Shunya UETA who is a working on Machine Leraning as Software Engineer at Mercari, inc. Opinions are my own.
+
 - [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
 - [GitHub](https://github.com/hurutoriya)
 - [Twitter](https://twitter.com/hurutoriya)

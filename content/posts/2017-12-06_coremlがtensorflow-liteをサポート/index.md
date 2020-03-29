@@ -10,7 +10,6 @@ subtitle: "TensorFlow無双"
 tags:
   - Machine Learning
   - TensorFlow
-  - 雑記
 
 image: "/posts/2017-12-06_coremlがtensorflow-liteをサポート/images/1.png"
 images:

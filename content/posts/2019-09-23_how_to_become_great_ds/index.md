@@ -1,10 +1,10 @@
 ---
-title: "[書評]ビジネスでインパクトが出せるデータサイエンティストになるには"
+title: "ビジネスでインパクトが出せるデータサイエンティストになるには"
 date: 2019-09-23T18:48:47+09:00
 lang: ja
-tags: 
-- review
-- books
+tags:
+  - review
+  - books
 ---
 
 [@pseudo_finite](https://twitter.com/pseudo_finite) さんから
@@ -53,10 +53,9 @@ tags:
 
 実装ができるからこそ、実験ができる。その実験から知見を得て改善のサイクルが回り始める。
 
-関連する暦本先生のtweetが面白かったので、ご参考まで
+関連する暦本先生の tweet が面白かったので、ご参考まで
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">深層学習時代になってますますですが研究者のコード書きは開発というより未解決の問題や仮説に決着をつける行為、サイエンスにおける実験そのものなのでコード書かない人がどうやって研究してるのか想像つかないです🤔 <a href="https://t.co/mojhTqHqmx">https://t.co/mojhTqHqmx</a></p>&mdash; Jun Rekimoto : 暦本純一 (@rkmt) <a href="https://twitter.com/rkmt/status/1173549120394383361?ref_src=twsrc%5Etfw">September 16, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ### 4. 検証
 
@@ -73,7 +72,7 @@ tags:
 
 育成の点は、自分も最近考えていたことですが、
 
-- 例えば研究室のセミナーや論文の赤入れなどで議論をしたからこそ科学的思考方法が身についたのか? 
+- 例えば研究室のセミナーや論文の赤入れなどで議論をしたからこそ科学的思考方法が身についたのか?
 
 を考えていました。
 
@@ -83,12 +82,11 @@ tags:
 Software Enginnering やアカデミアの世界では、レビュー文化を体験してあくまで内容に関する批判であり、
 フィードバックを受け入れて改善する姿勢を身に着けていることも大事だなと最近感じています。
 
-[Team Geek ―Googleのギークたちはいかにしてチームを作るのか ](https://amzn.to/2m3BQcE) の書籍で語られるHRTの精神ですね。
-
+[Team Geek ―Google のギークたちはいかにしてチームを作るのか ](https://amzn.to/2m3BQcE) の書籍で語られる HRT の精神ですね。
 
 ## まとめ
 
-自分も機械学習エンジニアとして働きはじめて、2年弱が経過しようとしている。
+自分も機械学習エンジニアとして働きはじめて、2 年弱が経過しようとしている。
 シニアクラスになるためには、まだまだ不足点がたくさんあるが俯瞰的に見直せる良い機会になる良い予稿だった。
 
 岩永次郎さんが書かれている続編的な位置づけの
