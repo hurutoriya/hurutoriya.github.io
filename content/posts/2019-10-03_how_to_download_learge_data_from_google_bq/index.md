@@ -1,5 +1,5 @@
 ---
-title: "遅すぎる pandas.read_gbq を使わずに、Google BigQueryから巨大なデータをダウンロードする"
+title: "pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL"
 date: 2019-10-03T23:52:54+09:00
 lang: ja
 tags:
