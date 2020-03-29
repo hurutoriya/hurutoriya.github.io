@@ -1,29 +1,122 @@
-baseURL = "https://shunyaueta.com/"
-theme ="hugo-theme-basic"
-languageCode = "ja"
+baseURL = "https://shunyaueta.com"
+title = "Software Engineer as Data Scientist"
+# for smart copyright line, leave this blank and check [params.copyright]
+#copyright = ""
+
+theme = "minimo"
+
+disqusShortname = "hurutoriya"
 googleAnalytics = "UA-39994406-11"
-enableEmoji = true 
-copyright = "© 2016-20  <a href='https://twitter.com/hurutoriya'>@hurutoriya</a>."
-description = "Shunya UETA, a Software Engineer at Mercari, inc."
+
+Paginate = 10
+preserveTaxonomyNames = true
+
+enableRobotsTXT = true # generate robots.txt
+
+# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+pygmentsCodefences = true
+
+enableEmoji = true
+
+# Missing translations will default to this content language
+defaultContentLanguage = "en"
+
+[params.info]
+description = "Enjoy Software Engineering & Data Science!!"
+title404 = "Nothing's here!"
+
+[params.assets]
+favicon = "favicon.ico"
+customCSS = ["css/custom.css"]
+customJS = ["js/custom.js"]
+gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+
+[params.copyright]
+prefix = ""
+holder = "Shunya UETA"
+startYear = "2013"
+suffix = ""
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "2006.01.02"
+listDateFormat = "2006.01.02"
+archiveDateFormat = "01.02"
+hideEntryNavigation = ["page"] # boolean / array of sections
+hideEntryMeta = ["page"] # boolean / array of sections
+showReadingTime = true
+showLastmod = true
+taxonomyCloudShuffle = true
+accentColor = "#d3381c"
+hideMainMenu = true
+# rtl = false right to left for specifix language
+
+[params.sidebar]
+enable = true
+
+[params.widgets]
+header = ["breadcrumbs"]
+homepage = ["recent_posts"]
+footer = ["about","social_menu"]
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "hurutoriya" # Twitter page username
+
+[params.seo]
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
+
+[params.social]
+github = "hurutoriya"
+linkedin = "hurutoriya"
+twitter = "hurutoriya"
+facebook = "shunyaueta"
+#google_scholar = "qc6CJjYAAAAJ"
+#youtube = "UCT-U0rNerYxItGcuoPX-WYA"
+
+[params.comments]
+enable = true
+
+# Utterances: https://utteranc.es
+# [params.comments.utterances]
+# enable = false
+# issueTerm = "pathname" # pathname / url / title
+
+# [params.comments.utterances.github]
+# username = "MunifTanjim"
+# repository = "minimo"
 
 [taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
+# author = "authors"
+category = "categories"
+series = "series"
+tag = "tags"
 
-[params]
-  titleEmoji = ":tada:"
-  twitter = "hurutoriya"
+[permalinks]
+page = "/:slug/"
 
-[Permalinks]
-  post = "posts/:slug"
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/about/"
+    weight = -110
 
-[[params.menu]]
-  name = "about"
-  url = "about/"
-[[params.menu]]
-  name = "blog"
-  url = "posts/"
-[[params.menu]]
-  name = "tags"
-  url = "tags/"
+[blackfriday]
+hrefTargetBlank = true
+
+[languages]
+# edit this block for your own language
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
+[languages.ja]
+lang = "ja"
+languageName = "Japanese"
+weight = 2
