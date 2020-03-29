@@ -3,10 +3,7 @@ title: "Machine Learning that Matters (ICML2012) を読んだ"
 author: "Shunya Ueta"
 date: 2017-12-01T07:55:12.617Z
 lastmod: 2019-06-16T18:16:08+09:00
-
-description: ""
-
-subtitle: "機械学習の研究してる人は全員読んだ方がいい。そう断言できるぐらい良い内容が書かれています。 ICML2012で発表された最近の機械学習に関する研究の問題点を論じた論文。"
+lang: ja
 tags:
   - Machine Learning
   - Paper

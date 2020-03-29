@@ -4,10 +4,6 @@ author: "Shunya Ueta"
 date: 2018-07-15T09:31:28.466Z
 lastmod: 2019-06-16T18:18:12+09:00
 lang: ja
-
-description: ""
-
-subtitle: "2018/07/13 にMLCT #5を開催してきたお話"
 tags:
   - Machine Learning
   - MLCT
@@ -17,9 +13,6 @@ image: "/posts/2018-07-15_machine-learning-casual-talks-sharp5-を開催しま�
 images:
   - "/posts/2018-07-15_machine-learning-casual-talks-sharp5-を開催しました-sharpmlct/images/2.png"
   - "/posts/2018-07-15_machine-learning-casual-talks-sharp5-を開催しました-sharpmlct/images/3.png"
-
-aliases:
-  - "/why-i-join-to-mlct-organizers-e0f55bd85083"
 ---
 
 2018/07/13 に MLCT #5 を開催してきたお話

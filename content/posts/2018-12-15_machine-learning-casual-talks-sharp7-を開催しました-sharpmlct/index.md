@@ -4,15 +4,10 @@ author: "Shunya Ueta"
 date: 2018-12-15T19:29:59.546Z
 lastmod: 2019-06-16T18:18:14+09:00
 lang: ja
-
-subtitle: "Machine Learning Casual Talks 第七回を無事開催しました"
 tags:
   - Machine Learning
   - Community
   - MLCT
-
-aliases:
-  - "/machine-learning-casual-talks-7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-mlct-3a1d4852a2cb"
 ---
 
 Machine Learning Casual Talks 第七回を無事開催しました

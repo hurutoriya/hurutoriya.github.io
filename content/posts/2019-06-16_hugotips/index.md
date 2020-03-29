@@ -3,10 +3,10 @@ title: "Hugo Tips"
 date: 2019-06-16T23:09:18+09:00
 lang: ja
 tags:
-- hugo
+  - hugo
 ---
 
-- [Hugo 0.32](https://gohugo.io/about/new-in-032/)から page bundleが使用可能に
+- [Hugo 0.32](https://gohugo.io/about/new-in-032/)から page bundle が使用可能に
 - この機能で画像ファイルを以下のファイル構成で構築できる
 
 ```bash
@@ -15,7 +15,7 @@ tags:
     - hoge.png
 ```
 
-これにより、markdownとアセットファイルが同一ディレクトリ内に収まるのでアセットファイルの管理が簡単になる
+これにより、markdown とアセットファイルが同一ディレクトリ内に収まるのでアセットファイルの管理が簡単になる
 
 - `hugo new` で特定のエディタを開くには?
 
@@ -23,13 +23,13 @@ tags:
 hugo new posts/hoge.md --editor="code"
 ```
 
-- pange bundl作成時にディレクトリ名に日付を含める
+- pange bundl 作成時にディレクトリ名に日付を含める
 
 ```bash
 hugo new posts/$(date '+%Y')-$(date '+%m')-$(date '+%d')_title/index.md
 ```
 
-- pageをビルドして結果を確認する
+- page をビルドして結果を確認する
 
 ```base
 hugo server

@@ -4,9 +4,6 @@ author: "Shunya Ueta"
 date: 2018-04-24T02:18:46.954Z
 lastmod: 2019-06-16T18:18:07+09:00
 lang: ja
-description: ""
-
-subtitle: "データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア"
 tags:
   - Data Scientist
   - Data Engineer
@@ -17,9 +14,6 @@ image: "/posts/2018-04-24_抄訳-data-engineers-vs.-data-scientists/images/1.png
 images:
   - "/posts/2018-04-24_抄訳-data-engineers-vs.-data-scientists/images/1.png"
   - "/posts/2018-04-24_抄訳-data-engineers-vs.-data-scientists/images/2.png"
-
-aliases:
-  - "/ataengineers-vs-data-scientist-13fce30812a7"
 ---
 
 データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア

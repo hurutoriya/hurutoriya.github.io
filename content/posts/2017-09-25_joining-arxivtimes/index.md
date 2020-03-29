@@ -3,10 +3,7 @@ title: "Joining Arxivtimes"
 author: "Shunya Ueta"
 date: 2017-09-25T07:49:32.551Z
 lastmod: 2019-06-16T18:15:48+09:00
-
-description: ""
-
-subtitle: "論文読みとまとめを怠っていると、研究関係のトピックスのインデックスが全て破壊されていることに気がついた。"
+lang: ja
 tags:
   - Machine Learnings
   - Computer Vision
@@ -14,9 +11,6 @@ tags:
 image: "/posts/2017-09-25_joining-arxivtimes/images/1.png"
 images:
   - "/posts/2017-09-25_joining-arxivtimes/images/1.png"
-
-aliases:
-  - "/join-to-arxivtimes-2ac0f0458683"
 ---
 
 論文読みとまとめを怠っていると、研究関係のトピックスのインデックスが全て破壊されていることに気がついた。

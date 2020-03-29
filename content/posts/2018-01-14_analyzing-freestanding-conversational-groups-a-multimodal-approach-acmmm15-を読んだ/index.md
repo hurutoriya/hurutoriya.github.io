@@ -3,29 +3,22 @@ title: "Analyzing Free-standing Conversational Groups: A Multimodal Approach (AC
 author: "Shunya Ueta"
 date: 2018-01-14T10:41:12.009Z
 lastmod: 2019-06-16T18:17:46+09:00
-
-description: ""
-
-subtitle: "スタンディングディスカッション形式での会話を評価した研究"
+lang: ja
 tags:
- - Paper 
- - Acmmm 
- - Computer Vision 
- - Machine Learning 
- - 日本語 
+  - Paper
+  - ACMMM
+  - Computer Vision
+  - Machine Learning
 
-image: "/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-を読んだ/images/1.png" 
+image: "/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-を読んだ/images/1.png"
 images:
- - "/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-を読んだ/images/1.png" 
-
+  - "/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-を読んだ/images/1.png"
 
 aliases:
-    - "/analyzing-free-standing-conversational-groups-a-multimodal-approach-acmmm15-bd0a5b9c8628"
+  - "/analyzing-free-standing-conversational-groups-a-multimodal-approach-acmmm15-bd0a5b9c8628"
 ---
 
 スタンディングディスカッション形式での会話を評価した研究
-
-
 
 ![image](/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-を読んだ/images/1.png)
 
@@ -38,28 +31,29 @@ X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe
 
 を読んだので、軽くメモ。
 
-マルチモーダル系の論文初めて読んだんですが、まとめるとコントリビューションが5つあると主張。
+マルチモーダル系の論文初めて読んだんですが、まとめるとコントリビューションが 5 つあると主張。
 
 ### Contribution
 
-*   音声・近接情報、そして監視カメラからの身体と頭の姿勢推定からマルチモーダルに解析
-*   フリースタンディングディスカッションを身体・頭の姿勢推定から解析
-*   カメラと音声・近接センサーからなるマルチモーダルな解析するためのフレームワークを提案
-*   ラベリングされてないデータに対する行列補間問題の考案
-*   SALSA(データ・セット)を公開・評価
+- 音声・近接情報、そして監視カメラからの身体と頭の姿勢推定からマルチモーダルに解析
+- フリースタンディングディスカッションを身体・頭の姿勢推定から解析
+- カメラと音声・近接センサーからなるマルチモーダルな解析するためのフレームワークを提案
+- ラベリングされてないデータに対する行列補間問題の考案
+- SALSA(データ・セット)を公開・評価
 
-SALSAというポスターセッションの動画と音声のデータも公開されている
+SALSA というポスターセッションの動画と音声のデータも公開されている
+
 > [_SALSA: Synergetic sociAL Scene Analysis_](http://tev.fbk.eu/salsa)
 
-動画はGoogle Driveで公開されていて時代の波を感じる。
+動画は Google Drive で公開されていて時代の波を感じる。
 
-*   データセットを公開
-*   論文も読みやすい
-*   新しい行列補完計画法(アルゴリズム)を提案
-*   実問題に取り組む
+- データセットを公開
+- 論文も読みやすい
+- 新しい行列補完計画法(アルゴリズム)を提案
+- 実問題に取り組む
 
 と盛り沢山な内容で面白かった。
 
-スライド内のリンクはGoogle Slideで共有しているのでこちらを参照すると便利です。
+スライド内のリンクは Google Slide で共有しているのでこちらを参照すると便利です。
 
-[X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe &#34;Analyzing Free-standing Conversational Groups: A…](https://docs.google.com/presentation/d/1G6zfzV4jIm7qj4LkHkm3Gk_qHEml0SWZExkNuqw0ef8/embed?start=true&amp;loop=true&amp;delayms=1000&amp;slide=id.g1502801dfc_2_6)
+[X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe &#34;Analyzing Free-standing Conversational Groups: A…](https://docs.google.com/presentation/d/1G6zfzV4jIm7qj4LkHkm3Gk_qHEml0SWZExkNuqw0ef8/embed?start=true&loop=true&delayms=1000&slide=id.g1502801dfc_2_6)

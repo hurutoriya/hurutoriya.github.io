@@ -4,10 +4,6 @@ author: "Shunya Ueta"
 date: 2018-04-23T15:38:10.151Z
 lastmod: 2019-06-16T18:18:05+09:00
 lang: ja
-
-description: ""
-
-subtitle: "Colab上で 日本語のNLPをしたいときありませんか？"
 tags:
   - NLP
   - Jupyter Notebook

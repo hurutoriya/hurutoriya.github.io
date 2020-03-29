@@ -3,82 +3,71 @@ title: "2018 resolution"
 author: "Shunya Ueta"
 date: 2018-01-29T16:08:35.698Z
 lastmod: 2019-06-16T18:17:51+09:00
-
-description: ""
-
-subtitle: "2018年の抱負です。"
+lang: ja
 tags:
- - 日本語 
- - Poem 
- - Resolutions 
+  - retro
 
-image: "/posts/2018-01-29_2018-resolution/images/1.png" 
+image: "/posts/2018-01-29_2018-resolution/images/1.png"
 images:
- - "/posts/2018-01-29_2018-resolution/images/1.png" 
-
-
-aliases:
-    - "/2017-resolution-b289519af170"
+  - "/posts/2018-01-29_2018-resolution/images/1.png"
 ---
 
-2018年の抱負です。
+2018 年の抱負です。
 
 ### **Works**
 
 機械学習エンジニアとして六本木で働く事になりました。機械学習エンジニアとしてスペシャリストになれるように周辺スキルを伸ばしていきます。
 
-*   Kaggle Masterに到達(1 gold medal, 2 silver medals)
-
-
+- Kaggle Master に到達(1 gold medal, 2 silver medals)
 
 ![image](/posts/2018-01-29_2018-resolution/images/1.png)
 
 初参加のコンペもずるずる下降してしまいブロンズ圏外に…
 
-*   Coursera, Udacity (MOOC)でCV, Robotics 周辺を学習していく
-*   Githubで50 star overのOSSを作る(CV or ML)
-*   勉強会に登壇 or 主催 する
+- Coursera, Udacity (MOOC)で CV, Robotics 周辺を学習していく
+- Github で 50 star over の OSS を作る(CV or ML)
+- 勉強会に登壇 or 主催 する
 
 **_メタ学習(学習の効率化)について小話_**
 
-うまくなる技術[¹](http://amzn.to/2DYm622)などのメタ学習関連の本を色々と読み漁って学習のコツをいろいろ勉強してるんですが、**外的指標**(Github Star, Kaggle Rank, Toggl tracking,Coursera Certificate)を目的にすると人間気持ちよく継続できるらしいのでそれに沿った行動をするよう心がけています。後5–6冊メタ学習の本を読み終えてまとまったらまた記事にする。
+うまくなる技術[¹](http://amzn.to/2DYm622)などのメタ学習関連の本を色々と読み漁って学習のコツをいろいろ勉強してるんですが、**外的指標**(Github Star, Kaggle Rank, Toggl tracking,Coursera Certificate)を目的にすると人間気持ちよく継続できるらしいのでそれに沿った行動をするよう心がけています。後 5–6 冊メタ学習の本を読み終えてまとまったらまた記事にする。
 
 サンシャイン丸の内さん[¹](http://www.shiningmaru.com/entry/2017/10/28/192222)や ふろむださん[¹](http://d.hatena.ne.jp/fromdusktildawn/20080111/1200020891)の記事も参考になるのでオススメです
 
 個人的に最近心に響いたのはのじゃろりおじさんの勉強の姿勢です。
 
-[３Dやunityの勉強方法について。：ねこみみメモ](http://ch.nicovideo.jp/nekomimi/blomaga/ar1390007)
+[３ D や unity の勉強方法について。：ねこみみメモ](http://ch.nicovideo.jp/nekomimi/blomaga/ar1390007)
+
 > おそらく、やり続けて成功した人は「やり続ければ報われる！」と言うと思うのですが、**年齢や経済状況や自分の才能を疑ったり等……現実は難しいと思います。**  
-> 私は偶然このタイミングで「オリジナルモデルのVyoutuberを出せた」から幸運に恵まれただけで、純粋な技術ではおそらく就職は無理だったのではないかと思います。2018~19年で見切りつけて諦めなきゃなと思ってたぐらいです。  
+> 私は偶然このタイミングで「オリジナルモデルの Vyoutuber を出せた」から幸運に恵まれただけで、純粋な技術ではおそらく就職は無理だったのではないかと思います。2018~19 年で見切りつけて諦めなきゃなと思ってたぐらいです。  
 > なので「やり続ければ報われる」とはとても言えません。ただ**「やり続けて報われなくてもいいと思える事は、やり続けた方がいい」**とは思います。  
 > 他者の評価がどうであれ、やてって楽しくて満足できるのであればある意味常に成功している状態で、やればやるほど成功続きなわけです。
 
 ### **English**
 
-*   DMM 英会話
-*   TOEFLE で90点、英語で働けるレベルを目指す
-*   英語Blog記事を定期的に書く
+- DMM 英会話
+- TOEFLE で 90 点、英語で働けるレベルを目指す
+- 英語 Blog 記事を定期的に書く
 
 ### Health
 
-*   カラダステーションで内臓脂肪が少し高めになってたので走る(筋トレしかやってなかったツケが…)
-*   筋肉量も左右でバラツキ(利き手側じゃないほうが100g程度筋肉量が少ない)があるので整える
+- カラダステーションで内臓脂肪が少し高めになってたので走る(筋トレしかやってなかったツケが…)
+- 筋肉量も左右でバラツキ(利き手側じゃないほうが 100g 程度筋肉量が少ない)があるので整える
 
-筋トレはケトルベル16kgで色々とやってるので継続する。
+筋トレはケトルベル 16kg で色々とやってるので継続する。
 
-筋トレとランニング楽しむためにGarmin Vivoactive3[¹](http://amzn.to/2nncdAI) を注文しました。
+筋トレとランニング楽しむために Garmin Vivoactive3[¹](http://amzn.to/2nncdAI) を注文しました。
 
 使えない筋肉だと意味が無いのでプリズナートレーニング[²](http://amzn.to/2FoCLso)の本を読み込んで、筋肉全体の神経郡を発達させるような自重トレーニングをはじめました。
 
-プロテインは人工甘味料が入っていない以下の2種類で固定されました。
+プロテインは人工甘味料が入っていない以下の 2 種類で固定されました。
 
 過度な甘みは無く水単体でも飲めるくらいには自然な甘さなのでオススメです。
 
-[Optimum Nutrition, ゴールドスタンダード、100%ホエイ、ナチュラル、チョコレート、4.8ポンド (2.18 kg)](https://iherb.co/jsMZJMC)
+[Optimum Nutrition, ゴールドスタンダード、100%ホエイ、ナチュラル、チョコレート、4.8 ポンド (2.18 kg)](https://iherb.co/jsMZJMC)
 
-[Dymatize Nutrition, ISO 100加水分解化、100%ホエイプロテインアイソレート、グルメチョコレート、5 Lbs (2.3 kg)](https://iherb.co/3yJVPXTA)
-
+[Dymatize Nutrition, ISO 100 加水分解化、100%ホエイプロテインアイソレート、グルメチョコレート、5 Lbs (2.3 kg)](https://iherb.co/3yJVPXTA)
 
 #### **Other**
 
-*   本を毎月3冊読む(毎月Blogで紹介)
+- 本を毎月 3 冊読む(毎月 Blog で紹介)

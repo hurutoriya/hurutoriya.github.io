@@ -3,10 +3,7 @@ title: "CoreMLがTensorFlow Liteをサポート"
 author: "Shunya Ueta"
 date: 2017-12-06T13:36:38.235Z
 lastmod: 2019-06-16T18:16:14+09:00
-
-description: ""
-
-subtitle: "TensorFlow無双"
+lang: ja
 tags:
   - Machine Learning
   - TensorFlow
@@ -14,9 +11,6 @@ tags:
 image: "/posts/2017-12-06_coremlがtensorflow-liteをサポート/images/1.png"
 images:
   - "/posts/2017-12-06_coremlがtensorflow-liteをサポート/images/1.png"
-
-aliases:
-  - "/coreml-support-tensorflowlite-53ef6f731e1c"
 ---
 
 TensorFlow 無双

@@ -3,20 +3,13 @@ title: "ミクシィにインターンしてきた #2013 #DeployGate"
 author: "Shunya Ueta"
 date: 2013-12-23T17:04:38.281Z
 lastmod: 2019-06-16T18:16:16+09:00
-
-description: ""
-
-subtitle: "株式会社ミクシイに2013/8/9~2013/9/20までインターンしてきました。"
+lang: ja
 tags:
-  - 日本語
   - Internships
 
 image: "/posts/2017-12-23_ミクシィにインターンしてきた-sharp2013-sharpdeploygate/images/1.png"
 images:
   - "/posts/2017-12-23_ミクシィにインターンしてきた-sharp2013-sharpdeploygate/images/1.png"
-
-aliases:
-  - "/deploygate-internship-2013-39fa75010fa2"
 ---
 
 #### 株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。
