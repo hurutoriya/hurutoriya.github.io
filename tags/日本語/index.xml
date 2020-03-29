@@ -1,25 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>日本語 on Shunya UETA</title><link>https://shunyaueta.com/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link><description>Recent content in 日本語 on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Thu, 03 Jan 2019 16:26:59 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/index.xml" rel="self" type="application/rss+xml"/><item><title>2017, 2018年振り返り</title><link>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</link><pubDate>Thu, 03 Jan 2019 16:26:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</guid><description>ここ2年間の活動を振り返ってみた
-これはポーランド出張で発見した角が折れかけてるユニコーンです 🐴
-2017年 修士時代はメインの大学の研究室以外で、産総研RAやcvpaper.challangeの経験は今の業務に活きていて、RAの機会を創出してくれた @tsujimotter さんにめちゃくちゃ感謝しています
-情報科学若手の会で知り合った縁が活きてきて、何があるかわからんなと思った
-RA同期はMIRU2018で再会したんですが、なんと全員社会人博士課程に進学(or 予定) で最高ってなりました 🔥
-そのあと03月に修論出した後はPRMU準備・発表、奨学金応募や留学受験などなどドタバタしていつの間にか09月
-この時にCS関係の基礎を再びやり直したけれど、自己知識でたくさん欠けているところを学び直せたのでやってよかったなと思う。
-必要があって物事を学び直す時に基礎知識という貯金があるとレバレッジが効くので良かった
-大学院留学試験の結果は不合格でしたが、受験したことに悔いは無い。
-だが、進路などは未決定だったので過去に戻れるならリスクヘッジちゃんとしようなと説教をしてあげたい 😇
-その後はボーッとしてこの先どうしようかなと考えてたら、知り合いから仕事を紹介してもらい、ARと画像認識をかけあわせたデモアプリの開発をしてました
-この時にフリーランスの業である
-孤独 成長限界(納期こそ至高、学習できない、データセットがそもそも無い問題) 交渉(給与・納期など) を経験することができた
-2018年 フリーランスに疲弊した結果
-自分が一番弱い環境で働きたい 大規模データを取り扱いたい(特に画像) 様々な機械学習プロジェクト経験を積みたい の考えが高まり、2月にメルカリに機械学習エンジニアとして入社しました。
-機械学習チームを知ったきっかけは、下記の技術ブログを読んだことがきっかけ
-画像での商品検索に向けて - Mercari Engineering Blog
-機械学習システムがPOCで終わらずに既にメルカリのアプリで既にリリース済というのは、自分にとって非常に魅力的に見えた記憶があります
-入社後にいろいろと考えたこと 機械学習プロジェクトをうまく推進するの大変だけど超楽しい 取り組んでるプロジェクトの難度やインパクトの大きさなどが段違いなので日々揉まれて、鍛えられてる 💪 英語を使って働く経験ができる環境 ためらわない心で日々フィードバックをもらって英語に触れていける (福利厚生で英会話教室のサポートもあって最高) 🇺🇸 良きメンターとは? インターンシップ学生などのメンターもここ一年で7名こなした。インターンに参加する学生全員が猛者揃いなのでめっちゃ楽しいです。 まだまだ要改善 👴 結論 社会人経験はメルカリが初めてですが、めちゃくちゃ楽しい 🎉
-就職・結婚など人生の大きなターニングポイントを迎えた2018年でした
-2019年の抱負 インパクトの大きい問題を嗅ぎ分けて、エレガントに解ける世界トップレベルのエンジニアを目指す
-これからずっと現役でいるために、更に意識的に業務と関係ない学習の時間を作って習慣化 20代前半と比較すると集中力の衰えを感じるので、基礎となる体を鍛える 読書量もっと増やす(通勤中にもっと読めるはず) 業務速度の高速化(更にスケールさせたい) News Letter 更新を週一で継続させる 英語の基礎力向上: 自分は基礎が全くできてないことがわかった。出川英会話の限界を感じている 業務成果を海外カンファレンスで発表(開発・研究)👇細かい話が気になる方、機械学習のお話がしたい方ご飯行きましょう。DMください 📣 Shunya Ueta (@hurutoriya) | Twitter</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>日本語 on Shunya UETA</title><link>https://shunyaueta.com/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link><description>Recent content in 日本語 on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Tue, 13 Feb 2018 15:35:48 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/index.xml" rel="self" type="application/rss+xml"/><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
 発表者の顔は隠しています。なにか問題があればお伝え下さい。
 Team AI Meetup #1 (2018/02/13 19:00〜)
 Twitter: #mercari_ai

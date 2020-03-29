@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Shunya UETA</title><link>https://shunyaueta.com/posts/</link><description>Recent content in Posts on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Thu, 03 Oct 2019 23:52:54 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>遅すぎる pandas.read_gbq を使わずに、Google BigQueryから巨大なデータをダウンロードする</title><link>https://shunyaueta.com/posts/2019-10-03_how_to_download_learge_data_from_google_bq/</link><pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-10-03_how_to_download_learge_data_from_google_bq/</guid><description>pandas.read_gbq 便利ですよね。 クレデンシャルファイルを認証画面からコピペすれば Jupyter 上でさっと動き、Google Big Query が実行されてその結果がそのままデータフレームとして扱えます。 Jupyter と Google BQ を連携させたいときはいつも使っています
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Shunya UETA</title><link>https://shunyaueta.com/posts/</link><description>Recent content in Posts on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Thu, 03 Oct 2019 23:52:54 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL</title><link>https://shunyaueta.com/posts/2019-10-03_how_to_download_learge_data_from_google_bq/</link><pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-10-03_how_to_download_learge_data_from_google_bq/</guid><description>pandas.read_gbq 便利ですよね。 クレデンシャルファイルを認証画面からコピペすれば Jupyter 上でさっと動き、Google Big Query が実行されてその結果がそのままデータフレームとして扱えます。 Jupyter と Google BQ を連携させたいときはいつも使っています
 問題点 そこそこ大きなデータを持ってこようとするとめちゃくちゃ遅くてストレスが半端ない 解決方法として、Google Big Query で巨大なデータをダウンロードする方法について書く
 実は Google の公式ドキュメントでも記載されている。
 https://cloud.google.com/bigquery/docs/pandas-gbq-migration https://cloud.google.com/bigquery/docs/bigquery-storage-python-pandas 方法は以下の２つ。
@@ -56,28 +56,7 @@ Machine Learning Casual Talks #8 - 資料一覧 - connpass
 エムスリー 西場さん
 BEDORE すみのさん
 TL;DR; エムスリーの西場さん、すべてをこなす toB の機械学習サービス、システムアーキテクチャデザインかなり考えないとキツイ 懇親会での 🍣 の需給予測失敗しかけた 次回挑戦したいこと 今回会場撤収時に有志の参加者、登壇者の方が撤収作業を手伝っていただき非常に助かりました。次回は有志で会場撤収ボランティアの参加枠を作ろうかなと思いました。運営コストを下げるのは、継続で一番大事だなと思っているので、お手伝いいただいた皆様ありがとうございました。助かるという感情が出てくる前に、素直にめちゃくちゃ嬉しかったです!
-参加率も 8 割を超えていて欠席率が非常に少なかったのも継続していきたい</description></item><item><title>2017, 2018年振り返り</title><link>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</link><pubDate>Thu, 03 Jan 2019 16:26:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</guid><description>ここ2年間の活動を振り返ってみた
-これはポーランド出張で発見した角が折れかけてるユニコーンです 🐴
-2017年 修士時代はメインの大学の研究室以外で、産総研RAやcvpaper.challangeの経験は今の業務に活きていて、RAの機会を創出してくれた @tsujimotter さんにめちゃくちゃ感謝しています
-情報科学若手の会で知り合った縁が活きてきて、何があるかわからんなと思った
-RA同期はMIRU2018で再会したんですが、なんと全員社会人博士課程に進学(or 予定) で最高ってなりました 🔥
-そのあと03月に修論出した後はPRMU準備・発表、奨学金応募や留学受験などなどドタバタしていつの間にか09月
-この時にCS関係の基礎を再びやり直したけれど、自己知識でたくさん欠けているところを学び直せたのでやってよかったなと思う。
-必要があって物事を学び直す時に基礎知識という貯金があるとレバレッジが効くので良かった
-大学院留学試験の結果は不合格でしたが、受験したことに悔いは無い。
-だが、進路などは未決定だったので過去に戻れるならリスクヘッジちゃんとしようなと説教をしてあげたい 😇
-その後はボーッとしてこの先どうしようかなと考えてたら、知り合いから仕事を紹介してもらい、ARと画像認識をかけあわせたデモアプリの開発をしてました
-この時にフリーランスの業である
-孤独 成長限界(納期こそ至高、学習できない、データセットがそもそも無い問題) 交渉(給与・納期など) を経験することができた
-2018年 フリーランスに疲弊した結果
-自分が一番弱い環境で働きたい 大規模データを取り扱いたい(特に画像) 様々な機械学習プロジェクト経験を積みたい の考えが高まり、2月にメルカリに機械学習エンジニアとして入社しました。
-機械学習チームを知ったきっかけは、下記の技術ブログを読んだことがきっかけ
-画像での商品検索に向けて - Mercari Engineering Blog
-機械学習システムがPOCで終わらずに既にメルカリのアプリで既にリリース済というのは、自分にとって非常に魅力的に見えた記憶があります
-入社後にいろいろと考えたこと 機械学習プロジェクトをうまく推進するの大変だけど超楽しい 取り組んでるプロジェクトの難度やインパクトの大きさなどが段違いなので日々揉まれて、鍛えられてる 💪 英語を使って働く経験ができる環境 ためらわない心で日々フィードバックをもらって英語に触れていける (福利厚生で英会話教室のサポートもあって最高) 🇺🇸 良きメンターとは? インターンシップ学生などのメンターもここ一年で7名こなした。インターンに参加する学生全員が猛者揃いなのでめっちゃ楽しいです。 まだまだ要改善 👴 結論 社会人経験はメルカリが初めてですが、めちゃくちゃ楽しい 🎉
-就職・結婚など人生の大きなターニングポイントを迎えた2018年でした
-2019年の抱負 インパクトの大きい問題を嗅ぎ分けて、エレガントに解ける世界トップレベルのエンジニアを目指す
-これからずっと現役でいるために、更に意識的に業務と関係ない学習の時間を作って習慣化 20代前半と比較すると集中力の衰えを感じるので、基礎となる体を鍛える 読書量もっと増やす(通勤中にもっと読めるはず) 業務速度の高速化(更にスケールさせたい) News Letter 更新を週一で継続させる 英語の基礎力向上: 自分は基礎が全くできてないことがわかった。出川英会話の限界を感じている 業務成果を海外カンファレンスで発表(開発・研究)👇細かい話が気になる方、機械学習のお話がしたい方ご飯行きましょう。DMください 📣 Shunya Ueta (@hurutoriya) | Twitter</description></item><item><title>Machine Learning Casual Talks #7 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sat, 15 Dec 2018 19:29:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>Machine Learning Casual Talks 第七回を無事開催しました
+参加率も 8 割を超えていて欠席率が非常に少なかったのも継続していきたい</description></item><item><title>Machine Learning Casual Talks #7 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sat, 15 Dec 2018 19:29:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>Machine Learning Casual Talks 第七回を無事開催しました
 Machine Learning Casual Talks #7 (2018/11/20 18:30〜)
 MLCT とは
 実サービスにおける機械学習の経験をカジュアルに語り合おう
