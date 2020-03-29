@@ -1,16 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>日本語 on Shunya UETA</title><link>https://shunyaueta.com/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link><description>Recent content in 日本語 on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Sat, 02 Feb 2019 18:41:32 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/index.xml" rel="self" type="application/rss+xml"/><item><title>Machine Learning Casual Talks #8 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2019-02-02_machine-learning-casual-talks-sharp8-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sat, 02 Feb 2019 18:41:32 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-02-02_machine-learning-casual-talks-sharp8-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>Machine Learning Casual Talks 第8回の開催を無事終えました
-MLCT とは
-実サービスにおける機械学習の経験をカジュアルに語り合う
-コミュニティです
-スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました!
-Machine Learning Casual Talks #8 (2019/01/28 18:30〜)
-当日の配信動画はこちら
-当日の発表資料はすべてこちらにあります
-Machine Learning Casual Talks #8 - 資料一覧 - connpass
-エムスリー 西場さん
-BEDORE すみのさん
-TL;DR; エムスリーの西場さん、すべてをこなす toBの機械学習サービス、システムアーキテクチャデザインかなり考えないとキツイ 懇親会での🍣の需給予測失敗しかけた 次回挑戦したいこと 今回会場撤収時に有志の参加者、登壇者の方が撤収作業を手伝っていただき非常に助かりました。次回は有志で会場撤収ボランティアの参加枠を作ろうかなと思いました。運営コストを下げるのは、継続で一番大事だなと思っているので、お手伝いいただいた皆様ありがとうございました。助かるという感情が出てくる前に、素直にめちゃくちゃ嬉しかったです!
-参加率も 8割を超えていて欠席率が非常に少なかったのも継続していきたい</description></item><item><title>2017, 2018年振り返り</title><link>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</link><pubDate>Thu, 03 Jan 2019 16:26:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</guid><description>ここ2年間の活動を振り返ってみた
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>日本語 on Shunya UETA</title><link>https://shunyaueta.com/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link><description>Recent content in 日本語 on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Thu, 03 Jan 2019 16:26:59 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/index.xml" rel="self" type="application/rss+xml"/><item><title>2017, 2018年振り返り</title><link>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</link><pubDate>Thu, 03 Jan 2019 16:26:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-01-03_2017-2018%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</guid><description>ここ2年間の活動を振り返ってみた
 これはポーランド出張で発見した角が折れかけてるユニコーンです 🐴
 2017年 修士時代はメインの大学の研究室以外で、産総研RAやcvpaper.challangeの経験は今の業務に活きていて、RAの機会を創出してくれた @tsujimotter さんにめちゃくちゃ感謝しています
 情報科学若手の会で知り合った縁が活きてきて、何があるかわからんなと思った
@@ -31,63 +19,7 @@ RA同期はMIRU2018で再会したんですが、なんと全員社会人博士�
 入社後にいろいろと考えたこと 機械学習プロジェクトをうまく推進するの大変だけど超楽しい 取り組んでるプロジェクトの難度やインパクトの大きさなどが段違いなので日々揉まれて、鍛えられてる 💪 英語を使って働く経験ができる環境 ためらわない心で日々フィードバックをもらって英語に触れていける (福利厚生で英会話教室のサポートもあって最高) 🇺🇸 良きメンターとは? インターンシップ学生などのメンターもここ一年で7名こなした。インターンに参加する学生全員が猛者揃いなのでめっちゃ楽しいです。 まだまだ要改善 👴 結論 社会人経験はメルカリが初めてですが、めちゃくちゃ楽しい 🎉
 就職・結婚など人生の大きなターニングポイントを迎えた2018年でした
 2019年の抱負 インパクトの大きい問題を嗅ぎ分けて、エレガントに解ける世界トップレベルのエンジニアを目指す
-これからずっと現役でいるために、更に意識的に業務と関係ない学習の時間を作って習慣化 20代前半と比較すると集中力の衰えを感じるので、基礎となる体を鍛える 読書量もっと増やす(通勤中にもっと読めるはず) 業務速度の高速化(更にスケールさせたい) News Letter 更新を週一で継続させる 英語の基礎力向上: 自分は基礎が全くできてないことがわかった。出川英会話の限界を感じている 業務成果を海外カンファレンスで発表(開発・研究)👇細かい話が気になる方、機械学習のお話がしたい方ご飯行きましょう。DMください 📣 Shunya Ueta (@hurutoriya) | Twitter</description></item><item><title>Machine Learning Casual Talks #7 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sat, 15 Dec 2018 19:29:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-12-15_machine-learning-casual-talks-sharp7-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>Machine Learning Casual Talks 第七回を無事開催しました
-Machine Learning Casual Talks #7 (2018/11/20 18:30〜)
-MLCT とは
-実サービスにおける機械学習の経験をカジュアルに語り合おう
-というコミュニティです。
-スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました!
-遺伝異常により髪が青く変色してしまったタカヤナギ=サン
-ABEJA の機械学習導入事例と辛い話を大田黒さんにお話していただきました!
-今回の勉強会資料は以下にまとまっています。
-Machine Learning Casual Talks #7 — 資料一覧 — connpass
-今回の内容を今北産業
-機械学習エンジニアとしてのキャリアのお話を タカヤナギ=サン 実世界に根付いたIOTと機械学習サービスはかなり辛い 各社の機械学習エンジニアの定義が揺らいでいるので、世界が壊れる 今回の改善点 参加枠の多様性 絶対参加するぞ枠 一般参加枠 初回参加枠 SNS枠 Blog枠 と今までは一つの枠で扱っていたものを、5つの枠に分散して用意してみました。
-なぜかというとドタキャンやノーショーの方の影響で本当に参加したい方や初回参加の方の機会が喪失してしまうのはいただけないので、それを解決したなと思ったのが始まりです。
-初回参加枠を設けることで、新規参加者が増えて内輪感が解消されるのも狙ってみました。その影響か前回と比較して2割ほど参加率が増えてよかったです :)
-パネルディスカッション 登壇者2名と僕がモデレーターを行い、パネルディスカッションを行いました。単なる発表保の質疑応答時よりも話が盛り上がってなによりでした~
-次回予告 次回 MLCT第8回は 2019/01/28 に参加予定です!
-現実世界での機械学習の辛みを共有したい・語りたいという方はゼヒご参加ください~
-Machine Learning Casual Talks #8 (2019/01/28 18:30〜)</description></item><item><title>Machine Learning Casual Talks #5 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>2018/07/13 にMLCT #5を開催してきたお話
-Opening Talk by Aki Ariga
-Machine Learning Casual Talks #5 (2018/07/13 19:30〜)
-本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました。
-発表資料はこちら 👉 here (YouTube配信もあります)* この記事では、技術的なお話というよりも開催に至るまでの話をメインに書いていきます。
-Start 構想開始時期は2018/04頃に考えていて、弊社開催の
-MLOps Nightと呼ばれるイベントの準備を行っているときに、社内だけではなく
-_社外の人の機械学習の辛い話をうんうんと頷きながら聞きたいなぁ
-_と思ったのが事の始まりです
-そのあと、とりあえず日程と発表者は事前に集めておかねばと思いTakashi Nishibayashi さんにラブコールを送っていた
-発表依頼の様子
-chezou さんとの出会いとMLCT復活の狼煙 その後、
-勉強会の名前どうしよう 🤔 運営の方針どうすべきか 🤔 を迷いつつ時間が過ぎていき業務の一環として機械学習工学キックオフシンポジウム に参加していたら、そういえば Aki Ariga さんってMLCT開催してたよな、あの勉強会すごく参考になること多かったから復活できないかなと思い始め、気がついたら懇親会で hagino3000 さんに chezou さんを紹介してもらい
-「MLCT復活させたいです!!! 場所と運営準備は僕主体でやります!」
-と提案したら、あっさりと快諾され運営者に混ぜてもらえることになりました
-メッセージ投げかけから1分で承認される
-あらためて、突然飛び込んできた見知らぬ人物の運営への参加を快諾してくださった、 Aki Ariga, Atsushi KOMIYA, @tetsuroito さんありがとうございました 🙇
-また社内にはコミュニティを運営する人たちが集まる #z-organizer という夢のようなSlackチャンネルがあり、そこの方々からも今回の運営準備や行動理念など沢山の助言をいただきました! ありがとうございました!
-MLCT #5 開催の感想 定員は100名で募集したところ、応募者が200人強、実参加者は71人と盛況にイベントを開催することができました。
-運営初回ということもあり、発表者は事前に僕と hagino3000さん、同僚の hnakagawa, ynqa にお願いして数を揃えました。イベント告知後には soonraahさん、 overs_5121 さんにLT参加応募をいただき定員に達してホッと覚えがあります。</description></item><item><title>[抄訳] Data engineers vs. data scientists</title><link>https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/</link><pubDate>Tue, 24 Apr 2018 02:18:46 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-24_%E6%8A%84%E8%A8%B3-data-engineers-vs.-data-scientists/</guid><description>データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア
-紹介記事 Data engineers vs. data scientists
-紹介記事を同僚から教えてもらい、面白かったので抄訳した
-[](https://twitter.com/chezou/status/980349709339394048) Aki Ariga さんが言及していた記事と方向性が同一で面白かった。
-Data Scientists : ビジネスサイドを理解し、他者にわかりやすく可視化と言語化できる職能。そして高度な数学的知識に基づいたモデリングやアルゴリズム提案スキルも持っている。Data Scientistsには高度なProgramming skillは必ずしも必須ではない、なぜならモデリングやアルゴリズムを実装するためにプログラミングを習得した人が多いからだ。システムデザインやProgramming スキルは、Software Engineer やDataEngineerからみると見れたものではない(そしてそうでなくてはならない、なぜならスペシャリストだから)
-Data Engineer : 分散プログラミングを意識して構築できる職能。DEは卓越したプログラミングスキルとシステム構成力を持つ。定義 : つまりビッグデータに対してシステム的に解決できるスキル。クラスタ設計までがData Engineerの役割であり運用(Ops)はやらない
-from : https://www.oreilly.com/ideas/data-engineers-vs-data-scientists
-Data Scientists とData Engineer の互いの特化したスキルは補完しあってこそ輝く。 Data Scientist がデータパイプラインを作ると悲劇が起きてしまう。多くの企業がData ScientistをData Engineer として雇っているが、それはData Scientistsのスペックを活かしきれず、20–30%の効率で働かせてしまっている。そしてそのROIはめちゃくちゃ悪い。Data Scientists は適切なツールと選択肢を熟知していない(そしてData Engineerはシステムデザインと熟知しているのでミスは侵さない) e.g. 実際著者が聞いたこんな話がある。 Data ScientistsがApache Sparkを使って10GBのデータ処理を行うのに1回15mの時間がかかっていた。(だがRDBMSを使えば、10msで終わる) Data Scientistは彼らの流儀を疑うこと無く1日に16回Sparkの処理を実行しており、15mx16=240mつまり4hの時間を無駄にしてる。RDBMSを使えば、160msで終わるというのに… Data Scientist が頑張ってシステムを構築するが、職能の限界で Data Engineerしか作れないシステムなので時間とお金の浪費になった 実情 : Data Scientist として雇われたのに、Data Engineer として働かざるを得ない人がほとんどだ 理想的な人材配置 Case : 初期の組織: 2–3人のData Engineer : DataScientist Group Case : 更に複雑な事に取り組みたい 4–5人の Data Engineer : 1 Data Scientist Data Engineer change to Data Scientist の王道→それが新しい職種 : Machine Learning Engineer!</description></item><item><title>Google Colaboratory で Mecab-ipadic-Neologd を使うまで</title><link>https://shunyaueta.com/posts/2018-04-23_google-colaboratory-%E3%81%A7-mecabipadicneologd-%E3%82%92%E4%BD%BF%E3%81%86%E3%81%BE%E3%81%A7/</link><pubDate>Mon, 23 Apr 2018 15:38:10 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-23_google-colaboratory-%E3%81%A7-mecabipadicneologd-%E3%82%92%E4%BD%BF%E3%81%86%E3%81%BE%E3%81%A7/</guid><description>Colab上で 日本語のNLPをしたいときありませんか？
-Success
-Code Google Colabratory https://colab.research.google.com/drive/1YK8XFnfD29775lEYWhwz3wh4h8boR9iE</description></item><item><title>Google, Facebookが提供する機械学習基盤まとめ</title><link>https://shunyaueta.com/posts/2018-04-09_google-facebook%E3%81%8C%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%9F%BA%E7%9B%A4%E3%81%BE%E3%81%A8%E3%82%81/</link><pubDate>Mon, 09 Apr 2018 13:55:44 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-09_google-facebook%E3%81%8C%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%9F%BA%E7%9B%A4%E3%81%BE%E3%81%A8%E3%82%81/</guid><description>Google, Facebookの機械学習基盤情報をまとめました
-TFX
-社内の勉強会でGoogle, Facebookが提供する機械学習基盤に関する論文を紹介したので、その資料を公開します#### 経緯
-機械学習をサービスとして提供開始すると、継続的な学習やプロダクション環境での機械学習の提供はモデル構築以外にもいろいろと考える問題が多くなります¹
-[1] Hidden technical debt in Machine learning systems NIPS’15
-要するに機械学習をサービスとして届けるには、実はめちゃんこ大変なんだよという話なんですが、みんな同じ問題にぶち当たります。
-そのためプロダクションレディなレベルで機械学習を提供できるプラットフォームを各社が提案しておりその中でもGoogle, Facebookの事例を提供します。
-TL; DR; FBLearner: MLaaSの事例として最初に読むべき論文、MLaaSをどのような戦略で提供しているかを抽象的にまなべるため、鳥瞰図として読みましょう TFXは逆に機械学習基盤が必要とする技術スタックや要件などを詳細に説明しており、教科書的な立ち位置です。社内で機械学習基盤を内製したい場合に詳しく読み込むこと必須 両社ともMLaaSをスケーラブルに提供する環境ができており、サービスのコアテクノロジーになっている Google : Tensorflow Expand TFX: A tensor flow-based production-scale machine learning platform
-Facebook : FBLeaner Applied machine learning at facebook a datacenter infrastructure perspective HPCA18
-ONNX を見ていると TensorFlow VS. ONNX 陣営が出来つつありどちらのプラットフォームに乗るかの戦略が大事だなと思います。
-Googleはモバイル上のMLから超大規模分散学習までTFシリーズで提供、実際のサービング環境も TFServingというスタックを提供しはじめていて個人的にTensorFlowが何歩も先にいっているという所感
-(逆にTensorFlow 一強状態になると、競争状態がなくなるので是非ONNX陣営には頑張ってほしい)</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
+これからずっと現役でいるために、更に意識的に業務と関係ない学習の時間を作って習慣化 20代前半と比較すると集中力の衰えを感じるので、基礎となる体を鍛える 読書量もっと増やす(通勤中にもっと読めるはず) 業務速度の高速化(更にスケールさせたい) News Letter 更新を週一で継続させる 英語の基礎力向上: 自分は基礎が全くできてないことがわかった。出川英会話の限界を感じている 業務成果を海外カンファレンスで発表(開発・研究)👇細かい話が気になる方、機械学習のお話がしたい方ご飯行きましょう。DMください 📣 Shunya Ueta (@hurutoriya) | Twitter</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13_%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E3%81%AEteam-ai-meetup-sharp1-%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-sharpmercariai/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
 発表者の顔は隠しています。なにか問題があればお伝え下さい。
 Team AI Meetup #1 (2018/02/13 19:00〜)
 Twitter: #mercari_ai
@@ -182,23 +114,7 @@ Gaussian Kernel GIF Animation
 あと、**np.linspace()**がiterableではないので、イマイチな書き方になった。。
 **np.arange()**を使うべきなのか…
 Thanks Embedding Matplotlib Animations in Jupyter Notebooks
-Jupyter上でmatplotlibのアニメーションを再生する - Qiita</description></item><item><title>HerokuのDBにpgadmin4で接続してローカルにデータをダウンロードする</title><link>https://shunyaueta.com/posts/2017-12-27_heroku%E3%81%AEdb%E3%81%ABpgadmin4%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%97%E3%81%A6%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</link><pubDate>Wed, 27 Dec 2017 08:12:17 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-27_heroku%E3%81%AEdb%E3%81%ABpgadmin4%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%97%E3%81%A6%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/</guid><description>pyadmin4でHeroku上のDBに接続する記事が日本語になかったので、メモ
-接続前の準備 Herokuにログインして、対象のAppのDBのページへ
-Heroku App DB page
-そこからDBのセッティングページにあるcredentialボタンをクリック
-click credential button
-そこに記載されている各種情報をpgadmin4に入力してHeroku上のDBに接続する
-Copy information
-pgadmin4でHerokuのDBに接続 以下のページからpgAdmin4をダウンロード
-Download
-そこからアプリを開くと下記の画面になるので、Add new Serverをクリック
-Click Add New Server
-Heroku上のDBの情報を入力していく。Serverの名前は適当で大丈夫です。
-接続されるとこんな感じになります。
-Query Tool Query Toolを使うことでHeroku上のDBに対してSQLクエリを投げる事ができます。
-Query Toolは上部のツールバーからアクセス可能です。 注意) 左カラムのテーブルをクリックした後でないとアクティブになりません。
-SQLの実行結果
-雷ボタンでSQLを実行可能 ↓ボタンでSQL結果をローカルにCSV形式で保存できます。</description></item><item><title>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp; 講義でJupyterhubを利用する</title><link>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</link><pubDate>Sat, 23 Dec 2017 17:48:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</guid><description>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp;amp; 講義でJupyterhubを利用するお話です。
+Jupyter上でmatplotlibのアニメーションを再生する - Qiita</description></item><item><title>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp; 講義でJupyterhubを利用する</title><link>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</link><pubDate>Sat, 23 Dec 2017 17:48:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-23_jupyternotebook%E3%82%92%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E4%B8%8A%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%97%E3%81%A6%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E7%A0%94%E7%A9%B6%E9%96%8B%E7%99%BA-%E8%AC%9B%E7%BE%A9%E3%81%A7jupyterhub%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</guid><description>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp;amp; 講義でJupyterhubを利用するお話です。
 GIF画像は下記の記事で知ったtqdmというパッケージを使いたくなった衝動の成れの果てです。
 私が選ぶ2015年の”新しい”Pythonモジュール トップ5 IPythonデータサイエンスクックブック ―対話型コンピューティングと可視化のためのレシピ集 IPythonデータサイエンスクックブックをキッカケに研究室でもJupyterNotebookの凄さを皆が知り、MATLABのkernelを通して利用を始めたりしています。自分はPython2→MATLAB→MATLAB &amp;amp; Python3という流れで移り変わっています。
 JupyterNotebookをリモートサーバー上で公開 コードは以下の通りです。特に問題なく公開することができました。

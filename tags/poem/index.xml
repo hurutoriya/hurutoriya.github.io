@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Poem on Shunya UETA</title><link>https://shunyaueta.com/tags/poem/</link><description>Recent content in Poem on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Sun, 15 Jul 2018 09:31:28 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/poem/index.xml" rel="self" type="application/rss+xml"/><item><title>Machine Learning Casual Talks #5 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</link><pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-07-15_machine-learning-casual-talks-sharp5-%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-sharpmlct/</guid><description>2018/07/13 にMLCT #5を開催してきたお話
-Opening Talk by Aki Ariga
-Machine Learning Casual Talks #5 (2018/07/13 19:30〜)
-本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました。
-発表資料はこちら 👉 here (YouTube配信もあります)* この記事では、技術的なお話というよりも開催に至るまでの話をメインに書いていきます。
-Start 構想開始時期は2018/04頃に考えていて、弊社開催の
-MLOps Nightと呼ばれるイベントの準備を行っているときに、社内だけではなく
-_社外の人の機械学習の辛い話をうんうんと頷きながら聞きたいなぁ
-_と思ったのが事の始まりです
-そのあと、とりあえず日程と発表者は事前に集めておかねばと思いTakashi Nishibayashi さんにラブコールを送っていた
-発表依頼の様子
-chezou さんとの出会いとMLCT復活の狼煙 その後、
-勉強会の名前どうしよう 🤔 運営の方針どうすべきか 🤔 を迷いつつ時間が過ぎていき業務の一環として機械学習工学キックオフシンポジウム に参加していたら、そういえば Aki Ariga さんってMLCT開催してたよな、あの勉強会すごく参考になること多かったから復活できないかなと思い始め、気がついたら懇親会で hagino3000 さんに chezou さんを紹介してもらい
-「MLCT復活させたいです!!! 場所と運営準備は僕主体でやります!」
-と提案したら、あっさりと快諾され運営者に混ぜてもらえることになりました
-メッセージ投げかけから1分で承認される
-あらためて、突然飛び込んできた見知らぬ人物の運営への参加を快諾してくださった、 Aki Ariga, Atsushi KOMIYA, @tetsuroito さんありがとうございました 🙇
-また社内にはコミュニティを運営する人たちが集まる #z-organizer という夢のようなSlackチャンネルがあり、そこの方々からも今回の運営準備や行動理念など沢山の助言をいただきました! ありがとうございました!
-MLCT #5 開催の感想 定員は100名で募集したところ、応募者が200人強、実参加者は71人と盛況にイベントを開催することができました。
-運営初回ということもあり、発表者は事前に僕と hagino3000さん、同僚の hnakagawa, ynqa にお願いして数を揃えました。イベント告知後には soonraahさん、 overs_5121 さんにLT参加応募をいただき定員に達してホッと覚えがあります。</description></item><item><title>2018 resolution</title><link>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</link><pubDate>Mon, 29 Jan 2018 16:08:35 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</guid><description>2018年の抱負です。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Poem on Shunya UETA</title><link>https://shunyaueta.com/tags/poem/</link><description>Recent content in Poem on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Mon, 29 Jan 2018 16:08:35 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/poem/index.xml" rel="self" type="application/rss+xml"/><item><title>2018 resolution</title><link>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</link><pubDate>Mon, 29 Jan 2018 16:08:35 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-29_2018-resolution/</guid><description>2018年の抱負です。
 Works 機械学習エンジニアとして六本木で働く事になりました。機械学習エンジニアとしてスペシャリストになれるように周辺スキルを伸ばしていきます。
 Kaggle Masterに到達(1 gold medal, 2 silver medals) 初参加のコンペもずるずる下降してしまいブロンズ圏外に…
 Coursera, Udacity (MOOC)でCV, Robotics 周辺を学習していく Githubで50 star overのOSSを作る(CV or ML) 勉強会に登壇 or 主催 する メタ学習(学習の効率化)について小話
