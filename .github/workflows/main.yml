@@ -1,10 +1,9 @@
-name: github pages
+name: github page
 
 on:
   push:
     branches:
-      - sourse # kick branch
-publish_branch: master # deploying branch
+      - source # kick branch
 
 jobs:
   build-deploy:
@@ -17,13 +16,15 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.64.0"
+          hugo-version: "0.67.1"
 
       - name: Build
-        run: HUGO_ENV=production hugo --minify
+        run: hugo --gc --minify --cleanDestinationDir
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_branch: master # deploying branch
           publish_dir: ./public
+          cname: shunyaueta.com 
