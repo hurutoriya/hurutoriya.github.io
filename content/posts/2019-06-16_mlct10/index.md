@@ -3,8 +3,8 @@ title: "Machine Learning Casual Talks #10 を開催しました #MLCT"
 date: 2019-06-16T22:01:27+09:00
 lang: ja
 tags:
-- MLCT
-- Community
+  - MLCT
+  - Community
 ---
 
 [MLCT #10](https://mlct.connpass.com/event/125316/) を開催しました。
@@ -33,4 +33,4 @@ Machine Learning Casual Talks とは
 ![sli.do smartphone](/posts/2019-06-16_mlct10/mlct10_slido.png)
 
 手元のスマートフォンで質問をハイライトして、回答を終えたものはアーカイブという運用でしたが、とても快適なのでみなさんぜひお試しください。
-スクリーンでの表示画面がSPAで同期されているので、手元のスマートフォンで更新すればリアルタイムで同期されるのがとても便利です。
+スクリーンでの表示画面が SPA で同期されているので、手元のスマートフォンで更新すればリアルタイムで同期されるのがとても便利です。

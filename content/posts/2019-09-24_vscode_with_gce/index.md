@@ -3,10 +3,9 @@ title: "How to connect the Google Compute Engine via Visual Studio Code"
 date: 2019-09-24T17:35:05+09:00
 lang: en
 tags:
-- GCP
-- VSCode
+  - GCP
+  - VSCode
 ---
-
 
 ## 1. Generate SSH config file using `gcloud` command line
 
