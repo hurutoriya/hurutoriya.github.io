@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Matplotlib on Shunya UETA</title><link>https://shunyaueta.com/tags/matplotlib/</link><description>Recent content in Matplotlib on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Sat, 13 Jan 2018 17:03:43 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/matplotlib/index.xml" rel="self" type="application/rss+xml"/><item><title>PythonでGaussian Kernelのアニメーションを作成</title><link>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</link><pubDate>Sat, 13 Jan 2018 17:03:43 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</guid><description>Pythonでアニメーションを作成したかったのでメモ
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Matplotlib on Shunya UETA</title><link>https://shunyaueta.com/tags/matplotlib/</link><description>Recent content in Matplotlib on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Sat, 13 Jan 2018 17:03:43 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/matplotlib/index.xml" rel="self" type="application/rss+xml"/><item><title>PythonでGaussian Kernelのアニメーションを作成</title><link>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</link><pubDate>Sat, 13 Jan 2018 17:03:43 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-13_python%E3%81%A7gaussian-kernel%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90/</guid><description>Python でアニメーションを作成したかったのでメモ
 Gaussian Kernel GIF Animation
-当然ながら、HTML5のVideoは再生されないのでGIFに変換した結果が以下。
-これでHTML5で再生される。
+当然ながら、HTML5 の Video は再生されないので GIF に変換した結果が以下。
+これで HTML5 で再生される。
 **GIF**で表示する方法として %matplotlib nbagg
-というオプションが存在しているが、Kernelがbusy状態を何度も繰り返すので、自分はmp4で出力するようにした。
-実験結果も以前はGIFで保存してたが、最近は全てmp4で管理するようにした。
-あと、**np.linspace()**がiterableではないので、イマイチな書き方になった。。
+というオプションが存在しているが、Kernel が busy 状態を何度も繰り返すので、自分は mp4 で出力するようにした。
+実験結果も以前は GIF で保存してたが、最近は全てmp4で管理するようにした。
+あと、**np.linspace()**が iterable ではないので、イマイチな書き方になった。。
 **np.arange()**を使うべきなのか…
 Thanks Embedding Matplotlib Animations in Jupyter Notebooks
-Jupyter上でmatplotlibのアニメーションを再生する - Qiita</description></item></channel></rss>
+Jupyter 上で matplotlib のアニメーションを再生する - Qiita</description></item></channel></rss>

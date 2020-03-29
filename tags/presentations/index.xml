@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Presentations on Shunya UETA</title><link>https://shunyaueta.com/tags/presentations/</link><description>Recent content in Presentations on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Wed, 22 Nov 2017 12:04:30 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/presentations/index.xml" rel="self" type="application/rss+xml"/><item><title>Jupyter上でSVGのイラストやアニメーションが作成できるプラグイン egel</title><link>https://shunyaueta.com/posts/2017-11-22_jupyter%E4%B8%8A%E3%81%A7svg%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-egel/</link><pubDate>Wed, 22 Nov 2017 12:04:30 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-22_jupyter%E4%B8%8A%E3%81%A7svg%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-egel/</guid><description>アイデアは面白い… けど easy drawingではない
-Jupyter使ってると作図もJupyter上で完結させたいなぁ~って思うときがあるんですが、スクリプトで作図はけっこう辛いものがあります
-そのためJupyter上でフリースタイルに作図できる機能ないかなと探してたらegalという面白そうな拡張機能があったので使ってみました
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Presentations on Shunya UETA</title><link>https://shunyaueta.com/tags/presentations/</link><description>Recent content in Presentations on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Wed, 22 Nov 2017 12:04:30 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/presentations/index.xml" rel="self" type="application/rss+xml"/><item><title>Jupyter上でSVGのイラストやアニメーションが作成できるプラグイン egel</title><link>https://shunyaueta.com/posts/2017-11-22_jupyter%E4%B8%8A%E3%81%A7svg%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-egel/</link><pubDate>Wed, 22 Nov 2017 12:04:30 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-22_jupyter%E4%B8%8A%E3%81%A7svg%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E4%BD%9C%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-egel/</guid><description>アイデアは面白い… けど easy drawing ではない
+Jupyter 使ってると作図も Jupyter 上で完結させたいなぁ~って思うときがあるんですが、スクリプトで作図はけっこう辛いものがあります
+そのため Jupyter 上でフリースタイルに作図できる機能ないかなと探してたら egal という面白そうな拡張機能があったので使ってみました
 uclmr/egal
 egal GIF animation
 以下のリポジトリから $pip3 install git+https://github.com/uclmr/egal.gi
 でクローンしてきて $jupyter nbextension install --py egal $jupyter nbextension enable --py egal
 で拡張機能を有効にして使えるようになります。
 ブラシアイコンをクリックすると新たなセルが生成される
-👉ボタンをクリックすると各オブジェクトの詳細なプロパティが調整できる
+👉 ボタンをクリックすると各オブジェクトの詳細なプロパティが調整できる
 フレーム毎にオブジェクトを設定してアニメーションっぽくもできる
-5–6分使ってみて感じましたが、めちゃくちゃ操作がしづらい…
-やはりブラウザ上での図形作成はめちゃくちゃストレスたまるので、ローカルでkeynote使って図形作成したほうがマシな感じです。
-遊んだ結果をnotebookでgithubにアップしておきました。
-残念ながらSVGがGithub上ではレンダリングされないので残念な感じになっております&amp;hellip; ローカルにクローンしてきてegalを有効にしておくと見れます。
+5–6 分使ってみて感じましたが、めちゃくちゃ操作がしづらい…
+やはりブラウザ上での図形作成はめちゃくちゃストレスたまるので、ローカルで keynote 使って図形作成したほうがマシな感じです。
+遊んだ結果を notebook で github にアップしておきました。
+残念ながら SVG が Github 上ではレンダリングされないので残念な感じになっております&amp;hellip; ローカルにクローンしてきて egal を有効にしておくと見れます。
 hurutoriya/notebook
-結論 Jupyterで全てを完結させるのは難しい</description></item></channel></rss>
+結論 Jupyter で全てを完結させるのは難しい</description></item></channel></rss>

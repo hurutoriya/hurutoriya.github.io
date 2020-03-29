@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Faiss on Shunya UETA</title><link>https://shunyaueta.com/tags/faiss/</link><description>Recent content in Faiss on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Tue, 27 Feb 2018 05:50:27 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/faiss/index.xml" rel="self" type="application/rss+xml"/><item><title>How to install faiss</title><link>https://shunyaueta.com/posts/2018-02-27_how-to-install-faiss/</link><pubDate>Tue, 27 Feb 2018 05:50:27 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-27_how-to-install-faiss/</guid><description>faiss : Billion-scale similarity search with GPUs
-faiss : Billion-scale similarity search with GPUs
-You mainly follow : https://github.com/facebookresearch/faiss/blob/master/INSTALL.md
-Env : Mac OS X 10.12.6
-Not Tag, Note commit hash:commit cd884114d0a8e1789f257b524e5345bc5b26e6b2 ``_2018.02.24 : New version of Faiss!
-What's new?
-Support for on-disk inverted lists (see https://github.com/…/f…/blob/master/demos/demo_ondisk_ivf.py). Enables handling of datasets that do not fit in RAM. We tested it on up to 53B vectors, with a 2TB index. Tutorial and examples for using Faiss on one or more GPUs (see https://github.</description></item></channel></rss>
