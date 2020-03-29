@@ -1,25 +1,11 @@
 ---
 title: "Courseraの”Machine Learning”を修了した"
-author: "Shunya Ueta"
 date: 2018-03-25T15:36:18.087Z
 lastmod: 2019-06-16T18:17:57+09:00
 lang: ja
-description: ""
-
-subtitle: "Andrew Ng先生の MLコースを修了した 🎉"
 tags:
   - Machine Learning
   - Coursera
-  - Careers
-
-image: "/posts/2018-03-25_courseraのmachine-learningを修了した/images/1.png"
-images:
-  - "/posts/2018-03-25_courseraのmachine-learningを修了した/images/1.png"
-  - "/posts/2018-03-25_courseraのmachine-learningを修了した/images/2.png"
-  - "/posts/2018-03-25_courseraのmachine-learningを修了した/images/3.png"
-
-aliases:
-  - "/finish-coursera-machine-learning-b9e3bdf8d635"
 ---
 
 Andrew Ng 先生の ML コースを修了した 🎉

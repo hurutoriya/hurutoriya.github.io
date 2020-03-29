@@ -1,6 +1,5 @@
 ---
 title: "Machine Learning Casual Talks #6 を開催しました #MLCT"
-author: "Shunya Ueta"
 date: 2018-10-14T03:01:01.910Z
 lastmod: 2019-06-16T18:18:13+09:00
 lang: ja

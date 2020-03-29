@@ -1,24 +1,13 @@
 ---
 title: "Jupyter上でSVGのイラストやアニメーションが作成できるプラグイン egel"
-author: "Shunya Ueta"
 date: 2017-11-22T12:04:30.104Z
 lastmod: 2019-06-16T18:16:05+09:00
 lang: ja
 tags:
   - Python
-  - Jupyter Notebook
+  - Jupyter
   - Presentations
   - Development
-
-image: "/posts/2017-11-22_jupyter上でsvgのイラストやアニメーションが作成できるプラグイン-egel/images/1.gif"
-images:
-  - "/posts/2017-11-22_jupyter上でsvgのイラストやアニメーションが作成できるプラグイン-egel/images/1.gif"
-  - "/posts/2017-11-22_jupyter上でsvgのイラストやアニメーションが作成できるプラグイン-egel/images/2.png"
-  - "/posts/2017-11-22_jupyter上でsvgのイラストやアニメーションが作成できるプラグイン-egel/images/3.gif"
-  - "/posts/2017-11-22_jupyter上でsvgのイラストやアニメーションが作成できるプラグイン-egel/images/4.gif"
-
-aliases:
-  - "/jupyter-egal-ae3a886266c6"
 ---
 
 アイデアは面白い… けど easy drawing ではない

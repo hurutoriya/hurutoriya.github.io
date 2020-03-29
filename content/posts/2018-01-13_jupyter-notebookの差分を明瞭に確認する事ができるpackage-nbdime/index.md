@@ -1,19 +1,11 @@
 ---
 title: "Jupyter Notebookの差分を明瞭に確認する事ができるpackage : nbdime"
-author: "Shunya Ueta"
 date: 2018-01-13T17:14:54.389Z
 lastmod: 2019-06-16T18:17:41+09:00
 lang: ja
 tags:
   - Python
   - Jupyter
-
-image: "/posts/2018-01-13_jupyter-notebookの差分を明瞭に確認する事ができるpackage-nbdime/images/1.png"
-images:
-  - "/posts/2018-01-13_jupyter-notebookの差分を明瞭に確認する事ができるpackage-nbdime/images/1.png"
-
-aliases:
-  - "/nbdiff-is-clear-diff-on-jupyter-4515c8f0e701"
 ---
 
 Jupyter notebook をご利用の皆さん、朗報です。

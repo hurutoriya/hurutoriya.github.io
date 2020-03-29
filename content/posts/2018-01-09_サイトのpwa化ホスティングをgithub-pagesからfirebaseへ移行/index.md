@@ -1,27 +1,12 @@
 ---
 title: "サイトのPWA化、ホスティングをGithub PagesからFirebaseへ移行"
-author: "Shunya Ueta"
 date: 2018-01-09T18:59:59.969Z
 lastmod: 2019-06-16T18:17:31+09:00
-
-description: ""
-
-subtitle: "PWAとFireBaseを試してみたかった"
+lang: ja
 tags:
   - Firebase
   - PWA
   - Github Pages
-
-image: "/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/1.png"
-images:
-  - "/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/1.png"
-  - "/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/2.png"
-  - "/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/3.png"
-  - "/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/4.png"
-  - "/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/5.png"
-
-aliases:
-  - "/change-to-firebase-hosting-from-githubpages-cloudflare-daf1ca4022c5"
 ---
 
 PWA と FireBase を試してみたかった

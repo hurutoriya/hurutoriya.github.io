@@ -1,16 +1,10 @@
 ---
 title: "TexPadのおかげでLatex人生が変わりました"
-author: "Shunya Ueta"
 date: 2017-10-08T02:22:24.069Z
 lastmod: 2019-06-16T18:15:55+09:00
 lang: ja
 tags:
   - Latex
-
-image: "/posts/2017-10-08_texpadのおかげでlatex人生が変わりました/images/1.png"
-images:
-  - "/posts/2017-10-08_texpadのおかげでlatex人生が変わりました/images/1.png"
-  - "/posts/2017-10-08_texpadのおかげでlatex人生が変わりました/images/2.png"
 ---
 
 ![image](/posts/2017-10-08_texpadのおかげでlatex人生が変わりました/images/1.png)

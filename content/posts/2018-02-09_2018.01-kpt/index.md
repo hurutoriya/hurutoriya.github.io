@@ -1,15 +1,10 @@
 ---
 title: "2018.01 KPT"
-author: "Shunya Ueta"
 date: 2018-02-09T14:00:31.850Z
 lastmod: 2019-06-16T18:17:52+09:00
-lang: ka
+lang: ja
 tags:
   - retro
-
-image: "/posts/2018-02-09_2018.01-kpt/images/1.png"
-images:
-  - "/posts/2018-02-09_2018.01-kpt/images/1.png"
 ---
 
 2018 年 1 月の振り返りをざっくりと

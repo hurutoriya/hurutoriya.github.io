@@ -1,6 +1,5 @@
 ---
 title: "Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ"
-author: "Shunya Ueta"
 date: 2018-01-17T05:41:44.616Z
 lastmod: 2019-06-16T18:17:50+09:00
 lang: ja
@@ -8,11 +7,6 @@ tags:
   - Computer Vision
   - Paper
   - CVPR
-
-image: "/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016を読んだ/images/1.png"
-images:
-  - "/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016を読んだ/images/1.png"
-  - "/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016を読んだ/images/2.png"
 ---
 
 Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 [link](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Shih_Where_to_Look_CVPR_2016_paper.pdf)

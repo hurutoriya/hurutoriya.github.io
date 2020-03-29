@@ -1,24 +1,12 @@
 ---
 title: "Google, Facebookが提供する機械学習基盤まとめ"
-author: "Shunya Ueta"
 date: 2018-04-09T13:55:44.389Z
 lastmod: 2019-06-16T18:17:59+09:00
 lang: ja
-description: ""
-
-subtitle: "Google, Facebookの機械学習基盤情報をまとめました"
 tags:
   - Machine Learning
   - MLOps
   - Paper
-
-image: "/posts/2018-04-09_google-facebookが提供する機械学習基盤まとめ/images/1.gif"
-images:
-  - "/posts/2018-04-09_google-facebookが提供する機械学習基盤まとめ/images/1.gif"
-  - "/posts/2018-04-09_google-facebookが提供する機械学習基盤まとめ/images/2.png"
-
-aliases:
-  - "/google-fb-ml-platform-fb3e53ab772"
 ---
 
 Google, Facebook の機械学習基盤情報をまとめました

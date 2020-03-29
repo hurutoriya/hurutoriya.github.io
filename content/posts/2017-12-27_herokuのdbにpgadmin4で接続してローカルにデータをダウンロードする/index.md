@@ -1,31 +1,12 @@
 ---
 title: "HerokuのDBにpgadmin4で接続してローカルにデータをダウンロードする"
-author: "Shunya Ueta"
 date: 2017-12-27T08:12:17.298Z
 lastmod: 2019-06-16T18:17:25+09:00
 lang: ja
-description: ""
-
-subtitle: "pyadmin4でHeroku上のDBに接続する記事が日本語になかったので、メモ"
 tags:
   - Heroku
   - Postgresql
   - Development
-
-image: "/posts/2017-12-27_herokuのdbにpgadmin4で接続してローカルにデータをダウンロードする/images/1.png"
-images:
-  - "/posts/2017-12-27_herokuのdbにpgadmin4で接続してローカルにデータをダウンロードする/images/1.png"
-  - "/posts/2017-12-27_herokuのdbにpgadmin4で接続してローカルにデータをダウンロードする/images/2.png"
-  - "/posts/2017-12-27_herokuのdbにpgadmin4で接続してローカルにデータをダウンロードする/images/3.png"
-  - "/posts/2017-12-27_herokuのdbにpgadmin4で接続してローカルにデータをダウンロードする/images/4.png"
-  - "/posts/2017-12-27_herokuのdbにpgadmin4で接続してローカルにデータをダウンロードする/images/5.png"
-  - "/posts/2017-12-27_herokuのdbにpgadmin4で接続してローカルにデータをダウンロードする/images/6.png"
-  - "/posts/2017-12-27_herokuのdbにpgadmin4で接続してローカルにデータをダウンロードする/images/7.png"
-  - "/posts/2017-12-27_herokuのdbにpgadmin4で接続してローカルにデータをダウンロードする/images/8.png"
-  - "/posts/2017-12-27_herokuのdbにpgadmin4で接続してローカルにデータをダウンロードする/images/9.png"
-
-aliases:
-  - "/pgadmin4-connetct-to-heroku-db-c0abe2342aa8"
 ---
 
 pyadmin4 で Heroku 上の DB に接続する記事が日本語になかったので、メモ

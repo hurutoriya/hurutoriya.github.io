@@ -1,15 +1,10 @@
 ---
 title: "How to install faiss"
-author: "Shunya Ueta"
 date: 2018-02-27T05:50:27.176Z
 lastmod: 2019-06-16T18:17:55+09:00
 category: dev
 tags:
   - Python
-
-image: "/posts/2018-02-27_how-to-install-faiss/images/1.png"
-images:
-  - "/posts/2018-02-27_how-to-install-faiss/images/1.png"
 ---
 
 faiss : Billion-scale similarity search with GPUs

@@ -1,30 +1,10 @@
 ---
 title: "イベント運営に便利なsli.do の使いこなしかた"
-author: "Shunya Ueta"
 date: 2018-06-17T15:03:27.683Z
 lastmod: 2019-06-16T18:18:09+09:00
 lang: ja
 tags:
   - Organizer
-  - Events
-
-image: "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/1.png"
-images:
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/1.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/2.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/3.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/4.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/5.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/6.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/7.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/8.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/9.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/10.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/11.png"
-  - "/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/12.png"
-
-aliases:
-  - "/how-to-use-slido-398cdfa54984"
 ---
 
 イベント運営者必見 sli.do の使い方

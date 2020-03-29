@@ -1,6 +1,5 @@
 ---
 title: "[抄訳] Data engineers vs. data scientists"
-author: "Shunya Ueta"
 date: 2018-04-24T02:18:46.954Z
 lastmod: 2019-06-16T18:18:07+09:00
 lang: ja
@@ -9,11 +8,6 @@ tags:
   - Data Engineer
   - 抄訳
   - Machine Learning
-
-image: "/posts/2018-04-24_抄訳-data-engineers-vs.-data-scientists/images/1.png"
-images:
-  - "/posts/2018-04-24_抄訳-data-engineers-vs.-data-scientists/images/1.png"
-  - "/posts/2018-04-24_抄訳-data-engineers-vs.-data-scientists/images/2.png"
 ---
 
 データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア

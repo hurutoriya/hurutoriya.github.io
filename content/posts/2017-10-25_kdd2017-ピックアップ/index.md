@@ -1,6 +1,5 @@
 ---
 title: "KDD2017 ピックアップ"
-author: "Shunya Ueta"
 date: 2017-10-25T11:52:09.083Z
 lastmod: 2019-06-16T18:15:57+09:00
 lang: ja
@@ -8,10 +7,6 @@ tags:
   - Machine Learning
   - KDD
   - Papers
-
-image: "/posts/2017-10-25_kdd2017-ピックアップ/images/1.png"
-images:
-  - "/posts/2017-10-25_kdd2017-ピックアップ/images/1.png"
 ---
 
 ![image](/posts/2017-10-25_kdd2017-ピックアップ/images/1.png)

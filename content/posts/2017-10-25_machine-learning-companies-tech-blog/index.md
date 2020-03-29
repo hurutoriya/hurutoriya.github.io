@@ -1,16 +1,11 @@
 ---
 title: "Machine Learning Companies Tech Blog"
-author: "Shunya Ueta"
 date: 2017-10-25T11:32:31.250Z
 lastmod: 2019-06-16T18:15:59+09:00
 lang: en
 tags:
   - Machine Learning
   - Computer Vision
-
-image: "/posts/2017-10-25_machine-learning-companies-tech-blog/images/1.png"
-images:
-  - "/posts/2017-10-25_machine-learning-companies-tech-blog/images/1.png"
 ---
 
 ![image](/posts/2017-10-25_machine-learning-companies-tech-blog/images/1.png)

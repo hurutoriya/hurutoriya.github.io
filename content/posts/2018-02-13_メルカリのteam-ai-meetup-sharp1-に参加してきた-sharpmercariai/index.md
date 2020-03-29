@@ -1,16 +1,11 @@
 ---
 title: "メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai"
-author: "Shunya Ueta"
 date: 2018-02-13T15:35:48.521Z
 lastmod: 2019-06-16T18:17:53+09:00
 lang: ja
 tags:
   - Machine Learning
   - Report
-
-image: "/posts/2018-02-13_メルカリのteam-ai-meetup-sharp1-に参加してきた-sharpmercariai/images/1.png"
-images:
-  - "/posts/2018-02-13_メルカリのteam-ai-meetup-sharp1-に参加してきた-sharpmercariai/images/1.png"
 ---
 
 メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい

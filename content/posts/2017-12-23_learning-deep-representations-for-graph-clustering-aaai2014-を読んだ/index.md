@@ -1,20 +1,12 @@
 ---
 title: "“Learning Deep Representations for Graph Clustering (AAAI2014)” を読んだ"
-author: "Shunya Ueta"
 date: 2017-12-23T17:38:19.179Z
 lastmod: 2019-06-16T18:16:19+09:00
 lang: ja
 tags:
   - Deep Learning
   - Machine Learning
-
-image: "/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/1.png"
-images:
-  - "/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/1.png"
-  - "/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/2.png"
-  - "/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/3.png"
-  - "/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/4.png"
-  - "/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/5.png"
+  - Paper
 ---
 
 自己符号化器と Spectral Clusteing の関連性を示した論文

@@ -1,17 +1,11 @@
 ---
 title: "JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 & 講義でJupyterhubを利用する"
-author: "Shunya Ueta"
 date: 2017-12-23T17:48:12.894Z
 lastmod: 2019-06-16T18:17:22+09:00
 lang: ja
 tags:
   - Python
-  - Jupyter Notebook
-  - Education
-
-image: "/posts/2017-12-23_jupyternotebookをリモートサーバー上で公開してどこでも研究開発-講義でjupyterhubを利用する/images/1.gif"
-images:
-  - "/posts/2017-12-23_jupyternotebookをリモートサーバー上で公開してどこでも研究開発-講義でjupyterhubを利用する/images/1.gif"
+  - Jupyter
 ---
 
 JupyterNotebook をリモートサーバー上で公開して、どこでも研究開発 &amp; 講義で Jupyterhub を利用するお話です。

@@ -1,5 +1,4 @@
 baseURL = "https://shunyaueta.com/"
-title = "Shunya UETA"
 theme ="hugo-theme-basic"
 languageCode = "ja"
 googleAnalytics = "UA-39994406-11"

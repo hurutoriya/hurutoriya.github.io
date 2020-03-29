@@ -1,6 +1,5 @@
 ---
 title: "FUSE: Full Spectral Clustering(KDD2016) を読んだ"
-author: "Shunya Ueta"
 date: 2018-01-13T17:30:28.693Z
 lastmod: 2019-06-16T18:17:39+09:00
 lang: ja
@@ -8,10 +7,6 @@ tags:
   - Machine Learning
   - Paper
   - KDD
-
-image: "/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-を読んだ/images/1.png"
-images:
-  - "/posts/2018-01-13_fuse-full-spectral-clusteringkdd2016-を読んだ/images/1.png"
 ---
 
 べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案

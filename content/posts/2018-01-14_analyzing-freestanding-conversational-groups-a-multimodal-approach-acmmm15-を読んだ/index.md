@@ -1,6 +1,5 @@
 ---
 title: "Analyzing Free-standing Conversational Groups: A Multimodal Approach (ACMMM15) を読んだ"
-author: "Shunya Ueta"
 date: 2018-01-14T10:41:12.009Z
 lastmod: 2019-06-16T18:17:46+09:00
 lang: ja
@@ -9,13 +8,6 @@ tags:
   - ACMMM
   - Computer Vision
   - Machine Learning
-
-image: "/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-を読んだ/images/1.png"
-images:
-  - "/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-を読んだ/images/1.png"
-
-aliases:
-  - "/analyzing-free-standing-conversational-groups-a-multimodal-approach-acmmm15-bd0a5b9c8628"
 ---
 
 スタンディングディスカッション形式での会話を評価した研究

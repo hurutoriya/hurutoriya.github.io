@@ -1,19 +1,11 @@
 ---
 title: "NIPS2017 Note"
-author: "Shunya Ueta"
 date: 2017-12-04T12:45:10.895Z
 lastmod: 2019-06-16T18:16:11+09:00
 lang: en
 tags:
   - Machine Learning
   - NIPS
-
-image: "/posts/2017-12-04_nips2017-note/images/1.png"
-images:
-  - "/posts/2017-12-04_nips2017-note/images/1.png"
-
-aliases:
-  - "/nips2017-note-607556783773"
 ---
 
 NIPS2017 accepted paper is open!

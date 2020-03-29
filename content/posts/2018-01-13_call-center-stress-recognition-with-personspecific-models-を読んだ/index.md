@@ -1,6 +1,5 @@
 ---
 title: "Call center stress recognition with person-specific models を読んだ"
-author: "Shunya Ueta"
 date: 2018-01-13T17:19:48.278Z
 lastmod: 2019-06-16T18:17:38+09:00
 lang: ja
@@ -9,10 +8,6 @@ tags:
   - Paper
   - Computer Vision
   - Machine Learning
-
-image: "/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-を読んだ/images/1.png"
-images:
-  - "/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-を読んだ/images/1.png"
 ---
 
 Affective Computing: 計算機と人間の感情や情緒の関係性を考える領域

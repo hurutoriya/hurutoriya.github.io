@@ -1,6 +1,5 @@
 ---
 title: "PythonでGaussian Kernelのアニメーションを作成"
-author: "Shunya Ueta"
 date: 2018-01-13T17:03:43.429Z
 lastmod: 2019-06-16T18:17:44+09:00
 lang: ja
@@ -8,10 +7,6 @@ tags:
   - Python
   - Matplotlib
   - Jupyter
-
-image: "/posts/2018-01-13_pythonでgaussian-kernelのアニメーションを作成/images/1.gif"
-images:
-  - "/posts/2018-01-13_pythonでgaussian-kernelのアニメーションを作成/images/1.gif"
 ---
 
 Python でアニメーションを作成したかったのでメモ

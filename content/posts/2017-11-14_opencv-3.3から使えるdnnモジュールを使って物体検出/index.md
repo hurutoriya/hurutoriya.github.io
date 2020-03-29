@@ -1,6 +1,5 @@
 ---
 title: "OpenCV 3.3から使えるDNNモジュールを使って物体検出"
-author: "Shunya Ueta"
 date: 2017-11-14T11:36:43.926Z
 lastmod: 2019-06-16T18:16:04+09:00
 lang: ja
@@ -9,13 +8,6 @@ tags:
   - OpenCV
   - Deep Learning
   - Computer Vision
-
-image: "/posts/2017-11-14_opencv-3.3から使えるdnnモジュールを使って物体検出/images/1.png"
-images:
-  - "/posts/2017-11-14_opencv-3.3から使えるdnnモジュールを使って物体検出/images/1.png"
-
-aliases:
-  - "/opencv-dnn-mobilenet-b341a8f3201b"
 ---
 
 OpenCV と MobileNet を使って物体検出を行った

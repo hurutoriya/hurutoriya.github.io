@@ -1,21 +1,13 @@
 ---
 title: "Google Colaboratory で Mecab-ipadic-Neologd を使うまで"
-author: "Shunya Ueta"
 date: 2018-04-23T15:38:10.151Z
 lastmod: 2019-06-16T18:18:05+09:00
 lang: ja
 tags:
   - NLP
-  - Jupyter Notebook
+  - Jupyter
   - Google Colabo
-  - Development
-
-image: "/posts/2018-04-23_google-colaboratory-で-mecabipadicneologd-を使うまで/images/1.png"
-images:
-  - "/posts/2018-04-23_google-colaboratory-で-mecabipadicneologd-を使うまで/images/1.png"
-
-aliases:
-  - "/google-colab-mecab-ipadic-neologd-5e740a57ba73"
+  - dev
 ---
 
 Colab 上で 日本語の NLP をしたいときありませんか？

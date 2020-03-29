@@ -1,6 +1,5 @@
 ---
 title: "Edge-Weighted Personalized PageRank: Breaking A Decade-Old Performance Barrier を読んだ"
-author: "Shunya Ueta"
 date: 2017-12-04T13:06:15.767Z
 lastmod: 2019-06-16T18:16:09+09:00
 lang: ja
@@ -8,13 +7,6 @@ tags:
   - Machine Learning
   - KDD
   - Paper
-
-image: "/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-を読んだ/images/1.png"
-images:
-  - "/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-を読んだ/images/1.png"
-
-aliases:
-  - "/kdd2015-beststudentpaper-edge-weighted-pagerank-c1ad528a3f5a"
 ---
 
 応用数理研究者が機械学習界に進出していく研究

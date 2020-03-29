@@ -1,6 +1,5 @@
 ---
 title: "Machine Learning Casual Talks #5 を開催しました #MLCT"
-author: "Shunya Ueta"
 date: 2018-07-15T09:31:28.466Z
 lastmod: 2019-06-16T18:18:12+09:00
 lang: ja
@@ -8,11 +7,6 @@ tags:
   - Machine Learning
   - MLCT
   - Community
-
-image: "/posts/2018-07-15_machine-learning-casual-talks-sharp5-を開催しました-sharpmlct/images/2.png"
-images:
-  - "/posts/2018-07-15_machine-learning-casual-talks-sharp5-を開催しました-sharpmlct/images/2.png"
-  - "/posts/2018-07-15_machine-learning-casual-talks-sharp5-を開催しました-sharpmlct/images/3.png"
 ---
 
 2018/07/13 に MLCT #5 を開催してきたお話

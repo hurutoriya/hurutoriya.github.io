@@ -1,15 +1,10 @@
 ---
 title: "2018 resolution"
-author: "Shunya Ueta"
 date: 2018-01-29T16:08:35.698Z
 lastmod: 2019-06-16T18:17:51+09:00
 lang: ja
 tags:
   - retro
-
-image: "/posts/2018-01-29_2018-resolution/images/1.png"
-images:
-  - "/posts/2018-01-29_2018-resolution/images/1.png"
 ---
 
 2018 年の抱負です。

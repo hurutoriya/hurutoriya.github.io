@@ -1,32 +1,13 @@
 ---
 title: "eBayのAR測定機能を試してみた"
-author: "Shunya Ueta"
 date: 2018-04-16T14:57:41.155Z
 lastmod: 2019-06-16T18:17:59+09:00
 lang: ja
-description: ""
-
-subtitle: "eBayが ARCoreを使った商品の梱包測定機能を提供しているので試した"
 tags:
   - AR
   - Android
   - Review
   - Computer Vision
-
-image: "/posts/2018-04-16_ebayのar測定機能を試してみた/images/1.png"
-images:
-  - "/posts/2018-04-16_ebayのar測定機能を試してみた/images/1.png"
-  - "/posts/2018-04-16_ebayのar測定機能を試してみた/images/2.png"
-  - "/posts/2018-04-16_ebayのar測定機能を試してみた/images/3.png"
-  - "/posts/2018-04-16_ebayのar測定機能を試してみた/images/4.png"
-  - "/posts/2018-04-16_ebayのar測定機能を試してみた/images/5.png"
-  - "/posts/2018-04-16_ebayのar測定機能を試してみた/images/6.png"
-  - "/posts/2018-04-16_ebayのar測定機能を試してみた/images/7.png"
-  - "/posts/2018-04-16_ebayのar測定機能を試してみた/images/8.png"
-  - "/posts/2018-04-16_ebayのar測定機能を試してみた/images/9.png"
-
-aliases:
-  - "/ebay-arcore-shipping-c57fdb29a631"
 ---
 
 eBay が ARCore を使った商品の梱包測定機能を提供しているので試した

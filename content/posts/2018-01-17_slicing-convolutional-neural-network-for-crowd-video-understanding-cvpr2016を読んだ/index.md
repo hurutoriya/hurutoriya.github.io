@@ -1,6 +1,5 @@
 ---
 title: "Slicing Convolutional Neural Network for Crowd Video Understanding (CVPR2016)を読んだ"
-author: "Shunya Ueta"
 date: 2018-01-17T06:04:37.378Z
 lastmod: 2019-06-16T18:17:49+09:00
 lang: ja
@@ -8,10 +7,6 @@ tags:
   - Computer Vision
   - CVPR
   - Paper
-
-image: "/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016を読んだ/images/1.png"
-images:
-  - "/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016を読んだ/images/1.png"
 ---
 
 群衆解析の手法に興味があるので、サーベイの結果を放流しておきます。
