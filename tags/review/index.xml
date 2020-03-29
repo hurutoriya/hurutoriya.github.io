@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Review on Shunya UETA</title><link>https://shunyaueta.com/tags/review/</link><description>Recent content in Review on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Mon, 23 Sep 2019 18:48:47 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/review/index.xml" rel="self" type="application/rss+xml"/><item><title>[書評]ビジネスでインパクトが出せるデータサイエンティストになるには</title><link>https://shunyaueta.com/posts/2019-09-23_how_to_become_great_ds/</link><pubDate>Mon, 23 Sep 2019 18:48:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-09-23_how_to_become_great_ds/</guid><description>@pseudo_finite さんから
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Review on Shunya UETA</title><link>https://shunyaueta.com/tags/review/</link><description>Recent content in Review on Shunya UETA</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© 2016-20 &lt;a href='https://twitter.com/hurutoriya'>@hurutoriya&lt;/a>.</copyright><lastBuildDate>Mon, 23 Sep 2019 18:48:47 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/review/index.xml" rel="self" type="application/rss+xml"/><item><title>ビジネスでインパクトが出せるデータサイエンティストになるには</title><link>https://shunyaueta.com/posts/2019-09-23_how_to_become_great_ds/</link><pubDate>Mon, 23 Sep 2019 18:48:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-09-23_how_to_become_great_ds/</guid><description>@pseudo_finite さんから
 「ビジネスでインパクトが出せるデータサイエンティストになるためには」
 をご恵贈していただいたので、感想をここに記します。
 批評 1. データサイエンティストが力を発揮する場 データサイエンティストとして成果を発揮するには、事業ドメイン・そしてデータの規模と質に依存する
@@ -12,7 +12,7 @@
 3. 解決方法の設定 自然なモデリングと実現可能性のあるモデリング
 自分はデータサイエンティストではなく、機械学習エンジニアとして働いているので、その立場からの視点です。 実感するのはまず何よりも実装力が大事だと思います。
 実装ができるからこそ、実験ができる。その実験から知見を得て改善のサイクルが回り始める。
-関連する暦本先生のtweetが面白かったので、ご参考まで
+関連する暦本先生の tweet が面白かったので、ご参考まで
 4. 検証 施策実行後の検証は必須
 個人的には自分が最も重要だと思う点はここである。 確かに施策が成功したら、燃え尽きたくなる気持ちはわかるが、なぜ成功したのかを解明して再現性を担保しなければ知見としてストックされない。 そして知見の溜め込みの速さ・多さこそがビジネスとしての優位性につながるのではないのだろうか? これこそ、まさに科学的思考の本幹ですね。
 5. 育成 データサイエンティストの育成は非常に難しい
@@ -20,7 +20,7 @@
 例えば研究室のセミナーや論文の赤入れなどで議論をしたからこそ科学的思考方法が身についたのか? を考えていました。
 僕の結論では、 強い相関はあれど研究室での議論により全員が身科学的思考方法を会得するのは難しいのではないかと思っています。 (もちろん全員が身につけることこそ、研究室の本懐だと思います)
 Software Enginnering やアカデミアの世界では、レビュー文化を体験してあくまで内容に関する批判であり、 フィードバックを受け入れて改善する姿勢を身に着けていることも大事だなと最近感じています。
-Team Geek ―Googleのギークたちはいかにしてチームを作るのか の書籍で語られるHRTの精神ですね。</description></item><item><title>イベント運営に便利なsli.do の使いこなしかた</title><link>https://shunyaueta.com/posts/2018-06-17_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%81%8B%E5%96%B6%E3%81%AB%E4%BE%BF%E5%88%A9%E3%81%AAsli.do-%E3%81%AE%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%8B%E3%81%9F/</link><pubDate>Sun, 17 Jun 2018 15:03:27 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-06-17_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%81%8B%E5%96%B6%E3%81%AB%E4%BE%BF%E5%88%A9%E3%81%AAsli.do-%E3%81%AE%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%8B%E3%81%9F/</guid><description>イベント運営者必見 sli.do の使い方
+Team Geek ―Google のギークたちはいかにしてチームを作るのか の書籍で語られる HRT の精神ですね。</description></item><item><title>イベント運営に便利なsli.do の使いこなしかた</title><link>https://shunyaueta.com/posts/2018-06-17_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%81%8B%E5%96%B6%E3%81%AB%E4%BE%BF%E5%88%A9%E3%81%AAsli.do-%E3%81%AE%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%8B%E3%81%9F/</link><pubDate>Sun, 17 Jun 2018 15:03:27 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-06-17_%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%81%8B%E5%96%B6%E3%81%AB%E4%BE%BF%E5%88%A9%E3%81%AAsli.do-%E3%81%AE%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%8B%E3%81%9F/</guid><description>イベント運営者必見 sli.do の使い方
 sli.do のディスプレイ画面
 sli.doという便利な質問投稿・回答サービスがあります。このサービスですが、イベント運営者あるあるの
 オフラインだと活発に質問が出ない Twitterは盛り上がってるが実際の反応はわからない Google Formはいまいち回答率が悪い などの問題点を解決してくれるサービスです
