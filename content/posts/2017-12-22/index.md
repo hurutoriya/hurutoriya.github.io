@@ -1,7 +1,6 @@
 ---
 title: "JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 & 講義でJupyterhubを利用する"
-date: 2017-12-23T17:48:12.894Z
-lastmod: 2019-06-16T18:17:22+09:00
+date: 2017-12-22T17:48:12.894Z
 lang: ja
 tags:
   - Python

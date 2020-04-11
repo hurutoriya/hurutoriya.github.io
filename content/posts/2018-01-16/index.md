@@ -1,7 +1,6 @@
 ---
 title: "Slicing Convolutional Neural Network for Crowd Video Understanding (CVPR2016)を読んだ"
-date: 2018-01-17T06:04:37.378Z
-lastmod: 2019-06-16T18:17:49+09:00
+date: 2018-01-16T06:04:37.378Z
 lang: ja
 tags:
   - Computer Vision

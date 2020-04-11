@@ -1,7 +1,6 @@
 ---
 title: "Jupyter Notebookの差分を明瞭に確認する事ができるpackage : nbdime"
-date: 2018-01-13T17:14:54.389Z
-lastmod: 2019-06-16T18:17:41+09:00
+date: 2018-01-15T17:14:54.389Z
 lang: ja
 tags:
   - Python

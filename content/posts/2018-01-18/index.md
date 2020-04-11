@@ -1,6 +1,6 @@
 ---
 title: "Where To Look: Focus Regions for Visual Question Answering (CVPR2016)を読んだ"
-date: 2018-01-17T05:41:44.616Z
+date: 2018-01-18T05:41:44.616Z
 lastmod: 2019-06-16T18:17:50+09:00
 lang: ja
 tags:

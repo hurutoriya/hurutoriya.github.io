@@ -1,7 +1,6 @@
 ---
 title: "Call center stress recognition with person-specific models を読んだ"
-date: 2018-01-13T17:19:48.278Z
-lastmod: 2019-06-16T18:17:38+09:00
+date: 2018-01-12T17:19:48.278Z
 lang: ja
 tags:
   - HCI

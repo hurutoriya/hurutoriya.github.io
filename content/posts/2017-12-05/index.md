@@ -1,7 +1,6 @@
 ---
 title: "Visualized Approximate Eigen Vector by Power Iteration on 3 dimensions."
-date: 2017-12-04T13:20:41.792Z
-lastmod: 2019-06-16T18:16:12+09:00
+date: 2017-12-05T13:20:41.792Z
 lang: en
 tags:
   - Matlab

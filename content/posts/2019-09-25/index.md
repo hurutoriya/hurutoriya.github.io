@@ -1,19 +1,18 @@
 ---
 title: "Tensorboard を わずか2行で Jupyter Notebook上で表示"
-date: 2019-09-24T23:16:07+09:00
+date: 2019-09-25T23:16:07+09:00
 lang: ja
 tags:
-- Jupyter
-- Python
-- Pytorch
+  - Jupyter
+  - Python
+  - Pytorch
 ---
 
-Pytorch 1.2からは公式にTensorboardがサポートされている
+Pytorch 1.2 からは公式に Tensorboard がサポートされている
 
-Tensorboard とは、学習の状況を可視化できるTensorFlow Family の一種
+Tensorboard とは、学習の状況を可視化できる TensorFlow Family の一種
 
-Jupyte Notebook上で学習状況を確認したい場合に Tensorboardをそのまま表示して確認できれば楽なので、試してみる
-
+Jupyte Notebook 上で学習状況を確認したい場合に Tensorboard をそのまま表示して確認できれば楽なので、試してみる
 
 sample code: https://pytorch.org/docs/stable/tensorboard.html
 
@@ -40,7 +39,7 @@ writer.add_graph(model, images)
 writer.close()
 ```
 
-その結果をJupyter上で確認したい場合、以下のマジックコマンドを実行する
+その結果を Jupyter 上で確認したい場合、以下のマジックコマンドを実行する
 
 - https://www.tensorflow.org/tensorboard/r2/tensorboard_in_notebooks
 
@@ -49,9 +48,8 @@ writer.close()
 %tensorboard  --logdir runs
 ```
 
-結果を1画面で完結して見せたい場合に便利そう
+結果を 1 画面で完結して見せたい場合に便利そう
 
 ![tensorboard in jupyter notebook](/posts/2019-09-24_open_tensorboard_in_jupyter/images/1.png)
 
 完了!
-
