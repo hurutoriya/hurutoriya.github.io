@@ -24,3 +24,7 @@ Coursera で[How Google does Machine Learning](https://www.coursera.org/learn/go
 残りの3割は、qwiklab を使って、Notebookを立ち上げたり、Google BQ叩いたり、Pandas, Google Cloud Vison APIなど各ML系のAPIを触るといった感じで、初心者過ぎて自分にはレベル感が少しあいませんでしたが、これも非エンジニアの方が機械学習ってこんな感じかと学ぶきっかけにはすごく良さそうです。
 
 最初の7割の部分は、改めてデータ利活用を前提にしたプロジェクトを牽引していく際にここで見つめ直す形になってよかったです。
+
+最近、Cousera での講義を始める機会がありAndrew Ng先生の機械学習コースぶりにCourseraをやっているが、勉強のペースメーカーが決められるのと講義内容の質も高いので自分にとってはすごく相性が良い。
+
+技術書を読むときも同じペースで、実行できないかなと画策したい
