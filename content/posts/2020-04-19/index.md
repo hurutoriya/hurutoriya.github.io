@@ -13,7 +13,7 @@ NIPS206にて開催された [Reliable Machine Learning in the Wild - NIPS 2016 
 
 ここで Google から発表された `What’s your ML test score? A rubric for ML production systems` がとても面白く、身になるものが多かったのでメモがてら抄訳を残しておく
 
-- [PDF: What’s your ML test score? A rubric for ML production systems](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45742.pdf)
+- [What’s your ML test score? A rubric for ML production systems](https://research.google/pubs/pub45742/)
 
 *** 
 
@@ -122,3 +122,8 @@ NIPS206にて開催された [Reliable Machine Learning in the Wild - NIPS 2016 
 
 機械学習エンジニアとして働く自分として、興味のど真ん中にあるようなワークショップだが、2016,2017年の二回しか開催されておらず、非常に悲しい
 逆に言えば、すごく先進的なワークショップでこのワークショップが開催されていたのは凄いことだ
+
+自分が業務を通じて得た経験やベストプラクティスがすでに論文として世の中に公開されているのはすごく経験になるし、経験から学ぶのではなく歴史から学べるようにしていきたい！
+なので、このWorkshop 論文の発展形として、[The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://research.google/pubs/pub46555/) が発表されているので読んでみる
+
+いや、実装寄りの勉強ばかりしていたけど気分転換にこういう知識体系に触れるのすごく楽しい
