@@ -7,6 +7,7 @@ tags:
 - Machine Leraning
 - Test
 - Real World Machine Learning
+- MLOps
 ---
 
 NIPS206にて開催された [Reliable Machine Learning in the Wild - NIPS 2016 Workshop (2016)](https://sites.google.com/site/wildml2016nips/) という、`現実世界でどうやって信頼性の高い機械学習に取り組んでいくか`についてのワークショップがある
