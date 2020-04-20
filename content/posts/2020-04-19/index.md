@@ -14,7 +14,9 @@ NIPS206にて開催された [Reliable Machine Learning in the Wild - NIPS 2016 
 
 ここで Google から発表された `What’s your ML test score? A rubric for ML production systems` がとても面白く、身になるものが多かったのでメモがてら抄訳を残しておく
 
-- [What’s your ML test score? A rubric for ML production systems](https://research.google/pubs/pub45742/)
+- [PDF](https://research.google/pubs/pub45742/)
+- [Slide](https://0586f9b3-a-62cb3a1a-s-sites.googlegroups.com/site/wildml2016nips/SculleySlides1.pdf?attachauth=ANoY7crr9fea9TxDl1EIyOScNG1yJSo3gBkHKOq5exLlPtetuZ_EiAKL3rJq7h17Nwcx82i0CSwmLWc97IQiQdTBODUaMhMm7CBrbpU7uQXx55Km8JFTLlOMIgFflPev0_chmj41VydTan6OjwAOfeQ_U5tRz7m-HHi0rKvumbALo74j5XV0NbPaXcQDbwInz3CdFaDamzvwOH7nn0V-DADxKf6Kqkv-SA%3D%3D&attredirects=0)
+- 発表動画もワークショップページにて公開されています。
 
 *** 
 
@@ -117,6 +119,8 @@ NIPS206にて開催された [Reliable Machine Learning in the Wild - NIPS 2016 
   - 外部要因により、品質が下がる場合もあるが多くの場合は現実の問題を洗い出すことができる
 
 ***
+
+翻訳でもし怪しい部分やもっとこうしたほうが良いというところがあれば、コメントか [@hurutoriya](https://twitter.com/hurutoriya) までご連絡ください
 
 実際読み込んで見ると、信頼性の高いモデルを届けるための秘訣が山盛りで、流石Google 内のベストプラクティスをまとめたチェックリストですね
 実際に開発している機械学習システムがあれば、このTest Scoreを当てはめてみてどの程度できているのか計測してみるが良さそう
