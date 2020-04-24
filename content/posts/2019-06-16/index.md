@@ -31,6 +31,6 @@ hugo new posts/$(date '+%Y')-$(date '+%m')-$(date '+%d')_title/index.md
 
 - page をビルドして結果を確認する
 
-```base
+```bash
 hugo server
 ```
