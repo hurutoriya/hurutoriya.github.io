@@ -6,7 +6,7 @@ tags:
 - 抄訳
 - Machine Leraning
 - Test
-- Real World Machine Learning
+- Paper
 - MLOps
 ---
 
