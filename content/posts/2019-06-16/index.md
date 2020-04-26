@@ -23,14 +23,21 @@ tags:
 hugo new posts/hoge.md --editor="code"
 ```
 
-- pange bundl 作成時にディレクトリ名に日付を含める
+- pange bundl
+- 作成時に`slug` に日付を含める
 
 ```bash
-hugo new posts/$(date '+%Y')-$(date '+%m')-$(date '+%d')_title/index.md
+hugo new posts/$(date '+%Y')-$(date '+%m')-$(date '+%d')/index.md
 ```
 
 - page をビルドして結果を確認する
 
 ```bash
 hugo server
+```
+
+- 下書きも含めてビルドする
+
+```bash
+hugo server -D
 ```
