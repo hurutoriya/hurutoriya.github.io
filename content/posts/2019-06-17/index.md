@@ -26,8 +26,8 @@ skimage.io.imsave("sample_v.png",np.vstack(imgs))
 
 After that you can get below images.
 
-- ![concat holiznal](/posts/2019-06-17_concatimage_with_skimage/sample_h.png)
-- ![concat vertical](/posts/2019-06-17_concatimage_with_skimage/sample_v.png)
+- ![concat holiznal](/posts/2019-06-17/images/sample_h.png)
+- ![concat vertical](/posts/2019-06-17/images/sample_v.png)
 
 Via Gist:
 https://gist.github.com/hurutoriya/fedf059ad3db5c67b16d8d5dd6d3df70

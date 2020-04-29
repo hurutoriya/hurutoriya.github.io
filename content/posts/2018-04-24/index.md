@@ -24,7 +24,7 @@ tags:
 
 **Data Engineer** : 分散プログラミングを意識して構築できる職能。DE は卓越したプログラミングスキルとシステム構成力を持つ。定義 : つまりビッグデータに対してシステム的に解決できるスキル。クラスタ設計までが Data Engineer の役割であり運用(Ops)はやらない
 
-![image](/posts/2018-04-24_抄訳-data-engineers-vs.-data-scientists/images/1.png)
+![image](/posts/2018-04-24/images/1.png)
 
 from : [https://www.oreilly.com/ideas/data-engineers-vs-data-scientists](https://www.oreilly.com/ideas/data-engineers-vs-data-scientists)
 
@@ -39,7 +39,7 @@ from : [https://www.oreilly.com/ideas/data-engineers-vs-data-scientists](https:/
   **Case : 更に複雑な事に取り組みたい** 4–5 人の Data Engineer : 1 Data Scientist
 - `Data Engineer change to Data Scientist` の王道 → それが新しい職種 : **Machine Learning Engineer**!!
 
-![image](/posts/2018-04-24_抄訳-data-engineers-vs.-data-scientists/images/2.png)
+![image](/posts/2018-04-24/images/2.png)
 
 from : [https://www.oreilly.com/ideas/data-engineers-vs-data-scientists](https://www.oreilly.com/ideas/data-engineers-vs-data-scientists)
 

@@ -12,7 +12,7 @@ tags:
 
 Colab 上で 日本語の NLP をしたいときありませんか？
 
-![image](/posts/2018-04-23_google-colaboratory-で-mecabipadicneologd-を使うまで/images/1.png)
+![image](/posts/2018-04-23/images/1.png)
 
 Success
 

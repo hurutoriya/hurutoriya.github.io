@@ -68,13 +68,13 @@ LIMIT 10
 
 - 注)実行結果の容量が巨大なので、保存先は基本的に Big Query Table へ保存するしか選択肢が無い
 
-- ![can't export large file as one file](/posts/2019-10-03_how_to_download_learge_data_from_google_bq/export-to-bqtable.png)
+- ![can't export large file as one file](/posts/2019-10-03/images/export-to-bqtable.png)
 
-2. BigQuery table から GCS へテーブルを CSV として保存
+1. BigQuery table から GCS へテーブルを CSV として保存
 
 Big Query table からエクスポート時に、ファイルサイズが大きいとエクスポートできないので、分割が必要です。
 
-- ![can't export large file as one file](/posts/2019-10-03_how_to_download_learge_data_from_google_bq/cant-export-onefile.png)
+- ![can't export large file as one file](/posts/2019-10-03/images/cant-export-onefile.png)
 
 https://cloud.google.com/bigquery/docs/exporting-data
 
@@ -86,7 +86,7 @@ file-*
 
 のようにワイルドカードを指定すると、自動的にひとつのテーブルを複数ファイルに分割して保存してくれる
 
-3. `gsutil` commands で任意のマシンへダウンロードする。
+1. `gsutil` commands で任意のマシンへダウンロードする。
 
 `-m` オプションを付け足すと並列ダウンロードが始まるので、複数ファイルダウンロードする場合はおすすめ
 

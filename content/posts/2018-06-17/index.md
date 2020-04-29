@@ -9,7 +9,7 @@ tags:
 
 イベント運営者必見 sli.do の使い方
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/1.png)
+![image](/posts/2018-06-17/images/1.png)
 
 sli.do のディスプレイ画面
 
@@ -31,7 +31,7 @@ UI が良く操作に迷うことはないので、各機能のスクショを�
 
 #### イベント設定
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/2.png)
+![image](/posts/2018-06-17/images/2.png)
 
 設定画面
 
@@ -41,23 +41,23 @@ UI が良く操作に迷うことはないので、各機能のスクショを�
 
 無料版だと 3 つの投票までできる。大きなイベントでなければ十分。もちろん回答結果はシークレットにもできます。
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/3.png)
+![image](/posts/2018-06-17/images/3.png)
 
 3 つの投票機能
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/4.png)
+![image](/posts/2018-06-17/images/4.png)
 
 複数選択肢
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/5.png)
+![image](/posts/2018-06-17/images/5.png)
 
 自由記入式
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/6.png)
+![image](/posts/2018-06-17/images/6.png)
 
 星によるレーティング
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/7.png)
+![image](/posts/2018-06-17/images/7.png)
 
 各投票機能はアクティブにすると参加者は一つだけ投票可能になる
 
@@ -65,25 +65,25 @@ UI が良く操作に迷うことはないので、各機能のスクショを�
 
 右上のトグルボタンをクリックすると、投票結果をライブ表示できる。勉強会の発表中にサイドディスプレイがあれば常時表示しておくと**ライブ感**が出て良いと思う
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/8.png)
+![image](/posts/2018-06-17/images/8.png)
 
 ライブ画面への切り替え
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/9.png)
+![image](/posts/2018-06-17/images/9.png)
 
 質問一覧
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/10.png)
+![image](/posts/2018-06-17/images/10.png)
 
 回答ライブ画面
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/11.png)
+![image](/posts/2018-06-17/images/11.png)
 
 上部のスイッチ画面から次の投票に切り替えることができる
 
 #### 回答解析機能
 
-![image](/posts/2018-06-17_イベント運営に便利なsli.do-の使いこなしかた/images/12.png)
+![image](/posts/2018-06-17/images/12.png)
 
 管理画面から回答のインフォグラフィックを生成することもできる
 

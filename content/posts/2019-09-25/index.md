@@ -50,6 +50,6 @@ writer.close()
 
 結果を 1 画面で完結して見せたい場合に便利そう
 
-![tensorboard in jupyter notebook](/posts/2019-09-24_open_tensorboard_in_jupyter/images/1.png)
+![tensorboard in jupyter notebook](/posts/2019-09-25/images/1.png)
 
 完了!

@@ -28,9 +28,9 @@ Machine Learning Casual Talks とは
 
 今回は、パネルディスカッションで sli.do をスクリーンにフルスクリーンで表示してモデレーションを行いました。
 
-![sli.do](/posts/2019-06-16_mlct10/mlct10_discuss.jpg)
+![sli.do](/posts/2019-06-15/images/mlct10_discuss.jpg)
 
-![sli.do smartphone](/posts/2019-06-16_mlct10/mlct10_slido.png)
+![sli.do smartphone](/posts/2019-06-15/images/mlct10_slido.png)
 
 手元のスマートフォンで質問をハイライトして、回答を終えたものはアーカイブという運用でしたが、とても快適なのでみなさんぜひお試しください。
 スクリーンでの表示画面が SPA で同期されているので、手元のスマートフォンで更新すればリアルタイムで同期されるのがとても便利です。
