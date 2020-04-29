@@ -7,7 +7,7 @@ tags:
   - Latex
 ---
 
-![image](/posts/2017-10-08_texpadのおかげでlatex人生が変わりました/images/1.png)
+![image](/posts/2017-10-08/images/1.png)
 
 Latex の煩わしい点が全て解決される Mac のソフトウェアです。
 

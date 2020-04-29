@@ -12,7 +12,7 @@ tags:
 
 OpenCV と MobileNet を使って物体検出を行った
 
-![image](/posts/2017-11-14_opencv-3.3から使えるdnnモジュールを使って物体検出/images/1.png)
+![image](/posts/2017-11-14/images/1.png)
 
 Object Detection with OpenCV dnn modules and MobileNetSSD on Jupyter Notebook
 
