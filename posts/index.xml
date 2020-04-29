@@ -350,17 +350,7 @@ pyimagesearch の Blog 記事で最小限の構成で顔検出を行う API サ�
 以下所感です。
 Django は Rails と比べるとそんなにレールが敷かれていない 日本語の記事がほぼ存在しないので、英語の記事を読む良い練習になった OpenCV や Scikit-lean がそのまま動くのは相当魅力的で、サーバからのレスポンスが帰ってきた時には地味に感動 API 設計や非同期処理なんかの知識が全く足りない 次の課題 今回の発展形として django-rest-framework を使って、モデルを組み込んで作り上げて Google Apps Engine 上で公開してみよう。 REST Framework はこの記事2を参考に画像をアップロードできる雛形は作り上げた。 後は OpenCV で処理を施す部分を書き上げたらいけそう。
 django-rest-framework で使える管理画面
-Thanks hurutoriya/face_detector_api Django REST Framework を使って爆速で API を実装する,ChristianKreuzberger/django-rest-imageupload-example Creating a face detection API with Python and OpenCV (in just 5 minutes) Django 1.11 Documentation Django REST framework is a powerful and flexible toolkit for building Web APIs.</description></item><item><title>KDD2017 ピックアップ</title><link>https://shunyaueta.com/posts/2017-10-25/</link><pubDate>Wed, 25 Oct 2017 11:52:09 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-10-25/</guid><description>KDD2017
-開催されてから時間が経ってしまいましたが、データマイニングのトップ国際会議の KDD2017 で面白そうなものをピックアップしました。
-Movie KDD2017 で公開されている動画。最近は動画も全てオンラインに上げられて見られるのでとても良い。発表動画を見れば、言いたいことの骨子はサッと掴めるので動画があれば必ず見るようにしてる。
-KDD2017 video
-Keynote Speaks KDD2017 の動画を探しても見つからなかったが、同等の事を話している動画を見つけた
-Three Principles of Data Science: Predictability, Stability, and Computability
-Hand on Tutorials KDD 2017 | Hands-On Tutorials
-TensorFlow: A Hands-on Introduction random-forests/tensorflow-workshop KDD 2017 PLENARY PANEL The Future of Artificially Intelligent Assistants
-APPLIED DATA SCIENCE INVITED PANELS Benchmarks and Process Management in Data Science: Will We Ever Get Over the Mess?
-https://dl.acm.org/citation.cfm?id=3120998
-凄い面白そうなんですが、ACM の論文は有料… 動画も見つからないので悲しい。 Tutorials KDD は Research Track と Industry Track に分割されてる影響かチュートリアルが実務向けと研究向けに豊富に用意されている。</description></item><item><title>TexPadのおかげでLatex人生が変わりました</title><link>https://shunyaueta.com/posts/2017-10-08/</link><pubDate>Sun, 08 Oct 2017 02:22:24 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-10-08/</guid><description>Latex の煩わしい点が全て解決される Mac のソフトウェアです。
+Thanks hurutoriya/face_detector_api Django REST Framework を使って爆速で API を実装する,ChristianKreuzberger/django-rest-imageupload-example Creating a face detection API with Python and OpenCV (in just 5 minutes) Django 1.11 Documentation Django REST framework is a powerful and flexible toolkit for building Web APIs.</description></item><item><title>TexPadのおかげでLatex人生が変わりました</title><link>https://shunyaueta.com/posts/2017-10-08/</link><pubDate>Sun, 08 Oct 2017 02:22:24 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-10-08/</guid><description>Latex の煩わしい点が全て解決される Mac のソフトウェアです。
 自動補完 synctex 対応(コマンド+クリックで PDF、tex ファイル同期) 自動タイプセット Texpad · Smoothest way to write LaTeX 以前は atom+latexmk で Latex を扱ってましたが、texpad の方が断トツに使い心地が最高です。
 購入方法 Appstore か、クレジットカードで Appstore を経由せずに買うかの２つの方法があります。
 Appstore はだいぶ前に更新を停止しているみたいなので、クレジットカードを持っている人はクレジットカードを使って MacAppstore を経由せずに購入することをオススメします。
@@ -368,18 +358,7 @@ $24.99 しましたが、それ以上の価値があるソフトウェアです�
 2 週間の無料体験期間があるので是非お試し下さい。
 下記のスクリーンショットのように、beamer も texpad で動くのは感動モノ。
 beamer on texpad
-日本語で TexPad を扱いたいときは下記のスクリプトを読み込んだら、bibtex のバグが治ります。</description></item><item><title>Joining Arxivtimes</title><link>https://shunyaueta.com/posts/2017-09-25/</link><pubDate>Mon, 25 Sep 2017 07:49:32 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-09-25/</guid><description>論文読みとまとめを怠っていると、研究関係のトピックスのインデックスが全て破壊されていることに気がついた。
-arXivTimes という面白い取り組みがあるので、それに参加する形で論文読みとまとめを行っていくことにした。
-arXivTimes/arXivTimes
-最近は arXivTimes Indicator というサービスも公開されていて、投稿すると arxivtimes のユーザーページが作られるので論文読みのモチベーションが上がる施策作りがうまい。
-arXivTimes Indicator
-arXivTimes Indicator
-最新のトレンドや論文のインデックスを強固に張るために
-論文を 1 枚にまとめたものを Twitter に投稿していく こんなかんじでまとめていきます。
-[](https://twitter.com/hurutoriya/status/909997636391911424)
-revue(メルマガサービス)に機械学習・Computer Vision の海外での最新動向をまとめてコメント・ログ付け・まわりへ共有 メルマガ講読は以下で ↓
-Scoop in CV, ML, Dev - Revue
-呼吸のように学習と成長を継続可能な環境を整えていきたい</description></item><item><title>ミクシィにインターンしてきた #2013 #DeployGate</title><link>https://shunyaueta.com/posts/2013-12-23/</link><pubDate>Mon, 23 Dec 2013 17:04:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-12-23/</guid><description>株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。 2013 年当時のスクリーンショットを探してたが、無かったので 2017/12/24 のを撮ってきた。良い意味であまり変わってない(ライさんの謎のくるまアプリとか)
+日本語で TexPad を扱いたいときは下記のスクリプトを読み込んだら、bibtex のバグが治ります。</description></item><item><title>ミクシィにインターンしてきた #2013 #DeployGate</title><link>https://shunyaueta.com/posts/2013-12-23/</link><pubDate>Mon, 23 Dec 2013 17:04:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-12-23/</guid><description>株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。 2013 年当時のスクリーンショットを探してたが、無かったので 2017/12/24 のを撮ってきた。良い意味であまり変わってない(ライさんの謎のくるまアプリとか)
 Dive into mixi
 なぜインターンに行こうと思ったのか 僕は高専から筑波大学の情報系に今年度から編入したんですが、
 編入してから同期の編入生や先輩、内部生の人達に会って 「このままじゃダメだ、もっと面白く!もっと楽しく生きる!!」 と感じたので参加しました。

@@ -120,14 +120,4 @@ Summaly
 著者は NASA の JPL(ジェット推進研究所)、カリフォルニア工科大学に所属する Kiri L.
 Kiri L. Wagstaff
 発表動画を探してみたんですが、ICML2012 で発表した際のビデオはサーバのクラッシュにより喪失したとのこと。
-The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPoint は下記リンク先に配布されています。http://www.</description></item><item><title>KDD2017 ピックアップ</title><link>https://shunyaueta.com/posts/2017-10-25/</link><pubDate>Wed, 25 Oct 2017 11:52:09 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-10-25/</guid><description>KDD2017
-開催されてから時間が経ってしまいましたが、データマイニングのトップ国際会議の KDD2017 で面白そうなものをピックアップしました。
-Movie KDD2017 で公開されている動画。最近は動画も全てオンラインに上げられて見られるのでとても良い。発表動画を見れば、言いたいことの骨子はサッと掴めるので動画があれば必ず見るようにしてる。
-KDD2017 video
-Keynote Speaks KDD2017 の動画を探しても見つからなかったが、同等の事を話している動画を見つけた
-Three Principles of Data Science: Predictability, Stability, and Computability
-Hand on Tutorials KDD 2017 | Hands-On Tutorials
-TensorFlow: A Hands-on Introduction random-forests/tensorflow-workshop KDD 2017 PLENARY PANEL The Future of Artificially Intelligent Assistants
-APPLIED DATA SCIENCE INVITED PANELS Benchmarks and Process Management in Data Science: Will We Ever Get Over the Mess?
-https://dl.acm.org/citation.cfm?id=3120998
-凄い面白そうなんですが、ACM の論文は有料… 動画も見つからないので悲しい。 Tutorials KDD は Research Track と Industry Track に分割されてる影響かチュートリアルが実務向けと研究向けに豊富に用意されている。</description></item></channel></rss>
+The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPoint は下記リンク先に配布されています。http://www.</description></item></channel></rss>

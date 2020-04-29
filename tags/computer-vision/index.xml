@@ -62,15 +62,4 @@ pyimagesearch の Blog 記事で最小限の構成で顔検出を行う API サ�
 以下所感です。
 Django は Rails と比べるとそんなにレールが敷かれていない 日本語の記事がほぼ存在しないので、英語の記事を読む良い練習になった OpenCV や Scikit-lean がそのまま動くのは相当魅力的で、サーバからのレスポンスが帰ってきた時には地味に感動 API 設計や非同期処理なんかの知識が全く足りない 次の課題 今回の発展形として django-rest-framework を使って、モデルを組み込んで作り上げて Google Apps Engine 上で公開してみよう。 REST Framework はこの記事2を参考に画像をアップロードできる雛形は作り上げた。 後は OpenCV で処理を施す部分を書き上げたらいけそう。
 django-rest-framework で使える管理画面
-Thanks hurutoriya/face_detector_api Django REST Framework を使って爆速で API を実装する,ChristianKreuzberger/django-rest-imageupload-example Creating a face detection API with Python and OpenCV (in just 5 minutes) Django 1.11 Documentation Django REST framework is a powerful and flexible toolkit for building Web APIs.</description></item><item><title>Joining Arxivtimes</title><link>https://shunyaueta.com/posts/2017-09-25/</link><pubDate>Mon, 25 Sep 2017 07:49:32 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-09-25/</guid><description>論文読みとまとめを怠っていると、研究関係のトピックスのインデックスが全て破壊されていることに気がついた。
-arXivTimes という面白い取り組みがあるので、それに参加する形で論文読みとまとめを行っていくことにした。
-arXivTimes/arXivTimes
-最近は arXivTimes Indicator というサービスも公開されていて、投稿すると arxivtimes のユーザーページが作られるので論文読みのモチベーションが上がる施策作りがうまい。
-arXivTimes Indicator
-arXivTimes Indicator
-最新のトレンドや論文のインデックスを強固に張るために
-論文を 1 枚にまとめたものを Twitter に投稿していく こんなかんじでまとめていきます。
-[](https://twitter.com/hurutoriya/status/909997636391911424)
-revue(メルマガサービス)に機械学習・Computer Vision の海外での最新動向をまとめてコメント・ログ付け・まわりへ共有 メルマガ講読は以下で ↓
-Scoop in CV, ML, Dev - Revue
-呼吸のように学習と成長を継続可能な環境を整えていきたい</description></item></channel></rss>
+Thanks hurutoriya/face_detector_api Django REST Framework を使って爆速で API を実装する,ChristianKreuzberger/django-rest-imageupload-example Creating a face detection API with Python and OpenCV (in just 5 minutes) Django 1.11 Documentation Django REST framework is a powerful and flexible toolkit for building Web APIs.</description></item></channel></rss>
