@@ -32,9 +32,8 @@ https://mlct.connpass.com/event/172550/
 ## 勉強会の資料と動画
 
 - [資料ページ](https://mlct.connpass.com/event/172550/presentation/)
-- YouTube
+- [Machine Learning Casual Talks #12 - YouTube](https://youtu.be/5tq7IY_XF3w)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5tq7IY_XF3w?start=700" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 所感としては、以前から配信NGの発表以外は積極的にYouTubeで公開していたのだが、参加者の皆様からはオンライン開催でありがたいと声が大きく、個人的に驚きました。
 
