@@ -4,7 +4,7 @@ date: 2019-06-15T22:01:27+09:00
 lang: ja
 tags:
   - MLCT
-  - Community
+  - event
 ---
 
 [MLCT #10](https://mlct.connpass.com/event/125316/) を開催しました。

@@ -6,7 +6,7 @@ lang: ja
 tags:
   - Machine Learning
   - MLCT
-  - Community
+  - event
 ---
 
 2018/07/13 に MLCT #5 を開催してきたお話

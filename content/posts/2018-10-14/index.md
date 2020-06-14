@@ -5,7 +5,7 @@ lastmod: 2019-06-16T18:18:13+09:00
 lang: ja
 tags:
   - Machine Learning
-  - Community
+  - event
   - MLCT
 ---
 

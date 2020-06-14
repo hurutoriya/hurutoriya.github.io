@@ -1,11 +1,9 @@
 ---
-title: "[抄訳] What’s your ML test score? A rubric for ML production systems"
+title: "What’s your ML test score? A rubric for ML production systems"
 date: 2020-04-19T22:18:10+09:00
 lang: ja
 tags:
-- 抄訳
 - Machine Leraning
-- Test
 - Paper
 - MLOps
 ---

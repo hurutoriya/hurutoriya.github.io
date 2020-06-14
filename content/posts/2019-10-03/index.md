@@ -6,6 +6,7 @@ tags:
   - GCP
   - BigQuery
   - pandas
+  - Python
 ---
 
 [pandas.read_gbq](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_gbq.html) 便利ですよね。
