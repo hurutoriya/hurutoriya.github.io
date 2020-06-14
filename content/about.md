@@ -16,7 +16,7 @@ Shunya UETA who is a working on Machine Leraning as Software Engineer at Mercari
 
 ### Work experience
 
-- 2018.02- now 株式会社メルカリ `Machine Learning Engineer`
+- 2018.02- current 株式会社メルカリ `Machine Learning Engineer`
 - 2016.06-2017.03 産業技術総合研究所人工知能研究センター `Research Assistant`
   - 監視カメラを用いた群衆解析、cvpaper.chanllange に参加
 - 2014.09 株式会社リクルートホールディングス アメリカ横断インターン [movie](https://www.youtube.com/watch?v=r_r-Ww2Wuak)
@@ -51,11 +51,19 @@ Shunya UETA who is a working on Machine Leraning as Software Engineer at Mercari
 
 ### Paper
 
+- Takuma Yamaguchi, Kosuke Arase, Riku Togashi, Shunya Ueta, "Closing the Gap Between uery and Database through uery Feature Transformation in C2C e-Commerce Visual Search", SIGIR 2019 Workshop on eCommerce
 - Kataoka, H., Shirakabe, S., He, Y., Ueta, S., Suzuki, T., Abe, K., ... & Yatsuyanagi, H. (2017). cvpaper. challenge in 2016: Futuristic Computer Vision through 1,600 Papers Survey. arXiv preprint arXiv:1707.06436. [link](https://arxiv.org/abs/1707.06436)
 - Kaori Abe*, Teppei Suzuki*, Shunya Ueta, Akio Nakamura, Yutaka Satoh, Hirokatsu Kataoka, "Changing Fashion Cultures", in arXiv pre-print 1703.07920, Mar., 2017 [link](https://arxiv.org/abs/1703.07920)
 
+### Book
+
+- [データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～](https://johokiko.co.jp/publishing/BC200701.php)
+  - `マルチモーダルによる規約違反出品検知への応用と運用について` を共著にて執筆
+
 #### Domestic Conference (First author)
 
+- 2019.11.20 第22回情報論的学習理論ワークショップ `HSICに基づく特徴クラスタリングによるマルチモーダル特徴融合探索の効率化`
+  - `上田隼也`; 吉川友也; 紫藤佑介 (株式会社メルカリ; 千葉工業大学; 株式会社メルカリ)
 - 2016.03.20 パターン認識・メディア理解研究会(PRMU) [link](http://www.ieice.org/ken/program/index.php?tgs_regid=9a7e703943e8fb9c067017e6f0f0b4062afeda7d4739e7050b48a25961229a2a&lang=)
   - 時系列情報を考慮したグラフカットによる群衆解析
   - `上田 隼也（筑波大学）`，大西正輝（産総研），櫻井 鉄也（筑波大学）
@@ -79,7 +87,8 @@ Shunya UETA who is a working on Machine Leraning as Software Engineer at Mercari
 
 ## Skills
 
-- Python(Numpy, Scikit-leran, Django)
+- Python(TensorFlow, Numpy, Scikit-leran, Django)
+- Docker, k8s
 - MATLAB
 - Ruby(Rails)
 
