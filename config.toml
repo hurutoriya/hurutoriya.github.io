@@ -92,9 +92,9 @@ repository = "hurutoriya.github.io"
 
 [taxonomies]
 # author = "authors"
-category = "categories"
-series = "series"
-tag = "tags"
+# category = "categories"
+# series = "series"
+# tag = "tags"
 
 [permalinks]
 page = "/:slug/"
