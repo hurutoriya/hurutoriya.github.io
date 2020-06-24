@@ -10,7 +10,7 @@ tags:
 
 [[抄訳] What’s your ML test score? A rubric for ML production systems](https://shunyaueta.com/posts/2020-04-19/)で紹介した論文の続編があったので読んでみました。
 
-- _注意)この翻訳記事は原著論文の著者陣のレビューはされていません_
+- _注意)この翻訳記事は原著論文の著者陣からレビューはされていません_
 - _Shunya Ueta, are providing a translation and abridgment, which has not been reviewed by the authors._
 
 ## Change log
