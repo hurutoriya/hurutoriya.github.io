@@ -8,9 +8,24 @@ tags:
   - MLOps
 ---
 
-[[抄訳] What’s your ML test score? A rubric for ML production systems](https://shunyaueta.com/posts/2020-04-19/)で紹介した論文の続編があったので読んだ
+[[抄訳] What’s your ML test score? A rubric for ML production systems](https://shunyaueta.com/posts/2020-04-19/)で紹介した論文の続編があったので読んでみました。
 
-- [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://research.google/pubs/pub46555/)
+- _注意)この翻訳記事は原著論文の著者陣のレビューはされていません_
+- _Shunya Ueta, are providing a translation and abridgment, which has not been reviewed by the authors._
+
+## Change log
+
+- 2020/06/24
+  - 著者のEric Breck さんに連絡をし、抄訳の公開を快諾していただきました。ありがとうございます。
+  - 完全な citation 情報を追記しました。
+  - この翻訳記事が著者のレビューを受けていないことを追記しました。
+
+## Citation
+
+***
+[Eric Breck](https://research.google/people/EricBreck/), [Shanqing Cai](https://research.google/people/105277/), Michael Salib,
+. [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://research.google/pubs/pub46555/). In 2017 IEEE International Conference on Big Data (Big Data) (pp. 1123-1132). IEEE.
+***
 
 大規模なオフラインの機械学習実験は注目されているが、反対にオンラインでの信頼性がある機械学習システムの開発は難しく、技術的負債が溜まりやすい
 
