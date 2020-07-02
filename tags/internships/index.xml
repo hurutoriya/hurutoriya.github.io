@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Internships on Software Engineer as Data Scientist</title><link>https://shunyaueta.com/tags/internships/</link><description>Recent content in Internships on Software Engineer as Data Scientist</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 23 Dec 2013 17:04:38 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/internships/index.xml" rel="self" type="application/rss+xml"/><item><title>ミクシィにインターンしてきた #2013 #DeployGate</title><link>https://shunyaueta.com/posts/2013-12-23/</link><pubDate>Mon, 23 Dec 2013 17:04:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-12-23/</guid><description>株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。 2013 年当時のスクリーンショットを探してたが、無かったので 2017/12/24 のを撮ってきた。良い意味であまり変わってない(ライさんの謎のくるまアプリとか)
+Dive into mixi
+なぜインターンに行こうと思ったのか 僕は高専から筑波大学の情報系に今年度から編入したんですが、
+編入してから同期の編入生や先輩、内部生の人達に会って 「このままじゃダメだ、もっと面白く!もっと楽しく生きる!!」 と感じたので参加しました。
+…つまり、面白そうな事をしたかったので参加しました。 選考過程 エントリーリーシートを提出、希望する配属先はここで提出します。 2 回の面接があるのですが、つくばから渋谷への道のりは遠いので一回にしてくれました。ありがとうございます！！
+面接の服装は、スーツじゃなくて良いので楽です！(むしろスーツはやめてねと言われました)
+自己紹介と自分のこれまでの成果物を面接官に説明した後に、質疑応答を 30 分、時間が 20 分ほど余ったので面接官の方から「気になってることをなんでも聞いて下さい」と言われて質問をしていると面接がいつの間にか終わりました。
+合否発表は翌日に連絡がきて無事合格することができました、嬉しい!!
+配属先 僕は第一希望のDeployGateに配属されました。
+DeployGate チームは社員二人、インターン三人という謎構成でした。
+「DepoyGate」とは、ミクシィ社の新規事業第 1 弾として登場した Android アプリ提供者向けのテスト版アプリ配信サービスです。 アプリをワイヤレスで配布することができ、アップデータ配信や動作ログがリアルタイムに取得できるので、プロジェクトメンバー全員が常に最新版アプリに触れることができます。 2012 年 9 月のサービス開始から、世界 93 ヵ国 3600 以上のアプリ開発に利用され、そのユーザーの 76％は英語圏というグローバルなサービスでもあります。 「DepoyGate」エンジニアからの発案で生まれたサービスです。 最新の技術に触れ、一緒に開発を進めていきたいという、あなたのチャレンジをお待ちしております。### メリット
+今回のミクシィインターンは 6 週間を超える長期のインターンで実際に提供されているサービスの開発に参加すること t ができます。
+デメリット 基本的に無いです。
+強いて言うなら夏休みが 4/5 ほど持ってかれたことですね。
+何をやった？ 基本的に Github に issue に上がってるチケットを消化していく感じでした。 自分でこれがあったら便利だなと思う機能を追加したり、不便な箇所を改修したりして、GO サインが出たら Depoloy していきます。</description></item><item><title>機械学習・コンピュータビジョンを活かしたビジネスを手掛ける株式会社ABEJAでインターンしてきた</title><link>https://shunyaueta.com/posts/2013-08-23/</link><pubDate>Fri, 23 Aug 2013 17:18:02 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-08-23/</guid><description>株式会社 ABEJA という会社に 2013/8/25~2013/9/26 間に 2 週間弱インターンシップに参加してきました。
+2013 年当時のサイトのスクショ
+What’S ABEJA? ABEJA について詳しく知りたい方は下記のリンクを見るとわかりやすいです。
+マーケティングから決済まで、人認証技術 × ビジネスプロデュースで未来を変える ABEJA の挑戦【連載:NEO ジェネ！】 いまそこにある、リアルタイムデータ解析。ぼくらの暮らしを変える、日本のスタートアップ 3 社 この会社をはじめて知ったのは、ミクシィでのインターンシップに参加してた時に別グループでインターンしていた知り合いの人に教えてもらったのがキッカケです。 機械学習や画像解析を用いて、現実世界の問題を解決して更にビジネスにまで昇華させている点に痺れました。
+本来なら一ヶ月近くコミットできる予定だったんですが、もう一つ挑戦していた別のインターンに運良く合格したので結果的には 2 週間弱という短めのインターンになりました。
+What do you doing in ABEJA intern? インターンの内容は Python を使って社内用のツールをゴニョゴニョしてました。
+郷に従います。(StyleGuide 見てなかった…) / 他 2 コメント http://t.co/5I0nThs4rU “PEP 8 — Style Guide for Python Code” http://t.co/in7q9lD6cy&amp;gt; — UEDA (@hurutoriya) 2014, 9 月 25
+普段は matlab か Ruby 書いてるんですが、普段書いてない言語を書くとあまりよろしくないコードになったので StyleGuide 導入しました。</description></item></channel></rss>

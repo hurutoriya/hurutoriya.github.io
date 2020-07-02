@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Django on Software Engineer as Data Scientist</title><link>https://shunyaueta.com/tags/django/</link><description>Recent content in Django on Software Engineer as Data Scientist</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 13 Nov 2017 17:22:38 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/django/index.xml" rel="self" type="application/rss+xml"/><item><title>Djangoで顔認識の結果をJSONで返す最小構成のAPIサーバーを作った</title><link>https://shunyaueta.com/posts/2017-11-13/</link><pubDate>Mon, 13 Nov 2017 17:22:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-13/</guid><description>DEMO
+github でコードを公開してます。
+hurutoriya/face_detector_api
+Django の勉強は、基本的なイントロダクションとしてオフィシャルサイトのドキュメントが充実しているのでオススメです 。
+pyimagesearch の Blog 記事で最小限の構成で顔検出を行う API サーバーを作る記事があり、今回はそれを基本に作成した。
+以下所感です。
+Django は Rails と比べるとそんなにレールが敷かれていない 日本語の記事がほぼ存在しないので、英語の記事を読む良い練習になった OpenCV や Scikit-lean がそのまま動くのは相当魅力的で、サーバからのレスポンスが帰ってきた時には地味に感動 API 設計や非同期処理なんかの知識が全く足りない 次の課題 今回の発展形として django-rest-framework を使って、モデルを組み込んで作り上げて Google Apps Engine 上で公開してみよう。 REST Framework はこの記事2を参考に画像をアップロードできる雛形は作り上げた。 後は OpenCV で処理を施す部分を書き上げたらいけそう。
+django-rest-framework で使える管理画面
+Thanks hurutoriya/face_detector_api Django REST Framework を使って爆速で API を実装する,ChristianKreuzberger/django-rest-imageupload-example Creating a face detection API with Python and OpenCV (in just 5 minutes) Django 1.11 Documentation Django REST framework is a powerful and flexible toolkit for building Web APIs.</description></item></channel></rss>
