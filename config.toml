@@ -94,7 +94,7 @@ repository = "hurutoriya.github.io"
 # author = "authors"
 # category = "categories"
 # series = "series"
-# tag = "tags"
+tag = "tags"
 
 [permalinks]
 page = "/:slug/"
