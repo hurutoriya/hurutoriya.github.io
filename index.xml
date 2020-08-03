@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Engineer as Data Scientist</title><link>https://shunyaueta.com/</link><description>Recent content on Software Engineer as Data Scientist</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 15 Jun 2019 19:25:33 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>How to write the UnitTest with stdin at Pytest</title><link>https://shunyaueta.com/posts/2020-07-25/</link><pubDate>Sat, 25 Jul 2020 03:18:14 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-07-25/</guid><description>If you want to write UnitTest when using stdin in Python. Pytest provide setattr function in monkeypatch
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Engineer as Data Scientist</title><link>https://shunyaueta.com/</link><description>Recent content on Software Engineer as Data Scientist</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 15 Jun 2019 19:25:33 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>AOJで「ITP I」40問をpythonで解いた</title><link>https://shunyaueta.com/posts/2020-08-04/</link><pubDate>Tue, 04 Aug 2020 03:38:58 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-08-04/</guid><description>はじめに コーディングの腕をもっと磨きたいなと思ったので、以下の記事を参考に始めてみた
+https://qiita.com/e869120/items/f1c6f98364d1443148b3 全部で 44 問ありますが、最後の 4 問は競プロとはあまり関係ないので、ITP1_1-A から ITP1_10-D までの 40 問を解くことをお勧めします。
+まずは最初におすすめされた、AOJのITP1_1-A から ITP1_10-D までの 40 問を解いてみた 無料でこのサービスが提供されてるの素晴らしい 標準入力、出力の整形が少し手間取ったけど、あとは愚直に解いていった
+http://judge.u-aizu.ac.jp/onlinejudge/ 感想としては、
+やってみたら、意外と楽しい。特に自分で諦めずに試行錯誤して、オンラインで一発でACもらえるとめちゃくちゃ嬉しい テストケースに通る、すなわち正しい、それが書けたら達成感がある 何かしらのお題に沿って、コードを書くという動機ができるので、書くことに慣れたい場合も有用そう togglで時間計測しながら、やって見直してみたら15h46m 費やしていた。大体1問25mくらい
+次の目標、
+AtCoder で水色を目指す!!! データ構造周りや、アルゴリズム周りはまだまだ弱いのでそこらへんを抑えていきたい
+以下は自分が書いた回答例を放流しておきます。
+Rule 15分試行錯誤しても、緒がわからない場合は諦める わからなかったとき、もっと上手な書き方は以下を参考にしました https://qiita.com/cmtennis1042/items/5f1e7f071081176e857f ITP1_1_A: Hello World print(&amp;#39;Hello world&amp;#39;) ITP1_1_B: X Cubic x = input() print(x ** 3) ITP1_1_C: Rectangle a, b = map(int, input().</description></item><item><title>How to write the UnitTest with stdin at Pytest</title><link>https://shunyaueta.com/posts/2020-07-25/</link><pubDate>Sat, 25 Jul 2020 03:18:14 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-07-25/</guid><description>If you want to write UnitTest when using stdin in Python. Pytest provide setattr function in monkeypatch
 from io import StringIO import sys def divide(): input = sys.stdin.readline return list(input()) def gather(): input = sys.stdin.readline return sum(list(map(int, input().split()))) def test_divide(monkeypatch): monkeypatch.setattr(&amp;#39;sys.stdin&amp;#39;, StringIO(&amp;#39;abc&amp;#39;)) assert divide() == [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;] def test_gather(monkeypatch): monkeypatch.setattr(&amp;#39;sys.stdin&amp;#39;, StringIO(&amp;#39;1 2 3&amp;#39;)) assert gather() == 6 Reference Monkeypatching/mocking modules and environments I want to use stdin in a pytest test https://gist.</description></item><item><title>#MLCT 12 を開催しました</title><link>https://shunyaueta.com/posts/2020-06-13/</link><pubDate>Sat, 13 Jun 2020 23:06:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-06-13/</guid><description>Machine Learning Casual Talks 第12回を開催しました。 前回から少し開きがあり、7ヶ月ぶりの開催となりました。
 https://mlct.connpass.com/event/172550/
 今回の個人的なテーマはベストプラクティスとアンチパターンです。
@@ -8,7 +16,7 @@ Google MeetとYouTube Liveでオンラインミートアップの配信をした
 勉強会の資料と動画 資料ページ Machine Learning Casual Talks #12 - YouTube 所感としては、以前から配信NGの発表以外は積極的にYouTubeで公開していたのだが、参加者の皆様からはオンライン開催でありがたいと声が大きく、個人的に驚きました。
 自分が思うに、オンライン参加も配信動画を後から見るのも、リアルタイムで質問ができないこと以外は大きな差異が無いと思っていたのだが、参加者側からすると大きく異なるようで新鮮だった。
 オンライン勉強会開催側のコツ 最低でも
-配信者 司会者 配信の監視を行う監視者 の3役がいないとオンライン開催は難しいそうですね。
+配信者 司会者 配信の監視を行う監視者 の3役がいないとオンライン開催は難しいことがわかった
 ライブ配信視聴者数は、以下のような遷移となりました。 500人参加申込みがあり、最大視聴者数が252人とギリギリ5割を超えました。
 今までのオフラインでの開催は6-8割くらいだったので、それと比較すると上出来かなと思います。 また、オンライン開催はオフライン開催と比べて会場の確保コストや懇親会おじさんの発生などを抑えられるので、その点もありがたかったです。 オフライン開催だと、会場撤収が効率的に終わっても22:00、家に帰ると23:00なので、イベント主催者にとっても開催しやすい気がしますね。
 改善点としては、質問の数が少なめだったことと、オフラインでの交流を補うような要素(パネルディスカッションなど）をもう少し入れたいなと思っています。
