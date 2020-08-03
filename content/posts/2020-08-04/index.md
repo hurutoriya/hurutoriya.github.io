@@ -35,10 +35,14 @@ togglで時間計測しながら、やって見直してみたら15h46m 費や�
 次の目標、
 
 - AtCoder で水色を目指す!!!
+- データ構造周りや、アルゴリズム周りはまだまだ弱いのでそこらへんを抑えていきたい
 
-データ構造周りや、アルゴリズム周りはまだまだ弱いのでそこらへんを抑えていきたい
+当面は、以下の２つに投資していきます
 
-以下は自分が書いた回答例を放流しておきます。
+- 機械学習だけに縛られない、SWEとしてスキル底上げ
+- 機械学習関係の確固たる基礎知識と実装力
+
+以下に自分が書いた回答例を放流しておきます。
 
 ***
 
@@ -569,7 +573,14 @@ print(p_t, p_h)
 - スライス表記で、`l[start:end:step]`を理解できるとかける
 - `end` の記法が前から違和感あったんだけど、 @reto_nayuta さんにしていただいた説明がとてもわかり易かった!! 感謝
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">1-start というより 0-start exclusive、つまり [start, end) の右半開区間と解釈するのが自然かと<br>・i から長さ k 取る→a[i, i+k]<br>・i を境界に2つに分ける（二分探索等）→a[:i], a[i:]<br>・range の挙動とも一致→a[i:j] == [a[k] for k in range(i, j)]（R/Ruby/pandas/Rust は arr[range] 記法）</p>&mdash; 田村 真一 (@reto_nayuta) <a href="https://twitter.com/reto_nayuta/status/1290125805167632385?ref_src=twsrc%5Etfw">August 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+1-start というより 0-start exclusive、つまり [start, end) の右半開区間と解釈するのが自然かと
+・i から長さ k 取る→a[i, i+k]
+・i を境界に2つに分ける（二分探索等）→a[:i], a[i:]
+・range の挙動とも一致→a[i:j] == [a[k] for k in range(i, j)]（R/Ruby/pandas/Rust は arr[range] 記法）
+```
+
+https://twitter.com/reto_nayuta/status/1290125805167632385
 
 ```python
 s = input()
