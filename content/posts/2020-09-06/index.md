@@ -1,5 +1,5 @@
 ---
-title: "MLOps の国際会議OpML20 で登壇してきた"
+title: "MLOps の国際会議 OpML'20 に論文が採択されたので登壇してきた"
 date: 2020-09-06T23:31:03+09:00
 lang: ja
 tags:
