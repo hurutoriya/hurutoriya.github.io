@@ -96,7 +96,7 @@ _[Twitterでもまとめていた](https://twitter.com/i/events/1292673505356476
 - https://www.usenix.org/conference/opml20/presentation/cepoi
 
 
-![Runway](/posts/2020-09-06/images/2.png)]
+![Runway](/posts/2020-09-06/images/2.png)
 
 RunwayというNetflixでのモデルのライフサイクルマネジメントツールの紹介
 NetFlixで実際にあった課題
