@@ -23,11 +23,11 @@ tags:
 hugo new posts/hoge.md --editor="code"
 ```
 
-- pange bundl
 - 作成時に`slug` に日付を含める
+- 今回は`2020-09-09`の形式で slug を作成する
 
 ```bash
-hugo new posts/$(date '+%Y')-$(date '+%m')-$(date '+%d')/index.md
+hugo new posts/$(date '+%Y-%m-%d')/index.md
 ```
 
 - page をビルドして結果を確認する
