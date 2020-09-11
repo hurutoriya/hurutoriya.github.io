@@ -50,8 +50,8 @@ import pandas as pd
 
 
 def contcat_csv(f_path:str):
-    # pathlibのitedir()で対象とするディレクトリのファイル一覧がジェネレーターとして取得
-    csvs = [pd.read_csv(str(path)) for path in pathlib.Path(f_path).iterdir()]
+    # pathlibのitedir()で対象とするディレクトリのCSVファイル一覧をジェネレーターとして取得
+    csvs = [pd.read_csv(str(path)) for path in pathlib.Path(f_path).glob('*.csv')]
     # そのファイル一覧をPandasで読み込んで、pd.concat()で連結してDataFrameとして返す
     return pd.concat(csvs, sort=False)
 
@@ -80,3 +80,9 @@ id  name    created
 ```
 
 無事連結されたCSVを取得することができました
+
+## 追記
+
+- 2020-09-12: @siumachi さんから[ご指摘](https://twitter.com/shiumachi/status/1304325924377096192)を受け、CSVファイル以外がディレクトリに混入していても問題ないように変更しました
+
+> 拝見しました。forでディレクトリを走査するときは pathlib.Path.glob("*.csv")を使った方が、csv以外のファイルが混入したときの対策になると思ったのですが、いかがでしょう https://docs.python.org/ja/3/library/pathlib.html#pathlib.Path.glob
