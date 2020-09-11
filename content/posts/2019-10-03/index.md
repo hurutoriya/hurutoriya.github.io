@@ -4,7 +4,7 @@ date: 2019-10-03T23:52:54+09:00
 lang: ja
 tags:
   - GCP
-  - BigQuery
+  - Google BigQuery
   - pandas
   - Python
 ---
@@ -15,11 +15,11 @@ Jupyter と Google BQ を連携させたいときはいつも使っています
 
 ## 問題点
 
-- そこそこ大きなデータを持ってこようとするとめちゃくちゃ遅くてストレスが半端ない
+- そこそこ大きなデータを持ってこようとすると、めちゃくちゃ遅くてストレスが半端ない
 
 解決方法として、Google Big Query で巨大なデータをダウンロードする方法について書く
 
-実は Google の公式ドキュメントでも記載されている。
+実は Google の公式ドキュメントでも推奨されています
 
 - https://cloud.google.com/bigquery/docs/pandas-gbq-migration
 - https://cloud.google.com/bigquery/docs/bigquery-storage-python-pandas
@@ -45,7 +45,7 @@ magic command を実行
 %load_ext google.cloud.bigquery
 ```
 
-後は Jupyter Notebook のセルで以下のコマンドぞを実行すれば、
+後は Jupyter Notebook のセルで以下のコマンドを実行すれば、
 
 ```
 %%bigquery df --use_bqstorage_api
@@ -61,34 +61,28 @@ LIMIT 10
 ```
 
 `df` にマジックコマンドで実行した SQL の実行結果が格納されます!
-便利ですね!
+便利ですね
 
 ### 2, BQ 実行 →BigQuery table として保存 →GCS へ保存 → `gsutil` でマシンへコピー
 
-1. BigQuery でクエリを実行、実行結果を BigQuery Table へ保存
+-  BigQuery でクエリを実行、実行結果を BigQuery Table へ保存
 
 - 注)実行結果の容量が巨大なので、保存先は基本的に Big Query Table へ保存するしか選択肢が無い
 
-- ![can't export large file as one file](/posts/2019-10-03/images/export-to-bqtable.png)
+![can't export large file as one file](/posts/2019-10-03/images/export-to-bqtable.png)
 
-1. BigQuery table から GCS へテーブルを CSV として保存
+- BigQuery table から GCS へテーブルを CSV として保存
 
 Big Query table からエクスポート時に、ファイルサイズが大きいとエクスポートできないので、分割が必要です。
 
-- ![can't export large file as one file](/posts/2019-10-03/images/cant-export-onefile.png)
+![can't export large file as one file](/posts/2019-10-03/images/cant-export-onefile.png)
 
 https://cloud.google.com/bigquery/docs/exporting-data
 
-保存ファイル名を
+保存ファイル名を `file-*` のようにワイルドカードを指定すると、自動的にひとつのテーブルを複数ファイルに分割して保存してくれる
 
-```
-file-*
-```
+`gsutil` commands で任意のマシンへダウンロードする。
 
-のようにワイルドカードを指定すると、自動的にひとつのテーブルを複数ファイルに分割して保存してくれる
-
-1. `gsutil` commands で任意のマシンへダウンロードする。
-
-`-m` オプションを付け足すと並列ダウンロードが始まるので、複数ファイルダウンロードする場合はおすすめ
+`-m` オプションを付け足すと並列ダウンロードが始まるので、複数ファイルダウンロードする場合はおすすめです
 
 ストレスレスなデータ分析ライフを!
