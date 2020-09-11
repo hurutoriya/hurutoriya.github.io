@@ -78,8 +78,8 @@ Secret Sourse ML Sutprise の部分が、アンチパターンや成功方法な
 もう、これがめちゃくちゃ快適でハンズオンとしてすごく快適に手を動かせなら、k8s の初歩的な概念や Command line などを学べました。
 実際に手を動かしながら学ぶべきものだと思うので、このハンズオン形式の講義はありがたかったです!
 後は学ぶにつれて、 k8s の凄さがわかってきたので理解して使いこなせるようになればスケールするシステムを個人でも作れそうなので、頑張っていきます。</description></item><item><title>pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL</title><link>https://shunyaueta.com/posts/2019-10-03/</link><pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-10-03/</guid><description>pandas.read_gbq 便利ですよね。 クレデンシャルファイルを認証画面からコピペすれば Jupyter 上でさっと動き、Google Big Query が実行されてその結果がそのままデータフレームとして扱えます。 Jupyter と Google BQ を連携させたいときはいつも使っています
-問題点 そこそこ大きなデータを持ってこようとするとめちゃくちゃ遅くてストレスが半端ない 解決方法として、Google Big Query で巨大なデータをダウンロードする方法について書く
-実は Google の公式ドキュメントでも記載されている。
+問題点 そこそこ大きなデータを持ってこようとすると、めちゃくちゃ遅くてストレスが半端ない 解決方法として、Google Big Query で巨大なデータをダウンロードする方法について書く
+実は Google の公式ドキュメントでも推奨されています
 https://cloud.google.com/bigquery/docs/pandas-gbq-migration https://cloud.google.com/bigquery/docs/bigquery-storage-python-pandas 方法は以下の２つ。
 google-cloud-bigquery をインストールして、マジックコマンドで Google BQ を実行 BQ 実行 →BigQuery table として保存 →GCS へ保存 → gsutil でマシンへコピー 1 番目は、Jupyter 上でマジックコマンドで Google BQ が実行できて、速度も pandas.rad_gbq よりも高速です 2 番目はそもそも実行結果が巨大な場合で、目安としては1GB以上なら 2 番目の方法を使えば楽です。
 1, google-cloud-bigquery をインストールして、マジックコマンドで Google BQ を実行 pip install --upgrade google-cloud-bigquery[bqstorage,pandas] magic command を実行</description></item><item><title>Tensorboard を わずか2行で Jupyter Notebook上で表示</title><link>https://shunyaueta.com/posts/2019-09-25/</link><pubDate>Wed, 25 Sep 2019 23:16:07 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-09-25/</guid><description>Pytorch 1.2 からは公式に Tensorboard がサポートされている
