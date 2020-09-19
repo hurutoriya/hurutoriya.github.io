@@ -27,3 +27,9 @@ GitHub の [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-a
 ![repository access setting](/posts/2020-09-19/images/1.png)
 
 この設定をしたあとに、GitHub PRを新たに作成すると、自動的に CODEOWNERS のapproveがないとマージされないように設定されるはずです。
+
+### 自分自身がハマった経緯
+
+グループ全体のアカウントが追加されている`a-group/all`というGithub Groupがすでにリポジトリのアクセス権限に `Write` 権限として追加されており、全員がwrite権限をもっているならcodeownersとしての権限も問題ないだろうと思っていたらハマりました。
+
+CODEOWNERS の仕組みを知ると理解できるのですが、`a-group/all` が指定したいグループの包含関係にあるからといって、そのように取り扱ってくれるわけではないということですね。
