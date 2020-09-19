@@ -22,7 +22,7 @@ GitHub の [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-a
 
 2. リポジトリの設定の`/settings/access`にアクセスして、`@octo-org/codeowners-team` を `Maintain` として追加する。
 
-*もしかしたら、'Write'や`Triage`権限でも問題ないかもしれません。
+*試していないのですが、`Write` や `Triage` 権限でも問題ないかもしれません。
 
 ![repository access setting](/posts/2020-09-19/images/1.png)
 
