@@ -40,6 +40,8 @@ Shunya UETA who is a working on Machine Leaening as Software Engineer at Mercari
 
 ### Tech Talks
 
+- 2020.07.28 [Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) at OpML20
+  - [YouTube](https://www.youtube.com/watch?v=_rvEcH_zyt4), [slide](https://www.slideshare.net/shunyaueta/auto-content-moderation-in-c2c-ecommerce)
 - 2018.09.26 [Kubeflow Meetup #1 Introduction to Argo](https://crash.academy/video/343/1671)
   - [slideshare](https://www.slideshare.net/shunyaueta/introduction-to-argo-116672516), [movie](https://crash.academy/video/343/1671)
 - 2018.09.18 [Introduction to TFX Family](https://d3m.connpass.com/event/98934/) at Data Driven Developer Meetup #1
@@ -51,6 +53,8 @@ Shunya UETA who is a working on Machine Leaening as Software Engineer at Mercari
 
 ### Paper
 
+- Shunya Ueta, Suganprabu Nagaraja, Mizuki Sango, "Auto Content Moderation in C2C e-Commerce". 2020 {USENIX} Conference on Operational Machine Learning (OpML 20)
+  - [paper](https://www.usenix.org/conference/opml20/presentation/ueta)
 - Takuma Yamaguchi, Kosuke Arase, Riku Togashi, Shunya Ueta, "Closing the Gap Between uery and Database through uery Feature Transformation in C2C e-Commerce Visual Search", SIGIR 2019 Workshop on eCommerce
 - Kataoka, H., Shirakabe, S., He, Y., Ueta, S., Suzuki, T., Abe, K., ... & Yatsuyanagi, H. (2017). cvpaper. challenge in 2016: Futuristic Computer Vision through 1,600 Papers Survey. arXiv preprint arXiv:1707.06436. [link](https://arxiv.org/abs/1707.06436)
 - Kaori Abe*, Teppei Suzuki*, Shunya Ueta, Akio Nakamura, Yutaka Satoh, Hirokatsu Kataoka, "Changing Fashion Cultures", in arXiv pre-print 1703.07920, Mar., 2017 [link](https://arxiv.org/abs/1703.07920)
@@ -60,7 +64,7 @@ Shunya UETA who is a working on Machine Leaening as Software Engineer at Mercari
 - [データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～](https://johokiko.co.jp/publishing/BC200701.php)
   - `マルチモーダルによる規約違反出品検知への応用と運用について` を共著にて執筆
 
-#### Domestic Conference (First author)
+#### Domestic Conferenc
 
 - 2019.11.20 第22回情報論的学習理論ワークショップ `HSICに基づく特徴クラスタリングによるマルチモーダル特徴融合探索の効率化`
   - `上田隼也`; 吉川友也; 紫藤佑介 (株式会社メルカリ; 千葉工業大学; 株式会社メルカリ)
@@ -70,15 +74,13 @@ Shunya UETA who is a working on Machine Leaening as Software Engineer at Mercari
 - 2015.12.11 日本応用数理学会「行列・固有値問題の解法とその応用」研究部会 第 20 回研究会 [link](http://na.cs.tsukuba.ac.jp/mepa/?page_id=1024)
   - 周回積分型固有値解法を用いた半教師付きスペクトラルクラスタリングと画像領域分割への適用
   - `上田 隼也（筑波大学）`，櫻井 鉄也，保國 惠一（筑波大学）
-- 2015.11.01 第 10 回協定講座シンポジウム「計算科学 次代を担う若手の集い 2015」
-  - `上田隼也（筑波大学）`，櫻井 鉄也，保國 惠一(筑波大学)
-
-#### 国内ポスター発表 (DOMESTIC CONFERENCE POSTER PRESENTATION)
-
 - 2015.11.25-28 第 18 回情報論的学習理論ワークショップ, つくば国際会議場 [Link](http://ibisml.org/ibis2015/poster1/)
   - Semi-supervised learning using a contour integral-based eigensolver for image segmentation
+- 2015.11.01 第 10 回協定講座シンポジウム「計算科学 次代を担う若手の集い 2015」
+  - `上田隼也（筑波大学）`，櫻井 鉄也，保國 惠一(筑波大学)
 - 2015.08.23-09.04 Machine Learning Summer School 2015 Kyoto [Link](http://www.iip.ist.i.kyoto-u.ac.jp/mlss15/doku.php?id=mlss)
   - 制約付き固有値問題を用いた半教師付きスペクトラルクラスタリングによる画像領域分割
+
 
 #### 国内会議公演 (DOMESTIC CONFERENCE POSTER PRESENTATION co-author)
 
@@ -109,17 +111,9 @@ Shunya UETA who is a working on Machine Leaening as Software Engineer at Mercari
   - アクセル社製 AG4 LSI を用いたゲームの開発
   - **最優秀賞**
 
-## Product
-
-- 2013.04 高専生の編入体験体験談投稿サービス「HenTai」を開発。 100 件超の体験談が集まり、体験談共有サイトでも最大規模を誇る [site](http://kosen.herokuapp.com/)
-  現在はメンテナンス停止中, Ruby on Rails 3, Heroku を用いて 3 日間で開発を終え公開した。
-
-## Article
-
-- 2019.01.16: [「AI と機械学習への質問、なんでも答えるよ！」なオープンドアを開催したよ #メルカリな日々](https://mercan.mercari.com/entry/2019/01/16/200645)
-- 2018.07.03: [世界のデータサイエンティスト、2,384 チームが競った「Mercari Price Suggestion Challenge」―メルカリが機械学習活用のコンペを開催した狙いとは？](https://techplay.jp/column/290)
-
 ## Misc
 
+- 2013.04 高専生の編入体験体験談投稿サービス「HenTai」を開発。 100 件超の体験談が集まり、体験談共有サイトでも最大規模を誇る [site](http://kosen.herokuapp.com/)
+  - 現在はメンテナンス停止中, Ruby on Rails 3, Heroku を用いて 3 日間で開発を終え公開した。
 - [パターン認識と機械学習の勉強会 @筑波大学](http://prml-seminar.github.io/)
   - 2015.03-2017.03 まで主催していた機械学習に関する勉強会です。
