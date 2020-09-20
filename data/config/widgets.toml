@@ -1,7 +1,7 @@
 # About Widget config
 [about]
 title = "Shunya UETA"                          # default: .Site.Title
-description = "Shunya UETA who is a working on Machine Learning as Software Engineer at [Mercari, inc](https://about.mercari.com/en/). Opinions are my own. → [See more detail!](/about)"                      # default: .Site.Params.info.description
+description = "Shunya UETA who is a working on Machine Learning as Software Engineer at [Mercari, inc](https://about.mercari.com/en/). Opinions are my own. → [See more detail](/about)"                      # default: .Site.Params.info.description
 logo = ""             # default: "/images/logo.png"
 
 # Breadcrumbs Widget config
