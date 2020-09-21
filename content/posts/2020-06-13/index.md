@@ -1,5 +1,5 @@
 ---
-title: "#MLCT 12 を開催しました"
+title: "Machine Learning Casual Talks # 12 を開催しました"
 date: 2020-06-13T23:06:44+09:00
 lang: ja
 tags:

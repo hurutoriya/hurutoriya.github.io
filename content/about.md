@@ -81,7 +81,6 @@ Shunya UETA who is a working on Machine Leaening as Software Engineer at Mercari
 - 2015.08.23-09.04 Machine Learning Summer School 2015 Kyoto [Link](http://www.iip.ist.i.kyoto-u.ac.jp/mlss15/doku.php?id=mlss)
   - 制約付き固有値問題を用いた半教師付きスペクトラルクラスタリングによる画像領域分割
 
-
 #### 国内会議公演 (DOMESTIC CONFERENCE POSTER PRESENTATION co-author)
 
 - Kaori Abe*, Teppei Suzuki*, Shunya Ueta, Akio Nakamura, Yutaka Satoh, Hirokatsu Kataoka, "Dynamic Fashion Cultures", in MIRU 2017, Aug. 2017. (\* indicates equal contribution) **Acceptance rate (oral): 28.0%, Best Student Award** [Link](http://cvim.ipsj.or.jp/MIRU2017/index.php?id=technical-program),[pdf](https://arxiv.org/abs/1703.07920)

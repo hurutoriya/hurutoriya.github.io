@@ -13,14 +13,13 @@ GitHub の [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-a
 ## TL;DR
 
 - GitHub codeowners で特定のグループをCODEOWNERSに設定したいときは、そのグループをレポジトリの `/settings/access`で `Maintain` として追加しないとGitHub PR で自動的にreviwer に追加されない
-
-1. リポジトリで`.github/CODEOWNERS` のファイルを作成して、以下の形式でGitHub group を追加する
+- リポジトリで`.github/CODEOWNERS` のファイルを作成して、以下の形式でGitHub group を追加する
 
 ```bash
 * @octo-org/codeowners-team
 ```
 
-2. リポジトリの設定の`/settings/access`にアクセスして、`@octo-org/codeowners-team` を `Maintain` として追加する。
+- リポジトリの設定の`/settings/access`にアクセスして、`@octo-org/codeowners-team` を `Maintain` として追加する。
 
 *試していないのですが、`Write` や `Triage` 権限でも問題ないかもしれません。
 
