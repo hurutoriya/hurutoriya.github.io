@@ -12,7 +12,7 @@ New model introduction into production (e.g., staging, A/B test)
 そして投稿の1ヶ月後に通知メールが来て採択を知りました。 添削を何度も繰り返して時間が迫るなかなんとか投稿できたという状態で、とりあえず投稿できて良かったなと感じていた最中だったので、採択通知が来て本当におどきました。
 査読システムの良い点として、自分たちの投稿内容がその会議で発表足り得るものかがレビュアーからレビューされることです。 自分自身機械学習エンジニアとして働いていますが、その成果が査読を通して同じ分野で働いているエキスパートの第三者に認められたという事実が自分の仕事への自信に繋がりました。
 その後Reviwerの方に指摘された点を意識しつつ修正を行って、Camera Readyを無事に提出しました。 また今回は急遽オンライン開催へと変更されたので、動画投稿も必須になり初めての収録もなかなか難産でしたが無事提出することができました。
-OpML&amp;rsquo;20で採択された論文 採択された内容は以下のページにまとまっているので、もしご興味があればご覧ください。 内容を簡単にまとめると、</description></item><item><title>#MLCT 12 を開催しました</title><link>https://shunyaueta.com/posts/2020-06-13/</link><pubDate>Sat, 13 Jun 2020 23:06:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-06-13/</guid><description>Machine Learning Casual Talks 第12回を開催しました。 前回から少し開きがあり、7ヶ月ぶりの開催となりました。
+OpML&amp;rsquo;20で採択された論文 採択された内容は以下のページにまとまっているので、もしご興味があればご覧ください。 内容を簡単にまとめると、</description></item><item><title>Machine Learning Casual Talks # 12 を開催しました</title><link>https://shunyaueta.com/posts/2020-06-13/</link><pubDate>Sat, 13 Jun 2020 23:06:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-06-13/</guid><description>Machine Learning Casual Talks 第12回を開催しました。 前回から少し開きがあり、7ヶ月ぶりの開催となりました。
 https://mlct.connpass.com/event/172550/
 今回の個人的なテーマはベストプラクティスとアンチパターンです。
 @keigohtr さんには、AWSの各種サービスを使った機械学習実験基盤をアベジャの適用事例と重ね合わせて、説得力のあるベストプラクティスを語っていただきました。 @yuzutas0 さんには、機械学習の前に、データのマネジメントがいかに必要かを語っていただきました。建設的に改善していこうぜという未来が語られていて、個人的にお話を依頼した甲斐がありました 同僚の @overs_5121 さんには、メルカリ : TensorFlow Lite で、気付きにくい便利機能をユーザーに提唱 の裏話や、適用までの泥臭い事例をお話していただきました。 登壇者の皆様、改めて登壇の依頼をご快諾いただきありがとうございました。
