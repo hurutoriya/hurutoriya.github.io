@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Software Engineer as Data Scientist</title><link>https://shunyaueta.com/posts/</link><description>Recent content in Posts on Software Engineer as Data Scientist</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 21 Sep 2020 00:13:08 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>自分なりの機械学習エンジニアスキル構成論</title><link>https://shunyaueta.com/posts/2020-09-21/</link><pubDate>Mon, 21 Sep 2020 00:13:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-21/</guid><description>機械学習エンジニアとして働き始めて2年7ヶ月が経過した。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Software Engineer as Data Scientist</title><link>https://shunyaueta.com/posts/</link><description>Recent content in Posts on Software Engineer as Data Scientist</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 27 Sep 2020 21:57:47 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>機械学習・ソフトウェアエンジニアリングで学んだことを発信するPodcast just4fun.fm を始めてみた</title><link>https://shunyaueta.com/posts/2020-09-27/</link><pubDate>Sun, 27 Sep 2020 21:57:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-27/</guid><description>機械学習エンジニアをしている hurutoriya が機械学習、Software Engineering 周りに関する学んだことなど最近楽しいと思っていることを発信していくPodcast です
+扱うトピックとしては、普段学んだ機械学習、ソフトウェアエンジニアリング、読んだ論文やデータ分析などについて扱っていきます。
+just4fun.fm Google Podcasts Apple Podcasts Pocket Casts ご感想などは Twitter ハッシュタグ #just4funfm でお待ちしております
+なぜ Podcast なのか？ 以前からPodcastは日常的に聴いていて前からやってみようかなと思っていたんですが、周りの人たちがPodcastを始めたのを機によし自分もやるかと始めてみました
+Blogと比べてみると、
+ブログ書くよりかはサラッと配信できる、音声で配信するのも新鮮で面白い その代わり、換気扇とかの音が気になり音源環境とかはめちゃくちゃ気を使う 発表レベルの構造化したトークよりも雑談レベルでワイワイするほうがPodcastは向いてる感じはする。前者だと準備やらなんやらで公開できずに死の谷に落ちそう 喋っているうちに思考が洗練されていくので、あまり気負いすぎずに喋りたい事を発信していくのが良さそう しばらく試験的に続けていきたいと思います。
+Anchor 凄い AnchorでPodcastを始めると、自動的にAppole Podcast, Google Podcast, Pocket CastなどPodcastのプラットフォームに自動配信される。 Google Podcastは、配信開始と通知が来ても実際は2-3日後に視聴可能になると問い合わせたら返信がきた Support here. Sorry for the confusion with your podcast on Google. Allow me to explain this to you. We have noted that for some users the podcast link takes a week or so to become active, so it should begin working soon!</description></item><item><title>自分なりの機械学習エンジニアスキル構成論</title><link>https://shunyaueta.com/posts/2020-09-21/</link><pubDate>Mon, 21 Sep 2020 00:13:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-21/</guid><description>機械学習エンジニアとして働き始めて2年7ヶ月が経過した。
 機械学習エンジニアというロールは会社によって期待される内容が異なってくるが、今の会社で働いてきた経験に基づき自分の中の機械学習エンジニアスキル構成論を整理してみる。
 TL; DR 人によって考える理想のスキル論は違うので他の人の持論を聞いてみたい テクいことをやりたい気持ちはあるが、地道なやるべきことがたくさんあるのがこの世界 自分の中で機械学習エンジニアにとって大事なスキル Software Engineer 40% 機械学習サービス実装スキル Product Manager 30% 機械学習プロジェクト自体を成功に導くスキル Data Scientist 30% データに基づき、意思決定し改善していくスキル Machine Learning Engineer as Software Engineer なぜSWEの比率が一番上なのか？
 どれだけ良いモデルができたとしてもそれが活用されるシステムがなければ成果を出せないからです
@@ -19,6 +25,8 @@ CODEOWNERS の仕組みを知ると理解できるのですが、a-group/all が
 tmp ├── 1.csv ├── 2.csv └── 3.csv 各ファイルはこのような形式で保存されています。
 id name created 1 John 2020/09/10 2 bob 2020/09/10 3 taro 2020/09/11 以下のPythonスクリプトを実行
 import pathlib import pandas as pd def contcat_csv(f_path:str): # pathlibのitedir()で対象とするディレクトリのCSVファイル一覧をジェネレーターとして取得 csvs = [pd.read_csv(str(path)) for path in pathlib.</description></item><item><title>MLOps の国際会議 OpML'20 に論文が採択されたので登壇してきた</title><link>https://shunyaueta.com/posts/2020-09-06/</link><pubDate>Sun, 06 Sep 2020 23:31:03 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-06/</guid><description>MLOpsの査読付き国際会議 2020 USENIX Conference on Operational Machine Learning (略称 OpML&amp;rsquo;20)に論文が採択されたので、登壇してきた。
+Podcastでも紹介しました
+#1 MLOps の国際会議 OpML20 について at just4fun.fm
 MLOpsの査読付き国際会議とOpMLの立ち位置 機械学習エンジニアリング・MLOpsの領域の会議でも一番有名なものとして2018年に発足したMLSysがあります。(ちなみに最初はSysMLという名前でした) このカンファレンスの傾向としては、アカデミアの研究者主体の発足経緯からアカデミアからインダストリーへの橋渡し的立ち位置となっています。具体的には、発表者はアカデミアの方が大半でハードウェアから、モデルのOSS公開など幅広く機械学習エンジニアリング・MLOpsの周辺トピックをカバーしています。
 OpMLはその一年後に、MLOpsを軸にしたUSENIXが母体の会議として誕生しました。 USENIXはSRECON、OSDIなどを開催している団体です。学会的なスタイルに則り、先端的な計算機システムの成果を論文として公開されています。MLSysと対称的にこちらはインダストリーからアカデミアへの橋渡し的立ち位置となっています。発表内容は企業での発表者が多く、実際の運用で得られた各企業のMLOpsのベストプラクティスなどがメインで話されています。 個人的にはOpMLのほうが、MLOpsのど真ん中を主体に置いているのでMLSysよりも盛り上がってほしいなと思っています。
 OpML&amp;rsquo;19がどのような様子だったかは、以下の記事がわかりやすいです。
@@ -29,10 +37,7 @@ OpML&amp;rsquo;20への投稿と採択で得られたもの OpML&amp;rsquo;20で
 New model introduction into production (e.g., staging, A/B test)
 においてNoveltyがあると考えて、ここからストーリーを組み立てていきました。
 スケジュール感として投稿締切が2020/02/25で、その1ヶ月前の1月末から毎日1時間、Google Calendarで時間を抑えて同僚と集中的に論文の執筆を行いました。 最初にガッと3ページほど書いて、その後洗練させて2ページに圧縮して投稿しました。 あらめて添削や執筆をともに行ってくれた同僚たちに感謝します。
-そして投稿の1ヶ月後に通知メールが来て採択を知りました。 添削を何度も繰り返して時間が迫るなかなんとか投稿できたという状態で、とりあえず投稿できて良かったなと感じていた最中だったので、採択通知が来て本当におどきました。
-査読システムの良い点として、自分たちの投稿内容がその会議で発表足り得るものかがレビュアーからレビューされることです。 自分自身機械学習エンジニアとして働いていますが、その成果が査読を通して同じ分野で働いているエキスパートの第三者に認められたという事実が自分の仕事への自信に繋がりました。
-その後Reviwerの方に指摘された点を意識しつつ修正を行って、Camera Readyを無事に提出しました。 また今回は急遽オンライン開催へと変更されたので、動画投稿も必須になり初めての収録もなかなか難産でしたが無事提出することができました。
-OpML&amp;rsquo;20で採択された論文 採択された内容は以下のページにまとまっているので、もしご興味があればご覧ください。 内容を簡単にまとめると、</description></item><item><title>Python の内包表記とジェネレータ式のメモリ使用量比較</title><link>https://shunyaueta.com/posts/2020-08-23/</link><pubDate>Sun, 23 Aug 2020 21:28:10 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-08-23/</guid><description>リストを構築する際にPythonではリスト内包表記とジェネレータ式の２種類が存在する。 今回、リスト構築時にメモリ使用量にどれだけ差異が発生するのか調査をしてみた。 メモリ使用量の調査には、memory_profilerというパッケージを使用した。
+そして投稿の1ヶ月後に通知メールが来て採択を知りました。 添削を何度も繰り返して時間が迫るなかなんとか投稿できたという状態で、とりあえず投稿できて良かったなと感じていた最中だったので、採択通知が来て本当におどきました。</description></item><item><title>Python の内包表記とジェネレータ式のメモリ使用量比較</title><link>https://shunyaueta.com/posts/2020-08-23/</link><pubDate>Sun, 23 Aug 2020 21:28:10 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-08-23/</guid><description>リストを構築する際にPythonではリスト内包表記とジェネレータ式の２種類が存在する。 今回、リスト構築時にメモリ使用量にどれだけ差異が発生するのか調査をしてみた。 メモリ使用量の調査には、memory_profilerというパッケージを使用した。
 まず、２つのリストのデカルト積のタプルを表示するプログラムでの比較
 from memory_profiler import profile @profile def main(): &amp;#34;&amp;#34;&amp;#34; Comparision List comprehension VS generator memory usage &amp;#34;&amp;#34;&amp;#34; colors = &amp;#34;colors&amp;#34; * 1000 sizes = &amp;#34;S&amp;#34; * 100 for shirts in ((color, size) for color in colors for size in sizes): print(shirts) [print((color, size)) for color in colors for size in sizes] if __name__ == &amp;#34;__main__&amp;#34;: main() Filename: src/listcomp_vs_generator.py Line # Mem usage Increment Line Contents ================================================ 4 10.</description></item><item><title>AOJの「ITP I」40問をpythonで解いた</title><link>https://shunyaueta.com/posts/2020-08-04/</link><pubDate>Tue, 04 Aug 2020 03:38:58 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-08-04/</guid><description>はじめに コーディングの腕をもっと磨きたいなと思ったので、以下の記事を参考に始めてみた
 https://qiita.com/e869120/items/f1c6f98364d1443148b3 全部で 44 問ありますが、最後の 4 問は競プロとはあまり関係ないので、ITP1_1-A から ITP1_10-D までの 40 問を解くことをお勧めします。
@@ -231,6 +236,8 @@ Code Google Colabratory https://colab.research.google.com/drive/1YK8XFnfD29775lE
 今回例として用いた MBP の空箱だと ARCore が空箱自体を平面と認識してしまうという罠があるので、床で平面検知を終えてから商品を置くという裏技が必要
 まとめ ARCore を用いた AR 機能の UX としては 🙆 実用性は 🙅、平面検出しかしてないので、荷物に合わせて最適なダンボールを選ぶのは結局ユーザー。そこまで自動化してこそ革新的な機能になると思った Related Post
 eBay uses augmented reality to help sellers find the right box for their product</description></item><item><title>Google, Facebookが提供する機械学習基盤まとめ</title><link>https://shunyaueta.com/posts/2018-04-09/</link><pubDate>Mon, 09 Apr 2018 13:55:44 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-09/</guid><description>Google, Facebook の機械学習基盤情報をまとめました
+Podcastでも紹介しました
+#2 Facebook とGoogleの機械学習基盤について at just4fun.fm
 TFX
 社内の勉強会で Google, Facebook が提供する機械学習基盤に関する論文を紹介したので、その資料を公開します#### 経緯
 機械学習をサービスとして提供開始すると、継続的な学習やプロダクション環境での機械学習の提供はモデル構築以外にもいろいろと考える問題が多くなります ¹
@@ -239,8 +246,7 @@ TFX
 そのためプロダクションレディなレベルで機械学習を提供できるプラットフォームを各社が提案しておりその中でも Google, Facebook の事例を提供します。
 TL; DR; FBLearner: MLaaS の事例として最初に読むべき論文、MLaaS をどのような戦略で提供しているかを抽象的にまなべるため、鳥瞰図として読みましょう TFX は逆に機械学習基盤が必要とする技術スタックや要件などを詳細に説明しており、教科書的な立ち位置です。社内で機械学習基盤を内製したい場合に詳しく読み込むこと必須 両社とも MLaaS をスケーラブルに提供する環境ができており、サービスのコアテクノロジーになっている Google : Tensorflow Expand TFX: A tensor flow-based production-scale machine learning platform
 Facebook : FBLeaner Applied machine learning at facebook a datacenter infrastructure perspective HPCA18
-ONNX を見ていると TensorFlow VS. ONNX 陣営が出来つつありどちらのプラットフォームに乗るかの戦略が大事だなと思います。
-Google はモバイル上の ML から超大規模分散学習まで TF シリーズで提供、実際のサービング環境も TFServing というスタックを提供しはじめていて個人的に TensorFlow が何歩も先にいっているという所感</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
+ONNX を見ていると TensorFlow VS.</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
 発表者の顔は隠しています。なにか問題があればお伝え下さい。
 Team AI Meetup #1 (2018/02/13 19:00〜)
 Twitter: #mercari_ai

@@ -9,6 +9,8 @@ design, development, test, deploy, operate, support
 今所属している会社もMicro Serviceでの開発に注力していて、まさにFull Cycleスタイルで機械学習サービス開発を行っている。 個人的に機械学習プロジェクトとこの方式の相性の良いところは、例えば、職能ごとにモデル開発、システム開発と運用を行うメンバーを分割すると、
 モデルを作ってデプロイはしたが運用は他人任せになってしまい継続的な改善が回しづらい 役割が分離されていることで、モデルの詳細を完全に把握できないので実際のトラブル発生時に対応が困難 運用を考えてモデルがデザインされていないので運用者にしわ寄せがくる などアンチパターンが数多く存在する
 Micro Serviceでの開発は上記の課題を解決して、作って終わりではなく自分たちでシステムデザインからサポートまで行うことで、そのサービスの継続的な改善に責任と自由を手にして開発することできる また、プロジェクトデザインの段階からシステム開発・運用を念頭に動くことができるので、やってみてうまく動かないなどの不確実性を大きく減少させる</description></item><item><title>MLOps の国際会議 OpML'20 に論文が採択されたので登壇してきた</title><link>https://shunyaueta.com/posts/2020-09-06/</link><pubDate>Sun, 06 Sep 2020 23:31:03 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-06/</guid><description>MLOpsの査読付き国際会議 2020 USENIX Conference on Operational Machine Learning (略称 OpML&amp;rsquo;20)に論文が採択されたので、登壇してきた。
+Podcastでも紹介しました
+#1 MLOps の国際会議 OpML20 について at just4fun.fm
 MLOpsの査読付き国際会議とOpMLの立ち位置 機械学習エンジニアリング・MLOpsの領域の会議でも一番有名なものとして2018年に発足したMLSysがあります。(ちなみに最初はSysMLという名前でした) このカンファレンスの傾向としては、アカデミアの研究者主体の発足経緯からアカデミアからインダストリーへの橋渡し的立ち位置となっています。具体的には、発表者はアカデミアの方が大半でハードウェアから、モデルのOSS公開など幅広く機械学習エンジニアリング・MLOpsの周辺トピックをカバーしています。
 OpMLはその一年後に、MLOpsを軸にしたUSENIXが母体の会議として誕生しました。 USENIXはSRECON、OSDIなどを開催している団体です。学会的なスタイルに則り、先端的な計算機システムの成果を論文として公開されています。MLSysと対称的にこちらはインダストリーからアカデミアへの橋渡し的立ち位置となっています。発表内容は企業での発表者が多く、実際の運用で得られた各企業のMLOpsのベストプラクティスなどがメインで話されています。 個人的にはOpMLのほうが、MLOpsのど真ん中を主体に置いているのでMLSysよりも盛り上がってほしいなと思っています。
 OpML&amp;rsquo;19がどのような様子だったかは、以下の記事がわかりやすいです。
@@ -19,10 +21,7 @@ OpML&amp;rsquo;20への投稿と採択で得られたもの OpML&amp;rsquo;20で
 New model introduction into production (e.g., staging, A/B test)
 においてNoveltyがあると考えて、ここからストーリーを組み立てていきました。
 スケジュール感として投稿締切が2020/02/25で、その1ヶ月前の1月末から毎日1時間、Google Calendarで時間を抑えて同僚と集中的に論文の執筆を行いました。 最初にガッと3ページほど書いて、その後洗練させて2ページに圧縮して投稿しました。 あらめて添削や執筆をともに行ってくれた同僚たちに感謝します。
-そして投稿の1ヶ月後に通知メールが来て採択を知りました。 添削を何度も繰り返して時間が迫るなかなんとか投稿できたという状態で、とりあえず投稿できて良かったなと感じていた最中だったので、採択通知が来て本当におどきました。
-査読システムの良い点として、自分たちの投稿内容がその会議で発表足り得るものかがレビュアーからレビューされることです。 自分自身機械学習エンジニアとして働いていますが、その成果が査読を通して同じ分野で働いているエキスパートの第三者に認められたという事実が自分の仕事への自信に繋がりました。
-その後Reviwerの方に指摘された点を意識しつつ修正を行って、Camera Readyを無事に提出しました。 また今回は急遽オンライン開催へと変更されたので、動画投稿も必須になり初めての収録もなかなか難産でしたが無事提出することができました。
-OpML&amp;rsquo;20で採択された論文 採択された内容は以下のページにまとまっているので、もしご興味があればご覧ください。 内容を簡単にまとめると、</description></item><item><title>Machine Learning Casual Talks # 12 を開催しました</title><link>https://shunyaueta.com/posts/2020-06-13/</link><pubDate>Sat, 13 Jun 2020 23:06:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-06-13/</guid><description>Machine Learning Casual Talks 第12回を開催しました。 前回から少し開きがあり、7ヶ月ぶりの開催となりました。
+そして投稿の1ヶ月後に通知メールが来て採択を知りました。 添削を何度も繰り返して時間が迫るなかなんとか投稿できたという状態で、とりあえず投稿できて良かったなと感じていた最中だったので、採択通知が来て本当におどきました。</description></item><item><title>Machine Learning Casual Talks # 12 を開催しました</title><link>https://shunyaueta.com/posts/2020-06-13/</link><pubDate>Sat, 13 Jun 2020 23:06:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-06-13/</guid><description>Machine Learning Casual Talks 第12回を開催しました。 前回から少し開きがあり、7ヶ月ぶりの開催となりました。
 https://mlct.connpass.com/event/172550/
 今回の個人的なテーマはベストプラクティスとアンチパターンです。
 @keigohtr さんには、AWSの各種サービスを使った機械学習実験基盤をアベジャの適用事例と重ね合わせて、説得力のあるベストプラクティスを語っていただきました。 @yuzutas0 さんには、機械学習の前に、データのマネジメントがいかに必要かを語っていただきました。建設的に改善していこうぜという未来が語られていて、個人的にお話を依頼した甲斐がありました 同僚の @overs_5121 さんには、メルカリ : TensorFlow Lite で、気付きにくい便利機能をユーザーに提唱 の裏話や、適用までの泥臭い事例をお話していただきました。 登壇者の皆様、改めて登壇の依頼をご快諾いただきありがとうございました。
@@ -103,6 +102,8 @@ Data Scientists : ビジネスサイドを理解し、他者にわかりやす�
 Data Engineer : 分散プログラミングを意識して構築できる職能。DE は卓越したプログラミングスキルとシステム構成力を持つ。定義 : つまりビッグデータに対してシステム的に解決できるスキル。クラスタ設計までが Data Engineer の役割であり運用(Ops)はやらない
 from : https://www.oreilly.com/ideas/data-engineers-vs-data-scientists
 Data Scientists と Data Engineer の互いの特化したスキルは補完しあってこそ輝く。 Data Scientist がデータパイプラインを作ると悲劇が起きてしまう。多くの企業が Data Scientist を Data Engineer として雇っているが、それは Data Scientists のスペックを活かしきれず、20–30%の効率で働かせてしまっている。そしてその ROI はめちゃくちゃ悪い。Data Scientists は適切なツールと選択肢を熟知していない(そして Data Engineer はシステムデザインと熟知しているのでミスは侵さない) e.g. 実際著者が聞いたこんな話がある。 Data Scientists が Apache Spark を使って 10GB のデータ処理を行うのに 1 回 15m の時間がかかっていた。(だが RDBMS を使えば、10ms で終わる) Data Scientist は彼らの流儀を疑うこと無く 1 日に 16 回 Spark の処理を実行しており、15mx16=240m つまり 4h の時間を無駄にしてる。RDBMS を使えば、160ms で終わるというのに… Data Scientist が頑張ってシステムを構築するが、職能の限界で Data Engineer しか作れないシステムなので時間とお金の浪費になった 実情 : Data Scientist として雇われたのに、Data Engineer として働かざるを得ない人がほとんどだ 理想的な人材配置 Case : 初期の組織: 2–3 人の Data Engineer : DataScientist Group Case : 更に複雑な事に取り組みたい 4–5 人の Data Engineer : 1 Data Scientist Data Engineer change to Data Scientist の王道 → それが新しい職種 : Machine Learning Engineer!</description></item><item><title>Google, Facebookが提供する機械学習基盤まとめ</title><link>https://shunyaueta.com/posts/2018-04-09/</link><pubDate>Mon, 09 Apr 2018 13:55:44 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-09/</guid><description>Google, Facebook の機械学習基盤情報をまとめました
+Podcastでも紹介しました
+#2 Facebook とGoogleの機械学習基盤について at just4fun.fm
 TFX
 社内の勉強会で Google, Facebook が提供する機械学習基盤に関する論文を紹介したので、その資料を公開します#### 経緯
 機械学習をサービスとして提供開始すると、継続的な学習やプロダクション環境での機械学習の提供はモデル構築以外にもいろいろと考える問題が多くなります ¹
@@ -111,8 +112,7 @@ TFX
 そのためプロダクションレディなレベルで機械学習を提供できるプラットフォームを各社が提案しておりその中でも Google, Facebook の事例を提供します。
 TL; DR; FBLearner: MLaaS の事例として最初に読むべき論文、MLaaS をどのような戦略で提供しているかを抽象的にまなべるため、鳥瞰図として読みましょう TFX は逆に機械学習基盤が必要とする技術スタックや要件などを詳細に説明しており、教科書的な立ち位置です。社内で機械学習基盤を内製したい場合に詳しく読み込むこと必須 両社とも MLaaS をスケーラブルに提供する環境ができており、サービスのコアテクノロジーになっている Google : Tensorflow Expand TFX: A tensor flow-based production-scale machine learning platform
 Facebook : FBLeaner Applied machine learning at facebook a datacenter infrastructure perspective HPCA18
-ONNX を見ていると TensorFlow VS. ONNX 陣営が出来つつありどちらのプラットフォームに乗るかの戦略が大事だなと思います。
-Google はモバイル上の ML から超大規模分散学習まで TF シリーズで提供、実際のサービング環境も TFServing というスタックを提供しはじめていて個人的に TensorFlow が何歩も先にいっているという所感</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
+ONNX を見ていると TensorFlow VS.</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
 発表者の顔は隠しています。なにか問題があればお伝え下さい。
 Team AI Meetup #1 (2018/02/13 19:00〜)
 Twitter: #mercari_ai
