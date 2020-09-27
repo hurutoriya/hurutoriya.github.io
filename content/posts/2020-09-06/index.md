@@ -11,6 +11,10 @@ tags:
 
 MLOpsの査読付き国際会議 [2020 USENIX Conference on Operational Machine Learning](https://www.usenix.org/conference/opml20) (略称 OpML'20)に論文が採択されたので、登壇してきた。
 
+Podcastでも紹介しました
+
+[#1 MLOps の国際会議 OpML20 について at just4fun.fm](https://anchor.fm/hurutoriya/episodes/1-MLOps--OpML20-ek0nr3/a-a58em8)
+
 ## MLOpsの査読付き国際会議とOpMLの立ち位置
 
 機械学習エンジニアリング・MLOpsの領域の会議でも一番有名なものとして2018年に発足した[MLSys](https://mlsys.org/)があります。(ちなみに最初はSysMLという名前でした)

@@ -12,27 +12,27 @@ tags:
 
 eBay が ARCore を使った商品の梱包測定機能を提供しているので試した
 
-![image](/posts/2018-04-16_ebayのar測定機能を試してみた/images/1.png)
+![image](/posts/2018-04-16_ebay/images/1.png)
 
-![image](/posts/2018-04-16_ebayのar測定機能を試してみた/images/2.png)
+![image](/posts/2018-04-16_ebay/images/2.png)
 
-![image](/posts/2018-04-16_ebayのar測定機能を試してみた/images/3.png)
+![image](/posts/2018-04-16_ebay/images/3.png)
 
 梱包測定の仕組みとしては、ARCore(今回は Pixel2 XL で試した)で平面検出を行って、そこに eBay のダンボールオブジェクトを設置することで、ダンボールに入るかどうかを判定できる。
 
-![image](/posts/2018-04-16_ebayのar測定機能を試してみた/images/4.png)
+![image](/posts/2018-04-16_ebay/images/4.png)
 
-![image](/posts/2018-04-16_ebayのar測定機能を試してみた/images/5.png)
+![image](/posts/2018-04-16_ebay/images/5.png)
 
-![image](/posts/2018-04-16_ebayのar測定機能を試してみた/images/6.png)
+![image](/posts/2018-04-16_ebay/images/6.png)
 
 下のダンボールアイコンを選択して、検出された平面をタップするとダンボールオブジェクトを設置できる
 
-![image](/posts/2018-04-16_ebayのar測定機能を試してみた/images/7.png)
+![image](/posts/2018-04-16_ebay/images/7.png)
 
-![image](/posts/2018-04-16_ebayのar測定機能を試してみた/images/8.png)
+![image](/posts/2018-04-16_ebay/images/8.png)
 
-![image](/posts/2018-04-16_ebayのar測定機能を試してみた/images/9.png)
+![image](/posts/2018-04-16_ebay/images/9.png)
 
 今回例として用いた MBP の空箱だと ARCore が空箱自体を平面と認識してしまうという罠があるので、床で平面検知を終えてから商品を置くという裏技が必要
 

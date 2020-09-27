@@ -11,7 +11,12 @@ tags:
 
 Google, Facebook の機械学習基盤情報をまとめました
 
-![image](/posts/2018-04-09_google-facebookが提供する機械学習基盤まとめ/images/1.gif)
+Podcastでも紹介しました
+
+[#2 Facebook とGoogleの機械学習基盤について at just4fun.fm](https://anchor.fm/hurutoriya/episodes/2-Facebook-Google-ek6gm7/a-a58em8)
+
+
+![image](/posts/2018-04-09/images/1.gif)
 
 TFX
 
@@ -19,7 +24,7 @@ TFX
 
 機械学習をサービスとして提供開始すると、継続的な学習やプロダクション環境での機械学習の提供はモデル構築以外にもいろいろと考える問題が多くなります ¹
 
-![image](/posts/2018-04-09_google-facebookが提供する機械学習基盤まとめ/images/2.png)
+![image](/posts/2018-04-09/images/2.png)
 
 [1] Hidden technical debt in Machine learning systems NIPS’15
 
