@@ -1,5 +1,5 @@
 ---
-title: "機械学習・ソフトウェアエンジニアリングのPodcast just4fun.fm を始めてみた"
+title: "機械学習・ソフトウェアエンジニアリングをテーマにしたPodcast just4fun.fm を始めてみた"
 date: 2020-09-27T21:57:47+09:00
 lang: ja
 tags:
