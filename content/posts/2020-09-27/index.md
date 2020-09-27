@@ -12,6 +12,7 @@ tags:
 
 
 扱うトピックとしては、普段学んだ機械学習、ソフトウェアエンジニアリング、読んだ論文やデータ分析などについて扱っていきます。
+もし、ご興味あれば購読お願いします。主要なPodcast Platformで購読可能です。
 
 - [just4fun.fm](https://anchor.fm/hurutoriya)
 - [Google Podcasts](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy81ZDVkZTE0L3BvZGNhc3QvcnNz)
