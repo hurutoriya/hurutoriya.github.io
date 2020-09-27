@@ -50,6 +50,10 @@ Anchor は [Spotify に買収されている](https://techcrunch.com/2019/02/14/
 
 ちょっと微妙な点としては、Episode description がうまくパースされずHTMLのリンクがanchor上だと死んでたり(他のGoogle Podcastなどはうまくパースされている)、音声データを扱う宿命でeditor がめちゃくちゃ重かったりする。後はスマホファーストでの開発の影響かweb appの機能が必要最低限なのは、優先度の問題で仕方ないと思いつつ改善されたら嬉しい・
 
+あと全然関係ないですが、[GoogleがPodcastの内容を文字起こしして、エピソード検索のメタデータとして活用している](https://www.searchenginejournal.com/google-makes-podcasts-searchable-by-automatically-transcribing-them/300875/#:~:text=Google%20Podcasts%20is%20making%20it,the%20name%20of%20the%20podcast.)らしくて感動した。
+
+日本語の音声認識モデルもGoogleで問題なく使われるクオリティになれば、Podcastの中身を検索できるのも近いですね
+
 ### チラ裏
 
 Podcast の由来は僕の好きな書籍の一つである [それがぼくには楽しかったから 全世界を巻き込んだリナックス革命の真実](https://amzn.to/3i9OZbv) から引用しました。
