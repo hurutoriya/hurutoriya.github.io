@@ -121,7 +121,7 @@ TFXに関する基礎的な考えは、[TFX: A TensorFlow-Based Production-Scale
 
 参考文献: [TensorFlow DataValidation](%5Bhttps://research.google/pubs/pub48974/%5D(https://research.google/pubs/pub48974/)) , [The ExampleGen TFX Pipeline Component](https://www.tensorflow.org/tfx/guide/examplegen)
 
-## #### Models (機械学習モデル)
+#### Models (機械学習モデル)
 
 ソフトウェアエンジニアがコンパイルされたコードを作成するのと同じように、機械学習エンジニアは、データとコードを基に「コンパイル」された機械学習プログラムを作成する。コンパイルされたものが、一般的には機械学習モデルとして知られている。この2種類のプログラムの性質は大きく異なっている。ソフトウェアはプログラムを通して一貫性を保つが、機械学習モデルは一貫性を保つことが非常に難しい。またこの一貫性の検証は何かしらの要約された形式でしか検証できない。(例えばラベルデータの部分集合で十分な精度が出ているなどの形でしか機械学習モデルの一貫性の保証ができない)
 
@@ -271,8 +271,7 @@ TFX pipeline では開発が進むことで、 [TFX Tuner](https://github.com/te
 
 機械学習を理解することは、プロダクション環境下に機械学習を適用する際に重要な側面の一つである。機械学習を理解するためにはモデル作成に付随する生成物の追跡( lineage) は最も重要事項の一つである。[struct2tensor](https://github.com/google/struct2tensor) (TensorFlow内部の構造化データのパーシングライブラリ)は構造化データにおいて、学習やサービング、解析においてより役立つTFXの技術の一つである。
 
-### Uphold High Standards And Best
-Practices
+### Uphold High Standards And Best Practices
 
 高水準の標準化とベストプラクティスの共有のために、TFXチームはこれからも科学的論文の執筆・公開を継続していくことでAlphabet 外にもこのベストプラクティスが普及することを狙っていく。AutoML pipelinesのベンチマークツールとして[NitroML](https://www.youtube.com/watch?v=SagSL38Kx0Q)も再現性の鍵の一つとなる。
 
