@@ -1,5 +1,5 @@
 ---
-title: " 抄訳 Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)"
+title: "抄訳 Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)"
 date: 2021-01-17T00:18:47+09:00
 lang: ja
 tags:
