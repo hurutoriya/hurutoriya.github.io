@@ -1,5 +1,5 @@
 ---
-title: "The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction"
+title: "[抄訳]: The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction"
 date: 2020-04-25T01:35:20+09:00
 lang: ja
 tags:
@@ -15,6 +15,8 @@ tags:
 
 ## Change log
 
+- 2021/02/03
+  - ML Test Score を簡単に計算できる[Google Spread Sheets](https://docs.google.com/spreadsheets/d/1xDts6-rzSApFJ6yg9mqpLx8CtSrrTCJAsnbfCuRHjvI/edit?usp=sharing) を公開
 - 2020/06/24
   - 著者のEric Breck さんに連絡をし、抄訳の公開を快諾していただきました。ありがとうございます。
   - 完全な citation 情報を追記しました。
@@ -36,11 +38,10 @@ tags:
 
 ## TL; DR;
 
-機械学習システムの信頼性を評価する`28`の実行可能なテスト項目とスコアリング方法を提案する。
-各項目は前回抄訳した[論文](https://shunyaueta.com/posts/2020-04-19/) が基となっている
-
-Google 内部の調査では、調査対象の 80%のチームが28のテスト項目の１つさえも行っていなかった。。(エンジニアリングに長けている Google 内部でさえも十分に行われてはいない)
-
+- 機械学習システムの信頼性を評価する`28`の実行可能なテスト項目とスコアリング方法を提案する。
+- Google 内部の調査では、調査対象の 80%のチームが28のテスト項目の１つさえも行っていなかった。。(エンジニアリングに長けている Google 内部でさえも十分に行われてはいない)
+- もし手持ちの機械学習システムのML Test Score を計算したい場合は、簡単に計算可能な [Google Spread Sheets](https://docs.google.com/spreadsheets/d/1xDts6-rzSApFJ6yg9mqpLx8CtSrrTCJAsnbfCuRHjvI/edit?usp=sharing) を公開します。
+  - [ML Test Score template - Googpe Spread Sheets](https://docs.google.com/spreadsheets/d/1xDts6-rzSApFJ6yg9mqpLx8CtSrrTCJAsnbfCuRHjvI/edit?usp=sharing)
 ## TEST FOR DATA AND FEATURES
 
 - Data 1: 期待する特徴量は全てスキーマで管理され、読み込み可能か?

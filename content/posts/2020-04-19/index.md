@@ -1,5 +1,5 @@
 ---
-title: "What’s your ML test score? A rubric for ML production systems"
+title: "[抄訳] What’s your ML test score? A rubric for ML production systems"
 date: 2020-04-19T22:18:10+09:00
 lang: ja
 tags:
@@ -15,6 +15,12 @@ NIPS206にて開催された [Reliable Machine Learning in the Wild - NIPS 2016 
 - [PDF](https://research.google/pubs/pub45742/)
 - [Slide](https://0586f9b3-a-62cb3a1a-s-sites.googlegroups.com/site/wildml2016nips/SculleySlides1.pdf?attachauth=ANoY7crr9fea9TxDl1EIyOScNG1yJSo3gBkHKOq5exLlPtetuZ_EiAKL3rJq7h17Nwcx82i0CSwmLWc97IQiQdTBODUaMhMm7CBrbpU7uQXx55Km8JFTLlOMIgFflPev0_chmj41VydTan6OjwAOfeQ_U5tRz7m-HHi0rKvumbALo74j5XV0NbPaXcQDbwInz3CdFaDamzvwOH7nn0V-DADxKf6Kqkv-SA%3D%3D&attredirects=0)
 - 発表動画もワークショップページにて公開されています。
+
+## change logs
+
+- 2021-04-25
+  - この原著論文の完全版になっている論文の抄訳を新たに公開しています。
+  - [[抄訳]: The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://shunyaueta.com/posts/2020-04-25/)
 
 *** 
 
