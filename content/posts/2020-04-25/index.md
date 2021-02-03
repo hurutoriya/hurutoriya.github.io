@@ -41,6 +41,7 @@ tags:
 - 機械学習システムの信頼性を評価する`28`の実行可能なテスト項目とスコアリング方法を提案する。
 - Google 内部の調査では、調査対象の 80%のチームが28のテスト項目の１つさえも行っていなかった。。(エンジニアリングに長けている Google 内部でさえも十分に行われてはいない)
 - もし手持ちの機械学習システムのML Test Score を計算したい場合は、簡単に計算可能な [Google Spread Sheets](https://docs.google.com/spreadsheets/d/1xDts6-rzSApFJ6yg9mqpLx8CtSrrTCJAsnbfCuRHjvI/edit?usp=sharing) を公開します。
+  - 閲覧権限のみ与えているので、`File-> Make a copy` を選択して手元にコピーしてお使いください。
   - [ML Test Score template - Googpe Spread Sheets](https://docs.google.com/spreadsheets/d/1xDts6-rzSApFJ6yg9mqpLx8CtSrrTCJAsnbfCuRHjvI/edit?usp=sharing)
 ## TEST FOR DATA AND FEATURES
 
