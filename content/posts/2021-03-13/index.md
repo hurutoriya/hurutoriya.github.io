@@ -20,7 +20,7 @@ pipenv, version 2020.11.15
 ## 直面した問題
 
 ```bash
-./papp/
+./app/
 ├── model
 │   └── setup.py
 └── serving
