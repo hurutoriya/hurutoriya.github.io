@@ -35,13 +35,13 @@ serving ディレクトリで、以下のコマンドを入力すればローカ
 pipenv install --editable ../model
 ```
 
-依存関係をすべて記述するはずのPipenv.lock には、`model`のパスのみが記述され、ローカルパッケージの依存パッケージが記述されていない。
+依存関係をすべて記述するはずのPipenv.lock には、`model`のパスのみが記述され、ローカルパッケージが要求する依存パッケージが記述されていない。
 
-原因を探してみたところ、不明だが
+原因を探してみたところ、
 
-[Installing a local package with `pipenv install '-e .'` doesn't save dependencies #1024](https://github.com/pypa/pipenv/issues/1024) 
+[Installing a local package with pipenv install '-e .' doesn't save dependencies #1024](https://github.com/pypa/pipenv/issues/1024) 
 
-と同じ GitHub issue を発見しダメ元で pipenv を以下のコマンドでダウングレードして見たところ
+同じ GitHub issue を発見しダメ元で pipenv を以下のコマンドでダウングレードして見たところ
 
 ```bash
 pip install pipenv==2018.11.26
