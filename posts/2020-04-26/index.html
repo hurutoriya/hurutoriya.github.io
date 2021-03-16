@@ -1,101 +1,86 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="例えば以下のように、デフォルト引数で初期化を行い、文字列を追加する関数があるとする。
-def append_to(values=[]): values.append(&#34;Hoge&#34;) return values 期待する振る舞いとしては。
-In [14]: def append_to(values=[]): ...: values.append(&#34;Hoge&#34;) ...: return values ...: In [17]: append_to() Out[17]: ['Hoge'] In [18]: append_to() Out[18]: ['Hoge'] と関数呼び出しごとに、values は空のリストに初期化されるので上記のように返ってきてほしい
-だが、実際に表示されるのは
-In [14]: def append_to(values=[]): ...: values.append(&#34;Hoge&#34;) ...: return values ...: In [17]: append_to() Out[17]: ['Hoge'] In [18]: append_to() Out[18]: ['Hoge', 'Hoge'] である。
-実際に内部で何が起きているかというと
-In [23]: def append_to(values=[]): ...: values.append(&#34;Hoge&#34;) ...: return values ...: In [24]: pinfo append_to Signature: append_to(values=[]) Docstring: <no docstring> File: ~/<ipython-input-23-4530a91351ab> Type: function In [25]: append_to() Out[25]: ['Hoge'] In [26]: pinfo append_to Signature: append_to(values=['Hoge']) Docstring: <no docstring> File: ~/<ipython-input-23-4530a91351ab> Type: function In [27]: append_to() Out[27]: ['Hoge', 'Hoge'] In [28]: pinfo append_to Signature: append_to(values=['Hoge', 'Hoge']) Docstring: <no docstring> File: ~/<ipython-input-23-4530a91351ab> Type: function が起きている。 pinfo は ipython上で、オブジェクトの情報が確認できる便利コマンドです。 関数呼び出しごとに、デフォルト引数のvalues が上書きされていっていることがわかります。 これは、Pythonのデフォルト引数が、関数が定義されたときのみ評価され、毎回毎回評価されるわけではない。(Ruby は評価される) ここでわかるのは、mutable"><meta name=theme-color content="#d3381c"><meta property="og:title" content="Pythonの関数のデフォルト引数はmutable(上書きされる) • Software Engineer as Data Scientist"><meta property="og:description" content="例えば以下のように、デフォルト引数で初期化を行い、文字列を追加する関数があるとする。
-def append_to(values=[]): values.append(&#34;Hoge&#34;) return values 期待する振る舞いとしては。
-In [14]: def append_to(values=[]): ...: values.append(&#34;Hoge&#34;) ...: return values ...: In [17]: append_to() Out[17]: ['Hoge'] In [18]: append_to() Out[18]: ['Hoge'] と関数呼び出しごとに、values は空のリストに初期化されるので上記のように返ってきてほしい
-だが、実際に表示されるのは
-In [14]: def append_to(values=[]): ...: values.append(&#34;Hoge&#34;) ...: return values ...: In [17]: append_to() Out[17]: ['Hoge'] In [18]: append_to() Out[18]: ['Hoge', 'Hoge'] である。
-実際に内部で何が起きているかというと
-In [23]: def append_to(values=[]): ...: values.append(&#34;Hoge&#34;) ...: return values ...: In [24]: pinfo append_to Signature: append_to(values=[]) Docstring: <no docstring> File: ~/<ipython-input-23-4530a91351ab> Type: function In [25]: append_to() Out[25]: ['Hoge'] In [26]: pinfo append_to Signature: append_to(values=['Hoge']) Docstring: <no docstring> File: ~/<ipython-input-23-4530a91351ab> Type: function In [27]: append_to() Out[27]: ['Hoge', 'Hoge'] In [28]: pinfo append_to Signature: append_to(values=['Hoge', 'Hoge']) Docstring: <no docstring> File: ~/<ipython-input-23-4530a91351ab> Type: function が起きている。 pinfo は ipython上で、オブジェクトの情報が確認できる便利コマンドです。 関数呼び出しごとに、デフォルト引数のvalues が上書きされていっていることがわかります。 これは、Pythonのデフォルト引数が、関数が定義されたときのみ評価され、毎回毎回評価されるわけではない。(Ruby は評価される) ここでわかるのは、mutable"><meta property="og:url" content="https://shunyaueta.com/posts/2020-04-26/"><meta property="og:site_name" content="Software Engineer as Data Scientist"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:tag" content="Python"><meta property="article:published_time" content="2020-04-26T12:04:13+09:00"><meta property="article:modified_time" content="2020-04-26T12:04:13+09:00"><meta name=twitter:card content="summary"><meta name=twitter:site content="@hurutoriya"><meta name=generator content="Hugo 0.67.1"><title>Pythonの関数のデフォルト引数はmutable(上書きされる) • Software Engineer as Data Scientist</title><link rel=canonical href=https://shunyaueta.com/posts/2020-04-26/><link rel=icon href=/favicon.ico><link rel=stylesheet href=/assets/css/main.ab98e12b.css><link rel=stylesheet href=/css/custom.css><style>:root{--color-accent:#d3381c}</style><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-39994406-11','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><script data-ad-client=ca-pub-8604812913439531 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script></head><body class="page type-posts"><div class=site><a class=screen-reader-text href=#content>Skip to Content</a><div class=main><div class=header-widgets><div class=container><style>.widget-breadcrumbs li:after{content:'\2f '}</style><section class="widget widget-breadcrumbs sep-after"><nav id=breadcrumbs><ol><li><a href=/>Software Engineer as Data Scientist</a></li><li><a href=/posts/>Posts</a></li><li><span>Pythonの関数のデフォルト引数はmutable(上書きされる)</span></li></ol></nav></section></div></div><header id=header class="header site-header"><div class="container sep-after"><div class=header-info><p class="site-title title">Software Engineer as Data Scientist</p><p class="desc site-desc">Enjoy Software Engineering & Data Science!!</p></div></div></header><main id=content><article lang=ja class=entry><header class="header entry-header"><div class="container sep-after"><div class=header-info><h1 class=title>Pythonの関数のデフォルト引数はmutable(上書きされる)</h1></div><div class=entry-meta><span class=posted-on><svg class="icon" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span class=screen-reader-text>Posted on</span>
-<time class=entry-date datetime=2020-04-26T12:04:13+09:00>2020.04.26</time></span>
-<span class=reading-time><svg class="icon" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 15 15"/></svg>One min read</span></div></div></header><div class="container entry-content"><p>例えば以下のように、デフォルト引数で初期化を行い、文字列を追加する関数があるとする。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>append_to</span>(values<span style=color:#f92672>=</span>[]):
-    values<span style=color:#f92672>.</span>append(<span style=color:#e6db74>&#34;Hoge&#34;</span>)
-    <span style=color:#66d9ef>return</span> values
-</code></pre></div><p>期待する振る舞いとしては。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>In [<span style=color:#ae81ff>14</span>]: <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>append_to</span>(values<span style=color:#f92672>=</span>[]):
-    <span style=color:#f92672>...</span>:     values<span style=color:#f92672>.</span>append(<span style=color:#e6db74>&#34;Hoge&#34;</span>)
-    <span style=color:#f92672>...</span>:     <span style=color:#66d9ef>return</span> values
-    <span style=color:#f92672>...</span>:
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Shunya Ueta (a.k.a hurutoriya) personal website"><link rel="shortcut icon" href=https://shunyaueta.com/favicon.ico><link rel=stylesheet href=/css/style.min.css><title>Pythonの関数のデフォルト引数はmutable(上書きされる)</title></head><body><header id=banner><h2><a href=https://shunyaueta.com/>Software Engineer as Data Scientist</a></h2><nav><ul><li><a href=/ title=posts>posts</a></li><li><a href=/about/ title=about>about</a></li></ul></nav></header><main id=content><article><header id=post-header><h1>Pythonの関数のデフォルト引数はmutable(上書きされる)</h1><time>April 26, 2020</time></header><p>例えば以下のように、デフォルト引数で初期化を行い、文字列を追加する関数があるとする。</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=k>def</span> <span class=nf>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=p>[]):</span>
+    <span class=n>values</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=s2>&#34;Hoge&#34;</span><span class=p>)</span>
+    <span class=k>return</span> <span class=n>values</span>
+</code></pre></div><p>期待する振る舞いとしては。</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>In</span> <span class=p>[</span><span class=mi>14</span><span class=p>]:</span> <span class=k>def</span> <span class=nf>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=p>[]):</span>
+    <span class=o>...</span><span class=p>:</span>     <span class=n>values</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=s2>&#34;Hoge&#34;</span><span class=p>)</span>
+    <span class=o>...</span><span class=p>:</span>     <span class=k>return</span> <span class=n>values</span>
+    <span class=o>...</span><span class=p>:</span>
 
-In [<span style=color:#ae81ff>17</span>]: append_to()
-Out[<span style=color:#ae81ff>17</span>]: [<span style=color:#e6db74>&#39;Hoge&#39;</span>]
+<span class=n>In</span> <span class=p>[</span><span class=mi>17</span><span class=p>]:</span> <span class=n>append_to</span><span class=p>()</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>17</span><span class=p>]:</span> <span class=p>[</span><span class=s1>&#39;Hoge&#39;</span><span class=p>]</span>
 
-In [<span style=color:#ae81ff>18</span>]: append_to()
-Out[<span style=color:#ae81ff>18</span>]: [<span style=color:#e6db74>&#39;Hoge&#39;</span>]
-</code></pre></div><p>と関数呼び出しごとに、<code>values</code> は空のリストに初期化されるので上記のように返ってきてほしい</p><p>だが、実際に表示されるのは</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>In [<span style=color:#ae81ff>14</span>]: <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>append_to</span>(values<span style=color:#f92672>=</span>[]):
-    <span style=color:#f92672>...</span>:     values<span style=color:#f92672>.</span>append(<span style=color:#e6db74>&#34;Hoge&#34;</span>)
-    <span style=color:#f92672>...</span>:     <span style=color:#66d9ef>return</span> values
-    <span style=color:#f92672>...</span>:
+<span class=n>In</span> <span class=p>[</span><span class=mi>18</span><span class=p>]:</span> <span class=n>append_to</span><span class=p>()</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>18</span><span class=p>]:</span> <span class=p>[</span><span class=s1>&#39;Hoge&#39;</span><span class=p>]</span>
+</code></pre></div><p>と関数呼び出しごとに、<code>values</code> は空のリストに初期化されるので上記のように返ってきてほしい</p><p>だが、実際に表示されるのは</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>In</span> <span class=p>[</span><span class=mi>14</span><span class=p>]:</span> <span class=k>def</span> <span class=nf>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=p>[]):</span>
+    <span class=o>...</span><span class=p>:</span>     <span class=n>values</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=s2>&#34;Hoge&#34;</span><span class=p>)</span>
+    <span class=o>...</span><span class=p>:</span>     <span class=k>return</span> <span class=n>values</span>
+    <span class=o>...</span><span class=p>:</span>
 
-In [<span style=color:#ae81ff>17</span>]: append_to()
-Out[<span style=color:#ae81ff>17</span>]: [<span style=color:#e6db74>&#39;Hoge&#39;</span>]
+<span class=n>In</span> <span class=p>[</span><span class=mi>17</span><span class=p>]:</span> <span class=n>append_to</span><span class=p>()</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>17</span><span class=p>]:</span> <span class=p>[</span><span class=s1>&#39;Hoge&#39;</span><span class=p>]</span>
 
-In [<span style=color:#ae81ff>18</span>]: append_to()
-Out[<span style=color:#ae81ff>18</span>]: [<span style=color:#e6db74>&#39;Hoge&#39;</span>, <span style=color:#e6db74>&#39;Hoge&#39;</span>]
-</code></pre></div><p>である。</p><p>実際に内部で何が起きているかというと</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>In [<span style=color:#ae81ff>23</span>]: <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>append_to</span>(values<span style=color:#f92672>=</span>[]):
-    <span style=color:#f92672>...</span>:     values<span style=color:#f92672>.</span>append(<span style=color:#e6db74>&#34;Hoge&#34;</span>)
-    <span style=color:#f92672>...</span>:     <span style=color:#66d9ef>return</span> values
-    <span style=color:#f92672>...</span>:
+<span class=n>In</span> <span class=p>[</span><span class=mi>18</span><span class=p>]:</span> <span class=n>append_to</span><span class=p>()</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>18</span><span class=p>]:</span> <span class=p>[</span><span class=s1>&#39;Hoge&#39;</span><span class=p>,</span> <span class=s1>&#39;Hoge&#39;</span><span class=p>]</span>
+</code></pre></div><p>である。</p><p>実際に内部で何が起きているかというと</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>In</span> <span class=p>[</span><span class=mi>23</span><span class=p>]:</span> <span class=k>def</span> <span class=nf>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=p>[]):</span>
+    <span class=o>...</span><span class=p>:</span>     <span class=n>values</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=s2>&#34;Hoge&#34;</span><span class=p>)</span>
+    <span class=o>...</span><span class=p>:</span>     <span class=k>return</span> <span class=n>values</span>
+    <span class=o>...</span><span class=p>:</span>
 
-In [<span style=color:#ae81ff>24</span>]: pinfo append_to
-Signature: append_to(values<span style=color:#f92672>=</span>[])
-Docstring: <span style=color:#f92672>&lt;</span>no docstring<span style=color:#f92672>&gt;</span>
-File:      <span style=color:#f92672>~/&lt;</span>ipython<span style=color:#f92672>-</span>input<span style=color:#f92672>-</span><span style=color:#ae81ff>23</span><span style=color:#f92672>-</span><span style=color:#ae81ff>4530</span>a91351ab<span style=color:#f92672>&gt;</span>
-Type:      function
+<span class=n>In</span> <span class=p>[</span><span class=mi>24</span><span class=p>]:</span> <span class=n>pinfo</span> <span class=n>append_to</span>
+<span class=n>Signature</span><span class=p>:</span> <span class=n>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=p>[])</span>
+<span class=n>Docstring</span><span class=p>:</span> <span class=o>&lt;</span><span class=n>no</span> <span class=n>docstring</span><span class=o>&gt;</span>
+<span class=n>File</span><span class=p>:</span>      <span class=o>~/&lt;</span><span class=n>ipython</span><span class=o>-</span><span class=nb>input</span><span class=o>-</span><span class=mi>23</span><span class=o>-</span><span class=mi>4530</span><span class=n>a91351ab</span><span class=o>&gt;</span>
+<span class=n>Type</span><span class=p>:</span>      <span class=n>function</span>
 
-In [<span style=color:#ae81ff>25</span>]: append_to()
-Out[<span style=color:#ae81ff>25</span>]: [<span style=color:#e6db74>&#39;Hoge&#39;</span>]
+<span class=n>In</span> <span class=p>[</span><span class=mi>25</span><span class=p>]:</span> <span class=n>append_to</span><span class=p>()</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>25</span><span class=p>]:</span> <span class=p>[</span><span class=s1>&#39;Hoge&#39;</span><span class=p>]</span>
 
-In [<span style=color:#ae81ff>26</span>]: pinfo append_to
-Signature: append_to(values<span style=color:#f92672>=</span>[<span style=color:#e6db74>&#39;Hoge&#39;</span>])
-Docstring: <span style=color:#f92672>&lt;</span>no docstring<span style=color:#f92672>&gt;</span>
-File:      <span style=color:#f92672>~/&lt;</span>ipython<span style=color:#f92672>-</span>input<span style=color:#f92672>-</span><span style=color:#ae81ff>23</span><span style=color:#f92672>-</span><span style=color:#ae81ff>4530</span>a91351ab<span style=color:#f92672>&gt;</span>
-Type:      function
+<span class=n>In</span> <span class=p>[</span><span class=mi>26</span><span class=p>]:</span> <span class=n>pinfo</span> <span class=n>append_to</span>
+<span class=n>Signature</span><span class=p>:</span> <span class=n>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;Hoge&#39;</span><span class=p>])</span>
+<span class=n>Docstring</span><span class=p>:</span> <span class=o>&lt;</span><span class=n>no</span> <span class=n>docstring</span><span class=o>&gt;</span>
+<span class=n>File</span><span class=p>:</span>      <span class=o>~/&lt;</span><span class=n>ipython</span><span class=o>-</span><span class=nb>input</span><span class=o>-</span><span class=mi>23</span><span class=o>-</span><span class=mi>4530</span><span class=n>a91351ab</span><span class=o>&gt;</span>
+<span class=n>Type</span><span class=p>:</span>      <span class=n>function</span>
 
-In [<span style=color:#ae81ff>27</span>]: append_to()
-Out[<span style=color:#ae81ff>27</span>]: [<span style=color:#e6db74>&#39;Hoge&#39;</span>, <span style=color:#e6db74>&#39;Hoge&#39;</span>]
+<span class=n>In</span> <span class=p>[</span><span class=mi>27</span><span class=p>]:</span> <span class=n>append_to</span><span class=p>()</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>27</span><span class=p>]:</span> <span class=p>[</span><span class=s1>&#39;Hoge&#39;</span><span class=p>,</span> <span class=s1>&#39;Hoge&#39;</span><span class=p>]</span>
 
-In [<span style=color:#ae81ff>28</span>]: pinfo append_to
-Signature: append_to(values<span style=color:#f92672>=</span>[<span style=color:#e6db74>&#39;Hoge&#39;</span>, <span style=color:#e6db74>&#39;Hoge&#39;</span>])
-Docstring: <span style=color:#f92672>&lt;</span>no docstring<span style=color:#f92672>&gt;</span>
-File:      <span style=color:#f92672>~/&lt;</span>ipython<span style=color:#f92672>-</span>input<span style=color:#f92672>-</span><span style=color:#ae81ff>23</span><span style=color:#f92672>-</span><span style=color:#ae81ff>4530</span>a91351ab<span style=color:#f92672>&gt;</span>
-Type:      function
+<span class=n>In</span> <span class=p>[</span><span class=mi>28</span><span class=p>]:</span> <span class=n>pinfo</span> <span class=n>append_to</span>
+<span class=n>Signature</span><span class=p>:</span> <span class=n>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;Hoge&#39;</span><span class=p>,</span> <span class=s1>&#39;Hoge&#39;</span><span class=p>])</span>
+<span class=n>Docstring</span><span class=p>:</span> <span class=o>&lt;</span><span class=n>no</span> <span class=n>docstring</span><span class=o>&gt;</span>
+<span class=n>File</span><span class=p>:</span>      <span class=o>~/&lt;</span><span class=n>ipython</span><span class=o>-</span><span class=nb>input</span><span class=o>-</span><span class=mi>23</span><span class=o>-</span><span class=mi>4530</span><span class=n>a91351ab</span><span class=o>&gt;</span>
+<span class=n>Type</span><span class=p>:</span>      <span class=n>function</span>
 </code></pre></div><p>が起きている。
 <code>pinfo</code> は ipython上で、オブジェクトの情報が確認できる便利コマンドです。
 関数呼び出しごとに、デフォルト引数のvalues が上書きされていっていることがわかります。
 これは、Pythonのデフォルト引数が、関数が定義されたときのみ評価され、毎回毎回評価されるわけではない。(Ruby は評価される)
 ここでわかるのは、mutable</p><h2 id=対処方法>対処方法</h2><p>関数が呼び出されるごとに新しいオブジェクトを作成する。
-何も設定されていないときは、デフォルト引数を使うことで検知する</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>append_to</span>(values<span style=color:#f92672>=</span>None):
-    <span style=color:#66d9ef>if</span> values <span style=color:#f92672>is</span> None:
-        values <span style=color:#f92672>=</span> []
-    values<span style=color:#f92672>.</span>append(<span style=color:#e6db74>&#34;Hoge&#34;</span>)
-    <span style=color:#66d9ef>return</span> values
-</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>In [<span style=color:#ae81ff>34</span>]: <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>append_to</span>(values<span style=color:#f92672>=</span>None):
-    <span style=color:#f92672>...</span>:     <span style=color:#66d9ef>if</span> values <span style=color:#f92672>is</span> None:
-    <span style=color:#f92672>...</span>:         values <span style=color:#f92672>=</span> []
-    <span style=color:#f92672>...</span>:     values<span style=color:#f92672>.</span>append(<span style=color:#e6db74>&#34;Hoge&#34;</span>)
-    <span style=color:#f92672>...</span>:     <span style=color:#66d9ef>return</span> values
-    <span style=color:#f92672>...</span>:
+何も設定されていないときは、デフォルト引数を使うことで検知する</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=k>def</span> <span class=nf>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=bp>None</span><span class=p>):</span>
+    <span class=k>if</span> <span class=n>values</span> <span class=ow>is</span> <span class=bp>None</span><span class=p>:</span>
+        <span class=n>values</span> <span class=o>=</span> <span class=p>[]</span>
+    <span class=n>values</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=s2>&#34;Hoge&#34;</span><span class=p>)</span>
+    <span class=k>return</span> <span class=n>values</span>
+</code></pre></div><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=n>In</span> <span class=p>[</span><span class=mi>34</span><span class=p>]:</span> <span class=k>def</span> <span class=nf>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=bp>None</span><span class=p>):</span>
+    <span class=o>...</span><span class=p>:</span>     <span class=k>if</span> <span class=n>values</span> <span class=ow>is</span> <span class=bp>None</span><span class=p>:</span>
+    <span class=o>...</span><span class=p>:</span>         <span class=n>values</span> <span class=o>=</span> <span class=p>[]</span>
+    <span class=o>...</span><span class=p>:</span>     <span class=n>values</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=s2>&#34;Hoge&#34;</span><span class=p>)</span>
+    <span class=o>...</span><span class=p>:</span>     <span class=k>return</span> <span class=n>values</span>
+    <span class=o>...</span><span class=p>:</span>
 
-In [<span style=color:#ae81ff>35</span>]: append_to()
-Out[<span style=color:#ae81ff>35</span>]: [<span style=color:#e6db74>&#39;Hoge&#39;</span>]
+<span class=n>In</span> <span class=p>[</span><span class=mi>35</span><span class=p>]:</span> <span class=n>append_to</span><span class=p>()</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>35</span><span class=p>]:</span> <span class=p>[</span><span class=s1>&#39;Hoge&#39;</span><span class=p>]</span>
 
-In [<span style=color:#ae81ff>36</span>]: pinfo append_to
-Signature: append_to(values<span style=color:#f92672>=</span>None)
-Docstring: <span style=color:#f92672>&lt;</span>no docstring<span style=color:#f92672>&gt;</span>
-File:      <span style=color:#f92672>~/&lt;</span>ipython<span style=color:#f92672>-</span>input<span style=color:#f92672>-</span><span style=color:#ae81ff>34</span><span style=color:#f92672>-</span><span style=color:#ae81ff>8e047</span>f793784<span style=color:#f92672>&gt;</span>
-Type:      function
+<span class=n>In</span> <span class=p>[</span><span class=mi>36</span><span class=p>]:</span> <span class=n>pinfo</span> <span class=n>append_to</span>
+<span class=n>Signature</span><span class=p>:</span> <span class=n>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=bp>None</span><span class=p>)</span>
+<span class=n>Docstring</span><span class=p>:</span> <span class=o>&lt;</span><span class=n>no</span> <span class=n>docstring</span><span class=o>&gt;</span>
+<span class=n>File</span><span class=p>:</span>      <span class=o>~/&lt;</span><span class=n>ipython</span><span class=o>-</span><span class=nb>input</span><span class=o>-</span><span class=mi>34</span><span class=o>-</span><span class=mf>8e047</span><span class=n>f793784</span><span class=o>&gt;</span>
+<span class=n>Type</span><span class=p>:</span>      <span class=n>function</span>
 
-In [<span style=color:#ae81ff>37</span>]: append_to()
-Out[<span style=color:#ae81ff>37</span>]: [<span style=color:#e6db74>&#39;Hoge&#39;</span>]
+<span class=n>In</span> <span class=p>[</span><span class=mi>37</span><span class=p>]:</span> <span class=n>append_to</span><span class=p>()</span>
+<span class=n>Out</span><span class=p>[</span><span class=mi>37</span><span class=p>]:</span> <span class=p>[</span><span class=s1>&#39;Hoge&#39;</span><span class=p>]</span>
 
-In [<span style=color:#ae81ff>38</span>]: pinfo append_to
-Signature: append_to(values<span style=color:#f92672>=</span>None)
-Docstring: <span style=color:#f92672>&lt;</span>no docstring<span style=color:#f92672>&gt;</span>
-File:      <span style=color:#f92672>~/&lt;</span>ipython<span style=color:#f92672>-</span>input<span style=color:#f92672>-</span><span style=color:#ae81ff>34</span><span style=color:#f92672>-</span><span style=color:#ae81ff>8e047</span>f793784<span style=color:#f92672>&gt;</span>
-Type:      function
-</code></pre></div><p>想定通りの動きになった</p><h2 id=ref>Ref</h2><ul><li><a href=https://docs.python-guide.org/writing/gotchas/>https://docs.python-guide.org/writing/gotchas/</a></li><li><a href=http://moqada.hatenablog.com/entry/20090206/1233935560>http://moqada.hatenablog.com/entry/20090206/1233935560</a></li></ul><h3>See Also</h3><ul><li><a href=/posts/2019-10-03/>pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL</a></li><li><a href=/posts/2019-09-25/>Tensorboard を わずか2行で Jupyter Notebook上で表示</a></li><li><a href=/posts/2019-06-17/>How to concat image using skimage</a></li><li><a href=/posts/2018-01-15/>Jupyter Notebookの差分を明瞭に確認する事ができるpackage : nbdime</a></li><li><a href=/posts/2018-01-13/>PythonでGaussian Kernelのアニメーションを作成</a></li></ul></div><footer class=entry-footer><div class="container sep-before"><div class=tags><svg class="icon" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2H12l8.59 8.59A2 2 0 0120.59 13.41z"/><line x1="7" y1="7" x2="7" y2="7"/></svg><span class=screen-reader-text>Tags: </span><a class=tag href=/tags/python/>Python</a></div></div></footer></article><nav class=entry-nav><div class=container><div class="prev-entry sep-before"><a href=/posts/2020-04-25/><span aria-hidden=true><svg class="icon" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><line x1="20" y1="12" x2="4" y2="12"/><polyline points="10 18 4 12 10 6"/></svg>Previous</span>
-<span class=screen-reader-text>Previous post: </span>[抄訳]: The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction</a></div><div class="next-entry sep-before"><a href=/posts/2020-04-27/><span class=screen-reader-text>Next post: </span>ソフトウェア開発における Upstream と Downstream の意味<span aria-hidden=true>Next<svg class="icon" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg></span></a></div></div></nav><section id=comments class=comments><div class="container sep-before"><div class=comments-area><script src=https://utteranc.es/client.js repo=hurutoriya/hurutoriya.github.io issue-term=url crossorigin=anonymous async></script></div></div></section></main><footer id=footer class=footer><div class="container sep-before"><section class="widget widget-about sep-after"><header><h2 class="title site-title"><a href=/>Shunya UETA</a></h2><div class=desc>Shunya UETA who is a working on Machine Learning as Software Engineer at <a href=https://about.mercari.com/en/>Mercari, inc</a>. Opinions are my own. → <a href=/about>See more detail</a></div></header></section><section class="widget widget-social_menu sep-after"><nav aria-label="Social Menu"><ul><li><a href=https://github.com/hurutoriya target=_blank rel=noopener><span class=screen-reader-text>Open Github account in new tab</span><svg class="icon" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77a5.44 5.44.0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg></a></li><li><a href=https://facebook.com/shunyaueta target=_blank rel=noopener><span class=screen-reader-text>Open Facebook account in new tab</span><svg class="icon" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a></li><li><a href=https://twitter.com/hurutoriya target=_blank rel=noopener><span class=screen-reader-text>Open Twitter account in new tab</span><svg class="icon" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z"/></svg></a></li><li><a href=https://linkedin.com/in/hurutoriya target=_blank rel=noopener><span class=screen-reader-text>Open Linkedin account in new tab</span><svg class="icon" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li></ul></nav></section><div class=copyright><p>&copy; 2013-2021 Shunya UETA</p></div></div></footer></div></div><script>window.__assets_js_src="/assets/js/"</script><script src=/assets/js/main.c3bcf2df.js></script><script src=/js/custom.js></script></body></html>
+<span class=n>In</span> <span class=p>[</span><span class=mi>38</span><span class=p>]:</span> <span class=n>pinfo</span> <span class=n>append_to</span>
+<span class=n>Signature</span><span class=p>:</span> <span class=n>append_to</span><span class=p>(</span><span class=n>values</span><span class=o>=</span><span class=bp>None</span><span class=p>)</span>
+<span class=n>Docstring</span><span class=p>:</span> <span class=o>&lt;</span><span class=n>no</span> <span class=n>docstring</span><span class=o>&gt;</span>
+<span class=n>File</span><span class=p>:</span>      <span class=o>~/&lt;</span><span class=n>ipython</span><span class=o>-</span><span class=nb>input</span><span class=o>-</span><span class=mi>34</span><span class=o>-</span><span class=mf>8e047</span><span class=n>f793784</span><span class=o>&gt;</span>
+<span class=n>Type</span><span class=p>:</span>      <span class=n>function</span>
+</code></pre></div><p>想定通りの動きになった</p><h2 id=ref>Ref</h2><ul><li><a href=https://docs.python-guide.org/writing/gotchas/>https://docs.python-guide.org/writing/gotchas/</a></li><li><a href=http://moqada.hatenablog.com/entry/20090206/1233935560>http://moqada.hatenablog.com/entry/20090206/1233935560</a></li></ul></article></main><footer id=footer>Copyright © 2013-2021 Shunya Ueta</footer></body></html>
