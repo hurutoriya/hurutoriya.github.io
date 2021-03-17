@@ -18,7 +18,7 @@ Jupyter 使ってると作図も Jupyter 上で完結させたいなぁ~って�
 
 [uclmr/egal](https://github.com/uclmr/egal)
 
-![image](/posts/2017-11-22_jupyter上でsvgのイラストやアニメーションが作成できるプラグイン-egel/images/1.gif)
+![image](/posts/2017-11-22/images/1.gif)
 
 egal GIF animation
 
@@ -30,15 +30,15 @@ egal GIF animation
 
 で拡張機能を有効にして使えるようになります。
 
-![image](/posts/2017-11-22_jupyter上でsvgのイラストやアニメーションが作成できるプラグイン-egel/images/2.png)
+![image](/posts/2017-11-22/images/2.png)
 
 ブラシアイコンをクリックすると新たなセルが生成される
 
-![image](/posts/2017-11-22_jupyter上でsvgのイラストやアニメーションが作成できるプラグイン-egel/images/3.gif)
+![image](/posts/2017-11-22/images/3.gif)
 
 👉 ボタンをクリックすると各オブジェクトの詳細なプロパティが調整できる
 
-![image](/posts/2017-11-22_jupyter上でsvgのイラストやアニメーションが作成できるプラグイン-egel/images/4.gif)
+![image](/posts/2017-11-22/images/4.gif)
 
 フレーム毎にオブジェクトを設定してアニメーションっぽくもできる
 

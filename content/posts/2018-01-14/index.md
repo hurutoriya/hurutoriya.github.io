@@ -12,7 +12,7 @@ tags:
 
 スタンディングディスカッション形式での会話を評価した研究
 
-![image](/posts/2018-01-14_analyzing-freestanding-conversational-groups-a-multimodal-approach-acmmm15-を読んだ/images/1.png)
+![image](/posts/2018-01-14/images/1.png)
 
 Summary Slide
 

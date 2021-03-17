@@ -9,7 +9,7 @@ tags:
 
 JupyterNotebook をリモートサーバー上で公開して、どこでも研究開発 &amp; 講義で Jupyterhub を利用するお話です。
 
-![image](/posts/2017-12-23_jupyternotebookをリモートサーバー上で公開してどこでも研究開発-講義でjupyterhubを利用する/images/1.gif)
+![image](/posts/2017-12-23/images/1.gif)
 
 GIF 画像は下記の記事で知った`tqdm`というパッケージを使いたくなった衝動の成れの果てです。
 

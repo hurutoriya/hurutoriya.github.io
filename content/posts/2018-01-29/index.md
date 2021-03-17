@@ -15,8 +15,6 @@ tags:
 
 - Kaggle Master に到達(1 gold medal, 2 silver medals)
 
-![image](/posts/2018-01-29_2018-resolution/images/1.png)
-
 初参加のコンペもずるずる下降してしまいブロンズ圏外に…
 
 - Coursera, Udacity (MOOC)で CV, Robotics 周辺を学習していく

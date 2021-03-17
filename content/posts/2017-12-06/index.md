@@ -10,7 +10,7 @@ tags:
 
 TensorFlow 無双
 
-![image](/posts/2017-12-06_coremlがtensorflow-liteをサポート/images/1.png)
+![image](/posts/2017-12-06/images/1.png)
 
 TensorFlow Lite meets CoreML!!
 

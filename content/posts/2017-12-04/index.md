@@ -11,7 +11,7 @@ tags:
 
 応用数理研究者が機械学習界に進出していく研究
 
-![image](/posts/2017-12-04_edgeweighted-personalized-pagerank-breaking-a-decadeold-performance-barrier-を読んだ/images/1.png)
+![image](/posts/2017-12-04/images/1.png)
 
 youtube clip
 

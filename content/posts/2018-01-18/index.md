@@ -11,7 +11,7 @@ tags:
 
 Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 [link](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Shih_Where_to_Look_CVPR_2016_paper.pdf)
 
-![image](/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016を読んだ/images/1.png)
+![image](/posts/2018-01-17/images/1.png)
 
 Summry
 
@@ -32,7 +32,7 @@ VQA(Visual Question Answer) 画像に対する質問に対して応答するタ�
 
 単純な質問なら、人間でも瞬間的に解答可能な物が多いなと感じた。
 
-![image](/posts/2018-01-17_where-to-look-focus-regions-for-visual-question-answering-cvpr2016を読んだ/images/2.png)
+![image](/posts/2018-01-17/images/2.png)
 
 fig. 1
 

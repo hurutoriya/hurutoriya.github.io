@@ -11,7 +11,7 @@ tags:
 
 機械学習の研究してる人は全員読んだ方がいい。そう断言できるぐらい良い内容が書かれています。 ICML2012 で発表された最近の機械学習に関する研究の問題点を論じた論文。
 
-![image](/posts/2017-12-01_machine-learning-that-matters-icml2012-を読んだ/images/1.png)
+![image](/posts/2017-12-01/images/1.png)
 
 Summaly
 

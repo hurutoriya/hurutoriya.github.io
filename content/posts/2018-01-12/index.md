@@ -16,7 +16,7 @@ MIT Media Lab Affective Computing Group のプロジェクト。
 
 論文のまとめスライドは以下
 
-![image](/posts/2018-01-13_call-center-stress-recognition-with-personspecific-models-を読んだ/images/1.png)
+![image](/posts/2018-01-13/images/1.png)
 
 One Slide Summary
 

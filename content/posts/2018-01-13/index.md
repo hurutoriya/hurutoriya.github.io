@@ -11,7 +11,7 @@ tags:
 
 Python でアニメーションを作成したかったのでメモ
 
-![image](/posts/2018-01-13_pythonでgaussian-kernelのアニメーションを作成/images/1.gif)
+![image](/posts/2018-01-13/images/1.gif)
 
 Gaussian Kernel GIF Animation
 

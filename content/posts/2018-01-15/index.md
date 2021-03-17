@@ -57,7 +57,7 @@ nbdiff nb_1.ipynb nb_2.ipynb
 
 `&gt;&gt; nbdiff-web nb_1.ipynb nb_2.ipynb [master] [I nbdimeserver:274] Listening on 127.0.0.1, port 51809 [I nbdiffweb:48] URL: [http://127.0.0.1:51809/diff?base=nb_1.ipynb&amp;remote=nb_2.ipynb](http://127.0.0.1:51809/diff?base=nb_1.ipynb&amp;remote=nb_2.ipynb) [I web:1971] 200 GET /diff?base=nb_1.ipynb&amp;remote=nb_2.ipynb (127.0.0.1) 15.43ms [I web:1971] 200 GET /static/nbdime.js?v=ce2758430f38b0ad261242e2b658a8e4 (127.0.0.1) 228.07ms [I web:1971] 200 POST /api/diff (127.0.0.1) 41.45ms [W web:1971] 404 GET /favicon.ico (127.0.0.1) 0.79ms`
 
-![image](/posts/2018-01-13_jupyter-notebookの差分を明瞭に確認する事ができるpackage-nbdime/images/1.png)
+![image](/posts/2018-01-13/images/1.png)
 
 Web ブラウザ上での画面
 

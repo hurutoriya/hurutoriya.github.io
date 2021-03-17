@@ -14,7 +14,7 @@ Jing Shao, Chen Change Loy, Kai Kang, and Xiaogang Wang, “Slicing Convolutiona
 
 [Project Page](http://www.ee.cuhk.edu.hk/~jshao/SCNN.html)
 
-![image](/posts/2018-01-17_slicing-convolutional-neural-network-for-crowd-video-understanding-cvpr2016を読んだ/images/1.png)
+![image](/posts/2018-01-17/images/1.png)
 
 Summary
 

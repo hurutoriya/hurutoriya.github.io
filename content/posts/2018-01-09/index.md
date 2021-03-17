@@ -11,7 +11,7 @@ tags:
 
 PWA と FireBase を試してみたかった
 
-![image](/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/1.png)
+![image](/posts/2018-01-09/images/1.png)
 
 firebase init で現れる画面、テンション上がる
 
@@ -31,15 +31,15 @@ PWA にしたのは完全に趣味です。
 
 [プログレッシブウェブアプリ詳解 ─ 過去・現在・未来](https://html5experts.jp/agektmr/20527/)
 
-![image](/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/2.png)
+![image](/posts/2018-01-09/images/2.png)
 
-![image](/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/3.png)
+![image](/posts/2018-01-09/images/3.png)
 
 左: PWA 化以前 右: PWA 化以降
 
 ServiceWorker と manifest.json,あとは&lt;meta name=”theme-color”&gt;を指定すると PWA のスコアが 100 点になる 🎉
 
-![image](/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/4.png)
+![image](/posts/2018-01-09/images/4.png)
 
 manihest.json によるホームアイコン作成誘導
 
@@ -74,7 +74,7 @@ Github Pages+CloudFlare(独自ドメイン運用)で SSL 認証された Web Pag
 
 FireBase では、[FireBase Hosting](https://firebase.google.com/docs/hosting/)を使うことで独自ドメインでもデフォルトで https で Web サイトがホスティングされます(最高)
 
-![image](/posts/2018-01-09_サイトのpwa化ホスティングをgithub-pagesからfirebaseへ移行/images/5.png)
+![image](/posts/2018-01-09/images/5.png)
 
 やり方は以下を参考
 

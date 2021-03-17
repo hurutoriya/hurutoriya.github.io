@@ -60,7 +60,7 @@ tags:
 - AutoEncoder は入力層・隠れ層・出力層の 3 層を Stacked する。
 - X(j)=D−1S の列ベクトルを各ユニットに入力し、隠れ層の活性化関数 h(j)を得て、X(j+1)=h(j)と Γ 回(層の階数分)更新する。
 
-![image](/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/1.png)
+![image](/posts/2017-12-23/images/1.png)
 
 ### Evaluation (検証方法・評価方法・優位性)
 
@@ -76,17 +76,17 @@ tags:
 - k-means
 - Sparse-AutoEncoders(Graph-Encoder)
 
-![image](/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/2.png)
+![image](/posts/2017-12-23/images/2.png)
 
-![image](/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/3.png)
+![image](/posts/2017-12-23/images/3.png)
 
 次元の減少推移
 
-![image](/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/4.png)
+![image](/posts/2017-12-23/images/4.png)
 
 層を重ねる毎に NMI が向上している。
 
-![image](/posts/2017-12-23_learning-deep-representations-for-graph-clustering-aaai2014-を読んだ/images/5.png)
+![image](/posts/2017-12-23/images/5.png)
 
 ### Conclusion (結論・貢献)
 

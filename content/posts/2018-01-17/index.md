@@ -16,7 +16,7 @@ Mikel Rodriguez, Josef Sivic, Ivan Laptev, Jean-Yves Audibert, “Data-driven Cr
 
 を読んだので、メモです。
 
-![image](/posts/2018-01-17_datadriven-crowd-analysis-in-videos-iccv2011を読んだ/images/1.png)
+![image](/posts/2018-01-17/images/1.png)
 
 Summary
 
