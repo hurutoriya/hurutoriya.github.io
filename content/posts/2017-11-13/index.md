@@ -9,7 +9,7 @@ tags:
   - Python
 ---
 
-![image](/posts/2017-11-13_djangoで顔認識の結果をjsonで返す最小構成のapiサーバーを作った/images/1.gif)
+![image](/posts/2017-11-13/images/1.gif)
 
 DEMO
 
@@ -32,7 +32,7 @@ pyimagesearch の Blog 記事で最小限の構成で顔検出を行う API サ�
 
 今回の発展形として django-rest-framework を使って、モデルを組み込んで作り上げて Google Apps Engine 上で公開してみよう。 REST Framework はこの記事[2](https://hurutoriya.github.io/blog/django-start.html#fn-django_rest_article)を参考に画像をアップロードできる雛形は作り上げた。 後は OpenCV で処理を施す部分を書き上げたらいけそう。
 
-![image](/posts/2017-11-13_djangoで顔認識の結果をjsonで返す最小構成のapiサーバーを作った/images/2.png)
+![image](/posts/2017-11-13/images/2.png)
 
 django-rest-framework で使える管理画面
 
