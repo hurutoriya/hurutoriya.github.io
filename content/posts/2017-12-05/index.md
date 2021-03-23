@@ -11,7 +11,7 @@ tags:
 
 **You can intuitively lean Power Iteration by Visualization Power.**
 
-![image](/posts/2017-12-04/images/1.gif)
+![image](/posts/2017-12-05/images/1.gif)
 
 Animation of Power Iteration by MATLAB
 
