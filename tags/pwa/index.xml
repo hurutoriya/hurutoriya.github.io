@@ -429,7 +429,8 @@ TensorFlow Lite もデフォルトで Android をサポートしているので�
 にしても TensorFlow の勢いはほんとに凄い…</description></item><item><title>Visualized Approximate Eigen Vector by Power Iteration on 3 dimensions.</title><link>https://shunyaueta.com/posts/2017-12-05/</link><pubDate>Tue, 05 Dec 2017 13:20:41 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-05/</guid><description>You can intuitively lean Power Iteration by Visualization Power.
 Animation of Power Iteration by MATLAB
 Power iteration - Wikipedia
-Finally you put a command line $ convert -layers optimize -loop 0 -delay 40 eigenvector*.png anim.gif</description></item><item><title>Edge-Weighted Personalized PageRank: Breaking A Decade-Old Performance Barrier を読んだ</title><link>https://shunyaueta.com/posts/2017-12-04/</link><pubDate>Mon, 04 Dec 2017 13:06:15 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-04/</guid><description>応用数理研究者が機械学習界に進出していく研究
+Finally you put a command line
+&amp;gt; convert -layers optimize -loop 0 -delay 40 eigenvector*.png anim.gif</description></item><item><title>Edge-Weighted Personalized PageRank: Breaking A Decade-Old Performance Barrier を読んだ</title><link>https://shunyaueta.com/posts/2017-12-04/</link><pubDate>Mon, 04 Dec 2017 13:06:15 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-04/</guid><description>応用数理研究者が機械学習界に進出していく研究
 youtube clip
 応用数理界隈ではクラシックな解き方で PageRank が解かれているので最新の数値計算手法に置き換えることで劇的にパフォーマンスが向上して 10 年前のパフォーマンスの鎖を解き放った論文
 KDD2015 Best student paper award Slide(PDF) Poster(PDF) Spectral network analysis wenleix/EdgePPR
