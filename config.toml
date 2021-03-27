@@ -1,35 +1,42 @@
 baseURL = "https://shunyaueta.com/"
-title = "Software Engineer as Data Scientist"
-theme = "etch"
 languageCode = "ja"
-enableInlineShortcodes = true
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+title = "hurutoriya"
+theme="archie"
+copyright = "© Shunya Ueta"
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 [params]
-  description = "Shunya Ueta (a.k.a hurutoriya) personal website"
-  copyright = "Copyright © 2013-2021 Shunya Ueta"
-  dark = "auto"
-  highlight = true
+	mode="auto"
+	useCDN=false
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/"
-    weight = 10
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/hurutoriya"
 
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    title = "about"
-    url = "/about/"
-    weight = 20
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/hurutoriya/"
 
-[permalinks]
-  page = "/:slug/"
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
 
-[markup.goldmark.renderer]
-  # Allows HTML in Markdown
-  unsafe = true
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4

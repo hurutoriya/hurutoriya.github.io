@@ -4,6 +4,7 @@ date: 2021-01-17T00:18:47+09:00
 lang: ja
 tags:
 - TensorFlow
+- Machine Learning
 - MLOps
 - ML Engineering
 - Paper
