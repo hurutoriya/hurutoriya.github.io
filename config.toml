@@ -6,6 +6,8 @@ copyright = "© Shunya Ueta"
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+hasCJKLanguage = true
+summaryLength = 120
 
 [params]
 	mode="auto"
