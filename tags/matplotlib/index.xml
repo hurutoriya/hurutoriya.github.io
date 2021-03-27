@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Matplotlib on hurutoriya</title><link>https://shunyaueta.com/tags/matplotlib/</link><description>Recent content in Matplotlib on hurutoriya</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© Shunya Ueta</copyright><lastBuildDate>Sat, 13 Jan 2018 17:03:43 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/matplotlib/index.xml" rel="self" type="application/rss+xml"/><item><title>PythonでGaussian Kernelのアニメーションを作成</title><link>https://shunyaueta.com/posts/2018-01-13/</link><pubDate>Sat, 13 Jan 2018 17:03:43 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-13/</guid><description>Python でアニメーションを作成したかったのでメモ
-Gaussian Kernel GIF Animation
-当然ながら、HTML5 の Video は再生されないので GIF に変換した結果が以下。
-これで HTML5 で再生される。
-**GIF**で表示する方法として %matplotlib nbagg
-というオプションが存在しているが、Kernel が busy 状態を何度も繰り返すので、自分は mp4 で出力するようにした。
-実験結果も以前は GIF で保存してたが、最近は全てmp4で管理するようにした。
-あと、**np.linspace()**が iterable ではないので、イマイチな書き方になった。。
-**np.arange()**を使うべきなのか…
-Thanks Embedding Matplotlib Animations in Jupyter Notebooks
-Jupyter 上で matplotlib のアニメーションを再生する - Qiita</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Matplotlib on hurutoriya</title><link>https://shunyaueta.com/tags/matplotlib/</link><description>Recent content in Matplotlib on hurutoriya</description><generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>© Shunya Ueta</copyright><lastBuildDate>Sat, 13 Jan 2018 17:03:43 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/matplotlib/index.xml" rel="self" type="application/rss+xml"/><item><title>PythonでGaussian Kernelのアニメーションを作成</title><link>https://shunyaueta.com/posts/2018-01-13/</link><pubDate>Sat, 13 Jan 2018 17:03:43 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-13/</guid><description>Python でアニメーションを作成したかったのでメモ Gaussian Kernel GIF Animation 当然ながら、HTML5 の Video は再生されないので GIF に変換した結果が以下。 これで HTML5 で再生される。 **GIF**で表示する方法として %matplotlib nbagg というオプションが存在しているが、Kernel が busy 状態を何度も</description></item></channel></rss>
