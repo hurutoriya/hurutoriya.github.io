@@ -1,63 +1,71 @@
-<!doctype html><html><head><script data-ad-client=ca-pub-8604812913439531 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Shunya Ueta (a.k.a hurutoriya) personal website"><link rel="shortcut icon" href=https://shunyaueta.com/favicon.ico><link rel=stylesheet href=/css/style.min.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-39994406-11"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-39994406-11');</script><title>Python の内包表記とジェネレータ式のメモリ使用量比較</title></head><body><header id=banner><h2><a href=https://shunyaueta.com/>Software Engineer as Data Scientist</a></h2><nav><ul><li><a href=/ title=posts>posts</a></li><li><a href=/about/ title=about>about</a></li></ul></nav></header><main id=content><article><header id=post-header><h1>Python の内包表記とジェネレータ式のメモリ使用量比較</h1><time>2020-08-23</time></header><p>リストを構築する際にPythonではリスト内包表記とジェネレータ式の２種類が存在する。
+<!doctype html><html><head><script data-ad-client=ca-pub-8604812913439531 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>Python の内包表記とジェネレータ式のメモリ使用量比較 - hurutoriya</title><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:image" content><meta property="og:title" content="Python の内包表記とジェネレータ式のメモリ使用量比較"><meta property="og:description" content="リストを構築する際にPythonではリスト内包表記とジェネレータ式の２種類が存在する。 今回、リスト構築時にメモリ使用量にどれだけ差異が発生するのか調査をしてみた。 メモリ使用量の調査には、memory_profilerというパッケージを使用した。
+まず、２つのリストのデカルト積のタプルを表示するプログラムでの比較
+from memory_profiler import profile @profile def main(): &#34;&#34;&#34; Comparision List comprehension VS generator memory usage &#34;&#34;&#34; colors = &#34;colors&#34; * 1000 sizes = &#34;S&#34; * 100 for shirts in ((color, size) for color in colors for size in sizes): print(shirts) [print((color, size)) for color in colors for size in sizes] if __name__ == &#34;__main__&#34;: main() Filename: src/listcomp_vs_generator.py Line # Mem usage Increment Line Contents ================================================ 4 10."><meta property="og:type" content="article"><meta property="og:url" content="https://shunyaueta.com/posts/2020-08-23/"><meta property="article:published_time" content="2020-08-23T21:28:10+09:00"><meta property="article:modified_time" content="2020-08-23T21:28:10+09:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Python の内包表記とジェネレータ式のメモリ使用量比較"><meta name=twitter:description content="リストを構築する際にPythonではリスト内包表記とジェネレータ式の２種類が存在する。 今回、リスト構築時にメモリ使用量にどれだけ差異が発生するのか調査をしてみた。 メモリ使用量の調査には、memory_profilerというパッケージを使用した。
+まず、２つのリストのデカルト積のタプルを表示するプログラムでの比較
+from memory_profiler import profile @profile def main(): &#34;&#34;&#34; Comparision List comprehension VS generator memory usage &#34;&#34;&#34; colors = &#34;colors&#34; * 1000 sizes = &#34;S&#34; * 100 for shirts in ((color, size) for color in colors for size in sizes): print(shirts) [print((color, size)) for color in colors for size in sizes] if __name__ == &#34;__main__&#34;: main() Filename: src/listcomp_vs_generator.py Line # Mem usage Increment Line Contents ================================================ 4 10."><script src=https://shunyaueta.com/js/feather.min.js></script><link href=https://shunyaueta.com/css/fonts.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://shunyaueta.com/css/main.css><link rel=stylesheet type=text/css href=https://shunyaueta.com/css/dark.css media="(prefers-color-scheme: dark)"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-39994406-11"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-39994406-11');</script></head><body><div class=content><header><div class=main><a href=https://shunyaueta.com/>hurutoriya</a></div><nav><a href=/>Home</a>
+<a href=/posts>All posts</a>
+<a href=/about>About</a>
+<a href=/tags>Tags</a></nav></header><main><article><div class=title><h1 class=title>Python の内包表記とジェネレータ式のメモリ使用量比較</h1><div class=meta>Posted on Aug 23, 2020</div></div><section class=body><p>リストを構築する際にPythonではリスト内包表記とジェネレータ式の２種類が存在する。
 今回、リスト構築時にメモリ使用量にどれだけ差異が発生するのか調査をしてみた。
-メモリ使用量の調査には、<a href=https://github.com/pythonprofilers/memory_profiler>memory_profiler</a>というパッケージを使用した。</p><p>まず、２つのリストのデカルト積のタプルを表示するプログラムでの比較</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=kn>from</span> <span class=nn>memory_profiler</span> <span class=kn>import</span> <span class=n>profile</span>
+メモリ使用量の調査には、<a href=https://github.com/pythonprofilers/memory_profiler>memory_profiler</a>というパッケージを使用した。</p><p>まず、２つのリストのデカルト積のタプルを表示するプログラムでの比較</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> memory_profiler <span style=color:#f92672>import</span> profile
 
 
-<span class=nd>@profile</span>
-<span class=k>def</span> <span class=nf>main</span><span class=p>():</span>
-    <span class=s2>&#34;&#34;&#34;
-</span><span class=s2>    Comparision List comprehension VS generator memory usage
-</span><span class=s2>    &#34;&#34;&#34;</span>
-    <span class=n>colors</span> <span class=o>=</span> <span class=s2>&#34;colors&#34;</span> <span class=o>*</span> <span class=mi>1000</span>
-    <span class=n>sizes</span> <span class=o>=</span> <span class=s2>&#34;S&#34;</span> <span class=o>*</span> <span class=mi>100</span>
-    <span class=k>for</span> <span class=n>shirts</span> <span class=ow>in</span> <span class=p>((</span><span class=n>color</span><span class=p>,</span> <span class=n>size</span><span class=p>)</span> <span class=k>for</span> <span class=n>color</span> <span class=ow>in</span> <span class=n>colors</span> <span class=k>for</span> <span class=n>size</span> <span class=ow>in</span> <span class=n>sizes</span><span class=p>):</span>
-        <span class=k>print</span><span class=p>(</span><span class=n>shirts</span><span class=p>)</span>
-    <span class=p>[</span><span class=k>print</span><span class=p>((</span><span class=n>color</span><span class=p>,</span> <span class=n>size</span><span class=p>))</span> <span class=k>for</span> <span class=n>color</span> <span class=ow>in</span> <span class=n>colors</span> <span class=k>for</span> <span class=n>size</span> <span class=ow>in</span> <span class=n>sizes</span><span class=p>]</span>
+<span style=color:#a6e22e>@profile</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>main</span>():
+    <span style=color:#e6db74>&#34;&#34;&#34;
+</span><span style=color:#e6db74>    Comparision List comprehension VS generator memory usage
+</span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+    colors <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;colors&#34;</span> <span style=color:#f92672>*</span> <span style=color:#ae81ff>1000</span>
+    sizes <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;S&#34;</span> <span style=color:#f92672>*</span> <span style=color:#ae81ff>100</span>
+    <span style=color:#66d9ef>for</span> shirts <span style=color:#f92672>in</span> ((color, size) <span style=color:#66d9ef>for</span> color <span style=color:#f92672>in</span> colors <span style=color:#66d9ef>for</span> size <span style=color:#f92672>in</span> sizes):
+        <span style=color:#66d9ef>print</span>(shirts)
+    [<span style=color:#66d9ef>print</span>((color, size)) <span style=color:#66d9ef>for</span> color <span style=color:#f92672>in</span> colors <span style=color:#66d9ef>for</span> size <span style=color:#f92672>in</span> sizes]
 
 
-<span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=s2>&#34;__main__&#34;</span><span class=p>:</span>
-    <span class=n>main</span><span class=p>()</span>
-</code></pre></div><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>Filename: src/listcomp_vs_generator.py
+<span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;__main__&#34;</span>:
+    main()
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Filename: src/listcomp_vs_generator.py
 
-Line <span class=c1>#    Mem usage    Increment   Line Contents</span>
-<span class=o>================================================</span>
-     <span class=m>4</span>     10.5 MiB     10.5 MiB   @profile
-     <span class=m>5</span>                             def main<span class=o>()</span>:
-     <span class=m>6</span>                                 <span class=s2>&#34;&#34;&#34;
-</span><span class=s2>     7                                 Comparision List comprehension VS generator memory usage
-</span><span class=s2>     8                                 &#34;&#34;&#34;</span>
-     <span class=m>9</span>     10.5 MiB      0.0 MiB       <span class=nv>colors</span> <span class=o>=</span> <span class=s2>&#34;colors&#34;</span> * <span class=m>1000</span>
-    <span class=m>10</span>     10.5 MiB      0.0 MiB       <span class=nv>sizes</span> <span class=o>=</span> <span class=s2>&#34;S&#34;</span> * <span class=m>100</span>
-    <span class=m>11</span>     10.5 MiB      0.0 MiB       <span class=k>for</span> shirts in <span class=o>((</span>color, size<span class=o>)</span> <span class=k>for</span> color in colors <span class=k>for</span> size in sizes<span class=o>)</span>:
-    <span class=m>12</span>     10.5 MiB      0.0 MiB           print<span class=o>(</span>shirts<span class=o>)</span>
-    <span class=m>13</span>     15.1 MiB      0.1 MiB       <span class=o>[</span>print<span class=o>((</span>color, size<span class=o>))</span> <span class=k>for</span> color in colors <span class=k>for</span> size in sizes<span class=o>]</span>
-</code></pre></div><p>次に、1000x1000のデカルト積を作成した場合</p><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=kn>from</span> <span class=nn>memory_profiler</span> <span class=kn>import</span> <span class=n>profile</span>
-
-
-<span class=nd>@profile</span>
-<span class=k>def</span> <span class=nf>main</span><span class=p>():</span>
-    <span class=s2>&#34;&#34;&#34;
-</span><span class=s2>    Comparision List comprehension VS generator memory usage
-</span><span class=s2>    &#34;&#34;&#34;</span>
-    <span class=n>colors</span> <span class=o>=</span> <span class=s2>&#34;colors&#34;</span> <span class=o>*</span> <span class=mi>1000</span>
-    <span class=n>sizes</span> <span class=o>=</span> <span class=s2>&#34;S&#34;</span> <span class=o>*</span> <span class=mi>1000</span>
-    <span class=p>((</span><span class=n>color</span><span class=p>,</span> <span class=n>size</span><span class=p>)</span> <span class=k>for</span> <span class=n>color</span> <span class=ow>in</span> <span class=n>colors</span> <span class=k>for</span> <span class=n>size</span> <span class=ow>in</span> <span class=n>sizes</span><span class=p>)</span>
-    <span class=p>[(</span><span class=n>color</span><span class=p>,</span> <span class=n>size</span><span class=p>)</span> <span class=k>for</span> <span class=n>color</span> <span class=ow>in</span> <span class=n>colors</span> <span class=k>for</span> <span class=n>size</span> <span class=ow>in</span> <span class=n>sizes</span><span class=p>]</span>
+Line <span style=color:#75715e>#    Mem usage    Increment   Line Contents</span>
+<span style=color:#f92672>================================================</span>
+     <span style=color:#ae81ff>4</span>     10.5 MiB     10.5 MiB   @profile
+     <span style=color:#ae81ff>5</span>                             def main<span style=color:#f92672>()</span>:
+     <span style=color:#ae81ff>6</span>                                 <span style=color:#e6db74>&#34;&#34;&#34;
+</span><span style=color:#e6db74>     7                                 Comparision List comprehension VS generator memory usage
+</span><span style=color:#e6db74>     8                                 &#34;&#34;&#34;</span>
+     <span style=color:#ae81ff>9</span>     10.5 MiB      0.0 MiB       colors <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;colors&#34;</span> * <span style=color:#ae81ff>1000</span>
+    <span style=color:#ae81ff>10</span>     10.5 MiB      0.0 MiB       sizes <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;S&#34;</span> * <span style=color:#ae81ff>100</span>
+    <span style=color:#ae81ff>11</span>     10.5 MiB      0.0 MiB       <span style=color:#66d9ef>for</span> shirts in <span style=color:#f92672>((</span>color, size<span style=color:#f92672>)</span> <span style=color:#66d9ef>for</span> color in colors <span style=color:#66d9ef>for</span> size in sizes<span style=color:#f92672>)</span>:
+    <span style=color:#ae81ff>12</span>     10.5 MiB      0.0 MiB           print<span style=color:#f92672>(</span>shirts<span style=color:#f92672>)</span>
+    <span style=color:#ae81ff>13</span>     15.1 MiB      0.1 MiB       <span style=color:#f92672>[</span>print<span style=color:#f92672>((</span>color, size<span style=color:#f92672>))</span> <span style=color:#66d9ef>for</span> color in colors <span style=color:#66d9ef>for</span> size in sizes<span style=color:#f92672>]</span>
+</code></pre></div><p>次に、1000x1000のデカルト積を作成した場合</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> memory_profiler <span style=color:#f92672>import</span> profile
 
 
-<span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=s2>&#34;__main__&#34;</span><span class=p>:</span>
-    <span class=n>main</span><span class=p>()</span>
+<span style=color:#a6e22e>@profile</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>main</span>():
+    <span style=color:#e6db74>&#34;&#34;&#34;
+</span><span style=color:#e6db74>    Comparision List comprehension VS generator memory usage
+</span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+    colors <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;colors&#34;</span> <span style=color:#f92672>*</span> <span style=color:#ae81ff>1000</span>
+    sizes <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;S&#34;</span> <span style=color:#f92672>*</span> <span style=color:#ae81ff>1000</span>
+    ((color, size) <span style=color:#66d9ef>for</span> color <span style=color:#f92672>in</span> colors <span style=color:#66d9ef>for</span> size <span style=color:#f92672>in</span> sizes)
+    [(color, size) <span style=color:#66d9ef>for</span> color <span style=color:#f92672>in</span> colors <span style=color:#66d9ef>for</span> size <span style=color:#f92672>in</span> sizes]
 
-</code></pre></div><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>Line <span class=c1>#    Mem usage    Increment   Line Contents</span>
-<span class=o>================================================</span>
-     <span class=m>4</span>     10.5 MiB     10.5 MiB   @profile
-     <span class=m>5</span>                             def main<span class=o>()</span>:
-     <span class=m>6</span>                                 <span class=s2>&#34;&#34;&#34;
-</span><span class=s2>     7                                 Comparision List comprehension VS generator memory usage
-</span><span class=s2>     8                                 &#34;&#34;&#34;</span>
-     <span class=m>9</span>     10.5 MiB      0.0 MiB       <span class=nv>colors</span> <span class=o>=</span> <span class=s2>&#34;colors&#34;</span> * <span class=m>1000</span>
-    <span class=m>10</span>     10.5 MiB      0.0 MiB       <span class=nv>sizes</span> <span class=o>=</span> <span class=s2>&#34;S&#34;</span> * <span class=m>1000</span>
-    <span class=m>11</span>     10.5 MiB      0.0 MiB       <span class=o>((</span>color, size<span class=o>)</span> <span class=k>for</span> color in colors <span class=k>for</span> size in sizes<span class=o>)</span>
-    <span class=m>12</span>    434.6 MiB      5.8 MiB       <span class=o>[(</span>color, size<span class=o>)</span> <span class=k>for</span> color in colors <span class=k>for</span> size in sizes<span class=o>]</span>
-</code></pre></div><p>結果を見ると一目瞭然で、ジェネレータ式の場合だとイテレータプロトコルが要素を一つ一つ作成するので、メモリ使用量もリスト内包表記と比べると40倍以上と一目瞭然の差になった</p><p>機械学習でも大規模なデータを扱うことが多い、なのでジェネレータ式を意識して書いてメモリ使用量を抑えていきたい。</p></article></main><h3>See Also</h3><ul><li><a href=/posts/2020-07-25/>How to write the UnitTest with stdin at Pytest</a></li><li><a href=/posts/2020-05-10/>自走プログラマーを読み終えた</a></li><li><a href=/posts/2020-04-26/>Pythonの関数のデフォルト引数はmutable(上書きされる)</a></li><li><a href=/posts/2019-10-03/>pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL</a></li><li><a href=/posts/2019-09-25/>Tensorboard を わずか2行で Jupyter Notebook上で表示</a></li></ul><footer id=footer>Copyright © 2013-2021 Shunya Ueta</footer></body></html>
+
+<span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;__main__&#34;</span>:
+    main()
+
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Line <span style=color:#75715e>#    Mem usage    Increment   Line Contents</span>
+<span style=color:#f92672>================================================</span>
+     <span style=color:#ae81ff>4</span>     10.5 MiB     10.5 MiB   @profile
+     <span style=color:#ae81ff>5</span>                             def main<span style=color:#f92672>()</span>:
+     <span style=color:#ae81ff>6</span>                                 <span style=color:#e6db74>&#34;&#34;&#34;
+</span><span style=color:#e6db74>     7                                 Comparision List comprehension VS generator memory usage
+</span><span style=color:#e6db74>     8                                 &#34;&#34;&#34;</span>
+     <span style=color:#ae81ff>9</span>     10.5 MiB      0.0 MiB       colors <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;colors&#34;</span> * <span style=color:#ae81ff>1000</span>
+    <span style=color:#ae81ff>10</span>     10.5 MiB      0.0 MiB       sizes <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;S&#34;</span> * <span style=color:#ae81ff>1000</span>
+    <span style=color:#ae81ff>11</span>     10.5 MiB      0.0 MiB       <span style=color:#f92672>((</span>color, size<span style=color:#f92672>)</span> <span style=color:#66d9ef>for</span> color in colors <span style=color:#66d9ef>for</span> size in sizes<span style=color:#f92672>)</span>
+    <span style=color:#ae81ff>12</span>    434.6 MiB      5.8 MiB       <span style=color:#f92672>[(</span>color, size<span style=color:#f92672>)</span> <span style=color:#66d9ef>for</span> color in colors <span style=color:#66d9ef>for</span> size in sizes<span style=color:#f92672>]</span>
+</code></pre></div><p>結果を見ると一目瞭然で、ジェネレータ式の場合だとイテレータプロトコルが要素を一つ一つ作成するので、メモリ使用量もリスト内包表記と比べると40倍以上と一目瞭然の差になった</p><p>機械学習でも大規模なデータを扱うことが多い、なのでジェネレータ式を意識して書いてメモリ使用量を抑えていきたい。</p></section><div class=post-tags><nav class="nav tags"><ul class=tags><li><a href=/tags/python>Python</a></li></ul></nav></div></article></main><h3>See Also</h3><ul><li><a href=/posts/2020-07-25/>How to write the UnitTest with stdin at Pytest</a></li><li><a href=/posts/2020-05-10/>自走プログラマーを読み終えた</a></li><li><a href=/posts/2020-04-26/>Pythonの関数のデフォルト引数はmutable(上書きされる)</a></li><li><a href=/posts/2019-10-03/>pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL</a></li><li><a href=/posts/2019-09-25/>Tensorboard を わずか2行で Jupyter Notebook上で表示</a></li></ul><footer><hr><a class=soc href=https://github.com/hurutoriya title=GitHub><i data-feather=github></i></a>|<a class=soc href=https://twitter.com/hurutoriya/ title=Twitter><i data-feather=twitter></i></a>|⚡️
+2021 © Shunya Ueta | <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a></footer><script>feather.replace()</script></div></body></html>
