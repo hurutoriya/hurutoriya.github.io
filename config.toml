@@ -1,6 +1,6 @@
 baseURL = "https://shunyaueta.com/"
 languageCode = "ja"
-title = "hurutoriya"
+title = "Shunya Ueta"
 theme="archie"
 copyright = "© Shunya Ueta"
 pygmentsstyle = "monokai"
@@ -24,21 +24,16 @@ icon = "twitter"
 url = "https://twitter.com/hurutoriya/"
 
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
 name = "All posts"
 url = "/posts"
-weight = 2
+weight = 1
 
 [[menu.main]]
 name = "About"
 url = "/about"
-weight = 3
+weight = 2
 
 [[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 4
+weight = 3
