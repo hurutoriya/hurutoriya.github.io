@@ -16,8 +16,6 @@ TensorFlow Lite meets CoreML!!
 
 個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日 TensorFlow Lite が CoreML でサポートされるというアナウンスがありました!
 
-> [](https://twitter.com/TensorFlow/status/938127069095002112)
-
 [Announcing Core ML support in TensorFlow Lite](https://developers.googleblog.com/2017/12/announcing-core-ml-support.html)
 
 CoreML の最大の利点は iPhone のアーキテクチャを最大限に利用した推論の高速化なので、Google も何かしらの手を打ってくると思っていましたがまさかそのまま CoreML にサポートされたのは驚きです。
