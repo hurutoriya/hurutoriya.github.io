@@ -1659,7 +1659,7 @@ MVPとして小さな成功を高速に積み重ねていくことで、組織�
 &lt;/ul>
 &lt;blockquote>
 &lt;p>拝見しました。forでディレクトリを走査するときは pathlib.Path.glob(&amp;quot;*.csv&amp;rdquo;)を使った方が、csv以外のファイルが混入したときの対策になると思ったのですが、いかがでしょう &lt;a href="https://docs.python.org/ja/3/library/pathlib.html#pathlib.Path.glob">https://docs.python.org/ja/3/library/pathlib.html#pathlib.Path.glob&lt;/a>&lt;/p>
-&lt;/blockquote></description></item><item><title>MLOps の国際会議 OpML'20 に論文が採択されたので登壇してきた</title><link>https://shunyaueta.com/posts/2020-09-06/</link><pubDate>Sun, 06 Sep 2020 23:31:03 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-06/</guid><description>
+&lt;/blockquote></description></item><item><title>MLOps の国際会議 OpML'20 に論文が採択されたので登壇してきた</title><link>https://shunyaueta.com/posts/2020-09-06/</link><pubDate>Sun, 06 Sep 2020 23:31:03 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2020-09-06/</guid><description>
 &lt;p>MLOpsの査読付き国際会議 &lt;a href="https://www.usenix.org/conference/opml20">2020 USENIX Conference on Operational Machine Learning&lt;/a> (略称 OpML&amp;rsquo;20)に論文が採択されたので、登壇してきた。&lt;/p>
 &lt;p>Podcastでも紹介しました&lt;/p>
 &lt;p>&lt;a href="https://anchor.fm/hurutoriya/episodes/1-MLOps--OpML20-ek0nr3/a-a58em8">#1 MLOps の国際会議 OpML20 について at just4fun.fm&lt;/a>&lt;/p>
@@ -5048,9 +5048,6 @@ kitamura さんの受け売りです&lt;/p>
 &lt;p>&lt;img src="https://shunyaueta.com/posts/2017-12-06/images/1.png" alt="image">&lt;/p>
 &lt;p>TensorFlow Lite meets CoreML!!&lt;/p>
 &lt;p>個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日 TensorFlow Lite が CoreML でサポートされるというアナウンスがありました!&lt;/p>
-&lt;blockquote>
-&lt;p>[](&lt;a href="https://twitter.com/TensorFlow/status/938127069095002112">https://twitter.com/TensorFlow/status/938127069095002112&lt;/a>)&lt;/p>
-&lt;/blockquote>
 &lt;p>&lt;a href="https://developers.googleblog.com/2017/12/announcing-core-ml-support.html">Announcing Core ML support in TensorFlow Lite&lt;/a>&lt;/p>
 &lt;p>CoreML の最大の利点は iPhone のアーキテクチャを最大限に利用した推論の高速化なので、Google も何かしらの手を打ってくると思っていましたがまさかそのまま CoreML にサポートされたのは驚きです。&lt;/p>
 &lt;p>個人的に keras2, Caffe&lt;a href="https://developer.apple.com/documentation/coreml/converting_trained_models_to_core_ml">¹&lt;/a>だけがサポートされてる今の状態は選択肢が少なくて微妙だなと思っていたので良いことだと思います。&lt;/p>

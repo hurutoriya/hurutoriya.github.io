@@ -4,7 +4,6 @@ KDD2019の招待講演でGoogleがTFXの歴史について発表されており�
 Towards ML Engineering with TensorFlow Extended (TFX) at KDD2019 Towards ML Engineering with TensorFlow Extended (TFX) ACM PDFはarxiv でも閲覧可能 https://arxiv.</description></item><item><title>CoreMLがTensorFlow Liteをサポート</title><link>https://shunyaueta.com/posts/2017-12-06/</link><pubDate>Wed, 06 Dec 2017 13:36:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-06/</guid><description>TensorFlow 無双
 TensorFlow Lite meets CoreML!!
 個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日 TensorFlow Lite が CoreML でサポートされるというアナウンスがありました!
-[](https://twitter.com/TensorFlow/status/938127069095002112)
 Announcing Core ML support in TensorFlow Lite
 CoreML の最大の利点は iPhone のアーキテクチャを最大限に利用した推論の高速化なので、Google も何かしらの手を打ってくると思っていましたがまさかそのまま CoreML にサポートされたのは驚きです。
 個人的に keras2, Caffe¹だけがサポートされてる今の状態は選択肢が少なくて微妙だなと思っていたので良いことだと思います。
