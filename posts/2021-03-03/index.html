@@ -1,45 +1,86 @@
-<!doctype html><html><head><script data-ad-client=ca-pub-8604812913439531 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>GKE 上でPythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになるときの対処法 - Shunya Ueta</title><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:image" content><meta property="og:title" content="GKE 上でPythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになるときの対処法"><meta property="og:description" content="Python のアプリケーションで、Cloud logger にログを出力したいときに 標準のPython logging モジュールを利用して、ログを出力する Python Cloud Logging package を使用する 上記の２つの方法があります。 不必要にパッケージを増やしたくはないので、1の標準モジュールでCloud Logger へ出"><meta property="og:type" content="article"><meta property="og:url" content="https://shunyaueta.com/posts/2021-03-03/"><meta property="article:published_time" content="2021-03-03T00:29:03+09:00"><meta property="article:modified_time" content="2021-03-03T00:29:03+09:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="GKE 上でPythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになるときの対処法"><meta name=twitter:description content="Python のアプリケーションで、Cloud logger にログを出力したいときに 標準のPython logging モジュールを利用して、ログを出力する Python Cloud Logging package を使用する 上記の２つの方法があります。 不必要にパッケージを増やしたくはないので、1の標準モジュールでCloud Logger へ出"><script src=https://shunyaueta.com/js/feather.min.js></script><link href=https://shunyaueta.com/css/fonts.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://shunyaueta.com/css/main.css><link rel=stylesheet type=text/css href=https://shunyaueta.com/css/dark.css media="(prefers-color-scheme: dark)"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-39994406-11"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-39994406-11');</script></head><body><div class=content><header><div class=main><a href=https://shunyaueta.com/>Shunya Ueta</a></div><nav><a href=/posts>All posts</a>
-<a href=/about>About</a>
-<a href=/tags>Tags</a></nav></header><main><article><div class=title><h1 class=title>GKE 上でPythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになるときの対処法</h1><div class=meta>Posted on Mar 3, 2021</div></div><section class=body><p>Python のアプリケーションで、Cloud logger にログを出力したいときに</p><ol><li>標準のPython logging モジュールを利用して、ログを出力する</li><li>Python Cloud Logging package を使用する</li></ol><p>上記の２つの方法があります。</p><p>不必要にパッケージを増やしたくはないので、1の標準モジュールでCloud Logger へ出力できないか試してみました。</p><h2 id=標準のpython-logging-モジュールを試す>標準のPython logging モジュールを試す</h2><p>標準のlogging モジュールでログを出力したいときに</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> logging
+<!doctype html><html lang=ja><head><script data-ad-client=ca-pub-8604812913439531 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=theme-color content="dark"><title>GKE 上でPythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになるときの対処法 | Shunya Ueta</title><link rel=stylesheet href=/sass/main.min.1a3290acca8b3fc92df85ea9200859476d6c80d59009c89a749300f3ce7a7a67.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-39994406-11"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-39994406-11');</script></head><body class=dark><nav class=navbar><div class=container><div class=flex><div><a class=brand href=/><span class=emoji>🎰</span>
+Shunya Ueta</a></div><div class=flex><a href=/articles/>All posts</a>
+<button id=dark-mode-button></button></div></div></div></nav><main><div class=container><article><header class=article-header><div class=thumb><div><h1>GKE 上でPythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになるときの対処法</h1><div class=post-meta><div>By on <time>March 03, 2021</time></div><div class=tags><a href=/tags/gcp/>GCP</a></div></div></div></div></header></article><div class=article-post><p>Python のアプリケーションで、Cloud logger にログを出力したいときに</p><ol><li>標準のPython logging モジュールを利用して、ログを出力する</li><li>Python Cloud Logging package を使用する</li></ol><p>上記の２つの方法があります。</p><p>不必要にパッケージを増やしたくはないので、1の標準モジュールでCloud Logger へ出力できないか試してみました。</p><h2 id=標準のpython-logging-モジュールを試す>標準のPython logging モジュールを試す</h2><p>標準のlogging モジュールでログを出力したいときに</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>logging</span>
 
-logger <span style=color:#f92672>=</span> logging<span style=color:#f92672>.</span>getLogger(__name__)
+<span class=n>logger</span> <span class=o>=</span> <span class=n>logging</span><span class=o>.</span><span class=n>getLogger</span><span class=p>(</span><span class=vm>__name__</span><span class=p>)</span>
 
-<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>hoge</span>(): 
-	logger<span style=color:#f92672>.</span>info(<span style=color:#e6db74>&#39;logging Start 2021&#39;</span>)
-</code></pre></div><p>と、logging.info() を仕込んで、Cloud logger にログを出力してみると、logger.info() で出しているはずなのに、Cloud logger 上ではすべてエラーとして扱われてしまっています。</p><p>原因を特定するために、logger のログを見てみると logger.info() がすべて <code>stderr</code>標準エラーストリームへ出力されてしまっています。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#f92672>{</span>
-  <span style=color:#e6db74>&#34;textPayload&#34;</span>: <span style=color:#e6db74>&#34;2021-02-20 21:26:51,012 - root:predict:36 - INFO:  logging Start\n&#34;</span>,
+<span class=k>def</span> <span class=nf>hoge</span><span class=p>():</span> 
+	<span class=n>logger</span><span class=o>.</span><span class=n>info</span><span class=p>(</span><span class=s1>&#39;logging Start 2021&#39;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><p>と、logging.info() を仕込んで、Cloud logger にログを出力してみると、logger.info() で出しているはずなのに、Cloud logger 上ではすべてエラーとして扱われてしまっています。</p><p>原因を特定するために、logger のログを見てみると logger.info() がすべて <code>stderr</code>標準エラーストリームへ出力されてしまっています。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash><span class=o>{</span>
+  <span class=s2>&#34;textPayload&#34;</span>: <span class=s2>&#34;2021-02-20 21:26:51,012 - root:predict:36 - INFO:  logging Start\n&#34;</span>,
 	...
-  <span style=color:#f92672>}</span>,
-  <span style=color:#e6db74>&#34;timestamp&#34;</span>: <span style=color:#e6db74>&#34;2021-02-20T12:26:51.013213826Z&#34;</span>,
-  <span style=color:#e6db74>&#34;severity&#34;</span>: <span style=color:#e6db74>&#34;ERROR&#34;</span>,
-  <span style=color:#e6db74>&#34;labels&#34;</span>: <span style=color:#f92672>{</span>
+  <span class=o>}</span>,
+  <span class=s2>&#34;timestamp&#34;</span>: <span class=s2>&#34;2021-02-20T12:26:51.013213826Z&#34;</span>,
+  <span class=s2>&#34;severity&#34;</span>: <span class=s2>&#34;ERROR&#34;</span>,
+  <span class=s2>&#34;labels&#34;</span>: <span class=o>{</span>
 	...
-  <span style=color:#f92672>}</span>,
-  <span style=color:#e6db74>&#34;logName&#34;</span>: <span style=color:#e6db74>&#34;projects/.../logs/stderr&#34;</span>,
-  <span style=color:#e6db74>&#34;receiveTimestamp&#34;</span>: <span style=color:#e6db74>&#34;2021-02-20T12:26:55.050911180Z&#34;</span>
-<span style=color:#f92672>}</span>
-</code></pre></div><p>そのため、明示的に標準出力へ出力先を変更してみました。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> logging
-<span style=color:#f92672>import</span> sys
+  <span class=o>}</span>,
+  <span class=s2>&#34;logName&#34;</span>: <span class=s2>&#34;projects/.../logs/stderr&#34;</span>,
+  <span class=s2>&#34;receiveTimestamp&#34;</span>: <span class=s2>&#34;2021-02-20T12:26:55.050911180Z&#34;</span>
+<span class=o>}</span>
+</code></pre></td></tr></table></div></div><p>そのため、明示的に標準出力へ出力先を変更してみました。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>logging</span>
+<span class=kn>import</span> <span class=nn>sys</span>
 
-logger <span style=color:#f92672>=</span> logging<span style=color:#f92672>.</span>getLogger(__name__)
-handler <span style=color:#f92672>=</span> logging<span style=color:#f92672>.</span>StreamHandler(sys<span style=color:#f92672>.</span>stdout)
-logger<span style=color:#f92672>.</span>addHandler(handler)
+<span class=n>logger</span> <span class=o>=</span> <span class=n>logging</span><span class=o>.</span><span class=n>getLogger</span><span class=p>(</span><span class=vm>__name__</span><span class=p>)</span>
+<span class=n>handler</span> <span class=o>=</span> <span class=n>logging</span><span class=o>.</span><span class=n>StreamHandler</span><span class=p>(</span><span class=n>sys</span><span class=o>.</span><span class=n>stdout</span><span class=p>)</span>
+<span class=n>logger</span><span class=o>.</span><span class=n>addHandler</span><span class=p>(</span><span class=n>handler</span><span class=p>)</span>
 
-<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>hoge</span>(): 
-	logger<span style=color:#f92672>.</span>info(<span style=color:#e6db74>&#39;logging Start 2021&#39;</span>)
-</code></pre></div><p>これで解決できているはずと、Cloud Loggerを見てみると</p><p><img src=/posts/2021-03-03/images/clooudlogging_stderr.png alt="Cloud logging duplicate log in stderr and stdout"></p><p>なぜか、<code>stderr</code> への出力は残ったまま、<code>stdout</code>への出力が新たに増えました。このままでもINFO レベルでログは残せているので目的は達成できていますが、<code>stderr</code>への出力が残ってしまっているせいでCloud logger 上でエラーが発生しているようになり問題です。なので、これを避けるために２つ目の方法であるPython Cloud Logging package を利用してみます。 (というかパッケージをむやみに増やしたくないのだが利用せざるを得ない。)</p><h2 id=python-cloud-logging-package-を使用する>Python Cloud Logging package を使用する</h2><p>まず<a href=https://github.com/googleapis/python-logging>Python Client for Cloud Logging</a> のチュートリアルをすすめて行きます。</p><p>Cloud logging のPython package の<a href=https://github.com/googleapis/python-logging#quick-start>Quick Start</a> にてわかりやすく導入方法が紹介されています。ここで混乱しやすいのが、GCPの<a href=https://cloud.google.com/logging/docs/reference/libraries#cloud-console>Logging Client Libraries</a> のドキュメントではまずService Account を作って、<code>GOOGLE_APPLICATION_CREDENTIALS</code> を使用してCloud Logging の認証を行ってくださいと書かれています。</p><p>ですが、</p><ul><li><a href=https://googleapis.dev/python/google-api-core/latest/auth.html>GCP上でのVMでパッケージを使用するなら認証は必要ない</a> 。ただし、デフォルトのSAを使いたくない場合や、GCP外などで動かしたい場合はSAが必要</li></ul><p>と本元のパッケージのドキュメントでは書かれており、こちらのほうが誤解が少なくていいですね。(公式ドキュメントだと、SA作成時に <code>Project > Owner</code> を指定しろと書かれているんだけど、これって権限過多なのでは無いのだろうか??)</p><p>ちなみにGCP 上の認証過程はこちらのドキュメントが詳しく書かれているので、気になった方は御覧ください。</p><p><a href=https://cloud.google.com/docs/authentication/production>Authenticating as a service account</a></p><p>上記の認証仮定をまとめると</p><ol><li>GOOGLE_APPLICATION_CREDENTIALS を参照する</li><li>ADC (Application Default Credentials) が、コードに紐付けられているSAを使用する</li><li>ADCは各サービスのSAを利用する</li><li>1-3 が使用できなかった場合、認証エラーが発生する</li></ol><p>最終的にGKE上でCloud logging へログを出力するためには、
-以下のコードで無事に <code>INFO</code> のログが<code>stderr</code> に吐き出されることなく、<code>stdout</code> のみに<code>INFO</code>として出力されるようになります。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> logging
-<span style=color:#f92672>import</span> sys
-<span style=color:#75715e># NOTE: GKE ではCotainerEngineHandler が必要</span>
-<span style=color:#f92672>from</span> google.cloud.logging.handlers <span style=color:#f92672>import</span> ContainerEngineHandler
+<span class=k>def</span> <span class=nf>hoge</span><span class=p>():</span> 
+	<span class=n>logger</span><span class=o>.</span><span class=n>info</span><span class=p>(</span><span class=s1>&#39;logging Start 2021&#39;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><p>これで解決できているはずと、Cloud Loggerを見てみると</p><p><img src=/posts/2021-03-03/images/clooudlogging_stderr.png alt="Cloud logging duplicate log in stderr and stdout"></p><p>なぜか、<code>stderr</code> への出力は残ったまま、<code>stdout</code>への出力が新たに増えました。このままでもINFO レベルでログは残せているので目的は達成できていますが、<code>stderr</code>への出力が残ってしまっているせいでCloud logger 上でエラーが発生しているようになり問題です。なので、これを避けるために２つ目の方法であるPython Cloud Logging package を利用してみます。 (というかパッケージをむやみに増やしたくないのだが利用せざるを得ない。)</p><h2 id=python-cloud-logging-package-を使用する>Python Cloud Logging package を使用する</h2><p>まず<a href=https://github.com/googleapis/python-logging>Python Client for Cloud Logging</a> のチュートリアルをすすめて行きます。</p><p>Cloud logging のPython package の<a href=https://github.com/googleapis/python-logging#quick-start>Quick Start</a> にてわかりやすく導入方法が紹介されています。ここで混乱しやすいのが、GCPの<a href=https://cloud.google.com/logging/docs/reference/libraries#cloud-console>Logging Client Libraries</a> のドキュメントではまずService Account を作って、<code>GOOGLE_APPLICATION_CREDENTIALS</code> を使用してCloud Logging の認証を行ってくださいと書かれています。</p><p>ですが、</p><ul><li><a href=https://googleapis.dev/python/google-api-core/latest/auth.html>GCP上でのVMでパッケージを使用するなら認証は必要ない</a> 。ただし、デフォルトのSAを使いたくない場合や、GCP外などで動かしたい場合はSAが必要</li></ul><p>と本元のパッケージのドキュメントでは書かれており、こちらのほうが誤解が少なくていいですね。(公式ドキュメントだと、SA作成時に <code>Project > Owner</code> を指定しろと書かれているんだけど、これって権限過多なのでは無いのだろうか??)</p><p>ちなみにGCP 上の認証過程はこちらのドキュメントが詳しく書かれているので、気になった方は御覧ください。</p><p><a href=https://cloud.google.com/docs/authentication/production>Authenticating as a service account</a></p><p>上記の認証仮定をまとめると</p><ol><li>GOOGLE_APPLICATION_CREDENTIALS を参照する</li><li>ADC (Application Default Credentials) が、コードに紐付けられているSAを使用する</li><li>ADCは各サービスのSAを利用する</li><li>1-3 が使用できなかった場合、認証エラーが発生する</li></ol><p>最終的にGKE上でCloud logging へログを出力するためには、
+以下のコードで無事に <code>INFO</code> のログが<code>stderr</code> に吐き出されることなく、<code>stdout</code> のみに<code>INFO</code>として出力されるようになります。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>logging</span>
+<span class=kn>import</span> <span class=nn>sys</span>
+<span class=c1># NOTE: GKE ではCotainerEngineHandler が必要</span>
+<span class=kn>from</span> <span class=nn>google.cloud.logging.handlers</span> <span class=kn>import</span> <span class=n>ContainerEngineHandler</span>
 
-logger <span style=color:#f92672>=</span> logging<span style=color:#f92672>.</span>getLogger(__name__)
-<span style=color:#75715e># NOTE: stream で stdout を指定する</span>
-logger<span style=color:#f92672>.</span>addHandler(ContainerEngineHandler(name<span style=color:#f92672>=</span>__name__, stream<span style=color:#f92672>=</span>sys<span style=color:#f92672>.</span>stdout))
-<span style=color:#75715e># NOTE: ログが重複して出力されるので、propagate を切る</span>
-logger<span style=color:#f92672>.</span>propagate <span style=color:#f92672>=</span> False
+<span class=n>logger</span> <span class=o>=</span> <span class=n>logging</span><span class=o>.</span><span class=n>getLogger</span><span class=p>(</span><span class=vm>__name__</span><span class=p>)</span>
+<span class=c1># NOTE: stream で stdout を指定する</span>
+<span class=n>logger</span><span class=o>.</span><span class=n>addHandler</span><span class=p>(</span><span class=n>ContainerEngineHandler</span><span class=p>(</span><span class=n>name</span><span class=o>=</span><span class=vm>__name__</span><span class=p>,</span> <span class=n>stream</span><span class=o>=</span><span class=n>sys</span><span class=o>.</span><span class=n>stdout</span><span class=p>))</span>
+<span class=c1># NOTE: ログが重複して出力されるので、propagate を切る</span>
+<span class=n>logger</span><span class=o>.</span><span class=n>propagate</span> <span class=o>=</span> <span class=bp>False</span>
 
-logger<span style=color:#f92672>.</span>info(<span style=color:#e6db74>&#39;Hello Cloud Logging.&#39;</span>)
-</code></pre></div><h2 id=appendix>Appendix</h2><ul><li><a href=https://docs.python.org/3/howto/logging.html>https://docs.python.org/3/howto/logging.html</a></li><li><a href=https://cloud.google.com/logging/docs/setup/python>https://cloud.google.com/logging/docs/setup/python</a></li><li><a href=https://www.ai-shift.co.jp/techblog/1217>https://www.ai-shift.co.jp/techblog/1217</a></li><li><a href=https://stackoverflow.com/questions/48078051/duplicate-log-entries-with-google-cloud-stackdriver-logging-of-python-code-on-ku>https://stackoverflow.com/questions/48078051/duplicate-log-entries-with-google-cloud-stackdriver-logging-of-python-code-on-ku</a><ul><li>同じような質問があった</li></ul></li></ul></section><div class=post-tags><nav class="nav tags"><ul class=tags><li><a href=/tags/gcp>GCP</a></li></ul></nav></div></article></main><h3>See Also</h3><ul><li><a href=/posts/2019-10-03/>pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL</a></li><li><a href=/posts/2019-09-24/>How to connect the Google Compute Engine via Visual Studio Code</a></li></ul><footer><hr><a class=soc href=https://github.com/hurutoriya title=GitHub><i data-feather=github></i></a>|<a class=soc href=https://twitter.com/hurutoriya/ title=Twitter><i data-feather=twitter></i></a>|⚡️
-2021 © Shunya Ueta | <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a></footer><script>feather.replace()</script></div></body></html>
+<span class=n>logger</span><span class=o>.</span><span class=n>info</span><span class=p>(</span><span class=s1>&#39;Hello Cloud Logging.&#39;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=appendix>Appendix</h2><ul><li><a href=https://docs.python.org/3/howto/logging.html>https://docs.python.org/3/howto/logging.html</a></li><li><a href=https://cloud.google.com/logging/docs/setup/python>https://cloud.google.com/logging/docs/setup/python</a></li><li><a href=https://www.ai-shift.co.jp/techblog/1217>https://www.ai-shift.co.jp/techblog/1217</a></li><li><a href=https://stackoverflow.com/questions/48078051/duplicate-log-entries-with-google-cloud-stackdriver-logging-of-python-code-on-ku>https://stackoverflow.com/questions/48078051/duplicate-log-entries-with-google-cloud-stackdriver-logging-of-python-code-on-ku</a><ul><li>同じような質問があった</li></ul></li></ul></div><h2>See Also</h2><ul><li><a href=/posts/2019-10-03/>pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL</a></li><li><a href=/posts/2019-09-24/>How to connect the Google Compute Engine via Visual Studio Code</a></li></ul></div><div class=container><nav class="flex container suggested"><a rel=prev href=/posts/2021-02-21/ title="Previous post (older)"><span>Previous</span>
+GKE でローリングアップデート後、ローカルからポートフォワードでリクエストを投げるとcurl: (52) Empty reply from server と返ってくるときの対処方法</a>
+<a rel=next href=/posts/2021-03-05/ title="Next post (newer)"><span>Next</span>
+2021年の目標</a></nav></div></main></main><footer class="footer flex"><section class=container><nav class=footer-links><a href=/index.xml>RSS</a></nav></section><script async src=/js/features.min.a94f58a30ad2560de728e080d87f75c60cf806fd1b3d5f4815f1a1a02c0d1859.js></script></footer></body></html>

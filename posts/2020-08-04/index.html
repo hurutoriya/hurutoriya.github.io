@@ -1,75 +1,141 @@
-<!doctype html><html><head><script data-ad-client=ca-pub-8604812913439531 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>AOJの「ITP I」40問をpythonで解いた - Shunya Ueta</title><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:image" content><meta property="og:title" content="AOJの「ITP I」40問をpythonで解いた"><meta property="og:description" content="はじめに コーディングの腕をもっと磨きたいなと思ったので、以下の記事を参考に始めてみた https://qiita.com/e869120/items/f1c6f98364d1443148b3 全部で 44 問ありますが、最後の 4 問は競プロとはあまり関係ないので、ITP1_1-A から ITP1_10-D までの 40 問を解くことをお勧めします。 まずは最初におすすめされた、AO"><meta property="og:type" content="article"><meta property="og:url" content="https://shunyaueta.com/posts/2020-08-04/"><meta property="article:published_time" content="2020-08-04T03:38:58+09:00"><meta property="article:modified_time" content="2020-08-04T03:38:58+09:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="AOJの「ITP I」40問をpythonで解いた"><meta name=twitter:description content="はじめに コーディングの腕をもっと磨きたいなと思ったので、以下の記事を参考に始めてみた https://qiita.com/e869120/items/f1c6f98364d1443148b3 全部で 44 問ありますが、最後の 4 問は競プロとはあまり関係ないので、ITP1_1-A から ITP1_10-D までの 40 問を解くことをお勧めします。 まずは最初におすすめされた、AO"><script src=https://shunyaueta.com/js/feather.min.js></script><link href=https://shunyaueta.com/css/fonts.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://shunyaueta.com/css/main.css><link rel=stylesheet type=text/css href=https://shunyaueta.com/css/dark.css media="(prefers-color-scheme: dark)"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-39994406-11"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-39994406-11');</script></head><body><div class=content><header><div class=main><a href=https://shunyaueta.com/>Shunya Ueta</a></div><nav><a href=/posts>All posts</a>
-<a href=/about>About</a>
-<a href=/tags>Tags</a></nav></header><main><article><div class=title><h1 class=title>AOJの「ITP I」40問をpythonで解いた</h1><div class=meta>Posted on Aug 4, 2020</div></div><section class=body><h2 id=はじめに>はじめに</h2><p>コーディングの腕をもっと磨きたいなと思ったので、以下の記事を参考に始めてみた</p><ul><li><a href=https://qiita.com/e869120/items/f1c6f98364d1443148b3>https://qiita.com/e869120/items/f1c6f98364d1443148b3</a></li></ul><blockquote><p>全部で 44 問ありますが、最後の 4 問は競プロとはあまり関係ないので、ITP1_1-A から ITP1_10-D までの 40 問を解くことをお勧めします。</p></blockquote><p>まずは最初におすすめされた、AOJのITP1_1-A から ITP1_10-D までの 40 問を解いてみた
+<!doctype html><html lang=ja><head><script data-ad-client=ca-pub-8604812913439531 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=theme-color content="dark"><title>AOJの「ITP I」40問をpythonで解いた | Shunya Ueta</title><link rel=stylesheet href=/sass/main.min.1a3290acca8b3fc92df85ea9200859476d6c80d59009c89a749300f3ce7a7a67.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-39994406-11"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-39994406-11');</script></head><body class=dark><nav class=navbar><div class=container><div class=flex><div><a class=brand href=/><span class=emoji>🎰</span>
+Shunya Ueta</a></div><div class=flex><a href=/articles/>All posts</a>
+<button id=dark-mode-button></button></div></div></div></nav><main><div class=container><article><header class=article-header><div class=thumb><div><h1>AOJの「ITP I」40問をpythonで解いた</h1><div class=post-meta><div>By on <time>August 04, 2020</time></div><div class=tags><a href=/tags/python/>Python</a>
+<a href=/tags/coder/>coder</a></div></div></div></div></header></article><div class=article-post><h2 id=はじめに>はじめに</h2><p>コーディングの腕をもっと磨きたいなと思ったので、以下の記事を参考に始めてみた</p><ul><li><a href=https://qiita.com/e869120/items/f1c6f98364d1443148b3>https://qiita.com/e869120/items/f1c6f98364d1443148b3</a></li></ul><blockquote><p>全部で 44 問ありますが、最後の 4 問は競プロとはあまり関係ないので、ITP1_1-A から ITP1_10-D までの 40 問を解くことをお勧めします。</p></blockquote><p>まずは最初におすすめされた、AOJのITP1_1-A から ITP1_10-D までの 40 問を解いてみた
 無料でこのサービスが提供されてるの素晴らしい
 標準入力、出力の整形が少し手間取ったけど、あとは愚直に解いていった</p><ul><li><a href=http://judge.u-aizu.ac.jp/onlinejudge/>http://judge.u-aizu.ac.jp/onlinejudge/</a></li></ul><p>感想としては、</p><ul><li>やってみたら、意外と楽しい。特に自分で諦めずに試行錯誤して、オンラインで一発でACもらえるとめちゃくちゃ嬉しい</li><li>テストケースに通る、すなわち正しい、それが書けたら達成感がある</li><li>何かしらのお題に沿って、コードを書くという動機ができるので、書くことに慣れたい場合も有用そう</li></ul><p>togglで時間計測しながら、やって見直してみたら15h46m 費やしていた。大体1問25mくらい</p><p><img src=/posts/2020-08-04/images/1.png alt=統計>
-<img src=/posts/2020-08-04/images/2.png alt=統計></p><p>次の目標、</p><ul><li>AtCoder で水色を目指す!!!</li><li>データ構造周りや、アルゴリズム周りはまだまだ弱いのでそこらへんを抑えていきたい</li></ul><p>当面は、以下の２つに投資していきます</p><ul><li>機械学習だけに縛られない、SWEとしてスキル底上げ</li><li>機械学習関係の確固たる基礎知識と実装力</li></ul><p>以下に自分が書いた回答例を放流しておきます。</p><hr><h2 id=rule>Rule</h2><ul><li>15分試行錯誤しても、緒がわからない場合は諦める</li><li>わからなかったとき、もっと上手な書き方は以下を参考にしました</li><li><a href=https://qiita.com/cmtennis1042/items/5f1e7f071081176e857f>https://qiita.com/cmtennis1042/items/5f1e7f071081176e857f</a></li></ul><h2 id=itp1_1_a---hello-world>ITP1_1_A: Hello World</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;Hello world&#39;</span>)
-</code></pre></div><h2 id=itp1_1_b---x-cubic>ITP1_1_B: X Cubic</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x <span style=color:#f92672>=</span> input()
-<span style=color:#66d9ef>print</span>(x <span style=color:#f92672>**</span> <span style=color:#ae81ff>3</span>)
-</code></pre></div><h2 id=itp1_1_c---rectangle>ITP1_1_C: Rectangle</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a, b <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-<span style=color:#66d9ef>print</span>(a<span style=color:#f92672>*</span>b, <span style=color:#ae81ff>2</span><span style=color:#f92672>*</span>(a<span style=color:#f92672>+</span>b))
-</code></pre></div><h2 id=itp1_1_d---watch>ITP1_1_D: Watch</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>second <span style=color:#f92672>=</span> int(input())
-<span style=color:#66d9ef>print</span>(second<span style=color:#f92672>//</span>(<span style=color:#ae81ff>60</span><span style=color:#f92672>**</span><span style=color:#ae81ff>2</span>),<span style=color:#e6db74>&#39;:&#39;</span>,(second<span style=color:#f92672>%</span>(<span style=color:#ae81ff>60</span><span style=color:#f92672>**</span><span style=color:#ae81ff>2</span>))<span style=color:#f92672>//</span><span style=color:#ae81ff>60</span>,<span style=color:#e6db74>&#39;:&#39;</span>,second<span style=color:#f92672>%</span><span style=color:#ae81ff>60</span>,sep<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;&#39;</span>)
-</code></pre></div><p><code>//</code> は整数の商を算出する</p><h2 id=itp1_2_a---small-large-or-equal>ITP1_2_A: Small, Large, or Equal</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a, b <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-<span style=color:#66d9ef>if</span> a <span style=color:#f92672>&gt;</span> b:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;a &gt; b&#34;</span>)
-<span style=color:#66d9ef>elif</span> a <span style=color:#f92672>==</span> b:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;a == b&#34;</span>)
-<span style=color:#66d9ef>elif</span> a <span style=color:#f92672>&lt;</span> b:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;a &lt; b&#34;</span>)
-</code></pre></div><h2 id=itp1_2_b---range>ITP1_2_B: Range</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a, b, c <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-<span style=color:#66d9ef>if</span> a <span style=color:#f92672>&lt;</span> b <span style=color:#f92672>and</span> b <span style=color:#f92672>&lt;</span> c:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Yes&#34;</span>)
-<span style=color:#66d9ef>else</span>:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;No&#34;</span>)
-</code></pre></div><h2 id=itp1_2_c---sorting-three-numbers>ITP1_2_C: Sorting Three Numbers</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>l <span style=color:#f92672>=</span> list(map(int, input()<span style=color:#f92672>.</span>split()))
-l<span style=color:#f92672>.</span>sort()
-<span style=color:#66d9ef>print</span>(l[<span style=color:#ae81ff>0</span>],l[<span style=color:#ae81ff>1</span>],l[<span style=color:#ae81ff>2</span>], sep<span style=color:#f92672>=</span><span style=color:#e6db74>&#39; &#39;</span>)
-<span style=color:#75715e>#best</span>
-<span style=color:#66d9ef>print</span>(<span style=color:#f92672>*</span>three_numbers)
-</code></pre></div><h2 id=itp1_2_d---circle-in-a-rectangle>ITP1_2_D: Circle in a Rectangle</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>w,h,x,y,r <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-<span style=color:#66d9ef>if</span> (x<span style=color:#f92672>+</span>r) <span style=color:#f92672>&gt;</span> w <span style=color:#f92672>or</span> (x<span style=color:#f92672>-</span>r) <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>or</span> (y<span style=color:#f92672>+</span>r)<span style=color:#f92672>&gt;</span>h <span style=color:#f92672>or</span> (y<span style=color:#f92672>-</span>r) <span style=color:#f92672>&lt;</span><span style=color:#ae81ff>0</span>:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;No&#34;</span>)
-<span style=color:#66d9ef>else</span>:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Yes&#34;</span>)
-</code></pre></div><p>一発で通って、めちゃくちゃ興奮した!!</p><h2 id=itp1_3_a---print-many-hello-world>ITP1_3_A: Print Many Hello World</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>[<span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Hello World&#34;</span>) <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1000</span>)]
-</code></pre></div><p>##　ITP1_3_B: Print Test Cases</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a <span style=color:#f92672>=</span> []
-<span style=color:#66d9ef>while</span> True:
-    n <span style=color:#f92672>=</span> int(input())
-    <span style=color:#66d9ef>if</span> n <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-        <span style=color:#66d9ef>break</span>
-    <span style=color:#66d9ef>else</span>:
-        a<span style=color:#f92672>.</span>append(n)
-[<span style=color:#66d9ef>print</span>(f<span style=color:#e6db74>&#39;Case {i+1}: {num}&#39;</span>) <span style=color:#66d9ef>for</span> i, num <span style=color:#f92672>in</span> enumerate(a)]
-</code></pre></div><h2 id=itp1_3_c---swapping-two-numbers>ITP1_3_C: Swapping Two Numbers</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>pairs <span style=color:#f92672>=</span> []
-<span style=color:#66d9ef>while</span> True:
-    a, b <span style=color:#f92672>=</span> map(int,input()<span style=color:#f92672>.</span>split())
-    <span style=color:#66d9ef>if</span> (a, b) <span style=color:#f92672>==</span> (<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>):
-        <span style=color:#66d9ef>break</span>
-    <span style=color:#66d9ef>else</span>:
-        pairs<span style=color:#f92672>.</span>append([a, b])
-<span style=color:#66d9ef>for</span> pair <span style=color:#f92672>in</span> pairs:
-    pair<span style=color:#f92672>.</span>sort()
-    <span style=color:#66d9ef>print</span>(<span style=color:#f92672>*</span>pair)
-</code></pre></div><h2 id=itp1_3_d---how-many-divisors>ITP1_3_D: How Many Divisors?</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a, b, c <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-cnt <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(b <span style=color:#f92672>-</span> a <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
-    <span style=color:#66d9ef>if</span> c <span style=color:#f92672>%</span> (a<span style=color:#f92672>+</span>i) <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-        cnt <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-<span style=color:#66d9ef>print</span>(cnt)
-<span style=color:#75715e># Best</span>
+<img src=/posts/2020-08-04/images/2.png alt=統計></p><p>次の目標、</p><ul><li>AtCoder で水色を目指す!!!</li><li>データ構造周りや、アルゴリズム周りはまだまだ弱いのでそこらへんを抑えていきたい</li></ul><p>当面は、以下の２つに投資していきます</p><ul><li>機械学習だけに縛られない、SWEとしてスキル底上げ</li><li>機械学習関係の確固たる基礎知識と実装力</li></ul><p>以下に自分が書いた回答例を放流しておきます。</p><hr><h2 id=rule>Rule</h2><ul><li>15分試行錯誤しても、緒がわからない場合は諦める</li><li>わからなかったとき、もっと上手な書き方は以下を参考にしました</li><li><a href=https://qiita.com/cmtennis1042/items/5f1e7f071081176e857f>https://qiita.com/cmtennis1042/items/5f1e7f071081176e857f</a></li></ul><h2 id=itp1_1_a---hello-world>ITP1_1_A: Hello World</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=k>print</span><span class=p>(</span><span class=s1>&#39;Hello world&#39;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_1_b---x-cubic>ITP1_1_B: X Cubic</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>x</span> <span class=o>=</span> <span class=nb>input</span><span class=p>()</span>
+<span class=k>print</span><span class=p>(</span><span class=n>x</span> <span class=o>**</span> <span class=mi>3</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_1_c---rectangle>ITP1_1_C: Rectangle</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>a</span><span class=p>,</span> <span class=n>b</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=k>print</span><span class=p>(</span><span class=n>a</span><span class=o>*</span><span class=n>b</span><span class=p>,</span> <span class=mi>2</span><span class=o>*</span><span class=p>(</span><span class=n>a</span><span class=o>+</span><span class=n>b</span><span class=p>))</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_1_d---watch>ITP1_1_D: Watch</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>second</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=k>print</span><span class=p>(</span><span class=n>second</span><span class=o>//</span><span class=p>(</span><span class=mi>60</span><span class=o>**</span><span class=mi>2</span><span class=p>),</span><span class=s1>&#39;:&#39;</span><span class=p>,(</span><span class=n>second</span><span class=o>%</span><span class=p>(</span><span class=mi>60</span><span class=o>**</span><span class=mi>2</span><span class=p>))</span><span class=o>//</span><span class=mi>60</span><span class=p>,</span><span class=s1>&#39;:&#39;</span><span class=p>,</span><span class=n>second</span><span class=o>%</span><span class=mi>60</span><span class=p>,</span><span class=n>sep</span><span class=o>=</span><span class=s1>&#39;&#39;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><p><code>//</code> は整数の商を算出する</p><h2 id=itp1_2_a---small-large-or-equal>ITP1_2_A: Small, Large, or Equal</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>a</span><span class=p>,</span> <span class=n>b</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=k>if</span> <span class=n>a</span> <span class=o>&gt;</span> <span class=n>b</span><span class=p>:</span>
+    <span class=k>print</span><span class=p>(</span><span class=s2>&#34;a &gt; b&#34;</span><span class=p>)</span>
+<span class=k>elif</span> <span class=n>a</span> <span class=o>==</span> <span class=n>b</span><span class=p>:</span>
+    <span class=k>print</span><span class=p>(</span><span class=s2>&#34;a == b&#34;</span><span class=p>)</span>
+<span class=k>elif</span> <span class=n>a</span> <span class=o>&lt;</span> <span class=n>b</span><span class=p>:</span>
+    <span class=k>print</span><span class=p>(</span><span class=s2>&#34;a &lt; b&#34;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_2_b---range>ITP1_2_B: Range</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>,</span> <span class=n>c</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=k>if</span> <span class=n>a</span> <span class=o>&lt;</span> <span class=n>b</span> <span class=ow>and</span> <span class=n>b</span> <span class=o>&lt;</span> <span class=n>c</span><span class=p>:</span>
+    <span class=k>print</span><span class=p>(</span><span class=s2>&#34;Yes&#34;</span><span class=p>)</span>
+<span class=k>else</span><span class=p>:</span>
+    <span class=k>print</span><span class=p>(</span><span class=s2>&#34;No&#34;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_2_c---sorting-three-numbers>ITP1_2_C: Sorting Three Numbers</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>l</span> <span class=o>=</span> <span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span>
+<span class=n>l</span><span class=o>.</span><span class=n>sort</span><span class=p>()</span>
+<span class=k>print</span><span class=p>(</span><span class=n>l</span><span class=p>[</span><span class=mi>0</span><span class=p>],</span><span class=n>l</span><span class=p>[</span><span class=mi>1</span><span class=p>],</span><span class=n>l</span><span class=p>[</span><span class=mi>2</span><span class=p>],</span> <span class=n>sep</span><span class=o>=</span><span class=s1>&#39; &#39;</span><span class=p>)</span>
+<span class=c1>#best</span>
+<span class=k>print</span><span class=p>(</span><span class=o>*</span><span class=n>three_numbers</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_2_d---circle-in-a-rectangle>ITP1_2_D: Circle in a Rectangle</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>w</span><span class=p>,</span><span class=n>h</span><span class=p>,</span><span class=n>x</span><span class=p>,</span><span class=n>y</span><span class=p>,</span><span class=n>r</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=k>if</span> <span class=p>(</span><span class=n>x</span><span class=o>+</span><span class=n>r</span><span class=p>)</span> <span class=o>&gt;</span> <span class=n>w</span> <span class=ow>or</span> <span class=p>(</span><span class=n>x</span><span class=o>-</span><span class=n>r</span><span class=p>)</span> <span class=o>&lt;</span> <span class=mi>0</span> <span class=ow>or</span> <span class=p>(</span><span class=n>y</span><span class=o>+</span><span class=n>r</span><span class=p>)</span><span class=o>&gt;</span><span class=n>h</span> <span class=ow>or</span> <span class=p>(</span><span class=n>y</span><span class=o>-</span><span class=n>r</span><span class=p>)</span> <span class=o>&lt;</span><span class=mi>0</span><span class=p>:</span>
+    <span class=k>print</span><span class=p>(</span><span class=s2>&#34;No&#34;</span><span class=p>)</span>
+<span class=k>else</span><span class=p>:</span>
+    <span class=k>print</span><span class=p>(</span><span class=s2>&#34;Yes&#34;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><p>一発で通って、めちゃくちゃ興奮した!!</p><h2 id=itp1_3_a---print-many-hello-world>ITP1_3_A: Print Many Hello World</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=p>[</span><span class=k>print</span><span class=p>(</span><span class=s2>&#34;Hello World&#34;</span><span class=p>)</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1000</span><span class=p>)]</span>
+</code></pre></td></tr></table></div></div><p>##　ITP1_3_B: Print Test Cases</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>a</span> <span class=o>=</span> <span class=p>[]</span>
+<span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>n</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+    <span class=k>if</span> <span class=n>n</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>
+        <span class=k>break</span>
+    <span class=k>else</span><span class=p>:</span>
+        <span class=n>a</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>n</span><span class=p>)</span>
+<span class=p>[</span><span class=k>print</span><span class=p>(</span><span class=n>f</span><span class=s1>&#39;Case {i+1}: {num}&#39;</span><span class=p>)</span> <span class=k>for</span> <span class=n>i</span><span class=p>,</span> <span class=n>num</span> <span class=ow>in</span> <span class=nb>enumerate</span><span class=p>(</span><span class=n>a</span><span class=p>)]</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_3_c---swapping-two-numbers>ITP1_3_C: Swapping Two Numbers</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>pairs</span> <span class=o>=</span> <span class=p>[]</span>
+<span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>a</span><span class=p>,</span> <span class=n>b</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span><span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+    <span class=k>if</span> <span class=p>(</span><span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>):</span>
+        <span class=k>break</span>
+    <span class=k>else</span><span class=p>:</span>
+        <span class=n>pairs</span><span class=o>.</span><span class=n>append</span><span class=p>([</span><span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>])</span>
+<span class=k>for</span> <span class=n>pair</span> <span class=ow>in</span> <span class=n>pairs</span><span class=p>:</span>
+    <span class=n>pair</span><span class=o>.</span><span class=n>sort</span><span class=p>()</span>
+    <span class=k>print</span><span class=p>(</span><span class=o>*</span><span class=n>pair</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_3_d---how-many-divisors>ITP1_3_D: How Many Divisors?</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>,</span> <span class=n>c</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=n>cnt</span> <span class=o>=</span> <span class=mi>0</span>
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>b</span> <span class=o>-</span> <span class=n>a</span> <span class=o>+</span> <span class=mi>1</span><span class=p>):</span>
+    <span class=k>if</span> <span class=n>c</span> <span class=o>%</span> <span class=p>(</span><span class=n>a</span><span class=o>+</span><span class=n>i</span><span class=p>)</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>
+        <span class=n>cnt</span> <span class=o>+=</span> <span class=mi>1</span>
+<span class=k>print</span><span class=p>(</span><span class=n>cnt</span><span class=p>)</span>
+<span class=c1># Best</span>
 
-<span style=color:#66d9ef>for</span> k <span style=color:#f92672>in</span> range(a,b<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>):
-    <span style=color:#66d9ef>if</span> c<span style=color:#f92672>%</span>k<span style=color:#f92672>==</span><span style=color:#ae81ff>0</span>:
-        cnt<span style=color:#f92672>+=</span><span style=color:#ae81ff>1</span>
-<span style=color:#66d9ef>print</span>(cnt)
-</code></pre></div><h2 id=itp1_4_a---a--b-problem>ITP1_4_A: A / B Problem</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a, b <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-<span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;</span><span style=color:#e6db74>%i</span><span style=color:#e6db74> </span><span style=color:#e6db74>%i</span><span style=color:#e6db74> </span><span style=color:#e6db74>%-5f</span><span style=color:#e6db74>&#39;</span> <span style=color:#f92672>%</span> (a<span style=color:#f92672>//</span>b, a<span style=color:#f92672>%</span>b, a<span style=color:#f92672>/</span>b))
-</code></pre></div><h2 id=itp1_4_b---circle>ITP1_4_B: Circle</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> math
-r <span style=color:#f92672>=</span> float(input())
-<span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;</span><span style=color:#e6db74>%-5f</span><span style=color:#e6db74> </span><span style=color:#e6db74>%-5f</span><span style=color:#e6db74>&#39;</span> <span style=color:#f92672>%</span> (math<span style=color:#f92672>.</span>pi<span style=color:#f92672>*</span>r<span style=color:#f92672>*</span>r, <span style=color:#ae81ff>2</span><span style=color:#f92672>*</span> math<span style=color:#f92672>.</span>pi <span style=color:#f92672>*</span> r))
-</code></pre></div><h2 id=itp1_4_c---simple-calculator>ITP1_4_C: Simple Calculator</h2><p>&lsquo;&lsquo;&lsquo;python
+<span class=k>for</span> <span class=n>k</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>a</span><span class=p>,</span><span class=n>b</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+    <span class=k>if</span> <span class=n>c</span><span class=o>%</span><span class=n>k</span><span class=o>==</span><span class=mi>0</span><span class=p>:</span>
+        <span class=n>cnt</span><span class=o>+=</span><span class=mi>1</span>
+<span class=k>print</span><span class=p>(</span><span class=n>cnt</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_4_a---a--b-problem>ITP1_4_A: A / B Problem</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>a</span><span class=p>,</span> <span class=n>b</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=k>print</span><span class=p>(</span><span class=s1>&#39;</span><span class=si>%i</span><span class=s1> </span><span class=si>%i</span><span class=s1> </span><span class=si>%-5f</span><span class=s1>&#39;</span> <span class=o>%</span> <span class=p>(</span><span class=n>a</span><span class=o>//</span><span class=n>b</span><span class=p>,</span> <span class=n>a</span><span class=o>%</span><span class=n>b</span><span class=p>,</span> <span class=n>a</span><span class=o>/</span><span class=n>b</span><span class=p>))</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_4_b---circle>ITP1_4_B: Circle</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>math</span>
+<span class=n>r</span> <span class=o>=</span> <span class=nb>float</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=k>print</span><span class=p>(</span><span class=s1>&#39;</span><span class=si>%-5f</span><span class=s1> </span><span class=si>%-5f</span><span class=s1>&#39;</span> <span class=o>%</span> <span class=p>(</span><span class=n>math</span><span class=o>.</span><span class=n>pi</span><span class=o>*</span><span class=n>r</span><span class=o>*</span><span class=n>r</span><span class=p>,</span> <span class=mi>2</span><span class=o>*</span> <span class=n>math</span><span class=o>.</span><span class=n>pi</span> <span class=o>*</span> <span class=n>r</span><span class=p>))</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_4_c---simple-calculator>ITP1_4_C: Simple Calculator</h2><p>&lsquo;&lsquo;&lsquo;python
 while True:
 a, op, b = input().split()
 a, b = map(int, [a, b])
@@ -87,286 +153,561 @@ print(a//b)
 n = int(input())
 a = list(map(int, input().split()))
 print(min(a), max(a), sum(a))
-'&rsquo;&rsquo;</p><h2 id=itp1_5_a---print-a-rectangle>ITP1_5_A: Print a Rectangle</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a <span style=color:#f92672>=</span> []
-<span style=color:#66d9ef>while</span> True:
-    h, w <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-    <span style=color:#66d9ef>if</span> (h, w ) <span style=color:#f92672>==</span> (<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>):
-        <span style=color:#66d9ef>break</span>
-    <span style=color:#66d9ef>else</span>:
-        a<span style=color:#f92672>.</span>append([h,w])
+'&rsquo;&rsquo;</p><h2 id=itp1_5_a---print-a-rectangle>ITP1_5_A: Print a Rectangle</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>a</span> <span class=o>=</span> <span class=p>[]</span>
+<span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>h</span><span class=p>,</span> <span class=n>w</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+    <span class=k>if</span> <span class=p>(</span><span class=n>h</span><span class=p>,</span> <span class=n>w</span> <span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>):</span>
+        <span class=k>break</span>
+    <span class=k>else</span><span class=p>:</span>
+        <span class=n>a</span><span class=o>.</span><span class=n>append</span><span class=p>([</span><span class=n>h</span><span class=p>,</span><span class=n>w</span><span class=p>])</span>
 
-<span style=color:#66d9ef>for</span> pair <span style=color:#f92672>in</span> a:
-    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(pair[<span style=color:#ae81ff>0</span>]):
-        <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;#&#34;</span> <span style=color:#f92672>*</span> pair[<span style=color:#ae81ff>1</span>])
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;&#39;</span>)
+<span class=k>for</span> <span class=n>pair</span> <span class=ow>in</span> <span class=n>a</span><span class=p>:</span>
+    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>pair</span><span class=p>[</span><span class=mi>0</span><span class=p>]):</span>
+        <span class=k>print</span><span class=p>(</span><span class=s2>&#34;#&#34;</span> <span class=o>*</span> <span class=n>pair</span><span class=p>[</span><span class=mi>1</span><span class=p>])</span>
+    <span class=k>print</span><span class=p>(</span><span class=s1>&#39;&#39;</span><span class=p>)</span>
 
-<span style=color:#75715e>#Best</span>
-<span style=color:#66d9ef>while</span> True:
-    h, w <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-    <span style=color:#66d9ef>if</span> (h, w) <span style=color:#f92672>==</span> (<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>):
-        <span style=color:#66d9ef>break</span>
-    [<span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;#&#39;</span><span style=color:#f92672>*</span>w) <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(h)]
-    <span style=color:#66d9ef>print</span>()
-</code></pre></div><h2 id=itp1_5_b---print-a-frame>ITP1_5_B: Print a Frame</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>while</span> True:
-    h, w <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-    <span style=color:#66d9ef>if</span> (h, w) <span style=color:#f92672>==</span> (<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>):
-        <span style=color:#66d9ef>break</span>
-    <span style=color:#66d9ef>else</span>:
-        <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(h):
-            <span style=color:#66d9ef>if</span> i <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-                <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;#&#39;</span> <span style=color:#f92672>*</span> w, sep<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;&#39;</span>)
-            <span style=color:#66d9ef>elif</span> i <span style=color:#f92672>==</span> (h<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>):
-                <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;#&#39;</span> <span style=color:#f92672>*</span> w)
-                <span style=color:#66d9ef>print</span>()
-            <span style=color:#66d9ef>else</span>:
-                <span style=color:#66d9ef>print</span>(f<span style=color:#e6db74>&#34;#&#34;</span>, <span style=color:#e6db74>&#34;.&#34;</span> <span style=color:#f92672>*</span> (w <span style=color:#f92672>-</span> <span style=color:#ae81ff>2</span>), <span style=color:#e6db74>&#34;#&#34;</span>, sep<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;&#39;</span>)
-</code></pre></div><h2 id=itp1_5_c---print-a-chessboard>ITP1_5_C: Print a Chessboard</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>while</span> True:
-    h, w <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-    <span style=color:#66d9ef>if</span> (h, w) <span style=color:#f92672>==</span> (<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>):
-        <span style=color:#66d9ef>break</span>
-    <span style=color:#66d9ef>else</span>:
-        <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(h):
-            line <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&#39;</span>
-            <span style=color:#66d9ef>if</span> i <span style=color:#f92672>%</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-                <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(w):
-                    <span style=color:#66d9ef>if</span> j <span style=color:#f92672>%</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-                        line<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;#&#39;</span>
-                    <span style=color:#66d9ef>else</span>:
-                        line<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;.&#39;</span>
-            <span style=color:#66d9ef>else</span>:
-                <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(w):
-                    <span style=color:#66d9ef>if</span> j <span style=color:#f92672>%</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-                        line<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;.&#39;</span>
-                    <span style=color:#66d9ef>else</span>:
-                        line<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;#&#39;</span>
-            <span style=color:#66d9ef>print</span>(line)
-        <span style=color:#66d9ef>print</span>()
-</code></pre></div><h2 id=itp1_5_d---structured-programming>ITP1_5_D: Structured Programming</h2><p>C++のコードで3がつくものというロジックが読めなかった。。。10で割ってあまりが3だけだと、<code>31</code> とかがエッジケースで通らなかった。。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>n <span style=color:#f92672>=</span> int(input())
-l <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&#39;</span>
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>,n<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>):
-    <span style=color:#66d9ef>if</span> i <span style=color:#f92672>%</span> <span style=color:#ae81ff>3</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-        l<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39; &#39;</span><span style=color:#f92672>+</span>str(i)
-    <span style=color:#66d9ef>elif</span> i <span style=color:#f92672>%</span> <span style=color:#ae81ff>10</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>3</span>:
-        l<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39; &#39;</span><span style=color:#f92672>+</span>str(i)
-<span style=color:#66d9ef>print</span>(l)
+<span class=c1>#Best</span>
+<span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>h</span><span class=p>,</span> <span class=n>w</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+    <span class=k>if</span> <span class=p>(</span><span class=n>h</span><span class=p>,</span> <span class=n>w</span><span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>):</span>
+        <span class=k>break</span>
+    <span class=p>[</span><span class=k>print</span><span class=p>(</span><span class=s1>&#39;#&#39;</span><span class=o>*</span><span class=n>w</span><span class=p>)</span> <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>h</span><span class=p>)]</span>
+    <span class=k>print</span><span class=p>()</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_5_b---print-a-frame>ITP1_5_B: Print a Frame</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>h</span><span class=p>,</span> <span class=n>w</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+    <span class=k>if</span> <span class=p>(</span><span class=n>h</span><span class=p>,</span> <span class=n>w</span><span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>):</span>
+        <span class=k>break</span>
+    <span class=k>else</span><span class=p>:</span>
+        <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>h</span><span class=p>):</span>
+            <span class=k>if</span> <span class=n>i</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>
+                <span class=k>print</span><span class=p>(</span><span class=s1>&#39;#&#39;</span> <span class=o>*</span> <span class=n>w</span><span class=p>,</span> <span class=n>sep</span><span class=o>=</span><span class=s1>&#39;&#39;</span><span class=p>)</span>
+            <span class=k>elif</span> <span class=n>i</span> <span class=o>==</span> <span class=p>(</span><span class=n>h</span><span class=o>-</span><span class=mi>1</span><span class=p>):</span>
+                <span class=k>print</span><span class=p>(</span><span class=s1>&#39;#&#39;</span> <span class=o>*</span> <span class=n>w</span><span class=p>)</span>
+                <span class=k>print</span><span class=p>()</span>
+            <span class=k>else</span><span class=p>:</span>
+                <span class=k>print</span><span class=p>(</span><span class=n>f</span><span class=s2>&#34;#&#34;</span><span class=p>,</span> <span class=s2>&#34;.&#34;</span> <span class=o>*</span> <span class=p>(</span><span class=n>w</span> <span class=o>-</span> <span class=mi>2</span><span class=p>),</span> <span class=s2>&#34;#&#34;</span><span class=p>,</span> <span class=n>sep</span><span class=o>=</span><span class=s1>&#39;&#39;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_5_c---print-a-chessboard>ITP1_5_C: Print a Chessboard</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>h</span><span class=p>,</span> <span class=n>w</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+    <span class=k>if</span> <span class=p>(</span><span class=n>h</span><span class=p>,</span> <span class=n>w</span><span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>):</span>
+        <span class=k>break</span>
+    <span class=k>else</span><span class=p>:</span>
+        <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>h</span><span class=p>):</span>
+            <span class=n>line</span> <span class=o>=</span> <span class=s1>&#39;&#39;</span>
+            <span class=k>if</span> <span class=n>i</span> <span class=o>%</span> <span class=mi>2</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>
+                <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>w</span><span class=p>):</span>
+                    <span class=k>if</span> <span class=n>j</span> <span class=o>%</span> <span class=mi>2</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>
+                        <span class=n>line</span><span class=o>+=</span><span class=s1>&#39;#&#39;</span>
+                    <span class=k>else</span><span class=p>:</span>
+                        <span class=n>line</span><span class=o>+=</span><span class=s1>&#39;.&#39;</span>
+            <span class=k>else</span><span class=p>:</span>
+                <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>w</span><span class=p>):</span>
+                    <span class=k>if</span> <span class=n>j</span> <span class=o>%</span> <span class=mi>2</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>
+                        <span class=n>line</span><span class=o>+=</span><span class=s1>&#39;.&#39;</span>
+                    <span class=k>else</span><span class=p>:</span>
+                        <span class=n>line</span><span class=o>+=</span><span class=s1>&#39;#&#39;</span>
+            <span class=k>print</span><span class=p>(</span><span class=n>line</span><span class=p>)</span>
+        <span class=k>print</span><span class=p>()</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_5_d---structured-programming>ITP1_5_D: Structured Programming</h2><p>C++のコードで3がつくものというロジックが読めなかった。。。10で割ってあまりが3だけだと、<code>31</code> とかがエッジケースで通らなかった。。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>n</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=n>l</span> <span class=o>=</span> <span class=s1>&#39;&#39;</span>
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span><span class=n>n</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+    <span class=k>if</span> <span class=n>i</span> <span class=o>%</span> <span class=mi>3</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>
+        <span class=n>l</span><span class=o>+=</span><span class=s1>&#39; &#39;</span><span class=o>+</span><span class=nb>str</span><span class=p>(</span><span class=n>i</span><span class=p>)</span>
+    <span class=k>elif</span> <span class=n>i</span> <span class=o>%</span> <span class=mi>10</span> <span class=o>==</span> <span class=mi>3</span><span class=p>:</span>
+        <span class=n>l</span><span class=o>+=</span><span class=s1>&#39; &#39;</span><span class=o>+</span><span class=nb>str</span><span class=p>(</span><span class=n>i</span><span class=p>)</span>
+<span class=k>print</span><span class=p>(</span><span class=n>l</span><span class=p>)</span>
 
-<span style=color:#75715e># AC</span>
-N<span style=color:#f92672>=</span>int(input())
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>,N<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>):
-    <span style=color:#66d9ef>if</span> i<span style=color:#f92672>%</span><span style=color:#ae81ff>3</span><span style=color:#f92672>==</span><span style=color:#ae81ff>0</span> <span style=color:#f92672>or</span> <span style=color:#e6db74>&#34;3&#34;</span> <span style=color:#f92672>in</span> str(i):
-        <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34; {}&#34;</span><span style=color:#f92672>.</span>format(i),end<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>)
-<span style=color:#66d9ef>print</span>()
-</code></pre></div><h2 id=itp1_6_a---reversing-numbers>ITP1_6_A: Reversing Numbers</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>n <span style=color:#f92672>=</span> int(input())
-a <span style=color:#f92672>=</span> list(map(int, input()<span style=color:#f92672>.</span>split()))
-<span style=color:#66d9ef>print</span>(<span style=color:#f92672>*</span>reversed(a))
-</code></pre></div><h2 id=itp1_6_b---finding-missing-cards>ITP1_6_B: Finding Missing Cards</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>all_cards <span style=color:#f92672>=</span> [(s, n) <span style=color:#66d9ef>for</span> s <span style=color:#f92672>in</span> [<span style=color:#e6db74>&#39;S&#39;</span>, <span style=color:#e6db74>&#39;H&#39;</span>, <span style=color:#e6db74>&#39;C&#39;</span>, <span style=color:#e6db74>&#39;D&#39;</span>] <span style=color:#66d9ef>for</span> n <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>14</span>)]
+<span class=c1># AC</span>
+<span class=n>N</span><span class=o>=</span><span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span><span class=n>N</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+    <span class=k>if</span> <span class=n>i</span><span class=o>%</span><span class=mi>3</span><span class=o>==</span><span class=mi>0</span> <span class=ow>or</span> <span class=s2>&#34;3&#34;</span> <span class=ow>in</span> <span class=nb>str</span><span class=p>(</span><span class=n>i</span><span class=p>):</span>
+        <span class=k>print</span><span class=p>(</span><span class=s2>&#34; {}&#34;</span><span class=o>.</span><span class=n>format</span><span class=p>(</span><span class=n>i</span><span class=p>),</span><span class=n>end</span><span class=o>=</span><span class=s2>&#34;&#34;</span><span class=p>)</span>
+<span class=k>print</span><span class=p>()</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_6_a---reversing-numbers>ITP1_6_A: Reversing Numbers</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>n</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=n>a</span> <span class=o>=</span> <span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span>
+<span class=k>print</span><span class=p>(</span><span class=o>*</span><span class=nb>reversed</span><span class=p>(</span><span class=n>a</span><span class=p>))</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_6_b---finding-missing-cards>ITP1_6_B: Finding Missing Cards</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>all_cards</span> <span class=o>=</span> <span class=p>[(</span><span class=n>s</span><span class=p>,</span> <span class=n>n</span><span class=p>)</span> <span class=k>for</span> <span class=n>s</span> <span class=ow>in</span> <span class=p>[</span><span class=s1>&#39;S&#39;</span><span class=p>,</span> <span class=s1>&#39;H&#39;</span><span class=p>,</span> <span class=s1>&#39;C&#39;</span><span class=p>,</span> <span class=s1>&#39;D&#39;</span><span class=p>]</span> <span class=k>for</span> <span class=n>n</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>14</span><span class=p>)]</span>
 
-n <span style=color:#f92672>=</span> int(input())
-hold_cards <span style=color:#f92672>=</span> []
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(n):
-    suit, num <span style=color:#f92672>=</span> input()<span style=color:#f92672>.</span>split()
-    num <span style=color:#f92672>=</span> int(num)
-    hold_cards<span style=color:#f92672>.</span>append((suit, num))
-<span style=color:#66d9ef>for</span> card <span style=color:#f92672>in</span> all_cards:
-    <span style=color:#66d9ef>if</span> card <span style=color:#f92672>not</span> <span style=color:#f92672>in</span> set(hold_cards):
-        <span style=color:#66d9ef>print</span>(<span style=color:#f92672>*</span>card)
-</code></pre></div><p><code>in</code> は<code>O(n)</code>なので注意が必要</p><h2 id=itp1_6_c---official-house>ITP1_6_C: Official House</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>n <span style=color:#f92672>=</span> int(input())
-pos <span style=color:#f92672>=</span> []
-pairs <span style=color:#f92672>=</span> {}
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(n):
-    b,f,r,v <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-    pos<span style=color:#f92672>.</span>append((b,f,r))
-    pairs[(b,f,r)] <span style=color:#f92672>=</span> int(v)
-values <span style=color:#f92672>=</span> [[[<span style=color:#ae81ff>0</span> <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>10</span>)] <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>)] <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>4</span>)]
-<span style=color:#75715e># 4 buildings</span>
-<span style=color:#66d9ef>for</span> b <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>4</span>):
-    <span style=color:#75715e># 3 floors</span>
-    <span style=color:#66d9ef>for</span> f <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>):
-        <span style=color:#75715e># 10 rooms</span>
-        <span style=color:#66d9ef>for</span> r <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>10</span>):
-            <span style=color:#66d9ef>if</span> (b <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>, f <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>, r <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>) <span style=color:#f92672>in</span> set(pos):
-                <span style=color:#66d9ef>print</span>(pairs[(b<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, f<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, r<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>)])
-                values[b][f][r] <span style=color:#f92672>+=</span> pairs[(b<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, f<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, r<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>)]
-<span style=color:#66d9ef>for</span> b <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>4</span>):
-    <span style=color:#75715e># 3 floors</span>
-    <span style=color:#66d9ef>for</span> f <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>):
-        <span style=color:#75715e># 10 rooms</span>
-        <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39; &#39;</span>,end<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;&#39;</span>)
-        <span style=color:#66d9ef>print</span>(<span style=color:#f92672>*</span>values[b][f])
-    <span style=color:#66d9ef>if</span> b <span style=color:#f92672>!=</span> <span style=color:#ae81ff>3</span>:
-        <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;#&#39;</span><span style=color:#f92672>*</span><span style=color:#ae81ff>20</span>)
-<span style=color:#75715e># modify</span>
-n <span style=color:#f92672>=</span> int(input())
-inputs <span style=color:#f92672>=</span> [list(map(int, input()<span style=color:#f92672>.</span>split())) <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(n)]
-values <span style=color:#f92672>=</span> [[[<span style=color:#ae81ff>0</span> <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>10</span>)] <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>)] <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>4</span>)]
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> inputs:
-    values[i[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>][i[<span style=color:#ae81ff>1</span>]<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>][i[<span style=color:#ae81ff>2</span>]<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>] <span style=color:#f92672>+=</span> i[<span style=color:#ae81ff>3</span>]
-<span style=color:#66d9ef>for</span> b <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>4</span>):
-    <span style=color:#66d9ef>for</span> f <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>):
-        <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39; &#39;</span>, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;&#39;</span>)
-        <span style=color:#66d9ef>print</span>(<span style=color:#f92672>*</span>values[b][f])
-    <span style=color:#66d9ef>if</span> b <span style=color:#f92672>!=</span> <span style=color:#ae81ff>3</span>:
-        <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;#&#39;</span><span style=color:#f92672>*</span><span style=color:#ae81ff>20</span>)
-</code></pre></div><p>入力時に、<code>位置情報:値</code> をpairで持つ辞書を作って全部屋をforで回して、マッチした時にその部屋の値を変更していくようにした。
+<span class=n>n</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=n>hold_cards</span> <span class=o>=</span> <span class=p>[]</span>
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>n</span><span class=p>):</span>
+    <span class=n>suit</span><span class=p>,</span> <span class=n>num</span> <span class=o>=</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()</span>
+    <span class=n>num</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=n>num</span><span class=p>)</span>
+    <span class=n>hold_cards</span><span class=o>.</span><span class=n>append</span><span class=p>((</span><span class=n>suit</span><span class=p>,</span> <span class=n>num</span><span class=p>))</span>
+<span class=k>for</span> <span class=n>card</span> <span class=ow>in</span> <span class=n>all_cards</span><span class=p>:</span>
+    <span class=k>if</span> <span class=n>card</span> <span class=ow>not</span> <span class=ow>in</span> <span class=nb>set</span><span class=p>(</span><span class=n>hold_cards</span><span class=p>):</span>
+        <span class=k>print</span><span class=p>(</span><span class=o>*</span><span class=n>card</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><p><code>in</code> は<code>O(n)</code>なので注意が必要</p><h2 id=itp1_6_c---official-house>ITP1_6_C: Official House</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>n</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=n>pos</span> <span class=o>=</span> <span class=p>[]</span>
+<span class=n>pairs</span> <span class=o>=</span> <span class=p>{}</span>
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>n</span><span class=p>):</span>
+    <span class=n>b</span><span class=p>,</span><span class=n>f</span><span class=p>,</span><span class=n>r</span><span class=p>,</span><span class=n>v</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+    <span class=n>pos</span><span class=o>.</span><span class=n>append</span><span class=p>((</span><span class=n>b</span><span class=p>,</span><span class=n>f</span><span class=p>,</span><span class=n>r</span><span class=p>))</span>
+    <span class=n>pairs</span><span class=p>[(</span><span class=n>b</span><span class=p>,</span><span class=n>f</span><span class=p>,</span><span class=n>r</span><span class=p>)]</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=n>v</span><span class=p>)</span>
+<span class=n>values</span> <span class=o>=</span> <span class=p>[[[</span><span class=mi>0</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>10</span><span class=p>)]</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>3</span><span class=p>)]</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>4</span><span class=p>)]</span>
+<span class=c1># 4 buildings</span>
+<span class=k>for</span> <span class=n>b</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>4</span><span class=p>):</span>
+    <span class=c1># 3 floors</span>
+    <span class=k>for</span> <span class=n>f</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>3</span><span class=p>):</span>
+        <span class=c1># 10 rooms</span>
+        <span class=k>for</span> <span class=n>r</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>10</span><span class=p>):</span>
+            <span class=k>if</span> <span class=p>(</span><span class=n>b</span> <span class=o>+</span> <span class=mi>1</span><span class=p>,</span> <span class=n>f</span> <span class=o>+</span> <span class=mi>1</span><span class=p>,</span> <span class=n>r</span> <span class=o>+</span> <span class=mi>1</span><span class=p>)</span> <span class=ow>in</span> <span class=nb>set</span><span class=p>(</span><span class=n>pos</span><span class=p>):</span>
+                <span class=k>print</span><span class=p>(</span><span class=n>pairs</span><span class=p>[(</span><span class=n>b</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span> <span class=n>f</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span> <span class=n>r</span><span class=o>+</span><span class=mi>1</span><span class=p>)])</span>
+                <span class=n>values</span><span class=p>[</span><span class=n>b</span><span class=p>][</span><span class=n>f</span><span class=p>][</span><span class=n>r</span><span class=p>]</span> <span class=o>+=</span> <span class=n>pairs</span><span class=p>[(</span><span class=n>b</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span> <span class=n>f</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span> <span class=n>r</span><span class=o>+</span><span class=mi>1</span><span class=p>)]</span>
+<span class=k>for</span> <span class=n>b</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>4</span><span class=p>):</span>
+    <span class=c1># 3 floors</span>
+    <span class=k>for</span> <span class=n>f</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>3</span><span class=p>):</span>
+        <span class=c1># 10 rooms</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39; &#39;</span><span class=p>,</span><span class=n>end</span><span class=o>=</span><span class=s1>&#39;&#39;</span><span class=p>)</span>
+        <span class=k>print</span><span class=p>(</span><span class=o>*</span><span class=n>values</span><span class=p>[</span><span class=n>b</span><span class=p>][</span><span class=n>f</span><span class=p>])</span>
+    <span class=k>if</span> <span class=n>b</span> <span class=o>!=</span> <span class=mi>3</span><span class=p>:</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;#&#39;</span><span class=o>*</span><span class=mi>20</span><span class=p>)</span>
+<span class=c1># modify</span>
+<span class=n>n</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=n>inputs</span> <span class=o>=</span> <span class=p>[</span><span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>n</span><span class=p>)]</span>
+<span class=n>values</span> <span class=o>=</span> <span class=p>[[[</span><span class=mi>0</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>10</span><span class=p>)]</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>3</span><span class=p>)]</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>4</span><span class=p>)]</span>
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=n>inputs</span><span class=p>:</span>
+    <span class=n>values</span><span class=p>[</span><span class=n>i</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=n>i</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=n>i</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>+=</span> <span class=n>i</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span>
+<span class=k>for</span> <span class=n>b</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>4</span><span class=p>):</span>
+    <span class=k>for</span> <span class=n>f</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>3</span><span class=p>):</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39; &#39;</span><span class=p>,</span> <span class=n>end</span><span class=o>=</span><span class=s1>&#39;&#39;</span><span class=p>)</span>
+        <span class=k>print</span><span class=p>(</span><span class=o>*</span><span class=n>values</span><span class=p>[</span><span class=n>b</span><span class=p>][</span><span class=n>f</span><span class=p>])</span>
+    <span class=k>if</span> <span class=n>b</span> <span class=o>!=</span> <span class=mi>3</span><span class=p>:</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;#&#39;</span><span class=o>*</span><span class=mi>20</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><p>入力時に、<code>位置情報:値</code> をpairで持つ辞書を作って全部屋をforで回して、マッチした時にその部屋の値を変更していくようにした。
 1つめのtest caseは成功したが、２つ目のtest caseで同じ位置情報が入力された時に、辞書の<code>key</code>が上書きされてうまく動かなくなった。
-解決法として、入力値を全てリストで保持、その入力値を使って、直接その要素の値を逐次計算するようにした</p><h2 id=itp1_6_d---matrix-vector-multiplication>ITP1_6_D: Matrix Vector Multiplication</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>n, m <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-mat <span style=color:#f92672>=</span> [list(map(int, input()<span style=color:#f92672>.</span>split())) <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(n)]
-vec <span style=color:#f92672>=</span> [int(input()) <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(m)]
-ans <span style=color:#f92672>=</span> [<span style=color:#ae81ff>0</span>]<span style=color:#f92672>*</span>n
-<span style=color:#66d9ef>for</span> i, row <span style=color:#f92672>in</span> enumerate(mat):
-    <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(m):
-        ans[i] <span style=color:#f92672>+=</span> row[j] <span style=color:#f92672>*</span> vec[j]
-[<span style=color:#66d9ef>print</span>(ans[i]) <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(n)]
-</code></pre></div><h2 id=itp1_7_a---grading>ITP1_7_A: Grading</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>while</span> True:
-    m,f,r <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-    <span style=color:#66d9ef>if</span> (m, f, r) <span style=color:#f92672>==</span> (<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>):
-        <span style=color:#66d9ef>break</span>
-    <span style=color:#66d9ef>if</span> m <span style=color:#f92672>==</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span> <span style=color:#f92672>or</span> f <span style=color:#f92672>==</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span> <span style=color:#f92672>or</span> (m<span style=color:#f92672>+</span>f) <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>30</span>:
-        <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;F&#39;</span>)
-    <span style=color:#66d9ef>elif</span> (m<span style=color:#f92672>+</span>f) <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>80</span>:
-        <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;A&#39;</span>)
-    <span style=color:#66d9ef>elif</span> <span style=color:#ae81ff>80</span> <span style=color:#f92672>&gt;</span> (m<span style=color:#f92672>+</span>f) <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>65</span>:
-        <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;B&#39;</span>)
-    <span style=color:#66d9ef>elif</span> <span style=color:#ae81ff>65</span> <span style=color:#f92672>&gt;</span> (m<span style=color:#f92672>+</span>f) <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>50</span>:
-        <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;C&#39;</span>)
-    <span style=color:#66d9ef>elif</span> <span style=color:#ae81ff>50</span> <span style=color:#f92672>&gt;</span> (m<span style=color:#f92672>+</span>f) <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>30</span>:
-        <span style=color:#66d9ef>if</span> r <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>50</span>:
-            <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;C&#39;</span>)
-        <span style=color:#66d9ef>else</span>:
-            <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;D&#39;</span>)
-</code></pre></div><h2 id=itp1_7_b---how-many-ways>ITP1_7_B: How many ways?</h2><p>全探索で探索してみたけど、O(N^3)かかるかつ、選択されたものが再度選択されてしまう。set()で扱っても、探索候補からキューとして扱わないといけないことには気づいたがどう扱えばいいか考えつかず断念
-その後、回答例を見ると、たしかにループで、外側とかぶらないように変数管理すればうまく重複排除できることに気がついた&mldr;!</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>while</span> True:
-    n, x <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-    <span style=color:#66d9ef>if</span> (n, x) <span style=color:#f92672>==</span> (<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>):
-        <span style=color:#66d9ef>break</span>
-    cnt <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
-    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>, n <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
-            <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(i<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, n <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
-                    <span style=color:#66d9ef>for</span> k <span style=color:#f92672>in</span> range(j<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, n <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>):
-                        <span style=color:#66d9ef>if</span> i <span style=color:#f92672>+</span> j <span style=color:#f92672>+</span> k <span style=color:#f92672>==</span> x:
-                            cnt<span style=color:#f92672>+=</span><span style=color:#ae81ff>1</span>
-    <span style=color:#66d9ef>print</span>(cnt)
-</code></pre></div><h2 id=itp1_7_c---spreadsheet>ITP1_7_C: Spreadsheet</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>r, c <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-table <span style=color:#f92672>=</span> [list(map(int, input()<span style=color:#f92672>.</span>split())) <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(r)]
-c_sum <span style=color:#f92672>=</span> [<span style=color:#ae81ff>0</span>]<span style=color:#f92672>*</span>c
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(r):
-    <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(c):
-        c_sum[j] <span style=color:#f92672>+=</span> table[i][j]
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> table:
-    <span style=color:#66d9ef>print</span>(<span style=color:#f92672>*</span>i, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#39; &#39;</span>)
-    <span style=color:#66d9ef>print</span>(sum(i))
-<span style=color:#66d9ef>print</span>(<span style=color:#f92672>*</span>c_sum, end<span style=color:#f92672>=</span><span style=color:#e6db74>&#39; &#39;</span>)
-<span style=color:#66d9ef>print</span>(sum(c_sum))
-</code></pre></div><h2 id=itp1_7_d---matrix-multiplication>ITP1_7_D: Matrix Multiplication</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>n, m, l <span style=color:#f92672>=</span> map(int, input()<span style=color:#f92672>.</span>split())
-mat_a <span style=color:#f92672>=</span> [list(map(int, input()<span style=color:#f92672>.</span>split())) <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(n)]
-mat_b <span style=color:#f92672>=</span> [list(map(int, input()<span style=color:#f92672>.</span>split())) <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(m)]
+解決法として、入力値を全てリストで保持、その入力値を使って、直接その要素の値を逐次計算するようにした</p><h2 id=itp1_6_d---matrix-vector-multiplication>ITP1_6_D: Matrix Vector Multiplication</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>n</span><span class=p>,</span> <span class=n>m</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=n>mat</span> <span class=o>=</span> <span class=p>[</span><span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>n</span><span class=p>)]</span>
+<span class=n>vec</span> <span class=o>=</span> <span class=p>[</span><span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>m</span><span class=p>)]</span>
+<span class=n>ans</span> <span class=o>=</span> <span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=o>*</span><span class=n>n</span>
+<span class=k>for</span> <span class=n>i</span><span class=p>,</span> <span class=n>row</span> <span class=ow>in</span> <span class=nb>enumerate</span><span class=p>(</span><span class=n>mat</span><span class=p>):</span>
+    <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>m</span><span class=p>):</span>
+        <span class=n>ans</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>+=</span> <span class=n>row</span><span class=p>[</span><span class=n>j</span><span class=p>]</span> <span class=o>*</span> <span class=n>vec</span><span class=p>[</span><span class=n>j</span><span class=p>]</span>
+<span class=p>[</span><span class=k>print</span><span class=p>(</span><span class=n>ans</span><span class=p>[</span><span class=n>i</span><span class=p>])</span> <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>n</span><span class=p>)]</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_7_a---grading>ITP1_7_A: Grading</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>m</span><span class=p>,</span><span class=n>f</span><span class=p>,</span><span class=n>r</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+    <span class=k>if</span> <span class=p>(</span><span class=n>m</span><span class=p>,</span> <span class=n>f</span><span class=p>,</span> <span class=n>r</span><span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=o>-</span><span class=mi>1</span><span class=p>,</span> <span class=o>-</span><span class=mi>1</span><span class=p>,</span> <span class=o>-</span><span class=mi>1</span><span class=p>):</span>
+        <span class=k>break</span>
+    <span class=k>if</span> <span class=n>m</span> <span class=o>==</span> <span class=o>-</span><span class=mi>1</span> <span class=ow>or</span> <span class=n>f</span> <span class=o>==</span> <span class=o>-</span><span class=mi>1</span> <span class=ow>or</span> <span class=p>(</span><span class=n>m</span><span class=o>+</span><span class=n>f</span><span class=p>)</span> <span class=o>&lt;</span> <span class=mi>30</span><span class=p>:</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;F&#39;</span><span class=p>)</span>
+    <span class=k>elif</span> <span class=p>(</span><span class=n>m</span><span class=o>+</span><span class=n>f</span><span class=p>)</span> <span class=o>&gt;=</span> <span class=mi>80</span><span class=p>:</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;A&#39;</span><span class=p>)</span>
+    <span class=k>elif</span> <span class=mi>80</span> <span class=o>&gt;</span> <span class=p>(</span><span class=n>m</span><span class=o>+</span><span class=n>f</span><span class=p>)</span> <span class=o>&gt;=</span> <span class=mi>65</span><span class=p>:</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;B&#39;</span><span class=p>)</span>
+    <span class=k>elif</span> <span class=mi>65</span> <span class=o>&gt;</span> <span class=p>(</span><span class=n>m</span><span class=o>+</span><span class=n>f</span><span class=p>)</span> <span class=o>&gt;=</span> <span class=mi>50</span><span class=p>:</span>
+        <span class=k>print</span><span class=p>(</span><span class=s1>&#39;C&#39;</span><span class=p>)</span>
+    <span class=k>elif</span> <span class=mi>50</span> <span class=o>&gt;</span> <span class=p>(</span><span class=n>m</span><span class=o>+</span><span class=n>f</span><span class=p>)</span> <span class=o>&gt;=</span> <span class=mi>30</span><span class=p>:</span>
+        <span class=k>if</span> <span class=n>r</span> <span class=o>&gt;=</span> <span class=mi>50</span><span class=p>:</span>
+            <span class=k>print</span><span class=p>(</span><span class=s1>&#39;C&#39;</span><span class=p>)</span>
+        <span class=k>else</span><span class=p>:</span>
+            <span class=k>print</span><span class=p>(</span><span class=s1>&#39;D&#39;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_7_b---how-many-ways>ITP1_7_B: How many ways?</h2><p>全探索で探索してみたけど、O(N^3)かかるかつ、選択されたものが再度選択されてしまう。set()で扱っても、探索候補からキューとして扱わないといけないことには気づいたがどう扱えばいいか考えつかず断念
+その後、回答例を見ると、たしかにループで、外側とかぶらないように変数管理すればうまく重複排除できることに気がついた&mldr;!</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>n</span><span class=p>,</span> <span class=n>x</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+    <span class=k>if</span> <span class=p>(</span><span class=n>n</span><span class=p>,</span> <span class=n>x</span><span class=p>)</span> <span class=o>==</span> <span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>):</span>
+        <span class=k>break</span>
+    <span class=n>cnt</span> <span class=o>=</span> <span class=mi>0</span>
+    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=n>n</span> <span class=o>+</span> <span class=mi>1</span><span class=p>):</span>
+            <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>i</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span> <span class=n>n</span> <span class=o>+</span> <span class=mi>1</span><span class=p>):</span>
+                    <span class=k>for</span> <span class=n>k</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>j</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span> <span class=n>n</span> <span class=o>+</span> <span class=mi>1</span><span class=p>):</span>
+                        <span class=k>if</span> <span class=n>i</span> <span class=o>+</span> <span class=n>j</span> <span class=o>+</span> <span class=n>k</span> <span class=o>==</span> <span class=n>x</span><span class=p>:</span>
+                            <span class=n>cnt</span><span class=o>+=</span><span class=mi>1</span>
+    <span class=k>print</span><span class=p>(</span><span class=n>cnt</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_7_c---spreadsheet>ITP1_7_C: Spreadsheet</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>r</span><span class=p>,</span> <span class=n>c</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=n>table</span> <span class=o>=</span> <span class=p>[</span><span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>r</span><span class=p>)]</span>
+<span class=n>c_sum</span> <span class=o>=</span> <span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=o>*</span><span class=n>c</span>
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>r</span><span class=p>):</span>
+    <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>c</span><span class=p>):</span>
+        <span class=n>c_sum</span><span class=p>[</span><span class=n>j</span><span class=p>]</span> <span class=o>+=</span> <span class=n>table</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=p>]</span>
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=n>table</span><span class=p>:</span>
+    <span class=k>print</span><span class=p>(</span><span class=o>*</span><span class=n>i</span><span class=p>,</span> <span class=n>end</span><span class=o>=</span><span class=s1>&#39; &#39;</span><span class=p>)</span>
+    <span class=k>print</span><span class=p>(</span><span class=nb>sum</span><span class=p>(</span><span class=n>i</span><span class=p>))</span>
+<span class=k>print</span><span class=p>(</span><span class=o>*</span><span class=n>c_sum</span><span class=p>,</span> <span class=n>end</span><span class=o>=</span><span class=s1>&#39; &#39;</span><span class=p>)</span>
+<span class=k>print</span><span class=p>(</span><span class=nb>sum</span><span class=p>(</span><span class=n>c_sum</span><span class=p>))</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_7_d---matrix-multiplication>ITP1_7_D: Matrix Multiplication</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>n</span><span class=p>,</span> <span class=n>m</span><span class=p>,</span> <span class=n>l</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=n>mat_a</span> <span class=o>=</span> <span class=p>[</span><span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>n</span><span class=p>)]</span>
+<span class=n>mat_b</span> <span class=o>=</span> <span class=p>[</span><span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>m</span><span class=p>)]</span>
 
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(n):
-    row <span style=color:#f92672>=</span> []
-    <span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(l):
-        tmp <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
-        <span style=color:#66d9ef>for</span> k <span style=color:#f92672>in</span> range(m):
-            tmp <span style=color:#f92672>+=</span> mat_a[i][k]<span style=color:#f92672>*</span>mat_b[k][j]
-        row<span style=color:#f92672>.</span>append(tmp)
-    <span style=color:#66d9ef>print</span>(<span style=color:#f92672>*</span>row)
-</code></pre></div><h2 id=itp1_8_a---toggling-cases>ITP1_8_A: Toggling Cases</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>input_str <span style=color:#f92672>=</span> input()
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>n</span><span class=p>):</span>
+    <span class=n>row</span> <span class=o>=</span> <span class=p>[]</span>
+    <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>l</span><span class=p>):</span>
+        <span class=n>tmp</span> <span class=o>=</span> <span class=mi>0</span>
+        <span class=k>for</span> <span class=n>k</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>m</span><span class=p>):</span>
+            <span class=n>tmp</span> <span class=o>+=</span> <span class=n>mat_a</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>k</span><span class=p>]</span><span class=o>*</span><span class=n>mat_b</span><span class=p>[</span><span class=n>k</span><span class=p>][</span><span class=n>j</span><span class=p>]</span>
+        <span class=n>row</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>tmp</span><span class=p>)</span>
+    <span class=k>print</span><span class=p>(</span><span class=o>*</span><span class=n>row</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_8_a---toggling-cases>ITP1_8_A: Toggling Cases</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>input_str</span> <span class=o>=</span> <span class=nb>input</span><span class=p>()</span>
 
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> input_str:
-    <span style=color:#66d9ef>if</span> i<span style=color:#f92672>.</span>islower():
-        <span style=color:#66d9ef>print</span>(i<span style=color:#f92672>.</span>upper(), end<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;&#39;</span>)
-    <span style=color:#66d9ef>else</span>:
-        <span style=color:#66d9ef>print</span>(i<span style=color:#f92672>.</span>lower(), end<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;&#39;</span>)
-<span style=color:#66d9ef>print</span>()
-</code></pre></div><h2 id=itp1_8_b---sum-of-numbers>ITP1_8_B: Sum of Numbers</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>while</span> True:
-    a <span style=color:#f92672>=</span> input()
-    <span style=color:#66d9ef>if</span> a <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;0&#39;</span>:
-        <span style=color:#66d9ef>break</span>
-    <span style=color:#66d9ef>print</span>(sum(list(map(int, list(a)))))
-</code></pre></div><h2 id=itp1_8_c---counting-characters>ITP1_8_C: Counting Characters</h2><p>入力が複数行で何行入力されるか不明な場合は、<code>sys.stdin.read()</code>を使う</p><p><a href=https://qiita.com/kyuna/items/8ee8916c2f4e36321a1c#1-%E3%81%BE%E3%81%A8%E3%82%81>https://qiita.com/kyuna/items/8ee8916c2f4e36321a1c#1-%E3%81%BE%E3%81%A8%E3%82%81</a></p><p><code>readline()</code>だと一行ずつ読み込む</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> sys
-s <span style=color:#f92672>=</span> sys<span style=color:#f92672>.</span>stdin<span style=color:#f92672>.</span>read()<span style=color:#f92672>.</span>lower()
-a <span style=color:#f92672>=</span> {chr(i): <span style=color:#ae81ff>0</span> <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(ord(<span style=color:#e6db74>&#39;a&#39;</span>), ord(<span style=color:#e6db74>&#39;z&#39;</span>)<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>)}
-<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> s:
-    <span style=color:#66d9ef>if</span> ord(i) <span style=color:#f92672>in</span> range(ord(<span style=color:#e6db74>&#39;a&#39;</span>), ord(<span style=color:#e6db74>&#39;z&#39;</span>)<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>):
-        a[i] <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-[<span style=color:#66d9ef>print</span>(f<span style=color:#e6db74>&#39;{k} : {v}&#39;</span>) <span style=color:#66d9ef>for</span> k, v <span style=color:#f92672>in</span> a<span style=color:#f92672>.</span>items()]
-</code></pre></div><h2 id=itp1_8_d---ring>ITP1_8_D: Ring</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>s <span style=color:#f92672>=</span> input()
-p <span style=color:#f92672>=</span> input()
-s <span style=color:#f92672>=</span> s <span style=color:#f92672>*</span> <span style=color:#ae81ff>2</span>
-<span style=color:#66d9ef>if</span> s<span style=color:#f92672>.</span>find(p) <span style=color:#f92672>!=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;Yes&#39;</span>)
-<span style=color:#66d9ef>else</span>:
-    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#39;No&#39;</span>)
-</code></pre></div><h2 id=itp1_9_a---finding-a-word>ITP1_9_A: Finding a Word</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>w <span style=color:#f92672>=</span> input()
-sentents <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&#39;</span>
-<span style=color:#66d9ef>while</span> True:
-    s <span style=color:#f92672>=</span> input()
-    <span style=color:#66d9ef>if</span> s <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;END_OF_TEXT&#39;</span>:
-        <span style=color:#66d9ef>break</span>
-    sentents <span style=color:#f92672>+=</span> s <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39; &#39;</span>
-<span style=color:#66d9ef>print</span>(sentents<span style=color:#f92672>.</span>lower()<span style=color:#f92672>.</span>split()<span style=color:#f92672>.</span>count(w))
-</code></pre></div><h2 id=itp1_9_b---shuffle>ITP1_9_B: Shuffle</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>while</span> True:
-    d <span style=color:#f92672>=</span> input()
-    <span style=color:#66d9ef>if</span> d <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;-&#39;</span>:
-        <span style=color:#66d9ef>break</span>
-    m <span style=color:#f92672>=</span> int(input())
-    h <span style=color:#f92672>=</span> [int(input()) <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(m)]
-    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> h:
-        d <span style=color:#f92672>=</span> d[i:] <span style=color:#f92672>+</span> d[:i]
-    <span style=color:#66d9ef>print</span>(d)
-</code></pre></div><h2 id=itp1_9_c---card-game>ITP1_9_C: Card Game</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>n <span style=color:#f92672>=</span> int(input())
-cards <span style=color:#f92672>=</span> [input()<span style=color:#f92672>.</span>split() <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(n)]
-p_t <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
-p_h <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
-<span style=color:#66d9ef>for</span> card <span style=color:#f92672>in</span> cards:
-    <span style=color:#66d9ef>if</span> card[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>==</span> card[<span style=color:#ae81ff>1</span>]:
-        p_t <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-        p_h <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
-    <span style=color:#66d9ef>elif</span> card[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>&gt;</span> card[<span style=color:#ae81ff>1</span>]:
-        p_t <span style=color:#f92672>+=</span> <span style=color:#ae81ff>3</span>
-    <span style=color:#66d9ef>else</span>:
-        p_h <span style=color:#f92672>+=</span> <span style=color:#ae81ff>3</span>
-<span style=color:#66d9ef>print</span>(p_t, p_h)
-</code></pre></div><h2 id=itp1_9_d---transformation>ITP1_9_D: Transformation</h2><ul><li>スライス表記で、<code>l[start:end:step]</code>を理解できるとかける</li><li><code>end</code> の記法が前から違和感あったんだけど、 @reto_nayuta さんにしていただいた説明がとてもわかり易かった!! 感謝</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>1-start というより 0-start exclusive、つまり [start, end) の右半開区間と解釈するのが自然かと
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=n>input_str</span><span class=p>:</span>
+    <span class=k>if</span> <span class=n>i</span><span class=o>.</span><span class=n>islower</span><span class=p>():</span>
+        <span class=k>print</span><span class=p>(</span><span class=n>i</span><span class=o>.</span><span class=n>upper</span><span class=p>(),</span> <span class=n>end</span><span class=o>=</span><span class=s1>&#39;&#39;</span><span class=p>)</span>
+    <span class=k>else</span><span class=p>:</span>
+        <span class=k>print</span><span class=p>(</span><span class=n>i</span><span class=o>.</span><span class=n>lower</span><span class=p>(),</span> <span class=n>end</span><span class=o>=</span><span class=s1>&#39;&#39;</span><span class=p>)</span>
+<span class=k>print</span><span class=p>()</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_8_b---sum-of-numbers>ITP1_8_B: Sum of Numbers</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>a</span> <span class=o>=</span> <span class=nb>input</span><span class=p>()</span>
+    <span class=k>if</span> <span class=n>a</span> <span class=o>==</span> <span class=s1>&#39;0&#39;</span><span class=p>:</span>
+        <span class=k>break</span>
+    <span class=k>print</span><span class=p>(</span><span class=nb>sum</span><span class=p>(</span><span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>list</span><span class=p>(</span><span class=n>a</span><span class=p>)))))</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_8_c---counting-characters>ITP1_8_C: Counting Characters</h2><p>入力が複数行で何行入力されるか不明な場合は、<code>sys.stdin.read()</code>を使う</p><p><a href=https://qiita.com/kyuna/items/8ee8916c2f4e36321a1c#1-%E3%81%BE%E3%81%A8%E3%82%81>https://qiita.com/kyuna/items/8ee8916c2f4e36321a1c#1-%E3%81%BE%E3%81%A8%E3%82%81</a></p><p><code>readline()</code>だと一行ずつ読み込む</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>sys</span>
+<span class=n>s</span> <span class=o>=</span> <span class=n>sys</span><span class=o>.</span><span class=n>stdin</span><span class=o>.</span><span class=n>read</span><span class=p>()</span><span class=o>.</span><span class=n>lower</span><span class=p>()</span>
+<span class=n>a</span> <span class=o>=</span> <span class=p>{</span><span class=nb>chr</span><span class=p>(</span><span class=n>i</span><span class=p>):</span> <span class=mi>0</span> <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>ord</span><span class=p>(</span><span class=s1>&#39;a&#39;</span><span class=p>),</span> <span class=nb>ord</span><span class=p>(</span><span class=s1>&#39;z&#39;</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)}</span>
+<span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=n>s</span><span class=p>:</span>
+    <span class=k>if</span> <span class=nb>ord</span><span class=p>(</span><span class=n>i</span><span class=p>)</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>ord</span><span class=p>(</span><span class=s1>&#39;a&#39;</span><span class=p>),</span> <span class=nb>ord</span><span class=p>(</span><span class=s1>&#39;z&#39;</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+        <span class=n>a</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>+=</span> <span class=mi>1</span>
+<span class=p>[</span><span class=k>print</span><span class=p>(</span><span class=n>f</span><span class=s1>&#39;{k} : {v}&#39;</span><span class=p>)</span> <span class=k>for</span> <span class=n>k</span><span class=p>,</span> <span class=n>v</span> <span class=ow>in</span> <span class=n>a</span><span class=o>.</span><span class=n>items</span><span class=p>()]</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_8_d---ring>ITP1_8_D: Ring</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>s</span> <span class=o>=</span> <span class=nb>input</span><span class=p>()</span>
+<span class=n>p</span> <span class=o>=</span> <span class=nb>input</span><span class=p>()</span>
+<span class=n>s</span> <span class=o>=</span> <span class=n>s</span> <span class=o>*</span> <span class=mi>2</span>
+<span class=k>if</span> <span class=n>s</span><span class=o>.</span><span class=n>find</span><span class=p>(</span><span class=n>p</span><span class=p>)</span> <span class=o>!=</span> <span class=o>-</span><span class=mi>1</span><span class=p>:</span>
+    <span class=k>print</span><span class=p>(</span><span class=s1>&#39;Yes&#39;</span><span class=p>)</span>
+<span class=k>else</span><span class=p>:</span>
+    <span class=k>print</span><span class=p>(</span><span class=s1>&#39;No&#39;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_9_a---finding-a-word>ITP1_9_A: Finding a Word</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>w</span> <span class=o>=</span> <span class=nb>input</span><span class=p>()</span>
+<span class=n>sentents</span> <span class=o>=</span> <span class=s1>&#39;&#39;</span>
+<span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>s</span> <span class=o>=</span> <span class=nb>input</span><span class=p>()</span>
+    <span class=k>if</span> <span class=n>s</span> <span class=o>==</span> <span class=s1>&#39;END_OF_TEXT&#39;</span><span class=p>:</span>
+        <span class=k>break</span>
+    <span class=n>sentents</span> <span class=o>+=</span> <span class=n>s</span> <span class=o>+</span> <span class=s1>&#39; &#39;</span>
+<span class=k>print</span><span class=p>(</span><span class=n>sentents</span><span class=o>.</span><span class=n>lower</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()</span><span class=o>.</span><span class=n>count</span><span class=p>(</span><span class=n>w</span><span class=p>))</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_9_b---shuffle>ITP1_9_B: Shuffle</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>d</span> <span class=o>=</span> <span class=nb>input</span><span class=p>()</span>
+    <span class=k>if</span> <span class=n>d</span> <span class=o>==</span> <span class=s1>&#39;-&#39;</span><span class=p>:</span>
+        <span class=k>break</span>
+    <span class=n>m</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+    <span class=n>h</span> <span class=o>=</span> <span class=p>[</span><span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>m</span><span class=p>)]</span>
+    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=n>h</span><span class=p>:</span>
+        <span class=n>d</span> <span class=o>=</span> <span class=n>d</span><span class=p>[</span><span class=n>i</span><span class=p>:]</span> <span class=o>+</span> <span class=n>d</span><span class=p>[:</span><span class=n>i</span><span class=p>]</span>
+    <span class=k>print</span><span class=p>(</span><span class=n>d</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_9_c---card-game>ITP1_9_C: Card Game</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>n</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=n>cards</span> <span class=o>=</span> <span class=p>[</span><span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>n</span><span class=p>)]</span>
+<span class=n>p_t</span> <span class=o>=</span> <span class=mi>0</span>
+<span class=n>p_h</span> <span class=o>=</span> <span class=mi>0</span>
+<span class=k>for</span> <span class=n>card</span> <span class=ow>in</span> <span class=n>cards</span><span class=p>:</span>
+    <span class=k>if</span> <span class=n>card</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>==</span> <span class=n>card</span><span class=p>[</span><span class=mi>1</span><span class=p>]:</span>
+        <span class=n>p_t</span> <span class=o>+=</span> <span class=mi>1</span>
+        <span class=n>p_h</span> <span class=o>+=</span> <span class=mi>1</span>
+    <span class=k>elif</span> <span class=n>card</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>&gt;</span> <span class=n>card</span><span class=p>[</span><span class=mi>1</span><span class=p>]:</span>
+        <span class=n>p_t</span> <span class=o>+=</span> <span class=mi>3</span>
+    <span class=k>else</span><span class=p>:</span>
+        <span class=n>p_h</span> <span class=o>+=</span> <span class=mi>3</span>
+<span class=k>print</span><span class=p>(</span><span class=n>p_t</span><span class=p>,</span> <span class=n>p_h</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_9_d---transformation>ITP1_9_D: Transformation</h2><ul><li>スライス表記で、<code>l[start:end:step]</code>を理解できるとかける</li><li><code>end</code> の記法が前から違和感あったんだけど、 @reto_nayuta さんにしていただいた説明がとてもわかり易かった!! 感謝</li></ul><pre><code>1-start というより 0-start exclusive、つまり [start, end) の右半開区間と解釈するのが自然かと
 ・i から長さ k 取る→a[i, i+k]
 ・i を境界に2つに分ける（二分探索等）→a[:i], a[i:]
 ・range の挙動とも一致→a[i:j] == [a[k] for k in range(i, j)]（R/Ruby/pandas/Rust は arr[range] 記法）
-</code></pre></div><p><a href=https://twitter.com/reto_nayuta/status/1290125805167632385>https://twitter.com/reto_nayuta/status/1290125805167632385</a></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>s <span style=color:#f92672>=</span> input()
-n <span style=color:#f92672>=</span> int(input())
-orders <span style=color:#f92672>=</span> [input()<span style=color:#f92672>.</span>split() <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(n)]
-<span style=color:#66d9ef>for</span> order <span style=color:#f92672>in</span> orders:
-    a, b <span style=color:#f92672>=</span> map(int, order[<span style=color:#ae81ff>1</span>:<span style=color:#ae81ff>3</span>])
-    <span style=color:#66d9ef>if</span> order[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;print&#39;</span>:
-        <span style=color:#66d9ef>print</span>(s[a:b<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>])
-    <span style=color:#66d9ef>elif</span> order[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;replace&#39;</span>:
-        s <span style=color:#f92672>=</span> s[<span style=color:#ae81ff>0</span>:a] <span style=color:#f92672>+</span> order[<span style=color:#ae81ff>3</span>] <span style=color:#f92672>+</span> s[b<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>:]
-    <span style=color:#66d9ef>elif</span> order[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;reverse&#39;</span>:
-        s <span style=color:#f92672>=</span> s[<span style=color:#ae81ff>0</span>:a] <span style=color:#f92672>+</span> s[a:b<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>][::<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>] <span style=color:#f92672>+</span> s[b <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>:]
-</code></pre></div><h2 id=itp1_10_d---distance-ii>ITP1_10_D: Distance II</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> math
-x1, y1, x2, y2 <span style=color:#f92672>=</span> map(float, input()<span style=color:#f92672>.</span>split())
-<span style=color:#66d9ef>print</span>(math<span style=color:#f92672>.</span>hypot(x2 <span style=color:#f92672>-</span> x1, y2 <span style=color:#f92672>-</span> y1))
-</code></pre></div><h2 id=itp1_10_b---triangle>ITP1_10_B: Triangle</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> math
-a, b, C <span style=color:#f92672>=</span> map(float, input()<span style=color:#f92672>.</span>split())
-theta <span style=color:#f92672>=</span> math<span style=color:#f92672>.</span>radians(C)
-h <span style=color:#f92672>=</span> b<span style=color:#f92672>*</span>math<span style=color:#f92672>.</span>sin(theta)
-S <span style=color:#f92672>=</span> (a<span style=color:#f92672>*</span>h)<span style=color:#f92672>/</span><span style=color:#ae81ff>2</span>
-c <span style=color:#f92672>=</span> math<span style=color:#f92672>.</span>sqrt(a<span style=color:#f92672>**</span><span style=color:#ae81ff>2</span><span style=color:#f92672>+</span>b<span style=color:#f92672>**</span><span style=color:#ae81ff>2</span><span style=color:#f92672>-</span><span style=color:#ae81ff>2</span><span style=color:#f92672>*</span>a<span style=color:#f92672>*</span>b<span style=color:#f92672>*</span>math<span style=color:#f92672>.</span>cos(theta))
-L <span style=color:#f92672>=</span> a<span style=color:#f92672>+</span>b<span style=color:#f92672>+</span>c
-<span style=color:#66d9ef>print</span>(S, L, h, sep<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>)
-</code></pre></div><h2 id=itp1_10_c---standard-deviation>ITP1_10_C: Standard Deviation</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> math
-<span style=color:#66d9ef>while</span> True:
-    n <span style=color:#f92672>=</span> int(input())
-    <span style=color:#66d9ef>if</span> n <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-        <span style=color:#66d9ef>break</span>
-    s <span style=color:#f92672>=</span> list(map(float, input()<span style=color:#f92672>.</span>split()))
-    m <span style=color:#f92672>=</span> sum(s) <span style=color:#f92672>/</span> n
-    <span style=color:#66d9ef>print</span>(math<span style=color:#f92672>.</span>sqrt((sum([(i <span style=color:#f92672>-</span> m)<span style=color:#f92672>**</span> <span style=color:#ae81ff>2</span> <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> s]) <span style=color:#f92672>/</span> n)))
-</code></pre></div><h2 id=itp1_10_d---distance-ii-1>ITP1_10_D: Distance II</h2><p>チェビシェフ距離、学生の頃を思い出して懐かしかった。
-<code>zip</code>できれいに書けた</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>n <span style=color:#f92672>=</span> int(input())
-x <span style=color:#f92672>=</span> list(map(int, input()<span style=color:#f92672>.</span>split()))
-y <span style=color:#f92672>=</span> list(map(int, input()<span style=color:#f92672>.</span>split()))
-<span style=color:#66d9ef>print</span>(sum([abs(x<span style=color:#f92672>-</span>y) <span style=color:#66d9ef>for</span> x, y  <span style=color:#f92672>in</span> zip(x, y)]))
-<span style=color:#66d9ef>print</span>(sum([abs(x <span style=color:#f92672>-</span> y) <span style=color:#f92672>**</span> <span style=color:#ae81ff>2</span> <span style=color:#66d9ef>for</span> x, y  <span style=color:#f92672>in</span> zip(x, y)]) <span style=color:#f92672>**</span> (<span style=color:#ae81ff>1</span><span style=color:#f92672>/</span><span style=color:#ae81ff>2</span>) )
-<span style=color:#66d9ef>print</span>(sum([abs(x <span style=color:#f92672>-</span> y) <span style=color:#f92672>**</span> <span style=color:#ae81ff>3</span> <span style=color:#66d9ef>for</span> x, y  <span style=color:#f92672>in</span> zip(x, y)]) <span style=color:#f92672>**</span> (<span style=color:#ae81ff>1</span><span style=color:#f92672>/</span><span style=color:#ae81ff>3</span>) )
-<span style=color:#66d9ef>print</span>(max([abs(x<span style=color:#f92672>-</span>y) <span style=color:#66d9ef>for</span> x, y  <span style=color:#f92672>in</span> zip(x, y)]))
-</code></pre></div></section><div class=post-tags><nav class="nav tags"><ul class=tags><li><a href=/tags/python>python</a></li><li><a href=/tags/coder>coder</a></li></ul></nav></div></article></main><footer><hr><a class=soc href=https://github.com/hurutoriya title=GitHub><i data-feather=github></i></a>|<a class=soc href=https://twitter.com/hurutoriya/ title=Twitter><i data-feather=twitter></i></a>|⚡️
-2021 © Shunya Ueta | <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a></footer><script>feather.replace()</script></div></body></html>
+</code></pre><p><a href=https://twitter.com/reto_nayuta/status/1290125805167632385>https://twitter.com/reto_nayuta/status/1290125805167632385</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>s</span> <span class=o>=</span> <span class=nb>input</span><span class=p>()</span>
+<span class=n>n</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=n>orders</span> <span class=o>=</span> <span class=p>[</span><span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>n</span><span class=p>)]</span>
+<span class=k>for</span> <span class=n>order</span> <span class=ow>in</span> <span class=n>orders</span><span class=p>:</span>
+    <span class=n>a</span><span class=p>,</span> <span class=n>b</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=n>order</span><span class=p>[</span><span class=mi>1</span><span class=p>:</span><span class=mi>3</span><span class=p>])</span>
+    <span class=k>if</span> <span class=n>order</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>==</span> <span class=s1>&#39;print&#39;</span><span class=p>:</span>
+        <span class=k>print</span><span class=p>(</span><span class=n>s</span><span class=p>[</span><span class=n>a</span><span class=p>:</span><span class=n>b</span><span class=o>+</span><span class=mi>1</span><span class=p>])</span>
+    <span class=k>elif</span> <span class=n>order</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>==</span> <span class=s1>&#39;replace&#39;</span><span class=p>:</span>
+        <span class=n>s</span> <span class=o>=</span> <span class=n>s</span><span class=p>[</span><span class=mi>0</span><span class=p>:</span><span class=n>a</span><span class=p>]</span> <span class=o>+</span> <span class=n>order</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span> <span class=o>+</span> <span class=n>s</span><span class=p>[</span><span class=n>b</span><span class=o>+</span><span class=mi>1</span><span class=p>:]</span>
+    <span class=k>elif</span> <span class=n>order</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>==</span> <span class=s1>&#39;reverse&#39;</span><span class=p>:</span>
+        <span class=n>s</span> <span class=o>=</span> <span class=n>s</span><span class=p>[</span><span class=mi>0</span><span class=p>:</span><span class=n>a</span><span class=p>]</span> <span class=o>+</span> <span class=n>s</span><span class=p>[</span><span class=n>a</span><span class=p>:</span><span class=n>b</span><span class=o>+</span><span class=mi>1</span><span class=p>][::</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>+</span> <span class=n>s</span><span class=p>[</span><span class=n>b</span> <span class=o>+</span> <span class=mi>1</span><span class=p>:]</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_10_d---distance-ii>ITP1_10_D: Distance II</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>math</span>
+<span class=n>x1</span><span class=p>,</span> <span class=n>y1</span><span class=p>,</span> <span class=n>x2</span><span class=p>,</span> <span class=n>y2</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>float</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=k>print</span><span class=p>(</span><span class=n>math</span><span class=o>.</span><span class=n>hypot</span><span class=p>(</span><span class=n>x2</span> <span class=o>-</span> <span class=n>x1</span><span class=p>,</span> <span class=n>y2</span> <span class=o>-</span> <span class=n>y1</span><span class=p>))</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_10_b---triangle>ITP1_10_B: Triangle</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>math</span>
+<span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>,</span> <span class=n>C</span> <span class=o>=</span> <span class=nb>map</span><span class=p>(</span><span class=nb>float</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>())</span>
+<span class=n>theta</span> <span class=o>=</span> <span class=n>math</span><span class=o>.</span><span class=n>radians</span><span class=p>(</span><span class=n>C</span><span class=p>)</span>
+<span class=n>h</span> <span class=o>=</span> <span class=n>b</span><span class=o>*</span><span class=n>math</span><span class=o>.</span><span class=n>sin</span><span class=p>(</span><span class=n>theta</span><span class=p>)</span>
+<span class=n>S</span> <span class=o>=</span> <span class=p>(</span><span class=n>a</span><span class=o>*</span><span class=n>h</span><span class=p>)</span><span class=o>/</span><span class=mi>2</span>
+<span class=n>c</span> <span class=o>=</span> <span class=n>math</span><span class=o>.</span><span class=n>sqrt</span><span class=p>(</span><span class=n>a</span><span class=o>**</span><span class=mi>2</span><span class=o>+</span><span class=n>b</span><span class=o>**</span><span class=mi>2</span><span class=o>-</span><span class=mi>2</span><span class=o>*</span><span class=n>a</span><span class=o>*</span><span class=n>b</span><span class=o>*</span><span class=n>math</span><span class=o>.</span><span class=n>cos</span><span class=p>(</span><span class=n>theta</span><span class=p>))</span>
+<span class=n>L</span> <span class=o>=</span> <span class=n>a</span><span class=o>+</span><span class=n>b</span><span class=o>+</span><span class=n>c</span>
+<span class=k>print</span><span class=p>(</span><span class=n>S</span><span class=p>,</span> <span class=n>L</span><span class=p>,</span> <span class=n>h</span><span class=p>,</span> <span class=n>sep</span><span class=o>=</span><span class=s2>&#34;</span><span class=se>\n</span><span class=s2>&#34;</span><span class=p>)</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_10_c---standard-deviation>ITP1_10_C: Standard Deviation</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>math</span>
+<span class=k>while</span> <span class=bp>True</span><span class=p>:</span>
+    <span class=n>n</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+    <span class=k>if</span> <span class=n>n</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>
+        <span class=k>break</span>
+    <span class=n>s</span> <span class=o>=</span> <span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>float</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span>
+    <span class=n>m</span> <span class=o>=</span> <span class=nb>sum</span><span class=p>(</span><span class=n>s</span><span class=p>)</span> <span class=o>/</span> <span class=n>n</span>
+    <span class=k>print</span><span class=p>(</span><span class=n>math</span><span class=o>.</span><span class=n>sqrt</span><span class=p>((</span><span class=nb>sum</span><span class=p>([(</span><span class=n>i</span> <span class=o>-</span> <span class=n>m</span><span class=p>)</span><span class=o>**</span> <span class=mi>2</span> <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=n>s</span><span class=p>])</span> <span class=o>/</span> <span class=n>n</span><span class=p>)))</span>
+</code></pre></td></tr></table></div></div><h2 id=itp1_10_d---distance-ii-1>ITP1_10_D: Distance II</h2><p>チェビシェフ距離、学生の頃を思い出して懐かしかった。
+<code>zip</code>できれいに書けた</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=n>n</span> <span class=o>=</span> <span class=nb>int</span><span class=p>(</span><span class=nb>input</span><span class=p>())</span>
+<span class=n>x</span> <span class=o>=</span> <span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span>
+<span class=n>y</span> <span class=o>=</span> <span class=nb>list</span><span class=p>(</span><span class=nb>map</span><span class=p>(</span><span class=nb>int</span><span class=p>,</span> <span class=nb>input</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>()))</span>
+<span class=k>print</span><span class=p>(</span><span class=nb>sum</span><span class=p>([</span><span class=nb>abs</span><span class=p>(</span><span class=n>x</span><span class=o>-</span><span class=n>y</span><span class=p>)</span> <span class=k>for</span> <span class=n>x</span><span class=p>,</span> <span class=n>y</span>  <span class=ow>in</span> <span class=nb>zip</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>)]))</span>
+<span class=k>print</span><span class=p>(</span><span class=nb>sum</span><span class=p>([</span><span class=nb>abs</span><span class=p>(</span><span class=n>x</span> <span class=o>-</span> <span class=n>y</span><span class=p>)</span> <span class=o>**</span> <span class=mi>2</span> <span class=k>for</span> <span class=n>x</span><span class=p>,</span> <span class=n>y</span>  <span class=ow>in</span> <span class=nb>zip</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>)])</span> <span class=o>**</span> <span class=p>(</span><span class=mi>1</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span> <span class=p>)</span>
+<span class=k>print</span><span class=p>(</span><span class=nb>sum</span><span class=p>([</span><span class=nb>abs</span><span class=p>(</span><span class=n>x</span> <span class=o>-</span> <span class=n>y</span><span class=p>)</span> <span class=o>**</span> <span class=mi>3</span> <span class=k>for</span> <span class=n>x</span><span class=p>,</span> <span class=n>y</span>  <span class=ow>in</span> <span class=nb>zip</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>)])</span> <span class=o>**</span> <span class=p>(</span><span class=mi>1</span><span class=o>/</span><span class=mi>3</span><span class=p>)</span> <span class=p>)</span>
+<span class=k>print</span><span class=p>(</span><span class=nb>max</span><span class=p>([</span><span class=nb>abs</span><span class=p>(</span><span class=n>x</span><span class=o>-</span><span class=n>y</span><span class=p>)</span> <span class=k>for</span> <span class=n>x</span><span class=p>,</span> <span class=n>y</span>  <span class=ow>in</span> <span class=nb>zip</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>)]))</span>
+</code></pre></td></tr></table></div></div></div></div><div class=container><nav class="flex container suggested"><a rel=prev href=/posts/2020-07-25/ title="Previous post (older)"><span>Previous</span>
+How to write the UnitTest with stdin at Pytest</a>
+<a rel=next href=/posts/2020-08-23/ title="Next post (newer)"><span>Next</span>
+Python の内包表記とジェネレータ式のメモリ使用量比較</a></nav></div></main></main><footer class="footer flex"><section class=container><nav class=footer-links><a href=/index.xml>RSS</a></nav></section><script async src=/js/features.min.a94f58a30ad2560de728e080d87f75c60cf806fd1b3d5f4815f1a1a02c0d1859.js></script></footer></body></html>
