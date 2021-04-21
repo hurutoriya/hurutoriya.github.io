@@ -6,7 +6,7 @@ type: "page"
 
 Shunya UETA who is a working on Machine Leaening as Software Engineer at Mercari, inc. Opinions are my own.
 
-- [Linkedin](https://www.linkedin.com/in/shunya-ueta-2a0b96a4/)
+- [Linkedin](https://www.linkedin.com/in/hurutoriya)
 - [GitHub](https://github.com/hurutoriya)
 - [Twitter](https://twitter.com/hurutoriya)
 - [Slideshare](http://www.slideshare.net/shunyaueta)
