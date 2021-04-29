@@ -191,7 +191,8 @@ AND &lt;span class="nv">condition2&lt;/span>&lt;span class="o">=&lt;/span>apple
 &lt;span class="k">AND&lt;/span> &lt;span class="n">condition2&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="err">{&lt;/span>&lt;span class="n">category&lt;/span>&lt;span class="err">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>1行目のようなコメントを入れてしまうと、SQLファイルの中ではコメントとして評価される部分もPythnの文字列内では&lt;code>.format()&lt;/code>の挿入対象となってしまうので、記述しないように気をつけておきましょう&lt;/p>
+&lt;/div>&lt;p>1行目のようなコメントを入れてしまうと、SQLファイルの中ではコメントとして評価される部分もPythnの文字列内では&lt;code>.format()&lt;/code>の挿入対象となる。その影響で&lt;code>.format()&lt;/code>で挿入されるべき変数の数が3つと評価されてしまい、実際の引数は2つしか与えておらずエラーが発生する。
+SQLファイルのコメントであろうと、&lt;code>{}&lt;/code>と記述しないように気をつけておきましょう。&lt;/p>
 &lt;h2 id="ref">Ref&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://stackoverflow.com/questions/5243596/python-sql-query-string-formatting">Python SQL query string formatting&lt;/a>&lt;/li>
