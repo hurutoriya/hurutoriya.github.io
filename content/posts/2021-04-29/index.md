@@ -1,5 +1,5 @@
 ---
-title: "PythonでSQLに変数を挿入して、柔軟にSQLクエリを構築する"
+title: "PythonでSQLクエリに変数を挿入して、柔軟にSQLクエリを構築・実行する"
 date: 2021-04-29T22:52:25+09:00
 lang: ja
 author: Shunya Ueta
