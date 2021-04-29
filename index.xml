@@ -1,4 +1,201 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>機械学習エンジニアから検索エンジニアに転生</title><link>https://shunyaueta.com/posts/2021-03-27/</link><pubDate>Sat, 27 Mar 2021 23:54:15 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-03-27/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>PythonでSQLに変数を挿入して、柔軟にSQLクエリを構築する</title><link>https://shunyaueta.com/posts/2021-04-29/</link><pubDate>Thu, 29 Apr 2021 22:52:25 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-04-29/</guid><description>
+&lt;p>データ処理のタスクをこなしていると、PythonでSQLに変数を挿入し柔軟にSQLクエリを構築したくなる。
+例えば、&lt;/p>
+&lt;ul>
+&lt;li>中間テーブルを作るためにAirFlowなどで定期的なジョブを実行し、SQLの &lt;code>created&lt;/code>の時間を当日のものに変更する&lt;/li>
+&lt;li>&lt;code>training&lt;/code>, &lt;code>dev&lt;/code>, &lt;code>test&lt;/code> でデータを分割する際に、&lt;code>created&lt;/code>の条件を変更して3パターンのデータを取得する&lt;/li>
+&lt;/ul>
+&lt;p>などが考えられる。&lt;/p>
+&lt;p>変数をSQLに組み込んで実行したい際には、&lt;a href="https://github.com/kayak/pypika">kayak/pypika&lt;/a>のような SQL builder もあるが、個人的に可読性が悪くなったり、SQLクエリの作成のためだけに余計なパッケージをいれたくない。そのためパッケージを入れずにシンプルに完結する方法をここでは紹介する。&lt;/p>
+&lt;h2 id="1--単なる文字列としてsqlクエリを構築">1. 単なる文字列としてSQLクエリを構築&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="k">def&lt;/span> &lt;span class="nf">get_guery&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">category&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;span class="n">sql&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="s2">&amp;#34;SELECT field1, field2, field3, field4 FROM TABLE WHERE condition1={num} AND condition2={category}&amp;#34;&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="n">sql&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>f-string で文字列に変数を挿入して、SQLクエリを構築&lt;/li>
+&lt;/ul>
+&lt;p>だが、&lt;/p>
+&lt;ul>
+&lt;li>SQLが長くなるとPEP8に準拠せず、&lt;a href="https://www.flake8rules.com/rules/E501.html">E501 line too long&lt;/a>に抵触する&lt;/li>
+&lt;li>視認性が低く、SQLクエリの実行内容を理解しづらい&lt;/li>
+&lt;/ul>
+&lt;h2 id="2--docstring-で複数行文字列として扱いsqlクエリを構築">2, docstring で複数行文字列として扱いSQLクエリを構築&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="k">def&lt;/span> &lt;span class="nf">get_guery&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">category&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;span class="n">sql&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">f&lt;/span>&lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;span class="s2"> SELECT field1, field2, field3, field4
+&lt;/span>&lt;span class="s2"> FROM table
+&lt;/span>&lt;span class="s2"> WHERE condition1={num}
+&lt;/span>&lt;span class="s2"> AND condition2={category}
+&lt;/span>&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="n">sql&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>1番目と比較すると、docstringを挿入しSQLクエリが複数行になることでで見やすい&lt;/li>
+&lt;/ul>
+&lt;p>だが&lt;/p>
+&lt;ul>
+&lt;li>SQL構文に関する lint や フォーマッターを活用できない&lt;/li>
+&lt;li>SQLへのシンタックスハイライトが無いので、視認性が低い&lt;/li>
+&lt;/ul>
+&lt;h2 id="3--sql-ファイルを文字列として読み込み-formatで変数を挿入する">3, SQL ファイルを文字列として読み込み、 &lt;code>.format()&lt;/code>で変数を挿入する&lt;/h2>
+&lt;p>SQLファイルが &lt;code>./sql/test.sql&lt;/code> に設置されている状態とする。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-sql:test.sql" data-lang="sql:test.sql">&lt;span class="k">SELECT&lt;/span>
+&lt;span class="n">field1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">field2&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">field3&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">field4&lt;/span>
+&lt;span class="k">FROM&lt;/span>
+&lt;span class="k">TABLE&lt;/span>
+&lt;span class="k">WHERE&lt;/span>
+&lt;span class="n">condition1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="err">{&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="err">}&lt;/span>
+&lt;span class="k">AND&lt;/span> &lt;span class="n">condition2&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="err">{&lt;/span>&lt;span class="n">category&lt;/span>&lt;span class="err">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Python 側での実装例&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="kn">import&lt;/span> &lt;span class="nn">os&lt;/span>
+&lt;span class="k">def&lt;/span> &lt;span class="nf">get_guery&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">category&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="nb">str&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;span class="s2"> SQLファイルに変数を挿入してクエリを作成する
+&lt;/span>&lt;span class="s2">
+&lt;/span>&lt;span class="s2"> Args:
+&lt;/span>&lt;span class="s2"> num (int): 年齢
+&lt;/span>&lt;span class="s2"> category (str): 好きな果物
+&lt;/span>&lt;span class="s2"> filename (str): SQLファイルの名前
+&lt;/span>&lt;span class="s2">
+&lt;/span>&lt;span class="s2"> Returns:
+&lt;/span>&lt;span class="s2"> str: SQLクエリ
+&lt;/span>&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;span class="k">with&lt;/span> &lt;span class="nb">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;./sql&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="s2">&amp;#34;r&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">f&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">read&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">format&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">category&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">category&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="k">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">get_guery&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">18&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">category&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;apple&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;test.sql&amp;#34;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>実行結果&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">SELECT
+field1,
+field2,
+field3,
+field4
+FROM
+TABLE
+WHERE
+&lt;span class="nv">condition1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">18&lt;/span>
+AND &lt;span class="nv">condition2&lt;/span>&lt;span class="o">=&lt;/span>apple
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>SQLクエリを&lt;code>SQL&lt;/code>ファイルで管理できるので、フォーマッターやシンタックスハイライトの恩恵を活用できる。&lt;/li>
+&lt;li>ファイルオブジェクトに対して &lt;code>.read()&lt;/code>メソッドを使うことで文字列として扱うことができる。そのおかげで、SQLファイルに&lt;code>{var_1}&lt;/code>, &lt;code>{var_2}&lt;/code> のような形式で、Python上の変数をSQLの挿入して柔軟にクエリを構築可能になる。&lt;/li>
+&lt;/ul>
+&lt;p>SQLファイルの中にPythonの &lt;code>.format()&lt;/code> 記法を事前に埋め込むことが今回のコツですね。&lt;/p>
+&lt;h3 id="余談">余談&lt;/h3>
+&lt;p>SQLファイル内に&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-sql:test.sql" data-lang="sql:test.sql">&lt;span class="c1">-- {}の中にPythonから変数が挿入される
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="k">SELECT&lt;/span>
+&lt;span class="n">field1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">field2&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">field3&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">field4&lt;/span>
+&lt;span class="k">FROM&lt;/span>
+&lt;span class="k">TABLE&lt;/span>
+&lt;span class="k">WHERE&lt;/span>
+&lt;span class="n">condition1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="err">{&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="err">}&lt;/span>
+&lt;span class="k">AND&lt;/span> &lt;span class="n">condition2&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="err">{&lt;/span>&lt;span class="n">category&lt;/span>&lt;span class="err">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>1行目のようなコメントを入れてしまうと、SQLファイルの中ではコメントとして評価される部分もPythnの文字列内では&lt;code>.format()&lt;/code>の挿入対象となってしまうので、記述しないように気をつけておきましょう&lt;/p>
+&lt;h2 id="ref">Ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/5243596/python-sql-query-string-formatting">Python SQL query string formatting&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>機械学習エンジニアから検索エンジニアに転生</title><link>https://shunyaueta.com/posts/2021-03-27/</link><pubDate>Sat, 27 Mar 2021 23:54:15 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-03-27/</guid><description>
 &lt;p>2018年2月に株式会社メルカリに機械学習エンジニアとして入社したが、来月から同社で検索エンジニアに転向する。&lt;/p>
 &lt;h2 id="機械学習エンジニアとして">機械学習エンジニアとして&lt;/h2>
 &lt;p>入社してからは主に、機械学習により同社でのCusotmer Service 分野の業務効率化を推進してきた。
