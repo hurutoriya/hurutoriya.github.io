@@ -28,7 +28,7 @@
 &lt;li>SQLが長くなるとPEP8に準拠せず、&lt;a href="https://www.flake8rules.com/rules/E501.html">E501 line too long&lt;/a>に抵触する&lt;/li>
 &lt;li>視認性が低く、SQLクエリの実行内容を理解しづらい&lt;/li>
 &lt;/ul>
-&lt;h2 id="2--docstring-で複数行文字列として扱いsqlクエリを構築">2, docstring で複数行文字列として扱いSQLクエリを構築&lt;/h2>
+&lt;h2 id="2--docstring-で複数行文字列として扱いsqlクエリを構築">2. docstring で複数行文字列として扱いSQLクエリを構築&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
@@ -59,7 +59,7 @@
 &lt;li>SQL構文に関する lint や フォーマッターを活用できない&lt;/li>
 &lt;li>SQLへのシンタックスハイライトが無いので、視認性が低い&lt;/li>
 &lt;/ul>
-&lt;h2 id="3--sql-ファイルを文字列として読み込み-formatで変数を挿入する">3, SQL ファイルを文字列として読み込み、 &lt;code>.format()&lt;/code>で変数を挿入する&lt;/h2>
+&lt;h2 id="3--sql-ファイルを文字列として読み込み-formatで変数を挿入する">3. SQL ファイルを文字列として読み込み、 &lt;code>.format()&lt;/code>で変数を挿入する&lt;/h2>
 &lt;p>SQLファイルが &lt;code>./sql/test.sql&lt;/code> に設置されている状態とする。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -191,7 +191,7 @@ AND &lt;span class="nv">condition2&lt;/span>&lt;span class="o">=&lt;/span>apple
 &lt;span class="k">AND&lt;/span> &lt;span class="n">condition2&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="err">{&lt;/span>&lt;span class="n">category&lt;/span>&lt;span class="err">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>1行目のようなコメントを入れてしまうと、SQLファイルの中ではコメントとして評価される部分もPythnの文字列内では&lt;code>.format()&lt;/code>の挿入対象となる。その影響で&lt;code>.format()&lt;/code>で挿入されるべき変数の数が3つと評価されてしまい、実際の引数は2つしか与えておらずエラーが発生する。
+&lt;/div>&lt;p>1行目のようなコメントを入れてしまうと、SQLファイルの中ではコメントとして評価される部分もPythnの文字列内では&lt;code>.format()&lt;/code>の挿入対象となる。その影響で&lt;code>.format()&lt;/code>で挿入されるべき変数の数が3つと評価され、実際の引数は2つしか与えておらずエラーが発生する。
 SQLファイルのコメントであろうと、&lt;code>{}&lt;/code>と記述しないように気をつけておきましょう。&lt;/p>
 &lt;h2 id="ref">Ref&lt;/h2>
 &lt;ul>
