@@ -34,7 +34,7 @@ def get_guery(num: int, category: str):
 - SQLが長くなるとPEP8に準拠せず、[E501 line too long](https://www.flake8rules.com/rules/E501.html)に抵触する
 - 視認性が低く、SQLクエリの実行内容を理解しづらい
 
-## 2,  docstring で複数行文字列として扱いSQLクエリを構築
+## 2.  docstring で複数行文字列として扱いSQLクエリを構築
 
 ```python
 def get_guery(num: int, category: str):
@@ -54,7 +54,7 @@ def get_guery(num: int, category: str):
 - SQL構文に関する lint や フォーマッターを活用できない
 - SQLへのシンタックスハイライトが無いので、視認性が低い
 
-## 3,  SQL ファイルを文字列として読み込み、 `.format()`で変数を挿入する
+## 3.  SQL ファイルを文字列として読み込み、 `.format()`で変数を挿入する
 
 SQLファイルが `./sql/test.sql` に設置されている状態とする。
 
@@ -96,6 +96,7 @@ print(get_guery(num=18, category="apple", filename="test.sql"))
 ```
 
 実行結果
+
 ```bash
 SELECT
   field1,
@@ -132,7 +133,7 @@ WHERE
   AND condition2={category}
 ```
 
-1行目のようなコメントを入れてしまうと、SQLファイルの中ではコメントとして評価される部分もPythnの文字列内では`.format()`の挿入対象となる。その影響で`.format()`で挿入されるべき変数の数が3つと評価されてしまい、実際の引数は2つしか与えておらずエラーが発生する。
+1行目のようなコメントを入れてしまうと、SQLファイルの中ではコメントとして評価される部分もPythnの文字列内では`.format()`の挿入対象となる。その影響で`.format()`で挿入されるべき変数の数が3つと評価され、実際の引数は2つしか与えておらずエラーが発生する。
 SQLファイルのコメントであろうと、`{}`と記述しないように気をつけておきましょう。
 
 ## Ref
