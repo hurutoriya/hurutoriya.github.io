@@ -19,6 +19,11 @@ tags:
 
 変数をSQLに組み込んで実行したい際には、[kayak/pypika](https://github.com/kayak/pypika)のような SQL builder もあるが、個人的に可読性が悪くなったり、SQLクエリの作成のためだけに余計なパッケージをいれたくない。そのためパッケージを入れずにシンプルに完結する方法をここでは紹介する。
 
+## 編集履歴
+
+- 2021/05/12: twitter でdocstring ではなくstring literal ですよという指摘をいただき修正 [ref](https://twitter.com/cocu_tan/status/1392481952662310925)
+- 2021/05/12: twitter での意見を反映
+
 ## 1.  単なる文字列としてSQLクエリを構築
 
 ```python
@@ -34,7 +39,7 @@ def get_guery(num: int, category: str):
 - SQLが長くなるとPEP8に準拠せず、[E501 line too long](https://www.flake8rules.com/rules/E501.html)に抵触する
 - 視認性が低く、SQLクエリの実行内容を理解しづらい
 
-## 2.  docstring で複数行文字列として扱いSQLクエリを構築
+## 2. 複数行文字列としてSQLクエリを構築
 
 ```python
 def get_guery(num: int, category: str):
@@ -47,7 +52,7 @@ def get_guery(num: int, category: str):
 	return sql
 ```
 
-- 1番目と比較すると、docstringを挿入しSQLクエリが複数行になることでで見やすい
+- 1番目と比較すると、複数行を扱える[string literal-longstring](https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals)を採用ししSQLクエリが複数行になることでで見やすい (@cocu_tan さん、[ご指摘](https://twitter.com/cocu_tan/status/1392481952662310925)ありがとうございます!)
 
 だが
  
