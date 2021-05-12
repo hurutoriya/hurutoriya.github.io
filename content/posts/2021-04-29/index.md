@@ -52,7 +52,7 @@ def get_guery(num: int, category: str):
 	return sql
 ```
 
-- 1番目と比較すると、複数行を扱える[string literal-longstring](https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals)を採用ししSQLクエリが複数行になることでで見やすい (@cocu_tan さん、[ご指摘](https://twitter.com/cocu_tan/status/1392481952662310925)ありがとうございます!)
+- 1番目と比較すると、複数行を扱える[string literal-longstring](https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals)を採用することで、SQLクエリが複数行になることでで見やすい (@cocu_tan さん、[ご指摘](https://twitter.com/cocu_tan/status/1392481952662310925)ありがとうございます!)
 
 だが
  
