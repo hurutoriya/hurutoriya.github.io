@@ -1,4 +1,69 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Pythonで、変数を挿入して柔軟にSQLクエリを構築する</title><link>https://shunyaueta.com/posts/2021-04-29/</link><pubDate>Thu, 29 Apr 2021 22:52:25 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-04-29/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>検索チームの成熟度モデル</title><link>https://shunyaueta.com/posts/2021-05-12/</link><pubDate>Wed, 12 May 2021 22:33:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-12/</guid><description>
+&lt;p>&lt;a href="https://twitter.com/rilmayer_jp/status/1348151389298454528">@rilmayer_jpさんのツイート&lt;/a> をきっかけに、検索チームの成熟度モデルの存在を知りました。ありがとうございます!&lt;/p>
+&lt;p>&lt;a href="https://twitter.com/dep4b">Eric Pugh&lt;/a> さんが、検索エンジンに関する会議で公演した内容で、検索チームがどのように成熟していくかをモデル化しており、それが面白かったので備忘録として残しておく&lt;/p>
+&lt;h2 id="翻訳元資料">翻訳元資料&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://mices.co/mices2019/slides/pugh_search-organizational-maturity-model.pdf">Search Relevance Organizational Maturity Model slide&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://youtu.be/i1M2eUMXXQY">Haystack LIVE! 2020 Search Relevance Organizational Maturity Model&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="検索エンジンのレベル">検索エンジンのレベル&lt;/h2>
+&lt;p>検索エンジンへの要求をどれだけ満たしているかをピラミッド構造でわかりやすく説明している&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2021-05-12/images/1.png" alt="翻訳 検索チームの成熟度モデル - Search Relevance Organizational Maturity Model MICES 2019 Berlin _ Eric Pugh _ @dep4b-(1).png">&lt;/p>
+&lt;h2 id="検索チームの成熟度モデル">検索チームの成熟度モデル&lt;/h2>
+&lt;p>7項目の検索チームの評価項目を考え、3段階で評価を行う&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>ビジネス&lt;/th>
+&lt;th>顧客の要求の理解&lt;/th>
+&lt;th>検索技術&lt;/th>
+&lt;th>実験駆動&lt;/th>
+&lt;th>UX&lt;/th>
+&lt;th>コンテンツ強化&lt;/th>
+&lt;th>データ保有&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>発展&lt;/td>
+&lt;td>ステークホルダーがリアルタイムKPIを使用している&lt;/td>
+&lt;td>データ解析から質的なデータを得ている&lt;/td>
+&lt;td>カスタムプラグインを作成している&lt;/td>
+&lt;td>A/Bテスト、オフラインテストをサポートしている&lt;/td>
+&lt;td>革新的な発見性を提供している(chatbot, 等)&lt;/td>
+&lt;td>NLPやデータサイエンティストの専任チームが取り組んでいる&lt;/td>
+&lt;td>多種多様な、複雑かつ大規模なデータを扱っている&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>実践&lt;/td>
+&lt;td>不定期にレポートを行っている&lt;/td>
+&lt;td>いくつかのユーザーテスト、基礎的な分析を行っている&lt;/td>
+&lt;td>関連性のための複雑な設定、プラグインの使用をしている&lt;/td>
+&lt;td>実験は適用可能だが、A/Bテストなどはできない&lt;/td>
+&lt;td>発見しやすくするためのUIを提供している&lt;/td>
+&lt;td>分類学や概念体型の適用をしている&lt;/td>
+&lt;td>データの複雑度の監視している&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>基礎&lt;/td>
+&lt;td>ビジネスインパクトが測定されていない&lt;/td>
+&lt;td>クエリログは存在しない、またはユーザーテストを行っていない&lt;/td>
+&lt;td>技術スタックを適度に調整している&lt;/td>
+&lt;td>検索のテストは手作業で行い、デプロイは低頻度&lt;/td>
+&lt;td>1ページに10個の検索結果がある&lt;/td>
+&lt;td>僅かな取り組み(シノニムなど)&lt;/td>
+&lt;td>とても単純なデータモデル&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="感想">感想&lt;/h2>
+&lt;p>ひと目で&lt;/p>
+&lt;ul>
+&lt;li>今の自分達がどの位置にいて&lt;/li>
+&lt;li>何を目指せばいいか&lt;/li>
+&lt;/ul>
+&lt;p>わかる可視化は示唆に富むのでありがたい&lt;/p></description></item><item><title>Pythonで、変数を挿入して柔軟にSQLクエリを構築する</title><link>https://shunyaueta.com/posts/2021-04-29/</link><pubDate>Thu, 29 Apr 2021 22:52:25 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-04-29/</guid><description>
 &lt;p>データ処理のタスクをこなしていると、PythonでSQLに変数を挿入し柔軟にSQLクエリを構築したくなる。
 例えば、&lt;/p>
 &lt;ul>
@@ -193,6 +258,39 @@ AND &lt;span class="nv">condition2&lt;/span>&lt;span class="o">=&lt;/span>apple
 &lt;/div>
 &lt;/div>&lt;p>1行目のようなコメントを入れてしまうと、SQLファイルの中ではコメントとして評価される部分もPythnの文字列内では&lt;code>.format()&lt;/code>の挿入対象となる。その影響で&lt;code>.format()&lt;/code>で挿入されるべき変数の数が3つと評価され、実際の引数は2つしか与えておらずエラーが発生する。
 SQLファイルのコメントであろうと、&lt;code>{}&lt;/code>と記述しないように気をつけておきましょう。&lt;/p>
+&lt;h2 id="追記">追記&lt;/h2>
+&lt;p>Twitter でみんなの管理方法をお聞きできたので、記しておく。
+ありがたい。&lt;/p>
+&lt;h3 id="shuhei_fujiwara-さん">@shuhei_fujiwara さん&lt;/h3>
+&lt;p>&lt;a href="https://twitter.com/shuhei_fujiwara/status/1387815866436243458">https://twitter.com/shuhei_fujiwara/status/1387815866436243458&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>BigQuery の話だけど僕は&lt;/p>
+&lt;ul>
+&lt;li>ほとんどの場合 =&amp;gt; parameterized query&lt;/li>
+&lt;li>本当に短くて自明なクエリ =&amp;gt; 1 or 2&lt;/li>
+&lt;li>どうにもならんとき =&amp;gt; 3
+&lt;a href="https://cloud.google.com/bigquery/docs/parameterized-queries">https://cloud.google.com/bigquery/docs/parameterized-queries&lt;/a>
+3 はわかるんだけど、Python コードで読み込む前提よりは SQL ファイル単体で成立している方が好きなので可能なら避けてます&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>単体で成立したい気持ち、たしかに分かる~&lt;/p>
+&lt;h3 id="satoshihirose-さん">@satoshihirose さん&lt;/h3>
+&lt;p>&lt;a href="https://twitter.com/satoshihirose/status/1387776005943840772">https://twitter.com/satoshihirose/status/1387776005943840772&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>Airflowのみの話にはなってしまいますが、sqlはファイルとして管理して基本jinja template対応のオペレーター使ってましたね &lt;a href="https://qiita.com/munaita_/items/6bdcfb10f36c8c6b4753">https://qiita.com/munaita_/items/6bdcfb10f36c8c6b4753&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>Airflow のときにjinja 使えるんですね。今度から使います!&lt;/p>
+&lt;h3 id="reto_nayuta-さん">@reto_nayuta さん&lt;/h3>
+&lt;p>&lt;a href="https://twitter.com/reto_nayuta/status/1387801584512364544">https://twitter.com/reto_nayuta/status/1387801584512364544&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>私も（Airflow ではないですが）jinja 使うことが多いですね&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="sassahero-さん">@SassaHero さん&lt;/h3>
+&lt;p>&lt;a href="https://twitter.com/SassaHero/status/1387878168481075200">https://twitter.com/SassaHero/status/1387878168481075200&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>3を、from string import Templateで変数置き換えを実現してます！&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;code>from string import Template&lt;/code> 知らなかった&lt;/p>
 &lt;h2 id="ref">Ref&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://stackoverflow.com/questions/5243596/python-sql-query-string-formatting">Python SQL query string formatting&lt;/a>&lt;/li>
