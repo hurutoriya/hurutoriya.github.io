@@ -12,6 +12,7 @@ tags:
 
 [Eric Pugh](https://twitter.com/dep4b) さんが、検索エンジンに関する会議で公演した内容で、検索チームがどのように成熟していくかをモデル化しており、それが面白かったので備忘録として残しておく
 
+_著者の[Eric Pugh](https://twitter.com/dep4b) さんに現在抄訳して問題ないか問い合わせ中です_
 ## 翻訳元資料
 
 - [Search Relevance Organizational Maturity Model slide](https://mices.co/mices2019/slides/pugh_search-organizational-maturity-model.pdf)
