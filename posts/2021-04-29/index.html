@@ -25,7 +25,7 @@ Shunya Ueta</a></div><div class=flex><a href=/articles/>All posts</a>
 </span><span class=s2>        AND condition2={category}
 </span><span class=s2>    &#34;&#34;&#34;</span>
 	<span class=k>return</span> <span class=n>sql</span>
-</code></pre></td></tr></table></div></div><ul><li>1番目と比較すると、複数行を扱える<a href=https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals>string literal-longstring</a>を採用ししSQLクエリが複数行になることでで見やすい (@cocu_tan さん、<a href=https://twitter.com/cocu_tan/status/1392481952662310925>ご指摘</a>ありがとうございます!)</li></ul><p>だが</p><ul><li>SQL構文に関する lint や フォーマッターを活用できない</li><li>SQLへのシンタックスハイライトが無いので、視認性が低い</li></ul><h2 id=3--sql-ファイルを文字列として読み込み-formatで変数を挿入する>3. SQL ファイルを文字列として読み込み、 <code>.format()</code>で変数を挿入する</h2><p>SQLファイルが <code>./sql/test.sql</code> に設置されている状態とする。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</code></pre></td></tr></table></div></div><ul><li>1番目と比較すると、複数行を扱える<a href=https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals>string literal-longstring</a>を採用することで、SQLクエリが複数行になることでで見やすい (@cocu_tan さん、<a href=https://twitter.com/cocu_tan/status/1392481952662310925>ご指摘</a>ありがとうございます!)</li></ul><p>だが</p><ul><li>SQL構文に関する lint や フォーマッターを活用できない</li><li>SQLへのシンタックスハイライトが無いので、視認性が低い</li></ul><h2 id=3--sql-ファイルを文字列として読み込み-formatで変数を挿入する>3. SQL ファイルを文字列として読み込み、 <code>.format()</code>で変数を挿入する</h2><p>SQLファイルが <code>./sql/test.sql</code> に設置されている状態とする。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4

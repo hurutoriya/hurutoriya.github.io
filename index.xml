@@ -123,7 +123,7 @@
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;ul>
-&lt;li>1番目と比較すると、複数行を扱える&lt;a href="https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals">string literal-longstring&lt;/a>を採用ししSQLクエリが複数行になることでで見やすい (@cocu_tan さん、&lt;a href="https://twitter.com/cocu_tan/status/1392481952662310925">ご指摘&lt;/a>ありがとうございます!)&lt;/li>
+&lt;li>1番目と比較すると、複数行を扱える&lt;a href="https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals">string literal-longstring&lt;/a>を採用することで、SQLクエリが複数行になることでで見やすい (@cocu_tan さん、&lt;a href="https://twitter.com/cocu_tan/status/1392481952662310925">ご指摘&lt;/a>ありがとうございます!)&lt;/li>
 &lt;/ul>
 &lt;p>だが&lt;/p>
 &lt;ul>
