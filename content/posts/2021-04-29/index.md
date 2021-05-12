@@ -136,6 +136,46 @@ WHERE
 1行目のようなコメントを入れてしまうと、SQLファイルの中ではコメントとして評価される部分もPythnの文字列内では`.format()`の挿入対象となる。その影響で`.format()`で挿入されるべき変数の数が3つと評価され、実際の引数は2つしか与えておらずエラーが発生する。
 SQLファイルのコメントであろうと、`{}`と記述しないように気をつけておきましょう。
 
+## 追記
+
+Twitter でみんなの管理方法をお聞きできたので、記しておく。
+ありがたい。
+
+### @shuhei_fujiwara さん
+
+https://twitter.com/shuhei_fujiwara/status/1387815866436243458
+
+> BigQuery の話だけど僕は
+> - ほとんどの場合 => parameterized query
+> - 本当に短くて自明なクエリ => 1 or 2
+> - どうにもならんとき => 3
+> https://cloud.google.com/bigquery/docs/parameterized-queries
+> 3 はわかるんだけど、Python コードで読み込む前提よりは SQL ファイル単体で成立している方が好きなので可能なら避けてます
+
+
+単体で成立したい気持ち、たしかに分かる~
+
+### @satoshihirose さん
+
+https://twitter.com/satoshihirose/status/1387776005943840772
+
+>Airflowのみの話にはなってしまいますが、sqlはファイルとして管理して基本jinja template対応のオペレーター使ってましたね https://qiita.com/munaita_/items/6bdcfb10f36c8c6b4753
+
+Airflow のときにjinja 使えるんですね。今度から使います!
+
+### @reto_nayuta さん
+
+https://twitter.com/reto_nayuta/status/1387801584512364544
+
+> 私も（Airflow ではないですが）jinja 使うことが多いですね
+
+### @SassaHero さん
+
+https://twitter.com/SassaHero/status/1387878168481075200
+
+> 3を、from string import Templateで変数置き換えを実現してます！
+
+`from string import Template` 知らなかった
 ## Ref
 
 - [Python SQL query string formatting](https://stackoverflow.com/questions/5243596/python-sql-query-string-formatting)
