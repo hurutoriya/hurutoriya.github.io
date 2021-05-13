@@ -7,7 +7,8 @@ tags:
 - Machine Learning
 - MLOps
 - ML Engineering
-- Paper
+- paper
+- translation
 ---
 
 この記事は[MLOps Advent Calendar 2020](https://adventar.org/calendars/5089)の25日目の記事です。(盛大に遅れました)

@@ -4,7 +4,8 @@ date: 2020-04-19T22:18:10+09:00
 lang: ja
 tags:
 - Machine Learning
-- Paper
+- paper
+- translation
 - MLOps
 ---
 

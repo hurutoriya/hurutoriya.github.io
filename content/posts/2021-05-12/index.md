@@ -1,18 +1,22 @@
 ---
-title: "検索チームの成熟度モデル"
+title: "検索エンジンの達成度と検索チームの成熟度モデル"
 date: 2021-05-12T22:33:23+09:00
 lang: ja
 author: Shunya Ueta
 tags:
 - search
 - organization
+- translation
 ---
 
 [@rilmayer_jpさんのツイート](https://twitter.com/rilmayer_jp/status/1348151389298454528) をきっかけに、検索チームの成熟度モデルの存在を知りました。ありがとうございます!
 
 [Eric Pugh](https://twitter.com/dep4b) さんが、検索エンジンに関する会議で公演した内容で、検索チームがどのように成熟していくかをモデル化しており、それが面白かったので備忘録として残しておく
 
-_著者の[Eric Pugh](https://twitter.com/dep4b) さんに現在抄訳して問題ないか問い合わせ中です_
+## 更新
+
+- 2021/05/13 : 原著者の[Eric Pugh](https://twitter.com/dep4b) さんから、抄訳のご快諾いただけました。ありがとうございます
+
 ## 翻訳元資料
 
 - [Search Relevance Organizational Maturity Model slide](https://mices.co/mices2019/slides/pugh_search-organizational-maturity-model.pdf)

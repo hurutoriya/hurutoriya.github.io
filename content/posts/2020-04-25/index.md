@@ -3,9 +3,10 @@ title: "[抄訳]: The ML Test Score: A Rubric for ML Production Readiness and Te
 date: 2020-04-25T01:35:20+09:00
 lang: ja
 tags:
-  - Paper
-  - Machine Learning
-  - MLOps
+- paper
+- translation
+- Machine Learning
+- MLOps
 ---
 
 [[抄訳] What’s your ML test score? A rubric for ML production systems](https://shunyaueta.com/posts/2020-04-19/)で紹介した論文の続編があったので読んでみました。
