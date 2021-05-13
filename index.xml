@@ -1,7 +1,10 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>検索チームの成熟度モデル</title><link>https://shunyaueta.com/posts/2021-05-12/</link><pubDate>Wed, 12 May 2021 22:33:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-12/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>検索エンジンの達成度と検索チームの成熟度モデル</title><link>https://shunyaueta.com/posts/2021-05-12/</link><pubDate>Wed, 12 May 2021 22:33:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-12/</guid><description>
 &lt;p>&lt;a href="https://twitter.com/rilmayer_jp/status/1348151389298454528">@rilmayer_jpさんのツイート&lt;/a> をきっかけに、検索チームの成熟度モデルの存在を知りました。ありがとうございます!&lt;/p>
 &lt;p>&lt;a href="https://twitter.com/dep4b">Eric Pugh&lt;/a> さんが、検索エンジンに関する会議で公演した内容で、検索チームがどのように成熟していくかをモデル化しており、それが面白かったので備忘録として残しておく&lt;/p>
-&lt;p>&lt;em>著者の&lt;a href="https://twitter.com/dep4b">Eric Pugh&lt;/a> さんに現在抄訳して問題ないか問い合わせ中です&lt;/em>&lt;/p>
+&lt;h2 id="更新">更新&lt;/h2>
+&lt;ul>
+&lt;li>2021/05/13 : 原著者の&lt;a href="https://twitter.com/dep4b">Eric Pugh&lt;/a> さんから、抄訳のご快諾いただけました。ありがとうございます&lt;/li>
+&lt;/ul>
 &lt;h2 id="翻訳元資料">翻訳元資料&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://mices.co/mices2019/slides/pugh_search-organizational-maturity-model.pdf">Search Relevance Organizational Maturity Model slide&lt;/a>&lt;/li>
