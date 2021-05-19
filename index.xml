@@ -1,4 +1,99 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>検索エンジンの達成度と検索チームの成熟度モデル</title><link>https://shunyaueta.com/posts/2021-05-12/</link><pubDate>Wed, 12 May 2021 22:33:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-12/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>KyTeaをPythonで扱えるMykyteaを使うために必要なこと</title><link>https://shunyaueta.com/posts/2021-05-19/</link><pubDate>Wed, 19 May 2021 22:04:41 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-19/</guid><description>
+&lt;h2 id="テキスト解析機-kytea">テキスト解析機 KyTea&lt;/h2>
+&lt;p>KyTeaを業務で使う機会があり、Python wrapper である Mykytea を使ってみたのですが、poetry や pip で Mykytea をインストールするだけでは、&lt;/p>
+&lt;p>&lt;code>Library not loaded: /usr/local/lib/libkytea.0.dylib in version = &amp;quot;0.1.5&amp;quot;&lt;/code>&lt;/p>
+&lt;p>上記のエラーが出力され、KyTea を使うことができませんでした。
+Mykytea のリポジトリに issue &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> を立てて、@chezou さんにお聞きしてみたところ、&lt;/p>
+&lt;blockquote>
+&lt;p>Good point.
+Mykytea wheel assumes that kytea is installed under /usr/local/lib, while your kytea exists another place.
+This should be Mykytea issue and there are two options we can avoid it like:&lt;/p>
+&lt;ol>
+&lt;li>Use delocate, like Linux&amp;rsquo;s audit-wheel &lt;a href="https://realpython.com/python-wheels/">https://realpython.com/python-wheels/&lt;/a>&lt;/li>
+&lt;li>Install from source using wheel instead.&lt;/li>
+&lt;/ol>
+&lt;/blockquote>
+&lt;p>とのことで、&lt;code>/usr/local/lib&lt;/code> にKyTea がインストールされていることを前提としているので、KyTea自身をソースコードからビルドすることをおすすめするとご助言をいただくことができました。&lt;/p>
+&lt;p>C++,C に疎いので知らなかったのですが、&lt;code>dylib&lt;/code>という仕組みで共通ライブラリとして扱えるんですね。&lt;/p>
+&lt;h2 id="makefile-によるkyteaのビルドとquick-check-の自動化">Makefile によるkyteaのビルドと、quick check の自動化&lt;/h2>
+&lt;p>自分はMakefile を好んで使うのですが、以下のようなタスクを作成することで、KyTeaのビルドと、quick check をワンライナーで行えるようにしました。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-make" data-lang="make">&lt;span class="nf">.PHONY&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="n">keytea&lt;/span>-&lt;span class="n">install&lt;/span>
+&lt;span class="nf">keytea-install&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="c">## install and build kytea
+&lt;/span>&lt;span class="c">&lt;/span> curl -SsL -o kytea.tar.gz http://www.phontron.com/kytea/download/kytea-0.4.7.tar.gz
+mkdir -p /tmp/kytea
+tar -xzvf kytea.tar.gz -C /tmp/kytea --strip-components &lt;span class="m">1&lt;/span>
+&lt;span class="nb">cd&lt;/span> /tmp/kytea &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> ./configure &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> make -j4 &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> make install
+rm kytea.tar.gz
+&lt;span class="nf">.PHONY&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="n">kytea&lt;/span>-&lt;span class="n">test&lt;/span>
+&lt;span class="nf">kytea-test&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="c">## check kytea lib installed by C++ source code build
+&lt;/span>&lt;span class="c">&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;山田太郎はコーヒーを買って飲んだ。&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> kytea
+poetry run python -c &lt;span class="s2">&amp;#34;import Mykytea&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>使用した pyproject.toml は以下です。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-pyproject.toml" data-lang="pyproject.toml">&lt;span class="p">[&lt;/span>&lt;span class="nx">tool&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">poetry&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;span class="nx">name&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;kytea-test&amp;#34;&lt;/span>
+&lt;span class="nx">version&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;0.1.0&amp;#34;&lt;/span>
+&lt;span class="nx">description&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>
+&lt;span class="nx">authors&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;]
+&lt;/span>&lt;span class="s2">
+&lt;/span>&lt;span class="s2">[tool.poetry.dependencies]
+&lt;/span>&lt;span class="s2">python = &amp;#34;&lt;/span>&lt;span class="err">^&lt;/span>&lt;span class="mf">3.7&lt;/span>&lt;span class="s2">&amp;#34;
+&lt;/span>&lt;span class="s2">kytea = &amp;#34;&lt;/span>&lt;span class="err">~&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="mf">0.1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="s2">&amp;#34;
+&lt;/span>&lt;span class="s2">
+&lt;/span>&lt;span class="s2">[tool.poetry.dev-dependencies]
+&lt;/span>&lt;span class="s2">pytest = &amp;#34;&lt;/span>&lt;span class="err">^&lt;/span>&lt;span class="mf">5.2&lt;/span>&lt;span class="s2">&amp;#34;
+&lt;/span>&lt;span class="s2">
+&lt;/span>&lt;span class="s2">[build-system]
+&lt;/span>&lt;span class="s2">requires = [&amp;#34;&lt;/span>&lt;span class="nx">poetry&lt;/span>&lt;span class="err">-&lt;/span>&lt;span class="nx">core&lt;/span>&lt;span class="err">&amp;gt;&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="mf">1.0&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="s2">&amp;#34;]
+&lt;/span>&lt;span class="s2">build-backend = &amp;#34;&lt;/span>&lt;span class="nx">poetry&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">core&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">masonry&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">api&lt;/span>&lt;span class="err">&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>機械学習タスクでは外部のデータに依存することが多いですが、Makefile でその検査を自動化することができるので愛用しています。&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>&lt;a href="https://github.com/chezou/Mykytea-python/issues/17">Library not loaded: /usr/local/lib/libkytea.0.dylib in version = &amp;ldquo;0.1.5&amp;rdquo; #17&lt;/a> &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>検索エンジンの達成度と検索チームの成熟度モデル</title><link>https://shunyaueta.com/posts/2021-05-12/</link><pubDate>Wed, 12 May 2021 22:33:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-12/</guid><description>
 &lt;p>&lt;a href="https://twitter.com/rilmayer_jp/status/1348151389298454528">@rilmayer_jpさんのツイート&lt;/a> をきっかけに、検索チームの成熟度モデルの存在を知りました。ありがとうございます!&lt;/p>
 &lt;p>&lt;a href="https://twitter.com/dep4b">Eric Pugh&lt;/a> さんが、検索エンジンに関する会議で公演した内容で、検索チームがどのように成熟していくかをモデル化しており、それが面白かったので備忘録として残しておく&lt;/p>
 &lt;h2 id="更新">更新&lt;/h2>

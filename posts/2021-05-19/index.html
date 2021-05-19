@@ -1,0 +1,65 @@
+<!doctype html><html lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=theme-color content="dark"><title>KyTeaをPythonで扱えるMykyteaを使うために必要なこと | Shunya Ueta</title><link rel=stylesheet href=/sass/main.min.1a3290acca8b3fc92df85ea9200859476d6c80d59009c89a749300f3ce7a7a67.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-39994406-11"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-39994406-11');</script></head><body class=dark><nav class=navbar><div class=container><div class=flex><div><a class=brand href=/><span class=emoji>🎰</span>
+Shunya Ueta</a></div><div class=flex><a href=/articles/>All posts</a>
+<button id=dark-mode-button></button></div></div></div></nav><main><div class=container><article><header class=article-header><div class=thumb><div><h1>KyTeaをPythonで扱えるMykyteaを使うために必要なこと</h1><div class=post-meta><div>By Shunya Ueta on <time>May 19, 2021</time></div><div class=tags><a href=/tags/nlp/>NLP</a>
+<a href=/tags/python/>Python</a></div></div></div></div></header></article><div class=article-post><h2 id=テキスト解析機-kytea>テキスト解析機 KyTea</h2><p>KyTeaを業務で使う機会があり、Python wrapper である Mykytea を使ってみたのですが、poetry や pip で Mykytea をインストールするだけでは、</p><p><code>Library not loaded: /usr/local/lib/libkytea.0.dylib in version = "0.1.5"</code></p><p>上記のエラーが出力され、KyTea を使うことができませんでした。
+Mykytea のリポジトリに issue <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> を立てて、@chezou さんにお聞きしてみたところ、</p><blockquote><p>Good point.
+Mykytea wheel assumes that kytea is installed under /usr/local/lib, while your kytea exists another place.
+This should be Mykytea issue and there are two options we can avoid it like:</p><ol><li>Use delocate, like Linux&rsquo;s audit-wheel <a href=https://realpython.com/python-wheels/>https://realpython.com/python-wheels/</a></li><li>Install from source using wheel instead.</li></ol></blockquote><p>とのことで、<code>/usr/local/lib</code> にKyTea がインストールされていることを前提としているので、KyTea自身をソースコードからビルドすることをおすすめするとご助言をいただくことができました。</p><p>C++,C に疎いので知らなかったのですが、<code>dylib</code>という仕組みで共通ライブラリとして扱えるんですね。</p><h2 id=makefile-によるkyteaのビルドとquick-check-の自動化>Makefile によるkyteaのビルドと、quick check の自動化</h2><p>自分はMakefile を好んで使うのですが、以下のようなタスクを作成することで、KyTeaのビルドと、quick check をワンライナーで行えるようにしました。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-make data-lang=make><span class=nf>.PHONY</span><span class=o>:</span> <span class=n>keytea</span>-<span class=n>install</span>
+<span class=nf>keytea-install</span><span class=o>:</span> <span class=c>## install and build kytea
+</span><span class=c></span>	curl -SsL -o kytea.tar.gz http://www.phontron.com/kytea/download/kytea-0.4.7.tar.gz
+	mkdir -p /tmp/kytea
+	tar -xzvf kytea.tar.gz -C /tmp/kytea --strip-components <span class=m>1</span>
+	<span class=nb>cd</span> /tmp/kytea <span class=o>&amp;&amp;</span> ./configure <span class=o>&amp;&amp;</span> make -j4 <span class=o>&amp;&amp;</span> make install
+	rm kytea.tar.gz
+
+<span class=nf>.PHONY</span><span class=o>:</span> <span class=n>kytea</span>-<span class=n>test</span>
+<span class=nf>kytea-test</span><span class=o>:</span> <span class=c>## check kytea lib installed by C++ source code build
+</span><span class=c></span>	<span class=nb>echo</span> <span class=s2>&#34;山田太郎はコーヒーを買って飲んだ。&#34;</span> <span class=p>|</span> kytea
+	poetry run python -c <span class=s2>&#34;import Mykytea&#34;</span>
+</code></pre></td></tr></table></div></div><p>使用した pyproject.toml は以下です。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-pyproject.toml data-lang=pyproject.toml><span class=p>[</span><span class=nx>tool</span><span class=p>.</span><span class=nx>poetry</span><span class=p>]</span>
+<span class=nx>name</span> <span class=p>=</span> <span class=s2>&#34;kytea-test&#34;</span>
+<span class=nx>version</span> <span class=p>=</span> <span class=s2>&#34;0.1.0&#34;</span>
+<span class=nx>description</span> <span class=p>=</span> <span class=s2>&#34;&#34;</span>
+<span class=nx>authors</span> <span class=p>=</span> <span class=p>[</span><span class=s2>&#34;]
+</span><span class=s2>
+</span><span class=s2>[tool.poetry.dependencies]
+</span><span class=s2>python = &#34;</span><span class=err>^</span><span class=mf>3.7</span><span class=s2>&#34;
+</span><span class=s2>kytea = &#34;</span><span class=err>~</span><span class=p>=</span><span class=mf>0.1</span><span class=p>.</span><span class=mi>3</span><span class=s2>&#34;
+</span><span class=s2>
+</span><span class=s2>[tool.poetry.dev-dependencies]
+</span><span class=s2>pytest = &#34;</span><span class=err>^</span><span class=mf>5.2</span><span class=s2>&#34;
+</span><span class=s2>
+</span><span class=s2>[build-system]
+</span><span class=s2>requires = [&#34;</span><span class=nx>poetry</span><span class=err>-</span><span class=nx>core</span><span class=err>&gt;</span><span class=p>=</span><span class=mf>1.0</span><span class=p>.</span><span class=mi>0</span><span class=s2>&#34;]
+</span><span class=s2>build-backend = &#34;</span><span class=nx>poetry</span><span class=p>.</span><span class=nx>core</span><span class=p>.</span><span class=nx>masonry</span><span class=p>.</span><span class=nx>api</span><span class=err>&#34;</span>
+</code></pre></td></tr></table></div></div><p>機械学習タスクでは外部のデータに依存することが多いですが、Makefile でその検査を自動化することができるので愛用しています。</p><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p><a href=https://github.com/chezou/Mykytea-python/issues/17>Library not loaded: /usr/local/lib/libkytea.0.dylib in version = &ldquo;0.1.5&rdquo; #17</a> <a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></div><h2>See Also</h2><ul><li><a href=/posts/2021-04-29/>Pythonで、変数を挿入して柔軟にSQLクエリを構築する</a></li><li><a href=/posts/2021-03-13/>pipenv でローカルパッケージが正常にインストールされないときの対処法</a></li><li><a href=/posts/2021-02-08/>pip 実行時に sys.stderr.write(f"ERROR: {exc} ") とエラーが出てpipを実行できないときの対処方法</a></li><li><a href=/posts/2020-12-26/>Apache beam 入門</a></li><li><a href=/posts/2020-09-09/>pandas を使って特定のディレクトリのCSVファイルをすべて連結して一つのCSVファイルを作成</a></li></ul></div><div class=container><nav class="flex container suggested"><a rel=prev href=/posts/2021-05-12/ title="Previous post (older)"><span>Previous</span>
+検索エンジンの達成度と検索チームの成熟度モデル</a></nav></div></main></main><footer class="footer flex"><section class=container><nav class=footer-links><a href=/index.xml>RSS</a></nav></section><script async src=/js/features.min.a94f58a30ad2560de728e080d87f75c60cf806fd1b3d5f4815f1a1a02c0d1859.js></script></footer></body></html>
