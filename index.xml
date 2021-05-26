@@ -2,7 +2,7 @@
 &lt;p>現状の Poetry では、&lt;code>pyproject.toml&lt;/code> を基にした &lt;code>setup.py&lt;/code> の直接的な自動生成をサポートしていない。&lt;/p>
 &lt;p>&lt;a href="https://github.com/python-poetry/poetry/issues/761">Support generation of poetry manged setup.py file #761&lt;/a>&lt;/p>
 &lt;p>え？なんで &lt;code>setup.py&lt;/code> が必要なんですか? &lt;code>poetry build&lt;/code> で生成される &lt;code>source&lt;/code> と &lt;code>wheels&lt;/code> で事足りるんじゃないですかというツッコミがあると思います。&lt;/p>
-&lt;p>&lt;code>PyPI&lt;/code> や &lt;code>Jflog&lt;/code> などでホストせずに、GitHub のリポジトリでパッケージを管理してたり、特定のディレクトリをパッケージとして扱う際には、&lt;code>setup.py&lt;/code> での依存関係の記述が必要です。&lt;/p>
+&lt;p>&lt;code>PyPI&lt;/code> や &lt;code>Jflog&lt;/code> などでホストせずに、GitHub のリポジトリでパッケージを管理したり、特定のサブディレクトリをパッケージとして扱う際には、未だ &lt;code>setup.py&lt;/code> での依存関係の記述が必要です。&lt;/p>
 &lt;h2 id="poetry-による実現方法">Poetry による実現方法&lt;/h2>
 &lt;p>&lt;a href="https://python-poetry.org/docs/cli/#build">poetry build&lt;/a> コマンドと Makefile を組み合わせることで、&lt;code>pyproject.toml&lt;/code> に対応した &lt;code>setup.py&lt;/code> の自動生成ができるのでそれを採用します。
 コマンドはGitHub のissues でのコメントを参考にしました。 &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
