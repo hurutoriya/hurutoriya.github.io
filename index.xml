@@ -137,7 +137,7 @@ poetry run python -c &lt;span class="s2">&amp;#34;import Mykytea&amp;#34;&lt;/sp
 &lt;p>&lt;a href="https://github.com/chezou/Mykytea-python/issues/17">Library not loaded: /usr/local/lib/libkytea.0.dylib in version = &amp;ldquo;0.1.5&amp;rdquo; #17&lt;/a> &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>検索エンジンの達成度と検索チームの成熟度モデル</title><link>https://shunyaueta.com/posts/2021-05-12/</link><pubDate>Wed, 12 May 2021 22:33:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-12/</guid><description>
+&lt;/section></description></item><item><title>[抄訳] 検索エンジンの達成度と検索チームの成熟度モデル</title><link>https://shunyaueta.com/posts/2021-05-12/</link><pubDate>Wed, 12 May 2021 22:33:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-12/</guid><description>
 &lt;p>&lt;a href="https://twitter.com/rilmayer_jp/status/1348151389298454528">@rilmayer_jpさんのツイート&lt;/a> をきっかけに、検索チームの成熟度モデルの存在を知りました。ありがとうございます!&lt;/p>
 &lt;p>&lt;a href="https://twitter.com/dep4b">Eric Pugh&lt;/a> さんが、検索エンジンに関する会議で公演した内容で、検索チームがどのように成熟していくかをモデル化しており、それが面白かったので備忘録として残しておく&lt;/p>
 &lt;h2 id="更新">更新&lt;/h2>
@@ -1320,7 +1320,7 @@ python3 get-pip.py
 &lt;h2 id="appendix">Appendix&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://stackoverflow.com/questions/65866417/pip-install-failing-on-python2">pip install failing on python2&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>抄訳 Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)</title><link>https://shunyaueta.com/posts/2021-01-17/</link><pubDate>Sun, 17 Jan 2021 00:18:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-01-17/</guid><description>
+&lt;/ul></description></item><item><title>[抄訳] Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)</title><link>https://shunyaueta.com/posts/2021-01-17/</link><pubDate>Sun, 17 Jan 2021 00:18:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-01-17/</guid><description>
 &lt;p>この記事は&lt;a href="https://adventar.org/calendars/5089">MLOps Advent Calendar 2020&lt;/a>の25日目の記事です。(盛大に遅れました)&lt;/p>
 &lt;p>KDD2019の招待講演でGoogleがTFXの歴史について発表されており、TFX信者の自分としては発表内容が以前から気になっていたが、公開はされておらずなんとかして見れないかな~と思っていましたが、&lt;a href="%5Bhttps://blog.tensorflow.org/2020/09/brief-history-of-tensorflow-extended-tfx.html%5D(https://blog.tensorflow.org/2020/09/brief-history-of-tensorflow-extended-tfx.html)">TensorFlowのBlog&lt;/a>で該当の招待講演が論文化されたことを知ったのでメモがてら抄訳として残しておく。&lt;/p>
 &lt;ul>
@@ -3748,7 +3748,7 @@ Pytest provide &lt;code>setattr&lt;/code> function in &lt;code>monkeypatch&lt;/c
 &lt;ul>
 &lt;li>&lt;a href="https://docs.python-guide.org/writing/gotchas/">https://docs.python-guide.org/writing/gotchas/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://moqada.hatenablog.com/entry/20090206/1233935560">http://moqada.hatenablog.com/entry/20090206/1233935560&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>[抄訳]: The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction</title><link>https://shunyaueta.com/posts/2020-04-25/</link><pubDate>Sat, 25 Apr 2020 01:35:20 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-25/</guid><description>
+&lt;/ul></description></item><item><title>[抄訳] The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction</title><link>https://shunyaueta.com/posts/2020-04-25/</link><pubDate>Sat, 25 Apr 2020 01:35:20 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-25/</guid><description>
 &lt;p>&lt;a href="https://shunyaueta.com/posts/2020-04-19/">[抄訳] What’s your ML test score? A rubric for ML production systems&lt;/a>で紹介した論文の続編があったので読んでみました。&lt;/p>
 &lt;ul>
 &lt;li>&lt;em>注意)この翻訳記事は原著論文の著者陣からレビューはされていません&lt;/em>&lt;/li>
