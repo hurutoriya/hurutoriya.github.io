@@ -1,7 +1,6 @@
 ---
 title: "Poetry からsetup.py を自動生成する"
 date: 2021-05-23T23:42:28+09:00
-draft: true
 lang: ja
 author: Shunya Ueta
 tags:
