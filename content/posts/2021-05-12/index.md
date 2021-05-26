@@ -1,11 +1,10 @@
 ---
-title: "検索エンジンの達成度と検索チームの成熟度モデル"
+title: "[抄訳] 検索エンジンの達成度と検索チームの成熟度モデル"
 date: 2021-05-12T22:33:23+09:00
 lang: ja
 author: Shunya Ueta
 tags:
 - search
-- organization
 - translation
 ---
 

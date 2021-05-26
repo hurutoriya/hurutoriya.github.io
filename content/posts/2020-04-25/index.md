@@ -1,5 +1,5 @@
 ---
-title: "[抄訳]: The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction"
+title: "[抄訳] The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction"
 date: 2020-04-25T01:35:20+09:00
 lang: ja
 tags:
