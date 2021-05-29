@@ -1,4 +1,145 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Poetry からsetup.py を自動生成する</title><link>https://shunyaueta.com/posts/2021-05-23/</link><pubDate>Sun, 23 May 2021 23:42:28 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-23/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>2020年05月時点で自分が実践しているMLOps, MLEng の情報収集方法</title><link>https://shunyaueta.com/posts/2021-05-29/</link><pubDate>Sat, 29 May 2021 22:32:58 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-29/</guid><description>
+&lt;p>先日、同僚に機械学習適用に興味があるんだけど、おすすめの資料があったら教えてほしいと言われ、情報をまとめてみた際に現時点でのおすすめの資料としてまとめておいたら、数年後見返したら面白そうだと思ったので記事として公開しておく。&lt;/p>
+&lt;h2 id="おすすめの資料">おすすめの資料&lt;/h2>
+&lt;h3 id="プロジェクトマネジメントや考え方思想">プロジェクトマネジメントや考え方、思想&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.coursera.org/learn/google-machine-learning">How Google does Machine Learning&lt;/a>
+&lt;ul>
+&lt;li>これは機械学習を実応用する人たちにはぜひ見てほしいビデオ講義。前半が、機械学習プロジェクトの計画や、優先順位、よくあるアンチパターンについて GCP で機械学習について多く関わってきたエンジニアが解説してくれていて、非常に勉強になる。 &lt;a href="https://shunyaueta.com/posts/2020-04-18/">感想記事&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://amzn.to/3yJru2u">リーン・スタートアップ　ムダのない起業プロセスでイノベーションを生みだす&lt;/a>
+&lt;ul>
+&lt;li>顧客が求めるものを作ろう。機械学習にこだわったらまずだめなので&amp;hellip; (詳しくは後述の Rules of ML を呼んでみよう。)&lt;/li>
+&lt;li>関連する良いフレームワークとして @nishio さんの&lt;a href="https://www.slideshare.net/nishio/01-68382174">機械学習キャンバス&lt;/a> もおすすめです。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="http://www.paulgraham.com/good.html">Make something people want. by Paul Graham&lt;/a>
+&lt;ul>
+&lt;li>人によって意見が別れるところではありますが、機械学習エンジニアとして、これがなぜ機械学習で必要なのかの「なぜ」を説明できないとたいてい上手く行かないイメージがある。つまるところ、必要とされるものを見つけ出して作っていこうぜということですね&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/KanNishida/items/12f9ae0cee98fd54b0bb">Netflix がカスタマーを誰よりも理解するためのデータ分析プロセス、コンシューマー・サイエンスの紹介&lt;/a>
+&lt;ul>
+&lt;li>カスタマーオブセッションの考え方は、常に心のなかに秘めつつ世の中を良くするプロダクトを作りたい。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="機械学習エンジニアリング">機械学習エンジニアリング&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://developers.google.com/machine-learning/guides/rules-of-ml">Rules of Machine Learning&lt;/a>
+&lt;ul>
+&lt;li>全員これを毎日読もう。聖書&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://amzn.to/3yMQhCY">仕事ではじめる機械学習 第 2 版&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://mlct.connpass.com/">MLCT&lt;/a> 創始者の @chezou さんが筆頭に書き上げた実践的な機械学習本。日本人で機械学習をやりたいならまずこれを買うべし。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://amzn.to/3wNgYpj">AI アルゴリズムマーケティング 自動化のための機械学習/経済モデル、ベス トプラクティス、アーキテクチャ&lt;/a>
+&lt;ul>
+&lt;li>邦訳だとべらぼうに怪しい感じになってしまっているが、内容はとんでもなく素晴らしい。マーケティングのために機械学習を適用することが多いと思うが、かなり網羅的に適用例を解説してくれている。原著の英語は無料なので、中身が気になる人は&lt;a href="https://algorithmic-marketing.online/">そちら&lt;/a>をおすすめする。無料公開偉大すぎる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning">MLOps: 機械学習における継続的デリバリーと自動化のパイプライン&lt;/a>
+&lt;ul>
+&lt;li>GCP による MLOps の解説。人によって、MLOps の定義って差異がありますが、自分はここで語られている &lt;code>ML システム構築のすべてのステップで自動化とモニタリングを推進できます&lt;/code> こそが、 MLOps の骨子だなと思っています。クラウドサービスは、開発に関係する知識をパターン化して、資料を公開してくれるのでありがたいですね。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://cloud.google.com/architecture/ml-on-gcp-best-practices?hl=ja">Google Cloud で機械学習を実装するためのベスト プラクティス&lt;/a>
+&lt;ul>
+&lt;li>
+&lt;pre>&lt;code>この資料なんかは、GCPで機械学習を実践したい場合にはまず見ておけば困ることはなさそうですね
+&lt;/code>&lt;/pre>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>各クラウドサービスの MLOps の white paper
+&lt;ul>
+&lt;li>AWS, Azure は普段使わないので深く言及しませんが、同様の資料は公開されたりしています。
+&lt;ul>
+&lt;li>&lt;a href="https://cloud.google.com/resources/mlops-whitepaper?hl=ja">Practitioner Guide to MLOps by GCP&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://d1.awsstatic.com/whitepapers/mlops-continuous-delivery-machine-learning-on-aws.pdf">MLOps: Continuous Delivery for Machine Learning on AWS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://azure.microsoft.com/en-us/resources/mlops-infographic/">Azure Best practices for MLOps - DevOps for machine learning.&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="論文">論文&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/eugeneyan/applied-ml">eugeneyan/applied-ml&lt;/a>
+&lt;ul>
+&lt;li>@euganeyan さんがまとめてくれている、機械学習の応用例をまとめてくれているリポジトリ。事例を探したいならまずここを見れば間違いない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://research.google/pubs/pub46555/">The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction&lt;/a>
+&lt;ul>
+&lt;li>機械学習システムの完成度を点数化できて、どの部分を改善していけばいいか明瞭にしてくれます。一度プロダクションにリリース後に、チームでスコアを計算してみて、次に何を改善するのか議論すると楽しいです。 &lt;a href="https://shunyaueta.com/posts/2020-04-25/">日本語での抄訳&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="情報収集源">情報収集源&lt;/h2>
+&lt;h3 id="rss-twitter">RSS (+Twitter)&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.amazon.science/">Amazon Science&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://ai.google/">Google AI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.tensorflow.org/">TensorFlow blog&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>なんかの RSS を登録しています。なんだかんだ RSS 便利なので最近回帰している。Twitter でしか得られない情報もあったりはしますが、特定のリストを使って監視してます。Nuzzle を愛用していたが、なくなってしまったで復活してほしい。&lt;/p>
+&lt;h3 id="conference-tutorial-workshop">Conference tutorial, workshop&lt;/h3>
+&lt;h3 id="academic">Academic&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://kdd.org/kdd2021/calls/view/call-for-applied-data-science-track-papers">Applied Data Science Track Papers&lt;/a>
+&lt;ul>
+&lt;li>世界最高峰の機械学習の実応用例の論文が集まる KDD の ADS track。毎年論文が公開されるのが楽しみ。RecSys や SIGIR など、自分の専門分野に合わせた論文を呼んでおくと楽しいです。&lt;a href="https://www.kamishima.net/archive/MLDMAImap.pdf">神嶌先生の ML, DM, and AI Conference Map&lt;/a>を参考にどんな国際会議があるかを調べてみるといいかもしれません。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://sites.google.com/view/ecnlp/www-2020">ECNLP 2&lt;/a> , &lt;a href="https://sigir-ecom.github.io/">SIGIR eCo&lt;/a>
+&lt;ul>
+&lt;li>近年だと E Commerce など実世界への適用を主題にしたワークショップがアカデミックな会議でも開催されていて、非常にいい流れだと思う。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>少し前だと、&lt;a href="https://sites.google.com/site/wildml2017icml/">Reliable Machine Learning in the Wild&lt;/a>, &lt;a href="http://learningsys.org/nips17/acceptedpapers.html">Workshop on ML Systems&lt;/a>, &lt;a href="https://sites.google.com/site/wildml2016nips/">Reliable Machine Learning in the Wild&lt;/a> のワークショップも面白かった。&lt;/p>
+&lt;h4 id="industrial">Industrial&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://mlsys.org/">MLSys&lt;/a>
+&lt;ul>
+&lt;li>機械学習の実応用をテーマにして査読付き学会&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.usenix.org/conference/opml20">OpML&lt;/a>
+&lt;ul>
+&lt;li>機械学習の実運用をテーマにした査読付き学会。MLSys よりも実践論がテーマになっている。2021 年は開催されないみたいで悲しい。2021 年は SRECON21 で&lt;a href="https://www.usenix.org/conference/srecon21/call-for-participation">OpML Track&lt;/a> が開催されていた。来年は OpML が単独カンファレンスとして復活してほしい。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://mlconf.com/">MLconf&lt;/a>
+&lt;ul>
+&lt;li>海外の機械学習実践の第一人者の人たちが自社事例を惜しげもなく公開してくれているいいカンファレンス。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://twimlcon.com/">TWIMLcon&lt;/a>
+&lt;ul>
+&lt;li>TWIML podcast を主催している Sam さんが開催している、機械学習事例のカンファレンス。有料だが、Sam さんのおそろべきネットワークにより、有料にする価値は間違いなくあるカンファレンスとなっている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="podcast">Podcast&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://twimlai.com/">twiml&lt;/a>
+&lt;ul>
+&lt;li>ゲストがかなり豪華で、理論から実践まで幅広くトピックを取り扱っている。ジョーダン先生や Alex smola 先生がゲストとして着てるのは驚くしかない。。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://anchor.fm/mlops/">MLOps.community&lt;/a>
+&lt;ul>
+&lt;li>こちらは、実践的な麺をメインにした Podcast。D Sculley さんがゲストとしてきていた、&lt;a href="https://anchor.fm/mlops/episodes/The-Godfather-Of-MLOps--D-Scully--MLOps-Coffee-Sessions-32-eskt3q">The Godfather Of MLOps&lt;/a> は神回なのでおすすめ。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>読んだ記事は &lt;a href="https://b.hatena.ne.jp/hurutoriya/AppliedML/">はてぶでまとめている&lt;/a>ので、興味のある方はフォローすると役立つかもしれません。Twitter のほうにもはてぶと連携して放流しているので、そちらの&lt;a href="https://twitter.com/hurutoriya">フォロー&lt;/a>も是非。&lt;/p></description></item><item><title>Poetry からsetup.py を自動生成する</title><link>https://shunyaueta.com/posts/2021-05-23/</link><pubDate>Sun, 23 May 2021 23:42:28 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-23/</guid><description>
 &lt;p>現状の Poetry では、&lt;code>pyproject.toml&lt;/code> を基にした &lt;code>setup.py&lt;/code> の直接的な自動生成をサポートしていない。&lt;/p>
 &lt;p>&lt;a href="https://github.com/python-poetry/poetry/issues/761">Support generation of poetry manged setup.py file #761&lt;/a>&lt;/p>
 &lt;p>え？なんで &lt;code>setup.py&lt;/code> が必要なんですか? &lt;code>poetry build&lt;/code> で生成される &lt;code>source&lt;/code> と &lt;code>wheels&lt;/code> で事足りるんじゃないですかというツッコミがあると思います。&lt;/p>
