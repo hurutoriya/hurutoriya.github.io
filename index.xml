@@ -1,5 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>2021年05月時点で自分が実践しているMLOpsの情報収集方法</title><link>https://shunyaueta.com/posts/2021-05-29/</link><pubDate>Sat, 29 May 2021 22:32:58 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-29/</guid><description>
-&lt;p>先日、同僚に機械学習適用に興味があるんだけど、おすすめの資料があったら教えてほしいと言われ、情報をまとめてみた際に現時点でのおすすめの資料としてまとめておいたら、数年後見返したら面白そうだと思ったので記事として公開しておく。&lt;/p>
+&lt;p>先日、同僚に「機械学習プロジェクトに興味があるんだけど、おすすめの資料があったら教えてほしい」と言われたので、Blog記事に現時点でのおすすめの資料としてまとめておいたら、数年後見返したら面白そうだと思ったので記事として公開しておく。&lt;/p>
 &lt;h2 id="おすすめの資料">おすすめの資料&lt;/h2>
 &lt;h3 id="プロジェクトマネジメントや考え方思想">プロジェクトマネジメントや考え方、思想&lt;/h3>
 &lt;ul>
