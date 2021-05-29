@@ -1,5 +1,5 @@
 ---
-title: "2020年05月時点で自分が実践しているMLOps, MLEng の情報収集方法"
+title: "2021年05月時点で自分が実践しているMLOpsの情報収集方法"
 date: 2021-05-29T22:32:58+09:00
 lang: ja
 author: Shunya Ueta
@@ -23,7 +23,7 @@ tags:
 - [Netflix がカスタマーを誰よりも理解するためのデータ分析プロセス、コンシューマー・サイエンスの紹介](https://qiita.com/KanNishida/items/12f9ae0cee98fd54b0bb)
   - カスタマーオブセッションの考え方は、常に心のなかに秘めつつ世の中を良くするプロダクトを作りたい。
 
-### 機械学習エンジニアリング
+### MLOps, 機械学習エンジニアリング
 
 - [Rules of Machine Learning](https://developers.google.com/machine-learning/guides/rules-of-ml)
   - 全員これを毎日読もう。聖書
@@ -40,6 +40,9 @@ tags:
     - [Practitioner Guide to MLOps by GCP](https://cloud.google.com/resources/mlops-whitepaper?hl=ja)
     - [MLOps: Continuous Delivery for Machine Learning on AWS](https://d1.awsstatic.com/whitepapers/mlops-continuous-delivery-machine-learning-on-aws.pdf)
     - [Azure Best practices for MLOps - DevOps for machine learning.](https://azure.microsoft.com/en-us/resources/mlops-infographic/)
+
+
+[Machine Learning Engineering for Production (MLOps)](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops) も気になっているが、手を出せていないのでまた受講が完了したら感想を書きたい。Andrew 先生の講義はハズレはないので非常に期待している。
 
 ### 論文
 
