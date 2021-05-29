@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>2020年05月時点で自分が実践しているMLOps, MLEng の情報収集方法</title><link>https://shunyaueta.com/posts/2021-05-29/</link><pubDate>Sat, 29 May 2021 22:32:58 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-29/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>2021年05月時点で自分が実践しているMLOpsの情報収集方法</title><link>https://shunyaueta.com/posts/2021-05-29/</link><pubDate>Sat, 29 May 2021 22:32:58 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-29/</guid><description>
 &lt;p>先日、同僚に機械学習適用に興味があるんだけど、おすすめの資料があったら教えてほしいと言われ、情報をまとめてみた際に現時点でのおすすめの資料としてまとめておいたら、数年後見返したら面白そうだと思ったので記事として公開しておく。&lt;/p>
 &lt;h2 id="おすすめの資料">おすすめの資料&lt;/h2>
 &lt;h3 id="プロジェクトマネジメントや考え方思想">プロジェクトマネジメントや考え方、思想&lt;/h3>
@@ -25,7 +25,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="機械学習エンジニアリング">機械学習エンジニアリング&lt;/h3>
+&lt;h3 id="mlops-機械学習エンジニアリング">MLOps, 機械学習エンジニアリング&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://developers.google.com/machine-learning/guides/rules-of-ml">Rules of Machine Learning&lt;/a>
 &lt;ul>
@@ -67,6 +67,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
+&lt;p>&lt;a href="https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops">Machine Learning Engineering for Production (MLOps)&lt;/a> も気になっているが、手を出せていないのでまた受講が完了したら感想を書きたい。Andrew 先生の講義はハズレはないので非常に期待している。&lt;/p>
 &lt;h3 id="論文">論文&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/eugeneyan/applied-ml">eugeneyan/applied-ml&lt;/a>
