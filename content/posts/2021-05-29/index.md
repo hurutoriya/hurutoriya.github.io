@@ -20,9 +20,9 @@ tags:
   - 顧客が求めるものを作ろう。機械学習にこだわったらまずだめなので... (詳しくは後述の Rules of ML を呼んでみよう。)
   - 関連する良いフレームワークとして @nishio さんの[機械学習キャンバス](https://www.slideshare.net/nishio/01-68382174) もおすすめです。
 - [Make something people want. by Paul Graham](http://www.paulgraham.com/good.html)
-  - 人によって意見が別れるところではありますが、機械学習エンジニアとして、これがなぜ機械学習で必要なのかの「なぜ」を説明できないとたいてい上手く行かないイメージがある。つまるところ、必要とされるものを見つけ出して作っていこうぜということですね
+  - 人によって意見が別れるところではありますが、機械学習エンジニアとして、これがなぜ機械学習で必要なのかの「なぜ」を説明できないとたいてい上手く行かない経験がある。つまるところ、必要とされるものを見つけ出して作っていこうぜということですね
 - [Netflix がカスタマーを誰よりも理解するためのデータ分析プロセス、コンシューマー・サイエンスの紹介](https://qiita.com/KanNishida/items/12f9ae0cee98fd54b0bb)
-  - カスタマーオブセッションの考え方は、常に心のなかに秘めつつ世の中を良くするプロダクトを作りたい。
+  - カスタマーオブセッションの考え方を、常に心のなかに秘めつつ世の中を良くするプロダクトを作りたい
 
 ### MLOps, 機械学習エンジニアリング
 
@@ -35,7 +35,7 @@ tags:
 - [MLOps: 機械学習における継続的デリバリーと自動化のパイプライン](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
   - GCP による MLOps の解説。人によって、MLOps の定義って差異がありますが、自分はここで語られている `ML システム構築のすべてのステップで自動化とモニタリングを推進できます` こそが、 MLOps の骨子だなと思っています。クラウドサービスは、開発に関係する知識をパターン化して、資料を公開してくれるのでありがたいですね。
 - [Google Cloud で機械学習を実装するためのベスト プラクティス](https://cloud.google.com/architecture/ml-on-gcp-best-practices?hl=ja)
-  -     この資料なんかは、GCPで機械学習を実践したい場合にはまず見ておけば困ることはなさそうですね
+  - この資料なんかは、GCPで機械学習を実践したい場合にはまず見ておけば困ることはなさそうですね
 - 各クラウドサービスの MLOps の white paper
   - AWS, Azure は普段使わないので深く言及しませんが、同様の資料は公開されたりしています。
     - [Practitioner Guide to MLOps by GCP](https://cloud.google.com/resources/mlops-whitepaper?hl=ja)
@@ -66,7 +66,7 @@ tags:
 
 ### Academic
 
-- [Applied Data Science Track Papers](https://kdd.org/kdd2021/calls/view/call-for-applied-data-science-track-papers)
+- [KDD Applied Data Science Track Papers](https://kdd.org/kdd2021/calls/view/call-for-applied-data-science-track-papers)
   - 世界最高峰の機械学習の実応用例の論文が集まる KDD の ADS track。毎年論文が公開されるのが楽しみ。RecSys や SIGIR など、自分の専門分野に合わせた論文を呼んでおくと楽しいです。[神嶌先生の ML, DM, and AI Conference Map](https://www.kamishima.net/archive/MLDMAImap.pdf)を参考にどんな国際会議があるかを調べてみるといいかもしれません。
 - [ECNLP 2](https://sites.google.com/view/ecnlp/www-2020) , [SIGIR eCo](https://sigir-ecom.github.io/)
   - 近年だと E Commerce など実世界への適用を主題にしたワークショップがアカデミックな会議でも開催されていて、非常にいい流れだと思う。
@@ -87,7 +87,7 @@ tags:
 ### Podcast
 
 - [twiml](https://twimlai.com/)
-  - ゲストがかなり豪華で、理論から実践まで幅広くトピックを取り扱っている。ジョーダン先生や Alex smola 先生がゲストとして着てるのは驚くしかない。。
+  - ゲストがかなり豪華で、理論から実践まで幅広くトピックを取り扱っている。M.J. 先生や Alex smola 先生がゲストとして着てるのは驚くしかない。。
 - [MLOps.community](https://anchor.fm/mlops/)
   - こちらは、実践的な麺をメインにした Podcast。D Sculley さんがゲストとしてきていた、[The Godfather Of MLOps](https://anchor.fm/mlops/episodes/The-Godfather-Of-MLOps--D-Scully--MLOps-Coffee-Sessions-32-eskt3q) は神回なのでおすすめ。
 
