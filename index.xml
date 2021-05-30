@@ -16,12 +16,12 @@
 &lt;/li>
 &lt;li>&lt;a href="http://www.paulgraham.com/good.html">Make something people want. by Paul Graham&lt;/a>
 &lt;ul>
-&lt;li>人によって意見が別れるところではありますが、機械学習エンジニアとして、これがなぜ機械学習で必要なのかの「なぜ」を説明できないとたいてい上手く行かないイメージがある。つまるところ、必要とされるものを見つけ出して作っていこうぜということですね&lt;/li>
+&lt;li>人によって意見が別れるところではありますが、機械学習エンジニアとして、これがなぜ機械学習で必要なのかの「なぜ」を説明できないとたいてい上手く行かない経験がある。つまるところ、必要とされるものを見つけ出して作っていこうぜということですね&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a href="https://qiita.com/KanNishida/items/12f9ae0cee98fd54b0bb">Netflix がカスタマーを誰よりも理解するためのデータ分析プロセス、コンシューマー・サイエンスの紹介&lt;/a>
 &lt;ul>
-&lt;li>カスタマーオブセッションの考え方は、常に心のなかに秘めつつ世の中を良くするプロダクトを作りたい。&lt;/li>
+&lt;li>カスタマーオブセッションの考え方を、常に心のなかに秘めつつ世の中を良くするプロダクトを作りたい&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -49,10 +49,7 @@
 &lt;/li>
 &lt;li>&lt;a href="https://cloud.google.com/architecture/ml-on-gcp-best-practices?hl=ja">Google Cloud で機械学習を実装するためのベスト プラクティス&lt;/a>
 &lt;ul>
-&lt;li>
-&lt;pre>&lt;code>この資料なんかは、GCPで機械学習を実践したい場合にはまず見ておけば困ることはなさそうですね
-&lt;/code>&lt;/pre>
-&lt;/li>
+&lt;li>この資料なんかは、GCPで機械学習を実践したい場合にはまず見ておけば困ることはなさそうですね&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>各クラウドサービスの MLOps の white paper
@@ -92,7 +89,7 @@
 &lt;h3 id="conference-tutorial-workshop">Conference tutorial, workshop&lt;/h3>
 &lt;h3 id="academic">Academic&lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="https://kdd.org/kdd2021/calls/view/call-for-applied-data-science-track-papers">Applied Data Science Track Papers&lt;/a>
+&lt;li>&lt;a href="https://kdd.org/kdd2021/calls/view/call-for-applied-data-science-track-papers">KDD Applied Data Science Track Papers&lt;/a>
 &lt;ul>
 &lt;li>世界最高峰の機械学習の実応用例の論文が集まる KDD の ADS track。毎年論文が公開されるのが楽しみ。RecSys や SIGIR など、自分の専門分野に合わせた論文を呼んでおくと楽しいです。&lt;a href="https://www.kamishima.net/archive/MLDMAImap.pdf">神嶌先生の ML, DM, and AI Conference Map&lt;/a>を参考にどんな国際会議があるかを調べてみるといいかもしれません。&lt;/li>
 &lt;/ul>
@@ -131,7 +128,7 @@
 &lt;ul>
 &lt;li>&lt;a href="https://twimlai.com/">twiml&lt;/a>
 &lt;ul>
-&lt;li>ゲストがかなり豪華で、理論から実践まで幅広くトピックを取り扱っている。ジョーダン先生や Alex smola 先生がゲストとして着てるのは驚くしかない。。&lt;/li>
+&lt;li>ゲストがかなり豪華で、理論から実践まで幅広くトピックを取り扱っている。M.J. 先生や Alex smola 先生がゲストとして着てるのは驚くしかない。。&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a href="https://anchor.fm/mlops/">MLOps.community&lt;/a>
