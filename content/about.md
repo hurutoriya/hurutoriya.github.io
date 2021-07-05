@@ -4,7 +4,8 @@ date: 2019-06-15T19:25:33+09:00
 type: "page"
 ---
 
-Shunya UETA who is a working on Machine Leaening as Software Engineer at Mercari, inc. Opinions are my own.
+Shunya UETA who is a working as Software Engineer at Mercari, inc. Opinions are my own.
+
 
 - [Linkedin](https://www.linkedin.com/in/hurutoriya)
 - [GitHub](https://github.com/hurutoriya)
@@ -12,11 +13,12 @@ Shunya UETA who is a working on Machine Leaening as Software Engineer at Mercari
 - [Slideshare](http://www.slideshare.net/shunyaueta)
 - [Google Scholar](https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ)
 
-## 略歴
+## Experience
 
 ### Work experience
 
-- 2018.02- current 株式会社メルカリ `Machine Learning Engineer`
+- 2018.02-`current` 株式会社メルカリ `Software Engineer`
+  - Specialized Machinelearning and Search
 - 2016.06-2017.03 産業技術総合研究所人工知能研究センター `Research Assistant`
   - 監視カメラを用いた群衆解析、cvpaper.chanllange に参加
 - 2014.09 株式会社リクルートホールディングス アメリカ横断インターン [movie](https://www.youtube.com/watch?v=r_r-Ww2Wuak)
@@ -24,11 +26,11 @@ Shunya UETA who is a working on Machine Leaening as Software Engineer at Mercari
   - Boston→NewYork→San Francisco と 2 週間にわたってアメリカを横断
   - 『ビジネス』『デザイン』『プログラミング』の力を伸ばすインターンシップ
 - 2014.08 株式会社 ABEJA
-  - `Software engineer 3 weeks` Python を用いたクローラー開発
+  - `Software Engineer 3 weeks` Python を用いたクローラー開発
 - 2013.07-09 株式会社ミクシィ DeployGate team
-  - `Software engineer 2 month` Ruby on Rails を用いたサービス改善
+  - `Software Engineer 2 month` Ruby on Rails を用いたサービス改善
 - 2013.04-09 BearTail
-  - `Software engineer` Ruby on Rails を用いたサービス開発
+  - `Software Engineer` Ruby on Rails を用いたサービス開発
 
 ### Education
 
