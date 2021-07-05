@@ -698,7 +698,7 @@ Software Engineer という職に飽きるまではProduct Manager のキャリ�
 &lt;ul>
 &lt;li>これらの目標は toggl で追跡しておいて、毎月どれくらいの時間を費やせたかを振り替えれるようにする&lt;/li>
 &lt;li>学び続けるということを習慣化したいので、学びの内容が可視化されるように、これからは学んだことを文章化して気軽にBlog記事としてアウトプットしていく&lt;/li>
-&lt;/ul></description></item><item><title>GKE 上でPythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになるときの対処法</title><link>https://shunyaueta.com/posts/2021-03-03/</link><pubDate>Wed, 03 Mar 2021 00:29:03 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-03-03/</guid><description>
+&lt;/ul></description></item><item><title>GKE 上にて Pythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになる問題への対処法</title><link>https://shunyaueta.com/posts/2021-03-03/</link><pubDate>Wed, 03 Mar 2021 00:29:03 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-03-03/</guid><description>
 &lt;p>Python のアプリケーションで、Cloud logger にログを出力したいときに&lt;/p>
 &lt;ol>
 &lt;li>標準のPython logging モジュールを利用して、ログを出力する&lt;/li>
@@ -2541,7 +2541,7 @@ Line &lt;span class="c1"># Mem usage Increment Line Contents&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>結果を見ると一目瞭然で、ジェネレータ式の場合だとイテレータプロトコルが要素を一つ一つ作成するので、メモリ使用量もリスト内包表記と比べると40倍以上と一目瞭然の差になった&lt;/p>
-&lt;p>機械学習でも大規模なデータを扱うことが多い、なのでジェネレータ式を意識して書いてメモリ使用量を抑えていきたい。&lt;/p></description></item><item><title>AOJの「ITP I」40問をpythonで解いた</title><link>https://shunyaueta.com/posts/2020-08-04/</link><pubDate>Tue, 04 Aug 2020 03:38:58 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-08-04/</guid><description>
+&lt;p>機械学習でも大規模なデータを扱うことが多い、なのでジェネレータ式を意識して書いてメモリ使用量を抑えていきたい。&lt;/p></description></item><item><title>AOJの「ITP I」40問をPythonで解いた</title><link>https://shunyaueta.com/posts/2020-08-04/</link><pubDate>Tue, 04 Aug 2020 03:38:58 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-08-04/</guid><description>
 &lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>コーディングの腕をもっと磨きたいなと思ったので、以下の記事を参考に始めてみた&lt;/p>
 &lt;ul>
