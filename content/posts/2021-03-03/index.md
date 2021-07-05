@@ -1,5 +1,5 @@
 ---
-title: "GKE 上でPythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになるときの対処法"
+title: "GKE 上にて Pythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになる問題への対処法"
 date: 2021-03-03T00:29:03+09:00
 lang: ja
 tags:

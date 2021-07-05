@@ -1,5 +1,5 @@
 ---
-title: "AOJの「ITP I」40問をpythonで解いた"
+title: "AOJの「ITP I」40問をPythonで解いた"
 date: 2020-08-04T03:38:58+09:00
 lang: ja
 tags:
