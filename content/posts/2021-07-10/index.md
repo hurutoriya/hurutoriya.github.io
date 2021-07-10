@@ -29,10 +29,13 @@ SIGIR eCom を探索していたら発見したサーベイ論文の "Challenges
 スライド作成元の[Markdown](https://github.com/hurutoriya/deck/blob/main/challenges-and-research-opportunities-in-eCommerce%20search-and-recommendations/challenges-and-research-opportunities-in-eCommerce-search-and-recommendations.md)はこちらです。
 スライド内のリンクに簡単にアクセスできます。
 
+eコマースでの検索に改善したいけど何したらいいかわからんという人は、とりあえずこれ見ればOKという論文だったので読めてよかった
+
+## 余談
+
 Matching & Rankingの章までを解説したけど、それでも45m喋りっぱなしで最後のほうがかなり駆け足になってしまった。
 また、英語での発表になったけど、やはり熟れたわかりやすい発表レベルに達するには、まだまだだなぁ感じた。精進せねば
 
-## 余談
 
 今回スライド作成に [Marp](https://marp.app/) を使いましたが、VS Code上でスラスラとかけつつ読みやすくテンションの上がるデザインに簡単にできて感動しました。これからも愛用したいなと思います。
 
