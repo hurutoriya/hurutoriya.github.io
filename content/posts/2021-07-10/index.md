@@ -1,7 +1,6 @@
 ---
 title: "eコマースの検索と推薦についてのサーベイ論文である 'Challenges and research opportunities in eCommerce search and recommendations' を社内勉強会で発表した"
 date: 2021-07-10T23:20:58+09:00
-draft: true
 lang: ja
 author: Shunya Ueta
 tags:
