@@ -1,4 +1,32 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>How to get the uploaded file path and processing its file in Streamlit</title><link>https://shunyaueta.com/posts/2021-07-09/</link><pubDate>Fri, 09 Jul 2021 22:40:37 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-09/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>eコマースの検索と推薦についてのサーベイ論文である 'Challenges and research opportunities in eCommerce search and recommendations' を社内勉強会で発表した</title><link>https://shunyaueta.com/posts/2021-07-10/</link><pubDate>Sat, 10 Jul 2021 23:20:58 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-10/</guid><description>
+&lt;p>SIGIR eCom を探索していたら発見したサーベイ論文の &amp;ldquo;Challenges and research opportunities in eCommerce search and recommendations&amp;quot;が面白かったので、社内の勉強会で発表してきた。&lt;/p>
+&lt;p>和訳すると、「eコマースの検索と推薦における挑戦と研究トピック」で、eコマースにおける検索と推薦の課題が明瞭に書かれていて非常に面白い論文でした。
+自分もまだ検索エンジニアとして日が浅いので、手持ちのパターンを増やせるように日々勉強していますが、この論文のおかげでかなり解像度が上がった。&lt;/p>
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/key/sOhCWPToy6AIL1" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> &lt;/iframe> &lt;div style="margin-bottom:5px"> &lt;strong> &lt;a href="//www.slideshare.net/shunyaueta/introducing-challenges-and-research-opportunities-in-ecommerce-search-and-recommendations" title="Introducing &amp;quot;Challenges and research opportunities in eCommerce search and recommendations&amp;quot;" target="_blank">Introducing &amp;quot;Challenges and research opportunities in eCommerce search and recommendations&amp;quot;&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="https://www.slideshare.net/shunyaueta" target="_blank">Shunya Ueta&lt;/a>&lt;/strong> &lt;/div>
+&lt;p>個人的に面白かったのは、&lt;/p>
+&lt;ul>
+&lt;li>そもそも、顧客が商品を検索するというタスクの奥深さと面白さが知れる&lt;/li>
+&lt;li>Query Understanding は、非構造なクエリを構造化されたクエリに変換するのが究極的な目標&lt;/li>
+&lt;li>Learn to Rank(LtR)の実践的な課題点として、LtR適用時に、Native Ranker とのギャップが発生して非連続な検索結果を返してしまうことがある&lt;/li>
+&lt;li>実際のクエリから、購入される商品はクエリと商品が関連性が高いとは限らないのでモデルを学習させる際には要注意
+&lt;ul>
+&lt;li>Amazonでの実例として
+&lt;ul>
+&lt;li>クエリ「ダイヤモンドリング」に対してLtR を適用すると、実際のクエリとそれに紐づくランキングシグナルから学習すると、「ダイヤモンドリング」というクエリで、「ジルコニウムリング」が大量に購買されていたのでLtRでは、「ダイヤモンドリング」というクエリに対して、「ジルコニウムリング」を表示するようになってしまった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>これは、学習データを全く見ないで適用するとそうなりそうだけど、広範囲に影響を及ぼすLtRのQAは非常に骨が折れそう&lt;/li>
+&lt;li>Ref: &lt;a href="https://www.amazon.science/publications/amazon-search-the-joy-of-ranking-products">Amazon Search: The Joy of Ranking Products&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>スライド作成元の&lt;a href="https://github.com/hurutoriya/deck/blob/main/challenges-and-research-opportunities-in-eCommerce%20search-and-recommendations/challenges-and-research-opportunities-in-eCommerce-search-and-recommendations.md">Markdown&lt;/a>はこちらです。
+スライド内のリンクに簡単にアクセスできます。&lt;/p>
+&lt;p>Matching &amp;amp; Rankingの章までを解説したけど、それでも45m喋りっぱなしで最後のほうがかなり駆け足になってしまった。
+また、英語での発表になったけど、やはり熟れたわかりやすい発表レベルに達するには、まだまだだなぁ感じた。精進せねば&lt;/p>
+&lt;h2 id="余談">余談&lt;/h2>
+&lt;p>今回スライド作成に &lt;a href="https://marp.app/">Marp&lt;/a> を使いましたが、VS Code上でスラスラとかけつつ読みやすくテンションの上がるデザインに簡単にできて感動しました。これからも愛用したいなと思います。&lt;/p>
+&lt;p>年末くらいに、検索エンジニアとして9ヶ月経過するので、役になった学習リソースなどをまとめたい&lt;/p></description></item><item><title>How to get the uploaded file path and processing its file in Streamlit</title><link>https://shunyaueta.com/posts/2021-07-09/</link><pubDate>Fri, 09 Jul 2021 22:40:37 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-09/</guid><description>
 &lt;h2 id="motivation">Motivation&lt;/h2>
 &lt;p>&lt;a href="https://streamlit.io/">Streamlit&lt;/a> is a powerful tools to quickliy build the demo application.
 If we use Streamlit file upload feature via WebBrowser then we need to its file path to process the uploaded file.
