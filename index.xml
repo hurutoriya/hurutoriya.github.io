@@ -22,9 +22,10 @@
 &lt;/ul>
 &lt;p>スライド作成元の&lt;a href="https://github.com/hurutoriya/deck/blob/main/challenges-and-research-opportunities-in-eCommerce%20search-and-recommendations/challenges-and-research-opportunities-in-eCommerce-search-and-recommendations.md">Markdown&lt;/a>はこちらです。
 スライド内のリンクに簡単にアクセスできます。&lt;/p>
+&lt;p>eコマースでの検索に改善したいけど何したらいいかわからんという人は、とりあえずこれ見ればOKという論文だったので読めてよかった&lt;/p>
+&lt;h2 id="余談">余談&lt;/h2>
 &lt;p>Matching &amp;amp; Rankingの章までを解説したけど、それでも45m喋りっぱなしで最後のほうがかなり駆け足になってしまった。
 また、英語での発表になったけど、やはり熟れたわかりやすい発表レベルに達するには、まだまだだなぁ感じた。精進せねば&lt;/p>
-&lt;h2 id="余談">余談&lt;/h2>
 &lt;p>今回スライド作成に &lt;a href="https://marp.app/">Marp&lt;/a> を使いましたが、VS Code上でスラスラとかけつつ読みやすくテンションの上がるデザインに簡単にできて感動しました。これからも愛用したいなと思います。&lt;/p>
 &lt;p>年末くらいに、検索エンジニアとして9ヶ月経過するので、役になった学習リソースなどをまとめたい&lt;/p></description></item><item><title>How to get the uploaded file path and processing its file in Streamlit</title><link>https://shunyaueta.com/posts/2021-07-09/</link><pubDate>Fri, 09 Jul 2021 22:40:37 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-09/</guid><description>
 &lt;h2 id="motivation">Motivation&lt;/h2>
