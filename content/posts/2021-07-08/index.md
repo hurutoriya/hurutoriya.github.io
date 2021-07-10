@@ -1,6 +1,6 @@
 ---
-title: "How to get the uploaded file path and proccesing its file in  Streamlit"
-date: 2021-07-09T22:40:37+09:00
+title: "Streamlit でアップロードしたファイルのパスを取得して、特定の処理をする"
+date: 2021-07-08T22:40:37+09:00
 lang: en
 author: Shunya Ueta
 tags:
@@ -8,30 +8,35 @@ tags:
 - Streanlit
 ---
 
-## Motivation
+## モチベーション
 
-[Streamlit](https://streamlit.io/) is a powerful tools to quickliy build the demo application.
-If we use Streamlit file upload feature via WebBrowser  then we need to its file path to process the uploaded file.
-So I will introduce how to get uploaed file path in Streamlit.
+[Streamlit](https://streamlit.io/) はPython code のみで簡単かつ高速にWebアプリを作成できる強力なパッケージ。
+Streamplit で作られたWebアプリ経由でファイルをアップロードして、そのファイルを処理したい際の具体的な実現方法がなかったので備忘録がてら残しておく。
 
-## Example
+## PDFファイルをアップロードして、画像に変換するWebアプリ
 
-We buid the PDF File upload feature  in Streamlit and its PDF file convert to image.
-We use [Belval/pdf2image](https://github.com/Belval/pdf2image) which is a populer PDF converting tool. It needs to file path to apply the module feature. we assume local machine is the MacOS then we need to install the [poppler](https://poppler.freedesktop.org/) to use `pdf2image`,
+具体的に例を交えつつ説明する。
+Streamlit を使って、PDFファイルをアップロードしてアップロードされたPDFファイルを画像化するアプリを作成する。
+今回は、[Belval/pdf2image](https://github.com/Belval/pdf2image) というPDFパッケージを使用する。
+このパッケージは処理したいPDFのファイルパスを要求するインターフェースなので今回の実例に沿っていてわかりやすい。
+ローカルマシンは MacOS を想定しており、`pdf2image` は[poppler](https://poppler.freedesktop.org/) の事前インストールが必須。
+
+### 完成形のスクリーンショット
+
+![get the uploaded file path in Streamlit](/posts/2021-07-08/images/streamlit.png)
 
 
-### Demo app screenshot and open sourced code
+GitHubでもコードを公開しておきました。
 
-![get the uploaded file path in Streamlit](/posts/2021-07-09/images/streamlit.png)
+ [hurutoriya/streamlist-file-uploader-example](https://github.com/hurutoriya/streamlist-file-uploader-example)
 
-
-We also publised a code example at [hurutoriya/streamlist-file-uploader-example](https://github.com/hurutoriya/streamlist-file-uploader-example)
+デモ動画はこちら
 
 [Demo Movie in Youtube](https://youtu.be/ILGVapirwlg)
 
 ###  Makefile 
 
-It worked task runner to install the dependency and run the app.
+Makefile は依存パッケージを事前インストールするために採用
 
 ```makefile
 install:
@@ -42,6 +47,8 @@ run:
 ```
 
 ### Poetry for package management
+
+環境構築はpoetry を使っています。
 
 ```toml
 [tool.poetry]
@@ -120,8 +127,10 @@ if __name__ == "__main__":
 
 ## Conclusion
 
-[Streamlit](https://streamlit.io/) is a powerful tools to quickliy build the demo application.
-You leand about how to get the uploade file path from Streamlit in this post.
+これで、Streamlit 上でファイルをアップロードして、そのアップロードされたファイルに対する処理ができます。
+画像や音声など色々応用先があるので便利そう。
+動作が遅いという欠点はあれど、これだけ簡単にGUIをPython のみで構築できるのは驚き。
+Protly Dashも2年ほど前に使ったことがあるけど、UIのライフサイクルやHTMLを結構意識しないとかけなかったので辛かった記憶があるので、なおさら感動している。
 
 ## Reference
 
