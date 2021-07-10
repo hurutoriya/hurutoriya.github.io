@@ -1,0 +1,152 @@
+<!doctype html><html lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=theme-color content="dark"><title>How to get the uploaded file path and proccesing its file in Streamlit | Shunya Ueta</title><link rel=stylesheet href=/sass/main.min.1a3290acca8b3fc92df85ea9200859476d6c80d59009c89a749300f3ce7a7a67.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-39994406-11"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-39994406-11');</script></head><body class=dark><nav class=navbar><div class=container><div class=flex><div><a class=brand href=/><span class=emoji>🎰</span>
+Shunya Ueta</a></div><div class=flex><a href=/articles/>All posts</a>
+<button id=dark-mode-button></button></div></div></div></nav><main><div class=container><article><header class=article-header><div class=thumb><div><h1>How to get the uploaded file path and proccesing its file in Streamlit</h1><div class=post-meta><div>By Shunya Ueta on <time>July 09, 2021</time></div><div class=tags><a href=/tags/python/>Python</a>
+<a href=/tags/streanlit/>Streanlit</a></div></div></div></div></header></article><div class=article-post><h2 id=motivation>Motivation</h2><p><a href=https://streamlit.io/>Streamlit</a> is a powerful tools to quickliy build the demo application.
+If we use Streamlit file upload feature via WebBrowser then we need to its file path to process the uploaded file.
+So I will introduce how to get uploaed file path in Streamlit.</p><h2 id=example>Example</h2><p>We buid the PDF File upload feature in Streamlit and its PDF file convert to image.
+We use <a href=https://github.com/Belval/pdf2image>Belval/pdf2image</a> which is a populer PDF converting tool. It needs to file path to apply the module feature. we assume local machine is the MacOS then we need to install the <a href=https://poppler.freedesktop.org/>poppler</a> to use <code>pdf2image</code>,</p><h3 id=demo-app-screenshot-and-open-sourced-code>Demo app screenshot and open sourced code</h3><p><img src=/posts/2021-07-09/images/streamlit.png alt="get the uploaded file path in Streamlit"></p><p>We also publised a code example at <a href=https://github.com/hurutoriya/streamlist-file-uploader-example>hurutoriya/streamlist-file-uploader-example</a></p><p><a href=https://youtu.be/ILGVapirwlg>Demo Movie in Youtube</a></p><h3 id=makefile>Makefile</h3><p>It worked task runner to install the dependency and run the app.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-makefile data-lang=makefile><span class=nf>install</span><span class=o>:</span>
+	brew install poppler
+	poetry install
+<span class=nf>run</span><span class=o>:</span>
+	poetry run streamlit run streamlit_pdf_uploader/main.py
+</code></pre></td></tr></table></div></div><h3 id=poetry-for-package-management>Poetry for package management</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-toml data-lang=toml><span class=p>[</span><span class=nx>tool</span><span class=p>.</span><span class=nx>poetry</span><span class=p>]</span>
+<span class=nx>name</span> <span class=p>=</span> <span class=s2>&#34;streamlit-pdf-uploader&#34;</span>
+<span class=nx>version</span> <span class=p>=</span> <span class=s2>&#34;0.1.0&#34;</span>
+<span class=nx>description</span> <span class=p>=</span> <span class=s2>&#34;&#34;</span>
+<span class=nx>authors</span> <span class=p>=</span> <span class=p>[</span><span class=s2>&#34;&#34;</span><span class=p>]</span>
+
+<span class=p>[</span><span class=nx>tool</span><span class=p>.</span><span class=nx>poetry</span><span class=p>.</span><span class=nx>dependencies</span><span class=p>]</span>
+<span class=nx>python</span> <span class=p>=</span> <span class=s2>&#34;^3.8&#34;</span>
+<span class=nx>streamlit</span> <span class=p>=</span> <span class=s2>&#34;^0.84.0&#34;</span>
+<span class=nx>watchdog</span> <span class=p>=</span> <span class=s2>&#34;^2.1.3&#34;</span>
+<span class=nx>pdf2image</span> <span class=p>=</span> <span class=s2>&#34;^1.16.0&#34;</span>
+
+<span class=p>[</span><span class=nx>tool</span><span class=p>.</span><span class=nx>poetry</span><span class=p>.</span><span class=nx>dev</span><span class=err>-</span><span class=nx>dependencies</span><span class=p>]</span>
+<span class=nx>pytest</span> <span class=p>=</span> <span class=s2>&#34;^5.2&#34;</span>
+
+<span class=p>[</span><span class=nx>build</span><span class=err>-</span><span class=nx>system</span><span class=p>]</span>
+<span class=nx>requires</span> <span class=p>=</span> <span class=p>[</span><span class=s2>&#34;poetry-core&gt;=1.0.0&#34;</span><span class=p>]</span>
+<span class=nx>build</span><span class=err>-</span><span class=nx>backend</span> <span class=p>=</span> <span class=s2>&#34;poetry.core.masonry.api&#34;</span>
+</code></pre></td></tr></table></div></div><h3 id=streamlit-python-file>Streamlit Python file</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>base64</span>
+<span class=kn>import</span> <span class=nn>tempfile</span>
+
+<span class=kn>import</span> <span class=nn>streamlit</span> <span class=kn>as</span> <span class=nn>st</span>
+<span class=kn>from</span> <span class=nn>pdf2image</span> <span class=kn>import</span> <span class=n>convert_from_path</span>
+
+<span class=kn>from</span> <span class=nn>pathlib</span> <span class=kn>import</span> <span class=n>Path</span>
+
+<span class=k>def</span> <span class=nf>show_pdf</span><span class=p>(</span><span class=n>file_path</span><span class=p>:</span><span class=nb>str</span><span class=p>):</span>
+    <span class=s2>&#34;&#34;&#34;Show the PDF in Streamlit
+</span><span class=s2>    That returns as html component
+</span><span class=s2>
+</span><span class=s2>    Parameters
+</span><span class=s2>    ----------
+</span><span class=s2>    file_path : [str]
+</span><span class=s2>        Uploaded PDF file path
+</span><span class=s2>    &#34;&#34;&#34;</span>
+
+    <span class=k>with</span> <span class=nb>open</span><span class=p>(</span><span class=n>file_path</span><span class=p>,</span> <span class=s2>&#34;rb&#34;</span><span class=p>)</span> <span class=k>as</span> <span class=n>f</span><span class=p>:</span>
+        <span class=n>base64_pdf</span> <span class=o>=</span> <span class=n>base64</span><span class=o>.</span><span class=n>b64encode</span><span class=p>(</span><span class=n>f</span><span class=o>.</span><span class=n>read</span><span class=p>())</span><span class=o>.</span><span class=n>decode</span><span class=p>(</span><span class=s2>&#34;utf-8&#34;</span><span class=p>)</span>
+    <span class=n>pdf_display</span> <span class=o>=</span> <span class=n>f</span><span class=s1>&#39;&lt;embed src=&#34;data:application/pdf;base64,{base64_pdf}&#34; width=&#34;100%&#34; height=&#34;1000&#34; type=&#34;application/pdf&#34;&gt;&#39;</span>
+    <span class=n>st</span><span class=o>.</span><span class=n>markdown</span><span class=p>(</span><span class=n>pdf_display</span><span class=p>,</span> <span class=n>unsafe_allow_html</span><span class=o>=</span><span class=bp>True</span><span class=p>)</span>
+
+
+<span class=k>def</span> <span class=nf>main</span><span class=p>():</span>
+    <span class=s2>&#34;&#34;&#34;Streamlit application
+</span><span class=s2>    &#34;&#34;&#34;</span>
+
+    <span class=n>st</span><span class=o>.</span><span class=n>title</span><span class=p>(</span><span class=s2>&#34;PDF file uplodaer&#34;</span><span class=p>)</span>
+    <span class=n>uploaded_file</span> <span class=o>=</span> <span class=n>st</span><span class=o>.</span><span class=n>file_uploader</span><span class=p>(</span><span class=s2>&#34;Choose your .pdf file&#34;</span><span class=p>,</span> <span class=nb>type</span><span class=o>=</span><span class=s2>&#34;pdf&#34;</span><span class=p>)</span>
+
+    <span class=k>if</span> <span class=n>uploaded_file</span> <span class=ow>is</span> <span class=ow>not</span> <span class=bp>None</span><span class=p>:</span>
+        <span class=c1># Make temp file path from uploaded file</span>
+        <span class=k>with</span> <span class=n>tempfile</span><span class=o>.</span><span class=n>NamedTemporaryFile</span><span class=p>(</span><span class=n>delete</span><span class=o>=</span><span class=bp>False</span><span class=p>)</span> <span class=k>as</span> <span class=n>tmp_file</span><span class=p>:</span>
+            <span class=n>st</span><span class=o>.</span><span class=n>markdown</span><span class=p>(</span><span class=s2>&#34;## Original PDF file&#34;</span><span class=p>)</span>
+            <span class=n>fp</span> <span class=o>=</span> <span class=n>Path</span><span class=p>(</span><span class=n>tmp_file</span><span class=o>.</span><span class=n>name</span><span class=p>)</span>
+            <span class=n>fp</span><span class=o>.</span><span class=n>write_bytes</span><span class=p>(</span><span class=n>uploaded_file</span><span class=o>.</span><span class=n>getvalue</span><span class=p>())</span>
+            <span class=n>st</span><span class=o>.</span><span class=n>write</span><span class=p>(</span><span class=n>show_pdf</span><span class=p>(</span><span class=n>tmp_file</span><span class=o>.</span><span class=n>name</span><span class=p>))</span>
+
+            <span class=n>imgs</span> <span class=o>=</span> <span class=n>convert_from_path</span><span class=p>(</span><span class=n>tmp_file</span><span class=o>.</span><span class=n>name</span><span class=p>)</span>
+
+            <span class=n>st</span><span class=o>.</span><span class=n>markdown</span><span class=p>(</span><span class=n>f</span><span class=s2>&#34;Converted images from PDF&#34;</span><span class=p>)</span>
+            <span class=n>st</span><span class=o>.</span><span class=n>image</span><span class=p>(</span><span class=n>imgs</span><span class=p>)</span>
+
+
+<span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=s2>&#34;__main__&#34;</span><span class=p>:</span>
+    <span class=n>main</span><span class=p>()</span>
+
+</code></pre></td></tr></table></div></div><h2 id=conclusion>Conclusion</h2><p><a href=https://streamlit.io/>Streamlit</a> is a powerful tools to quickliy build the demo application.
+You leand about how to get the uploade file path from Streamlit in this post.</p><h2 id=reference>Reference</h2><ul><li><a href=https://discuss.streamlit.io/t/showing-pdf-file-on-streamlitsharing-thats-in-github-directory/11955>Showing PDF file on StreamlitSharing that’s in github directory</a></li><li><a href=https://discuss.streamlit.io/t/problem-in-reading-a-db-object-using-file-uploader/3064/10>Problem in reading a “db” object using file uploader</a></li></ul></div><h2>See Also</h2><ul><li><a href=/posts/2021-07-08/>Streamlit でアップロードしたファイルのパスを取得して、特定の処理をする</a></li><li><a href=/posts/2021-05-23/>Poetry からsetup.py を自動生成する</a></li><li><a href=/posts/2021-05-19/>KyTeaをPythonで扱えるMykyteaを使うために必要なこと</a></li><li><a href=/posts/2021-04-29/>Pythonで、変数を挿入して柔軟にSQLクエリを構築する</a></li><li><a href=/posts/2021-03-13/>pipenv でローカルパッケージが正常にインストールされないときの対処法</a></li></ul></div><div class=container><nav class="flex container suggested"><a rel=prev href=/posts/2021-07-08/ title="Previous post (older)"><span>Previous</span>
+Streamlit でアップロードしたファイルのパスを取得して、特定の処理をする</a></nav></div></main></main><footer class="footer flex"><section class=container><nav class=footer-links><a href=/index.xml>RSS</a></nav></section><script async src=/js/features.min.a94f58a30ad2560de728e080d87f75c60cf806fd1b3d5f4815f1a1a02c0d1859.js></script></footer></body></html>
