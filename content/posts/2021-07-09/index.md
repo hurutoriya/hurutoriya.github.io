@@ -1,5 +1,5 @@
 ---
-title: "How to get the uploaded file path and proccesing its file in  Streamlit"
+title: "How to get the uploaded file path and processing its file in  Streamlit"
 date: 2021-07-09T22:40:37+09:00
 lang: en
 author: Shunya Ueta
