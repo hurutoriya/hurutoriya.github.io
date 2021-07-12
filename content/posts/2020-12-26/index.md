@@ -1,5 +1,5 @@
 ---
-title: "Apache beam 入門"
+title: "PythonでApache beam 入門"
 date: 2020-12-26T00:41:30+09:00
 lang: ja
 tags:
