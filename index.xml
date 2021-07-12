@@ -2032,7 +2032,7 @@ python3 get-pip.py
 &lt;p>更に、たくさんのツールが機械学習ワークフローでもまだ自動化が必要とされているものが多い。例えば、機械学習パイプライン実行時に、そのジョブの結果が現行のモデルよりもパフォーマンスが低いことを積極的に予測しジョブの実行を停止することで、大幅なリソースと実行時間の削減が期待できる。&lt;/p>
 &lt;h2 id="a-joint-journey">A Joint Journey&lt;/h2>
 &lt;p>TFXの構築は、機械学習エンジニアリングの基礎の探索でもあり、多くの人々の長年の努力の累積である。&lt;/p>
-&lt;p>さあ、我々もあなたを&amp;quot;機械学習エンジニアリングに向けた&amp;rdquo; 旅に招待します。&lt;/p></description></item><item><title>Apache beam 入門</title><link>https://shunyaueta.com/posts/2020-12-26/</link><pubDate>Sat, 26 Dec 2020 00:41:30 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-12-26/</guid><description>
+&lt;p>さあ、我々もあなたを&amp;quot;機械学習エンジニアリングに向けた&amp;rdquo; 旅に招待します。&lt;/p></description></item><item><title>PythonでApache beam 入門</title><link>https://shunyaueta.com/posts/2020-12-26/</link><pubDate>Sat, 26 Dec 2020 00:41:30 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-12-26/</guid><description>
 &lt;p>TensorFlowの勉強をしていたら、Apache beam を前処理に採用していたケースがあり、興味を持ったので深堀りしてみます。&lt;/p>
 &lt;p>興味が湧いたモチベーションとしては、&lt;/p>
 &lt;ul>
