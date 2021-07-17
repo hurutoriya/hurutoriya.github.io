@@ -3,8 +3,8 @@ title: "Getting Started with Google Kubernetes Engine の講義を修了した"
 date: 2020-04-12T00:59:23+09:00
 lang: ja
 tags:
-  - Coursera
-  - k8s
+  - coursera
+  - kubernetes
 ---
 
 表題のとおりですが、[Getting Started with Google Kubernetes Engine](https://www.coursera.org/learn/google-kubernetes-engine) という Coursera の講義を終了しました

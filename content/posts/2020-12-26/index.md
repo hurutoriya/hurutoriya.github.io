@@ -3,9 +3,9 @@ title: "PythonでApache beam 入門"
 date: 2020-12-26T00:41:30+09:00
 lang: ja
 tags:
-- Apache beam
-- Distributed Data Pipeline
-- Python
+- apachebeam
+- distributedsystem
+- python
 ---
 
 TensorFlowの勉強をしていたら、Apache beam を前処理に採用していたケースがあり、興味を持ったので深堀りしてみます。

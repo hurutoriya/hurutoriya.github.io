@@ -3,9 +3,8 @@ title: "Slicing Convolutional Neural Network for Crowd Video Understanding (CVPR
 date: 2018-01-16T06:04:37.378Z
 lang: ja
 tags:
-  - Computer Vision
-  - CVPR
-  - Paper
+  - computervision
+  - paper
 ---
 
 群衆解析の手法に興味があるので、サーベイの結果を放流しておきます。

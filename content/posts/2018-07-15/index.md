@@ -4,8 +4,8 @@ date: 2018-07-15T09:31:28.466Z
 lastmod: 2019-06-16T18:18:12+09:00
 lang: ja
 tags:
-  - Machine Learning
-  - MLCT
+  - machinelearning
+  - mlct
   - event
 ---
 

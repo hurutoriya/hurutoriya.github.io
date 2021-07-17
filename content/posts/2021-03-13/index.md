@@ -3,7 +3,7 @@ title: "pipenv でローカルパッケージが正常にインストールさ�
 date: 2021-03-13T21:43:44+09:00
 lang: ja
 tags:
-- Python
+- python
 ---
 
 ## TL; DR;

@@ -4,9 +4,8 @@ date: 2020-09-06T23:31:03+09:00
 author: Shunya Ueta
 lang: ja
 tags:
-- MLOps
-- Machine Learning
-- Conference
+- mlops
+- machinelearning
 - event
 ---
 

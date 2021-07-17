@@ -3,10 +3,9 @@ title: "Call center stress recognition with person-specific models を読んだ"
 date: 2018-01-12T17:19:48.278Z
 lang: ja
 tags:
-  - HCI
-  - Paper
-  - Computer Vision
-  - Machine Learning
+  - paper
+  - computervision
+  - machinelearning
 ---
 
 Affective Computing: 計算機と人間の感情や情緒の関係性を考える領域

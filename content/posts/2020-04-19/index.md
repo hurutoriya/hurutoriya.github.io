@@ -3,10 +3,10 @@ title: "[抄訳] What’s your ML test score? A rubric for ML production systems
 date: 2020-04-19T22:18:10+09:00
 lang: ja
 tags:
-- Machine Learning
+- machinelearning
 - paper
 - translation
-- MLOps
+- mlops
 ---
 
 NIPS206にて開催された [Reliable Machine Learning in the Wild - NIPS 2016 Workshop (2016)](https://sites.google.com/site/wildml2016nips/) という、`現実世界でどうやって信頼性の高い機械学習に取り組んでいくか`についてのワークショップがある

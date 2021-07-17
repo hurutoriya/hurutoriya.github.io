@@ -3,7 +3,7 @@ title: "Machine Learning Casual Talks #10 を開催しました #MLCT"
 date: 2019-06-15T22:01:27+09:00
 lang: ja
 tags:
-  - MLCT
+  - mlct
   - event
 ---
 

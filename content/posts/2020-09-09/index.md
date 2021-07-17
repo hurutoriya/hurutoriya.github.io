@@ -2,8 +2,8 @@
 title: "pandas を使って特定のディレクトリのCSVファイルをすべて連結して一つのCSVファイルを作成"
 date: 2020-09-09T23:49:37+09:00
 tags:
-- Python
-- Pandas
+- python
+- pandas
 ---
 
 ## 目的

@@ -4,10 +4,8 @@ date: 2017-11-22T12:04:30.104Z
 lastmod: 2019-06-16T18:16:05+09:00
 lang: ja
 tags:
-  - Python
-  - Jupyter
-  - Presentations
-  - Development
+  - python
+  - jupyter
 ---
 
 アイデアは面白い… けど easy drawing ではない

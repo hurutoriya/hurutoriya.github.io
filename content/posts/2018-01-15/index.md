@@ -3,8 +3,8 @@ title: "Jupyter Notebookの差分を明瞭に確認する事ができるpackage 
 date: 2018-01-15T17:14:54.389Z
 lang: ja
 tags:
-  - Python
-  - Jupyter
+  - python
+  - jupyter
 ---
 
 Jupyter notebook をご利用の皆さん、朗報です。

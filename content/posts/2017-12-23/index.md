@@ -4,9 +4,8 @@ date: 2017-12-23T17:38:19.179Z
 lastmod: 2019-06-16T18:16:19+09:00
 lang: ja
 tags:
-  - Deep Learning
-  - Machine Learning
-  - Paper
+  - machinelearning
+  - paper
 ---
 
 自己符号化器と Spectral Clusteing の関連性を示した論文

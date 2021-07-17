@@ -3,8 +3,7 @@ title: "ビジネスでインパクトが出せるデータサイエンティス
 date: 2019-09-23T18:48:47+09:00
 lang: ja
 tags:
-  - review
-  - books
+  - book
 ---
 
 [@pseudo_finite](https://twitter.com/pseudo_finite) さんから

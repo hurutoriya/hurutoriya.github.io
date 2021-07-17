@@ -5,8 +5,8 @@ lang: ja
 tags:
 - paper
 - translation
-- Machine Learning
-- MLOps
+- machinelearning
+- mlops
 ---
 
 [[抄訳] What’s your ML test score? A rubric for ML production systems](https://shunyaueta.com/posts/2020-04-19/)で紹介した論文の続編があったので読んでみました。

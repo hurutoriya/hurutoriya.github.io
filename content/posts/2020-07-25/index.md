@@ -3,8 +3,8 @@ title: "How to write the UnitTest with stdin at Pytest"
 date: 2020-07-25T03:18:14+09:00
 lang: en
 tags:
-- Python
-- Pytest
+- python
+- pytest
 ---
 
 If you want to write UnitTest when using `stdin` in Python.

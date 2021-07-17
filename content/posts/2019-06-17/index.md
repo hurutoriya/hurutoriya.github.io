@@ -3,8 +3,8 @@ title: "How to concat image using skimage"
 date: 2019-06-17T00:07:33+09:00
 lang: en
 tags:
-  - Python
-  - Image Processing
+  - python
+  - imageprocessing
 ---
 
 When you need to concat same size image to make figure.

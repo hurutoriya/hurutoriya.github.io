@@ -3,9 +3,9 @@ title: "Tensorboard を わずか2行で Jupyter Notebook上で表示"
 date: 2019-09-25T23:16:07+09:00
 lang: ja
 tags:
-  - Jupyter
-  - Python
-  - Pytorch
+  - jupyter
+  - python
+  - pytorch
 ---
 
 Pytorch 1.2 からは公式に Tensorboard がサポートされている

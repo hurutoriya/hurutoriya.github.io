@@ -4,7 +4,7 @@ title: "pip 実行時に sys.stderr.write(f\"ERROR: {exc}
 date: 2021-02-08T23:29:12+09:00
 lang: ja
 tags:
-- Python
+- python
 ---
 
 新しいマシンで`pip`をセットアップして実行しようとすると

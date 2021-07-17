@@ -3,9 +3,9 @@ title: "Machine Learning Casual Talks # 12 を開催しました"
 date: 2020-06-13T23:06:44+09:00
 lang: ja
 tags:
-- MLCT
+- mlct
 - event
-- Machine Learning
+- machinelearning
 ---
 
 Machine Learning Casual Talks 第12回を開催しました。

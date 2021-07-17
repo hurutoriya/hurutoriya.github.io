@@ -3,8 +3,8 @@ title: "JupyterNotebookをリモートサーバー上で公開して、どこで
 date: 2017-12-22T17:48:12.894Z
 lang: ja
 tags:
-  - Python
-  - Jupyter
+  - python
+  - jupyter
 ---
 
 JupyterNotebook をリモートサーバー上で公開して、どこでも研究開発 &amp; 講義で Jupyterhub を利用するお話です。

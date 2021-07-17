@@ -4,9 +4,9 @@ date: 2018-12-15T19:29:59.546Z
 lastmod: 2019-06-16T18:18:14+09:00
 lang: ja
 tags:
-  - Machine Learning
+  - machinelearning
   - event
-  - MLCT
+  - mlct
 ---
 
 Machine Learning Casual Talks 第七回を無事開催しました

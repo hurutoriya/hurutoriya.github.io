@@ -3,7 +3,7 @@ title: "機械学習・ソフトウェアエンジニアリングをテーマに
 date: 2020-09-27T21:57:47+09:00
 lang: ja
 tags:
-- podcast
+- note
 ---
 
 機械学習エンジニアをしている hurutoriya が機械学習、Software Engineering 周りに関する学んだことなど最近楽しいと思っていることを発信していくPodcast です

@@ -4,13 +4,13 @@ date: 2018-04-23T15:38:10.151Z
 lastmod: 2019-06-16T18:18:05+09:00
 lang: ja
 tags:
-  - NLP
-  - Jupyter
-  - Google Colabo
-  - dev
+  - nlp
+  - jupyter
+  - colabratory
+  - python
 ---
 
-Colab 上で 日本語の NLP をしたいときありませんか？
+Colabratory 上で 日本語に対する NLP をしたいときありませんか？
 
 ![image](/posts/2018-04-23/images/1.png)
 

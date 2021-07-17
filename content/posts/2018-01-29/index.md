@@ -1,5 +1,5 @@
 ---
-title: "2018 resolution"
+title: "2018年の抱負"
 date: 2018-01-29T16:08:35.698Z
 lastmod: 2019-06-16T18:17:51+09:00
 lang: ja

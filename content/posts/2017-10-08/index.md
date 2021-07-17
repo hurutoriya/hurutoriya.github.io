@@ -4,7 +4,7 @@ date: 2017-10-08T02:22:24.069Z
 lastmod: 2019-06-16T18:15:55+09:00
 lang: ja
 tags:
-  - Latex
+  - latex
 ---
 
 ![image](/posts/2017-10-08/images/1.png)

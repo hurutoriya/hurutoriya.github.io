@@ -4,9 +4,8 @@ date: 2018-01-18T05:41:44.616Z
 lastmod: 2019-06-16T18:17:50+09:00
 lang: ja
 tags:
-  - Computer Vision
-  - Paper
-  - CVPR
+  - computervision
+  - paper
 ---
 
 Kevin J. Shih, Saurabh Singh, Derek Hoiem, “Where To Look: Focus Regions for Visual Question Answering”, in CVPR2016 [link](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Shih_Where_to_Look_CVPR_2016_paper.pdf)

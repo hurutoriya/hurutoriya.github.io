@@ -3,8 +3,8 @@ title: "自走プログラマーを読み終えた"
 date: 2020-05-10T17:13:34+09:00
 lang: ja
 tags:
-  - Python
-  - Book
+  - python
+  - book
 ---
 
 [自走プログラマー](https://amzn.to/2B3SxMq)を読み終えた。

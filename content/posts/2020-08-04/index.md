@@ -4,7 +4,6 @@ date: 2020-08-04T03:38:58+09:00
 lang: ja
 tags:
 - python
-- coder
 ---
 
 ## はじめに

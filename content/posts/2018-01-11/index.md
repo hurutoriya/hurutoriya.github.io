@@ -3,9 +3,8 @@ title: "FUSE: Full Spectral Clustering(KDD2016) を読んだ"
 date: 2018-01-11T17:30:28.693Z
 lang: ja
 tags:
-  - Machine Learning
-  - Paper
-  - KDD
+  - machinelearning
+  - paper
 ---
 
 べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案

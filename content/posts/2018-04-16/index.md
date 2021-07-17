@@ -4,10 +4,8 @@ date: 2018-04-16T14:57:41.155Z
 lastmod: 2019-06-16T18:17:59+09:00
 lang: ja
 tags:
-  - AR
-  - Android
-  - Review
-  - Computer Vision
+  - ar
+  - android
 ---
 
 eBay が ARCore を使った商品の梱包測定機能を提供しているので試した

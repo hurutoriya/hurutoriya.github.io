@@ -4,9 +4,9 @@ date: 2017-12-27T08:12:17.298Z
 lastmod: 2019-06-16T18:17:25+09:00
 lang: ja
 tags:
-  - Heroku
-  - Postgresql
-  - Development
+  - heroku
+  - postgresql
+  - development
 ---
 
 pyadmin4 で Heroku 上の DB に接続する記事が日本語になかったので、メモ

@@ -3,10 +3,10 @@ title: "pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL
 date: 2019-10-03T23:52:54+09:00
 lang: ja
 tags:
-  - GCP
-  - Google BigQuery
+  - gcp
+  - bigquery
   - pandas
-  - Python
+  - python
 ---
 
 [pandas.read_gbq](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_gbq.html) 便利ですよね。

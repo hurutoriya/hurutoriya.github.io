@@ -3,8 +3,8 @@ title: "Standard SQLで 列と列の組み合わせの数を集計したい"
 date: 2021-02-09T23:27:37+09:00
 lang: ja
 tags:
-- SQL
-- Data Analysis
+- sql
+- dataanalysis
 ---
 
 group by は集計作業において根幹となる処理ですが、少し手の混んだ集計をしたいときに毎回調べていることが多かったのでここに学んだことをまとめておく

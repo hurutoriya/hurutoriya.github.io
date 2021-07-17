@@ -4,9 +4,8 @@ date: 2018-01-17T05:55:41.861Z
 lastmod: 2019-06-16T18:17:47+09:00
 lang: ja
 tags:
-  - Computer Vision
-  - Paper
-  - ICCV
+  - computervision
+  - paper
 ---
 
 Data-driven Crowd Analysis in Videos (ICCV2011)を読んだ

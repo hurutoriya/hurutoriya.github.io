@@ -4,8 +4,8 @@ date: 2021-05-29T22:32:58+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - MLOps
-  - Machine Learning
+  - mlops
+  - machinelearning
 ---
 
 先日、同僚に「機械学習プロジェクトに興味があるんだけど、おすすめの資料があったら教えてほしい」と言われたので、Blog記事に現時点でのおすすめの資料としてまとめておいたら、数年後見返したら面白そうだと思ったので記事として公開しておく。

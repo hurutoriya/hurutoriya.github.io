@@ -4,9 +4,9 @@ date: 2018-04-09T13:55:44.389Z
 lastmod: 2019-06-16T18:17:59+09:00
 lang: ja
 tags:
-  - Machine Learning
-  - MLOps
-  - Paper
+  - machinelearning
+  - mlops
+  - paper
 ---
 
 Google, Facebook の機械学習基盤情報をまとめました

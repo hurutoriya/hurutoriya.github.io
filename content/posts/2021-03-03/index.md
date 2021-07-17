@@ -3,7 +3,7 @@ title: "GKE 上にて Pythonで logger.info() を行うとCloud logging では s
 date: 2021-03-03T00:29:03+09:00
 lang: ja
 tags:
-- GCP
+- gcp
 ---
 
 Python のアプリケーションで、Cloud logger にログを出力したいときに

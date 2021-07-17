@@ -4,7 +4,7 @@ date: 2021-07-10T23:20:58+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-- Search
+- search
 ---
 
 SIGIR eCom を探索していたら発見したサーベイ論文の "Challenges and research opportunities in eCommerce search and recommendations"が面白かったので、社内の勉強会で発表してきた。

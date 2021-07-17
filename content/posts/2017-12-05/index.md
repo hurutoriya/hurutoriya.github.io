@@ -3,10 +3,8 @@ title: "Visualized Approximate Eigen Vector by Power Iteration on 3 dimensions."
 date: 2017-12-05T13:20:41.792Z
 lang: en
 tags:
-  - Matlab
-  - Visualization
-  - Animation
-  - Numerical Computaion
+  - matlab
+  - numericalcomputaion
 ---
 
 **You can intuitively lean Power Iteration by Visualization Power.**

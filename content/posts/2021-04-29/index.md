@@ -4,8 +4,8 @@ date: 2021-04-29T22:52:25+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-- Python
-- SQL
+- pthon
+- sql
 ---
 
 

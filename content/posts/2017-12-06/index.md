@@ -4,8 +4,9 @@ date: 2017-12-06T13:36:38.235Z
 lastmod: 2019-06-16T18:16:14+09:00
 lang: ja
 tags:
-  - Machine Learning
-  - TensorFlow
+  - machinelearning
+  - tensorflow
+  - iOS
 ---
 
 TensorFlow 無双

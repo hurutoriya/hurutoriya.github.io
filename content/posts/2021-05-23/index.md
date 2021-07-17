@@ -4,7 +4,7 @@ date: 2021-05-23T23:42:28+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-- Python
+- python
 ---
 
 現状の Poetry では、`pyproject.toml` を基にした `setup.py` の直接的な自動生成をサポートしていない。

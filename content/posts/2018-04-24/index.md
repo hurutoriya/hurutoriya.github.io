@@ -4,10 +4,10 @@ date: 2018-04-24T02:18:46.954Z
 lastmod: 2019-06-16T18:18:07+09:00
 lang: ja
 tags:
-  - Data Scientist
-  - Data Engineer
-  - 抄訳
-  - Machine Learning
+  - datascience
+  - dataengineering
+  - translation
+  - machinelearning
 ---
 
 データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア

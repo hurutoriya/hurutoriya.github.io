@@ -3,7 +3,7 @@ title: "自分なりの機械学習エンジニアスキル構成論"
 date: 2020-09-21T00:13:08+09:00
 lang: ja
 tags:
-- Machine Learning
+- machinelearning
 - essay
 ---
 

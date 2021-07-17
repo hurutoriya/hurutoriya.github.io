@@ -3,7 +3,7 @@ title: "GitHub codeowners でGithubグループを指定しても反映されな
 date: 2020-09-19T11:31:36+09:00
 lang: ja
 tags:
-- GitHub
+- github
 ---
 
 GitHub の [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners) という機能を使えば、レポジトリに対するPRでは設定された CODEOWNER がAPPROVEを出さないとマージされないようにできます。

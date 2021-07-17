@@ -4,9 +4,8 @@ date: 2018-01-09T18:59:59.969Z
 lastmod: 2019-06-16T18:17:31+09:00
 lang: ja
 tags:
-  - Firebase
-  - PWA
-  - Github Pages
+  - firebase
+  - pwa
 ---
 
 PWA と FireBase を試してみたかった

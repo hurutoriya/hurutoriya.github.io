@@ -4,8 +4,8 @@ date: 2021-05-19T22:04:41+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-- Python
-- NLP
+- python
+- nlp
 ---
 
 ## テキスト解析機 KyTea

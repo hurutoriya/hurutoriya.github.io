@@ -4,9 +4,9 @@ date: 2018-10-14T03:01:01.910Z
 lastmod: 2019-06-16T18:18:13+09:00
 lang: ja
 tags:
-  - Machine Learning
+  - machinelearning
   - event
-  - MLCT
+  - mlct
 ---
 
 機械学習の信頼性が熱いよねというお話

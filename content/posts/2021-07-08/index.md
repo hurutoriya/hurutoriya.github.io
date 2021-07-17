@@ -4,8 +4,8 @@ date: 2021-07-08T22:40:37+09:00
 lang: en
 author: Shunya Ueta
 tags:
-- Python
-- Streanlit
+- python
+- streanlit
 ---
 
 ## モチベーション

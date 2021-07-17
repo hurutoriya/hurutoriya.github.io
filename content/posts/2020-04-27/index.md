@@ -3,7 +3,7 @@ title: "ソフトウェア開発における Upstream と Downstream の意味"
 date: 2020-04-27T23:55:42+09:00
 lang: ja
 tags:
-- SoftWare
+- development
 ---
 
 - Upstream

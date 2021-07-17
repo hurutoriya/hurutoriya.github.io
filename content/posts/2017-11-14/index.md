@@ -4,10 +4,10 @@ date: 2017-11-14T11:36:43.926Z
 lastmod: 2019-06-16T18:16:04+09:00
 lang: ja
 tags:
-  - Python
-  - OpenCV
-  - Deep Learning
-  - Computer Vision
+  - python
+  - opencv
+  - machinelearning
+  - computervision
 ---
 
 OpenCV と MobileNet を使って物体検出を行った

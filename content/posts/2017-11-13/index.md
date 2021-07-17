@@ -4,9 +4,9 @@ date: 2017-11-13T17:22:38.891Z
 lastmod: 2019-06-16T18:16:00+09:00
 lang: ja
 tags:
-  - Computer Vision
-  - Django
-  - Python
+  - computervision
+  - django
+  - python
 ---
 
 ![image](/posts/2017-11-13/images/1.gif)

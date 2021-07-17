@@ -4,6 +4,7 @@ date: 2019-06-16T23:09:18+09:00
 lang: ja
 tags:
   - hugo
+  - go
 ---
 
 - [Hugo 0.32](https://gohugo.io/about/new-in-032/)から page bundle が使用可能に

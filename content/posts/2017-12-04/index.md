@@ -4,9 +4,8 @@ date: 2017-12-04T13:06:15.767Z
 lastmod: 2019-06-16T18:16:09+09:00
 lang: ja
 tags:
-  - Machine Learning
-  - KDD
-  - Paper
+  - machinelearning
+  - paper
 ---
 
 応用数理研究者が機械学習界に進出していく研究

@@ -3,8 +3,8 @@ title: "CourseraでHow Google does Machine Learning の講義を修了した"
 date: 2020-04-18T00:59:23+09:00
 lang: ja
 tags:
-  - Coursera
-  - Machile Learning
+  - coursera
+  - machilelearning
 ---
 
 Coursera で[How Google does Machine Learning](https://www.coursera.org/learn/google-machine-learning) の講義を修了した

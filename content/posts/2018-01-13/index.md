@@ -4,9 +4,9 @@ date: 2018-01-13T17:03:43.429Z
 lastmod: 2019-06-16T18:17:44+09:00
 lang: ja
 tags:
-  - Python
-  - Matplotlib
-  - Jupyter
+  - python
+  - matplotlib
+  - jupyter
 ---
 
 Python でアニメーションを作成したかったのでメモ

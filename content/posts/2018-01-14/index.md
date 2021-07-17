@@ -4,10 +4,9 @@ date: 2018-01-14T10:41:12.009Z
 lastmod: 2019-06-16T18:17:46+09:00
 lang: ja
 tags:
-  - Paper
-  - ACMMM
-  - Computer Vision
-  - Machine Learning
+  - paper
+  - computervision
+  - machinelearning
 ---
 
 スタンディングディスカッション形式での会話を評価した研究
