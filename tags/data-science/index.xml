@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data Science on Shunya Ueta</title><link>https://shunyaueta.com/tags/data-science/</link><description>Recent content in Data Science on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 01 Dec 2017 07:55:12 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/data-science/index.xml" rel="self" type="application/rss+xml"/><item><title>Machine Learning that Matters (ICML2012) を読んだ</title><link>https://shunyaueta.com/posts/2017-12-01/</link><pubDate>Fri, 01 Dec 2017 07:55:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-01/</guid><description>機械学習の研究してる人は全員読んだ方がいい。そう断言できるぐらい良い内容が書かれています。 ICML2012 で発表された最近の機械学習に関する研究の問題点を論じた論文。
-Summaly
-「あなたは現実世界で役立つデータに対して機械学習の研究を行っていますか?」
-著者は NASA の JPL(ジェット推進研究所)、カリフォルニア工科大学に所属する Kiri L.
-Kiri L. Wagstaff
-発表動画を探してみたんですが、ICML2012 で発表した際のビデオはサーバのクラッシュにより喪失したとのこと。
-The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPoint は下記リンク先に配布されています。http://www.</description></item></channel></rss>

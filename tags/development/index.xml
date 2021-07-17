@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Development on Shunya Ueta</title><link>https://shunyaueta.com/tags/development/</link><description>Recent content in Development on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 27 Dec 2017 08:12:17 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/development/index.xml" rel="self" type="application/rss+xml"/><item><title>HerokuのDBにpgadmin4で接続してローカルにデータをダウンロードする</title><link>https://shunyaueta.com/posts/2017-12-27/</link><pubDate>Wed, 27 Dec 2017 08:12:17 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-27/</guid><description>pyadmin4 で Heroku 上の DB に接続する記事が日本語になかったので、メモ
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>development on Shunya Ueta</title><link>https://shunyaueta.com/tags/development/</link><description>Recent content in development on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 27 Apr 2020 23:55:42 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/development/index.xml" rel="self" type="application/rss+xml"/><item><title>ソフトウェア開発における Upstream と Downstream の意味</title><link>https://shunyaueta.com/posts/2020-04-27/</link><pubDate>Mon, 27 Apr 2020 23:55:42 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-27/</guid><description> Upstream Upstream はそのシステムが依存しているジョブ Upstream のデザインが変わることで、システムも影響をうける Downstream Downstream はそのシステムが影響を与える影響を与える部分 例えば、Web Application などでは、データベースは Downstream となる
+e.g. Web service→ Databese という流れでデータが作成される
+Ref https://reflectoring.io/upstream-downstream/ https://softwareengineering.stackexchange.com/questions/71080/what-does-downstream-upstream-design-mean/83686 https://en.wikipedia.org/wiki/Upstream_(software_development) https://en.wikipedia.org/wiki/Downstream_(software_development)</description></item><item><title>HerokuのDBにpgadmin4で接続してローカルにデータをダウンロードする</title><link>https://shunyaueta.com/posts/2017-12-27/</link><pubDate>Wed, 27 Dec 2017 08:12:17 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-27/</guid><description>pyadmin4 で Heroku 上の DB に接続する記事が日本語になかったので、メモ
 接続前の準備 Heroku にログインして、対象の App の DB のページへ
 Heroku App DB page
 そこから DB のセッティングページにある credential ボタンをクリック
@@ -12,20 +14,4 @@ Click Add New Server
 Heroku 上の DB の情報を入力していく。Server の名前は適当で大丈夫です。
 接続されるとこんな感じになります。
 Query Tool Query Toolを使うことで Heroku 上の DB に対して SQL クエリを投げる事ができます。
-Query Toolは上部のツールバーからアクセス可能です。 注意) 左カラムのテーブルをクリックした後でないとアクティブになりません。</description></item><item><title>Jupyter上でSVGのイラストやアニメーションが作成できるプラグイン egel</title><link>https://shunyaueta.com/posts/2017-11-22/</link><pubDate>Wed, 22 Nov 2017 12:04:30 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-22/</guid><description>アイデアは面白い… けど easy drawing ではない
-Jupyter 使ってると作図も Jupyter 上で完結させたいなぁ~って思うときがあるんですが、スクリプトで作図はけっこう辛いものがあります
-そのため Jupyter 上でフリースタイルに作図できる機能ないかなと探してたら egal という面白そうな拡張機能があったので使ってみました
-uclmr/egal
-egal GIF animation
-以下のリポジトリから $pip3 install git+https://github.com/uclmr/egal.gi
-でクローンしてきて $jupyter nbextension install --py egal $jupyter nbextension enable --py egal
-で拡張機能を有効にして使えるようになります。
-ブラシアイコンをクリックすると新たなセルが生成される
-👉 ボタンをクリックすると各オブジェクトの詳細なプロパティが調整できる
-フレーム毎にオブジェクトを設定してアニメーションっぽくもできる
-5–6 分使ってみて感じましたが、めちゃくちゃ操作がしづらい…
-やはりブラウザ上での図形作成はめちゃくちゃストレスたまるので、ローカルで keynote 使って図形作成したほうがマシな感じです。
-遊んだ結果を notebook で github にアップしておきました。
-残念ながら SVG が Github 上ではレンダリングされないので残念な感じになっております&amp;hellip; ローカルにクローンしてきて egal を有効にしておくと見れます。
-hurutoriya/notebook
-結論 Jupyter で全てを完結させるのは難しい</description></item></channel></rss>
+Query Toolは上部のツールバーからアクセス可能です。 注意) 左カラムのテーブルをクリックした後でないとアクティブになりません。</description></item></channel></rss>

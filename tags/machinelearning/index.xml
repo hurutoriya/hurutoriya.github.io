@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>machinelearning on Shunya Ueta</title><link>https://shunyaueta.com/tags/machinelearning/</link><description>Recent content in machinelearning on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 29 May 2021 22:32:58 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/machinelearning/index.xml" rel="self" type="application/rss+xml"/><item><title>2021年05月時点で自分が実践しているMLOpsの情報収集方法</title><link>https://shunyaueta.com/posts/2021-05-29/</link><pubDate>Sat, 29 May 2021 22:32:58 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-05-29/</guid><description>先日、同僚に「機械学習プロジェクトに興味があるんだけど、おすすめの資料があったら教えてほしい」と言われたので、Blog記事に現時点でのおすすめの資料としてまとめておいたら、数年後見返したら面白そうだと思ったので記事として公開しておく。
+おすすめの資料 プロジェクトマネジメントや考え方、思想 How Google does Machine Learning これは機械学習を実応用する人たちにはぜひ見てほしいビデオ講義。前半が、機械学習プロジェクトの計画や、優先順位、よくあるアンチパターンについて GCP で機械学習について多く関わってきたエンジニアが解説してくれていて、非常に勉強になる。 感想記事 リーン・スタートアップ　ムダのない起業プロセスでイノベーションを生みだす 顧客が求めるものを作ろう。機械学習にこだわったらまずだめなので&amp;hellip; (詳しくは後述の Rules of ML を呼んでみよう。) 関連する良いフレームワークとして @nishio さんの機械学習キャンバス もおすすめです。 Make something people want. by Paul Graham 人によって意見が別れるところではありますが、機械学習エンジニアとして、これがなぜ機械学習で必要なのかの「なぜ」を説明できないとたいてい上手く行かない経験がある。つまるところ、必要とされるものを見つけ出して作っていこうぜということですね Netflix がカスタマーを誰よりも理解するためのデータ分析プロセス、コンシューマー・サイエンスの紹介 カスタマーオブセッションの考え方を、常に心のなかに秘めつつ世の中を良くするプロダクトを作りたい MLOps, 機械学習エンジニアリング Rules of Machine Learning 全員これを毎日読もう。聖書 仕事ではじめる機械学習 第 2 版 MLCT 創始者の @chezou さんが筆頭に書き上げた実践的な機械学習本。日本人で機械学習をやりたいならまずこれを買うべし。 AI アルゴリズムマーケティング 自動化のための機械学習/経済モデル、ベス トプラクティス、アーキテクチャ 邦訳だとべらぼうに怪しい感じになってしまっているが、内容はとんでもなく素晴らしい。マーケティングのために機械学習を適用することが多いと思うが、かなり網羅的に適用例を解説してくれている。原著の英語は無料なので、中身が気になる人はそちらをおすすめする。無料公開偉大すぎる MLOps: 機械学習における継続的デリバリーと自動化のパイプライン GCP による MLOps の解説。人によって、MLOps の定義って差異がありますが、自分はここで語られている ML システム構築のすべてのステップで自動化とモニタリングを推進できます こそが、 MLOps の骨子だなと思っています。クラウドサービスは、開発に関係する知識をパターン化して、資料を公開してくれるのでありがたいですね。 Google Cloud で機械学習を実装するためのベスト プラクティス この資料なんかは、GCPで機械学習を実践したい場合にはまず見ておけば困ることはなさそうですね 各クラウドサービスの MLOps の white paper AWS, Azure は普段使わないので深く言及しませんが、同様の資料は公開されたりしています。 Practitioner Guide to MLOps by GCP MLOps: Continuous Delivery for Machine Learning on AWS Azure Best practices for MLOps - DevOps for machine learning.</description></item><item><title>[抄訳] Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)</title><link>https://shunyaueta.com/posts/2021-01-17/</link><pubDate>Sun, 17 Jan 2021 00:18:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-01-17/</guid><description>この記事はMLOps Advent Calendar 2020の25日目の記事です。(盛大に遅れました)
+KDD2019の招待講演でGoogleがTFXの歴史について発表されており、TFX信者の自分としては発表内容が以前から気になっていたが、公開はされておらずなんとかして見れないかな~と思っていましたが、TensorFlowのBlogで該当の招待講演が論文化されたことを知ったのでメモがてら抄訳として残しておく。
+注意)この翻訳記事は原著論文の著者陣からレビューはされていません Shunya Ueta, are providing a translation and abridgment, which has not been reviewed by the authors. Citation Karmarkar, A., Altay, A., Zaks, A., Polyzotis, N., Ramesh, A., Mathes, B., … &amp;amp; Li, Z. (2020). Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX). arXiv preprint arXiv:2010.02013. ***
+Towards ML Engineering with TensorFlow Extended (TFX) at KDD2019 Towards ML Engineering with TensorFlow Extended (TFX) ACM PDFはarxiv でも閲覧可能 https://arxiv.</description></item><item><title>自分なりの機械学習エンジニアスキル構成論</title><link>https://shunyaueta.com/posts/2020-09-21/</link><pubDate>Mon, 21 Sep 2020 00:13:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-21/</guid><description>機械学習エンジニアとして働き始めて2年7ヶ月が経過した。
+機械学習エンジニアというロールは会社によって期待される内容が異なってくるが、今の会社で働いてきた経験に基づき自分の中の機械学習エンジニアスキル構成論を整理してみる。
+TL; DR 人によって考える理想のスキル論は違うので他の人の持論を聞いてみたい テクいことをやりたい気持ちはあるが、地道なやるべきことがたくさんあるのがこの世界 自分の中で機械学習エンジニアにとって大事なスキル Software Engineer 40% 機械学習サービス実装スキル Product Manager 30% 機械学習プロジェクト自体を成功に導くスキル Data Scientist 30% データに基づき、意思決定し改善していくスキル Machine Learning Engineer as Software Engineer なぜSWEの比率が一番上なのか？
+どれだけ良いモデルができたとしてもそれが活用されるシステムがなければ成果を出せないからです
+データを活用してインパクトの大きい課題を解決するための、サービスを実装して、運用して改善していく どの方法がベストか考えた上で、それを実現していく 例えば、R&amp;amp;Dスタイルでモデル開発と実装者を完全に分ける組織構造もあると思いますが、このスタイルはいろんな会社のお話を聞く限りは、組織構造がよほど洗練されていないとうまく稼働しないじゃないかなと思っている
+Full Cycle Developers at Netflixでは、システム開発のライフサイクルである
+design, development, test, deploy, operate, support
+を1チームが一気通貫で責任を持つスタイルをNetflixが提唱している。
+今所属している会社もMicro Serviceでの開発に注力していて、まさにFull Cycleスタイルで機械学習サービス開発を行っている。 個人的に機械学習プロジェクトとこの方式の相性の良いところは、例えば、職能ごとにモデル開発、システム開発と運用を行うメンバーを分割すると、
+モデルを作ってデプロイはしたが運用は他人任せになってしまい継続的な改善が回しづらい 役割が分離されていることで、モデルの詳細を完全に把握できないので実際のトラブル発生時に対応が困難 運用を考えてモデルがデザインされていないので運用者にしわ寄せがくる などアンチパターンが数多く存在する
+Micro Serviceでの開発は上記の課題を解決して、作って終わりではなく自分たちでシステムデザインからサポートまで行うことで、そのサービスの継続的な改善に責任と自由を手にして開発することできる また、プロジェクトデザインの段階からシステム開発・運用を念頭に動くことができるので、やってみてうまく動かないなどの不確実性を大きく減少させる</description></item><item><title>MLOps の国際会議 OpML'20 に論文が採択されたので登壇してきた</title><link>https://shunyaueta.com/posts/2020-09-06/</link><pubDate>Sun, 06 Sep 2020 23:31:03 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-06/</guid><description>MLOpsの査読付き国際会議 2020 USENIX Conference on Operational Machine Learning (略称 OpML&amp;rsquo;20)に論文が採択されたので、登壇してきた。
+Podcastでも紹介しました
+#1 MLOps の国際会議 OpML20 について at just4fun.fm
+MLOpsの査読付き国際会議とOpMLの立ち位置 機械学習エンジニアリング・MLOpsの領域の会議でも一番有名なものとして2018年に発足したMLSysがあります。(ちなみに最初はSysMLという名前でした) このカンファレンスの傾向としては、アカデミアの研究者主体の発足経緯からアカデミアからインダストリーへの橋渡し的立ち位置となっています。具体的には、発表者はアカデミアの方が大半でハードウェアから、モデルのOSS公開など幅広く機械学習エンジニアリング・MLOpsの周辺トピックをカバーしています。
+OpMLはその一年後に、MLOpsを軸にしたUSENIXが母体の会議として誕生しました。 USENIXはSRECON、OSDIなどを開催している団体です。学会的なスタイルに則り、先端的な計算機システムの成果を論文として公開されています。MLSysと対称的にこちらはインダストリーからアカデミアへの橋渡し的立ち位置となっています。発表内容は企業での発表者が多く、実際の運用で得られた各企業のMLOpsのベストプラクティスなどがメインで話されています。 個人的にはOpMLのほうが、MLOpsのど真ん中を主体に置いているのでMLSysよりも盛り上がってほしいなと思っています。
+OpML&amp;rsquo;19がどのような様子だったかは、以下の記事がわかりやすいです。
+OpML ‘19参加レポート The first conference of Operational Machine Learning: OpML ‘19 自分自身、機械学習エンジニアリングやMLOps周りのカンファレンス情報などを追いかけていますが、この分野で査読付きかつ論文として残せる形式の国際会議は主に上記の２つの認識です。
+KDDやCOLING、NAACLなどの国際会議でもインダストリートラックが常設されるようになって久しいですが、最近ではインダストリートラックだけではなく、積極的に実応用前提のワークショップ(ECNLP at ACL2020, IRS2020 at KDD2020など)が開催されており機械学習の理論と実応用の融合が進んでいます。
+OpML&amp;rsquo;20への投稿と採択で得られたもの OpML&amp;rsquo;20では下記２つの発表枠があり、投稿者がどちらかを選んで発表を行います。
+査読付きで20mの口頭発表 2ページの査読付き論文+20mの口頭発表 OpML20で推奨されるトピックでも、自分たちが持っているネタで
+New model introduction into production (e.g., staging, A/B test)
+においてNoveltyがあると考えて、ここからストーリーを組み立てていきました。
+スケジュール感として投稿締切が2020/02/25で、その1ヶ月前の1月末から毎日1時間、Google Calendarで時間を抑えて同僚と集中的に論文の執筆を行いました。 最初にガッと3ページほど書いて、その後洗練させて2ページに圧縮して投稿しました。 あらめて添削や執筆をともに行ってくれた同僚たちに感謝します。
+そして投稿の1ヶ月後に通知メールが来て採択を知りました。 添削を何度も繰り返して時間が迫るなかなんとか投稿できたという状態で、とりあえず投稿できて良かったなと感じていた最中だったので、採択通知が来て本当におどきました。</description></item><item><title>Machine Learning Casual Talks # 12 を開催しました</title><link>https://shunyaueta.com/posts/2020-06-13/</link><pubDate>Sat, 13 Jun 2020 23:06:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-06-13/</guid><description>Machine Learning Casual Talks 第12回を開催しました。 前回から少し開きがあり、7ヶ月ぶりの開催となりました。
+https://mlct.connpass.com/event/172550/
+今回の個人的なテーマはベストプラクティスとアンチパターンです。
+@keigohtr さんには、AWSの各種サービスを使った機械学習実験基盤をアベジャの適用事例と重ね合わせて、説得力のあるベストプラクティスを語っていただきました。 @yuzutas0 さんには、機械学習の前に、データのマネジメントがいかに必要かを語っていただきました。建設的に改善していこうぜという未来が語られていて、個人的にお話を依頼した甲斐がありました 同僚の @overs_5121 さんには、メルカリ : TensorFlow Lite で、気付きにくい便利機能をユーザーに提唱 の裏話や、適用までの泥臭い事例をお話していただきました。 登壇者の皆様、改めて登壇の依頼をご快諾いただきありがとうございました。
+また、コロナウイルスの影響もあり試験的ですが完全なオンライン開催となりました。 配信面は今回は完全に @chezou さんに頼らせていただきました。 プロフェッショナルな配信ありがとうございました！ 配信のベストプラクティスや様子などは、こちらを御覧ください
+Google MeetとYouTube Liveでオンラインミートアップの配信をした
+勉強会の資料と動画 資料ページ Machine Learning Casual Talks #12 - YouTube 所感としては、以前から配信NGの発表以外は積極的にYouTubeで公開していたのだが、参加者の皆様からはオンライン開催でありがたいと声が大きく、個人的に驚きました。
+自分が思うに、オンライン参加も配信動画を後から見るのも、リアルタイムで質問ができないこと以外は大きな差異が無いと思っていたのだが、参加者側からすると大きく異なるようで新鮮だった。
+オンライン勉強会開催側のコツ 最低でも
+配信者 司会者 配信の監視を行う監視者 の3役がいないとオンライン開催は難しいことがわかった
+ライブ配信視聴者数は、以下のような遷移となりました。 500人参加申込みがあり、最大視聴者数が252人とギリギリ5割を超えました。
+今までのオフラインでの開催は6-8割くらいだったので、それと比較すると上出来かなと思います。 また、オンライン開催はオフライン開催と比べて会場の確保コストや懇親会おじさんの発生などを抑えられるので、その点もありがたかったです。 オフライン開催だと、会場撤収が効率的に終わっても22:00、家に帰ると23:00なので、イベント主催者にとっても開催しやすい気がしますね。
+改善点としては、質問の数が少なめだったことと、オフラインでの交流を補うような要素(パネルディスカッションなど）をもう少し入れたいなと思っています。
+オンライン開催は、開催コストが高くて継続できないというイベント主催者あるあるの問題を解決する一つのきっかけにもなるんじゃないのかなぁと思いました。
+では、また次回のMLCT 開催をお待ち下さい!!</description></item><item><title>[抄訳] The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction</title><link>https://shunyaueta.com/posts/2020-04-25/</link><pubDate>Sat, 25 Apr 2020 01:35:20 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-25/</guid><description>[抄訳] What’s your ML test score? A rubric for ML production systemsで紹介した論文の続編があったので読んでみました。
+注意)この翻訳記事は原著論文の著者陣からレビューはされていません Shunya Ueta, are providing a translation and abridgment, which has not been reviewed by the authors. Change log 2021/02/03 ML Test Score を簡単に計算できるGoogle Spread Sheets を公開 2020/06/24 著者のEric Breck さんに連絡をし、抄訳の公開を快諾していただきました。ありがとうございます。 完全な citation 情報を追記しました。 この翻訳記事が著者のレビューを受けていないことを追記しました。 Citation Eric Breck, Shanqing Cai, Michael Salib, . The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction.</description></item><item><title>[抄訳] What’s your ML test score? A rubric for ML production systems</title><link>https://shunyaueta.com/posts/2020-04-19/</link><pubDate>Sun, 19 Apr 2020 22:18:10 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-19/</guid><description>NIPS206にて開催された Reliable Machine Learning in the Wild - NIPS 2016 Workshop (2016) という、現実世界でどうやって信頼性の高い機械学習に取り組んでいくかについてのワークショップがある
+ここで Google から発表された What’s your ML test score? A rubric for ML production systems がとても面白く、身になるものが多かったのでメモがてら抄訳を残しておく
+PDF Slide 発表動画もワークショップページにて公開されています。 change logs 2021-04-25 この原著論文の完全版になっている論文の抄訳を新たに公開しています。 [抄訳]: The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction 概略 現実世界のプロダクションシステムで機械学習を使う際に、機械学習の研究実験と異なる、小さなもしくは小さくない問題がある テストとモニタリングはプロダクションレディの機械学習システムにとって必要不可欠 しかし、どれくらいのテストとモニタリングをすれば十分と言えるのだろうか? この論文では、それらの問題を解決する ML Test Score という基準を提案する Introduciton Google 内で積み重ねたベストプラクティスをもとに、実行可能なテスト、そしてその機械学習システムがどのていどプロダクションレディなのかを示すスコアシステムを提案</description></item><item><title>Machine Learning Casual Talks #8 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2019-02-02/</link><pubDate>Sat, 02 Feb 2019 18:41:32 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-02-02/</guid><description>Machine Learning Casual Talks 第 8 回の開催を無事終えました
+MLCT とは
+実サービスにおける機械学習の経験をカジュアルに語り合う
+コミュニティです
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました!
+Machine Learning Casual Talks #8 (2019/01/28 18:30〜)
+当日の配信動画はこちら
+当日の発表資料はすべてこちらにあります
+Machine Learning Casual Talks #8 - 資料一覧 - connpass
+エムスリー 西場さん
+BEDORE すみのさん
+TL;DR; エムスリーの西場さん、すべてをこなす toB の機械学習サービス、システムアーキテクチャデザインかなり考えないとキツイ 懇親会での 🍣 の需給予測失敗しかけた 次回挑戦したいこと 今回会場撤収時に有志の参加者、登壇者の方が撤収作業を手伝っていただき非常に助かりました。次回は有志で会場撤収ボランティアの参加枠を作ろうかなと思いました。運営コストを下げるのは、継続で一番大事だなと思っているので、お手伝いいただいた皆様ありがとうございました。助かるという感情が出てくる前に、素直にめちゃくちゃ嬉しかったです!
+参加率も 8 割を超えていて欠席率が非常に少なかったのも継続していきたい</description></item><item><title>Machine Learning Casual Talks #7 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-12-15/</link><pubDate>Sat, 15 Dec 2018 19:29:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-12-15/</guid><description>Machine Learning Casual Talks 第七回を無事開催しました
+Machine Learning Casual Talks #7 (2018/11/20 18:30〜)
+MLCT とは
+実サービスにおける機械学習の経験をカジュアルに語り合おう
+というコミュニティです。
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました!
+遺伝異常により髪が青く変色してしまったタカヤナギ=サン
+ABEJA の機械学習導入事例と辛い話を大田黒さんにお話していただきました!
+今回の勉強会資料は以下にまとまっています。
+Machine Learning Casual Talks #7 — 資料一覧 — connpass
+今回の内容を今北産業
+機械学習エンジニアとしてのキャリアのお話を タカヤナギ=サン 実世界に根付いた IOT と機械学習サービスはかなり辛い 各社の機械学習エンジニアの定義が揺らいでいるので、世界が壊れる 今回の改善点 参加枠の多様性 絶対参加するぞ枠 一般参加枠 初回参加枠 SNS 枠 Blog 枠 と今までは一つの枠で扱っていたものを、5 つの枠に分散して用意してみました。
+なぜかというとドタキャンやノーショーの方の影響で本当に参加したい方や初回参加の方の機会が喪失してしまうのはいただけないので、それを解決したなと思ったのが始まりです。
+初回参加枠を設けることで、新規参加者が増えて内輪感が解消されるのも狙ってみました。その影響か前回と比較して 2 割ほど参加率が増えてよかったです :)
+パネルディスカッション 登壇者 2 名と僕がモデレーターを行い、パネルディスカッションを行いました。単なる発表保の質疑応答時よりも話が盛り上がってなによりでした~
+次回予告 次回 MLCT 第 8 回は 2019/01/28 に参加予定です!</description></item><item><title>Machine Learning Casual Talks #6 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-10-14/</link><pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-10-14/</guid><description>機械学習の信頼性が熱いよねというお話
+柚餅子 さんの発表風景
+2018/09/25 の MLCT #6 を開催しました。
+MLCT とは
+実務における機械学習の話や経験をカジュアルに語り合おう
+というコミュニティです。
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました!
+Machine Learning Casual Talks #6 (2018/09/25 19:00〜)
+発表資料一覧 👇(スライドと配信動画) Machine Learning Casual Talks #6 - 資料一覧 - connpass
+柚餅子さん リブセンスにおける機械学習システムの信頼性エンジニアリング SRE の考えを機械学習システムに取り入れるというお話ですが、筋が良さそう。特に SLO 周りはうちでも取り入れないなぁと思いました Naomichi Agata さん ユーザーフィードバックと機械学習 半教師あり学習で解くというアプローチは非常に筋が良さそうで気になった。技術書典の書籍も気になる 👀 gamella さん マーケット予測モデルの PCDA の回し方 ms 単位のデータを学習データにして株価の UP/DOWN を予測する。。。。適用するドメインの難易度が鬼ゲーすぎて、ハラハラしそうだけど解きがいがありそう @yu-ya4 さん Big Query ML を使ってみた話 さらっと BQML を試して成果が出ましたと言っていたが、良い問題を探し出す嗅覚がすごいなと思いました。実際 BQ だけで過不足なくモデリングが終わるなら理想の世界ですね~ Kosuke Kitahara さん 発表資料は後日公開されます。謎の力により Youtube 配信はされていません KPT Keep 動画配信を問題なく完了できた 魅力ある発表内容を維持できた Problem 参加率が低かった。前回は 65%程度の参加率でしたが、今回は雨の影響もありますが 40% と低くなっていた 倍率も毎回 1.</description></item><item><title>Machine Learning Casual Talks #5 を開催しました #MLCT</title><link>https://shunyaueta.com/posts/2018-07-15/</link><pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-07-15/</guid><description>2018/07/13 に MLCT #5 を開催してきたお話
+Opening Talk by Aki Ariga
+Machine Learning Casual Talks #5 (2018/07/13 19:30〜)
+本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました。
+発表資料はこちら 👉 here (YouTube 配信もあります)* この記事では、技術的なお話というよりも開催に至るまでの話をメインに書いていきます。
+Start 構想開始時期は 2018/04 頃に考えていて、弊社開催の
+MLOps Nightと呼ばれるイベントの準備を行っているときに、社内だけではなく
+*社外の人の機械学習の辛い話をうんうんと頷きながら聞きたいなぁ
+*と思ったのが事の始まりです
+そのあと、とりあえず日程と発表者は事前に集めておかねばと思いTakashi Nishibayashi さんにラブコールを送っていた
+発表依頼の様子
+chezou さんとの出会いと MLCT 復活の狼煙 その後、
+勉強会の名前どうしよう 🤔 運営の方針どうすべきか 🤔 を迷いつつ時間が過ぎていき業務の一環として機械学習工学キックオフシンポジウム に参加していたら、そういえば Aki Ariga さんって MLCT 開催してたよな、あの勉強会すごく参考になること多かったから復活できないかなと思い始め、気がついたら懇親会で hagino3000 さんに chezou さんを紹介してもらい
+「MLCT 復活させたいです!!! 場所と運営準備は僕主体でやります!」
+と提案したら、あっさりと快諾され運営者に混ぜてもらえることになりました
+メッセージ投げかけから 1 分で承認される
+あらためて、突然飛び込んできた見知らぬ人物の運営への参加を快諾してくださった、 Aki Ariga, Atsushi KOMIYA, @tetsuroito さんありがとうございました 🙇</description></item><item><title>[抄訳] Data engineers vs. data scientists</title><link>https://shunyaueta.com/posts/2018-04-24/</link><pubDate>Tue, 24 Apr 2018 02:18:46 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-24/</guid><description>データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア
+紹介記事 Data engineers vs. data scientists
+紹介記事を同僚から教えてもらい、面白かったので抄訳した
+[](https://twitter.com/chezou/status/980349709339394048) &amp;gt; Aki Ariga さんが言及していた記事と方向性が同一で面白かった。
+Data Scientists : ビジネスサイドを理解し、他者にわかりやすく可視化と言語化できる職能。そして高度な数学的知識に基づいたモデリングやアルゴリズム提案スキルも持っている。Data Scientists には高度な Programming skill は必ずしも必須ではない、なぜならモデリングやアルゴリズムを実装するためにプログラミングを習得した人が多いからだ。システムデザインや Programming スキルは、Software Engineer や DataEngineer からみると見れたものではない(そしてそうでなくてはならない、なぜならスペシャリストだから)
+Data Engineer : 分散プログラミングを意識して構築できる職能。DE は卓越したプログラミングスキルとシステム構成力を持つ。定義 : つまりビッグデータに対してシステム的に解決できるスキル。クラスタ設計までが Data Engineer の役割であり運用(Ops)はやらない
+from : https://www.oreilly.com/ideas/data-engineers-vs-data-scientists
+Data Scientists と Data Engineer の互いの特化したスキルは補完しあってこそ輝く。 Data Scientist がデータパイプラインを作ると悲劇が起きてしまう。多くの企業が Data Scientist を Data Engineer として雇っているが、それは Data Scientists のスペックを活かしきれず、20–30%の効率で働かせてしまっている。そしてその ROI はめちゃくちゃ悪い。Data Scientists は適切なツールと選択肢を熟知していない(そして Data Engineer はシステムデザインと熟知しているのでミスは侵さない) e.g. 実際著者が聞いたこんな話がある。 Data Scientists が Apache Spark を使って 10GB のデータ処理を行うのに 1 回 15m の時間がかかっていた。(だが RDBMS を使えば、10ms で終わる) Data Scientist は彼らの流儀を疑うこと無く 1 日に 16 回 Spark の処理を実行しており、15mx16=240m つまり 4h の時間を無駄にしてる。RDBMS を使えば、160ms で終わるというのに… Data Scientist が頑張ってシステムを構築するが、職能の限界で Data Engineer しか作れないシステムなので時間とお金の浪費になった 実情 : Data Scientist として雇われたのに、Data Engineer として働かざるを得ない人がほとんどだ 理想的な人材配置 Case : 初期の組織: 2–3 人の Data Engineer : DataScientist Group Case : 更に複雑な事に取り組みたい 4–5 人の Data Engineer : 1 Data Scientist Data Engineer change to Data Scientist の王道 → それが新しい職種 : Machine Learning Engineer!</description></item><item><title>Google, Facebookが提供する機械学習基盤まとめ</title><link>https://shunyaueta.com/posts/2018-04-09/</link><pubDate>Mon, 09 Apr 2018 13:55:44 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-09/</guid><description>Google, Facebook の機械学習基盤情報をまとめました
+Podcastでも紹介しました
+#2 Facebook とGoogleの機械学習基盤について at just4fun.fm
+TFX
+社内の勉強会で Google, Facebook が提供する機械学習基盤に関する論文を紹介したので、その資料を公開します#### 経緯
+機械学習をサービスとして提供開始すると、継続的な学習やプロダクション環境での機械学習の提供はモデル構築以外にもいろいろと考える問題が多くなります ¹
+[1] Hidden technical debt in Machine learning systems NIPS’15
+要するに機械学習をサービスとして届けるには、実はめちゃんこ大変なんだよという話なんですが、みんな同じ問題にぶち当たります。
+そのためプロダクションレディなレベルで機械学習を提供できるプラットフォームを各社が提案しておりその中でも Google, Facebook の事例を提供します。
+TL; DR; FBLearner: MLaaS の事例として最初に読むべき論文、MLaaS をどのような戦略で提供しているかを抽象的にまなべるため、鳥瞰図として読みましょう TFX は逆に機械学習基盤が必要とする技術スタックや要件などを詳細に説明しており、教科書的な立ち位置です。社内で機械学習基盤を内製したい場合に詳しく読み込むこと必須 両社とも MLaaS をスケーラブルに提供する環境ができており、サービスのコアテクノロジーになっている Google : Tensorflow Expand TFX: A tensor flow-based production-scale machine learning platform
+Facebook : FBLeaner Applied machine learning at facebook a datacenter infrastructure perspective HPCA18
+ONNX を見ていると TensorFlow VS.</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
+発表者の顔は隠しています。なにか問題があればお伝え下さい。
+Team AI Meetup #1 (2018/02/13 19:00〜)
+Twitter: #mercari_ai
+山口さん Image Net と mercari の持ってるデータセットは似てるのでいけるのでは! ルカリはクラス数 over 1100 始期の推定値 Top5 29.3% エラー例 :画像からサイズを推定しないと男女のシューズを区別不可(人間でも不可能なエラー例が多い) 意外と認識がうまくいく事例がかなりある(クラス設計の影響で推定が上手く出来ていないらしい) データセットはユーザーが作成してるので最高、画像が正方形なのも Good 学習は GPU,推論は CPU 環境下で行っている 画像検索自体はプロトタイプは出来ているが、実運用は計算量やリアルタイム性を担保するのが難しいので一旦保留中 大筋は以下の記事と資料で把握できます。k8s で運用しているなどの実運用の構成が今回の発表では差分として語られていました。
+画像での商品検索に向けて - Mercari Engineering Blog
+【Mercari Summer Internship】商品画像の色推定を行いました! - Mercari Engineering Blog
+工藤さん 運用を継続すると色んな問題が出てきたので、それを解決する基盤環境を作成しはじめた e.g. 学習データのバージョン管理、モデルのデプロイ, etc 最終的には OSS としての公開も考えているとのこと メルカリの今年 1 年間の機械学習の取り組みとこれから - Mercari Engineering Blog
+ML Ops Study (仮) #1の発表内容も今回の機械学習の運用周りの Tips が共有されているので興味のある方はオススメです</description></item><item><title>Analyzing Free-standing Conversational Groups: A Multimodal Approach (ACMMM15) を読んだ</title><link>https://shunyaueta.com/posts/2018-01-14/</link><pubDate>Sun, 14 Jan 2018 10:41:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-14/</guid><description>スタンディングディスカッション形式での会話を評価した研究
+Summary Slide
+X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe
+“Analyzing Free-standing Conversational Groups: A Multimodal Approach”, in 2015 ACM Multimedia Conference
+link
+を読んだので、軽くメモ。
+マルチモーダル系の論文初めて読んだんですが、まとめるとコントリビューションが 5 つあると主張。
+Contribution 音声・近接情報、そして監視カメラからの身体と頭の姿勢推定からマルチモーダルに解析 フリースタンディングディスカッションを身体・頭の姿勢推定から解析 カメラと音声・近接センサーからなるマルチモーダルな解析するためのフレームワークを提案 ラベリングされてないデータに対する行列補間問題の考案 SALSA(データ・セット)を公開・評価 SALSA というポスターセッションの動画と音声のデータも公開されている
+SALSA: Synergetic sociAL Scene Analysis
+動画は Google Drive で公開されていて時代の波を感じる。
+データセットを公開 論文も読みやすい 新しい行列補完計画法(アルゴリズム)を提案 実問題に取り組む と盛り沢山な内容で面白かった。
+スライド内のリンクは Google Slide で共有しているのでこちらを参照すると便利です。
+X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe &amp;quot;Analyzing Free-standing Conversational Groups: A…</description></item><item><title>Call center stress recognition with person-specific models を読んだ</title><link>https://shunyaueta.com/posts/2018-01-12/</link><pubDate>Fri, 12 Jan 2018 17:19:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-12/</guid><description>Affective Computing: 計算機と人間の感情や情緒の関係性を考える領域
+MIT Media Lab Affective Computing Group のプロジェクト。
+2 年前に MIT Media Lab へ訪問した際に、色々と見せてもらったけどかなり野心的な事に取り組んでいて感動してた。(デバイスも自分たちでプロトタイプを作りまくっていて、Deploy or Dieの意思を感じ取れる)
+論文のまとめスライドは以下
+One Slide Summary
+HCI 系の論文は初めてまともに読んだんですが、
+実験デザインが一番難しそう 人と計算機の関係を研究するので、必然的に人間の感性をどう評価する話にもつながってきてる? 手法に重きを置くというよりも、問題に重きを置いている印象 普段自分は、数値線形代数や機械学習、コンピュータビジョンを主にやっていて、精度をどれだけ出せるか、正解率をどれだけ向上や、速度をどれだけ上げれるかを理論的に保証、提案したりしていますが、面白い問題や興味深いデータを集めることも大事だなと思った。
+実験計画法¹もかなり重要で、メンターの人から実験計画法の成り立ちを教えてもらってとてもおもしろかった。
+実験計画法についてのまとめスライド</description></item><item><title>FUSE: Full Spectral Clustering(KDD2016) を読んだ</title><link>https://shunyaueta.com/posts/2018-01-11/</link><pubDate>Thu, 11 Jan 2018 17:30:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-11/</guid><description>べき乗法と独立成分分析を用いたマルチスケールに頑強なクラスタリング手法の提案
+べき乗法では近似固有ベクトル(Pseudo-eigenvectors)は複数の真の固有ベクトルの線形結合からなる。有益でない固有ベクトルも含まれるのでいかにそれを除去するか Fig.1 で言ってることがいまいちわからない。ｃ,ｄも変化がないように見える。論文で言及してる stripe が何を指してるかが不明 分かった。赤・青・黒の３つのクラスタで分かれている。最初は黒色がクラスタ境界面に見えた。論文内での multi scale というのは、データの幾何的な分布を指している？ 固有値計算は O(n³）かかるから計算量が~~って毎回言われるが、行列の状態に依存するので毎回最悪の場合を主張されてるも困る ZP self-turining spectral clustering をなぜ対抗馬にして比較してるのかは謎。 ICA¹を行ったあとにその行列に対して回転処理を行い情報量の最小化を狙う クラスタ数が多い場合、PIC では良い結果が出づらい multi scale なデータの場合標準の spectral clustering では失敗することが多々ある fig.2 (a) 見ればわかるがk-means では分離が困難 fig.2(b) ４－５本目の固有ベクトルを基底ベクトルにもつ空間ではクラスタのオーバーラップが少ない つまり１－５本目の固有ベクトル全て含めてクラスタリングすれば結果が良好になるのではないか？（仮説） fig.2 © ４回べき乗法を行った。結果が似てる。（縦軸が何を表してるかは不明）。四回が上から四本求めたのか、一番上の固有ベクトルを４回求めたのか分からない fig. (d) 提案手法を適用。k-means で分離可能 行列Vをp回べき乗法を行って構築 E=MVの最小化を行う ICA を最小化するために Jacobi Rotation を用いる。探索には貪欲法を採用 Contribution マルチスケール（多種多様な）データ分布に対してクラスタリングが可能 計算時間は従来（ncut)と同等 感想 PIC(Power Itetaion Clusterg)をまさか拡張してくるとは思わなかったなので、興味深い論文。(実装して再現実験したけど、Early stopping の段階で高確率でクラスタリングが失敗していて使い物にならなかった印象があるので…) データの分布が多様な場合、上位数本のベクトルではなく、そこから更に下の固有ベクトルに着目したほうが結果が良好になるのは面白い KDD の論文、相変わらず読みやすかった。</description></item><item><title>“Learning Deep Representations for Graph Clustering (AAAI2014)” を読んだ</title><link>https://shunyaueta.com/posts/2017-12-23/</link><pubDate>Sat, 23 Dec 2017 17:38:19 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-23/</guid><description>自己符号化器と Spectral Clusteing の関連性を示した論文
+Paper link Author Fei Tian : http://home.ustc.edu.cn/~tianfei/ 中国科学技術大学 Ph.D １年生 MSRA と共同研究、2014 年に AAAI2 本,COLING1 本を 1st で通してる。 この資料も面白い。ILSVRC2015 で 152 層の Deep Residual Learning を提案し優勝(Error Rate : 3.57%) MSRA @ ILSVRC2015 資料 Motivation (研究背景・動機) Deep Learning が数多くの応用でめざましい成果をあげている。 音声認識 画像認識 自然言語処理 DL において Clustering に関する適切な調査が行われてない。 論文の目的として、DL における Clustering の調査を行う 概要 Graph Clustering はクラスタリングでも重要な手法の一つ Graph Clustering の応用 Image segmentation Community Detection VLSI Design 嬉しい点 : ベクトル空間におけるクラスタリングの問題 → データの類似度グラフ問題への変換が可能 自己符号化器と Spectral Clustering の類似性 Spectral Clustering : グラフラプラシアンに対して EVD を行い k 本の非零固有ベクトルを用いた空間に対して k-means を行ったもの。 自己符号化器 : 入力データを低次元化、情報が最大限になるようにデータの次元を再構築する 計算量 : 対象とするグラフは n 個のノードを持つ EVD : ナイーブに実装すると O(n3)の計算量、最速の実装は O(n2)の計算量 自己符号化器 : ノードがスパースな際は計算量は O(kn) スパース表現 : データが大きくなるならスパース性を有効活用したい EVD : 固有ベクトルが高い確率で密になるため、スパース性が保証されない 自己符号化器 : スパース性を用いるのは容易 既存研究で未検証な事柄、何を解決・解明したいのか？ Graph Clustering のための Deep Learning の活用方法と調査 自己符号化器と Spectral Clustering の類似性とその比較・検証 Method (提案手法) GraphEncoder(for graph clustering.</description></item><item><title>CoreMLがTensorFlow Liteをサポート</title><link>https://shunyaueta.com/posts/2017-12-06/</link><pubDate>Wed, 06 Dec 2017 13:36:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-06/</guid><description>TensorFlow 無双
+TensorFlow Lite meets CoreML!!
+個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日 TensorFlow Lite が CoreML でサポートされるというアナウンスがありました!
+Announcing Core ML support in TensorFlow Lite
+CoreML の最大の利点は iPhone のアーキテクチャを最大限に利用した推論の高速化なので、Google も何かしらの手を打ってくると思っていましたがまさかそのまま CoreML にサポートされたのは驚きです。
+個人的に keras2, Caffe¹だけがサポートされてる今の状態は選択肢が少なくて微妙だなと思っていたので良いことだと思います。
+少し横道にそれますが、ONNX と呼ばれる Machine Leaning のモデルを相互変換できるプロジェクトも立ち上がっているので、近いうちにフレームワーク間の差異は消えていき、書きたいフレームワークで書き、動かしたい環境にモデルを変換して運用するという流れになる未来がくるかもしれません。
+ONNX: Open Neural Network Exchange Format
+Pixel²も iPhone8³以降に搭載されている A11 チップに機械学習の計算を高速化させるチップが採用されているのでこれから Machine Learning on Mobile はドンドン加速していくとおもいます。iOS11 の吉田さんが担当している CoreML の章を見てましたが、利点と欠点が明快に知れるのでオススメです。
+iOS 11 Programming - PEAKS
+TensorFlow Lite もデフォルトで Android をサポートしているので、こりゃほんとにプロダクション環境だと TensorFlow 一択になりつつありますね
+にしても TensorFlow の勢いはほんとに凄い…</description></item><item><title>Edge-Weighted Personalized PageRank: Breaking A Decade-Old Performance Barrier を読んだ</title><link>https://shunyaueta.com/posts/2017-12-04/</link><pubDate>Mon, 04 Dec 2017 13:06:15 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-04/</guid><description>応用数理研究者が機械学習界に進出していく研究
+youtube clip
+応用数理界隈ではクラシックな解き方で PageRank が解かれているので最新の数値計算手法に置き換えることで劇的にパフォーマンスが向上して 10 年前のパフォーマンスの鎖を解き放った論文
+KDD2015 Best student paper award Slide(PDF) Poster(PDF) Spectral network analysis wenleix/EdgePPR
+Presentation Movie is uploaded in Youtube. Author
+W. Xie Ph.D Candidate at Cornell University http://wenleix.github.io/ iterative computation on big graph data D. Bindel http://www.cs.cornell.edu/~bindel/ http://www.cs.cornell.edu/~bindel/talks.html He is frequently research activ like ideal young researcher. Nonlinear eigenvalue problem. Alan J. Demers Prof. Johannes Gehrke http://www.cs.cornell.edu/johannes/ Prof. VLDB,SIGMOD,KDD Motivation ページランクは重要な指標。遷移確率を求めるにはランダムサーファーモデル(ランダムウォーク)が必要。 様々な高速解法が提案されている。 Reseatch Question しかし 10 年以上前、PageRank の黎明期から Personalization based の手法は問題がある。 一般的な PageRank の解法の説明、その後に Model Reduction をベースにした約 5 倍の性能を誇る提案手法を説明。 提案手法の性能によって、パフォーマンス上のボトムネックは消えた。 Proposed Method PageRank 初期:WEBPage のランクに使用 → 現在:推薦、ソーシャルネットワーク Random Suffer Model Transition : α の確率で Random Walk(滞在ノードから無作為に遷移) Teleporting : 1−α Random Junmp(滞在ノードに依存せずに全てのノードを対象に無作為遷移) x(t+1)=αPxt+(1−α)v,where P=AD−1 v is represents telepotation probabilitie xt Walker の確率分布 サーファーが来る確率 = RandomWalk の確率_RandomWalk による遷移確率 + RandomJump の確率_RandomJump の遷移確率 = α× RandomWalk による遷移確率 + (1−α)×RandomJump の遷移確率 = α×+(1−α)×v x: Stationary vector(不動ベクトル、定常ベクトル、不動点定理など) x が定常状態になった際に、x の確率分布が PageRank を表す。 x(t),x(t+1)が同一(残差が無い)だと仮定することで、次式の線形方程式を解くことで Pagerank を求める。 Mx=b,where M=(I−αP),b=(1−α)v.</description></item><item><title>Machine Learning that Matters (ICML2012) を読んだ</title><link>https://shunyaueta.com/posts/2017-12-01/</link><pubDate>Fri, 01 Dec 2017 07:55:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-01/</guid><description>機械学習の研究してる人は全員読んだ方がいい。そう断言できるぐらい良い内容が書かれています。 ICML2012 で発表された最近の機械学習に関する研究の問題点を論じた論文。
+Summaly
+「あなたは現実世界で役立つデータに対して機械学習の研究を行っていますか?」
+著者は NASA の JPL(ジェット推進研究所)、カリフォルニア工科大学に所属する Kiri L.
+Kiri L. Wagstaff
+発表動画を探してみたんですが、ICML2012 で発表した際のビデオはサーバのクラッシュにより喪失したとのこと。
+The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPoint は下記リンク先に配布されています。http://www.</description></item><item><title>OpenCV 3.3から使えるDNNモジュールを使って物体検出</title><link>https://shunyaueta.com/posts/2017-11-14/</link><pubDate>Tue, 14 Nov 2017 11:36:43 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-14/</guid><description>OpenCV と MobileNet を使って物体検出を行った
+Object Detection with OpenCV dnn modules and MobileNetSSD on Jupyter Notebook
+Introduction 物体検出を Deep Leaning と OpenCV を用いて行う
+OpenCV 3.3 からdnnモジュールが正式にリリースされた
+The main news is that we promoted DNN module from opencv_contrib to the main repository, improved and accelerated it a lot. An external BLAS implementation is not needed anymore. For GPU there is experimental DNN acceleration using Halide (http://halide-lang.org_). The detailed information about the module can be found in our wiki: Deep Learning in OpenCV.</description></item></channel></rss>

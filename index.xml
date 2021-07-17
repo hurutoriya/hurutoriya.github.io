@@ -1,4 +1,66 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>eコマースの検索と推薦についてのサーベイ論文である 'Challenges and research opportunities in eCommerce search and recommendations' を社内勉強会で発表した</title><link>https://shunyaueta.com/posts/2021-07-10/</link><pubDate>Sat, 10 Jul 2021 23:20:58 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-10/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>mvn archetype:generate でJavaのプロジェクト雛形を作成する際のオプションの解説</title><link>https://shunyaueta.com/posts/2021-07-18/</link><pubDate>Sun, 18 Jul 2021 00:05:06 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-18/</guid><description>
+&lt;p>最近、Java を業務で触っている。
+門外漢の自分からするとMavenのお作法が分からなかったので、備忘録がてら残しておく。&lt;/p>
+&lt;h2 id="mvn-archetypegenerate-コマンドのオプションの意味">&lt;code>mvn archetype:generate&lt;/code> コマンドのオプションの意味&lt;/h2>
+&lt;p>&lt;code>mvn archetype:generate&lt;/code> コマンドを使えば任意のテンプレートに沿ったプロジェクトを一発で作成することができる。&lt;/p>
+&lt;p>具体例として、Apache Beam でプロジェクト管理ツールであるMavenを使って、&lt;code>mvn archetype:generate&lt;/code> コマンドを用いて、プロジェクト作成を行う場合、&lt;a href="https://beam.apache.org/get-started/quickstart-java/">公式サイト&lt;/a>では以下のように指定されている&lt;/p>
+&lt;pre>&lt;code>$ mvn archetype:generate \
+-DarchetypeGroupId=org.apache.beam \
+-DarchetypeArtifactId=beam-sdks-java-maven-archetypes-examples \
+-DarchetypeVersion=2.31.0 \
+-DgroupId=org.example \
+-DartifactId=word-count-beam \
+-Dversion=&amp;quot;0.1&amp;quot; \
+-Dpackage=org.apache.beam.examples \
+-DinteractiveMode=false
+&lt;/code>&lt;/pre>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>オプション名&lt;/th>
+&lt;th>意味&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>archetypeGroupId&lt;/td>
+&lt;td>&lt;code>archetype&lt;/code>の &lt;code>groupId&lt;/code> つまり、テンプレートを提供している作成元の識別子&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>archetypeArtifactId&lt;/td>
+&lt;td>archetypeのテンプレート。個々ではbeam-sdk に対応したプロジェクトテンプレートを作成している。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>archetypeVersion&lt;/td>
+&lt;td>テンプレートのバージョン&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>groupId&lt;/td>
+&lt;td>&lt;a href="https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7">Java のパッケージ名のルール&lt;/a>に則ったすべてのプロジェクトで唯一に識別可能な識別子。今回は &lt;code>org.example&lt;/code> が使われており、実際は識別子として機能指定なさそうな名前ではある。(実際昔のプロジェクトでは重複可能な単語が使われていることが多いが、その場合はmarven に登録する際に名前が衝突して登録ができないとのこと&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>artifactId&lt;/td>
+&lt;td>任意の名前が使用可能であり、&lt;code>jar&lt;/code> ファイルのバージョン抜きの名前を指定する。プロジェクトのパッケージ名と考えたら良さそう。これが作成されるロートディレクトリのフォルダ名&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>version&lt;/td>
+&lt;td>プロジェクトのバージョン情報&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>package&lt;/td>
+&lt;td>クラスやインターフェースの名前空間を指す。基本的にgroupidと同一だが、groupidを接頭辞にして、独自に付け足すこともある。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>interactiveMode&lt;/td>
+&lt;td>ウィザード形式の生成をするかしないか&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="reference">Reference&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://maven.apache.org/guides/mini/guide-naming-conventions.html">Guide to naming conventions on groupId, artifactId, and version&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://yossan.hatenablog.com/entry/2019/03/31/015458">maven プロジェクトの作成 archtypeArtifactId を指定する&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://java-code.jp/91">package宣言 | java-code&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>eコマースの検索と推薦についてのサーベイ論文である 'Challenges and research opportunities in eCommerce search and recommendations' を社内勉強会で発表した</title><link>https://shunyaueta.com/posts/2021-07-10/</link><pubDate>Sat, 10 Jul 2021 23:20:58 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-10/</guid><description>
 &lt;p>SIGIR eCom を探索していたら発見したサーベイ論文の &amp;ldquo;Challenges and research opportunities in eCommerce search and recommendations&amp;quot;が面白かったので、社内の勉強会で発表してきた。&lt;/p>
 &lt;p>和訳すると、「eコマースの検索と推薦における挑戦と研究トピック」で、eコマースにおける検索と推薦の課題が明瞭に書かれていて非常に面白い論文でした。
 自分もまだ検索エンジニアとして日が浅いので、手持ちのパターンを増やせるように日々勉強していますが、この論文のおかげでかなり解像度が上がった。&lt;/p>
@@ -5382,7 +5444,7 @@ Case : 初期の組織&lt;/strong>: 2–3 人の Data Engineer : DataScientist G
 &lt;li>&lt;strong>結論&lt;/strong>: Data Scientist, Data Engineer の役割が判明した今、組織の構造変革が必要&lt;/li>
 &lt;li>Data Engineer を雇って Data Scientist の代わりにデータパイプラインのシステム構築させれば皆幸せになる。&lt;/li>
 &lt;/ul></description></item><item><title>Google Colaboratory で Mecab-ipadic-Neologd を使うまで</title><link>https://shunyaueta.com/posts/2018-04-23/</link><pubDate>Mon, 23 Apr 2018 15:38:10 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-23/</guid><description>
-&lt;p>Colab 上で 日本語の NLP をしたいときありませんか？&lt;/p>
+&lt;p>Colabratory 上で 日本語に対する NLP をしたいときありませんか？&lt;/p>
 &lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-23/images/1.png" alt="image">&lt;/p>
 &lt;p>Success&lt;/p>
 &lt;h3 id="code">Code&lt;/h3>
@@ -5516,7 +5578,7 @@ Case : 初期の組織&lt;/strong>: 2–3 人の Data Engineer : DataScientist G
 &lt;li>日本語ニュース(TechCrunch Japan)を読むのを廃止、英語ニュースに切り替え&lt;/li>
 &lt;li>英会話学習を始める、リスニング力も強化する(Podcast)&lt;/li>
 &lt;li>対外発表の実績を積んでいく&lt;/li>
-&lt;/ul></description></item><item><title>2018 resolution</title><link>https://shunyaueta.com/posts/2018-01-29/</link><pubDate>Mon, 29 Jan 2018 16:08:35 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-29/</guid><description>
+&lt;/ul></description></item><item><title>2018年の抱負</title><link>https://shunyaueta.com/posts/2018-01-29/</link><pubDate>Mon, 29 Jan 2018 16:08:35 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-29/</guid><description>
 &lt;p>2018 年の抱負です。&lt;/p>
 &lt;h3 id="works">&lt;strong>Works&lt;/strong>&lt;/h3>
 &lt;p>機械学習エンジニアとして六本木で働く事になりました。機械学習エンジニアとしてスペシャリストになれるように周辺スキルを伸ばしていきます。&lt;/p>
