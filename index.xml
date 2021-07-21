@@ -4865,7 +4865,7 @@ Pytest provide &lt;code>setattr&lt;/code> function in &lt;code>monkeypatch&lt;/c
 &lt;p>残りの3割は、qwiklab を使って、Notebookを立ち上げたり、Google BQ叩いたり、Pandas, Google Cloud Vison APIなど各ML系のAPIを触るといった感じで、初心者過ぎて自分にはレベル感が少しあいませんでしたが、これも非エンジニアの方が機械学習ってこんな感じかと学ぶきっかけにはすごく良さそうです。&lt;/p>
 &lt;p>最初の7割の部分は、改めてデータ利活用を前提にしたプロジェクトを牽引していく際にここで見つめ直す形になってよかったです。&lt;/p>
 &lt;p>最近、Cousera での講義を始める機会がありAndrew Ng先生の機械学習コースぶりにCourseraをやっているが、勉強のペースメーカーが決められるのと講義内容の質も高いので自分にとってはすごく相性が良い。&lt;/p>
-&lt;p>技術書を読むときも同じペースで、実行できないかなと画策したい&lt;/p></description></item><item><title>Getting Started with Google Kubernetes Engine の講義を修了した</title><link>https://shunyaueta.com/posts/2020-04-12/</link><pubDate>Sun, 12 Apr 2020 00:59:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-12/</guid><description>
+&lt;p>技術書を読むときも同じペースで、実行できないかなと画策したい&lt;/p></description></item><item><title>Courseraで Getting Started with Google Kubernetes Engine の講義を修了した</title><link>https://shunyaueta.com/posts/2020-04-12/</link><pubDate>Sun, 12 Apr 2020 00:59:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-12/</guid><description>
 &lt;p>表題のとおりですが、&lt;a href="https://www.coursera.org/learn/google-kubernetes-engine">Getting Started with Google Kubernetes Engine&lt;/a> という Coursera の講義を終了しました&lt;/p>
 &lt;p>&lt;img src="https://shunyaueta.com/posts/2020-04-12/images/coursera.png" alt="coursera">&lt;/p>
 &lt;p>業務で k8s を本格的に使い始め、ちゃんと理解したいな~と思いこのコースを取りました。&lt;/p>
@@ -5451,22 +5451,22 @@ Case : 初期の組織&lt;/strong>: 2–3 人の Data Engineer : DataScientist G
 &lt;h4 id="google-colabratory">Google Colabratory&lt;/h4>
 &lt;p>&lt;a href="https://colab.research.google.com/drive/1YK8XFnfD29775lEYWhwz3wh4h8boR9iE">https://colab.research.google.com/drive/1YK8XFnfD29775lEYWhwz3wh4h8boR9iE&lt;/a>&lt;/p></description></item><item><title>eBayのAR測定機能を試してみた</title><link>https://shunyaueta.com/posts/2018-04-16/</link><pubDate>Mon, 16 Apr 2018 14:57:41 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-16/</guid><description>
 &lt;p>eBay が ARCore を使った商品の梱包測定機能を提供しているので試した&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16_ebay/images/1.png" alt="image">&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16_ebay/images/2.png" alt="image">&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16_ebay/images/3.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/1.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/2.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/3.png" alt="image">&lt;/p>
 &lt;p>梱包測定の仕組みとしては、ARCore(今回は Pixel2 XL で試した)で平面検出を行って、そこに eBay のダンボールオブジェクトを設置することで、ダンボールに入るかどうかを判定できる。&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16_ebay/images/4.png" alt="image">&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16_ebay/images/5.png" alt="image">&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16_ebay/images/6.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/4.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/5.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/6.png" alt="image">&lt;/p>
 &lt;p>下のダンボールアイコンを選択して、検出された平面をタップするとダンボールオブジェクトを設置できる&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16_ebay/images/7.png" alt="image">&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16_ebay/images/8.png" alt="image">&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16_ebay/images/9.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/7.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/8.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/9.png" alt="image">&lt;/p>
 &lt;p>今回例として用いた MBP の空箱だと ARCore が空箱自体を平面と認識してしまうという罠があるので、床で平面検知を終えてから商品を置くという裏技が必要&lt;/p>
 &lt;h3 id="まとめ">まとめ&lt;/h3>
 &lt;ul>
-&lt;li>ARCore を用いた AR 機能の UX としては 🙆&lt;/li>
-&lt;li>実用性は 🙅、平面検出しかしてないので、荷物に合わせて最適なダンボールを選ぶのは結局ユーザー。そこまで自動化してこそ革新的な機能になると思った&lt;/li>
+&lt;li>ARCore を用いた AR 機能をすぐ試せる組織体制なのは凄い。ハッカソンで作ったのかな?&lt;/li>
+&lt;li>実用性は 🙅、平面検出しかしてないので、荷物に合わせて最適なダンボールを選ぶのは結局ユーザー。そこまで自動化してこそ革新的な機能になるのではなかろうか&lt;/li>
 &lt;/ul>
 &lt;p>Related Post&lt;/p>
 &lt;p>&lt;a href="https://venturebeat.com/2018/03/19/ebay-uses-augmented-reality-to-help-sellers-find-the-right-box-for-their-product/">eBay uses augmented reality to help sellers find the right box for their product&lt;/a>&lt;/p></description></item><item><title>Google, Facebookが提供する機械学習基盤まとめ</title><link>https://shunyaueta.com/posts/2018-04-09/</link><pubDate>Mon, 09 Apr 2018 13:55:44 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-09/</guid><description>
@@ -6002,7 +6002,7 @@ kitamura さんの受け売りです&lt;/p>
 &lt;li>Corollary2 で ~ symmetrix matrix D−1S って言ってる割に行列の対称性は保証されてないので 3.1 全般が怪しい、辻褄があってない。&lt;/li>
 &lt;/ul></description></item><item><title>JupyterNotebookをリモートサーバー上で公開して、どこでも研究開発 &amp; 講義でJupyterhubを利用する</title><link>https://shunyaueta.com/posts/2017-12-22/</link><pubDate>Fri, 22 Dec 2017 17:48:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-22/</guid><description>
 &lt;p>JupyterNotebook をリモートサーバー上で公開して、どこでも研究開発 &amp;amp; 講義で Jupyterhub を利用するお話です。&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2017-12-23/images/1.gif" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2017-12-22/images/1.gif" alt="image">&lt;/p>
 &lt;p>GIF 画像は下記の記事で知った&lt;code>tqdm&lt;/code>というパッケージを使いたくなった衝動の成れの果てです。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="http://postd.cc/my-top-5-new-python-modules-of-2015/">私が選ぶ 2015 年の”新しい”Python モジュール トップ 5&lt;/a>
@@ -6315,7 +6315,7 @@ Appstore はだいぶ前に更新を停止しているみたいなので、ク�
 &lt;p>$24.99 しましたが、それ以上の価値があるソフトウェアです。&lt;br>
 2 週間の無料体験期間があるので是非お試し下さい。&lt;/p>
 &lt;p>下記のスクリーンショットのように、beamer も texpad で動くのは感動モノ。&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2017-10-08_texpad%E3%81%AE%E3%81%8A%E3%81%8B%E3%81%92%E3%81%A7latex%E4%BA%BA%E7%94%9F%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/images/2.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2017-10-08/images/2.png" alt="image">&lt;/p>
 &lt;p>beamer on texpad&lt;/p>
 &lt;p>日本語で TexPad を扱いたいときは下記のスクリプトを読み込んだら、bibtex のバグが治ります。&lt;/p></description></item><item><title>ミクシィにインターンしてきた</title><link>https://shunyaueta.com/posts/2013-12-23/</link><pubDate>Mon, 23 Dec 2013 17:04:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-12-23/</guid><description>
 &lt;h4 id="株式会社ミクシイに-2013892013920-までインターンしてきました">株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。&lt;/h4>

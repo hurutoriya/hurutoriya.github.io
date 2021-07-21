@@ -5,7 +5,7 @@ Secret Sourse ML Sutprise の部分が、アンチパターンや成功方法な
 残りの3割は、qwiklab を使って、Notebookを立ち上げたり、Google BQ叩いたり、Pandas, Google Cloud Vison APIなど各ML系のAPIを触るといった感じで、初心者過ぎて自分にはレベル感が少しあいませんでしたが、これも非エンジニアの方が機械学習ってこんな感じかと学ぶきっかけにはすごく良さそうです。
 最初の7割の部分は、改めてデータ利活用を前提にしたプロジェクトを牽引していく際にここで見つめ直す形になってよかったです。
 最近、Cousera での講義を始める機会がありAndrew Ng先生の機械学習コースぶりにCourseraをやっているが、勉強のペースメーカーが決められるのと講義内容の質も高いので自分にとってはすごく相性が良い。
-技術書を読むときも同じペースで、実行できないかなと画策したい</description></item><item><title>Getting Started with Google Kubernetes Engine の講義を修了した</title><link>https://shunyaueta.com/posts/2020-04-12/</link><pubDate>Sun, 12 Apr 2020 00:59:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-12/</guid><description>表題のとおりですが、Getting Started with Google Kubernetes Engine という Coursera の講義を終了しました
+技術書を読むときも同じペースで、実行できないかなと画策したい</description></item><item><title>Courseraで Getting Started with Google Kubernetes Engine の講義を修了した</title><link>https://shunyaueta.com/posts/2020-04-12/</link><pubDate>Sun, 12 Apr 2020 00:59:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-12/</guid><description>表題のとおりですが、Getting Started with Google Kubernetes Engine という Coursera の講義を終了しました
 業務で k8s を本格的に使い始め、ちゃんと理解したいな~と思いこのコースを取りました。
 半年前に Kubernetes完全ガイド impress top gearシリーズ をサラッと読んではいたのですが、やはり手を動かして学んでいないと実際に kubectl command など完全に忘れているし、スキルとして身についていない感半端なかったので、良い機会なのでHands-on が提供うされているCourseraを使って学んでみました。
 個人的にこの講義がめちゃくちゃオススメなのが、 GKE の講義なので Google が提供する qwiklab が使えます。 一時的に GCP プロジェクトが作成され、そこでハンズオンができるのですがこれが実際に手を動かしながら学ぶという形式にすごく良いのと k8s の構築もすべてクラウドでできえるので変に環境構築でハマることなく快適に学習に集中できました。
