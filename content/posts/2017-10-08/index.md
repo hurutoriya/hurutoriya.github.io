@@ -28,7 +28,7 @@ Appstore はだいぶ前に更新を停止しているみたいなので、ク�
 
 下記のスクリーンショットのように、beamer も texpad で動くのは感動モノ。
 
-![image](/posts/2017-10-08_texpadのおかげでlatex人生が変わりました/images/2.png)
+![image](/posts/2017-10-08/images/2.png)
 
 beamer on texpad
 

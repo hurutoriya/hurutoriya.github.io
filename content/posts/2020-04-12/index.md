@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Google Kubernetes Engine の講義を修了した"
+title: "Courseraで Getting Started with Google Kubernetes Engine の講義を修了した"
 date: 2020-04-12T00:59:23+09:00
 lang: ja
 tags:
