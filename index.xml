@@ -1,4 +1,53 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>子供が1歳児を迎えるまでに役に立ったもの</title><link>https://shunyaueta.com/posts/2021-07-23/</link><pubDate>Fri, 23 Jul 2021 22:22:56 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-23/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>システムの応答速度は本質的な価値提供であることを示す A/B テストの実例</title><link>https://shunyaueta.com/posts/2021-08-13/</link><pubDate>Fri, 13 Aug 2021 23:41:08 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-13/</guid><description>
+&lt;h2 id="内容">内容&lt;/h2>
+&lt;p>システム提供において、基本的に高速であればあるほど顧客は嬉しいものだが、実際のところ高速なシステムを提供して、どの程度の価値が発生するのかが気になったので、調べてみた。&lt;/p>
+&lt;h3 id="three-challenges-in-building-industrial-scale-recommender-systems---keynote-for-orsumrecsys20">Three Challenges in Building Industrial-Scale Recommender Systems&amp;rdquo; - Keynote for ORSUM@RecSys&amp;rsquo;20&lt;/h3>
+&lt;p>3rd Workshop on Online Recommender Systems and User Modeling でのkeynote session で発表された内容&lt;/p>
+&lt;p>講演者は &lt;a href="https://www.linkedin.com/in/sebastianschelter/?originalSubdomain=nl">Sebastian Schelter&lt;/a> さんという方で、アカデミックもインダストリーもどちらもバリバリにこなしている人だった。日本だとこういう経歴の人ってかなり珍しい気がするので、やはり層が厚い&lt;/p>
+&lt;p>ふと@hagino3000 さんのツイートが印象に残っていたので、記録のためにこちらに。1年くらい前のやり取りだけど、印象に残っていて今回この記事を書いたきっかけでもある。&lt;/p>
+&lt;blockquote>
+&lt;p>推薦システムのレイテンシが15msと32msで差が出るかA/B Testしたって。推薦結果は同じで片方はあえて遅らせたって事だよな、はじめて聴く実験だ。15msの方がrevenueが良かったとの事。
+&lt;a href="https://twitter.com/hagino3000/status/1309505751044354048">twitter&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>公開されている動画はこちら&lt;/p>
+&lt;p>&lt;a href="https://youtu.be/IUGtGZQ0JDw?t=2314">Three Challenges in Building Industrial-Scale Recommender Systems&amp;rdquo; - Keynote for ORSUM@RecSys&amp;rsquo;20&lt;/a>&lt;/p>
+&lt;p>19,20枚目のスライド&lt;/p>
+&lt;p>要約すると、&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2021-08-13/images/1.png" alt="response latency">&lt;/p>
+&lt;p>既存の研究では、検索エンジン上で人工的に応答速度を遅らせた際にネガティブな影響が発生した。&lt;/p>
+&lt;p>では、逆に応答速度を早めた場合どのような影響になるのだろうか?
+とてもおもしろい事例があるので是非紹介したい、&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2021-08-13/images/2.png" alt="Some emprical evidence">&lt;/p>
+&lt;p>オンプレのシステムからGoogle Cloud に移行するイベントを利用した実験を行った。マイグレーション時にサービングシステムの最適化などを行い、マイグレーション後のシステム性能向上した。この最適化により、モデルやシステム構成は全く同じだが、p90 の応答速度がオンプレのシステムでは 32ms だったものが、GCPでは15ms に向上した。
+これにより生じた差異を活用して、以下のA/B テストを行った。
+32ms をcontroll, 15ms をtest 群に分けてA.B テストを行ったところ、商品のオーダー、収益に関する指標が２% 向上した。&lt;/p>
+&lt;h2 id="google-による-speed-matters-実験">Google による Speed Matters 実験&lt;/h2>
+&lt;p>Sebastian さんが上記の講演で名前を出して言及はしなかったが、言及していた実験はGoogle の Speed Matters 実験だと思う。(こんな実験をわざわざするケースが他にもあったら教えてほしい)&lt;/p>
+&lt;p>その名の通り、速度は重要という実直なタイトルの実験である。&lt;/p>
+&lt;p>&lt;a href="https://ai.googleblog.com/2009/06/speed-matters.html">Spped Matters&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://services.google.com/fh/files/blogs/google_delayexp.pdf">1pのnews letter 形式でまとめられた実験結果&lt;/a>だが非常に面白い&lt;/p>
+&lt;p>実験内容としてはシンプルで、検索エンジンにリクエストを投げる際に、&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>Pre-header&lt;/code>: HTTP GET リクエストを受信後、すべてのサーバー処理を &lt;code>X mx&lt;/code> の期間一時停止&lt;/li>
+&lt;li>&lt;code>Post-header&lt;/code>: ヘッダー送信後サーバーの処理が完了する前に &lt;code>X mx&lt;/code>の期間すべてのサーバー処理を一時停止&lt;/li>
+&lt;li>&lt;code>Post-ads&lt;/code>: 広告を表示した後に &lt;code>X mx&lt;/code>の期間のみ一すべてのサーバー処理を一時停止&lt;/li>
+&lt;/ol>
+&lt;p>各アプローチの応答時間の停止時間で、日次の検索実行を行う人数がどれくらい減少したかがまとめられている。&lt;/p>
+&lt;p>どれも明確なインパクトが発生しているが、&lt;/p>
+&lt;p>わかりやすいものを抜き出すと、Post-headerでの時間を&lt;/p>
+&lt;ul>
+&lt;li>200ms 遅らせたものが 、6週間で毎日の平均検索実行者の数が &lt;code>-0.29%&lt;/code> 減少&lt;/li>
+&lt;li>400ms 遅らせたものが 、6週間で毎日の平均検索実行者の数が &lt;code>-0.59%&lt;/code> 減少&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2021-08-13/images/3.png" alt="Speed matter table result">&lt;/p>
+&lt;p>また、6週間の時間をかけて以下の結果が得られた。&lt;/p>
+&lt;p>グラフでは、 6週間 &lt;code>Post-header&lt;/code> の時間を、&lt;code>200ms&lt;/code>, &lt;code>400ms&lt;/code> 遅らせた際に検索実行回数がどのように変化するかが示されている。&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2021-08-13/images/4.png" alt="Speed matter search freq result">&lt;/p>
+&lt;p>検索エンジンの応答速度が遅くなることで、遅延される時間が長いものほど、その遅延の影響により、検索を行う顧客は、徐々に検索を行わなくなっていった。&lt;/p>
+&lt;p>&lt;code>-0.5%&lt;/code> と聞くとそんなに大きな数字ではなく感じるが、Google 検索の規模での &lt;code>-0.5%&lt;/code> は決して小さいものではない。&lt;/p>
+&lt;h2 id="結論">結論&lt;/h2>
+&lt;p>速さには価値がある。それをちゃんと定量的に示した人たちがいるのは偉大。&lt;/p>
+&lt;p>こういうみんなが直感的にそうだろうと感じてはいるものの、じゃあ実際どれくらい良いのという問いにたいして、答えれる実験がされているのが素晴らしい。&lt;/p></description></item><item><title>子供が1歳児を迎えるまでに役に立ったもの</title><link>https://shunyaueta.com/posts/2021-07-23/</link><pubDate>Fri, 23 Jul 2021 22:22:56 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-23/</guid><description>
 &lt;p>去年の秋頃に子供を授かり、色々と役に立った情報や製品、サービスなどがあったので備忘録がてら残しておく。
 ベビーウォール、プレイマット、服や抱っこひもなど鉄板系で買えば良いものなどは記す必要が無いのであえて書いてない。&lt;/p>
 &lt;h2 id="書籍情報源">書籍・情報源&lt;/h2>
