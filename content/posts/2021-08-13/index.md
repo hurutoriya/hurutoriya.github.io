@@ -16,6 +16,11 @@ tags:
 - 2021/08/14 追記
     - [A/Bテスト実践ガイド　真のデータドリブンへ至る信用できる実験とは](https://amzn.to/3xSo63S) の書籍で同様な事例が紹介されているとのこと。情報提供ありがとうございます。
 
+>実務でA/Bテストに向き合った人間であれば必ず一度は考えたことのあるトピックについて、アメリカのテックカンパニー（Airbnb, Google, LinkedInなど）勤務の著者らが国際会議で発表された研究もちゃんと引用して見解を述べており説得力がある。
+従って、現時点における最高レベルの意思決定をデータ（A/Bテスト）に基づいて行いたいと思うなら、一度は目を通しておくべきであり関係者必携だと思う。
+※個人的には”Webサービスのレイテンシーと利益の関係（５章や”多くのスピード問題”の節）”がお気に入りで、サイトのレイテンシー改善がいかに収益に貢献し得るか、つまりCodeの実行速度というエンジニアのアウトプットがダイレクトに収益に貢献できるか？をデータに基づいてきちんと測っているのが印象的で興味深かった内容でした。
+[Amazon review](https://www.amazon.co.jp/gp/customer-reviews/R6MJR7RBVU87N/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B08Z3TPVZG)
+
 ### Three Challenges in Building Industrial-Scale Recommender Systems" - Keynote for ORSUM@RecSys'20
 
 3rd Workshop on Online Recommender Systems and User Modeling でのkeynote session で発表された内容
