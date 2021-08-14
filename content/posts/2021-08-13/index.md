@@ -13,6 +13,9 @@ tags:
 
 システム提供において、基本的に高速であればあるほど顧客は嬉しいものだが、実際のところ高速なシステムを提供して、どの程度の価値が発生するのかが気になったので、調べてみた。
 
+- 2021/08/14 追記
+    - [A/Bテスト実践ガイド　真のデータドリブンへ至る信用できる実験とは](https://amzn.to/3xSo63S) の書籍で同様な事例が紹介されているとのこと。情報提供ありがとうございます。
+
 ### Three Challenges in Building Industrial-Scale Recommender Systems" - Keynote for ORSUM@RecSys'20
 
 3rd Workshop on Online Recommender Systems and User Modeling でのkeynote session で発表された内容
