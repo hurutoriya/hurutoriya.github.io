@@ -1,6 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>システムの応答速度は本質的な価値提供であることを示す A/B テストの実例</title><link>https://shunyaueta.com/posts/2021-08-13/</link><pubDate>Fri, 13 Aug 2021 23:41:08 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-13/</guid><description>
 &lt;h2 id="内容">内容&lt;/h2>
 &lt;p>システム提供において、基本的に高速であればあるほど顧客は嬉しいものだが、実際のところ高速なシステムを提供して、どの程度の価値が発生するのかが気になったので、調べてみた。&lt;/p>
+&lt;ul>
+&lt;li>2021/08/14 追記
+&lt;ul>
+&lt;li>&lt;a href="https://amzn.to/3xSo63S">A/Bテスト実践ガイド　真のデータドリブンへ至る信用できる実験とは&lt;/a> の書籍で同様な事例が紹介されているとのこと。情報提供ありがとうございます。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;h3 id="three-challenges-in-building-industrial-scale-recommender-systems---keynote-for-orsumrecsys20">Three Challenges in Building Industrial-Scale Recommender Systems&amp;rdquo; - Keynote for ORSUM@RecSys&amp;rsquo;20&lt;/h3>
 &lt;p>3rd Workshop on Online Recommender Systems and User Modeling でのkeynote session で発表された内容&lt;/p>
 &lt;p>講演者は &lt;a href="https://www.linkedin.com/in/sebastianschelter/?originalSubdomain=nl">Sebastian Schelter&lt;/a> さんという方で、アカデミックもインダストリーもどちらもバリバリにこなしている人だった。日本だとこういう経歴の人ってかなり珍しい気がするので、やはり層が厚い&lt;/p>
