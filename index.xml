@@ -6,15 +6,15 @@
 &lt;/blockquote>
 &lt;p>gRPC のリフレクション機能については evans 作者の ktr0731さんが解説している記事が非常にわかりやすいです。&lt;/p>
 &lt;p>&lt;a href="https://syfm.hatenablog.com/entry/2020/06/23/235952">gRPC リフレクションはなにをしているか？&lt;/a>&lt;/p>
-&lt;p>ローカルの5000 番のポートをリモートサーバの5000番ポートにフォワードしているとします。
+&lt;p>ローカルの5000 番のポートをリモートサーバの5000番ポートにフォワード (port-forward)しているとします。
 例えば、kubectl だと以下のような実行コマンドになります。&lt;/p>
-&lt;p>[Forward a local port to a port on the Pod](Forward a local port to a port on the Pod )&lt;/p>
+&lt;p>&lt;a href="https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/#forward-a-local-port-to-a-port-on-the-pod">Forward a local port to a port on the Pod&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">kubectl port-forward pods/mongo-75f59d57f4-4nd6q 5000:5000
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">kubectl port-forward pods/hoge-asas32s 5000:5000
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>この際に 対象となる&lt;code>localhost:5000&lt;/code> に対して、&lt;code>--host&lt;/code>, &lt;code>--port&lt;/code> オプションで指定してやれば evans のREPLモードが起動します。&lt;/p>

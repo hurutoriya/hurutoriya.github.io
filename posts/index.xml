@@ -3,9 +3,10 @@ evans は対象のサーバーのgRPC のリフレクション機能が起動さ
 If your server is enabling gRPC reflection, you can launch Evans with only -r (&amp;ndash;reflection) option.
 gRPC のリフレクション機能については evans 作者の ktr0731さんが解説している記事が非常にわかりやすいです。
 gRPC リフレクションはなにをしているか？
-ローカルの5000 番のポートをリモートサーバの5000番ポートにフォワードしているとします。 例えば、kubectl だと以下のような実行コマンドになります。
-[Forward a local port to a port on the Pod](Forward a local port to a port on the Pod )
-1 kubectl port-forward pods/mongo-75f59d57f4-4nd6q 5000:5000 この際に 対象となるlocalhost:5000 に対して、--host, --port オプションで指定してやれば evans のREPLモードが起動します。</description></item><item><title>システムの応答速度は本質的な価値提供であることを示す A/B テストの実例</title><link>https://shunyaueta.com/posts/2021-08-13/</link><pubDate>Fri, 13 Aug 2021 23:41:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-08-13/</guid><description>内容 システム提供において、基本的に高速であればあるほど顧客は嬉しいものだが、実際のところ高速なシステムを提供して、どの程度の価値が発生するのかが気になったので、調べてみた。
+ローカルの5000 番のポートをリモートサーバの5000番ポートにフォワード (port-forward)しているとします。 例えば、kubectl だと以下のような実行コマンドになります。
+Forward a local port to a port on the Pod
+1 kubectl port-forward pods/hoge-asas32s 5000:5000 この際に 対象となるlocalhost:5000 に対して、--host, --port オプションで指定してやれば evans のREPLモードが起動します。
+1 2 3 4 5 6 7 8 9 10 11 &amp;gt; evans -r --host localhost --port 5000 ______ | ____| | |__ __ __ __ _ _ __ ___ | __| \ \ / / / _.</description></item><item><title>システムの応答速度は本質的な価値提供であることを示す A/B テストの実例</title><link>https://shunyaueta.com/posts/2021-08-13/</link><pubDate>Fri, 13 Aug 2021 23:41:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-08-13/</guid><description>内容 システム提供において、基本的に高速であればあるほど顧客は嬉しいものだが、実際のところ高速なシステムを提供して、どの程度の価値が発生するのかが気になったので、調べてみた。
 2021/08/14 追記 A/Bテスト実践ガイド　真のデータドリブンへ至る信用できる実験とは の書籍で同様な事例が紹介されているとのこと。情報提供ありがとうございます。 実務でA/Bテストに向き合った人間であれば必ず一度は考えたことのあるトピックについて、アメリカのテックカンパニー（Airbnb, Google, LinkedInなど）勤務の著者らが国際会議で発表された研究もちゃんと引用して見解を述べており説得力がある。 従って、現時点における最高レベルの意思決定をデータ（A/Bテスト）に基づいて行いたいと思うなら、一度は目を通しておくべきであり関係者必携だと思う。 ※個人的には”Webサービスのレイテンシーと利益の関係（５章や”多くのスピード問題”の節）”がお気に入りで、サイトのレイテンシー改善がいかに収益に貢献し得るか、つまりCodeの実行速度というエンジニアのアウトプットがダイレクトに収益に貢献できるか？をデータに基づいてきちんと測っているのが印象的で興味深かった内容でした。 Amazon review
 Three Challenges in Building Industrial-Scale Recommender Systems&amp;rdquo; - Keynote for ORSUM@RecSys&amp;rsquo;20 3rd Workshop on Online Recommender Systems and User Modeling でのkeynote session で発表された内容
 講演者は Sebastian Schelter さんという方で、アカデミックもインダストリーもどちらもバリバリにこなしている人だった。日本だとこういう経歴の人ってかなり珍しい気がするので、やはり層が厚い
