@@ -20,13 +20,13 @@ gRPC のリフレクション機能については evans 作者の ktr0731さん
 [gRPC リフレクションはなにをしているか？](https://syfm.hatenablog.com/entry/2020/06/23/235952)
 
 
-ローカルの5000 番のポートをリモートサーバの5000番ポートにフォワードしているとします。
+ローカルの5000 番のポートをリモートサーバの5000番ポートにフォワード (port-forward)しているとします。
 例えば、kubectl だと以下のような実行コマンドになります。
 
-[Forward a local port to a port on the Pod](Forward a local port to a port on the Pod ) 
+[Forward a local port to a port on the Pod](https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/#forward-a-local-port-to-a-port-on-the-pod) 
 
 ```bash
-kubectl port-forward pods/mongo-75f59d57f4-4nd6q 5000:5000
+kubectl port-forward pods/hoge-asas32s 5000:5000
 ```
 
 この際に 対象となる`localhost:5000` に対して、`--host`, `--port` オプションで指定してやれば evans のREPLモードが起動します。
