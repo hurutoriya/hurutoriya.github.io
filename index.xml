@@ -1,4 +1,49 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>システムの応答速度は本質的な価値提供であることを示す A/B テストの実例</title><link>https://shunyaueta.com/posts/2021-08-13/</link><pubDate>Fri, 13 Aug 2021 23:41:08 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-13/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>gRPC client の evans を使って、portforward 先のリモートサーバーに対して REPL を起動する方法</title><link>https://shunyaueta.com/posts/2021-08-19/</link><pubDate>Thu, 19 Aug 2021 16:51:05 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-19/</guid><description>
+&lt;p>&lt;a href="https://github.com/ktr0731/evans">evans&lt;/a>&lt;/p>
+&lt;p>evans は対象のサーバーのgRPC のリフレクション機能が起動されていれば、proto ファイルを参照せずに便利な [REPL mode](gRPC のリフレクション機能) を使用できます。&lt;/p>
+&lt;blockquote>
+&lt;p>If your server is enabling gRPC reflection, you can launch Evans with only -r (&amp;ndash;reflection) option.&lt;/p>
+&lt;/blockquote>
+&lt;p>gRPC のリフレクション機能については evans 作者の ktr0731さんが解説している記事が非常にわかりやすいです。&lt;/p>
+&lt;p>&lt;a href="https://syfm.hatenablog.com/entry/2020/06/23/235952">gRPC リフレクションはなにをしているか？&lt;/a>&lt;/p>
+&lt;p>ローカルの5000 番のポートをリモートサーバの5000番ポートにフォワードしているとします。
+例えば、kubectl だと以下のような実行コマンドになります。&lt;/p>
+&lt;p>[Forward a local port to a port on the Pod](Forward a local port to a port on the Pod )&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">kubectl port-forward pods/mongo-75f59d57f4-4nd6q 5000:5000
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>この際に 対象となる&lt;code>localhost:5000&lt;/code> に対して、&lt;code>--host&lt;/code>, &lt;code>--port&lt;/code> オプションで指定してやれば evans のREPLモードが起動します。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&amp;gt; evans -r --host localhost --port &lt;span class="m">5000&lt;/span>
+______
+&lt;span class="p">|&lt;/span> ____&lt;span class="p">|&lt;/span>
+&lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span>__ __ __ __ _ _ __ ___
+&lt;span class="p">|&lt;/span> __&lt;span class="p">|&lt;/span> &lt;span class="se">\ \ &lt;/span>/ / / _. &lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="err">&amp;#39;&lt;/span>_ &lt;span class="se">\ &lt;/span> / __&lt;span class="p">|&lt;/span>
+&lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span>____ &lt;span class="se">\ &lt;/span>V / &lt;span class="p">|&lt;/span> &lt;span class="o">(&lt;/span>_&lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\_&lt;/span>_ &lt;span class="se">\
+&lt;/span>&lt;span class="se">&lt;/span> &lt;span class="p">|&lt;/span>______&lt;span class="p">|&lt;/span> &lt;span class="se">\_&lt;/span>/ &lt;span class="se">\_&lt;/span>_,_&lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span>_&lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span>_&lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span>___/
+more expressive universal gRPC client
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>evans で快適な gRPC ライフを楽しみましょう。&lt;/p></description></item><item><title>システムの応答速度は本質的な価値提供であることを示す A/B テストの実例</title><link>https://shunyaueta.com/posts/2021-08-13/</link><pubDate>Fri, 13 Aug 2021 23:41:08 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-13/</guid><description>
 &lt;h2 id="内容">内容&lt;/h2>
 &lt;p>システム提供において、基本的に高速であればあるほど顧客は嬉しいものだが、実際のところ高速なシステムを提供して、どの程度の価値が発生するのかが気になったので、調べてみた。&lt;/p>
 &lt;ul>
