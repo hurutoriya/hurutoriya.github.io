@@ -1,11 +1,10 @@
 ---
-title: "gRPC client の evans を使って、portforward 先のリモートサーバーに対して REPL を起動する方法"
+title: "gRPC client evans で portforward 先のリモートサーバーにリクエストを行う"
 date: 2021-08-19T16:51:05+09:00
 lang: ja
 author: Shunya Ueta
 tags:
 - grpc
-- dev
 ---
 
 
@@ -29,7 +28,11 @@ gRPC のリフレクション機能については evans 作者の ktr0731さん
 kubectl port-forward pods/hoge-asas32s 5000:5000
 ```
 
+そして、ポートフォワードのシェルは保持した上で、別にシェルを起動します。
+
 この際に 対象となる`localhost:5000` に対して、`--host`, `--port` オプションで指定してやれば evans のREPLモードが起動します。
+
+## REPL
 
 ```bash
 > evans  -r --host localhost --port 5000
@@ -43,6 +46,15 @@ kubectl port-forward pods/hoge-asas32s 5000:5000
 
  more expressive universal gRPC client
 
+```
+
+## CLI
+
+CLI は cli というサブコマンドを追記するだけで起動できます。
+シェル変数などを使って実行したい場合は、こちらが便利です。
+
+```bash
+evans  -r --host localhost --port 5000 cli list
 ```
 
 evans で快適な gRPC ライフを楽しみましょう。
