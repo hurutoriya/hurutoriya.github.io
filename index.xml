@@ -7,7 +7,7 @@
 &lt;p>gRPC のリフレクション機能については evans 作者の ktr0731さんが解説している記事が非常にわかりやすいです。&lt;/p>
 &lt;p>&lt;a href="https://syfm.hatenablog.com/entry/2020/06/23/235952">gRPC リフレクションはなにをしているか？&lt;/a>&lt;/p>
 &lt;p>ローカルの5000 番のポートをリモートサーバの5000番ポートにフォワード (port-forward)しているとします。
-例えば、kubectl だと以下のような実行コマンドになります。&lt;/p>
+例えば、&lt;code>kubectl&lt;/code> だと以下のような実行コマンドになります。&lt;/p>
 &lt;p>&lt;a href="https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/#forward-a-local-port-to-a-port-on-the-pod">Forward a local port to a port on the Pod&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
