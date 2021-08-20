@@ -21,7 +21,7 @@ gRPC のリフレクション機能については evans 作者の ktr0731さん
 
 
 ローカルの5000 番のポートをリモートサーバの5000番ポートにフォワード (port-forward)しているとします。
-例えば、kubectl だと以下のような実行コマンドになります。
+例えば、`kubectl` だと以下のような実行コマンドになります。
 
 [Forward a local port to a port on the Pod](https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/#forward-a-local-port-to-a-port-on-the-pod) 
 
