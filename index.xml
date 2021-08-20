@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>gRPC client の evans を使って、portforward 先のリモートサーバーに対して REPL を起動する方法</title><link>https://shunyaueta.com/posts/2021-08-19/</link><pubDate>Thu, 19 Aug 2021 16:51:05 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-19/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>gRPC client evans で portforward 先のリモートサーバーにリクエストを行う</title><link>https://shunyaueta.com/posts/2021-08-19/</link><pubDate>Thu, 19 Aug 2021 16:51:05 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-19/</guid><description>
 &lt;p>&lt;a href="https://github.com/ktr0731/evans">evans&lt;/a>&lt;/p>
 &lt;p>evans は対象のサーバーのgRPC のリフレクション機能が起動されていれば、proto ファイルを参照せずに便利な [REPL mode](gRPC のリフレクション機能) を使用できます。&lt;/p>
 &lt;blockquote>
@@ -17,7 +17,9 @@
 &lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">kubectl port-forward pods/hoge-asas32s 5000:5000
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>この際に 対象となる&lt;code>localhost:5000&lt;/code> に対して、&lt;code>--host&lt;/code>, &lt;code>--port&lt;/code> オプションで指定してやれば evans のREPLモードが起動します。&lt;/p>
+&lt;/div>&lt;p>そして、ポートフォワードのシェルは保持した上で、別にシェルを起動します。&lt;/p>
+&lt;p>この際に 対象となる&lt;code>localhost:5000&lt;/code> に対して、&lt;code>--host&lt;/code>, &lt;code>--port&lt;/code> オプションで指定してやれば evans のREPLモードが起動します。&lt;/p>
+&lt;h2 id="repl">REPL&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -41,6 +43,17 @@ ______
 &lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span>____ &lt;span class="se">\ &lt;/span>V / &lt;span class="p">|&lt;/span> &lt;span class="o">(&lt;/span>_&lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="se">\_&lt;/span>_ &lt;span class="se">\
 &lt;/span>&lt;span class="se">&lt;/span> &lt;span class="p">|&lt;/span>______&lt;span class="p">|&lt;/span> &lt;span class="se">\_&lt;/span>/ &lt;span class="se">\_&lt;/span>_,_&lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span>_&lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span>_&lt;span class="p">|&lt;/span> &lt;span class="p">|&lt;/span>___/
 more expressive universal gRPC client
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="cli">CLI&lt;/h2>
+&lt;p>CLI は cli というサブコマンドを追記するだけで起動できます。
+シェル変数などを使って実行したい場合は、こちらが便利です。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">evans -r --host localhost --port &lt;span class="m">5000&lt;/span> cli list
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>evans で快適な gRPC ライフを楽しみましょう。&lt;/p></description></item><item><title>システムの応答速度は本質的な価値提供であることを示す A/B テストの実例</title><link>https://shunyaueta.com/posts/2021-08-13/</link><pubDate>Fri, 13 Aug 2021 23:41:08 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-13/</guid><description>
