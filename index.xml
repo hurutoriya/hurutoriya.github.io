@@ -1,4 +1,21 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>gRPC client evans で portforward 先のリモートサーバーにリクエストを行う</title><link>https://shunyaueta.com/posts/2021-08-19/</link><pubDate>Thu, 19 Aug 2021 16:51:05 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-19/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>gcloud commands で PubSub に jsonファイルをメッセージとして公開 (Pusblish) する</title><link>https://shunyaueta.com/posts/2021-09-07/</link><pubDate>Tue, 07 Sep 2021 12:22:16 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-07/</guid><description>
+&lt;p>gcloud commands で PubSub に jsonファイルをメッセージとして公開 (Pusblish) する&lt;/p>
+&lt;p>&lt;code>jq&lt;/code> コマンドが必要になるが、一番簡単に実現できるのは&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">$ gcloud pubsub topics publish &lt;span class="si">${&lt;/span>&lt;span class="nv">PUBSUB_TOPIC_NAME&lt;/span>&lt;span class="si">}&lt;/span> --message &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>cat &lt;span class="si">${&lt;/span>&lt;span class="nv">FILE_NAME&lt;/span>&lt;span class="si">}&lt;/span> &lt;span class="p">|&lt;/span> jq -c&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>jq&lt;/code> コマンドの &lt;code>-c&lt;/code> オプションは compact-output を意味している。デフォルトだと pretty-prints になってしまう。
+それを避けるために&lt;code>-c&lt;/code>オプションを使用している。&lt;/p>
+&lt;h2 id="ref">ref&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://cloud.google.com/pubsub/docs/publisher">Publishing messages to topics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/55513746/read-a-txt-file-json-data-to-publish-the-messages-in-cloud-pub-sub">Read a txt file JSON data to publish the messages in Cloud Pub Sub&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>gRPC client evans で portforward 先のリモートサーバーにリクエストを行う</title><link>https://shunyaueta.com/posts/2021-08-19/</link><pubDate>Thu, 19 Aug 2021 16:51:05 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-19/</guid><description>
 &lt;p>&lt;a href="https://github.com/ktr0731/evans">evans&lt;/a>&lt;/p>
 &lt;p>evans は対象のサーバーのgRPC のリフレクション機能が起動されていれば、proto ファイルを参照せずに便利な [REPL mode](gRPC のリフレクション機能) を使用できます。&lt;/p>
 &lt;blockquote>
