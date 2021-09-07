@@ -5,7 +5,7 @@ lang: en
 author: Shunya Ueta
 tags:
 - python
-- streanlit
+- streamlit
 ---
 
 ## Motivation
