@@ -24,7 +24,7 @@ WordファイルからMarkdownファイルへの完全変換って難しい。�
 &lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="k">for&lt;/span> f in *.docx&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span> pandoc -s &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$f&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> --wrap&lt;span class="o">=&lt;/span>none -t gfm -o &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">.md&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">done&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;code>&amp;quot;${f}.md&amp;quot;&lt;/code> の部分を &lt;code>&amp;quot;../../docs/${f}.md&amp;quot;&lt;/code> のような形で変えてやれば所定のディレクトリへ変換されたMarkdownファイル群を設置される。&lt;/p>
+&lt;/div>&lt;p>&lt;code>&amp;quot;${f}.md&amp;quot;&lt;/code> の部分を &lt;code>&amp;quot;../../docs/${f}.md&amp;quot;&lt;/code> のような形で修正してやれば、所定のディレクトリへ変換されたMarkdownファイルが生成される。&lt;/p>
 &lt;h2 id="reference">Reference&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://pandoc.org/faqs.html#how-can-i-convert-a-whole-directory-of-files-from-markdown-to-rtf">How can I convert a whole directory of files from Markdown to RTF?&lt;/a>&lt;/li>

@@ -2,5 +2,5 @@
 単一Wordファイルの変換コマンド 単一の変換である場合は、@tomo-makes さんのWordファイル(.docx)をMarkdownへ変換する を参考に実行すると良いと思います。
 自分は特に困らなかったので、despan の処理は省いた形にしました。 また、--extract-media をオンにして指定しても Wordファイル内の画像を上手く抜き出せなかったです。 WordファイルからMarkdownファイルへの完全変換って難しい。まさに餅をもち米に戻す行為に近い&amp;hellip;
 1 pandoc -s {input}.docx --wrap=none -t gfm -o {output}.md 複数Wordファイルの変換コマンド ワンライナーのシェルスクリプトを組んで実行する。 実行時には、変換元のWordファイルが配置されているディレクトリで実行する。
-1 for f in *.docx; do pandoc -s &amp;#34;$f&amp;#34; --wrap=none -t gfm -o &amp;#34;${f}.md&amp;#34;; done &amp;quot;${f}.md&amp;quot; の部分を &amp;quot;../../docs/${f}.md&amp;quot; のような形で変えてやれば所定のディレクトリへ変換されたMarkdownファイル群を設置される。
+1 for f in *.docx; do pandoc -s &amp;#34;$f&amp;#34; --wrap=none -t gfm -o &amp;#34;${f}.md&amp;#34;; done &amp;quot;${f}.md&amp;quot; の部分を &amp;quot;../../docs/${f}.md&amp;quot; のような形で修正してやれば、所定のディレクトリへ変換されたMarkdownファイルが生成される。
 Reference How can I convert a whole directory of files from Markdown to RTF?</description></item></channel></rss>
