@@ -30,7 +30,7 @@ pandoc -s {input}.docx --wrap=none -t gfm  -o {output}.md
 for f in *.docx; do pandoc -s "$f" --wrap=none -t gfm -o "${f}.md"; done
 ```
 
-`"${f}.md"` の部分を `"../../docs/${f}.md"` のような形で変えてやれば所定のディレクトリへ変換されたMarkdownファイル群を設置される。
+`"${f}.md"` の部分を `"../../docs/${f}.md"` のような形で修正してやれば、所定のディレクトリへ変換されたMarkdownファイルが生成される。
 
 ## Reference
 
