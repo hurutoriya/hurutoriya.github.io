@@ -1,4 +1,12 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Pandoc で特定のディレクトリ直下にある複数のWordをMarkdown形式に一括変換する</title><link>https://shunyaueta.com/posts/2021-09-19/</link><pubDate>Sun, 19 Sep 2021 23:52:45 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-19/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Pandoc を使って抽出できなかったWord内部の画像をGoogle Driveを使って抽出する</title><link>https://shunyaueta.com/posts/2021-09-27/</link><pubDate>Mon, 27 Sep 2021 00:18:26 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-27/</guid><description>
+&lt;p>&lt;a href="https://shunyaueta.com/posts/2021-09-19/">先日の記事&lt;/a> では、pandoc の&lt;code>--extract-media&lt;/code> オプションをオンにしてもword内部の画像を抽出することができなかった。&lt;/p>
+&lt;p>だが、Google Driveを使うことでWord 内部の画像を抽出することができたのでここに記しておく。&lt;/p>
+&lt;ol>
+&lt;li>対象の WordファイルをGoogle Driveにアップロードする&lt;/li>
+&lt;li>そのファイルをGoogle Docs で開く&lt;/li>
+&lt;li>&lt;code>File → Download → Web Page (.html, zippted)&lt;/code> でウェブページとしてzipファイルをダウンロードする&lt;/li>
+&lt;li>zipファイルを解凍後、その中にある&lt;code>images&lt;/code> フォルダにWord内部の画像が格納されている&lt;/li>
+&lt;/ol></description></item><item><title>Pandoc で特定のディレクトリ直下にある複数のWordをMarkdown形式に一括変換する</title><link>https://shunyaueta.com/posts/2021-09-19/</link><pubDate>Sun, 19 Sep 2021 23:52:45 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-19/</guid><description>
 &lt;p>表題の通り、&lt;a href="https://pandoc.org/MANUAL.html">Pandoc&lt;/a> を使って、特定ディレクトリ配下にある複数の Wordファイル(&lt;code>*.docx&lt;/code>) を Markdownファイル(&lt;code>*.md&lt;/code>) へ一括変換したい。&lt;/p>
 &lt;h2 id="単一wordファイルの変換コマンド">単一Wordファイルの変換コマンド&lt;/h2>
 &lt;p>単一の変換である場合は、@tomo-makes さんの&lt;a href="https://gist.github.com/tomo-makes/b03e910ea7095bbe2c98de5be828dfba">Wordファイル(.docx)をMarkdownへ変換する&lt;/a> を参考に実行すると良いと思います。&lt;/p>
