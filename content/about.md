@@ -66,52 +66,12 @@ Shunya UETA who is a working as Software Engineer at Mercari, inc. Opinions are 
 - [データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～](https://johokiko.co.jp/publishing/BC200701.php)
   - `マルチモーダルによる規約違反出品検知への応用と運用について` を共著にて執筆
 
-#### Domestic Conferenc
-
-- 2019.11.20 第22回情報論的学習理論ワークショップ `HSICに基づく特徴クラスタリングによるマルチモーダル特徴融合探索の効率化`
-  - `上田隼也`; 吉川友也; 紫藤佑介 (株式会社メルカリ; 千葉工業大学; 株式会社メルカリ)
-- 2016.03.20 パターン認識・メディア理解研究会(PRMU) [link](http://www.ieice.org/ken/program/index.php?tgs_regid=9a7e703943e8fb9c067017e6f0f0b4062afeda7d4739e7050b48a25961229a2a&lang=)
-  - 時系列情報を考慮したグラフカットによる群衆解析
-  - `上田 隼也（筑波大学）`，大西正輝（産総研），櫻井 鉄也（筑波大学）
-- 2015.12.11 日本応用数理学会「行列・固有値問題の解法とその応用」研究部会 第 20 回研究会 [link](http://na.cs.tsukuba.ac.jp/mepa/?page_id=1024)
-  - 周回積分型固有値解法を用いた半教師付きスペクトラルクラスタリングと画像領域分割への適用
-  - `上田 隼也（筑波大学）`，櫻井 鉄也，保國 惠一（筑波大学）
-- 2015.11.25-28 第 18 回情報論的学習理論ワークショップ, つくば国際会議場 [Link](http://ibisml.org/ibis2015/poster1/)
-  - Semi-supervised learning using a contour integral-based eigensolver for image segmentation
-- 2015.11.01 第 10 回協定講座シンポジウム「計算科学 次代を担う若手の集い 2015」
-  - `上田隼也（筑波大学）`，櫻井 鉄也，保國 惠一(筑波大学)
-- 2015.08.23-09.04 Machine Learning Summer School 2015 Kyoto [Link](http://www.iip.ist.i.kyoto-u.ac.jp/mlss15/doku.php?id=mlss)
-  - 制約付き固有値問題を用いた半教師付きスペクトラルクラスタリングによる画像領域分割
-
-#### 国内会議公演 (DOMESTIC CONFERENCE POSTER PRESENTATION co-author)
-
-- Kaori Abe*, Teppei Suzuki*, Shunya Ueta, Akio Nakamura, Yutaka Satoh, Hirokatsu Kataoka, "Dynamic Fashion Cultures", in MIRU 2017, Aug. 2017. (\* indicates equal contribution) **Acceptance rate (oral): 28.0%, Best Student Award** [Link](http://cvim.ipsj.or.jp/MIRU2017/index.php?id=technical-program),[pdf](https://arxiv.org/abs/1703.07920)
-- 片岡裕雄, 白壁奏馬, 賀雲, 阿部香織, `上田隼也`, 鈴木哲平, 松崎優太, 岡安寿繁, 矢部俊之, 金原慶拓, 八柳洸哉, 丸山慎也, 高澤良輔, 淵田正隆, 森田慎一郎, "これからのコンピュータビジョン技術 - cvpaper.challenge in PRMU Grand Challenge 2016 ", PRMU グランドチャレンジ, 2016.12.16 [Link](http://www.ieice.org/ken/paper/20161216pbnj/), [slide](http://www.slideshare.net/cvpaperchallenge/cvpaperchallenge-in-prmu-grand-challenge-2016-prmu-201612)
-
 ## Skills
 
-- Python(TensorFlow, Numpy, Scikit-leran, Django)
-- Docker, k8s
+- Python(TensorFlow, Numpy, scikit-learn, Django)
+- Docker
 - MATLAB
 - Ruby(Rails)
-
-## Award
-
-### Public
-
-- MIRU2017: MIRU 学生優秀賞 「Dynamic Fashion Cultures」 [Link](http://cvim.ipsj.or.jp/MIRU2017/index.php?id=awards)
-  - [Certificate](https://photos.app.goo.gl/kC7D8UD6O2uvjmbt2)
-- プロトタイピングラボ 2013 第一回準優勝 [link](https://klabint.wordpress.com/2013/08/22/ptlab2013-1-day3-2/)
-  - 3 日間でテーマに沿ったアプリを企画し，実際にプロトタイプまで作成してプレゼンをするイベント
-  - **準優勝 賞金 ¥100,000 獲得**
-  - [Certificate](https://photos.app.goo.gl/1W9Jgp2O7PWuSdVr1)
-
-### Domestic
-
-- 筑波大学情報学群 組み込み技術キャンパス OJT 後期課題
-  - アクセル社製 AG4 LSI を用いたゲームの開発
-  - **最優秀賞**
-
 ## Misc
 
 - 2013.04 高専生の編入体験体験談投稿サービス「HenTai」を開発。 100 件超の体験談が集まり、体験談共有サイトでも最大規模を誇る [site](http://kosen.herokuapp.com/)
