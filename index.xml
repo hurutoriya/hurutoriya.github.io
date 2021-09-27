@@ -44,7 +44,7 @@ WordファイルからMarkdownファイルへの完全変換って難しい。�
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">$ gcloud pubsub topics publish &lt;span class="si">${&lt;/span>&lt;span class="nv">PUBSUB_TOPIC_NAME&lt;/span>&lt;span class="si">}&lt;/span> --message &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>cat &lt;span class="o">{&lt;/span>FILE_NAME&lt;span class="o">}&lt;/span> &lt;span class="p">|&lt;/span> jq -c&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">$ gcloud pubsub topics publish &lt;span class="o">{&lt;/span>PUBSUB_TOPIC_NAME&lt;span class="o">}&lt;/span> --message &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>cat &lt;span class="o">{&lt;/span>FILE_NAME&lt;span class="o">}&lt;/span> &lt;span class="p">|&lt;/span> jq -c&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;code>jq&lt;/code> コマンドの &lt;code>-c&lt;/code> オプションは compact-output を意味している。デフォルトだと pretty-prints になってしまう。
