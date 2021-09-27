@@ -12,7 +12,7 @@ gcloud commands で PubSub に jsonファイルをメッセージとして公開
 `jq` コマンドが必要になるが、一番簡単に実現できるのは
 
 ```bash
-$ gcloud pubsub topics publish ${PUBSUB_TOPIC_NAME} --message "$(cat {FILE_NAME} | jq -c)"
+$ gcloud pubsub topics publish {PUBSUB_TOPIC_NAME} --message "$(cat {FILE_NAME} | jq -c)"
 ```
 
 `jq` コマンドの `-c` オプションは compact-output を意味している。デフォルトだと pretty-prints になってしまう。
