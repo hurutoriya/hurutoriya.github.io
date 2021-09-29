@@ -1,0 +1,30 @@
+<!doctype html><html lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=theme-color content="dark"><title>GCPのCloud Composer のDAGを素早く・簡単にデバッグする | Shunya Ueta</title><link rel=stylesheet href=/sass/main.min.1a3290acca8b3fc92df85ea9200859476d6c80d59009c89a749300f3ce7a7a67.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-39994406-11"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-39994406-11');</script></head><body class=dark><nav class=navbar><div class=container><div class=flex><div><a class=brand href=/><span class=emoji>🎰</span>
+Shunya Ueta</a></div><div class=flex><a href=/articles/>All posts</a>
+<button id=dark-mode-button></button></div></div></div></nav><main><div class=container><article><header class=article-header><div class=thumb><div><h1>GCPのCloud Composer のDAGを素早く・簡単にデバッグする</h1><div class=post-meta><div>By Shunya Ueta on <time>September 29, 2021</time></div><div class=tags><a href=/tags/airflow/>airflow</a>
+<a href=/tags/gcp/>gcp</a></div></div></div></div></header></article><div class=article-post><p>GCPでAirflow をマネージドサービスで使えるサービスで Cloud Composer が存在する。
+BigQueryやBigTable, PubSub などGCPの各サービスをDAGとして定義してジョブを定期実行できるので非常に便利だが、その代わりDAGを実行するまで結果がわからないので、CloudComposer を一度実行するしか無いのでデバッグが困難になる傾向がある。</p><p>また、GitHubのリポジトリにDAGを保存して、CIでCloud Composerを更新するようしていると PRを都度作ってマージされないと確認できないという場合もある</p><p>ローカルでDocker で走らせれば良いのじゃないかというツッコミがあると思いますが、結局 Cloud Composer 上での動作を確かめないといけないので、今回の記事を書くことにしました。</p><p><strong>NOTE:</strong> 自分が使用しているComposerのversionは<code>composer-1.8.0-Airflow-1.10.3</code> です。基本的にやれることは一緒だと思います。また、<code>dev</code>, <code>prod</code>で同一のDAGが走るCloud Composer を運用しているという前提です。</p><p>アプローチは２つ</p><h2 id=loggerinfo-を仕込んでdagのなかで何が起こっているかを理解する>logger.info() を仕込んで、DAGのなかで何が起こっているかを理解する</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>logging</span>
+
+<span class=n>logger</span> <span class=o>=</span> <span class=n>logging</span><span class=o>.</span><span class=n>getLogger</span><span class=p>(</span><span class=vm>__name__</span><span class=p>)</span>
+
+<span class=n>logger</span><span class=o>.</span><span class=n>info</span><span class=p>()</span>
+</code></pre></td></tr></table></div></div><p>loggerをDAGを記述した Pythonファイルに仕込んで、内部で何が起こっているかを把握する。</p><p>各DAGのlogは、</p><ol><li>GCPのCloud Composerのページにアクセスして<code>Airflow webserver</code> 列のボタンをクリックしてAirflowのWeb applicaiton にログイン</li><li>確認したいDAGをクリック</li><li>DAG内のtask をクリックして表示されるモーダル内の <code>View Log</code>をクリックすると、loggerの情報が確認できる</li></ol><h2 id=gcsに格納されている開発環境上のcloudcomposer-のdagファイルをgstuil-cp-コマンドで直接編集して確認>GCSに格納されている開発環境上のCloudComposer のDAGファイルを<code>gstuil cp</code> コマンドで直接編集して確認</h2><p>Cloud Composer のDAGは、自動作成されたGoogle Cloud Storageに格納されており、このGCSをCloud Composerが定期的に監視してCloud Composerを更新している。
+つまり、少しハッキーな方法だが、GCS上のDAGファイルを直接更新してやるとそれがCloud Composerに反映されて確認ができる。
+体感として2-3分に一度は監視されているので、ほぼ待ち状態がない状態で確認ができる。</p><p>以下のコマンドで目的のDAGファイルを更新する。
+目的のDAGファイルの場所はCloud Composerのページの<code>DAGs folder</code>カラムにあるボタンをクリックするとDAGが格納されているGCSページに遷移するので、そこから確認してください。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash>gsutil cp <span class=o>{</span>logal_dag<span class=o>}</span>.py <span class=o>{</span>GCS_dag<span class=o>}</span>.py
+</code></pre></td></tr></table></div></div><p>また、以下のように <code>gcloud composer</code> コマンドで更新する方法もあるので、そちらを使っても大丈夫です。(実行内容自体はGCSのファイルを変更する)</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash>gcloud composer environments storage dags delete 
+    --environment <span class=o>{</span>ENVIRONMENT_NAME<span class=o>}</span>
+    --location <span class=o>{</span>LOCATION<span class=o>}</span> 
+    <span class=o>{</span>DAG_NAME<span class=o>}</span>.py
+</code></pre></td></tr></table></div></div><p><strong>NOTE:</strong> プロダクションのDAGを直接書き換えるのは危険なのでやめましょう。</p><h3 id=reference>Reference</h3><ul><li><a href=https://cloud.google.com/composer/docs/how-to/using/managing-dags>Adding and Updating DAGs (workflows)</a></li></ul></div><h2>See Also</h2><ul><li><a href=/posts/2021-09-07/>gcloud commands で PubSub に jsonファイルをメッセージとして公開 (Pusblish) する</a></li><li><a href=/posts/2021-03-03/>GKE 上にて Pythonで logger.info() を行うとCloud logging では stderr に保存され、すべてエラーになる問題への対処法</a></li><li><a href=/posts/2019-10-03/>pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL</a></li><li><a href=/posts/2019-09-24/>How to connect the Google Compute Engine via Visual Studio Code</a></li></ul></div><div class=container><nav class="flex container suggested"><a rel=prev href=/posts/2021-09-27/ title="Previous post (older)"><span>Previous</span>
+Pandoc を使って抽出できなかったWord内部の画像をGoogle Driveを使って抽出する</a></nav></div></main></main><footer class="footer flex"><section class=container><nav class=footer-links><a href=/index.xml>RSS</a></nav></section><script async src=/js/features.min.a94f58a30ad2560de728e080d87f75c60cf806fd1b3d5f4815f1a1a02c0d1859.js></script></footer></body></html>

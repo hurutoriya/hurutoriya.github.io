@@ -1,4 +1,66 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Pandoc を使って抽出できなかったWord内部の画像をGoogle Driveを使って抽出する</title><link>https://shunyaueta.com/posts/2021-09-27/</link><pubDate>Mon, 27 Sep 2021 00:18:26 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-27/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>GCPのCloud Composer のDAGを素早く・簡単にデバッグする</title><link>https://shunyaueta.com/posts/2021-09-29/</link><pubDate>Wed, 29 Sep 2021 22:20:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-29/</guid><description>
+&lt;p>GCPでAirflow をマネージドサービスで使えるサービスで Cloud Composer が存在する。
+BigQueryやBigTable, PubSub などGCPの各サービスをDAGとして定義してジョブを定期実行できるので非常に便利だが、その代わりDAGを実行するまで結果がわからないので、CloudComposer を一度実行するしか無いのでデバッグが困難になる傾向がある。&lt;/p>
+&lt;p>また、GitHubのリポジトリにDAGを保存して、CIでCloud Composerを更新するようしていると PRを都度作ってマージされないと確認できないという場合もある&lt;/p>
+&lt;p>ローカルでDocker で走らせれば良いのじゃないかというツッコミがあると思いますが、結局 Cloud Composer 上での動作を確かめないといけないので、今回の記事を書くことにしました。&lt;/p>
+&lt;p>&lt;strong>NOTE:&lt;/strong> 自分が使用しているComposerのversionは&lt;code>composer-1.8.0-Airflow-1.10.3&lt;/code> です。基本的にやれることは一緒だと思います。また、&lt;code>dev&lt;/code>, &lt;code>prod&lt;/code>で同一のDAGが走るCloud Composer を運用しているという前提です。&lt;/p>
+&lt;p>アプローチは２つ&lt;/p>
+&lt;h2 id="loggerinfo-を仕込んでdagのなかで何が起こっているかを理解する">logger.info() を仕込んで、DAGのなかで何が起こっているかを理解する&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="kn">import&lt;/span> &lt;span class="nn">logging&lt;/span>
+&lt;span class="n">logger&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">logging&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">getLogger&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="vm">__name__&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="n">logger&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">info&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>loggerをDAGを記述した Pythonファイルに仕込んで、内部で何が起こっているかを把握する。&lt;/p>
+&lt;p>各DAGのlogは、&lt;/p>
+&lt;ol>
+&lt;li>GCPのCloud Composerのページにアクセスして&lt;code>Airflow webserver&lt;/code> 列のボタンをクリックしてAirflowのWeb applicaiton にログイン&lt;/li>
+&lt;li>確認したいDAGをクリック&lt;/li>
+&lt;li>DAG内のtask をクリックして表示されるモーダル内の &lt;code>View Log&lt;/code>をクリックすると、loggerの情報が確認できる&lt;/li>
+&lt;/ol>
+&lt;h2 id="gcsに格納されている開発環境上のcloudcomposer-のdagファイルをgstuil-cp-コマンドで直接編集して確認">GCSに格納されている開発環境上のCloudComposer のDAGファイルを&lt;code>gstuil cp&lt;/code> コマンドで直接編集して確認&lt;/h2>
+&lt;p>Cloud Composer のDAGは、自動作成されたGoogle Cloud Storageに格納されており、このGCSをCloud Composerが定期的に監視してCloud Composerを更新している。
+つまり、少しハッキーな方法だが、GCS上のDAGファイルを直接更新してやるとそれがCloud Composerに反映されて確認ができる。
+体感として2-3分に一度は監視されているので、ほぼ待ち状態がない状態で確認ができる。&lt;/p>
+&lt;p>以下のコマンドで目的のDAGファイルを更新する。
+目的のDAGファイルの場所はCloud Composerのページの&lt;code>DAGs folder&lt;/code>カラムにあるボタンをクリックするとDAGが格納されているGCSページに遷移するので、そこから確認してください。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">gsutil cp &lt;span class="o">{&lt;/span>logal_dag&lt;span class="o">}&lt;/span>.py &lt;span class="o">{&lt;/span>GCS_dag&lt;span class="o">}&lt;/span>.py
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>また、以下のように &lt;code>gcloud composer&lt;/code> コマンドで更新する方法もあるので、そちらを使っても大丈夫です。(実行内容自体はGCSのファイルを変更する)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">gcloud composer environments storage dags delete
+--environment &lt;span class="o">{&lt;/span>ENVIRONMENT_NAME&lt;span class="o">}&lt;/span>
+--location &lt;span class="o">{&lt;/span>LOCATION&lt;span class="o">}&lt;/span>
+&lt;span class="o">{&lt;/span>DAG_NAME&lt;span class="o">}&lt;/span>.py
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>NOTE:&lt;/strong> プロダクションのDAGを直接書き換えるのは危険なのでやめましょう。&lt;/p>
+&lt;h3 id="reference">Reference&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://cloud.google.com/composer/docs/how-to/using/managing-dags">Adding and Updating DAGs (workflows)&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Pandoc を使って抽出できなかったWord内部の画像をGoogle Driveを使って抽出する</title><link>https://shunyaueta.com/posts/2021-09-27/</link><pubDate>Mon, 27 Sep 2021 00:18:26 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-27/</guid><description>
 &lt;p>&lt;a href="https://shunyaueta.com/posts/2021-09-19/">先日の記事&lt;/a> では、pandoc の&lt;code>--extract-media&lt;/code> オプションをオンにしてもword内部の画像を抽出することができなかった。&lt;/p>
 &lt;p>だが、Google Driveを使うことでWord 内部の画像を抽出することができたのでここに記しておく。&lt;/p>
 &lt;ol>
