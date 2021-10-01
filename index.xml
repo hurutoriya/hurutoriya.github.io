@@ -1,4 +1,32 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>GCPのCloud Composer のDAGを素早く・簡単にデバッグする</title><link>https://shunyaueta.com/posts/2021-09-29/</link><pubDate>Wed, 29 Sep 2021 22:20:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-29/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>CircleCI アプリ内の設定ファイルエディターを利用して、CI上の環境変数などローカルCLIでは確認できない挙動を素早く確認して修正する</title><link>https://shunyaueta.com/posts/2021-10-01/</link><pubDate>Fri, 01 Oct 2021 20:39:06 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-10-01/</guid><description>
+&lt;h2 id="tldr">TL;DR;&lt;/h2>
+&lt;ul>
+&lt;li>Pull Requestのコミット履歴を汚さずにCircleCIのConfigmap をWeb上で編集して、CIの挙動をすぐ試せる機能がすごく便利&lt;/li>
+&lt;/ul>
+&lt;h2 id="課題点">課題点&lt;/h2>
+&lt;p>CircleCI の上のCIの挙動のデバッグをする際、ブランチにプッシュをせずに挙動が確認できる方法として&lt;a href="https://circleci.com/docs/ja/2.0/local-cli/">ローカルCLI&lt;/a>を利用する方法がある。
+しかし、CIのマシン上で定義されている環境変数などは、ローカルCLIを使用しても確認することができない。&lt;/p>
+&lt;p>そのためコミットでCIが失敗している際には、&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>Rerun Job with SSH&lt;/code>を利用してSSHで接続して、環境変数を確認&lt;/li>
+&lt;li>再度 &lt;code>config.yml&lt;/code> を修正して、コミットをプッシュ&lt;/li>
+&lt;li>だが、上手くいかないので1→2を繰り返す&lt;/li>
+&lt;/ol>
+&lt;p>を繰り返してしまい、コミット履歴が不用意に汚れてしまう。&lt;/p>
+&lt;h2 id="解決方法">解決方法&lt;/h2>
+&lt;p>この問題点を解決する方法として、&lt;a href="https://circleci.com/docs/ja/2.0/config-editor/">CircleCI アプリ内の設定ファイル エディター&lt;/a>を利用するのがすごく便利だった。&lt;/p>
+&lt;p>この機能は、ジョブのページの右上からアクセスできる。
+&lt;code>Rerun&lt;/code> ボタンの右に&lt;code>...&lt;/code> ボタンがあり、そのボタンをクリックすると&lt;/p>
+&lt;ul>
+&lt;li>Project Settings&lt;/li>
+&lt;li>Configuration File&lt;/li>
+&lt;/ul>
+&lt;p>の選択項目があり、&lt;code>Configuration File&lt;/code> をクリックすると、&lt;code>config.yml&lt;/code> のウェブエディターが起動する。
+エディターでYAMLファイルを編集後、右上の&lt;code>Save and Run&lt;/code>ボタンをクリックすれば、PRで作成されているブランチと別のリモートブランチがCircleCIによって新たに作成されるので、もとのPRのコミット履歴を汚さずにCIの問題を修正できる。&lt;/p>
+&lt;h2 id="reference">Reference&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://circleci.com/docs/ja/2.0/config-editor/">CircleCI アプリ内の設定ファイル エディターの使用&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>GCPのCloud Composer のDAGを素早く・簡単にデバッグする</title><link>https://shunyaueta.com/posts/2021-09-29/</link><pubDate>Wed, 29 Sep 2021 22:20:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-29/</guid><description>
 &lt;p>GCPでAirflow をマネージドサービスで使えるサービスで Cloud Composer が存在する。
 BigQueryやBigTable, PubSub などGCPの各サービスをDAGとして定義してジョブを定期実行できるので非常に便利だが、その代わりDAGを実行するまで結果がわからないので、CloudComposer を一度実行するしか無いのでデバッグが困難になる傾向がある。&lt;/p>
 &lt;p>また、GitHubのリポジトリにDAGを保存して、CIでCloud Composerを更新するようしていると PRを都度作ってマージされないと確認できないという場合もある&lt;/p>
