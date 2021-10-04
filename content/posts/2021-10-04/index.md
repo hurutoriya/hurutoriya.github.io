@@ -48,15 +48,15 @@ workflows:
 
 `Sync DAG folder to GCS's DAG folder` で行っている内容を順を追って説明する。
 
-1. サービスアカウントのクレデンシャルファイルを環境変数として保存しておき、リダイレクトによりJSONファイルとして書き出す
+1. サービスアカウントのクレデンシャルファイルをCircleCIの環境変数として保存しておき、リダイレクトによりJSONファイルとして書き出す
 
 ```bash
 echo "${CLOUD_COMPOSER_CREDENTIALS_JSON}" > ${GOOGLE_APPLICATION_CREDENTIALS}
 ```
 
-__注意:__ セキュリティ対策としてクレデンシャルファイルは必ず環境変数として扱いましょう。
+__注意:__ セキュリティ対策としてクレデンシャルファイルは必ず環境変数として扱う。
 
-2. 1で生成したクレデンシャルファイルを使って、サービスアカウント認証をgcloud コマンドで行う
+2. 1で生成したクレデンシャルファイルにより、サービスアカウント認証をgcloud コマンドで行う
 
 ```bash
 gcloud auth activate-service-account --key-file ${GOOGLE_APPLICATION_CREDENTIALS}
@@ -72,7 +72,6 @@ gsutil -m rsync -d -r dags "$(gcloud composer environments describe {COMPOSER_NA
 
 - `"$(gcloud composer environments describe {COMPOSER_NAME} --project={GCP_PROJECT} --location={REGION}  --format="get(config.dagGcsPrefix)")"` 
   - 指定したGCP Project で動くCloud Composer のDAGが格納されているGCSのパスを取得できる。
-
 - `gsutil -m rsync -d -r dags`
   - `-m` は並列処理
   - `-d` は元のディレクトリに存在しないファイルがコピー先にあれば削除(ミラーリング)。これにより、GCS上でDAGを新たに作成して、デバッグしていたとしても、CIが走ればリポジトリにないDAGファイルは削除され、リポジトリのDAGと完全に同期される。
@@ -80,7 +79,7 @@ gsutil -m rsync -d -r dags "$(gcloud composer environments describe {COMPOSER_NA
   - 上記のオプションにより`dags` ディレクトリのDAGファイルをGCSにミラーリングで同期を行う。
 
 
-[GCPのCloud Composer のDAGを素早く・簡単にデバッグする](/posts/2021-09-19/) の記事では、デバッグする方法について書いてあるので、そちらもCloud Composer を使っている人は見てみてほしい。
+[GCPのCloud Composer のDAGを素早く・簡単にデバッグする](/posts/2021-09-19/) の記事では、デバッグする方法について書いてあるので、そちらもCloud Composer を使っている人は役に立つと思うので見てみてください
 
 ## Referemce
 
