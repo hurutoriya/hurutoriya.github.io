@@ -1,4 +1,123 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>CircleCI アプリ内の設定ファイルエディターを利用して、CI上の環境変数などローカルCLIでは確認できない挙動を素早く確認して修正する</title><link>https://shunyaueta.com/posts/2021-10-01/</link><pubDate>Fri, 01 Oct 2021 20:39:06 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-10-01/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>CloudComposer のDAGをCIで更新する</title><link>https://shunyaueta.com/posts/2021-10-04/</link><pubDate>Mon, 04 Oct 2021 22:23:24 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-10-04/</guid><description>
+&lt;p>Cloud Composer(Airflow) のDAGをGitHub リポジトリで管理して、CIによりリポジトリで管理しているDAGをPull RequestがマージされるとCloud ComposerのDAGへ同期する方法について説明する。&lt;/p>
+&lt;p>DAGは、ルートディレクトリ直下の &lt;code>dags/&lt;/code> というディレクトリに格納されている状態を前提とする。&lt;/p>
+&lt;p>以下の２つのコマンドラインツールを利用して実現できる。&lt;/p>
+&lt;ul>
+&lt;li>Service Account の認証のために &lt;code>gcloud&lt;/code>&lt;/li>
+&lt;li>DAGの同期のために &lt;code>gsutil&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>CircleCI によるワークフローの記述例は以下のとおり&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="k">version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">2.1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w">&lt;/span>&lt;span class="k">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">rsync-dags&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">working_directory&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>~/workspace&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">docker&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="k">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>gcr.io/google.com/cloudsdktool/cloud-sdk&lt;span class="p">:&lt;/span>alpine&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">environment&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">GOOGLE_APPLICATION_CREDENTIALS&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>/gcp-service-key.json&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- checkout&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="k">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>Sync&lt;span class="w"> &lt;/span>DAG&lt;span class="w"> &lt;/span>folder&lt;span class="w"> &lt;/span>to&lt;span class="w"> &lt;/span>GCS&amp;#39;s&lt;span class="w"> &lt;/span>DAG&lt;span class="w"> &lt;/span>folder&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">command&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sd">|
+&lt;/span>&lt;span class="sd"> echo &amp;#34;${CLOUD_COMPOSER_CREDENTIALS_JSON}&amp;#34; &amp;gt; ${GOOGLE_APPLICATION_CREDENTIALS}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>gcloud&lt;span class="w"> &lt;/span>auth&lt;span class="w"> &lt;/span>activate-service-account&lt;span class="w"> &lt;/span>--key-file&lt;span class="w"> &lt;/span>${GOOGLE_APPLICATION_CREDENTIALS}&lt;span class="w">
+&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>gsutil&lt;span class="w"> &lt;/span>-m&lt;span class="w"> &lt;/span>rsync&lt;span class="w"> &lt;/span>-d&lt;span class="w"> &lt;/span>-r&lt;span class="w"> &lt;/span>dags&lt;span class="w"> &lt;/span>\&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;$(gcloud composer environments describe {COMPOSER_NAME} --project={GCP_PROJECT} --location={REGION} --format=&amp;#34;&lt;/span>get(config.dagGcsPrefix)&lt;span class="s2">&amp;#34;)&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w">&lt;/span>&lt;span class="k">workflows&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">rsync_dags&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- rsync-dags&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>Sync DAG folder to GCS's DAG folder&lt;/code> で行っている内容を順を追って説明する。&lt;/p>
+&lt;ol>
+&lt;li>サービスアカウントのクレデンシャルファイルを環境変数として保存しておき、リダイレクトによりJSONファイルとして書き出す&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">CLOUD_COMPOSER_CREDENTIALS_JSON&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &amp;gt; &lt;span class="si">${&lt;/span>&lt;span class="nv">GOOGLE_APPLICATION_CREDENTIALS&lt;/span>&lt;span class="si">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注意:&lt;/strong> セキュリティ対策としてクレデンシャルファイルは必ず環境変数として扱いましょう。&lt;/p>
+&lt;ol start="2">
+&lt;li>1で生成したクレデンシャルファイルを使って、サービスアカウント認証をgcloud コマンドで行う&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">gcloud auth activate-service-account --key-file &lt;span class="si">${&lt;/span>&lt;span class="nv">GOOGLE_APPLICATION_CREDENTIALS&lt;/span>&lt;span class="si">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>CloudComposer のDAGが格納されているGCSのバケットをgcloudコマンドで取得して、gsutilコマンドでDAGファイルの同期を行う&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">gsutil -m rsync -d -r dags &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>gcloud composer environments describe &lt;span class="o">{&lt;/span>COMPOSER_NAME&lt;span class="o">}&lt;/span> --project&lt;span class="o">={&lt;/span>GCP_PROJECT&lt;span class="o">}&lt;/span> --location&lt;span class="o">={&lt;/span>REGION&lt;span class="o">}&lt;/span> --format&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;get(config.dagGcsPrefix)&amp;#34;&lt;/span>&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>{XXX} には使用する環境の情報を置換してください。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>&amp;quot;$(gcloud composer environments describe {COMPOSER_NAME} --project={GCP_PROJECT} --location={REGION} --format=&amp;quot;get(config.dagGcsPrefix)&amp;quot;)&amp;quot;&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>指定したGCP Project で動くCloud Composer のDAGが格納されているGCSのパスを取得できる。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>gsutil -m rsync -d -r dags&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>-m&lt;/code> は並列処理&lt;/li>
+&lt;li>&lt;code>-d&lt;/code> は元のディレクトリに存在しないファイルがコピー先にあれば削除(ミラーリング)。これにより、GCS上でDAGを新たに作成して、デバッグしていたとしても、CIが走ればリポジトリにないDAGファイルは削除され、リポジトリのDAGと完全に同期される。&lt;/li>
+&lt;li>&lt;code>-r&lt;/code> はディレクトリとしてコピー&lt;/li>
+&lt;li>上記のオプションにより&lt;code>dags&lt;/code> ディレクトリのDAGファイルをGCSにミラーリングで同期を行う。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://shunyaueta.com/posts/2021-09-19/">GCPのCloud Composer のDAGを素早く・簡単にデバッグする&lt;/a> の記事では、デバッグする方法について書いてあるので、そちらもCloud Composer を使っている人は見てみてほしい。&lt;/p>
+&lt;h2 id="referemce">Referemce&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://cloud.google.com/storage/docs/gsutil/addlhelp/TopLevelCommandLineOptions">gsutil Top-Level Command-Line Options&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cloud.google.com/storage/docs/gsutil/commands/rsync">rsync - Synchronize content of two buckets/directories&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>CircleCI アプリ内の設定ファイルエディターを利用して、CI上の環境変数などローカルCLIでは確認できない挙動を素早く確認して修正する</title><link>https://shunyaueta.com/posts/2021-10-01/</link><pubDate>Fri, 01 Oct 2021 20:39:06 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-10-01/</guid><description>
 &lt;h2 id="tldr">TL;DR;&lt;/h2>
 &lt;ul>
 &lt;li>Pull Requestのコミット履歴を汚さずにCircleCIのConfigmap をWeb上で編集して、CIの挙動をすぐ試せる機能がすごく便利&lt;/li>
