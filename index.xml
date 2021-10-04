@@ -61,7 +61,7 @@
 &lt;/div>
 &lt;/div>&lt;p>&lt;code>Sync DAG folder to GCS's DAG folder&lt;/code> で行っている内容を順を追って説明する。&lt;/p>
 &lt;ol>
-&lt;li>サービスアカウントのクレデンシャルファイルを環境変数として保存しておき、リダイレクトによりJSONファイルとして書き出す&lt;/li>
+&lt;li>サービスアカウントのクレデンシャルファイルをCircleCIの環境変数として保存しておき、リダイレクトによりJSONファイルとして書き出す&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -71,9 +71,9 @@
 &lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">CLOUD_COMPOSER_CREDENTIALS_JSON&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &amp;gt; &lt;span class="si">${&lt;/span>&lt;span class="nv">GOOGLE_APPLICATION_CREDENTIALS&lt;/span>&lt;span class="si">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;strong>注意:&lt;/strong> セキュリティ対策としてクレデンシャルファイルは必ず環境変数として扱いましょう。&lt;/p>
+&lt;/div>&lt;p>&lt;strong>注意:&lt;/strong> セキュリティ対策としてクレデンシャルファイルは必ず環境変数として扱う。&lt;/p>
 &lt;ol start="2">
-&lt;li>1で生成したクレデンシャルファイルを使って、サービスアカウント認証をgcloud コマンドで行う&lt;/li>
+&lt;li>1で生成したクレデンシャルファイルにより、サービスアカウント認証をgcloud コマンドで行う&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -96,14 +96,12 @@
 &lt;/div>
 &lt;/div>&lt;p>{XXX} には使用する環境の情報を置換してください。&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;code>&amp;quot;$(gcloud composer environments describe {COMPOSER_NAME} --project={GCP_PROJECT} --location={REGION} --format=&amp;quot;get(config.dagGcsPrefix)&amp;quot;)&amp;quot;&lt;/code>&lt;/p>
+&lt;li>&lt;code>&amp;quot;$(gcloud composer environments describe {COMPOSER_NAME} --project={GCP_PROJECT} --location={REGION} --format=&amp;quot;get(config.dagGcsPrefix)&amp;quot;)&amp;quot;&lt;/code>
 &lt;ul>
 &lt;li>指定したGCP Project で動くCloud Composer のDAGが格納されているGCSのパスを取得できる。&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>&lt;code>gsutil -m rsync -d -r dags&lt;/code>&lt;/p>
+&lt;li>&lt;code>gsutil -m rsync -d -r dags&lt;/code>
 &lt;ul>
 &lt;li>&lt;code>-m&lt;/code> は並列処理&lt;/li>
 &lt;li>&lt;code>-d&lt;/code> は元のディレクトリに存在しないファイルがコピー先にあれば削除(ミラーリング)。これにより、GCS上でDAGを新たに作成して、デバッグしていたとしても、CIが走ればリポジトリにないDAGファイルは削除され、リポジトリのDAGと完全に同期される。&lt;/li>
@@ -112,7 +110,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;a href="https://shunyaueta.com/posts/2021-09-19/">GCPのCloud Composer のDAGを素早く・簡単にデバッグする&lt;/a> の記事では、デバッグする方法について書いてあるので、そちらもCloud Composer を使っている人は見てみてほしい。&lt;/p>
+&lt;p>&lt;a href="https://shunyaueta.com/posts/2021-09-19/">GCPのCloud Composer のDAGを素早く・簡単にデバッグする&lt;/a> の記事では、デバッグする方法について書いてあるので、そちらもCloud Composer を使っている人は役に立つと思うので見てみてください&lt;/p>
 &lt;h2 id="referemce">Referemce&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://cloud.google.com/storage/docs/gsutil/addlhelp/TopLevelCommandLineOptions">gsutil Top-Level Command-Line Options&lt;/a>&lt;/li>
