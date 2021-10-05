@@ -2,6 +2,7 @@
 title: "遅すぎる `pandas.read_gbq` を使わずに、Google BigQueryから高速にデータを読み込む"
 date: 2019-10-03T23:52:54+09:00
 lang: ja
+author: Shunya Ueta
 tags:
   - gcp
   - bigquery
