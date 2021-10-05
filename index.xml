@@ -5388,7 +5388,7 @@ Pytest provide &lt;code>setattr&lt;/code> function in &lt;code>monkeypatch&lt;/c
 一時的に GCP プロジェクトが作成され、そこでハンズオンができるのですがこれが実際に手を動かしながら学ぶという形式にすごく良いのと k8s の構築もすべてクラウドでできえるので変に環境構築でハマることなく快適に学習に集中できました。&lt;/p>
 &lt;p>もう、これがめちゃくちゃ快適でハンズオンとしてすごく快適に手を動かせなら、k8s の初歩的な概念や Command line などを学べました。&lt;/p>
 &lt;p>実際に手を動かしながら学ぶべきものだと思うので、このハンズオン形式の講義はありがたかったです!&lt;/p>
-&lt;p>後は学ぶにつれて、 k8s の凄さがわかってきたので理解して使いこなせるようになればスケールするシステムを個人でも作れそうなので、頑張っていきます。&lt;/p></description></item><item><title>遅すぎる `pandas.read_gbq` を使わずに、Google BigQueryから高速にデータを読み込む</title><link>https://shunyaueta.com/posts/2019-10-03/</link><pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-10-03/</guid><description>
+&lt;p>後は学ぶにつれて、 k8s の凄さがわかってきたので理解して使いこなせるようになればスケールするシステムを個人でも作れそうなので、頑張っていきます。&lt;/p></description></item><item><title>遅すぎる `pandas.read_gbq` を使わずに、Google BigQueryから高速にデータを読み込む</title><link>https://shunyaueta.com/posts/2019-10-03/</link><pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2019-10-03/</guid><description>
 &lt;p>&lt;a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_gbq.html">pandas.read_gbq&lt;/a> 便利ですよね。
 クレデンシャルファイルを認証画面からコピペすれば Jupyter Notebook上で簡単に認証され、Google BigQuery が実行されてその結果がそのままデータフレームとして扱えます。
 Jupyter Notebookと Google BigQuery を連携させたいときは愛用していました(過去形)。&lt;/p>
@@ -5471,11 +5471,13 @@ Jupyter Notebookと Google BigQuery を連携させたいときは愛用して�
 &lt;p>保存ファイル名を &lt;code>file-*&lt;/code> のようにワイルドカードを指定すると、自動的にひとつのテーブルを複数ファイルに分割して保存してくれる&lt;/p>
 &lt;p>&lt;code>gsutil&lt;/code> commands で任意のマシンへダウンロードする。&lt;/p>
 &lt;p>&lt;code>-m&lt;/code> オプションを付け足すと並列ダウンロードが始まるので、複数ファイルダウンロードする場合はおすすめです&lt;/p>
-&lt;p>ストレスレスなデータ分析ライフを!&lt;/p></description></item><item><title>Tensorboard を わずか2行で Jupyter Notebook上で表示</title><link>https://shunyaueta.com/posts/2019-09-25/</link><pubDate>Wed, 25 Sep 2019 23:16:07 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-09-25/</guid><description>
+&lt;p>ストレスレスなデータ分析ライフを!&lt;/p></description></item><item><title>Jupyter Notebook上にTensorboard を わずか2行で表示</title><link>https://shunyaueta.com/posts/2019-09-25/</link><pubDate>Wed, 25 Sep 2019 23:16:07 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2019-09-25/</guid><description>
 &lt;p>Pytorch 1.2 からは公式に Tensorboard がサポートされている&lt;/p>
 &lt;p>Tensorboard とは、学習の状況を可視化できる TensorFlow Family の一種&lt;/p>
 &lt;p>Jupyte Notebook 上で学習状況を確認したい場合に Tensorboard をそのまま表示して確認できれば楽なので、試してみる&lt;/p>
-&lt;p>sample code: &lt;a href="https://pytorch.org/docs/stable/tensorboard.html">https://pytorch.org/docs/stable/tensorboard.html&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>sample code: &lt;a href="https://pytorch.org/docs/stable/tensorboard.html">https://pytorch.org/docs/stable/tensorboard.html&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
