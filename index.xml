@@ -86,6 +86,7 @@
 &lt;/div>&lt;ol start="3">
 &lt;li>CloudComposer のDAGが格納されているGCSのバケットをgcloudコマンドで取得して、gsutilコマンドでDAGファイルの同期を行う&lt;/li>
 &lt;/ol>
+&lt;p>&lt;a href="https://shunyaueta.com/posts/2021-09-29/">GCPのCloud Composer のDAGを素早く・簡単にデバッグする&lt;/a> の記事でも紹介した方法でDAGの同期を行う。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
@@ -110,8 +111,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;a href="https://shunyaueta.com/posts/2021-09-19/">GCPのCloud Composer のDAGを素早く・簡単にデバッグする&lt;/a> の記事では、デバッグする方法について書いてあるので、そちらもCloud Composer を使っている人は役に立つと思うので見てみてください&lt;/p>
-&lt;h2 id="referemce">Referemce&lt;/h2>
+&lt;h2 id="reference">Reference&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://cloud.google.com/storage/docs/gsutil/addlhelp/TopLevelCommandLineOptions">gsutil Top-Level Command-Line Options&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://cloud.google.com/storage/docs/gsutil/commands/rsync">rsync - Synchronize content of two buckets/directories&lt;/a>&lt;/li>
@@ -172,21 +172,40 @@ BigQueryやBigTable, PubSub などGCPの各サービスをDAGとして定義し�
 &lt;li>確認したいDAGをクリック&lt;/li>
 &lt;li>DAG内のtask をクリックして表示されるモーダル内の &lt;code>View Log&lt;/code>をクリックすると、loggerの情報が確認できる&lt;/li>
 &lt;/ol>
-&lt;h2 id="gcsに格納されている開発環境上のcloudcomposer-のdagファイルをgstuil-cp-コマンドで直接編集して確認">GCSに格納されている開発環境上のCloudComposer のDAGファイルを&lt;code>gstuil cp&lt;/code> コマンドで直接編集して確認&lt;/h2>
-&lt;p>Cloud Composer のDAGは、自動作成されたGoogle Cloud Storageに格納されており、このGCSをCloud Composerが定期的に監視してCloud Composerを更新している。
-つまり、少しハッキーな方法だが、GCS上のDAGファイルを直接更新してやるとそれがCloud Composerに反映されて確認ができる。
-体感として2-3分に一度は監視されているので、ほぼ待ち状態がない状態で確認ができる。&lt;/p>
-&lt;p>以下のコマンドで目的のDAGファイルを更新する。
-目的のDAGファイルの場所はCloud Composerのページの&lt;code>DAGs folder&lt;/code>カラムにあるボタンをクリックするとDAGが格納されているGCSページに遷移するので、そこから確認してください。&lt;/p>
+&lt;h2 id="gstuil-rsync-コマンドでのgcsへのdagの同期">&lt;code>gstuil rsync&lt;/code> コマンドでのGCSへのDAGの同期&lt;/h2>
+&lt;p>&lt;code>gstuil rsync&lt;/code>コマンドを使うことで、リポジトリのDAGファイルをGCSに格納されている開発環境上のCloudComposer のDAGファイルに直接同期してPull Request マージ後のDAGの挙動を確認できる。&lt;/p>
+&lt;p>Cloud Composer のDAGは、自動作成されたGoogle Cloud Storage(GCS)に格納されており、GCSをCloud Composerが定期的に監視してCloud Composerを更新している。
+つまり、GCS上のDAGファイルを直接更新してやるとそれがCloud Composerに反映される。
+体感として2-3分に一度は監視されているので、ほぼ待ち状態がない状態で確認できて便利です。&lt;/p>
+&lt;p>以下のコマンドでリポジトリのDAGファイルをGCSに反映させます。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">gsutil cp &lt;span class="o">{&lt;/span>logal_dag&lt;span class="o">}&lt;/span>.py &lt;span class="o">{&lt;/span>GCS_dag&lt;span class="o">}&lt;/span>.py
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">gsutil -m rsync -d -r dags &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>gcloud composer environments describe &lt;span class="o">{&lt;/span>COMPOSER_NAME&lt;span class="o">}&lt;/span> --project&lt;span class="o">={&lt;/span>GCP_PROJECT&lt;span class="o">}&lt;/span> --location&lt;span class="o">={&lt;/span>REGION&lt;span class="o">}&lt;/span> --format&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;get(config.dagGcsPrefix)&amp;#34;&lt;/span>&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>また、以下のように &lt;code>gcloud composer&lt;/code> コマンドで更新する方法もあるので、そちらを使っても大丈夫です。(実行内容自体はGCSのファイルを変更する)&lt;/p>
+&lt;/div>&lt;p>{XXX} には使用する環境の情報を置換してください。&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>&amp;quot;$(gcloud composer environments describe {COMPOSER_NAME} --project={GCP_PROJECT} --location={REGION} --format=&amp;quot;get(config.dagGcsPrefix)&amp;quot;)&amp;quot;&lt;/code>
+&lt;ul>
+&lt;li>指定したGCP Project で動くCloud Composer のDAGが格納されているGCSのパスを取得できる。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>gsutil -m rsync -d -r dags&lt;/code>
+&lt;ul>
+&lt;li>&lt;code>-m&lt;/code> は並列処理&lt;/li>
+&lt;li>&lt;code>-d&lt;/code> は元のディレクトリに存在しないファイルがコピー先にあれば削除(ミラーリング)。これにより、GCS上でDAGを新たに作成して、デバッグしていたとしても、CIが走ればリポジトリにないDAGファイルは削除され、リポジトリのDAGと完全に同期される。&lt;/li>
+&lt;li>&lt;code>-r&lt;/code> はディレクトリとしてコピー&lt;/li>
+&lt;li>上記のオプションにより&lt;code>dags&lt;/code> ディレクトリのDAGファイルをGCSにミラーリングで同期を行う。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="composer-のための正規のコマンドはあるが">Composer のための正規のコマンドはあるが&amp;hellip;&lt;/h3>
+&lt;p>また、以下のように &lt;code>gcloud composer environments storage dags import&lt;/code> コマンドで更新する方法もあるので、そちらを使っても大丈夫です。
+実行内容自体はGCSのファイルを変更するのと変わりません。
+ですが、ディレクトリを対象にしたファイルの同期には対応していないので、上記で説明したコマンドのほうが遥かに楽です。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
@@ -195,16 +214,18 @@ BigQueryやBigTable, PubSub などGCPの各サービスをDAGとして定義し�
 &lt;/span>&lt;span class="lnt">4
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">gcloud composer environments storage dags delete
---environment &lt;span class="o">{&lt;/span>ENVIRONMENT_NAME&lt;span class="o">}&lt;/span>
---location &lt;span class="o">{&lt;/span>LOCATION&lt;span class="o">}&lt;/span>
-&lt;span class="o">{&lt;/span>DAG_NAME&lt;span class="o">}&lt;/span>.py
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">gcloud composer environments storage dags import &lt;span class="se">\
+&lt;/span>&lt;span class="se">&lt;/span> --environment &lt;span class="o">{&lt;/span>ENVIRONMENT_NAME&lt;span class="o">}&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;span class="se">&lt;/span> --location &lt;span class="o">{&lt;/span>LOCATION&lt;span class="o">}&lt;/span> &lt;span class="se">\
+&lt;/span>&lt;span class="se">&lt;/span> --source &lt;span class="o">{&lt;/span>LOCAL_FILE_TO_UPLOAD&lt;span class="o">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;strong>NOTE:&lt;/strong> プロダクションのDAGを直接書き換えるのは危険なのでやめましょう。&lt;/p>
 &lt;h3 id="reference">Reference&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://cloud.google.com/composer/docs/how-to/using/managing-dags">Adding and Updating DAGs (workflows)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cloud.google.com/storage/docs/gsutil/addlhelp/TopLevelCommandLineOptions">gsutil Top-Level Command-Line Options&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cloud.google.com/storage/docs/gsutil/commands/rsync">rsync - Synchronize content of two buckets/directories&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Pandoc を使って抽出できなかったWord内部の画像をGoogle Driveを使って抽出する</title><link>https://shunyaueta.com/posts/2021-09-27/</link><pubDate>Mon, 27 Sep 2021 00:18:26 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-27/</guid><description>
 &lt;p>&lt;a href="https://shunyaueta.com/posts/2021-09-19/">先日の記事&lt;/a> では、pandoc の&lt;code>--extract-media&lt;/code> オプションをオンにしてもword内部の画像を抽出することができなかった。&lt;/p>
 &lt;p>だが、Google Driveを使うことでWord 内部の画像を抽出することができたのでここに記しておく。&lt;/p>
