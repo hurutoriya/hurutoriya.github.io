@@ -3,6 +3,13 @@ languageCode: "ja"
 title: "Shunya Ueta"
 theme: "hugo-tania"
 paginate: 10
+enableGitInfo: true
+
+frontmatter:
+  date:
+  - date
+  lastmod:
+  - :git
 
 params:
   titleEmoji: '🎰'

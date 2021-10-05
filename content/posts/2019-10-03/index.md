@@ -1,5 +1,5 @@
 ---
-title: "pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL"
+title: "pandas.read_gbq を使わずに、Google BigQueryから快適にデータを読み込む"
 date: 2019-10-03T23:52:54+09:00
 lang: ja
 tags:
@@ -10,16 +10,16 @@ tags:
 ---
 
 [pandas.read_gbq](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_gbq.html) 便利ですよね。
-クレデンシャルファイルを認証画面からコピペすれば Jupyter 上でさっと動き、Google Big Query が実行されてその結果がそのままデータフレームとして扱えます。
-Jupyter と Google BQ を連携させたいときはいつも使っています
+クレデンシャルファイルを認証画面からコピペすれば Jupyter Notebook上で簡単に認証され、Google BigQuery が実行されてその結果がそのままデータフレームとして扱えます。
+Jupyter Notebookと Google BigQuery を連携させたいときは愛用していました(過去形)。
 
 ## 問題点
 
 - そこそこ大きなデータを持ってこようとすると、めちゃくちゃ遅くてストレスが半端ない
 
-解決方法として、Google Big Query で巨大なデータをダウンロードする方法について書く
+解決方法として、Google BigQuery で巨大なデータをダウンロードする方法について書きます。
 
-実は Google の公式ドキュメントでも推奨されています
+実は Google の公式ドキュメントでも推奨されています。
 
 - https://cloud.google.com/bigquery/docs/pandas-gbq-migration
 - https://cloud.google.com/bigquery/docs/bigquery-storage-python-pandas
@@ -47,7 +47,7 @@ magic command を実行
 
 後は Jupyter Notebook のセルで以下のコマンドを実行すれば、
 
-```
+```python
 %%bigquery df --use_bqstorage_api
 SELECT
   CONCAT(
@@ -66,7 +66,6 @@ LIMIT 10
 ### 2, BQ 実行 →BigQuery table として保存 →GCS へ保存 → `gsutil` でマシンへコピー
 
 -  BigQuery でクエリを実行、実行結果を BigQuery Table へ保存
-
 - 注)実行結果の容量が巨大なので、保存先は基本的に Big Query Table へ保存するしか選択肢が無い
 
 ![can't export large file as one file](/posts/2019-10-03/images/export-to-bqtable.png)
