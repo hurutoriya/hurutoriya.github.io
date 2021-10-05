@@ -17,7 +17,7 @@ params:
     linkedin: https://www.linkedin.com/in/hurutoriya/
   description: Shunya Ueta's blog
   images:
-    - ./static/slot-machine.jpg
+    - slot-machine.jpg
 menu:
   header:
     - name: All posts
