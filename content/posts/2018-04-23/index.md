@@ -20,9 +20,10 @@ Colabratory 上で 日本語に対する NLP をしたいときありません�
 !pip install mecab-python3 > /dev/null
 ```
 
+インストールに成功しました。
+
 ![image](/posts/2018-04-23/images/1.png)
 
-インストールに成功しました。
-## Google Colabratory
+Google Colabratoryも以下で公開しているので参考にしてみてください
 
 [colab-mecab-ipadic-NEologd.ipynb](https://colab.research.google.com/drive/1YK8XFnfD29775lEYWhwz3wh4h8boR9iE)
