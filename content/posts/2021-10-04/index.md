@@ -64,6 +64,8 @@ gcloud auth activate-service-account --key-file ${GOOGLE_APPLICATION_CREDENTIALS
 
 3. CloudComposer のDAGが格納されているGCSのバケットをgcloudコマンドで取得して、gsutilコマンドでDAGファイルの同期を行う
 
+[GCPのCloud Composer のDAGを素早く・簡単にデバッグする](/posts/2021-09-29/) の記事でも紹介した方法でDAGの同期を行う。
+
 ```bash
 gsutil -m rsync -d -r dags "$(gcloud composer environments describe {COMPOSER_NAME} --project={GCP_PROJECT} --location={REGION}  --format="get(config.dagGcsPrefix)")"
 ```
@@ -78,10 +80,7 @@ gsutil -m rsync -d -r dags "$(gcloud composer environments describe {COMPOSER_NA
   - `-r` はディレクトリとしてコピー
   - 上記のオプションにより`dags` ディレクトリのDAGファイルをGCSにミラーリングで同期を行う。
 
-
-[GCPのCloud Composer のDAGを素早く・簡単にデバッグする](/posts/2021-09-19/) の記事では、デバッグする方法について書いてあるので、そちらもCloud Composer を使っている人は役に立つと思うので見てみてください
-
-## Referemce
+## Reference
 
 - [gsutil Top-Level Command-Line Options](https://cloud.google.com/storage/docs/gsutil/addlhelp/TopLevelCommandLineOptions)
 - [rsync - Synchronize content of two buckets/directories](https://cloud.google.com/storage/docs/gsutil/commands/rsync)

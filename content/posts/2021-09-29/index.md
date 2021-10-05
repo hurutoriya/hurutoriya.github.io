@@ -36,26 +36,41 @@ loggerをDAGを記述した Pythonファイルに仕込んで、内部で何が�
 2. 確認したいDAGをクリック
 3. DAG内のtask をクリックして表示されるモーダル内の `View Log`をクリックすると、loggerの情報が確認できる
 
-## GCSに格納されている開発環境上のCloudComposer のDAGファイルを`gstuil cp` コマンドで直接編集して確認
+## `gstuil rsync` コマンドでのGCSへのDAGの同期
 
-Cloud Composer のDAGは、自動作成されたGoogle Cloud Storageに格納されており、このGCSをCloud Composerが定期的に監視してCloud Composerを更新している。
-つまり、少しハッキーな方法だが、GCS上のDAGファイルを直接更新してやるとそれがCloud Composerに反映されて確認ができる。
-体感として2-3分に一度は監視されているので、ほぼ待ち状態がない状態で確認ができる。
+`gstuil rsync`コマンドを使うことで、リポジトリのDAGファイルをGCSに格納されている開発環境上のCloudComposer のDAGファイルに直接同期してPull Request マージ後のDAGの挙動を確認できる。
 
-以下のコマンドで目的のDAGファイルを更新する。
-目的のDAGファイルの場所はCloud Composerのページの`DAGs folder`カラムにあるボタンをクリックするとDAGが格納されているGCSページに遷移するので、そこから確認してください。
+Cloud Composer のDAGは、自動作成されたGoogle Cloud Storage(GCS)に格納されており、GCSをCloud Composerが定期的に監視してCloud Composerを更新している。
+つまり、GCS上のDAGファイルを直接更新してやるとそれがCloud Composerに反映される。
+体感として2-3分に一度は監視されているので、ほぼ待ち状態がない状態で確認できて便利です。
+
+以下のコマンドでリポジトリのDAGファイルをGCSに反映させます。
 
 ```bash
-gsutil cp {logal_dag}.py {GCS_dag}.py
+gsutil -m rsync -d -r dags "$(gcloud composer environments describe {COMPOSER_NAME} --project={GCP_PROJECT} --location={REGION}  --format="get(config.dagGcsPrefix)")"
 ```
 
-また、以下のように `gcloud composer` コマンドで更新する方法もあるので、そちらを使っても大丈夫です。(実行内容自体はGCSのファイルを変更する)
+{XXX} には使用する環境の情報を置換してください。
+
+- `"$(gcloud composer environments describe {COMPOSER_NAME} --project={GCP_PROJECT} --location={REGION}  --format="get(config.dagGcsPrefix)")"` 
+  - 指定したGCP Project で動くCloud Composer のDAGが格納されているGCSのパスを取得できる。
+- `gsutil -m rsync -d -r dags`
+  - `-m` は並列処理
+  - `-d` は元のディレクトリに存在しないファイルがコピー先にあれば削除(ミラーリング)。これにより、GCS上でDAGを新たに作成して、デバッグしていたとしても、CIが走ればリポジトリにないDAGファイルは削除され、リポジトリのDAGと完全に同期される。
+  - `-r` はディレクトリとしてコピー
+  - 上記のオプションにより`dags` ディレクトリのDAGファイルをGCSにミラーリングで同期を行う。
+
+### Composer のための正規のコマンドはあるが...
+
+また、以下のように `gcloud composer environments storage dags import` コマンドで更新する方法もあるので、そちらを使っても大丈夫です。
+実行内容自体はGCSのファイルを変更するのと変わりません。
+ですが、ディレクトリを対象にしたファイルの同期には対応していないので、上記で説明したコマンドのほうが遥かに楽です。
 
 ```bash
-gcloud composer environments storage dags delete 
-    --environment {ENVIRONMENT_NAME}
-    --location {LOCATION} 
-    {DAG_NAME}.py
+gcloud composer environments storage dags import \
+    --environment {ENVIRONMENT_NAME} \
+    --location {LOCATION} \
+    --source {LOCAL_FILE_TO_UPLOAD}
 ```
 
 __NOTE:__ プロダクションのDAGを直接書き換えるのは危険なのでやめましょう。
@@ -63,3 +78,5 @@ __NOTE:__ プロダクションのDAGを直接書き換えるのは危険なの�
 ### Reference
 
 - [Adding and Updating DAGs (workflows)](https://cloud.google.com/composer/docs/how-to/using/managing-dags)
+- [gsutil Top-Level Command-Line Options](https://cloud.google.com/storage/docs/gsutil/addlhelp/TopLevelCommandLineOptions)
+- [rsync - Synchronize content of two buckets/directories](https://cloud.google.com/storage/docs/gsutil/commands/rsync)
