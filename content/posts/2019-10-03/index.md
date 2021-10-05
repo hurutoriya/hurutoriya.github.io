@@ -1,5 +1,5 @@
 ---
-title: "pandas.read_gbq を使わずに、Google BigQueryから快適にデータを読み込む"
+title: "遅すぎる `pandas.read_gbq` を使わずに、Google BigQueryから高速にデータを読み込む"
 date: 2019-10-03T23:52:54+09:00
 lang: ja
 tags:
@@ -15,7 +15,7 @@ Jupyter Notebookと Google BigQuery を連携させたいときは愛用して�
 
 ## 問題点
 
-- そこそこ大きなデータを持ってこようとすると、めちゃくちゃ遅くてストレスが半端ない
+- そこそこ大きなデータを持ってこようとすると、めちゃくちゃ遅くてストレスが凄い
 
 解決方法として、Google BigQuery で巨大なデータをダウンロードする方法について書きます。
 
@@ -32,11 +32,10 @@ Jupyter Notebookと Google BigQuery を連携させたいときは愛用して�
 1 番目は、Jupyter 上でマジックコマンドで Google BQ が実行できて、速度も `pandas.rad_gbq` よりも高速です
 2 番目はそもそも実行結果が巨大な場合で、目安としては`1GB以上`なら 2 番目の方法を使えば楽です。
 
-### 1, `google-cloud-bigquery` をインストールして、マジックコマンドで Google BQ を実行
+### 1, `google-cloud-bigquery` をインストールして、Jupyter Notebookのマジックコマンドで Google BQ を実行
 
 ```python
 pip install --upgrade google-cloud-bigquery[bqstorage,pandas]
-
 ```
 
 magic command を実行
