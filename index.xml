@@ -5388,13 +5388,13 @@ Pytest provide &lt;code>setattr&lt;/code> function in &lt;code>monkeypatch&lt;/c
 一時的に GCP プロジェクトが作成され、そこでハンズオンができるのですがこれが実際に手を動かしながら学ぶという形式にすごく良いのと k8s の構築もすべてクラウドでできえるので変に環境構築でハマることなく快適に学習に集中できました。&lt;/p>
 &lt;p>もう、これがめちゃくちゃ快適でハンズオンとしてすごく快適に手を動かせなら、k8s の初歩的な概念や Command line などを学べました。&lt;/p>
 &lt;p>実際に手を動かしながら学ぶべきものだと思うので、このハンズオン形式の講義はありがたかったです!&lt;/p>
-&lt;p>後は学ぶにつれて、 k8s の凄さがわかってきたので理解して使いこなせるようになればスケールするシステムを個人でも作れそうなので、頑張っていきます。&lt;/p></description></item><item><title>pandas.read_gbq を使わずに、Google BigQueryから快適にデータを読み込む</title><link>https://shunyaueta.com/posts/2019-10-03/</link><pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-10-03/</guid><description>
+&lt;p>後は学ぶにつれて、 k8s の凄さがわかってきたので理解して使いこなせるようになればスケールするシステムを個人でも作れそうなので、頑張っていきます。&lt;/p></description></item><item><title>遅すぎる `pandas.read_gbq` を使わずに、Google BigQueryから高速にデータを読み込む</title><link>https://shunyaueta.com/posts/2019-10-03/</link><pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-10-03/</guid><description>
 &lt;p>&lt;a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_gbq.html">pandas.read_gbq&lt;/a> 便利ですよね。
 クレデンシャルファイルを認証画面からコピペすれば Jupyter Notebook上で簡単に認証され、Google BigQuery が実行されてその結果がそのままデータフレームとして扱えます。
 Jupyter Notebookと Google BigQuery を連携させたいときは愛用していました(過去形)。&lt;/p>
 &lt;h2 id="問題点">問題点&lt;/h2>
 &lt;ul>
-&lt;li>そこそこ大きなデータを持ってこようとすると、めちゃくちゃ遅くてストレスが半端ない&lt;/li>
+&lt;li>そこそこ大きなデータを持ってこようとすると、めちゃくちゃ遅くてストレスが凄い&lt;/li>
 &lt;/ul>
 &lt;p>解決方法として、Google BigQuery で巨大なデータをダウンロードする方法について書きます。&lt;/p>
 &lt;p>実は Google の公式ドキュメントでも推奨されています。&lt;/p>
@@ -5409,11 +5409,10 @@ Jupyter Notebookと Google BigQuery を連携させたいときは愛用して�
 &lt;/ol>
 &lt;p>1 番目は、Jupyter 上でマジックコマンドで Google BQ が実行できて、速度も &lt;code>pandas.rad_gbq&lt;/code> よりも高速です
 2 番目はそもそも実行結果が巨大な場合で、目安としては&lt;code>1GB以上&lt;/code>なら 2 番目の方法を使えば楽です。&lt;/p>
-&lt;h3 id="1-google-cloud-bigquery-をインストールしてマジックコマンドで-google-bq-を実行">1, &lt;code>google-cloud-bigquery&lt;/code> をインストールして、マジックコマンドで Google BQ を実行&lt;/h3>
+&lt;h3 id="1-google-cloud-bigquery-をインストールしてjupyter-notebookのマジックコマンドで-google-bq-を実行">1, &lt;code>google-cloud-bigquery&lt;/code> をインストールして、Jupyter Notebookのマジックコマンドで Google BQ を実行&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">upgrade&lt;/span> &lt;span class="n">google&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">cloud&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bigquery&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">bqstorage&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">pandas&lt;/span>&lt;span class="p">]&lt;/span>
