@@ -5970,13 +5970,28 @@ Case : 初期の組織&lt;/strong>: 2–3 人の Data Engineer : DataScientist G
 &lt;li>時代の流れにより、最適化や機械学習のパッケージが揃いつつあり、既存の有名なアルゴリズムは簡単に使える。また Google Auto ML, Data Robot のように、Data Scientist の領域も代替可能な tools が普及しつつある&lt;/li>
 &lt;li>&lt;strong>結論&lt;/strong>: Data Scientist, Data Engineer の役割が判明した今、組織の構造変革が必要&lt;/li>
 &lt;li>Data Engineer を雇って Data Scientist の代わりにデータパイプラインのシステム構築させれば皆幸せになる。&lt;/li>
-&lt;/ul></description></item><item><title>Google Colaboratory で Mecab-ipadic-Neologd を使うまで</title><link>https://shunyaueta.com/posts/2018-04-23/</link><pubDate>Mon, 23 Apr 2018 15:38:10 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-23/</guid><description>
+&lt;/ul></description></item><item><title>Google Colaboratory で Mecab-ipadic-Neologd を使用可能にする</title><link>https://shunyaueta.com/posts/2018-04-23/</link><pubDate>Mon, 23 Apr 2018 15:38:10 +0000</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2018-04-23/</guid><description>
 &lt;p>Colabratory 上で 日本語に対する NLP をしたいときありませんか？&lt;/p>
-&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-23/images/1.png" alt="image">&lt;/p>
-&lt;p>Success&lt;/p>
-&lt;h3 id="code">Code&lt;/h3>
-&lt;h4 id="google-colabratory">Google Colabratory&lt;/h4>
-&lt;p>&lt;a href="https://colab.research.google.com/drive/1YK8XFnfD29775lEYWhwz3wh4h8boR9iE">https://colab.research.google.com/drive/1YK8XFnfD29775lEYWhwz3wh4h8boR9iE&lt;/a>&lt;/p></description></item><item><title>eBayのAR測定機能を試してみた</title><link>https://shunyaueta.com/posts/2018-04-16/</link><pubDate>Mon, 16 Apr 2018 14:57:41 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-16/</guid><description>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="c1"># install MeCab neologd&lt;/span>
+!apt-get -q -y install sudo file mecab libmecab-dev mecab-ipadic-utf8 git curl python-mecab &amp;gt; /dev/null
+!git clone --depth &lt;span class="m">1&lt;/span> https://github.com/neologd/mecab-ipadic-neologd.git &amp;gt; /dev/null
+!echo yes &lt;span class="p">|&lt;/span> mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n &amp;gt; /dev/null 2&amp;gt;&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="m">1&lt;/span>
+!pip install mecab-python3 &amp;gt; /dev/null
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-23/images/1.png" alt="image">&lt;/p>
+&lt;p>インストールに成功しました。&lt;/p>
+&lt;h2 id="google-colabratory">Google Colabratory&lt;/h2>
+&lt;p>&lt;a href="https://colab.research.google.com/drive/1YK8XFnfD29775lEYWhwz3wh4h8boR9iE">colab-mecab-ipadic-NEologd.ipynb&lt;/a>&lt;/p></description></item><item><title>eBayのAR測定機能を試してみた</title><link>https://shunyaueta.com/posts/2018-04-16/</link><pubDate>Mon, 16 Apr 2018 14:57:41 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-16/</guid><description>
 &lt;p>eBay が ARCore を使った商品の梱包測定機能を提供しているので試した&lt;/p>
 &lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/1.png" alt="image">&lt;/p>
 &lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/2.png" alt="image">&lt;/p>
