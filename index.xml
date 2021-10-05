@@ -5388,16 +5388,16 @@ Pytest provide &lt;code>setattr&lt;/code> function in &lt;code>monkeypatch&lt;/c
 一時的に GCP プロジェクトが作成され、そこでハンズオンができるのですがこれが実際に手を動かしながら学ぶという形式にすごく良いのと k8s の構築もすべてクラウドでできえるので変に環境構築でハマることなく快適に学習に集中できました。&lt;/p>
 &lt;p>もう、これがめちゃくちゃ快適でハンズオンとしてすごく快適に手を動かせなら、k8s の初歩的な概念や Command line などを学べました。&lt;/p>
 &lt;p>実際に手を動かしながら学ぶべきものだと思うので、このハンズオン形式の講義はありがたかったです!&lt;/p>
-&lt;p>後は学ぶにつれて、 k8s の凄さがわかってきたので理解して使いこなせるようになればスケールするシステムを個人でも作れそうなので、頑張っていきます。&lt;/p></description></item><item><title>pandas.read_gbq を使わずに、Google BigQueryから高速にData ETL</title><link>https://shunyaueta.com/posts/2019-10-03/</link><pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-10-03/</guid><description>
+&lt;p>後は学ぶにつれて、 k8s の凄さがわかってきたので理解して使いこなせるようになればスケールするシステムを個人でも作れそうなので、頑張っていきます。&lt;/p></description></item><item><title>pandas.read_gbq を使わずに、Google BigQueryから快適にデータを読み込む</title><link>https://shunyaueta.com/posts/2019-10-03/</link><pubDate>Thu, 03 Oct 2019 23:52:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-10-03/</guid><description>
 &lt;p>&lt;a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_gbq.html">pandas.read_gbq&lt;/a> 便利ですよね。
-クレデンシャルファイルを認証画面からコピペすれば Jupyter 上でさっと動き、Google Big Query が実行されてその結果がそのままデータフレームとして扱えます。
-Jupyter と Google BQ を連携させたいときはいつも使っています&lt;/p>
+クレデンシャルファイルを認証画面からコピペすれば Jupyter Notebook上で簡単に認証され、Google BigQuery が実行されてその結果がそのままデータフレームとして扱えます。
+Jupyter Notebookと Google BigQuery を連携させたいときは愛用していました(過去形)。&lt;/p>
 &lt;h2 id="問題点">問題点&lt;/h2>
 &lt;ul>
 &lt;li>そこそこ大きなデータを持ってこようとすると、めちゃくちゃ遅くてストレスが半端ない&lt;/li>
 &lt;/ul>
-&lt;p>解決方法として、Google Big Query で巨大なデータをダウンロードする方法について書く&lt;/p>
-&lt;p>実は Google の公式ドキュメントでも推奨されています&lt;/p>
+&lt;p>解決方法として、Google BigQuery で巨大なデータをダウンロードする方法について書きます。&lt;/p>
+&lt;p>実は Google の公式ドキュメントでも推奨されています。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://cloud.google.com/bigquery/docs/pandas-gbq-migration">https://cloud.google.com/bigquery/docs/pandas-gbq-migration&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://cloud.google.com/bigquery/docs/bigquery-storage-python-pandas">https://cloud.google.com/bigquery/docs/bigquery-storage-python-pandas&lt;/a>&lt;/li>
@@ -5429,26 +5429,38 @@ Jupyter と Google BQ を連携させたいときはいつも使っています&
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>後は Jupyter Notebook のセルで以下のコマンドを実行すれば、&lt;/p>
-&lt;pre>&lt;code>%%bigquery df --use_bqstorage_api
-SELECT
-CONCAT(
-'https://stackoverflow.com/questions/',
-CAST(id as STRING)) as url,
-view_count
-FROM `bigquery-public-data.stackoverflow.posts_questions`
-WHERE tags like '%google-bigquery%'
-ORDER BY view_count DESC
-LIMIT 10
-&lt;/code>&lt;/pre>&lt;p>&lt;code>df&lt;/code> にマジックコマンドで実行した SQL の実行結果が格納されます!
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="o">%%&lt;/span>&lt;span class="n">bigquery&lt;/span> &lt;span class="n">df&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">use_bqstorage_api&lt;/span>
+&lt;span class="n">SELECT&lt;/span>
+&lt;span class="n">CONCAT&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="s1">&amp;#39;https://stackoverflow.com/questions/&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">CAST&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">id&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">STRING&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">url&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">view_count&lt;/span>
+&lt;span class="n">FROM&lt;/span> &lt;span class="sb">`bigquery-public-data.stackoverflow.posts_questions`&lt;/span>
+&lt;span class="n">WHERE&lt;/span> &lt;span class="n">tags&lt;/span> &lt;span class="n">like&lt;/span> &lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="si">%g&lt;/span>&lt;span class="s1">oogle-bigquery%&amp;#39;&lt;/span>
+&lt;span class="n">ORDER&lt;/span> &lt;span class="n">BY&lt;/span> &lt;span class="n">view_count&lt;/span> &lt;span class="n">DESC&lt;/span>
+&lt;span class="n">LIMIT&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>df&lt;/code> にマジックコマンドで実行した SQL の実行結果が格納されます!
 便利ですね&lt;/p>
 &lt;h3 id="2-bq-実行-bigquery-table-として保存-gcs-へ保存--gsutil-でマシンへコピー">2, BQ 実行 →BigQuery table として保存 →GCS へ保存 → &lt;code>gsutil&lt;/code> でマシンへコピー&lt;/h3>
 &lt;ul>
-&lt;li>
-&lt;p>BigQuery でクエリを実行、実行結果を BigQuery Table へ保存&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>注)実行結果の容量が巨大なので、保存先は基本的に Big Query Table へ保存するしか選択肢が無い&lt;/p>
-&lt;/li>
+&lt;li>BigQuery でクエリを実行、実行結果を BigQuery Table へ保存&lt;/li>
+&lt;li>注)実行結果の容量が巨大なので、保存先は基本的に Big Query Table へ保存するしか選択肢が無い&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://shunyaueta.com/posts/2019-10-03/images/export-to-bqtable.png" alt="can&amp;rsquo;t export large file as one file">&lt;/p>
 &lt;ul>
