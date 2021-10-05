@@ -8,6 +8,7 @@ enableGitInfo: true
 frontmatter:
   lastmod:
   - :git
+googleAnalytics: UA-39994406-11
 
 params:
   titleEmoji: '🦅'
