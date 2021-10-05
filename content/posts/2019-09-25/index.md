@@ -1,7 +1,8 @@
 ---
-title: "Tensorboard を わずか2行で Jupyter Notebook上で表示"
+title: "Jupyter Notebook上にTensorboard を わずか2行で表示"
 date: 2019-09-25T23:16:07+09:00
 lang: ja
+author: Shunya Ueta
 tags:
   - jupyter
   - python
@@ -14,7 +15,7 @@ Tensorboard とは、学習の状況を可視化できる TensorFlow Family の�
 
 Jupyte Notebook 上で学習状況を確認したい場合に Tensorboard をそのまま表示して確認できれば楽なので、試してみる
 
-sample code: https://pytorch.org/docs/stable/tensorboard.html
+- sample code: https://pytorch.org/docs/stable/tensorboard.html
 
 ```python
 import torch
