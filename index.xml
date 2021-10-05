@@ -5988,9 +5988,9 @@ Case : 初期の組織&lt;/strong>: 2–3 人の Data Engineer : DataScientist G
 !pip install mecab-python3 &amp;gt; /dev/null
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-23/images/1.png" alt="image">&lt;/p>
-&lt;p>インストールに成功しました。&lt;/p>
-&lt;h2 id="google-colabratory">Google Colabratory&lt;/h2>
+&lt;/div>&lt;p>インストールに成功しました。&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-23/images/1.png" alt="image">&lt;/p>
+&lt;p>Google Colabratoryも以下で公開しているので参考にしてみてください&lt;/p>
 &lt;p>&lt;a href="https://colab.research.google.com/drive/1YK8XFnfD29775lEYWhwz3wh4h8boR9iE">colab-mecab-ipadic-NEologd.ipynb&lt;/a>&lt;/p></description></item><item><title>eBayのAR測定機能を試してみた</title><link>https://shunyaueta.com/posts/2018-04-16/</link><pubDate>Mon, 16 Apr 2018 14:57:41 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-16/</guid><description>
 &lt;p>eBay が ARCore を使った商品の梱包測定機能を提供しているので試した&lt;/p>
 &lt;p>&lt;img src="https://shunyaueta.com/posts/2018-04-16/images/1.png" alt="image">&lt;/p>
