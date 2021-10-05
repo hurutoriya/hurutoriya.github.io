@@ -54,7 +54,7 @@ workflows:
 echo "${CLOUD_COMPOSER_CREDENTIALS_JSON}" > ${GOOGLE_APPLICATION_CREDENTIALS}
 ```
 
-__注意:__ セキュリティ対策としてクレデンシャルファイルは必ず環境変数として扱う。
+__NOTE:__ セキュリティ対策としてクレデンシャルファイルは必ず環境変数として扱う。
 
 2. 1で生成したクレデンシャルファイルにより、サービスアカウント認証をgcloud コマンドで行う
 

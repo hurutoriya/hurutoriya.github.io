@@ -10,7 +10,7 @@ tags:
 GCPでAirflow をマネージドサービスで使えるサービスで Cloud Composer が存在する。
 BigQueryやBigTable, PubSub などGCPの各サービスをDAGとして定義してジョブを定期実行できるので非常に便利だが、その代わりDAGを実行するまで結果がわからないので、CloudComposer を一度実行するしか無いのでデバッグが困難になる傾向がある。
 
-また、GitHubのリポジトリにDAGを保存して、CIでCloud Composerを更新するようしていると PRを都度作ってマージされないと確認できないという場合もある
+また、GitHubのリポジトリにDAGを保存して、CIでCloud Composerを更新するようしていると PRを都度作ってマージされないと確認できないという場合もある。
 
 ローカルでDocker で走らせれば良いのじゃないかというツッコミがあると思いますが、結局 Cloud Composer 上での動作を確かめないといけないので、今回の記事を書くことにしました。
 
@@ -75,7 +75,7 @@ gcloud composer environments storage dags import \
 
 __NOTE:__ プロダクションのDAGを直接書き換えるのは危険なのでやめましょう。
 
-### Reference
+## Reference
 
 - [Adding and Updating DAGs (workflows)](https://cloud.google.com/composer/docs/how-to/using/managing-dags)
 - [gsutil Top-Level Command-Line Options](https://cloud.google.com/storage/docs/gsutil/addlhelp/TopLevelCommandLineOptions)
