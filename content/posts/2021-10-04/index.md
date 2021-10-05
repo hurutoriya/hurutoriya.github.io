@@ -1,5 +1,5 @@
 ---
-title: "CloudComposer のDAGをCIで更新する"
+title: "CloudComposer のDAGをCircleCIで更新する"
 date: 2021-10-04T22:23:24+09:00
 lang: ja
 author: Shunya Ueta
