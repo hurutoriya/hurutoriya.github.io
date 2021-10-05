@@ -71,7 +71,7 @@
 &lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">CLOUD_COMPOSER_CREDENTIALS_JSON&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &amp;gt; &lt;span class="si">${&lt;/span>&lt;span class="nv">GOOGLE_APPLICATION_CREDENTIALS&lt;/span>&lt;span class="si">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;strong>注意:&lt;/strong> セキュリティ対策としてクレデンシャルファイルは必ず環境変数として扱う。&lt;/p>
+&lt;/div>&lt;p>&lt;strong>NOTE:&lt;/strong> セキュリティ対策としてクレデンシャルファイルは必ず環境変数として扱う。&lt;/p>
 &lt;ol start="2">
 &lt;li>1で生成したクレデンシャルファイルにより、サービスアカウント認証をgcloud コマンドで行う&lt;/li>
 &lt;/ol>
@@ -146,7 +146,7 @@
 &lt;/ul></description></item><item><title>GCPのCloud Composer のDAGを素早く・簡単にデバッグする</title><link>https://shunyaueta.com/posts/2021-09-29/</link><pubDate>Wed, 29 Sep 2021 22:20:23 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-29/</guid><description>
 &lt;p>GCPでAirflow をマネージドサービスで使えるサービスで Cloud Composer が存在する。
 BigQueryやBigTable, PubSub などGCPの各サービスをDAGとして定義してジョブを定期実行できるので非常に便利だが、その代わりDAGを実行するまで結果がわからないので、CloudComposer を一度実行するしか無いのでデバッグが困難になる傾向がある。&lt;/p>
-&lt;p>また、GitHubのリポジトリにDAGを保存して、CIでCloud Composerを更新するようしていると PRを都度作ってマージされないと確認できないという場合もある&lt;/p>
+&lt;p>また、GitHubのリポジトリにDAGを保存して、CIでCloud Composerを更新するようしていると PRを都度作ってマージされないと確認できないという場合もある。&lt;/p>
 &lt;p>ローカルでDocker で走らせれば良いのじゃないかというツッコミがあると思いますが、結局 Cloud Composer 上での動作を確かめないといけないので、今回の記事を書くことにしました。&lt;/p>
 &lt;p>&lt;strong>NOTE:&lt;/strong> 自分が使用しているComposerのversionは&lt;code>composer-1.8.0-Airflow-1.10.3&lt;/code> です。基本的にやれることは一緒だと思います。また、&lt;code>dev&lt;/code>, &lt;code>prod&lt;/code>で同一のDAGが走るCloud Composer を運用しているという前提です。&lt;/p>
 &lt;p>アプローチは２つ&lt;/p>
@@ -221,7 +221,7 @@ BigQueryやBigTable, PubSub などGCPの各サービスをDAGとして定義し�
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;strong>NOTE:&lt;/strong> プロダクションのDAGを直接書き換えるのは危険なのでやめましょう。&lt;/p>
-&lt;h3 id="reference">Reference&lt;/h3>
+&lt;h2 id="reference">Reference&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://cloud.google.com/composer/docs/how-to/using/managing-dags">Adding and Updating DAGs (workflows)&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://cloud.google.com/storage/docs/gsutil/addlhelp/TopLevelCommandLineOptions">gsutil Top-Level Command-Line Options&lt;/a>&lt;/li>
