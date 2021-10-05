@@ -1,5 +1,27 @@
 <!doctype html><html lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=theme-color content="dark"><title>CoreMLがTensorFlow Liteをサポート | Shunya Ueta</title><link rel=stylesheet href=/sass/main.min.1a3290acca8b3fc92df85ea9200859476d6c80d59009c89a749300f3ce7a7a67.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-39994406-11"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-39994406-11');</script></head><body class=dark><nav class=navbar><div class=container><div class=flex><div><a class=brand href=/><span class=emoji>🎰</span>
+gtag('js',new Date());gtag('config','UA-39994406-11');</script><meta property="og:title" content="CoreMLがTensorFlow Liteをサポート"><meta property="og:description" content="TensorFlow 無双
+TensorFlow Lite meets CoreML!!
+個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日 TensorFlow Lite が CoreML でサポートされるというアナウンスがありました!
+Announcing Core ML support in TensorFlow Lite
+CoreML の最大の利点は iPhone のアーキテクチャを最大限に利用した推論の高速化なので、Google も何かしらの手を打ってくると思っていましたがまさかそのまま CoreML にサポートされたのは驚きです。
+個人的に keras2, Caffe¹だけがサポートされてる今の状態は選択肢が少なくて微妙だなと思っていたので良いことだと思います。
+少し横道にそれますが、ONNX と呼ばれる Machine Leaning のモデルを相互変換できるプロジェクトも立ち上がっているので、近いうちにフレームワーク間の差異は消えていき、書きたいフレームワークで書き、動かしたい環境にモデルを変換して運用するという流れになる未来がくるかもしれません。
+ONNX: Open Neural Network Exchange Format
+Pixel²も iPhone8³以降に搭載されている A11 チップに機械学習の計算を高速化させるチップが採用されているのでこれから Machine Learning on Mobile はドンドン加速していくとおもいます。iOS11 の吉田さんが担当している CoreML の章を見てましたが、利点と欠点が明快に知れるのでオススメです。
+iOS 11 Programming - PEAKS
+TensorFlow Lite もデフォルトで Android をサポートしているので、こりゃほんとにプロダクション環境だと TensorFlow 一択になりつつありますね
+にしても TensorFlow の勢いはほんとに凄い…"><meta property="og:type" content="article"><meta property="og:url" content="https://shunyaueta.com/posts/2017-12-06/"><meta property="og:image" content="https://shunyaueta.com/static/slot-machine.jpg"><meta property="article:published_time" content="2017-12-06T13:36:38+00:00"><meta property="article:modified_time" content="2021-10-05T20:58:50+09:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://shunyaueta.com/static/slot-machine.jpg"><meta name=twitter:title content="CoreMLがTensorFlow Liteをサポート"><meta name=twitter:description content="TensorFlow 無双
+TensorFlow Lite meets CoreML!!
+個人的にいま興味ある分野のうちの一つがスマホで動く機械学習なんですが、昨日 TensorFlow Lite が CoreML でサポートされるというアナウンスがありました!
+Announcing Core ML support in TensorFlow Lite
+CoreML の最大の利点は iPhone のアーキテクチャを最大限に利用した推論の高速化なので、Google も何かしらの手を打ってくると思っていましたがまさかそのまま CoreML にサポートされたのは驚きです。
+個人的に keras2, Caffe¹だけがサポートされてる今の状態は選択肢が少なくて微妙だなと思っていたので良いことだと思います。
+少し横道にそれますが、ONNX と呼ばれる Machine Leaning のモデルを相互変換できるプロジェクトも立ち上がっているので、近いうちにフレームワーク間の差異は消えていき、書きたいフレームワークで書き、動かしたい環境にモデルを変換して運用するという流れになる未来がくるかもしれません。
+ONNX: Open Neural Network Exchange Format
+Pixel²も iPhone8³以降に搭載されている A11 チップに機械学習の計算を高速化させるチップが採用されているのでこれから Machine Learning on Mobile はドンドン加速していくとおもいます。iOS11 の吉田さんが担当している CoreML の章を見てましたが、利点と欠点が明快に知れるのでオススメです。
+iOS 11 Programming - PEAKS
+TensorFlow Lite もデフォルトで Android をサポートしているので、こりゃほんとにプロダクション環境だと TensorFlow 一択になりつつありますね
+にしても TensorFlow の勢いはほんとに凄い…"></head><body class=dark><nav class=navbar><div class=container><div class=flex><div><a class=brand href=/><span class=emoji>🎰</span>
 Shunya Ueta</a></div><div class=flex><a href=/articles/>All posts</a>
 <button id=dark-mode-button></button></div></div></div></nav><main><div class=container><article><header class=article-header><div class=thumb><div><h1>CoreMLがTensorFlow Liteをサポート</h1><div class=post-meta><div>By on <time>2017.12.06</time> (Last updated:<time>2021.10.05</time>)</div><div class=tags><a href=/tags/machinelearning/>machinelearning</a>
 <a href=/tags/tensorflow/>tensorflow</a>
