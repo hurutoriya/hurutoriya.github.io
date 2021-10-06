@@ -1,5 +1,5 @@
 ---
-title: "Hugo で記事の更新日をgitと連携して自動的に取得して表示する。"
+title: "Hugo で記事の更新日をgitと連携して自動的に取得して表示させる"
 date: 2021-10-06T20:38:58+09:00
 lang: ja
 author: Shunya Ueta
