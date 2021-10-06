@@ -50,7 +50,9 @@
 &lt;/div>
 &lt;/div>&lt;p>参考になると思うので、当ブログでの実際の変更点は&lt;a href="https://github.com/hurutoriya/hurutoriya.github.io/commit/cc2f2916fe87dcad4f300109edc8606700899c72">こちら&lt;/a>&lt;/p>
 &lt;p>テンプレートを上書きするように、&lt;code>./layout&lt;/code>配下のページを編集した。
-hugoの記事でたまに見かけるのがテーマを直接編集している人がいるが、hugoの設計はよくできていて、&lt;code>./layout&lt;/code> 配下に&lt;code>theme&lt;/code>と同じ構成でファイルを設置すればそちらを上書きする形で参照してサイトを構成してくれて、これは柔軟性がたかまるので、よく考え込まれているなと思った。&lt;/p>
+hugoの記事でたまに見かけるのがテーマを直接編集している人がいるが、それは筋が良くないやり方なんです。
+なぜかというと、hugoの設計はよくできているので、&lt;code>./layout&lt;/code> 配下に&lt;code>theme&lt;/code>と同じ構成でファイルを設置すればそちらを上書きする形で参照してサイトを構成してくれるので、元のテーマは何も変更をせずにアップデートが用意になる。
+また、拡張性と柔軟性が高まる良い仕組みで、個々人ごとにテーマの編集がしたい必要性に対してよく考え込まれているなと思った。&lt;/p>
 &lt;h2 id="reference">Reference&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.andrewjstevens.com/posts/2021/03/last-modified-date-with-hugo/">Last Modified Date with Hugo&lt;/a>&lt;/li>
