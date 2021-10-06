@@ -1,4 +1,62 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>CloudComposer のDAGをCircleCIで更新する</title><link>https://shunyaueta.com/posts/2021-10-04/</link><pubDate>Mon, 04 Oct 2021 22:23:24 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-10-04/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo で記事の更新日をgitと連携して自動的に取得して表示する。</title><link>https://shunyaueta.com/posts/2021-10-06/</link><pubDate>Wed, 06 Oct 2021 20:38:58 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-10-06/</guid><description>
+&lt;p>最近昔書いていた技術記事の情報が古くなりすぎて不正確なこともあったので、書き直すときがあったのだが、そのときに自動的に最終更新日を記事に表記できないか探していたら、実現方法があったのでメモしておきます。&lt;/p>
+&lt;p>やっていることは
+&lt;a href="https://www.andrewjstevens.com/posts/2021/03/last-modified-date-with-hugo/">Last Modified Date with Hugo&lt;/a>
+の記事をと完全に一緒だが、日本語での情報が無かったので備忘録がてら記録を残す。&lt;/p>
+&lt;p>Hugo は各ページに関する情報を&lt;a href="https://gohugo.io/content-management/front-matter/#front-matter-variables">Front Matter Variables&lt;/a> という仕組みでMarkdown上に定義します。
+主にYAML形式で記述されていることが多いです。&lt;/p>
+&lt;p>&lt;code>lastmod&lt;/code> という変数が更新日を表す変数であり、この変数に対して更新日の情報を与えてやれば記事の最終更新日を表現することができる。&lt;/p>
+&lt;p>Front Matter に `lastmod: &amp;ldquo;2021-03-31&amp;rdquo; の形式で与えておけば、以下の形式で記事作成日と最終更新日を表記できる。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-html" data-lang="html">{{ $date := .Date.Format &amp;#34;02.01.2006&amp;#34; }}
+{{ $lastmod := .Lastmod.Format &amp;#34;02.01.2006&amp;#34; }}
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Published on: {{ $date }}&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Edited on: {{ $lastmod }}&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>だが、毎回記事を編集するたびに lastmod 変数を追記するのは面倒なので自動化できるなら自動化したい。&lt;/p>
+&lt;p>&lt;code>config.yaml&lt;/code> で、以下の設定を行う。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="k">enableGitInfo&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>enableGitInfo&lt;/code>を &lt;code>true&lt;/code>にすることで、各ページに対して&lt;a href="https://gohugo.io/getting-started/configuration/#enablegitinfo">Git情報を更新日として付与&lt;/a>してくれる。&lt;/p>
+&lt;p>最後に&lt;code>config.yaml&lt;/code> で以下の設定を行えば、 Front Matter の &lt;code>lastmod&lt;/code> 変数に対して、 Front Matter で定義されている&lt;code>lastmod&lt;/code>、もしその情報がなければ各ページの &lt;code>git&lt;/code>の最終コミット日を返すという設定がされる。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="k">frontmatter&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">lastmod&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="p">:&lt;/span>lastmod&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="p">:&lt;/span>git&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>少し挙動として謎なのが、この設定を行ったのが10/05 だが、すべての記事の最終更新日が10/05 に初期化された。
+本来なら各ページの &lt;code>git&lt;/code>の最終コミット日を返すという設定がされるべきだが、これで自動反映されるようになったので良しとする。&lt;/p>
+&lt;p>参考になると思うので、当ブログでの実際の変更点は&lt;a href="https://github.com/hurutoriya/hurutoriya.github.io/commit/cc2f2916fe87dcad4f300109edc8606700899c72">こちら&lt;/a>&lt;/p>
+&lt;p>テンプレートを上書きするように、&lt;code>./layout&lt;/code>配下のページを編集した。
+hugoの記事でたまに見かけるのがテーマを直接編集している人がいるが、hugoの設計はよくできていて、&lt;code>./layout&lt;/code> 配下に&lt;code>theme&lt;/code>と同じ構成でファイルを設置すればそちらを上書きする形で参照してサイトを構成してくれて、これは柔軟性がたかまるので、よく考え込まれているなと思った。&lt;/p>
+&lt;h2 id="reference">Reference&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.andrewjstevens.com/posts/2021/03/last-modified-date-with-hugo/">Last Modified Date with Hugo&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>CloudComposer のDAGをCircleCIで更新する</title><link>https://shunyaueta.com/posts/2021-10-04/</link><pubDate>Mon, 04 Oct 2021 22:23:24 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-10-04/</guid><description>
 &lt;p>Cloud Composer(Airflow) のDAGをGitHub リポジトリで管理して、CIによりリポジトリで管理しているDAGをPull RequestがマージされるとCloud ComposerのDAGへ同期する方法について説明する。&lt;/p>
 &lt;p>DAGは、ルートディレクトリ直下の &lt;code>dags/&lt;/code> というディレクトリに格納されている状態を前提とする。&lt;/p>
 &lt;p>以下の２つのコマンドラインツールを利用して実現できる。&lt;/p>
@@ -5471,7 +5529,7 @@ Jupyter Notebookと Google BigQuery を連携させたいときは愛用して�
 &lt;p>保存ファイル名を &lt;code>file-*&lt;/code> のようにワイルドカードを指定すると、自動的にひとつのテーブルを複数ファイルに分割して保存してくれる&lt;/p>
 &lt;p>&lt;code>gsutil&lt;/code> commands で任意のマシンへダウンロードする。&lt;/p>
 &lt;p>&lt;code>-m&lt;/code> オプションを付け足すと並列ダウンロードが始まるので、複数ファイルダウンロードする場合はおすすめです&lt;/p>
-&lt;p>ストレスレスなデータ分析ライフを!&lt;/p></description></item><item><title>Jupyter Notebook上にTensorboard を わずか2行で表示</title><link>https://shunyaueta.com/posts/2019-09-25/</link><pubDate>Wed, 25 Sep 2019 23:16:07 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2019-09-25/</guid><description>
+&lt;p>ストレスレスなデータ分析ライフを!&lt;/p></description></item><item><title>Jupyter Notebook上にTensorboard を わずか2行で表示させる</title><link>https://shunyaueta.com/posts/2019-09-25/</link><pubDate>Wed, 25 Sep 2019 23:16:07 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2019-09-25/</guid><description>
 &lt;p>Pytorch 1.2 からは公式に Tensorboard がサポートされている&lt;/p>
 &lt;p>Tensorboard とは、学習の状況を可視化できる TensorFlow Family の一種&lt;/p>
 &lt;p>Jupyte Notebook 上で学習状況を確認したい場合に Tensorboard をそのまま表示して確認できれば楽なので、試してみる&lt;/p>
