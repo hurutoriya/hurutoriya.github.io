@@ -1,5 +1,5 @@
 ---
-title: "Jupyter Notebook上にTensorboard を わずか2行で表示"
+title: "Jupyter Notebook上にTensorboard を わずか2行で表示させる"
 date: 2019-09-25T23:16:07+09:00
 lang: ja
 author: Shunya Ueta
