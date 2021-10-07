@@ -11,17 +11,19 @@ tags:
 
 MLOpsの査読付き国際会議 [2020 USENIX Conference on Operational Machine Learning](https://www.usenix.org/conference/opml20) (略称 OpML'20)に論文が採択されたので、登壇してきた。
 
-Podcastでも紹介しました
+Podcastでも紹介しました。
 
 [#1 MLOps の国際会議 OpML20 について at just4fun.fm](https://anchor.fm/hurutoriya/episodes/1-MLOps--OpML20-ek0nr3/a-a58em8)
 
 ## MLOpsの査読付き国際会議とOpMLの立ち位置
 
 機械学習エンジニアリング・MLOpsの領域の会議でも一番有名なものとして2018年に発足した[MLSys](https://mlsys.org/)があります。(ちなみに最初はSysMLという名前でした)
-このカンファレンスの傾向としては、アカデミアの研究者主体の発足経緯からアカデミアからインダストリーへの橋渡し的立ち位置となっています。具体的には、発表者はアカデミアの方が大半でハードウェアから、モデルのOSS公開など幅広く機械学習エンジニアリング・MLOpsの周辺トピックをカバーしています。
+このカンファレンスの傾向としては、アカデミアの研究者主体の発足経緯からアカデミアからインダストリーへの橋渡し的立ち位置となっています。
+具体的には、発表者はアカデミアの方が大半でハードウェアから、モデルのOSS公開など幅広く機械学習エンジニアリング・MLOpsの周辺領域をカバーしています。
 
-OpMLはその一年後に、MLOpsを軸にした[USENIX](https://www.usenix.org/)が母体の会議として誕生しました。
-USENIXはSRECON、OSDIなどを開催している団体です。学会的なスタイルに則り、先端的な計算機システムの成果を論文として公開されています。MLSysと対称的にこちらはインダストリーからアカデミアへの橋渡し的立ち位置となっています。発表内容は企業での発表者が多く、実際の運用で得られた各企業のMLOpsのベストプラクティスなどがメインで話されています。
+OpMLはその一年後に、[USENIX](https://www.usenix.org/)が母体の会議としてMLOpsを軸にした会議として誕生しました。
+USENIXはSRECON、OSDIなどを開催している団体です。
+学術的なスタイルに則り、先端的な計算機システムの成果を論文として公開されています。MLSysと対称的にこちらはインダストリーからアカデミアへの橋渡し的立ち位置となっています。発表内容は企業での発表者が多く、実際の運用で得られた各企業のMLOpsのベストプラクティスなどがメインで話されています。
 個人的にはOpMLのほうが、MLOpsのど真ん中を主体に置いているのでMLSysよりも盛り上がってほしいなと思っています。
 
 OpML'19がどのような様子だったかは、以下の記事がわかりやすいです。
@@ -44,7 +46,7 @@ OpML20で[推奨されるトピック](https://www.usenix.org/conference/opml20/
 
 > New model introduction into production (e.g., staging, A/B test)
 
-においてNoveltyがあると考えて、ここからストーリーを組み立てていきました。
+において新規性(Novelty)があると考えて、ここからストーリーを組み立てていきました。
 
 スケジュール感として投稿締切が2020/02/25で、その1ヶ月前の1月末から毎日1時間、Google Calendarで時間を抑えて同僚と集中的に論文の執筆を行いました。
 最初にガッと3ページほど書いて、その後洗練させて2ページに圧縮して投稿しました。
@@ -70,17 +72,16 @@ OpML20で[推奨されるトピック](https://www.usenix.org/conference/opml20/
 
 です。
 
-[![Auto Content Moderation in C2C e-Commerce](/posts/2020-09-06/images/1.png)]((https://www.usenix.org/conference/opml20/presentation/ueta))
+[![Auto Content Moderation in C2C e-Commerce](/posts/2020-09-06/images/1.png)](https://www.usenix.org/conference/opml20/presentation/ueta)
 
-[Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta)
-
-[講演動画-Youtube](https://youtu.be/_rvEcH_zyt4)
+- [Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta)
+- [講演動画-Youtube](https://youtu.be/_rvEcH_zyt4)
 
 当日はオンライン開催で、発表内容は事前にYouTubeで公開され、その後Slack上でリアルタイムに発表者に質問ができる Ask Me Anything (AMA)セッションが開催されました。
 また、今回はオンライン開催になった影響で参加費は無料となりました。
 AMAセッションでChairの方がファシリテーターとなり、予想以上に活発な議論が生み出され驚きました。
 
-オンライン開催になり、発表内容はすべてYouTubeで公開され、アメリカへの渡航の必要がなくなり気軽に参加できるのは非常に良い流れだと思いました。
+オンライン開催になり、発表内容はすべてYouTubeで公開され、アメリカへの渡航の必要がなくなり気軽に参加できるのは非常に良い流れだと思います。
 
 一方で、日本からの参加だと深夜01:00-02:30の参加だったのでその点のみ非常に辛かったです。
 懇親会などの偶発性を持った出会いなどはオンラインだとやはり、難しく感じました。
