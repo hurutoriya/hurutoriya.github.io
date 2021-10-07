@@ -171,19 +171,18 @@ CODEOWNERS の仕組みを知ると理解できるのですが、a-group/all が
 実行環境 1 2 3 4 5 6 7 In [1]: import pandas as pd In [2]: pd.__version__ Out[2]: &amp;#39;1.1.2 In [3]: import sys ...: print(sys.version) 3.8.2 (default, Jul 19 2020, 07:23:27) [Clang 11.0.3 (clang-1103.0.32.62)] 目的となるcsvファイルは tmp ディレクトリに以下のような形式で配置されているとする
 1 2 3 4 tmp ├── 1.csv ├── 2.csv └── 3.csv 各ファイルはこのような形式で保存されています。
 1 2 3 4 id name created 1 John 2020/09/10 2 bob 2020/09/10 3 taro 2020/09/11 以下のPythonスクリプトを実行</description></item><item><title>MLOps の国際会議 OpML'20 に論文が採択されたので登壇してきた</title><link>https://shunyaueta.com/posts/2020-09-06/</link><pubDate>Sun, 06 Sep 2020 23:31:03 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-06/</guid><description>MLOpsの査読付き国際会議 2020 USENIX Conference on Operational Machine Learning (略称 OpML&amp;rsquo;20)に論文が採択されたので、登壇してきた。
-Podcastでも紹介しました
+Podcastでも紹介しました。
 #1 MLOps の国際会議 OpML20 について at just4fun.fm
-MLOpsの査読付き国際会議とOpMLの立ち位置 機械学習エンジニアリング・MLOpsの領域の会議でも一番有名なものとして2018年に発足したMLSysがあります。(ちなみに最初はSysMLという名前でした) このカンファレンスの傾向としては、アカデミアの研究者主体の発足経緯からアカデミアからインダストリーへの橋渡し的立ち位置となっています。具体的には、発表者はアカデミアの方が大半でハードウェアから、モデルのOSS公開など幅広く機械学習エンジニアリング・MLOpsの周辺トピックをカバーしています。
-OpMLはその一年後に、MLOpsを軸にしたUSENIXが母体の会議として誕生しました。 USENIXはSRECON、OSDIなどを開催している団体です。学会的なスタイルに則り、先端的な計算機システムの成果を論文として公開されています。MLSysと対称的にこちらはインダストリーからアカデミアへの橋渡し的立ち位置となっています。発表内容は企業での発表者が多く、実際の運用で得られた各企業のMLOpsのベストプラクティスなどがメインで話されています。 個人的にはOpMLのほうが、MLOpsのど真ん中を主体に置いているのでMLSysよりも盛り上がってほしいなと思っています。
+MLOpsの査読付き国際会議とOpMLの立ち位置 機械学習エンジニアリング・MLOpsの領域の会議でも一番有名なものとして2018年に発足したMLSysがあります。(ちなみに最初はSysMLという名前でした) このカンファレンスの傾向としては、アカデミアの研究者主体の発足経緯からアカデミアからインダストリーへの橋渡し的立ち位置となっています。 具体的には、発表者はアカデミアの方が大半でハードウェアから、モデルのOSS公開など幅広く機械学習エンジニアリング・MLOpsの周辺領域をカバーしています。
+OpMLはその一年後に、USENIXが母体の会議としてMLOpsを軸にした会議として誕生しました。 USENIXはSRECON、OSDIなどを開催している団体です。 学術的なスタイルに則り、先端的な計算機システムの成果を論文として公開されています。MLSysと対称的にこちらはインダストリーからアカデミアへの橋渡し的立ち位置となっています。発表内容は企業での発表者が多く、実際の運用で得られた各企業のMLOpsのベストプラクティスなどがメインで話されています。 個人的にはOpMLのほうが、MLOpsのど真ん中を主体に置いているのでMLSysよりも盛り上がってほしいなと思っています。
 OpML&amp;rsquo;19がどのような様子だったかは、以下の記事がわかりやすいです。
 OpML ‘19参加レポート The first conference of Operational Machine Learning: OpML ‘19 自分自身、機械学習エンジニアリングやMLOps周りのカンファレンス情報などを追いかけていますが、この分野で査読付きかつ論文として残せる形式の国際会議は主に上記の２つの認識です。
 KDDやCOLING、NAACLなどの国際会議でもインダストリートラックが常設されるようになって久しいですが、最近ではインダストリートラックだけではなく、積極的に実応用前提のワークショップ(ECNLP at ACL2020, IRS2020 at KDD2020など)が開催されており機械学習の理論と実応用の融合が進んでいます。
 OpML&amp;rsquo;20への投稿と採択で得られたもの OpML&amp;rsquo;20では下記２つの発表枠があり、投稿者がどちらかを選んで発表を行います。
 査読付きで20mの口頭発表 2ページの査読付き論文+20mの口頭発表 OpML20で推奨されるトピックでも、自分たちが持っているネタで
 New model introduction into production (e.g., staging, A/B test)
-においてNoveltyがあると考えて、ここからストーリーを組み立てていきました。
-スケジュール感として投稿締切が2020/02/25で、その1ヶ月前の1月末から毎日1時間、Google Calendarで時間を抑えて同僚と集中的に論文の執筆を行いました。 最初にガッと3ページほど書いて、その後洗練させて2ページに圧縮して投稿しました。 あらめて添削や執筆をともに行ってくれた同僚たちに感謝します。
-そして投稿の1ヶ月後に通知メールが来て採択を知りました。 添削を何度も繰り返して時間が迫るなかなんとか投稿できたという状態で、とりあえず投稿できて良かったなと感じていた最中だったので、採択通知が来て本当におどきました。</description></item><item><title>Python の内包表記とジェネレータ式のメモリ使用量比較</title><link>https://shunyaueta.com/posts/2020-08-23/</link><pubDate>Sun, 23 Aug 2020 21:28:10 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-08-23/</guid><description>リストを構築する際にPythonではリスト内包表記とジェネレータ式の２種類が存在する。 今回、リスト構築時にメモリ使用量にどれだけ差異が発生するのか調査をしてみた。 メモリ使用量の調査には、memory_profilerというパッケージを使用した。
+において新規性(Novelty)があると考えて、ここからストーリーを組み立てていきました。
+スケジュール感として投稿締切が2020/02/25で、その1ヶ月前の1月末から毎日1時間、Google Calendarで時間を抑えて同僚と集中的に論文の執筆を行いました。 最初にガッと3ページほど書いて、その後洗練させて2ページに圧縮して投稿しました。 あらめて添削や執筆をともに行ってくれた同僚たちに感謝します。</description></item><item><title>Python の内包表記とジェネレータ式のメモリ使用量比較</title><link>https://shunyaueta.com/posts/2020-08-23/</link><pubDate>Sun, 23 Aug 2020 21:28:10 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-08-23/</guid><description>リストを構築する際にPythonではリスト内包表記とジェネレータ式の２種類が存在する。 今回、リスト構築時にメモリ使用量にどれだけ差異が発生するのか調査をしてみた。 メモリ使用量の調査には、memory_profilerというパッケージを使用した。
 まず、２つのリストのデカルト積のタプルを表示するプログラムでの比較
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 from memory_profiler import profile @profile def main(): &amp;#34;&amp;#34;&amp;#34; Comparision List comprehension VS generator memory usage &amp;#34;&amp;#34;&amp;#34; colors = &amp;#34;colors&amp;#34; * 1000 sizes = &amp;#34;S&amp;#34; * 100 for shirts in ((color, size) for color in colors for size in sizes): print(shirts) [print((color, size)) for color in colors for size in sizes] if __name__ == &amp;#34;__main__&amp;#34;: main() 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Filename: src/listcomp_vs_generator.</description></item><item><title>AOJの「ITP I」40問をPythonで解いた</title><link>https://shunyaueta.com/posts/2020-08-04/</link><pubDate>Tue, 04 Aug 2020 03:38:58 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-08-04/</guid><description>はじめに コーディングの腕をもっと磨きたいなと思ったので、以下の記事を参考に始めてみた
 https://qiita.com/e869120/items/f1c6f98364d1443148b3 全部で 44 問ありますが、最後の 4 問は競プロとはあまり関係ないので、ITP1_1-A から ITP1_10-D までの 40 問を解くことをお勧めします。
