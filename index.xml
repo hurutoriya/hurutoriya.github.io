@@ -1,4 +1,39 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>クエリ分類(Query Classification) について社内の勉強会で話してきた</title><link>https://shunyaueta.com/posts/2021-10-09/</link><pubDate>Sat, 09 Oct 2021 00:42:40 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-10-09/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Airflow でDAGを任意のタイミングで一度だけ実行する方法</title><link>https://shunyaueta.com/posts/2021-10-12/</link><pubDate>Tue, 12 Oct 2021 00:07:05 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-10-12/</guid><description>
+&lt;p>Airflow で作成したDAGを自動で定期実行せずに、あえて手動実行で一度だけ実行したい場合もある。&lt;/p>
+&lt;p>&lt;code>DAG&lt;/code>のオプションを以下のように設定する。&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>schedule_interval&lt;/code> を &amp;ldquo;@once&amp;rdquo; に設定することで、一度だけDAGが実行される&lt;/li>
+&lt;li>&lt;code>is_paused_upon_creation&lt;/code> を &lt;code>True&lt;/code> に設定することで、DAGが作成時に自動的に実行されず、DAGが停止状態で作成される。
+デフォルトでは&lt;code>False&lt;/code>となっており、自動実行される。&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="kn">from&lt;/span> &lt;span class="nn">airflow&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">DAG&lt;/span>
+&lt;span class="k">with&lt;/span> &lt;span class="n">DAG&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="n">dag_id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;sellerscore_initial_batch&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="c1"># NOTE: dosen&amp;#39;t need to repeat&lt;/span>
+&lt;span class="n">schedule_interval&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;@once&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="c1"># NOTE: we have to manually start the this DAG&lt;/span>
+&lt;span class="n">is_paused_upon_creation&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="bp">True&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">dag&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="reference">Reference&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/65742424/airflow-schedule-interval-once">Airflow: schedule_interval = &amp;lsquo;@once&amp;rsquo;&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/models/dag/index.html?highlight=is_paused#airflow.models.dag.DagModel.is_paused_at_creation">Docs - airflow.models.dag&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>クエリ分類(Query Classification) について社内の勉強会で話してきた</title><link>https://shunyaueta.com/posts/2021-10-09/</link><pubDate>Sat, 09 Oct 2021 00:42:40 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-10-09/</guid><description>
 &lt;p>今年の10月から、新しく入社した同僚とともに、検索領域の論文や技術ブログを定期的に紹介する社内勉強会をはじめてみた。
 定常的に開催されることが一番大事だよねという方針になったので、以下のような仕組みで、可能な限り低コストで継続できるような仕組みにした。&lt;/p>
 &lt;ul>
