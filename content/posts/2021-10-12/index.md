@@ -29,5 +29,6 @@ with DAG(
 
 
 ## Reference
+
 - [Airflow: schedule_interval = '@once'](https://stackoverflow.com/questions/65742424/airflow-schedule-interval-once)
 - [Docs - airflow.models.dag](https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/models/dag/index.html?highlight=is_paused#airflow.models.dag.DagModel.is_paused_at_creation)
