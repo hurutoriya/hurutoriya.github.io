@@ -36,7 +36,7 @@ pyimagesearch の Blog 記事で最小限の構成で顔検出を行う API サ�
 
 django-rest-framework で使える管理画面
 
-### Thanks
+### References
 
 1.  [hurutoriya/face_detector_api](https://github.com/hurutoriya/face_detector_api)
 2.  [Django REST Framework を使って爆速で API を実装する](http://qiita.com/kimihiro_n/items/86e0a9e619720e57ecd8),[ChristianKreuzberger/django-rest-imageupload-example](https://github.com/ChristianKreuzberger/django-rest-imageupload-example/tree/master/tutorial)
