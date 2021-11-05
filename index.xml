@@ -6952,7 +6952,7 @@ _&lt;a href="https://opencv.org/opencv-3-3.html">&lt;em>https://opencv.org/openc
 &lt;p>今回の発展形として django-rest-framework を使って、モデルを組み込んで作り上げて Google Apps Engine 上で公開してみよう。 REST Framework はこの記事&lt;a href="https://hurutoriya.github.io/blog/django-start.html#fn-django_rest_article">2&lt;/a>を参考に画像をアップロードできる雛形は作り上げた。 後は OpenCV で処理を施す部分を書き上げたらいけそう。&lt;/p>
 &lt;p>&lt;img src="https://shunyaueta.com/posts/2017-11-13/images/2.png" alt="image">&lt;/p>
 &lt;p>django-rest-framework で使える管理画面&lt;/p>
-&lt;h3 id="thanks">Thanks&lt;/h3>
+&lt;h3 id="references">References&lt;/h3>
 &lt;ol>
 &lt;li>&lt;a href="https://github.com/hurutoriya/face_detector_api">hurutoriya/face_detector_api&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://qiita.com/kimihiro_n/items/86e0a9e619720e57ecd8">Django REST Framework を使って爆速で API を実装する&lt;/a>,&lt;a href="https://github.com/ChristianKreuzberger/django-rest-imageupload-example/tree/master/tutorial">ChristianKreuzberger/django-rest-imageupload-example&lt;/a>&lt;/li>
