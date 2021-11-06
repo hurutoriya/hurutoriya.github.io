@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Pub/Sub に公開された結果をDataflow template を使えばめちゃくちゃ簡単に確認できる"
+title: "Google Cloud Pub/Sub に公開された結果はDataflow template を使えばめちゃくちゃ簡単に確認できる"
 date: 2021-11-05T23:05:22+09:00
 lang: ja
 author: Shunya Ueta
