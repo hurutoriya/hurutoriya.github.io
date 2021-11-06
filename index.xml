@@ -1,4 +1,154 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Google Cloud Pub/Sub に公開された結果はDataflow template を使えばめちゃくちゃ簡単に確認できる</title><link>https://shunyaueta.com/posts/2021-11-05/</link><pubDate>Fri, 05 Nov 2021 23:05:22 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-11-05/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Standard SQLのCOALESCEで、時間経過によってカラム名が変化したデータを柔軟に抽出する</title><link>https://shunyaueta.com/posts/2021-11-06/</link><pubDate>Sat, 06 Nov 2021 22:40:02 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-11-06/</guid><description>
+&lt;p>データの蓄積帰還が長くなってくると、例えば JSON形式でログを取っているが、同じデータでもマイグレーションやロギングロジックの更新などで&lt;code>key&lt;/code> の名前が変化したりする場合がある。&lt;/p>
+&lt;p>その場合取り扱いに困るのが、古いkeyと新しいkey をどのように併合するかだ。
+例えば特定の日次できれいにデータが入れ替わっているのなら、色々やりようがあるが、クライアントなどのログの場合データの変化も均一ではないので、徐々に変化していることが大半なので、日次で別々の抽出をして結合するというアプローチも難しい。&lt;/p>
+&lt;p>その際に役立つのが Standard SQL 条件付き構文の &lt;a href="(https://cloud.google.com/bigquery/docs/reference/standard-sql/conditional_expressions#coalesce)">COALESCE&lt;/a> だ。&lt;/p>
+&lt;p>&lt;code>COALECSCE&lt;/code> は、引数の最初の非NULLの値を返す関数で、&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-sql" data-lang="sql">&lt;span class="n">COALESCE&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;B&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;C&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>だと &lt;code>B&lt;/code>が返される。この関数を使うことで、複数カラムを一つに併合することができる。&lt;/p>
+&lt;h2 id="具体例を交えつつ実践してみる">具体例を交えつつ実践してみる&lt;/h2>
+&lt;p>例えば、以下のように昔のカラム名が &lt;code>title&lt;/code> で、全く同じデータが新しいカラムの &lt;code>title_v2&lt;/code> に入ってきているとする。&lt;/p>
+&lt;p>&lt;strong>NOTE:&lt;/strong> json を例題にkeyの抽出にしたほうが実際の状況に沿いますが、カラムのみで表現したほうが説明が簡単なので今回はそちらを採用。&lt;/p>
+&lt;h3 id="用意したデータ">用意したデータ&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-sql" data-lang="sql">&lt;span class="k">WITH&lt;/span> &lt;span class="n">menues&lt;/span> &lt;span class="k">AS&lt;/span>
+&lt;span class="p">(&lt;/span>&lt;span class="k">SELECT&lt;/span> &lt;span class="s2">&amp;#34;うどん&amp;#34;&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">title&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">NULL&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">title_v2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/06&amp;#34;&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">created&lt;/span> &lt;span class="k">UNION&lt;/span> &lt;span class="k">ALL&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="s2">&amp;#34;ラーメン&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/07&amp;#34;&lt;/span> &lt;span class="k">UNION&lt;/span> &lt;span class="k">ALL&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;そば&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/08&amp;#34;&lt;/span> &lt;span class="k">UNION&lt;/span> &lt;span class="k">ALL&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="s2">&amp;#34;カツ丼&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/09&amp;#34;&lt;/span> &lt;span class="k">UNION&lt;/span> &lt;span class="k">ALL&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="s2">&amp;#34;カツ丼&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;カツ丼&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/10&amp;#34;&lt;/span> &lt;span class="k">UNION&lt;/span> &lt;span class="k">ALL&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;カレー&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/11&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="k">FROM&lt;/span> &lt;span class="n">menues&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>title&lt;/th>
+&lt;th>title_v2&lt;/th>
+&lt;th>created&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>うどん&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>2021/10/06&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ラーメン&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>2021/10/07&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>そば&lt;/td>
+&lt;td>2021/10/08&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>カツ丼&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>2021/10/09&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>カツ丼&lt;/td>
+&lt;td>カツ丼&lt;/td>
+&lt;td>2021/10/10&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>カレー&lt;/td>
+&lt;td>2021/10/11&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;code>2021/10/10&lt;/code> のデータなどは旧カラムと新カラムにダブルライトされています。&lt;/p>
+&lt;h3 id="coalesce-で複数カラムを併合する">COALESCE で複数カラムを併合する&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-sql" data-lang="sql">&lt;span class="k">WITH&lt;/span> &lt;span class="n">menues&lt;/span> &lt;span class="k">AS&lt;/span>
+&lt;span class="p">(&lt;/span>&lt;span class="k">SELECT&lt;/span> &lt;span class="s2">&amp;#34;うどん&amp;#34;&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">title&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">NULL&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">title_v2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/06&amp;#34;&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">created&lt;/span> &lt;span class="k">UNION&lt;/span> &lt;span class="k">ALL&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="s2">&amp;#34;ラーメン&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/07&amp;#34;&lt;/span> &lt;span class="k">UNION&lt;/span> &lt;span class="k">ALL&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;そば&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/08&amp;#34;&lt;/span> &lt;span class="k">UNION&lt;/span> &lt;span class="k">ALL&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="s2">&amp;#34;カツ丼&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/09&amp;#34;&lt;/span> &lt;span class="k">UNION&lt;/span> &lt;span class="k">ALL&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="s2">&amp;#34;カツ丼&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;カツ丼&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/09&amp;#34;&lt;/span> &lt;span class="k">UNION&lt;/span> &lt;span class="k">ALL&lt;/span>
+&lt;span class="k">SELECT&lt;/span> &lt;span class="k">NULL&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;カレー&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;2021/10/10&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="k">SELECT&lt;/span>
+&lt;span class="n">COALESCE&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">title_v2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">title&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="n">created&lt;/span>
+&lt;span class="k">FROM&lt;/span> &lt;span class="n">menues&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="結果">結果&lt;/h4>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>title&lt;/th>
+&lt;th>created&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>うどん&lt;/td>
+&lt;td>2021/10/06&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ラーメン&lt;/td>
+&lt;td>2021/10/07&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>そば&lt;/td>
+&lt;td>2021/10/08&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>カツ丼&lt;/td>
+&lt;td>2021/10/09&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>カツ丼&lt;/td>
+&lt;td>2021/10/09&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>カレー&lt;/td>
+&lt;td>2021/10/10&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>はい、上記の結果のように&lt;code>COALESCE&lt;/code> を使えば２つの時間経過によって別れてしまったカラムを一つのカラムとして併合することができました。非常に便利ですね。&lt;/p>
+&lt;h2 id="reference">Reference&lt;/h2>
+&lt;p>&lt;a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/conditional_expressions#coalesce">BigQuery Conditional expressions- COALESCE&lt;/a>&lt;/p></description></item><item><title>Google Cloud Pub/Sub に公開された結果はDataflow template を使えばめちゃくちゃ簡単に確認できる</title><link>https://shunyaueta.com/posts/2021-11-05/</link><pubDate>Fri, 05 Nov 2021 23:05:22 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-11-05/</guid><description>
 &lt;p>PubSubに出力された結果を確認するのって、なかなか手間がかかりませんか?&lt;/p>
 &lt;p>最近同僚に簡単な確認方法を教えてもらい、感動したのでそれを記事にしました。&lt;/p>
 &lt;h2 id="確認方法">確認方法&lt;/h2>
