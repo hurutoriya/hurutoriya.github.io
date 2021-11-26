@@ -16,7 +16,7 @@ tags:
 
 検索関係のシステムに携わっている場合、毎年面白い内容が目白押しなのでぜひとも見てほしい。
 
-今回は Berlin Buzzwords 2019 で発表された「AmazonではLucene をどう活用してeコマース検索をスケールさせているか」の講演動画を見たので、メモを公開しておく
+今回は Berlin Buzzwords 2019 で発表された「AmazonではLucene をどう活用してeコマース検索をスケールさせているか」の講演動画を社内勉強会で紹介するために視聴したので、そのメモを公開する。
 
 ## E-Commerce search at scale on Apache Lucene
 
@@ -168,8 +168,16 @@ tags:
 
 - [What Amazon gets by giving back to Apache Lucene](https://aws.amazon.com/jp/blogs/opensource/amazon-giving-back-apache-lucene/)
 
+Lucene に詳しい同僚からは、Lucene に興味あるならこの本がおすすめと言われので読んでおきたい。
+ちなみに著者は、この講演者のうちの一人であるMike McCandless さん... (14年間Lucene の開発をしている!!)
+
+- [Lucene in Action 2nd edition](https://amzn.to/3FP8DWn)
+
+余談ですが、この人のことを同僚が、
+> Lucene 界隈では神として知られていますね
+と言っていて、笑ったw
+
 *** 
 
-現時点だと
-[情報検索・検索技術 Advent Calendar 2021](https://adventar.org/calendars/6430)  
-@sz_dr で四日目を担当してくれます!
+[情報検索・検索技術 Advent Calendar 2021](https://adventar.org/calendars/6430)  の次の記事は
+@sz_dr さんで4日目を担当してくれます!
