@@ -174,7 +174,9 @@ Lucene に詳しい同僚からは、Lucene に興味あるならこの本がお
 - [Lucene in Action 2nd edition](https://amzn.to/3FP8DWn)
 
 余談ですが、この人のことを同僚が、
+
 > Lucene 界隈では神として知られていますね
+
 と言っていて、笑ったw
 
 *** 
