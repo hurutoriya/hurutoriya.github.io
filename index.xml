@@ -1,5 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Amazonがeコマース検索を Lucene により、どうスケールさせているか at Berlin Buzzwords 2019</title><link>https://shunyaueta.com/posts/2021-12-01/</link><pubDate>Fri, 26 Nov 2021 20:59:21 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-01/</guid><description>
-&lt;p>&lt;a href="https://adventar.org/calendars/6430">情報検索・検索技術 Advent Calendar 2021&lt;/a> 1日目の記事です。&lt;/p>
+&lt;p>&lt;a href="https://adventar.org/calendars/6430">情報検索・検索技術 Advent Calendar 2021&lt;/a> 1日目の記事です。
+早めに書き終えたので、11/26日と少し早めですが、記事を公開してしまいます。&lt;/p>
 &lt;p>&lt;a href="https://2021.berlinbuzzwords.de/">Berlin Buzzwords&lt;/a> はドイツで毎年開催されているOSSでの検索、データ処理、データベースに焦点をあてたカンファレンスです。&lt;/p>
 &lt;p>検索関係のシステムに携わっている場合、毎年面白い内容が目白押しなのでぜひとも見てほしい。&lt;/p>
 &lt;p>今回は Berlin Buzzwords 2019 で発表された「AmazonではLucene をどう活用してeコマース検索をスケールさせているか」の講演動画を社内勉強会で紹介するために視聴したので、そのメモを公開する。&lt;/p>
