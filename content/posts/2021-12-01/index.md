@@ -1,9 +1,8 @@
 ---
-title: "Amazonでは Lucene によりeコマース検索をどうスケールさせているか"
+title: "Amazonがeコマース検索を Lucene により、どうスケールさせているか at Berlin Buzzwords 2019"
 date: 2021-11-26T20:59:21+09:00
 lang: ja
 author: Shunya Ueta
-draft: true
 tags:
 - search
 - amazon
@@ -37,7 +36,7 @@ tags:
     - Uber, Airbnb, Linkedin 全部 Lucene を使っている
     - [maxscore scoring](https://issues.apache.org/jira/browse/LUCENE-4100) , Weak AND, Lucene 8.0 での Codec の衝撃
 - Lucene design
-    - 純粋な 100% Java で書かれている
+    - 100% Java で書かれている
     - on-disc search with small in-memory index
     - 巨大な index を扱えるが、小さなRAMで実行可能
     - 高い並列性を兼ね揃えたインデキシングと検索機能
