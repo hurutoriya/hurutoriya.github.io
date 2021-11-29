@@ -1,6 +1,6 @@
 ---
 title: "Amazonがeコマース検索を Lucene により、どうスケールさせているか at Berlin Buzzwords 2019"
-date: 2021-11-26T20:59:21+09:00
+date: 2021-12-01T20:59:21+09:00
 lang: ja
 author: Shunya Ueta
 tags:
