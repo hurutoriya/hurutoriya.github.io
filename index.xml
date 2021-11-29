@@ -1,4 +1,282 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Standard SQLのCOALESCEで、時間経過によってカラム名が変化したデータを柔軟に抽出する</title><link>https://shunyaueta.com/posts/2021-11-06/</link><pubDate>Sat, 06 Nov 2021 22:40:02 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-11-06/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Amazonがeコマース検索を Lucene により、どうスケールさせているか at Berlin Buzzwords 2019</title><link>https://shunyaueta.com/posts/2021-12-01/</link><pubDate>Fri, 26 Nov 2021 20:59:21 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-01/</guid><description>
+&lt;p>&lt;a href="https://adventar.org/calendars/6430">情報検索・検索技術 Advent Calendar 2021&lt;/a> 1日目の記事です。&lt;/p>
+&lt;p>&lt;a href="https://2021.berlinbuzzwords.de/">Berlin Buzzwords&lt;/a> はドイツで毎年開催されているOSSでの検索、データ処理、データベースに焦点をあてたカンファレンスです。&lt;/p>
+&lt;p>検索関係のシステムに携わっている場合、毎年面白い内容が目白押しなのでぜひとも見てほしい。&lt;/p>
+&lt;p>今回は Berlin Buzzwords 2019 で発表された「AmazonではLucene をどう活用してeコマース検索をスケールさせているか」の講演動画を社内勉強会で紹介するために視聴したので、そのメモを公開する。&lt;/p>
+&lt;h2 id="e-commerce-search-at-scale-on-apache-lucene">E-Commerce search at scale on Apache Lucene&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=EkkzSLstSAE">YouTube&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://2019.berlinbuzzwords.de/19/session/e-commerce-search-scale-apache-lucene-tm.html">Web page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://2019.berlinbuzzwords.de/sites/2019.berlinbuzzwords.de/files/media/documents/bbuzzamazonlucene2019.pdf">PDF&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>自分の所感などを切り分けるため、自分の意見はIMOではじめた文にして、メモっています。&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;ul>
+&lt;li>クエリのp999レイテンシーに対して非常に厳しい制限を行っている
+&lt;ul>
+&lt;li>IMO: p99.9 を監視しているのはたしかにとてもシビア。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Amazonの query rate はめちゃくちゃピーキー (daily, weekly, yearly)&lt;/li>
+&lt;li>Why Lucene?
+&lt;ul>
+&lt;li>Lucene は成熟しており、豊富な検索エンジンの機能が揃っている&lt;/li>
+&lt;li>情熱を持ったコミュニティが存在している&lt;/li>
+&lt;li>Uber, Airbnb, Linkedin 全部 Lucene を使っている&lt;/li>
+&lt;li>&lt;a href="https://issues.apache.org/jira/browse/LUCENE-4100">maxscore scoring&lt;/a> , Weak AND, Lucene 8.0 での Codec の衝撃&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Lucene design
+&lt;ul>
+&lt;li>100% Java で書かれている&lt;/li>
+&lt;li>on-disc search with small in-memory index&lt;/li>
+&lt;li>巨大な index を扱えるが、小さなRAMで実行可能&lt;/li>
+&lt;li>高い並列性を兼ね揃えたインデキシングと検索機能&lt;/li>
+&lt;li>ニアリアルタイムでの検索とインデキシング機能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Amazon でのLucene利用例
+&lt;ul>
+&lt;li>ニアリアルタイムでのセグメントレプリケーション (Solr, Elastic Search とは別のレプリケーションの仕組み)
+&lt;ul>
+&lt;li>IMO: 登壇者のMike さんが Lucene 6.0 をベースにした Near realtime replicationが可能な&lt;a href="https://github.com/mikemccand/luceneserver">lucene server&lt;/a> を公開している。&lt;/li>
+&lt;li>yelp が2021/09にOSSとして、上記のlucene server をベースにしたOSSを公開。解説記事も公開してくれている。&lt;a href="https://engineeringblog.yelp.com/2021/09/nrtsearch-yelps-fast-scalable-and-cost-effective-search-engine.html">Nrtsearch: Yelp’s Fast, Scalable and Cost Effective Search Engine&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>並行検索→複数のスレッドでの並行検索処理が可能 (Luceneで利用可能だが、Solr, ElasticSearchでは2019年時点では利用不可)&lt;/li>
+&lt;li>query time ではなく、index time でjoin を行いデータの結合を行っている。Lucene 6.0 で追加されたBKD-tree を利用した Dimensional points機能は、多次元空間を効率的に検索することができ、プライムデーで重宝されている。&lt;/li>
+&lt;li>また拡張性の高いデザインのおかげでカスタマイズも容易。&lt;/li>
+&lt;li>Custom term frequency などもとても便利。当初Lucene にこの機能は存在しなかったので、我々で機能開発を行いLucene にこの機能が搭載された。&lt;/li>
+&lt;li>2019年時点では、Solr, Elastic Searchを使っていない。理由としては、Concurrent faceting, multi-phase ranking などの機能はSolr, Elastic Search は当時は利用できなかった。また、現時点でLucene ベースでのモジュールを多数開発しているのも要因。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Open Source at Amazon
+&lt;ul>
+&lt;li>パフォーマンス課題や小さなバグなどを発見して、それらを解決していった。これはコミュニティみんなが嬉しい。(Solr, Elastic Search にも還元されるのでとても健全な流れだよね)&lt;/li>
+&lt;li>以下のLucene の機能はAmazon が開発を行い、貢献した
+&lt;ul>
+&lt;li>Custom term frequencies&lt;/li>
+&lt;li>Concurrent indexing updates&lt;/li>
+&lt;li>Concurrent faceting&lt;/li>
+&lt;li>FST direct arc addressing
+&lt;ul>
+&lt;li>&lt;a href="https://issues.apache.org/jira/browse/LUCENE-8781">該当チケット&lt;/a>&lt;/li>
+&lt;li>日本語での解説記事: &lt;a href="https://qiita.com/ikawaha/items/be95304a803020e1b2d1">Luceneで使われてるFSTを実装してみた（正規表現マッチ：VMアプローチへの招待）&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Off-heaps FSTs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="service-architecture">Service architecture&lt;/h2>
+&lt;ul>
+&lt;li>Near-real-time replicaiton
+&lt;ul>
+&lt;li>Black Friday や Prime day などの爆発的にアクセスが増加するイベントなどに対応するために作成&lt;/li>
+&lt;li>Solr, Elastic Search で提供されるdocument level レプリケーションでは限界がある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Service architecture
+&lt;ul>
+&lt;li>AWSで構築&lt;/li>
+&lt;li>ECSコンテナでインデクサー、サーチャーが稼働している&lt;/li>
+&lt;li>Kinesis, DynamoDBからカタログが更新される&lt;/li>
+&lt;li>ニアリアルタイムで、S3にインデックスは保存される&lt;/li>
+&lt;li>インデックスはソフトウェアが更新されるたびに、全て再構築される&lt;/li>
+&lt;li>人為的なクエリでサービスを暖機運転&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Service system design
+&lt;ul>
+&lt;li>&lt;img src="https://shunyaueta.com/posts/2021-12-01/images/1.png" alt="Amazon serarch architecture">&lt;/li>
+&lt;li>リクエストが来た際に、Collators がリクエストをさばいて、適切なview に割り振る。&lt;/li>
+&lt;li>Index(i001, i002, &amp;hellip;) はS3にリアルタイムで保存され、service はそのindex を読み込んで検索を行って、レスポンスを返す。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Searching a segmented index
+&lt;ul>
+&lt;li>Lucene には検索インデックスが必要で、分割型のアーキテクチャとなっている&lt;/li>
+&lt;li>merge して結果を返す&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Searching a segmented index concurrently
+&lt;ul>
+&lt;li>index は統計的に商品品質によりソート済&lt;/li>
+&lt;li>この機能はシャードが巨大化している我々にとってレイテンシーを抑えるために非常に有用な機能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>p999 latency figure
+&lt;ul>
+&lt;li>青色のグラフの挙動は、Lucene の分割型アーキテクチャによって発生しており、並行検索がどのように優位性をもっているのかを説明する。縦軸は latency&lt;/li>
+&lt;li>緑色のグラフは、どれくらいのサイズのセグメントがレプリカにコピーされているかを示している。縦軸は GB。
+&lt;ul>
+&lt;li>大きなセグメントがマージされたときにスパイクが発生する&lt;/li>
+&lt;li>通常は、小さなインデックスがマージされて大きなインデックスになることは良いことである、なぜならたくさんのファイルを開く必要がなくなるし、すべてのセグメントを探索しなくても良くなる。&lt;/li>
+&lt;li>だが、Amazonの場合は、並行検索を行っているので、大きなセグメントが存在すると逆にレイテンシーが増加の原因となる。なぜならセグメントの数が減少すると、検索の並行性も失われるため。例えば、10のセグメントがあった場合、10スレッドで並行検索を行えるが、一つのセグメントになってしまった場合、1スレッドでの検索しかできなくなる。例えば一つのセグメントに対して、複数スレッドで並行検索できるようになればさらなる改善が見込めると考えている。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>セグメントインデックスに対して、並行検索が可能になったことで、大きなセグメントを取り扱うことを避けれるようになった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="performance-mesurement">Performance mesurement&lt;/h2>
+&lt;ul>
+&lt;li>Bemchmarking
+&lt;ul>
+&lt;li>&lt;a href="https://home.apache.org/~mikemccand/lucenebench/">Lucene nightly benchmarks&lt;/a>&lt;/li>
+&lt;li>上記と同じような方法で、各種クエリのパフォーマンスを常に測定している。&lt;/li>
+&lt;li>perfoamance regression の検知は困難&lt;/li>
+&lt;li>performance だけではなく、検索性能も自動的に評価&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Concurrent refresh
+&lt;ul>
+&lt;li>Lucene は、並行リフレッシュのために、インデックスサイドのアプリケーションのスレッドを借りるという問題があった&lt;/li>
+&lt;li>解決方法として、インデキシングが行われていないときのみ並行リフレッシュを行う機能を開発
+&lt;ul>
+&lt;li>&lt;a href="https://issues.apache.org/jira/browse/LUCENE-8700">Solution: use expert Lucene API to refresh concurrently &lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Gathering metrics using Lucene’s abstractions
+&lt;ul>
+&lt;li>Lucene の抽象化機能を使って、各指標を容易にモニタリング可能に&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Garbate correction is too hard
+&lt;ul>
+&lt;li>IMO: ここらへんは知識が足りず理解できなかったので、後から勉強&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="analysis-challanges">Analysis challanges&lt;/h2>
+&lt;ul>
+&lt;li>Context sensitive analysis
+&lt;ul>
+&lt;li>planeは何を意味する?&lt;/li>
+&lt;li>おもちゃのairplane? &lt;code>plane ←→ airplane&lt;/code> の同義語&lt;/li>
+&lt;li>synonym 拡張ををindex time のみで行う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Numbers a special
+&lt;ul>
+&lt;li>Toy for 3 year old というクエリには、 2-4歳対象という文章は対象になる&lt;/li>
+&lt;li>1500ml は 1.5 litters とマッチするべき&lt;/li>
+&lt;li>1,100、1100、1.100 は一緒で、1/100、1:100 とは違う&lt;/li>
+&lt;li>標準的な tokenizer の後に上記のハンドリングをするのは難しい&lt;/li>
+&lt;li>句読点の取り扱いには注意&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>WordDelimiterGraphFiltter
+&lt;ul>
+&lt;li>&lt;a href="https://lucene.apache.org/core/7_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/WordDelimiterGraphFilter.html">Lucene docs&lt;/a>
+&lt;ul>
+&lt;li>英語と数字の分割など細かい前処理が可能になる
+&lt;ul>
+&lt;li>e.g. &amp;ldquo;SD500&amp;rdquo; → &amp;ldquo;SD&amp;rdquo;, &amp;ldquo;500&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>機械学習はこの問題は解決可能だが、検索ではこのような機能もやはりまだ必要である。
+&lt;ul>
+&lt;li>IMO: Lucene の機能を使って解決可能なら、たしかにできる限り機械学習を使いたくない気持ちは非常に共感できる。ここまでレイテンシーの制約が厳しいなら増加要因は可能な限り抑えたい&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="query-optimization">Query optimization&lt;/h2>
+&lt;ul>
+&lt;li>Indexed Queries
+&lt;ul>
+&lt;li>多くのクエリは共通のフィルターを使っている。&lt;/li>
+&lt;li>大元のインデックスに対して、共通で使われているフィルターを適用した結果を、インデキシングしてる? (post-processing index)。&lt;/li>
+&lt;li>single term に置き換えて、パフォーマンスをチューニング&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Factoring queries
+&lt;ul>
+&lt;li>Boolean query&lt;/li>
+&lt;li>&lt;a href="https://towardsdatascience.com/the-fp-growth-algorithm-1ffa20e839b8">FP growth algorithm&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Query 最適化のおかげで、 +30% redline QPS が増加。p99 latency は 81ms から 54ms へ。
+&lt;ul>
+&lt;li>IMO: P99のレイテンシー公開して良いだろうか&amp;hellip;??? (p99.9 は公開していなかったので気になる)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Indexing tuples
+&lt;ul>
+&lt;li>multi stage search を single stage に圧縮している&lt;/li>
+&lt;li>IMO: ここらへんの最適化は、Lucene の検索の仕組みをもっと理解しないとどうやって実現しているかまだ深く理解できない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Lighting deals using dimensional points
+&lt;ul>
+&lt;li>当初はmike さんにより、地理検索などを目的として作られた機能。だが、地理検索には使用せず、Amazon でのlighting deal に三次元データ(start time, end time, id) での三次元検索にこのdimensional points 機能を使ってる。&lt;/li>
+&lt;li>IMO: by @takuya-a さん
+&lt;ul>
+&lt;li>社内で発表した際に、なぜstart-time, end-time の2次元ではなく、idを入れた3次元にした検索にしたのかという質問に対する完璧な @takuya-a さんの推測&lt;/li>
+&lt;li>
+&lt;blockquote>
+&lt;p>IDも空間インデックスに含めることで、パフォーマンスを上げているのだとおもいます。IDが別フィールドだと、そっちのインデックスも検索して、空間インデックスの検索結果とマージして、って処理が後段で必要になるのですが、最初からIDも含めておくと BKD-tree の検索で全部処理できちゃうので。同じ期間で別のIDをもつセール対象商品がヒットしないので最初の段階でかなり絞り込めるようになるのだと思います&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>BKD tree の解説は @pon さんの記事がわかりやすいです
+&lt;ul>
+&lt;li>&lt;a href="https://po3rin.com/blog/bkdtree">検索エンジンの数値インデックスを支える Bkd-Tree&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="multi-phase-ranking">Multi phase ranking&lt;/h2>
+&lt;ul>
+&lt;li>Ranking
+&lt;ul>
+&lt;li>Machine Leraning models&lt;/li>
+&lt;li>Multi phase ranking&lt;/li>
+&lt;li>&lt;a href="https://issues.apache.org/jira/browse/LUCENE-8681">Prorated early termination&lt;/a>&lt;/li>
+&lt;li>IMO: スコアリングの知識が欠如しているのでメモだけ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Summary
+&lt;ul>
+&lt;li>Amazonで検索してるときにはLucene が使われているよ100%ではないけども&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="question">Question&lt;/h2>
+&lt;ul>
+&lt;li>Q. indexing synonym を行っていると言っていたが、例えば query timing でsynonym を扱えれば、検索者の文脈などを考慮した同義語を扱えるのではないのだろうか?
+&lt;ul>
+&lt;li>A. indexing synonym は主に効率性を重視した意思決定であり、基本的にトレードオフの関係となっている。Query rewrite なども行っているが、今回のトークは主に検索エンジンなので優先順的にQuery Understanding 関係の話はしていません。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="reference">Reference&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://aws.amazon.com/jp/blogs/opensource/amazon-giving-back-apache-lucene/">What Amazon gets by giving back to Apache Lucene&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Lucene に詳しい同僚からは、Lucene に興味あるならこの本がおすすめと言われので読んでおきたい。
+ちなみに著者は、この講演者のうちの一人であるMike McCandless さん&amp;hellip; (14年間Lucene の開発をしている!!)&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://amzn.to/3FP8DWn">Lucene in Action 2nd edition&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>余談ですが、この人のことを同僚が、&lt;/p>
+&lt;blockquote>
+&lt;p>Lucene 界隈では神として知られていますね&lt;/p>
+&lt;/blockquote>
+&lt;p>と言っていて、笑ったw&lt;/p>
+&lt;hr>
+&lt;p>&lt;a href="https://adventar.org/calendars/6430">情報検索・検索技術 Advent Calendar 2021&lt;/a> の次の記事は
+@sz_dr さんで4日目を担当してくれます!&lt;/p></description></item><item><title>Standard SQLのCOALESCEで、時間経過によってカラム名が変化したデータを柔軟に抽出する</title><link>https://shunyaueta.com/posts/2021-11-06/</link><pubDate>Sat, 06 Nov 2021 22:40:02 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-11-06/</guid><description>
 &lt;p>データの蓄積帰還が長くなってくると、例えば JSON形式でログを取っているが、同じデータでもマイグレーションやロギングロジックの更新などで&lt;code>key&lt;/code> の名前が変化したりする場合がある。&lt;/p>
 &lt;p>その場合取り扱いに困るのが、古いkeyと新しいkey をどのように併合するかだ。
 例えば特定の日次できれいにデータが入れ替わっているのなら、色々やりようがあるが、クライアントなどのログの場合データの変化も均一ではないので、徐々に変化していることが大半なので、日次で別々の抽出をして結合するというアプローチも難しい。&lt;/p>
