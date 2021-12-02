@@ -512,7 +512,7 @@
 &lt;p>Hugo は各ページに関する情報を&lt;a href="https://gohugo.io/content-management/front-matter/#front-matter-variables">Front Matter Variables&lt;/a> という仕組みでMarkdown上に定義します。
 主にYAML形式で記述されていることが多いです。&lt;/p>
 &lt;p>&lt;code>lastmod&lt;/code> という変数が更新日を表す変数であり、この変数に対して更新日の情報を与えてやれば記事の最終更新日を表現することができる。&lt;/p>
-&lt;p>Front Matter に `lastmod: &amp;ldquo;2021-03-31&amp;rdquo; の形式で与えておけば、以下の形式で記事作成日と最終更新日を表記できる。&lt;/p>
+&lt;p>Front Matter に &lt;code>lastmod: &amp;quot;2021-03-31&amp;quot;&lt;/code> の形式で与えておけば、以下の形式で記事作成日と最終更新日を表記できる。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
@@ -556,8 +556,8 @@
 &lt;/div>
 &lt;/div>&lt;p>参考になると思うので、当ブログでの実際の変更点は&lt;a href="https://github.com/hurutoriya/hurutoriya.github.io/commit/cc2f2916fe87dcad4f300109edc8606700899c72">こちら&lt;/a>&lt;/p>
 &lt;p>テンプレートを上書きするように、&lt;code>./layout&lt;/code>配下のページを編集した。
-hugoの記事でたまに見かけるのがテーマを直接編集している人がいるが、それは筋が良くないやり方なんです。
-なぜかというと、hugoの設計はよくできているので、&lt;code>./layout&lt;/code> 配下に&lt;code>theme&lt;/code>と同じ構成でファイルを設置すればそちらを上書きする形で参照してサイトを構成してくれるので、元のテーマは何も変更をせずにアップデートが用意になる。
+hugoの記事でたまに見かけるのがテーマを直接編集している人がいるが、それは筋が良くない方法です。&lt;/p>
+&lt;p>なぜかというと、hugoの設計はよくできているので、&lt;code>./layout&lt;/code> 配下に&lt;code>theme&lt;/code>と同じ構成でファイルを設置すればそちらを上書きする形で参照してサイトを構成してくれるので、元のテーマは何も変更をせずにアップデートが可能です。
 また、拡張性と柔軟性が高まる良い仕組みで、個々人ごとにテーマの編集がしたい必要性に対してよく考え込まれているなと思った。&lt;/p>
 &lt;hr>
 &lt;p>少し挙動として謎なのが、この設定を行ったのが10/05 だが、すべての記事の最終更新日が10/05 に初期化された。今は 10/06 が多数のページで&lt;code>lastmod&lt;/code>として設定されている&amp;hellip;

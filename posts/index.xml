@@ -26,7 +26,7 @@ Query Understanding for Search Engines. Chap2 Query Classification from Shunya U
 やっていることは Last Modified Date with Hugo の記事をと完全に一緒だが、日本語での情報が無かったので備忘録がてら記録を残す。
 Hugo は各ページに関する情報をFront Matter Variables という仕組みでMarkdown上に定義します。 主にYAML形式で記述されていることが多いです。
 lastmod という変数が更新日を表す変数であり、この変数に対して更新日の情報を与えてやれば記事の最終更新日を表現することができる。
-Front Matter に `lastmod: &amp;ldquo;2021-03-31&amp;rdquo; の形式で与えておけば、以下の形式で記事作成日と最終更新日を表記できる。
+Front Matter に lastmod: &amp;quot;2021-03-31&amp;quot; の形式で与えておけば、以下の形式で記事作成日と最終更新日を表記できる。
 1 2 3 4 5 {{ $date := .Date.Format &amp;#34;02.01.2006&amp;#34; }} {{ $lastmod := .Lastmod.Format &amp;#34;02.01.2006&amp;#34; }} &amp;lt;p&amp;gt;Published on: {{ $date }}&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Edited on: {{ $lastmod }}&amp;lt;/p&amp;gt; だが、毎回記事を編集するたびに lastmod 変数を追記するのは面倒なので自動化できるなら自動化したい。
 config.yaml で、以下の設定を行う。
 1 enableGitInfo:true enableGitInfoを trueにすることで、各ページに対してGit情報を更新日として付与してくれる。
