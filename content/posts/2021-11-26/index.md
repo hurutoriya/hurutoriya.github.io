@@ -75,7 +75,7 @@ tags:
     - インデックスはソフトウェアが更新されるたびに、全て再構築される
     - 人為的なクエリでサービスを暖機運転
 - Service system design
-    - ![Amazon serarch architecture](/posts/2021-12-01/images/1.png)
+    - ![Amazon serarch architecture](/posts/2021-11-26/images/1.png)
     - リクエストが来た際に、Collators がリクエストをさばいて、適切なview に割り振る。
     - Index(i001, i002, ...) はS3にリアルタイムで保存され、service はそのindex を読み込んで検索を行って、レスポンスを返す。
 - Searching a segmented index
