@@ -118,7 +118,7 @@ Deploy failed: The Deployment “&amp;mdash;” is invalid: spec.selector: Inval
 &lt;/li>
 &lt;li>Service system design
 &lt;ul>
-&lt;li>&lt;img src="https://shunyaueta.com/posts/2021-12-01/images/1.png" alt="Amazon serarch architecture">&lt;/li>
+&lt;li>&lt;img src="https://shunyaueta.com/posts/2021-11-26/images/1.png" alt="Amazon serarch architecture">&lt;/li>
 &lt;li>リクエストが来た際に、Collators がリクエストをさばいて、適切なview に割り振る。&lt;/li>
 &lt;li>Index(i001, i002, &amp;hellip;) はS3にリアルタイムで保存され、service はそのindex を読み込んで検索を行って、レスポンスを返す。&lt;/li>
 &lt;/ul>
