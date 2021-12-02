@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>k8s on Shunya Ueta</title><link>https://shunyaueta.com/tags/k8s/</link><description>Recent content in k8s on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 02 Dec 2021 16:48:54 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/k8s/index.xml" rel="self" type="application/rss+xml"/><item><title>k8s で `MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutable` エラーが出でデプロイ失敗時の対処方法</title><link>https://shunyaueta.com/posts/2021-12-02/</link><pubDate>Thu, 02 Dec 2021 16:48:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-02/</guid><description>k8s で manifest file を編集して実行したら以下のようなエラーが出て実行できなかった。
+Exception ( Monitor Deploy ) Deploy failed: The Deployment “&amp;mdash;” is invalid: spec.selector: Invalid value: v1.LabelSelector{MatchLabels:map[string]string{“app”:“&amp;mdash;”}, MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutable
+調べてみたところ、
+once deployed the label selectors of kubernetes service can not be updated until you decide to delete the existing deployment
+ref: MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutabl #508
+らしく、一度デプロイされたk8s service の label selector は、既存のdeployment を削除しないとアップデートは不可能らしい。
+なので、field is immutableというエラー文は正しいわけですね。
+そのdeployment を削除しても良い状態なら、以下のコマンドを実行後再度デプロイすれば、k8s service のlabel selector は実行されます。</description></item></channel></rss>
