@@ -550,7 +550,7 @@
 &lt;td class="lntd">
 &lt;pre class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="k">frontmatter&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
 &lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">lastmod&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="p">:&lt;/span>lastmod&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- lastmod&lt;span class="w">
 &lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="p">:&lt;/span>git&lt;span class="w">
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -559,10 +559,6 @@
 hugoの記事でたまに見かけるのがテーマを直接編集している人がいるが、それは筋が良くない方法です。&lt;/p>
 &lt;p>なぜかというと、hugoの設計はよくできているので、&lt;code>./layout&lt;/code> 配下に&lt;code>theme&lt;/code>と同じ構成でファイルを設置すればそちらを上書きする形で参照してサイトを構成してくれるので、元のテーマは何も変更をせずにアップデートが可能です。
 また、拡張性と柔軟性が高まる良い仕組みで、個々人ごとにテーマの編集がしたい必要性に対してよく考え込まれているなと思った。&lt;/p>
-&lt;hr>
-&lt;p>少し挙動として謎なのが、この設定を行ったのが10/05 だが、すべての記事の最終更新日が10/05 に初期化された。今は 10/06 が多数のページで&lt;code>lastmod&lt;/code>として設定されている&amp;hellip;
-一度も更新をしていない記事がそうなっているのだろうか? (それでもおかしいが&amp;hellip;?)
-本来なら各ページの &lt;code>git&lt;/code>の最終コミット日を返すという設定がされるべきだが、深みにハマるときついので、これで自動反映されるようになったのことにする。&lt;/p>
 &lt;h2 id="reference">Reference&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://www.andrewjstevens.com/posts/2021/03/last-modified-date-with-hugo/">Last Modified Date with Hugo&lt;/a>&lt;/li>
