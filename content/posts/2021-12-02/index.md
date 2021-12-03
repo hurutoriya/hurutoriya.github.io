@@ -1,9 +1,9 @@
 ---
-title: "k8s デプロイ時に `MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutable` エラーが出た際に対処方法"
+title: "kubernetes デプロイ時に `MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutable` エラーが出た際に対処方法"
 date: 2021-12-02T16:48:54+09:00
 author: Shunya Ueta
 tags:
-- k8s
+- kubernetes
 ---
 
 k8s で manifest file を編集して実行したら以下のようなエラーが出て実行できなかった。
