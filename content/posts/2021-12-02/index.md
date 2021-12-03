@@ -1,5 +1,5 @@
 ---
-title: "k8s で `MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutable` エラーが出でデプロイ失敗時の対処方法"
+title: "k8s デプロイ時に `MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutable` エラーが出た際に対処方法"
 date: 2021-12-02T16:48:54+09:00
 author: Shunya Ueta
 tags:
