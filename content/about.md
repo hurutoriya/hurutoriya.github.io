@@ -6,7 +6,6 @@ type: "page"
 
 Shunya UETA who is a working as Software Engineer at Mercari, inc. Opinions are my own.
 
-
 - [Linkedin](https://www.linkedin.com/in/hurutoriya)
 - [GitHub](https://github.com/hurutoriya)
 - [Twitter](https://twitter.com/hurutoriya)
@@ -66,15 +65,7 @@ Shunya UETA who is a working as Software Engineer at Mercari, inc. Opinions are 
 - [データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～](https://johokiko.co.jp/publishing/BC200701.php)
   - `マルチモーダルによる規約違反出品検知への応用と運用について` を共著にて執筆
 
-## Skills
-
-- Python(TensorFlow, Numpy, scikit-learn, Django)
-- Docker
-- MATLAB
-- Ruby(Rails)
 ## Misc
 
-- 2013.04 高専生の編入体験体験談投稿サービス「HenTai」を開発。 100 件超の体験談が集まり、体験談共有サイトでも最大規模を誇る [site](http://kosen.herokuapp.com/)
-  - 現在はメンテナンス停止中, Ruby on Rails 3, Heroku を用いて 3 日間で開発を終え公開した。
-- [パターン認識と機械学習の勉強会 @筑波大学](http://prml-seminar.github.io/)
-  - 2015.03-2017.03 まで主催していた機械学習に関する勉強会です。
+- パターン認識と機械学習の勉強会 @筑波大学
+  - 2015.03-2017.03 まで主催していた筑波大学で開催される機械学習に関する勉強会です。
