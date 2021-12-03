@@ -28,8 +28,10 @@ tags:
 
 ## Overview
 
-- クエリのp999レイテンシーに対して非常に厳しい制限を行っている
-    - IMO: p99.9 を監視しているのはたしかにとてもシビア。 
+- クエリのp999 latency に対して非常に厳しい制限を行っている
+    - IMO
+        - このクエリのp999 latency 定義は、Lucene+(おそらく内製で今も開発している、response を返すためのLucene server?)が返す検索のレスポンスを指していると思われる
+        - p99.9 latency をSLAとして、監視しているのはたしかにとてもシビアな基準だと感じる。
 - Amazonの query rate はめちゃくちゃピーキー (daily, weekly, yearly)
 - Why Lucene?
     - Lucene は成熟しており、豊富な検索エンジンの機能が揃っている
