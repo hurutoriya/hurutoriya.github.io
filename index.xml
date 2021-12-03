@@ -40,9 +40,14 @@ Deploy failed: The Deployment “&amp;mdash;” is invalid: spec.selector: Inval
 &lt;p>自分の所感などを切り分けるため、自分の意見はIMOではじめた文にして、メモっています。&lt;/p>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;ul>
-&lt;li>クエリのp999レイテンシーに対して非常に厳しい制限を行っている
+&lt;li>クエリのp999 latency に対して非常に厳しい制限を行っている
 &lt;ul>
-&lt;li>IMO: p99.9 を監視しているのはたしかにとてもシビア。&lt;/li>
+&lt;li>IMO
+&lt;ul>
+&lt;li>このクエリのp999 latency 定義は、Lucene+(おそらく内製で今も開発している、response を返すためのLucene server?)が返す検索のレスポンスを指していると思われる&lt;/li>
+&lt;li>p99.9 latency をSLAとして、監視しているのはたしかにとてもシビアな基準だと感じる。&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Amazonの query rate はめちゃくちゃピーキー (daily, weekly, yearly)&lt;/li>
