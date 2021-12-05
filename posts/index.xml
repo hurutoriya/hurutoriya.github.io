@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Shunya Ueta</title><link>https://shunyaueta.com/posts/</link><description>Recent content in Posts on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 04 Dec 2021 22:24:38 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>投げ銭サービスのBuy me a cofee をBlog に導入してみた</title><link>https://shunyaueta.com/posts/2021-12-04/</link><pubDate>Sat, 04 Dec 2021 22:24:38 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-04/</guid><description>@potato4d さんや @takuti さんがBlog に Buy me a cofeeを導入していて、自分も導入したいと思いたち、導入してみた。
 やったこととして、Blog記事の末尾に、サポート機能として自分のbuy me a cofeeページへのリンクが表示されるようにした。
+導入経緯 以下のポストに強く共感と興味を持った。特に良い文章は抜粋しておく
 情報に対して価値を感じてくれた人に還元してもらえるのは素直に嬉しい
 ブログに Buy Me a Coffee の投げ銭導線を設置した @shu223 さんの とにかく、「技術の発信」でも収入が得られる時代が到来しつつある
 技術書でご飯は食べられるのか？ #技術書典 技術で稼げるようになった今、内発的動機（興味）があっても外発的動機（お金）が伴わないと優先度が上がりにくいということは起きていて、だからこそ勉強自体でも稼げるようよう仕組み化したいと思っていて、それが去年から試行錯誤してる「技術情報発信のマネタイズ」です。 tweet

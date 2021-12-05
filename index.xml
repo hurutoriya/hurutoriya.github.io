@@ -1,6 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>投げ銭サービスのBuy me a cofee をBlog に導入してみた</title><link>https://shunyaueta.com/posts/2021-12-04/</link><pubDate>Sat, 04 Dec 2021 22:24:38 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-04/</guid><description>
 &lt;p>@potato4d さんや @takuti さんがBlog に &lt;a href="https://www.buymeacoffee.com/">Buy me a cofee&lt;/a>を導入していて、自分も導入したいと思いたち、導入してみた。&lt;/p>
 &lt;p>やったこととして、Blog記事の末尾に、サポート機能として自分の&lt;a href="https://www.buymeacoffee.com/hurutoriya">buy me a cofee&lt;/a>ページへのリンクが表示されるようにした。&lt;/p>
+&lt;h2 id="導入経緯">導入経緯&lt;/h2>
+&lt;p>以下のポストに強く共感と興味を持った。特に良い文章は抜粋しておく&lt;/p>
 &lt;blockquote>
 &lt;p>情報に対して価値を感じてくれた人に還元してもらえるのは素直に嬉しい&lt;/p>
 &lt;/blockquote>
