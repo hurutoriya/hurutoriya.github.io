@@ -1,26 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Shunya Ueta</title><link>https://shunyaueta.com/posts/</link><description>Recent content in Posts on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 03 Dec 2021 23:28:52 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2013年4月に友人とリリースした高専からの大学編入体験談投稿サービスが8年の時を経て成仏した</title><link>https://shunyaueta.com/posts/2021-12-03/</link><pubDate>Fri, 03 Dec 2021 23:28:52 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-03/</guid><description>高専5年生の卒業前の春休みに友人3人と集まって、2013年4月にリリースした個人開発のWebサービスが完全に終わりを迎えた。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Shunya Ueta</title><link>https://shunyaueta.com/posts/</link><description>Recent content in Posts on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 04 Dec 2021 22:24:38 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>投げ銭サービスのBuy me a cofee をBlog に導入してみた</title><link>https://shunyaueta.com/posts/2021-12-04/</link><pubDate>Sat, 04 Dec 2021 22:24:38 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-04/</guid><description>@potato4d さんや @takuti さんがBlog に Buy me a cofeeを導入していて、自分も導入したいと思いたち、導入してみた。
+やったこととして、Blog記事の末尾に、サポート機能として自分のbuy me a cofeeページへのリンクが表示されるようにした。
+情報に対して価値を感じてくれた人に還元してもらえるのは素直に嬉しい
+ブログに Buy Me a Coffee の投げ銭導線を設置した @shu223 さんの とにかく、「技術の発信」でも収入が得られる時代が到来しつつある
+技術書でご飯は食べられるのか？ #技術書典 技術で稼げるようになった今、内発的動機（興味）があっても外発的動機（お金）が伴わないと優先度が上がりにくいということは起きていて、だからこそ勉強自体でも稼げるようよう仕組み化したいと思っていて、それが去年から試行錯誤してる「技術情報発信のマネタイズ」です。 tweet
+の方針に凄く興味と共感が持てた。
+拝金主義というわけではなく、投げ銭文化自体が凄く良い文化なので自分もその波に乗ってみたさがあり、導入してみた。
+zenn やnote でも良い記事だなと思った際には、投げ銭をしたりするが、個人Blog でも簡単にその機能が作れるのは良い時代になった。
+もし自分が価値ある情報を提供することで、誰かの助けになり、その人達が還元してくれたなら凄くよいなと思った。業界全体がその流れになると面白いと思う。</description></item><item><title>2013年4月に友人とリリースした高専からの大学編入体験談投稿サービスが8年の時を経て成仏した</title><link>https://shunyaueta.com/posts/2021-12-03/</link><pubDate>Fri, 03 Dec 2021 23:28:52 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-03/</guid><description>高専5年生の卒業前の春休みに友人3人と集まって、2013年4月にリリースした個人開発のWebサービスが完全に終わりを迎えた。
 2021年の現在から換算すると8年以上前の出来事であり、時の流れは凄まじい。
 先程アプリをデプロイしていた Heroku 上からも完全に削除をしたのだが、色々と昔のことを思い出したので筆を執ってみる。
 開発当時 当時仲の良かった同じクラスの友人3人で、春休みに友達の家に泊まりつつ2泊３日で、Rails 3でロジック部分を作り上げた。 Twitter ログインやDB定義なども本を読んだり、ネットの記事を参考にひいこら言いつつ実装していった。
 Heroku を使って、 http://kosen.herokuapp.com/ というURLでサービスを提供しており、Twitterログインで編入体験談投稿、ログイン無しで掲示板で編入情報について交換できるような機能を提供していた。(注: サイト名のネーミングセンスが若気の至りすぎるので言及しません)
 最終的にBootstrapで見た目を整えて、編入後の授業が本格的に始まる前の2013/04/10にはリリースしていた模様。
-ついに動き出しました!! 編入体験談のまとめサービス 「HenTai ~編入体験談~」 http://kosen.herokuapp.com 午前0:15 · 2013年4月10日 https://twitter.com/bobuhiro11/status/321642424604712960
+共同開発した友人の2013/04/28 に書かれた当時のブログ記事が残っていた。 8年経過しても、その時の状況がブログ記事として残っているの凄い。 自分はブログのホスティングサービスをひたすら変遷して、現在のGitHub pages に落ち着いたので尊敬する。
+ついに動き出しました!! 編入体験談のまとめサービス 「HenTai ~編入体験談~」 http://kosen.herokuapp.com 午前0:15 · 2013年4月10日 tweet
 当時全くWebサービスの運用方法も全く知らない自分が、インターネット上にRails アプリを公開できたので間違いなくHerokuのおかげだと思う。GitHub repository と連携してPush すればRails アプリがデプロイされる体験はとても簡単だった。
 リリースまでこぎつけれたのは、友人たちと開発できたから。自分ひとりだとここまでモチベーションも上がりきらなかったと思う。
 全体で106件の編入体験談が投稿されており、編入体験談の情報源として現在からしてもかなりの規模の情報を集めれたのではなかろうか。
-リリース後、投稿体験談を投稿してもらうために自分たちの知り合いベースに声をかけていたので、その影響か自分が編入した大学の体験談が2-3割を占めていた気がする。
+リリース後、投稿体験談を投稿してもらうために自分たちの知り合いをつてにに声をかけていたので、その影響か自分が編入した大学の体験談が2-3割を占めていた気がする。
 与太話として、何度か同大学の編入してきた後輩と話す機会があり、このサービスが話題になった際に
 「作ったの実は自分なんですよ」
 と話すと、
 「あぁ、だからこの大学の体験談が多かったんですね~、編入する際にはめちゃくちゃ参考になりました!」
 と毎回ポジティブな感想がもらえて、あぁ作ってよかったなぁとしみじみと感動していた記憶がある。
-この個人開発のサービスリリースのおかげで、編入後にベンチャー企業でのRails を利用したWeb開発のアルバイトを始めることができたり、Rails 繋がりでミクシィのインターンに合格するきっかけにもなった。 なので、この個人開発は自分の人生が前に進み出す大きなきっかけとなるサービスともなったのである。 また、作りたいものありきで道具の使い方を学習できたのは良かった。(6年くらいはもうRubyを書いていない気がする&amp;hellip;)
-目標がない状態で何かを学ぶよりも、やりたいことがあってそれをどう実現するかをベースに学べたのは今思い出しても本質的でかけがえのない記憶である。
-個人開発の行方 現在の自分だとRailsでHerokuでDeploy するぞ!!! なんてするわけがなく、Google Formで編入体験談を収集して、マネージドのWebサイト(Google site とか)で公開して終わりなので、矜持もなにもあったもんではない。これが価値観の変容&amp;hellip; 若気の至り、ここにありけり
+この個人開発のサービスリリースのおかげで、編入後にベンチャー企業でのRails を利用したWeb開発のアルバイトを始めることができたり、Rails 繋がりでミクシィのインターンに合格するきっかけにもなった。 なので、この個人開発は自分の人生が前に進み出す大きなきっかけとなるサービスともなったのである。 また、作りたいものありきで道具の使い方を学習できたのは良かった。(だけど6年くらいはもうRubyを書いていない気がする&amp;hellip;)
+目標がない状態で何かを学ぶよりも、やりたいことがあってそれをどう実現するかをベースに学べたのは今思い出しても本質的でかけがえのない経験だ。
+個人開発の行方 現在の自分だとRailsでHerokuでDeploy するぞ!!! なんてするわけがなく、Google Formで編入体験談を収集して、マネージドのWebサイト(Google site とか)で公開して終わりなので、矜持もなにもあったもんではない。 これが価値観の変容&amp;hellip; 若気の至り、ここに極まり
 その後編入して1年ほど時間が立つと、学生生活が忙しくなりメンテナンスする余裕もなくなってきた。 リリースして一年ほど立つとTwitter のログイン機能が不具合を起こしていて、新規投稿ができない状態だった気がする。
-2年ほど経過すると、Rails3をアップデートしてくださいと、Heroku からメールが来てたりしていたがそれができないので個人開発の常である。 結局Twitter ログインのの不具合は修正できず。。。
-2020年の終わりまではサイトが閲覧できた状態だったと思うが先日アクセスしてみるとアプリが完全にダウンしていたので、良い機会なのでHeroku 上からも完全に削除した。
-一点だけ後悔している点 投稿いただいた106件の体験談データが消えてしまったのは申し訳ない。次回データを預かるようなサービスを作成する際には、もしWebアプリ自体が運営できなくなったとしても、投稿されたデータはバックアップしておき、貴重なデータが消えないようにしておきたい。</description></item><item><title>kubernetes デプロイ時に `MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutable` エラーが出た際に対処方法</title><link>https://shunyaueta.com/posts/2021-12-02/</link><pubDate>Thu, 02 Dec 2021 16:48:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-02/</guid><description>k8s で manifest file を編集して実行したら以下のようなエラーが出て実行できなかった。
+2年ほど経過すると、Rails3をアップデートしてくださいと、Heroku からメールが来てたりしていたがそれができないので個人開発の常である。 結局Twitter ログインのの不具合は修正できず。。。</description></item><item><title>kubernetes デプロイ時に `MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutable` エラーが出た際に対処方法</title><link>https://shunyaueta.com/posts/2021-12-02/</link><pubDate>Thu, 02 Dec 2021 16:48:54 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-02/</guid><description>k8s で manifest file を編集して実行したら以下のようなエラーが出て実行できなかった。
 Exception ( Monitor Deploy ) Deploy failed: The Deployment “&amp;mdash;” is invalid: spec.selector: Invalid value: v1.LabelSelector{MatchLabels:map[string]string{“app”:“&amp;mdash;”}, MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutable
 調べてみたところ、
 once deployed the label selectors of kubernetes service can not be updated until you decide to delete the existing deployment
