@@ -11,6 +11,10 @@ tags:
 
 やったこととして、Blog記事の末尾に、サポート機能として自分の[buy me a cofee](https://www.buymeacoffee.com/hurutoriya)ページへのリンクが表示されるようにした。
 
+## 導入経緯
+
+以下のポストに強く共感と興味を持った。特に良い文章は抜粋しておく
+
 > 情報に対して価値を感じてくれた人に還元してもらえるのは素直に嬉しい
 
 - [ブログに Buy Me a Coffee の投げ銭導線を設置した](https://d.potato4d.me/entry/20200921-buy-me-a-coffee/)
