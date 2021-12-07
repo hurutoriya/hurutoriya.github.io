@@ -53,3 +53,7 @@ Temporary Items
 
 # End of https://www.gitignore.io/api/go,macos
 .hugo_build.lock
+
+
+# https://discourse.gohugo.io/t/why-does-hugo-create-the-resources-directory/13021/2
+resources/
