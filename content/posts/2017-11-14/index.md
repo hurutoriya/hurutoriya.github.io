@@ -1,7 +1,6 @@
 ---
 title: "OpenCV 3.3から使えるDNNモジュールを使って物体検出"
 date: 2017-11-14T11:36:43.926Z
-lastmod: 2019-06-16T18:16:04+09:00
 lang: ja
 tags:
   - python
@@ -16,7 +15,7 @@ OpenCV と MobileNet を使って物体検出を行った
 
 Object Detection with OpenCV dnn modules and MobileNetSSD on Jupyter Notebook
 
-### Introduction
+## Introduction
 
 物体検出を Deep Leaning と OpenCV を用いて行う
 
@@ -48,16 +47,16 @@ OpenCV 3.3 から`dnn`モジュールが正式にリリースされた
 
 Demo on JupyterNotebook
 
-### Code
+## Code
 
 [hurutoriya/yolov2_api](https://github.com/hurutoriya/yolov2_api)
 
-### Study
+## Study
 
 - Print デバッグをやめて、logging module に切り替えた。出力が綺麗になっていい感じ
 - OpenCV だけで DNN を使えるのは結構便利(学習済モデルとかは必須)
 
-### Future Work
+## Future Work
 
 - YOLO v2 も C++のサンプルがあるので、Python でも動くようにしたい
 - Web App に組み込めるくらい速そうなので、やってみましょう
