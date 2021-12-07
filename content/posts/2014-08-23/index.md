@@ -32,7 +32,7 @@ ABEJA について詳しく知りたい方は下記のリンクを見るとわ�
 
 普段は matlab か Ruby 書いてるんですが、普段書いてない言語を書くとあまりよろしくないコードになったので StyleGuide 導入しました。
 
-> _“vim で python 開発するとき pyflakes + PEP8 = flake8 が便利 [_http://t.co/ga33wqUytL_](http://t.co/ga33wqUytL)> _— UEDA (@hurutoriya)_ [_2014, 9 月 25_](https://twitter.com/hurutoriya/status/514948433023475713)
+> _“vim で python 開発するとき pyflakes + PEP8 = flake8 が便利 [\_http://t.co/ga33wqUytL_](http://t.co/ga33wqUytL)> _— UEDA (@hurutoriya)_ [_2014, 9 月 25_](https://twitter.com/hurutoriya/status/514948433023475713)
 
 ABEJA のエンジニアの人たちは、全員が自分の強みを持っていて凄く良いチームが出来上がっていました! 一緒に働くことができて心の底から心地よかったです。
 
