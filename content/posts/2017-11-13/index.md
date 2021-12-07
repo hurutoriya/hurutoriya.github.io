@@ -1,7 +1,6 @@
 ---
 title: "Djangoで顔認識の結果をJSONで返す最小構成のAPIサーバーを作った"
 date: 2017-11-13T17:22:38.891Z
-lastmod: 2019-06-16T18:16:00+09:00
 lang: ja
 tags:
   - computervision
