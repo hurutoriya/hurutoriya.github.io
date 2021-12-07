@@ -24,7 +24,7 @@ Summaly
 
 > _The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPoint は下記リンク先に配布されています。_[_http://www.wkiri.com/research/papers/wagstaff-MLmatters-slides-AAAI.pptx_](https://href.li/?http://www.wkiri.com/research/papers/wagstaff-MLmatters-slides-AAAI.pptx)
 
-時間のある人は是非原著論文を呼んでみてください!
+時間のある人は是非原著論文を読んでみてください!
 
 ### 概要
 
