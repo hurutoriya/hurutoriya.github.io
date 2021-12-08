@@ -7,20 +7,18 @@ tags:
   - jupyter
 ---
 
-JupyterNotebook をリモートサーバー上で公開して、どこでも研究開発。
-
-講義で Jupyterhub を利用するお話です。
+JupyterNotebook をリモートサーバー上で公開して、どこでも研究開発 &amp; 講義で Jupyterhub を利用するお話です。
 
 ![image](/posts/2017-12-22/images/1.gif)
 
-GIF 画像は下記の記事で知った`tqdm`というパッケージを使いたくなったので載せてみた。
+GIF 画像は下記の記事で知った`tqdm`というパッケージを使いたくなった衝動の成れの果てです。
 
 - [私が選ぶ 2015 年の”新しい”Python モジュール トップ 5](http://postd.cc/my-top-5-new-python-modules-of-2015/)
   [IPython データサイエンスクックブック ―対話型コンピューティングと可視化のためのレシピ集](http://amzn.to/2DGM8UA)
 
-IPython データサイエンスクックブックをキッカケに研究室でも JupyterNotebook の凄さを皆が知り、MATLAB の kernel を通して利用を始めたりしています。自分は Python2→MATLAB→MATLAB & Python3 という流れで移り変わっています。
+IPython データサイエンスクックブックをキッカケに研究室でも JupyterNotebook の凄さを皆が知り、MATLAB の kernel を通して利用を始めたりしています。自分は Python2→MATLAB→MATLAB &amp; Python3 という流れで移り変わっています。
 
-## JupyterNotebook をリモートサーバー上で公開
+### JupyterNotebook をリモートサーバー上で公開
 
 コードは以下の通りです。特に問題なく公開することができました。
 
@@ -43,11 +41,11 @@ IPython データサイエンスクックブックをキッカケに研究室で
 - [IPython notebook サーバーを立ち上げる](http://qiita.com/ynakayama/items/ab3ea36fa8a7f0f6e5b3)
 - [ipython notebook をリモートサーバ上で動かす。](http://akiniwa.hatenablog.jp/entry/2013/11/25/001805)
 
-## 参考記事
+### 参考記事
 
 - [iPython notebook で研究開発生活](http://qiita.com/jellied_unagi/items/10877ca7f53bda4c34fa)
 
-## Juptyerhub : 講義で Jupyter を利用する。
+### Juptyerhub : 講義で Jupyter を利用する。
 
 JupyterNotebook を講義でも活用できるようにならないかなと先生と探していたのですが、Jupyternotebook を公開するだけだとユーザー管理が不可能です。例えば `~tarou/`というディレクトリで jupyternotebook を公開すると`~tarou/`に notebook が沢山できだれがどのノートを作ったのかが把握できないという問題点があります。
 
@@ -72,6 +70,8 @@ PAM 以外の認証方法としては[Auth](https://github.com/jupyter/jupyterhu
 
 - [Deploying JupyterHub for Education](https://developer.rackspace.com/blog/deploying-jupyterhub-for-education/)
 
-## 参考記事
+### 参考記事
 
 - [CentOS6.6(64bit)に JupyterHub をインストールする](http://estrellita.hatenablog.com/entry/2015/07/31/083202)
+
+2016/01/29 0:52 昨日の時点では問題なく Jupiter が稼働していたんですが、今は動かないので問題を解決できたらスクリーンショット載せます。
