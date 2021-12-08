@@ -9,7 +9,7 @@ tags:
 
 2018 年 1 月の振り返りをざっくりと
 
-### Keep
+## Keep
 
 - Mercari Competition にて初 Kaggle コンペ参加。 Best 116 位まで言ったんですが、NLP 周りの知見が無いのと、Kaggle 周りの力不足で現在は 317 位… ブロンズまで引き戻せるか…
   > [](https://twitter.com/hurutoriya/status/952573577357770753)
@@ -34,12 +34,12 @@ tags:
 - 住信 SBI ネット銀行を開設した。ネット銀行最高。
 - [**Google Family**](https://families.google.com/families) **を始めた。**予定管理は[TimeTree](https://timetreeapp.com/?locale=jp)を使ってデザインや使い勝手は不安が無かったんですが、Google Calendar に比べてアプリのインテグレーションや持続性(日本のベンチャー企業なのでいつまでそのサービスが持つのか)が不安になったので Google Family に乗り換えました。
 
-### Problem
+## Problem
 
 - Kaggle のゴールドの壁を痛感。もっと精進せねば
 - 論文読みが止まってしまってた。機械学習基盤とプロダクション環境における機械学習関連の論文をテーマにしてまとめて書き上げる
 
-### Try
+## Try
 
 - 02 月から仕事が始まるので(初社会人、入社完了したらまた振り返り Blog を書く)、社会人としてのメタスキルを実践できるようにしておく(e.g. [入社一年目の教科書](http://amzn.to/2EeUVRt) )
 - 日本語ニュース(TechCrunch Japan)を読むのを廃止、英語ニュースに切り替え

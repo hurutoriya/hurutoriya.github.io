@@ -33,11 +33,11 @@ eBay が ARCore を使った商品の梱包測定機能を提供しているの�
 
 今回例として用いた MBP の空箱だと ARCore が空箱自体を平面と認識してしまうという罠があるので、床で平面検知を終えてから商品を置くという裏技が必要
 
-### まとめ
+## まとめ
 
 - ARCore を用いた AR 機能をすぐ試せる組織体制なのは凄い。ハッカソンで作ったのかな?
 - 実用性は 🙅、平面検出しかしてないので、荷物に合わせて最適なダンボールを選ぶのは結局ユーザー。そこまで自動化してこそ革新的な機能になるのではなかろうか
 
-Related Post
+## Reference
 
 [eBay uses augmented reality to help sellers find the right box for their product](https://venturebeat.com/2018/03/19/ebay-uses-augmented-reality-to-help-sellers-find-the-right-box-for-their-product/)
