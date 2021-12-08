@@ -28,19 +28,19 @@ Traceback (most recent call last):
 
 というエラーが出た。
 
-デフォルトのPython の実行ランタイムが2.x 系なのでそれに起因するエラーだった。
-pipをPython2系でおそらくインストールしており、pip21に更新後はPython3.6 からの機能であるf-stringが利用され始めたことが起因。
+デフォルトの Python の実行ランタイムが 2.x 系なのでそれに起因するエラーだった。
+pip を Python2 系でおそらくインストールしており、pip21 に更新後は Python3.6 からの機能である f-string が利用され始めたことが起因。
 
 ## 対処方法
 
-既存のpipを削除した上で、
+既存の pip を削除した上で、
 
 ```bash
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
 ```
 
-でpipが実行できるようになりエラーが解消された
+で pip が実行できるようになりエラーが解消された
 
 ## Appendix
 

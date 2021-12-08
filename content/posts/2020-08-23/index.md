@@ -3,10 +3,10 @@ title: "Python の内包表記とジェネレータ式のメモリ使用量比�
 date: 2020-08-23T21:28:10+09:00
 lang: ja
 tags:
-- python
+  - python
 ---
 
-リストを構築する際にPythonではリスト内包表記とジェネレータ式の２種類が存在する。
+リストを構築する際に Python ではリスト内包表記とジェネレータ式の２種類が存在する。
 今回、リスト構築時にメモリ使用量にどれだけ差異が発生するのか調査をしてみた。
 メモリ使用量の調査には、[memory_profiler](https://github.com/pythonprofilers/memory_profiler)というパッケージを使用した。
 
@@ -49,7 +49,7 @@ Line #    Mem usage    Increment   Line Contents
     13     15.1 MiB      0.1 MiB       [print((color, size)) for color in colors for size in sizes]
 ```
 
-次に、1000x1000のデカルト積を作成した場合
+次に、1000x1000 のデカルト積を作成した場合
 
 ```python
 from memory_profiler import profile
@@ -85,6 +85,6 @@ Line #    Mem usage    Increment   Line Contents
     12    434.6 MiB      5.8 MiB       [(color, size) for color in colors for size in sizes]
 ```
 
-結果を見ると一目瞭然で、ジェネレータ式の場合だとイテレータプロトコルが要素を一つ一つ作成するので、メモリ使用量もリスト内包表記と比べると40倍以上と一目瞭然の差になった
+結果を見ると一目瞭然で、ジェネレータ式の場合だとイテレータプロトコルが要素を一つ一つ作成するので、メモリ使用量もリスト内包表記と比べると 40 倍以上と一目瞭然の差になった
 
 機械学習でも大規模なデータを扱うことが多い、なのでジェネレータ式を意識して書いてメモリ使用量を抑えていきたい。

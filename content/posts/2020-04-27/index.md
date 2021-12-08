@@ -3,7 +3,7 @@ title: "ソフトウェア開発における Upstream と Downstream の意味"
 date: 2020-04-27T23:55:42+09:00
 lang: ja
 tags:
-- development
+  - development
 ---
 
 - Upstream
@@ -16,8 +16,8 @@ tags:
 
 e.g. `Web service→ Databese` という流れでデータが作成される
 
+## References
 
-## Ref
 - https://reflectoring.io/upstream-downstream/
 - https://softwareengineering.stackexchange.com/questions/71080/what-does-downstream-upstream-design-mean/83686
 - https://en.wikipedia.org/wiki/Upstream_(software_development)
