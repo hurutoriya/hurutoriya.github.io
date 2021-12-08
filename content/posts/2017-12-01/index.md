@@ -1,6 +1,7 @@
 ---
 title: "Machine Learning that Matters (ICML2012) を読んだ"
 date: 2017-12-01T07:55:12.617Z
+lastmod: 2019-06-16T18:16:08+09:00
 lang: ja
 tags:
   - machinelearning
@@ -22,7 +23,7 @@ Summaly
 
 発表動画を探してみたんですが、ICML2012 で発表した際のビデオはサーバのクラッシュにより喪失したとのこと。
 
-> _The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPoint は下記リンク先に配布されています。_[_http://www.wkiri.com/research/papers/wagstaff-MLmatters-slides-AAAI.pptx_](https://href.li/?http://www.wkiri.com/research/papers/wagstaff-MLmatters-slides-AAAI.pptx)
+> _The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPoint は下記リンク先に配布されています。_[_http://www.wkiri.com/research/papers/wagstaff-MLmatters-slides-AAAI.pptx_](http://t.umblr.com/redirect?z=http%3A%2F%2Fwww.wkiri.com%2Fresearch%2Fpapers%2Fwagstaff-MLmatters-slides-AAAI.pptx&t=MWJjOWZiMjU4ZDE4MjA3YzkzNWIyMTlmMmQxMzU2YTIyYjRiZGE4NSxFcWFNc3VFOA%3D%3D&b=t%3A7D8PTMepfNiraqMxnsn59A&p=http%3A%2F%2Fhurutoriya.tumblr.com%2Fpost%2F122944523966%2Fmachine-learning-that-matters-icml2012-%E8%AA%AD%E3%82%93%E3%81%A0&m=1)
 
 時間のある人は是非原著論文を呼んでみてください!
 
@@ -44,7 +45,7 @@ Summaly
 
 「工学とは意思を実現する学問である」
 
-他にこの論文について取り上げられている記事。 [優秀な研究者がエンジニアに流れているのは日本だけじゃないのかも](https://myopomme.hatenablog.com/entry/20120606/1338993847)
+他にこの論文について取り上げられている記事。 [優秀な研究者がエンジニアに流れているのは日本だけじゃないのかも](http://t.umblr.com/redirect?z=http%3A%2F%2Fd.hatena.ne.jp%2Fmyopomme%2F20120606%2F1338993847&t=MmY0YTdmNjdmMmVmOWQ4NGFkYmZlZDI4NDc0ZDVhODgzOTIxMWNhMyxFcWFNc3VFOA%3D%3D&b=t%3A7D8PTMepfNiraqMxnsn59A&p=http%3A%2F%2Fhurutoriya.tumblr.com%2Fpost%2F122944523966%2Fmachine-learning-that-matters-icml2012-%E8%AA%AD%E3%82%93%E3%81%A0&m=1)
 
 上記の記事の統計学者ブラッドリー・エフロンが述べている言葉は、じんわりと自分に染み渡ってきました。
 
