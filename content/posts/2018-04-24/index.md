@@ -12,7 +12,7 @@ tags:
 
 データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア
 
-#### 紹介記事
+## 紹介記事
 
 [Data engineers vs. data scientists](https://www.oreilly.com/ideas/data-engineers-vs-data-scientists)
 
