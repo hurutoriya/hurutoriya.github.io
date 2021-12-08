@@ -11,10 +11,9 @@ tags:
 
 Google, Facebook の機械学習基盤情報をまとめました
 
-Podcastでも紹介しました
+Podcast でも紹介しました
 
-[#2 Facebook とGoogleの機械学習基盤について at just4fun.fm](https://anchor.fm/hurutoriya/episodes/2-Facebook-Google-ek6gm7/a-a58em8)
-
+[#2 Facebook と Google の機械学習基盤について at just4fun.fm](https://anchor.fm/hurutoriya/episodes/2-Facebook-Google-ek6gm7/a-a58em8)
 
 ![image](/posts/2018-04-09/images/1.gif)
 

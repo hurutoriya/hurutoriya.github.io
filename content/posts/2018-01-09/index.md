@@ -18,13 +18,13 @@ Github Pages + CloudFlare で独自ドメインの [shunyaueta.com](https://shun
 
 PWA にしたのは完全に趣味です。
 
-### TL;DR;
+## TL;DR;
 
 - Web App を作ってる人は manifest.json を設置するだけでも Android の使用感が改善されそう
 - 独自ドメインでお手軽に SSL ホスティングしたいなら Firebase hosting めっちゃおすすめです(1GB のホスティングは無料)
 - FireBase Hosting だけだと Firebase 本来の旨味は味わえません
 
-### PWA
+## PWA
 
 1 年前ですが、簡潔に PWA の事が書かれています
 
@@ -67,7 +67,7 @@ Web App Manifest については下記の記事が分かりやすいです。
 
 というか皆 Chrome の中の人の記事だった(どうりで詳しいわけですね…)
 
-### ホスティング
+## ホスティング
 
 Github Pages+CloudFlare(独自ドメイン運用)で SSL 認証された Web Page のホスティングを実現していました。
 
@@ -81,14 +81,13 @@ FireBase では、[FireBase Hosting](https://firebase.google.com/docs/hosting/)�
 
 めっちゃ簡単にデブロイできます…!!
 
-#### 成果物
+## 成果物
 
 [Shunya Ueta | Engineer](https://shunyaueta.com/)
 
-#### 所感
+## 所感
 
 今回は静的かつ小規模な Web サイトを PWA 化したので、恩恵殆ど無いですがまともな WebApp だと恩恵めっちゃ受けると思います。(Twitter Lite や日経電子版の web サイトなど)
 
-[How we built Twitter Lite](https://blog.twitter.com/engineering/en_us/topics/open-source/2017/how-we-built-twitter-lite.html)
-
-[いまさら聞けない PWA と AMP - Qiita](https://qiita.com/edwardkenfox/items/4c0b9550ffa48c1f0445)
+- [How we built Twitter Lite](https://blog.twitter.com/engineering/en_us/topics/open-source/2017/how-we-built-twitter-lite.html)
+- [いまさら聞けない PWA と AMP - Qiita](https://qiita.com/edwardkenfox/items/4c0b9550ffa48c1f0445)
