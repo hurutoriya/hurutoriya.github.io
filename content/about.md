@@ -38,7 +38,7 @@ Shunya UETA who is a working as Software Engineer at Mercari, inc. Opinions are 
 - [データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～](https://johokiko.co.jp/publishing/BC200701.php)
   - `マルチモーダルによる規約違反出品検知への応用と運用について` を共著にて執筆
 - [機械学習エンジニアの学会での論文発表のススメ。応募から査読通過までの流れ](https://offers.jp/media/sidejob/workstyle/a_1966)
-  - offers magazine というメディアに、業務での実績の論文化について寄稿しました。
+  - Offers magazine というメディアに、業務での実績の論文化について寄稿しました。
 
 ## Misc
 
