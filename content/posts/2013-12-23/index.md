@@ -1,6 +1,7 @@
 ---
 title: "ミクシィにインターンしてきた"
-date: 2013-08-23T17:04:38.281Z
+date: 2013-12-23T17:04:38.281Z
+lastmod: 2019-06-16T18:16:16+09:00
 lang: ja
 tags:
   - note
@@ -8,7 +9,7 @@ tags:
 
 #### 株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。
 
-![image](/posts/2013-08-23/images/1.png)
+![image](/posts/2013-12-23/images/1.png)
 
 2013 年当時のスクリーンショットを探してたが、無かったので 2017/12/24 のを撮ってきた。良い意味であまり変わってない(ライさんの謎のくるまアプリとか)
 
@@ -30,7 +31,7 @@ tags:
 
 ### 配属先
 
-僕は第一希望の[DeployGate](https://deploygate.com/)に配属されました。  
+僕は第一希望の[DeployGate](http://t.umblr.com/redirect?z=https%3A%2F%2Fdeploygate.com%2F&t=YzhjODU0ZTJmYmY4NjhjODYwMjljOGIyNWIyYjZhZjc3YTMyNGRjNSxTSEkxT1V4cA%3D%3D&b=t%3A7D8PTMepfNiraqMxnsn59A&p=http%3A%2F%2Fhurutoriya.tumblr.com%2Fpost%2F90073115736%2F%E3%83%9F%E3%82%AF%E3%82%B7%E3%82%A3%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-2013-deploygate&m=1)に配属されました。  
 DeployGate チームは社員二人、インターン三人という謎構成でした。
 
 > _「DepoyGate」とは、ミクシィ社の新規事業第 1 弾として登場した Android アプリ提供者向けのテスト版アプリ配信サービスです。 アプリをワイヤレスで配布することができ、アップデータ配信や動作ログがリアルタイムに取得できるので、プロジェクトメンバー全員が常に最新版アプリに触れることができます。 2012 年 9 月のサービス開始から、世界 93 ヵ国 3600 以上のアプリ開発に利用され、そのユーザーの 76％は英語圏というグローバルなサービスでもあります。 「DepoyGate」エンジニアからの発案で生まれたサービスです。 最新の技術に触れ、一緒に開発を進めていきたいという、あなたのチャレンジをお待ちしております。_### メリット
