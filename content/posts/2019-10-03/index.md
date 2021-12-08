@@ -11,8 +11,8 @@ tags:
 ---
 
 [pandas.read_gbq](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_gbq.html) 便利ですよね。
-クレデンシャルファイルを認証画面からコピペすれば Jupyter Notebook 上で簡単に認証され、Google BigQuery が実行されてその結果がそのままデータフレームとして扱えます。
-Jupyter Notebook と Google BigQuery を連携させたいときは愛用していました(過去形)。
+クレデンシャルファイルを認証画面からコピペすれば Jupyter Notebook上で簡単に認証され、Google BigQuery が実行されてその結果がそのままデータフレームとして扱えます。
+Jupyter Notebookと Google BigQuery を連携させたいときは愛用していました(過去形)。
 
 ## 問題点
 
@@ -33,7 +33,7 @@ Jupyter Notebook と Google BigQuery を連携させたいときは愛用して�
 1 番目は、Jupyter 上でマジックコマンドで Google BQ が実行できて、速度も `pandas.rad_gbq` よりも高速です
 2 番目はそもそも実行結果が巨大な場合で、目安としては`1GB以上`なら 2 番目の方法を使えば楽です。
 
-## 1, `google-cloud-bigquery` をインストールして、Jupyter Notebook のマジックコマンドで Google BQ を実行
+### 1, `google-cloud-bigquery` をインストールして、Jupyter Notebookのマジックコマンドで Google BQ を実行
 
 ```python
 pip install --upgrade google-cloud-bigquery[bqstorage,pandas]
@@ -63,9 +63,9 @@ LIMIT 10
 `df` にマジックコマンドで実行した SQL の実行結果が格納されます!
 便利ですね
 
-## 2, BQ 実行 →BigQuery table として保存 →GCS へ保存 → `gsutil` でマシンへコピー
+### 2, BQ 実行 →BigQuery table として保存 →GCS へ保存 → `gsutil` でマシンへコピー
 
-- BigQuery でクエリを実行、実行結果を BigQuery Table へ保存
+-  BigQuery でクエリを実行、実行結果を BigQuery Table へ保存
 - 注)実行結果の容量が巨大なので、保存先は基本的に Big Query Table へ保存するしか選択肢が無い
 
 ![can't export large file as one file](/posts/2019-10-03/images/export-to-bqtable.png)

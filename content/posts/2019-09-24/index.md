@@ -9,7 +9,7 @@ tags:
 
 ## 1. Generate SSH config file using `gcloud` command line
 
-```bash
+```
 gcloud compute config-ssh
 ```
 
@@ -19,14 +19,14 @@ You cant get ssh config for your Google Compute Engine project!
 
 Notice: you need choose target GCP project before run below command.
 
-```bash
+```
 gcloud config set project <your-project-id>
 ```
 
 ## 2. Install `Remote SSH` extention in Visual Studio Code.
 
-https://code.visualstudio.com/blogs/2019/07/25/remote-ssh
+- https://code.visualstudio.com/blogs/2019/07/25/remote-ssh
 
 ## 3. Press `⇧⌘P` & Select target connection in Visual Studio Code!
 
-Finaly you can connect in Visual Studio Code. Welcome to VS code when you write the code in SSH connection.
+- Finaly you can connect in Visual Studio Code. Welcome to VS code when you write the code in SSH connection.

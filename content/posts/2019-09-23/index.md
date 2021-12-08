@@ -12,8 +12,7 @@ tags:
 
 をご恵贈していただいたので、感想をここに記します。
 
-> 経営システム誌に寄稿したものができました。30 部あるので欲しい方はお声がけください。<br>私の 10 年間の経験を整理して中堅のデータサイエンティスト向けに書いたものになります。批判的なフィードバックなどいただけると嬉しいです。(@pseudo_finite)
-> [tweet](https://twitter.com/pseudo_finite/status/1086194134027649024) January 18, 2019
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">経営システム誌に寄稿したものができました。30部あるので欲しい方はお声がけください。<br>私の10年間の経験を整理して中堅のデータサイエンティスト向けに書いたものになります。批判的なフィードバックなどいただけると嬉しいです。 <a href="https://t.co/inajBo6EdW">pic.twitter.com/inajBo6EdW</a></p>&mdash; iwanaga_jiro (@pseudo_finite) <a href="https://twitter.com/pseudo_finite/status/1086194134027649024?ref_src=twsrc%5Etfw">January 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## 批評
 

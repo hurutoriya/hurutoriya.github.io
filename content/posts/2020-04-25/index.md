@@ -3,10 +3,10 @@ title: "[抄訳] The ML Test Score: A Rubric for ML Production Readiness and Tec
 date: 2020-04-25T01:35:20+09:00
 lang: ja
 tags:
-  - paper
-  - translation
-  - machinelearning
-  - mlops
+- paper
+- translation
+- machinelearning
+- mlops
 ---
 
 [[抄訳] What’s your ML test score? A rubric for ML production systems](https://shunyaueta.com/posts/2020-04-19/)で紹介した論文の続編があったので読んでみました。
@@ -19,18 +19,16 @@ tags:
 - 2021/02/03
   - ML Test Score を簡単に計算できる[Google Spread Sheets](https://docs.google.com/spreadsheets/d/1xDts6-rzSApFJ6yg9mqpLx8CtSrrTCJAsnbfCuRHjvI/edit?usp=sharing) を公開
 - 2020/06/24
-  - 著者の Eric Breck さんに連絡をし、抄訳の公開を快諾していただきました。ありがとうございます。
+  - 著者のEric Breck さんに連絡をし、抄訳の公開を快諾していただきました。ありがとうございます。
   - 完全な citation 情報を追記しました。
   - この翻訳記事が著者のレビューを受けていないことを追記しました。
 
 ## Citation
 
----
-
+***
 [Eric Breck](https://research.google/people/EricBreck/), [Shanqing Cai](https://research.google/people/105277/), Michael Salib,
 . [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://research.google/pubs/pub46555/). In 2017 IEEE International Conference on Big Data (Big Data) (pp. 1123-1132). IEEE.
-
----
+***
 
 大規模なオフラインの機械学習実験は注目されているが、反対にオンラインでの信頼性がある機械学習システムの開発は難しく、技術的負債が溜まりやすい
 
@@ -42,11 +40,10 @@ tags:
 ## TL; DR;
 
 - 機械学習システムの信頼性を評価する`28`の実行可能なテスト項目とスコアリング方法を提案する。
-- Google 内部の調査では、調査対象の 80%のチームが 28 のテスト項目の１つさえも行っていなかった。。(エンジニアリングに長けている Google 内部でさえも十分に行われてはいない)
-- もし手持ちの機械学習システムの ML Test Score を計算したい場合は、簡単に計算可能な [Google Spread Sheets](https://docs.google.com/spreadsheets/d/1xDts6-rzSApFJ6yg9mqpLx8CtSrrTCJAsnbfCuRHjvI/edit?usp=sharing) を公開します。
+- Google 内部の調査では、調査対象の 80%のチームが28のテスト項目の１つさえも行っていなかった。。(エンジニアリングに長けている Google 内部でさえも十分に行われてはいない)
+- もし手持ちの機械学習システムのML Test Score を計算したい場合は、簡単に計算可能な [Google Spread Sheets](https://docs.google.com/spreadsheets/d/1xDts6-rzSApFJ6yg9mqpLx8CtSrrTCJAsnbfCuRHjvI/edit?usp=sharing) を公開します。
   - 閲覧権限のみ与えているので、`File-> Make a copy` を選択して手元にコピーしてお使いください。
   - [ML Test Score template - Googpe Spread Sheets](https://docs.google.com/spreadsheets/d/1xDts6-rzSApFJ6yg9mqpLx8CtSrrTCJAsnbfCuRHjvI/edit?usp=sharing)
-
 ## TEST FOR DATA AND FEATURES
 
 - Data 1: 期待する特徴量は全てスキーマで管理され、読み込み可能か?
@@ -63,7 +60,7 @@ tags:
   - How: データパイプライン構築の時には権限管理を厳密に行う
 - Data 6: 新しい特徴量は素早く追加可能か?
   - 新しいアイデアを素早く試せるチームは強い。世界規模、またはトラフィックが多い機械学習システムでも、1-2 ヶ月で新しい機能を追加することが可能である
-    の。`Data 5` と相反する形にはなっている。
+の。`Data 5` と相反する形にはなっている。
 - Data 7: 全ての特徴量生成コードはテストされているか?
   - 特徴量生成のコードは一見シンプルでユニットテストなどは必要そうに見えないかもしれないが、ここで発生するバグは発見することはとても難しい
 
