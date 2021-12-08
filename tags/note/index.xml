@@ -17,7 +17,14 @@ just4fun.fm Google Podcasts Apple Podcasts Pocket Casts ご感想などは Twitt
 なぜ Podcast なのか？ 以前からPodcastは日常的に聴いていて、自分の中でもすごく好きなメディアのうちの一つです。 前からやってみようかなと思っていたんですが、周りの人たちがPodcastを始めたのを機によし自分もやるかと始めてみました
 Blogと比べてみると、
 ブログ書くよりかはサラッと配信できる、音声で配信するのも新鮮で面白い その代わり、換気扇とかの音が気になり音源環境とかはめちゃくちゃ気を使う 発表レベルの構造化したトークよりも雑談レベルでワイワイするほうがPodcastは向いてる感じはする。前者だと準備やらなんやらで公開できずに死の谷に落ちそう 喋っているうちに思考が洗練されていくので、あまり気負いすぎずに喋りたい事を発信していくのが良さそう しばらく試験的に続けていきたいと思います。
-Anchor 凄い AnchorでPodcastを始めると、自動的にAppole Podcast, Google Podcast, Pocket CastなどPodcastのプラットフォームに自動配信される。 Google Podcastは、配信開始と通知が来ても実際は2-3日後に視聴可能になると問い合わせたら返信がきた Support here. Sorry for the confusion with your podcast on Google. Allow me to explain this to you.</description></item><item><title>ミクシィにインターンしてきた</title><link>https://shunyaueta.com/posts/2013-12-23/</link><pubDate>Mon, 23 Dec 2013 17:04:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-12-23/</guid><description>株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。 2013 年当時のスクリーンショットを探してたが、無かったので 2017/12/24 のを撮ってきた。良い意味であまり変わってない(ライさんの謎のくるまアプリとか)
+Anchor 凄い AnchorでPodcastを始めると、自動的にAppole Podcast, Google Podcast, Pocket CastなどPodcastのプラットフォームに自動配信される。 Google Podcastは、配信開始と通知が来ても実際は2-3日後に視聴可能になると問い合わせたら返信がきた Support here. Sorry for the confusion with your podcast on Google. Allow me to explain this to you.</description></item><item><title>機械学習・コンピュータビジョンを活かしたビジネスを手掛ける株式会社ABEJAでインターンしてきた</title><link>https://shunyaueta.com/posts/2014-08-23/</link><pubDate>Sat, 23 Aug 2014 17:18:02 +0000</pubDate><guid>https://shunyaueta.com/posts/2014-08-23/</guid><description>株式会社 ABEJA という会社に 2013/8/25~2013/9/26 間に 2 週間弱インターンシップに参加してきました。
+2013 年当時のサイトのスクショ
+What’S ABEJA? ABEJA について詳しく知りたい方は下記のリンクを見るとわかりやすいです。
+マーケティングから決済まで、人認証技術 × ビジネスプロデュースで未来を変える ABEJA の挑戦【連載:NEO ジェネ！】 いまそこにある、リアルタイムデータ解析。ぼくらの暮らしを変える、日本のスタートアップ 3 社 この会社をはじめて知ったのは、ミクシィでのインターンシップに参加してた時に別グループでインターンしていた知り合いの人に教えてもらったのがキッカケです。 機械学習や画像解析を用いて、現実世界の問題を解決して更にビジネスにまで昇華させている点に痺れました。
+本来なら一ヶ月近く参加予定だったんですが、もう一つ挑戦していたリクルートのインターンに運良く合格したので結果的には 2 週間弱という短めのインターンになりました。
+What do you doing in ABEJA intern? インターンの内容は Python を使って社内用のツールをゴニョゴニョしてました。
+郷に従います。(StyleGuide 見てなかった…) / 他 2 コメント http://t.co/5I0nThs4rU “PEP 8 — Style Guide for Python Code” http://t.co/in7q9lD6cy&amp;gt; — UEDA (@hurutoriya) 2014, 9 月 25
+普段は matlab か Ruby 書いてるんですが、普段書いてない言語を書くとあまりよろしくないコードになったので StyleGuide 導入しました。</description></item><item><title>ミクシィにインターンしてきた</title><link>https://shunyaueta.com/posts/2013-08-21/</link><pubDate>Fri, 23 Aug 2013 17:04:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-08-21/</guid><description>株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。 2013 年当時のスクリーンショットを探してたが、無かったので 2017/12/24 のを撮ってきた。良い意味であまり変わってない(ライさんの謎のくるまアプリとか)
 Dive into mixi
 なぜインターンに行こうと思ったのか 僕は高専から筑波大学の情報系に今年度から編入したんですが、
 編入してから同期の編入生や先輩、内部生の人達に会って 「このままじゃダメだ、もっと面白く!もっと楽しく生きる!!」 と感じたので参加しました。
@@ -31,11 +38,4 @@ DeployGate チームは社員二人、インターン三人という謎構成で
 今回のミクシィインターンは 6 週間を超える長期のインターンで実際に提供されているサービスの開発に参加すること t ができます。
 デメリット 基本的に無いです。
 強いて言うなら夏休みが 4/5 ほど持ってかれたことですね。
-何をやった？ 基本的に Github に issue に上がってるチケットを消化していく感じでした。 自分でこれがあったら便利だなと思う機能を追加したり、不便な箇所を改修したりして、GO サインが出たら Depoloy していきます。</description></item><item><title>機械学習・コンピュータビジョンを活かしたビジネスを手掛ける株式会社ABEJAでインターンしてきた</title><link>https://shunyaueta.com/posts/2013-08-23/</link><pubDate>Fri, 23 Aug 2013 17:18:02 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-08-23/</guid><description>株式会社 ABEJA という会社に 2013/8/25~2013/9/26 間に 2 週間弱インターンシップに参加してきました。
-2013 年当時のサイトのスクショ
-What’S ABEJA? ABEJA について詳しく知りたい方は下記のリンクを見るとわかりやすいです。
-マーケティングから決済まで、人認証技術 × ビジネスプロデュースで未来を変える ABEJA の挑戦【連載:NEO ジェネ！】 いまそこにある、リアルタイムデータ解析。ぼくらの暮らしを変える、日本のスタートアップ 3 社 この会社をはじめて知ったのは、ミクシィでのインターンシップに参加してた時に別グループでインターンしていた知り合いの人に教えてもらったのがキッカケです。 機械学習や画像解析を用いて、現実世界の問題を解決して更にビジネスにまで昇華させている点に痺れました。
-本来なら一ヶ月近くコミットできる予定だったんですが、もう一つ挑戦していた別のインターンに運良く合格したので結果的には 2 週間弱という短めのインターンになりました。
-What do you doing in ABEJA intern? インターンの内容は Python を使って社内用のツールをゴニョゴニョしてました。
-郷に従います。(StyleGuide 見てなかった…) / 他 2 コメント http://t.co/5I0nThs4rU “PEP 8 — Style Guide for Python Code” http://t.co/in7q9lD6cy&amp;gt; — UEDA (@hurutoriya) 2014, 9 月 25
-普段は matlab か Ruby 書いてるんですが、普段書いてない言語を書くとあまりよろしくないコードになったので StyleGuide 導入しました。</description></item></channel></rss>
+何をやった？ 基本的に Github に issue に上がってるチケットを消化していく感じでした。 自分でこれがあったら便利だなと思う機能を追加したり、不便な箇所を改修したりして、GO サインが出たら Depoloy していきます。</description></item></channel></rss>

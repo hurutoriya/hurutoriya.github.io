@@ -7,5 +7,4 @@ Gaussian Kernel GIF Animation
 実験結果も以前は GIF で保存してたが、最近は全てmp4で管理するようにした。
 あと、**np.linspace()**が iterable ではないので、イマイチな書き方になった。。
 **np.arange()**を使うべきなのか…
-Thanks Embedding Matplotlib Animations in Jupyter Notebooks
-Jupyter 上で matplotlib のアニメーションを再生する - Qiita</description></item></channel></rss>
+References Embedding Matplotlib Animations in Jupyter Notebooks Jupyter 上で matplotlib のアニメーションを再生する - Qiita</description></item></channel></rss>

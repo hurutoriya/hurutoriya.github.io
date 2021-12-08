@@ -13,7 +13,7 @@ TL; DR; ポートフォワードはrolling update が終わったら貼り直そ
 理由は単純だけど、気づくのに時間がかかってしまった。k8s の動きを理解していないからこういうので時間を溶かしてしまった。反省
 Appendix Performing a Rolling Update</description></item><item><title>Courseraで Getting Started with Google Kubernetes Engine の講義を修了した</title><link>https://shunyaueta.com/posts/2020-04-12/</link><pubDate>Sun, 12 Apr 2020 00:59:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-12/</guid><description>表題のとおりですが、Getting Started with Google Kubernetes Engine という Coursera の講義を終了しました
 業務で k8s を本格的に使い始め、ちゃんと理解したいな~と思いこのコースを取りました。
-半年前に Kubernetes完全ガイド impress top gearシリーズ をサラッと読んではいたのですが、やはり手を動かして学んでいないと実際に kubectl command など完全に忘れているし、スキルとして身についていない感半端なかったので、良い機会なのでHands-on が提供うされているCourseraを使って学んでみました。
+半年前に Kubernetes 完全ガイド impress top gear シリーズ をサラッと読んではいたのですが、やはり手を動かして学んでいないと実際に kubectl command など完全に忘れているし、スキルとして身についていない感半端なかったので、良い機会なので Hands-on が提供うされている Coursera を使って学んでみました。
 個人的にこの講義がめちゃくちゃオススメなのが、 GKE の講義なので Google が提供する qwiklab が使えます。 一時的に GCP プロジェクトが作成され、そこでハンズオンができるのですがこれが実際に手を動かしながら学ぶという形式にすごく良いのと k8s の構築もすべてクラウドでできえるので変に環境構築でハマることなく快適に学習に集中できました。
 もう、これがめちゃくちゃ快適でハンズオンとしてすごく快適に手を動かせなら、k8s の初歩的な概念や Command line などを学べました。
 実際に手を動かしながら学ぶべきものだと思うので、このハンズオン形式の講義はありがたかったです!

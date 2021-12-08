@@ -4,5 +4,5 @@ Library not loaded: /usr/local/lib/libkytea.0.dylib in version = &amp;quot;0.1.5
 Good point. Mykytea wheel assumes that kytea is installed under /usr/local/lib, while your kytea exists another place. This should be Mykytea issue and there are two options we can avoid it like:
 Use delocate, like Linux&amp;rsquo;s audit-wheel https://realpython.com/python-wheels/ Install from source using wheel instead.</description></item><item><title>Google Colaboratory で Mecab-ipadic-Neologd を使用可能にする</title><link>https://shunyaueta.com/posts/2018-04-23/</link><pubDate>Mon, 23 Apr 2018 15:38:10 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-23/</guid><description>Colabratory 上で 日本語に対する NLP をしたいときありませんか？
 1 2 3 4 5 # install MeCab neologd !apt-get -q -y install sudo file mecab libmecab-dev mecab-ipadic-utf8 git curl python-mecab &amp;gt; /dev/null !git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git &amp;gt; /dev/null !echo yes | mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 !pip install mecab-python3 &amp;gt; /dev/null インストールに成功しました。
-Google Colabratoryも以下で公開しているので参考にしてみてください
+Google Colabratory も以下で公開しているので参考にしてみてください
 colab-mecab-ipadic-NEologd.ipynb</description></item></channel></rss>
