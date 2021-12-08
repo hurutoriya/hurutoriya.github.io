@@ -8,7 +8,7 @@ tags:
   - mlops
 ---
 
-少し前のことですが、Offers Magazine さんに、「エンジニアによる業務実績の論文化」をテーマとして寄稿した。
+少し前のことだが、Offers Magazine さんに、「エンジニアによる業務実績の論文化」をテーマとして寄稿した。
 
 [機械学習エンジニアの学会での論文発表のススメ。応募から査読通過までの流れ](https://offers.jp/media/sidejob/workstyle/a_1966)
 
