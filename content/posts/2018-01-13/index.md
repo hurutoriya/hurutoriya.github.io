@@ -28,7 +28,8 @@ Gaussian Kernel GIF Animation
 あと、**np.linspace()**が iterable ではないので、イマイチな書き方になった。。  
 **np.arange()**を使うべきなのか…
 
-## References
+### Thanks
 
-- [Embedding Matplotlib Animations in Jupyter Notebooks](http://louistiao.me/posts/notebooks/embedding-matplotlib-animations-in-jupyter-notebooks/)
-- [Jupyter 上で matplotlib のアニメーションを再生する - Qiita](https://qiita.com/Tatejimaru137/items/6083e2e3a4e618da6274)
+[Embedding Matplotlib Animations in Jupyter Notebooks](http://louistiao.me/posts/notebooks/embedding-matplotlib-animations-in-jupyter-notebooks/)
+
+[Jupyter 上で matplotlib のアニメーションを再生する - Qiita](https://qiita.com/Tatejimaru137/items/6083e2e3a4e618da6274)

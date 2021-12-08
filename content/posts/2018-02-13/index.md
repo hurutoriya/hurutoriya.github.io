@@ -16,7 +16,7 @@ tags:
 
 [Team AI Meetup #1 (2018/02/13 19:00〜)](https://mercari.connpass.com/event/77545/)
 
-Twitter: [#mercari_ai](https://twitter.com/search?f=tweets&vertical=default&q=%23mercari_ai&src=tyah)
+**Twitter**: [#mercari_ai](https://twitter.com/search?f=tweets&vertical=default&q=%23mercari_ai&src=tyah)
 
 ### 山口さん
 
@@ -49,7 +49,7 @@ Twitter: [#mercari_ai](https://twitter.com/search?f=tweets&vertical=default&q=%2
 
 [Polyaxon](https://polyaxon.com/)
 
-## **Q.A.セッション**
+### **Q.A.セッション**
 
 - Q. 論文などは参考にされますか？
 - A. ある程度枯れた手法をメインに実装している
