@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <div class="container">
     <article>
         <header class="article-header">
@@ -8,7 +7,12 @@
                     <h1>{{ .Title }}</h1>
                     <div class="post-meta">
                         <div>
-                            By {{ .Params.author }} on <time>{{ .Date.Format "2006.01.02" }}</time> (Last updated:<time>{{ .Lastmod.Format "2006.01.02" }}</time>)
+                            {{ $author := .Params.author }}
+                            {{ if eq $author nil }}
+                              {{ $author = .Site.Params.author }}
+                            {{ end }}
+                            By {{ $author  }} | <time>{{ .Date.Format "2006.01.02" }}</time> (Last updated:<time>{{ .Lastmod.Format "2006.01.02" }}</time>)
+                            | {{ .ReadingTime }} minutes
                         </div>
                         <div class="tags">
                             {{ range (.GetTerms "tags") }}
@@ -47,6 +51,11 @@
     </nav>
     {{ end }}
 </div>
+{{ if or (not (isset .Params "comments")) (eq .Params.comments "true")}} 
+<div class="container">
+    {{ partial "comments/include" . }}
+</div>
+{{ end }}
 </main>
 
 {{ end }}
