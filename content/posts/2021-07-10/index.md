@@ -26,7 +26,7 @@ SIGIR eCom を探索していたら発見したサーベイ論文の "Challenges
     - Ref: [Amazon Search: The Joy of Ranking Products](https://www.amazon.science/publications/amazon-search-the-joy-of-ranking-products)
 
 
-スライド作成元の[Markdown](https://github.com/hurutoriya/deck/blob/main/challenges-and-research-opportunities-in-eCommerce%20search-and-recommendations/challenges-and-research-opportunities-in-eCommerce-search-and-recommendations.md)はこちらです。
+スライド作成元のMarkdownファイルは[hurutoriya/deck](https://github.com/hurutoriya/deck/blob/main/2021-07-07_challenges-and-research-opportunities-in-eCommerce%20search-and-recommendations/deck.md)はこちらです。
 スライド内のリンクに簡単にアクセスできます。
 
 eコマースでの検索に改善したいけど何したらいいかわからんという人は、とりあえずこれ見ればOKという論文だったので読めてよかった
