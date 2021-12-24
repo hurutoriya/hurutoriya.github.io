@@ -12,7 +12,7 @@ tags:
 [情報検索・検索技術 Advent Calendar 2021](https://adventar.org/calendars/6430) 1 日目の記事です。
 早めに書き終えたので、カレンダー登録日の 2021/12/01 よりもはやめですが、記事を公開してしまいます。
 
-[Berlin Buzzwords](https://2021.berlinbuzzwords.de/) はドイツで毎年開催されている OSS での検索、データ処理、データベースに焦点をあてたカンファレンスです。
+[Berlin Buzzwords](https://2021.berlinbuzzwords.de/) はドイツで毎年開催されている OSS を利用した検索、データ処理、データベースに焦点をあてたカンファレンスです。
 
 検索関係のシステムに携わっている場合、毎年面白い内容が目白押しなのでぜひとも見てほしい。
 
