@@ -123,7 +123,7 @@ Deploy failed: The Deployment “&amp;mdash;” is invalid: spec.selector: Inval
 &lt;/ul></description></item><item><title>Amazonがeコマース検索を Lucene により、どうスケールさせているか at Berlin Buzzwords 2019</title><link>https://shunyaueta.com/posts/2021-11-26/</link><pubDate>Fri, 26 Nov 2021 20:59:21 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-11-26/</guid><description>
 &lt;p>&lt;a href="https://adventar.org/calendars/6430">情報検索・検索技術 Advent Calendar 2021&lt;/a> 1 日目の記事です。
 早めに書き終えたので、カレンダー登録日の 2021/12/01 よりもはやめですが、記事を公開してしまいます。&lt;/p>
-&lt;p>&lt;a href="https://2021.berlinbuzzwords.de/">Berlin Buzzwords&lt;/a> はドイツで毎年開催されている OSS での検索、データ処理、データベースに焦点をあてたカンファレンスです。&lt;/p>
+&lt;p>&lt;a href="https://2021.berlinbuzzwords.de/">Berlin Buzzwords&lt;/a> はドイツで毎年開催されている OSS を利用した検索、データ処理、データベースに焦点をあてたカンファレンスです。&lt;/p>
 &lt;p>検索関係のシステムに携わっている場合、毎年面白い内容が目白押しなのでぜひとも見てほしい。&lt;/p>
 &lt;p>今回は Berlin Buzzwords 2019 で発表された「Amazon では Lucene をどう活用して e コマース検索をスケールさせているか」の講演動画を社内勉強会で紹介するために視聴したので、そのメモを公開する。&lt;/p>
 &lt;h2 id="e-commerce-search-at-scale-on-apache-lucene">E-Commerce search at scale on Apache Lucene&lt;/h2>

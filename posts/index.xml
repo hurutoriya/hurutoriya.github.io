@@ -33,7 +33,7 @@ ref: MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutabl #50
 らしく、一度デプロイされたk8s service の label selector は、既存のdeployment を削除しないとアップデートは不可能らしい。
 なので、field is immutableというエラー文は正しいわけですね。
 そのdeployment を削除しても良い状態なら、以下のコマンドを実行後再度デプロイすれば、k8s service のlabel selector は実行されます。</description></item><item><title>Amazonがeコマース検索を Lucene により、どうスケールさせているか at Berlin Buzzwords 2019</title><link>https://shunyaueta.com/posts/2021-11-26/</link><pubDate>Fri, 26 Nov 2021 20:59:21 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-11-26/</guid><description>情報検索・検索技術 Advent Calendar 2021 1 日目の記事です。 早めに書き終えたので、カレンダー登録日の 2021/12/01 よりもはやめですが、記事を公開してしまいます。
-Berlin Buzzwords はドイツで毎年開催されている OSS での検索、データ処理、データベースに焦点をあてたカンファレンスです。
+Berlin Buzzwords はドイツで毎年開催されている OSS を利用した検索、データ処理、データベースに焦点をあてたカンファレンスです。
 検索関係のシステムに携わっている場合、毎年面白い内容が目白押しなのでぜひとも見てほしい。
 今回は Berlin Buzzwords 2019 で発表された「Amazon では Lucene をどう活用して e コマース検索をスケールさせているか」の講演動画を社内勉強会で紹介するために視聴したので、そのメモを公開する。
 E-Commerce search at scale on Apache Lucene YouTube Web page PDF 自分の所感などを切り分けるため、自分の意見は IMO ではじめた文にして、メモっています。
