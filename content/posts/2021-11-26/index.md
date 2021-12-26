@@ -7,6 +7,7 @@ tags:
   - search
   - amazon
   - lucene
+  - translation
 ---
 
 [情報検索・検索技術 Advent Calendar 2021](https://adventar.org/calendars/6430) 1 日目の記事です。
