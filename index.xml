@@ -1306,13 +1306,13 @@ BigQueryやBigTable, PubSub などGCPの各サービスをDAGとして定義し�
 &lt;li>&lt;a href="https://cloud.google.com/storage/docs/gsutil/addlhelp/TopLevelCommandLineOptions">gsutil Top-Level Command-Line Options&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://cloud.google.com/storage/docs/gsutil/commands/rsync">rsync - Synchronize content of two buckets/directories&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Pandoc を使って抽出できなかったWord内部の画像をGoogle Driveを使って抽出する</title><link>https://shunyaueta.com/posts/2021-09-27/</link><pubDate>Mon, 27 Sep 2021 00:18:26 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-27/</guid><description>
-&lt;p>&lt;a href="https://shunyaueta.com/posts/2021-09-19/">先日の記事&lt;/a> では、pandoc の&lt;code>--extract-media&lt;/code> オプションをオンにしてもword内部の画像を抽出することができなかった。&lt;/p>
-&lt;p>だが、Google Driveを使うことでWord 内部の画像を抽出することができたのでここに記しておく。&lt;/p>
+&lt;p>&lt;a href="https://shunyaueta.com/posts/2021-09-19/">先日の記事&lt;/a> では、pandoc の&lt;code>--extract-media&lt;/code> オプションをオンにしても word 内部の画像を抽出することができなかった。&lt;/p>
+&lt;p>だが、Google Drive を使うことで Word 内部の画像を抽出することができたのでここに記しておく。&lt;/p>
 &lt;ol>
-&lt;li>対象の WordファイルをGoogle Driveにアップロードする&lt;/li>
-&lt;li>そのファイルをGoogle Docs で開く&lt;/li>
-&lt;li>&lt;code>File → Download → Web Page (.html, zippted)&lt;/code> でウェブページとしてzipファイルをダウンロードする&lt;/li>
-&lt;li>zipファイルを解凍後、その中にある&lt;code>images&lt;/code> フォルダにWord内部の画像が格納されている&lt;/li>
+&lt;li>対象の Word ファイルを Google Drive にアップロードする&lt;/li>
+&lt;li>そのファイルを Google Docs で開く&lt;/li>
+&lt;li>&lt;code>File → Download → Web Page (.html, zippted)&lt;/code> でウェブページとして zip ファイルをダウンロードする&lt;/li>
+&lt;li>zip ファイルを解凍後、その中にある&lt;code>images&lt;/code> フォルダに Word 内部の画像が格納されている&lt;/li>
 &lt;/ol></description></item><item><title>Pandoc で特定のディレクトリ直下にある複数のWordをMarkdown形式に一括変換する</title><link>https://shunyaueta.com/posts/2021-09-19/</link><pubDate>Sun, 19 Sep 2021 23:52:45 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-19/</guid><description>
 &lt;p>表題の通り、&lt;a href="https://pandoc.org/MANUAL.html">Pandoc&lt;/a> を使って、特定ディレクトリ配下にある複数の Wordファイル(&lt;code>*.docx&lt;/code>) を Markdownファイル(&lt;code>*.md&lt;/code>) へ一括変換したい。&lt;/p>
 &lt;h2 id="単一wordファイルの変換コマンド">単一Wordファイルの変換コマンド&lt;/h2>
@@ -1344,7 +1344,7 @@ WordファイルからMarkdownファイルへの完全変換って難しい。�
 &lt;ul>
 &lt;li>&lt;a href="https://pandoc.org/faqs.html#how-can-i-convert-a-whole-directory-of-files-from-markdown-to-rtf">How can I convert a whole directory of files from Markdown to RTF?&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>gcloud commands で PubSub に jsonファイルをメッセージとして公開 (Pusblish) する</title><link>https://shunyaueta.com/posts/2021-09-07/</link><pubDate>Tue, 07 Sep 2021 12:22:16 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-09-07/</guid><description>
-&lt;p>gcloud commands で PubSub に jsonファイルをメッセージとして公開 (Pusblish) する&lt;/p>
+&lt;p>gcloud commands で PubSub に json ファイルをメッセージとして公開 (Pusblish) する&lt;/p>
 &lt;p>&lt;code>jq&lt;/code> コマンドが必要になるが、一番簡単に実現できるのは&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -1362,13 +1362,13 @@ WordファイルからMarkdownファイルへの完全変換って難しい。�
 &lt;li>&lt;a href="https://stackoverflow.com/questions/55513746/read-a-txt-file-json-data-to-publish-the-messages-in-cloud-pub-sub">Read a txt file JSON data to publish the messages in Cloud Pub Sub&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>gRPC client evans で portforward 先のリモートサーバーにリクエストを行う</title><link>https://shunyaueta.com/posts/2021-08-19/</link><pubDate>Thu, 19 Aug 2021 16:51:05 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-08-19/</guid><description>
 &lt;p>&lt;a href="https://github.com/ktr0731/evans">evans&lt;/a>&lt;/p>
-&lt;p>evans は対象のサーバーのgRPC のリフレクション機能が起動されていれば、proto ファイルを参照せずに便利な [REPL mode](gRPC のリフレクション機能) を使用できます。&lt;/p>
+&lt;p>evans は対象のサーバーの gRPC のリフレクション機能が起動されていれば、proto ファイルを参照せずに便利な [REPL mode](gRPC のリフレクション機能) を使用できます。&lt;/p>
 &lt;blockquote>
 &lt;p>If your server is enabling gRPC reflection, you can launch Evans with only -r (&amp;ndash;reflection) option.&lt;/p>
 &lt;/blockquote>
-&lt;p>gRPC のリフレクション機能については evans 作者の ktr0731さんが解説している記事が非常にわかりやすいです。&lt;/p>
+&lt;p>gRPC のリフレクション機能については evans 作者の ktr0731 さんが解説している記事が非常にわかりやすいです。&lt;/p>
 &lt;p>&lt;a href="https://syfm.hatenablog.com/entry/2020/06/23/235952">gRPC リフレクションはなにをしているか？&lt;/a>&lt;/p>
-&lt;p>ローカルの5000 番のポートをリモートサーバの5000番ポートにフォワード (port-forward)しているとします。
+&lt;p>ローカルの 5000 番のポートをリモートサーバの 5000 番ポートにフォワード (port-forward)しているとします。
 例えば、&lt;code>kubectl&lt;/code> だと以下のような実行コマンドになります。&lt;/p>
 &lt;p>&lt;a href="https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/#forward-a-local-port-to-a-port-on-the-pod">Forward a local port to a port on the Pod&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1380,7 +1380,7 @@ WordファイルからMarkdownファイルへの完全変換って難しい。�
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>そして、ポートフォワードのシェルは保持した上で、別にシェルを起動します。&lt;/p>
-&lt;p>この際に 対象となる&lt;code>localhost:5000&lt;/code> に対して、&lt;code>--host&lt;/code>, &lt;code>--port&lt;/code> オプションで指定してやれば evans のREPLモードが起動します。&lt;/p>
+&lt;p>この際に 対象となる&lt;code>localhost:5000&lt;/code> に対して、&lt;code>--host&lt;/code>, &lt;code>--port&lt;/code> オプションで指定してやれば evans の REPL モードが起動します。&lt;/p>
 &lt;h2 id="repl">REPL&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -1593,10 +1593,10 @@ more expressive universal gRPC client
 &lt;h2 id="まとめ">まとめ&lt;/h2>
 &lt;p>可能な限り効率化できるような、仕組みづくりに投資したほうが幸せになれる。あと体力が一番大事、健康が最強!!&lt;/p></description></item><item><title>mvn archetype:generate でJavaのプロジェクト雛形を作成する際のオプションの解説</title><link>https://shunyaueta.com/posts/2021-07-18/</link><pubDate>Sun, 18 Jul 2021 00:05:06 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-18/</guid><description>
 &lt;p>最近、Java を業務で触っている。
-門外漢の自分からするとMavenのお作法が分からなかったので、備忘録がてら残しておく。&lt;/p>
+門外漢の自分からすると Maven のお作法が分からなかったので、備忘録がてら残しておく。&lt;/p>
 &lt;h2 id="mvn-archetypegenerate-コマンドのオプションの意味">&lt;code>mvn archetype:generate&lt;/code> コマンドのオプションの意味&lt;/h2>
 &lt;p>&lt;code>mvn archetype:generate&lt;/code> コマンドを使えば任意のテンプレートに沿ったプロジェクトを一発で作成することができる。&lt;/p>
-&lt;p>具体例として、Apache Beam でプロジェクト管理ツールであるMavenを使って、&lt;code>mvn archetype:generate&lt;/code> コマンドを用いて、プロジェクト作成を行う場合、&lt;a href="https://beam.apache.org/get-started/quickstart-java/">公式サイト&lt;/a>では以下のように指定されている&lt;/p>
+&lt;p>具体例として、Apache Beam でプロジェクト管理ツールである Maven を使って、&lt;code>mvn archetype:generate&lt;/code> コマンドを用いて、プロジェクト作成を行う場合、&lt;a href="https://beam.apache.org/get-started/quickstart-java/">公式サイト&lt;/a>では以下のように指定されている&lt;/p>
 &lt;pre>&lt;code>$ mvn archetype:generate \
 -DarchetypeGroupId=org.apache.beam \
 -DarchetypeArtifactId=beam-sdks-java-maven-archetypes-examples \
@@ -1620,7 +1620,7 @@ more expressive universal gRPC client
 &lt;/tr>
 &lt;tr>
 &lt;td>archetypeArtifactId&lt;/td>
-&lt;td>archetypeのテンプレート。個々ではbeam-sdk に対応したプロジェクトテンプレートを作成している。&lt;/td>
+&lt;td>archetype のテンプレート。個々では beam-sdk に対応したプロジェクトテンプレートを作成している。&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>archetypeVersion&lt;/td>
@@ -1628,7 +1628,7 @@ more expressive universal gRPC client
 &lt;/tr>
 &lt;tr>
 &lt;td>groupId&lt;/td>
-&lt;td>&lt;a href="https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7">Java のパッケージ名のルール&lt;/a>に則ったすべてのプロジェクトで唯一に識別可能な識別子。今回は &lt;code>org.example&lt;/code> が使われており、実際は識別子として機能指定なさそうな名前ではある。(実際昔のプロジェクトでは重複可能な単語が使われていることが多いが、その場合はmarven に登録する際に名前が衝突して登録ができないとのこと&lt;/td>
+&lt;td>&lt;a href="https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7">Java のパッケージ名のルール&lt;/a>に則ったすべてのプロジェクトで唯一に識別可能な識別子。今回は &lt;code>org.example&lt;/code> が使われており、実際は識別子として機能指定なさそうな名前ではある。(実際昔のプロジェクトでは重複可能な単語が使われていることが多いが、その場合は marven に登録する際に名前が衝突して登録ができないとのこと&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>artifactId&lt;/td>
@@ -1640,7 +1640,7 @@ more expressive universal gRPC client
 &lt;/tr>
 &lt;tr>
 &lt;td>package&lt;/td>
-&lt;td>クラスやインターフェースの名前空間を指す。基本的にgroupidと同一だが、groupidを接頭辞にして、独自に付け足すこともある。&lt;/td>
+&lt;td>クラスやインターフェースの名前空間を指す。基本的に groupid と同一だが、groupid を接頭辞にして、独自に付け足すこともある。&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>interactiveMode&lt;/td>
@@ -1652,37 +1652,37 @@ more expressive universal gRPC client
 &lt;ul>
 &lt;li>&lt;a href="https://maven.apache.org/guides/mini/guide-naming-conventions.html">Guide to naming conventions on groupId, artifactId, and version&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://yossan.hatenablog.com/entry/2019/03/31/015458">maven プロジェクトの作成 archtypeArtifactId を指定する&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://java-code.jp/91">package宣言 | java-code&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://java-code.jp/91">package 宣言 | java-code&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>eコマースの検索と推薦についてのサーベイ論文である 'Challenges and research opportunities in eCommerce search and recommendations' を社内勉強会で発表した</title><link>https://shunyaueta.com/posts/2021-07-10/</link><pubDate>Sat, 10 Jul 2021 23:20:58 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-10/</guid><description>
 &lt;p>SIGIR eCom を探索していたら発見したサーベイ論文の &amp;ldquo;Challenges and research opportunities in eCommerce search and recommendations&amp;quot;が面白かったので、社内の勉強会で発表してきた。&lt;/p>
-&lt;p>和訳すると、「eコマースの検索と推薦における挑戦と研究トピック」で、eコマースにおける検索と推薦の課題が明瞭に書かれていて非常に面白い論文でした。
+&lt;p>和訳すると、「e コマースの検索と推薦における挑戦と研究トピック」で、e コマースにおける検索と推薦の課題が明瞭に書かれていて非常に面白い論文でした。
 自分もまだ検索エンジニアとして日が浅いので、手持ちのパターンを増やせるように日々勉強していますが、この論文のおかげでかなり解像度が上がった。&lt;/p>
 &lt;iframe src="//www.slideshare.net/slideshow/embed_code/key/sOhCWPToy6AIL1" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> &lt;/iframe> &lt;div style="margin-bottom:5px"> &lt;strong> &lt;a href="//www.slideshare.net/shunyaueta/introducing-challenges-and-research-opportunities-in-ecommerce-search-and-recommendations" title="Introducing &amp;quot;Challenges and research opportunities in eCommerce search and recommendations&amp;quot;" target="_blank">Introducing &amp;quot;Challenges and research opportunities in eCommerce search and recommendations&amp;quot;&lt;/a> &lt;/strong> from &lt;strong>&lt;a href="https://www.slideshare.net/shunyaueta" target="_blank">Shunya Ueta&lt;/a>&lt;/strong> &lt;/div>
 &lt;p>個人的に面白かったのは、&lt;/p>
 &lt;ul>
 &lt;li>そもそも、顧客が商品を検索するというタスクの奥深さと面白さが知れる&lt;/li>
 &lt;li>Query Understanding は、非構造なクエリを構造化されたクエリに変換するのが究極的な目標&lt;/li>
-&lt;li>Learn to Rank(LtR)の実践的な課題点として、LtR適用時に、Native Ranker とのギャップが発生して非連続な検索結果を返してしまうことがある&lt;/li>
+&lt;li>Learn to Rank(LtR)の実践的な課題点として、LtR 適用時に、Native Ranker とのギャップが発生して非連続な検索結果を返してしまうことがある&lt;/li>
 &lt;li>実際のクエリから、購入される商品はクエリと商品が関連性が高いとは限らないのでモデルを学習させる際には要注意
 &lt;ul>
-&lt;li>Amazonでの実例として
+&lt;li>Amazon での実例として
 &lt;ul>
-&lt;li>クエリ「ダイヤモンドリング」に対してLtR を適用すると、実際のクエリとそれに紐づくランキングシグナルから学習すると、「ダイヤモンドリング」というクエリで、「ジルコニウムリング」が大量に購買されていたのでLtRでは、「ダイヤモンドリング」というクエリに対して、「ジルコニウムリング」を表示するようになってしまった&lt;/li>
+&lt;li>クエリ「ダイヤモンドリング」に対して LtR を適用すると、実際のクエリとそれに紐づくランキングシグナルから学習すると、「ダイヤモンドリング」というクエリで、「ジルコニウムリング」が大量に購買されていたので LtR では、「ダイヤモンドリング」というクエリに対して、「ジルコニウムリング」を表示するようになってしまった&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>これは、学習データを全く見ないで適用するとそうなりそうだけど、広範囲に影響を及ぼすLtRのQAは非常に骨が折れそう&lt;/li>
+&lt;li>これは、学習データを全く見ないで適用するとそうなりそうだけど、広範囲に影響を及ぼす LtR の QA は非常に骨が折れそう&lt;/li>
 &lt;li>Ref: &lt;a href="https://www.amazon.science/publications/amazon-search-the-joy-of-ranking-products">Amazon Search: The Joy of Ranking Products&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>スライド作成元のMarkdownファイルは&lt;a href="https://github.com/hurutoriya/deck/blob/main/2021-07-07_challenges-and-research-opportunities-in-eCommerce%20search-and-recommendations/deck.md">hurutoriya/deck&lt;/a>はこちらです。
+&lt;p>スライド作成元の Markdown ファイルは&lt;a href="https://github.com/hurutoriya/deck/blob/main/2021-07-07_challenges-and-research-opportunities-in-eCommerce%20search-and-recommendations/deck.md">hurutoriya/deck&lt;/a>はこちらです。
 スライド内のリンクに簡単にアクセスできます。&lt;/p>
-&lt;p>eコマースでの検索に改善したいけど何したらいいかわからんという人は、とりあえずこれ見ればOKという論文だったので読めてよかった&lt;/p>
+&lt;p>e コマースでの検索に改善したいけど何したらいいかわからんという人は、とりあえずこれ見れば OK という論文だったので読めてよかった&lt;/p>
 &lt;h2 id="余談">余談&lt;/h2>
-&lt;p>Matching &amp;amp; Rankingの章までを解説したけど、それでも45m喋りっぱなしで最後のほうがかなり駆け足になってしまった。
+&lt;p>Matching &amp;amp; Ranking の章までを解説したけど、それでも 45m 喋りっぱなしで最後のほうがかなり駆け足になってしまった。
 また、英語での発表になったけど、やはり熟れたわかりやすい発表レベルに達するには、まだまだだなぁ感じた。精進せねば&lt;/p>
-&lt;p>今回スライド作成に &lt;a href="https://marp.app/">Marp&lt;/a> を使いましたが、VS Code上でスラスラとかけつつ読みやすくテンションの上がるデザインに簡単にできて感動しました。これからも愛用したいなと思います。&lt;/p>
-&lt;p>年末くらいに、検索エンジニアとして9ヶ月経過するので、役になった学習リソースなどをまとめたい&lt;/p></description></item><item><title>How to get the uploaded file path and processing its file in Streamlit</title><link>https://shunyaueta.com/posts/2021-07-09/</link><pubDate>Fri, 09 Jul 2021 22:40:37 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-09/</guid><description>
+&lt;p>今回スライド作成に &lt;a href="https://marp.app/">Marp&lt;/a> を使いましたが、VS Code 上でスラスラとかけつつ読みやすくテンションの上がるデザインに簡単にできて感動しました。これからも愛用したいなと思います。&lt;/p>
+&lt;p>年末くらいに、検索エンジニアとして 9 ヶ月経過するので、役になった学習リソースなどをまとめたい&lt;/p></description></item><item><title>How to get the uploaded file path and processing its file in Streamlit</title><link>https://shunyaueta.com/posts/2021-07-09/</link><pubDate>Fri, 09 Jul 2021 22:40:37 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-07-09/</guid><description>
 &lt;h2 id="motivation">Motivation&lt;/h2>
 &lt;p>&lt;a href="https://streamlit.io/">Streamlit&lt;/a> is a powerful tools to quickliy build the demo application.
 If we use Streamlit file upload feature via WebBrowser then we need to its file path to process the uploaded file.
@@ -2024,7 +2024,7 @@ Protly Dashも2年ほど前に使ったことがあるけど、UIのライフサ
 &lt;li>&lt;a href="https://discuss.streamlit.io/t/showing-pdf-file-on-streamlitsharing-thats-in-github-directory/11955">Showing PDF file on StreamlitSharing that’s in github directory&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://discuss.streamlit.io/t/problem-in-reading-a-db-object-using-file-uploader/3064/10">Problem in reading a “db” object using file uploader&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>2021年05月時点で自分が実践しているMLOpsの情報収集方法</title><link>https://shunyaueta.com/posts/2021-05-29/</link><pubDate>Sat, 29 May 2021 22:32:58 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-05-29/</guid><description>
-&lt;p>先日、同僚に「機械学習プロジェクトに興味があるんだけど、おすすめの資料があったら教えてほしい」と言われたので、Blog記事に現時点でのおすすめの資料としてまとめておいたら、数年後見返したら面白そうだと思ったので記事として公開しておく。&lt;/p>
+&lt;p>先日、同僚に「機械学習プロジェクトに興味があるんだけど、おすすめの資料があったら教えてほしい」と言われたので、Blog 記事に現時点でのおすすめの資料としてまとめておいたら、数年後見返したら面白そうだと思ったので記事として公開しておく。&lt;/p>
 &lt;h2 id="おすすめの資料">おすすめの資料&lt;/h2>
 &lt;h3 id="プロジェクトマネジメントや考え方思想">プロジェクトマネジメントや考え方、思想&lt;/h3>
 &lt;ul>
@@ -2074,7 +2074,7 @@ Protly Dashも2年ほど前に使ったことがあるけど、UIのライフサ
 &lt;/li>
 &lt;li>&lt;a href="https://cloud.google.com/architecture/ml-on-gcp-best-practices?hl=ja">Google Cloud で機械学習を実装するためのベスト プラクティス&lt;/a>
 &lt;ul>
-&lt;li>この資料なんかは、GCPで機械学習を実践したい場合にはまず見ておけば困ることはなさそうですね&lt;/li>
+&lt;li>この資料なんかは、GCP で機械学習を実践したい場合にはまず見ておけば困ることはなさそうですね&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>各クラウドサービスの MLOps の white paper
@@ -2671,8 +2671,8 @@ pipenv, version 2020.11.15
 └── Pipfile
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>のような構成で、&lt;code>model&lt;/code>というローカルパッケージを作成しており、serving 直下のPipfile は、&lt;code>model&lt;/code> を読み込んでsetup.py に記述されている依存パッケージもインストールするようにしたい。&lt;/p>
-&lt;p>serving ディレクトリで、以下のコマンドを入力すればローカルパッケージがpipenv によりインストールされるはずだが&lt;/p>
+&lt;/div>&lt;p>のような構成で、&lt;code>model&lt;/code>というローカルパッケージを作成しており、serving 直下の Pipfile は、&lt;code>model&lt;/code> を読み込んで setup.py に記述されている依存パッケージもインストールするようにしたい。&lt;/p>
+&lt;p>serving ディレクトリで、以下のコマンドを入力すればローカルパッケージが pipenv によりインストールされるはずだが&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2681,7 +2681,7 @@ pipenv, version 2020.11.15
 &lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">pipenv install --editable ../model
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>依存関係をすべて記述するはずのPipenv.lock には、&lt;code>model&lt;/code>のパスのみが記述され、ローカルパッケージが要求する依存パッケージが記述されていない。&lt;/p>
+&lt;/div>&lt;p>依存関係をすべて記述するはずの Pipenv.lock には、&lt;code>model&lt;/code>のパスのみが記述され、ローカルパッケージが要求する依存パッケージが記述されていない。&lt;/p>
 &lt;p>原因を探してみたところ、&lt;/p>
 &lt;p>&lt;a href="https://github.com/pypa/pipenv/issues/1024">Installing a local package with pipenv install &amp;lsquo;-e .&amp;rsquo; doesn&amp;rsquo;t save dependencies #1024&lt;/a>&lt;/p>
 &lt;p>同じ GitHub issue を発見しダメ元で pipenv を以下のコマンドでダウングレードして見たところ&lt;/p>
@@ -2693,9 +2693,9 @@ pipenv, version 2020.11.15
 &lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">pip install &lt;span class="nv">pipenv&lt;/span>&lt;span class="o">==&lt;/span>2018.11.26
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>なんと&amp;hellip;. 直った。無事にローカルパッケージの依存パッケージが Pipenv.lock に記述されており、無事にローカルパッケージがserving 直下で動くようになった。&lt;/p>
+&lt;/div>&lt;p>なんと&amp;hellip;. 直った。無事にローカルパッケージの依存パッケージが Pipenv.lock に記述されており、無事にローカルパッケージが serving 直下で動くようになった。&lt;/p>
 &lt;p>後方互換性が無いとかそんなちゃちな問題ではない気がするのだが、この問題でかなり時間が溶けたので非常に精神的に消耗した。&lt;/p>
-&lt;p>思えばこういう問題が多くて、普段はpoetry を使っていたのを思い出した。&lt;/p>
+&lt;p>思えばこういう問題が多くて、普段は poetry を使っていたのを思い出した。&lt;/p>
 &lt;h2 id="ref">Ref&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://stackoverflow.com/questions/53505681/installing-dependencies-of-a-local-dependency-with-pipenv">Installing dependencies of a local dependency with pipenv&lt;/a>&lt;/li>
@@ -4143,8 +4143,8 @@ MVPとして小さな成功を高速に積み重ねていくことで、組織�
 &lt;p>グループ全体のアカウントが追加されている&lt;code>a-group/all&lt;/code>というGithub Groupがすでにリポジトリのアクセス権限に &lt;code>Write&lt;/code> 権限として追加されており、全員がwrite権限をもっているならcodeownersとしての権限も問題ないだろうと思っていたらハマりました。&lt;/p>
 &lt;p>CODEOWNERS の仕組みを知ると理解できるのですが、&lt;code>a-group/all&lt;/code> が指定したいグループの包含関係にあるからといって、そのように取り扱ってくれるわけではないということですね。&lt;/p></description></item><item><title>pandas を使って特定のディレクトリのCSVファイルをすべて連結して一つのCSVファイルを作成</title><link>https://shunyaueta.com/posts/2020-09-09/</link><pubDate>Wed, 09 Sep 2020 23:49:37 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-09/</guid><description>
 &lt;h2 id="目的">目的&lt;/h2>
-&lt;p>複数の同じフォーマットのCSVファイルが特定のディレクトリに配置されており、そのCSVファイル群を一つのCSVファイルに連結したい&lt;/p>
-&lt;p>今回は、PythonのPandas とpathlibを使って上記の目的を実現します。&lt;/p>
+&lt;p>複数の同じフォーマットの CSV ファイルが特定のディレクトリに配置されており、その CSV ファイル群を一つの CSV ファイルに連結したい&lt;/p>
+&lt;p>今回は、Python の Pandas と pathlib を使って上記の目的を実現します。&lt;/p>
 &lt;h3 id="実行環境">実行環境&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -4166,7 +4166,7 @@ MVPとして小さな成功を高速に積み重ねていくことで、組織�
 &lt;span class="p">[&lt;/span>&lt;span class="n">Clang&lt;/span> &lt;span class="mf">11.0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mi">3&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">clang&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mf">1103.0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">32.62&lt;/span>&lt;span class="p">)]&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>目的となるcsvファイルは &lt;code>tmp&lt;/code> ディレクトリに以下のような形式で配置されているとする&lt;/p>
+&lt;/div>&lt;p>目的となる csv ファイルは &lt;code>tmp&lt;/code> ディレクトリに以下のような形式で配置されているとする&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4196,7 +4196,7 @@ MVPとして小さな成功を高速に積み重ねていくことで、組織�
 3 taro 2020/09/11
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>以下のPythonスクリプトを実行&lt;/p>
+&lt;/div>&lt;p>以下の Python スクリプトを実行&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -4227,7 +4227,7 @@ MVPとして小さな成功を高速に積み重ねていくことで、組織�
 &lt;span class="n">df&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to_csv&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;concat.csv&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">index&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="bp">False&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>concat.csvを確認してみると&lt;/p>
+&lt;/div>&lt;p>concat.csv を確認してみると&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -4260,13 +4260,13 @@ MVPとして小さな成功を高速に積み重ねていくことで、組織�
 4 hanako 2020/09/12
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>無事連結されたCSVを取得することができました&lt;/p>
+&lt;/div>&lt;p>無事連結された CSV を取得することができました&lt;/p>
 &lt;h2 id="追記">追記&lt;/h2>
 &lt;ul>
-&lt;li>2020-09-12: @siumachi さんから&lt;a href="https://twitter.com/shiumachi/status/1304325924377096192">ご指摘&lt;/a>を受け、CSVファイル以外がディレクトリに混入していても問題ないように変更しました&lt;/li>
+&lt;li>2020-09-12: @siumachi さんから&lt;a href="https://twitter.com/shiumachi/status/1304325924377096192">ご指摘&lt;/a>を受け、CSV ファイル以外がディレクトリに混入していても問題ないように変更しました&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>拝見しました。forでディレクトリを走査するときは pathlib.Path.glob(&amp;quot;*.csv&amp;rdquo;)を使った方が、csv以外のファイルが混入したときの対策になると思ったのですが、いかがでしょう &lt;a href="https://docs.python.org/ja/3/library/pathlib.html#pathlib.Path.glob">https://docs.python.org/ja/3/library/pathlib.html#pathlib.Path.glob&lt;/a>&lt;/p>
+&lt;p>拝見しました。for でディレクトリを走査するときは pathlib.Path.glob(&amp;quot;*.csv&amp;rdquo;)を使った方が、csv 以外のファイルが混入したときの対策になると思ったのですが、いかがでしょう &lt;a href="https://docs.python.org/ja/3/library/pathlib.html#pathlib.Path.glob">https://docs.python.org/ja/3/library/pathlib.html#pathlib.Path.glob&lt;/a>&lt;/p>
 &lt;/blockquote></description></item><item><title>MLOps の国際会議 OpML'20 に論文が採択されたので登壇してきた</title><link>https://shunyaueta.com/posts/2020-09-06/</link><pubDate>Sun, 06 Sep 2020 23:31:03 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2020-09-06/</guid><description>
 &lt;p>MLOpsの査読付き国際会議 &lt;a href="https://www.usenix.org/conference/opml20">2020 USENIX Conference on Operational Machine Learning&lt;/a> (略称 OpML&amp;rsquo;20)に論文が採択されたので、登壇してきた。&lt;/p>
 &lt;p>Podcastでも紹介しました。&lt;/p>
@@ -5686,11 +5686,11 @@ Pytest provide &lt;code>setattr&lt;/code> function in &lt;code>monkeypatch&lt;/c
 &lt;p>では、また次回の MLCT 開催をお待ち下さい!!&lt;/p></description></item><item><title>自走プログラマーを読み終えた</title><link>https://shunyaueta.com/posts/2020-05-10/</link><pubDate>Sun, 10 May 2020 17:13:34 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-05-10/</guid><description>
 &lt;p>&lt;a href="https://amzn.to/2B3SxMq">自走プログラマー&lt;/a>を読み終えた。&lt;/p>
 &lt;p>読み始めたきっかけとして、自分は機械学習エンジニアとして現在働いているが、できることの幅を広げるために最近はソフトウェアエンジニアとしてのスキルをもっと伸ばしたいと考えている。&lt;/p>
-&lt;p>自走プログラマーは、Pythonを使ったアプリケーション開発のアンチパターンとベストプラクティスを例示して学ぶことができる書籍で、今回の自分の状況にすごくフィットしていて楽しく学習することができた。&lt;/p>
-&lt;p>Python独特のはまりどころは、&lt;a href="https://amzn.to/3fi7Xvp">Kindle: The Hitchhiker’s Guide to Python&lt;/a>, &lt;a href="https://docs.python-guide.org/">The Hitchhiker’s Guide to Python&lt;/a> でも数多く参照されていて、こっちも後から読んでおきたいなと思いました。&lt;/p>
+&lt;p>自走プログラマーは、Python を使ったアプリケーション開発のアンチパターンとベストプラクティスを例示して学ぶことができる書籍で、今回の自分の状況にすごくフィットしていて楽しく学習することができた。&lt;/p>
+&lt;p>Python 独特のはまりどころは、&lt;a href="https://amzn.to/3fi7Xvp">Kindle: The Hitchhiker’s Guide to Python&lt;/a>, &lt;a href="https://docs.python-guide.org/">The Hitchhiker’s Guide to Python&lt;/a> でも数多く参照されていて、こっちも後から読んでおきたいなと思いました。&lt;/p>
 &lt;p>次は、ちゃんとした Pythonista になれるように、&lt;a href="https://amzn.to/3cWCTzU">Fluent Python&lt;/a> を読みます。@ynqa さん、以前この本を教えて下さり、ありがとうございました。&lt;/p>
 &lt;p>長らく積ん読になっていますが、毎日読み進めていきます。&lt;/p>
-&lt;p>20歳頃の寝る間を惜しんで、ウェブアプリを開発していたときのワクワク感が徐々に蘇ってきた気がしています。&lt;/p>
+&lt;p>20 歳頃の寝る間を惜しんで、ウェブアプリを開発していたときのワクワク感が徐々に蘇ってきた気がしています。&lt;/p>
 &lt;p>ある程度書けるようになってきたら、なにかアプリとか作って公開したいなと思っています！&lt;/p></description></item><item><title>ソフトウェア開発における Upstream と Downstream の意味</title><link>https://shunyaueta.com/posts/2020-04-27/</link><pubDate>Mon, 27 Apr 2020 23:55:42 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-27/</guid><description>
 &lt;ul>
 &lt;li>Upstream

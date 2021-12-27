@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>book on Shunya Ueta</title><link>https://shunyaueta.com/tags/book/</link><description>Recent content in book on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 10 May 2020 17:13:34 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/book/index.xml" rel="self" type="application/rss+xml"/><item><title>自走プログラマーを読み終えた</title><link>https://shunyaueta.com/posts/2020-05-10/</link><pubDate>Sun, 10 May 2020 17:13:34 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-05-10/</guid><description>自走プログラマーを読み終えた。
 読み始めたきっかけとして、自分は機械学習エンジニアとして現在働いているが、できることの幅を広げるために最近はソフトウェアエンジニアとしてのスキルをもっと伸ばしたいと考えている。
-自走プログラマーは、Pythonを使ったアプリケーション開発のアンチパターンとベストプラクティスを例示して学ぶことができる書籍で、今回の自分の状況にすごくフィットしていて楽しく学習することができた。
-Python独特のはまりどころは、Kindle: The Hitchhiker’s Guide to Python, The Hitchhiker’s Guide to Python でも数多く参照されていて、こっちも後から読んでおきたいなと思いました。
+自走プログラマーは、Python を使ったアプリケーション開発のアンチパターンとベストプラクティスを例示して学ぶことができる書籍で、今回の自分の状況にすごくフィットしていて楽しく学習することができた。
+Python 独特のはまりどころは、Kindle: The Hitchhiker’s Guide to Python, The Hitchhiker’s Guide to Python でも数多く参照されていて、こっちも後から読んでおきたいなと思いました。
 次は、ちゃんとした Pythonista になれるように、Fluent Python を読みます。@ynqa さん、以前この本を教えて下さり、ありがとうございました。
 長らく積ん読になっていますが、毎日読み進めていきます。
-20歳頃の寝る間を惜しんで、ウェブアプリを開発していたときのワクワク感が徐々に蘇ってきた気がしています。
+20 歳頃の寝る間を惜しんで、ウェブアプリを開発していたときのワクワク感が徐々に蘇ってきた気がしています。
 ある程度書けるようになってきたら、なにかアプリとか作って公開したいなと思っています！</description></item><item><title>ビジネスでインパクトが出せるデータサイエンティストになるには</title><link>https://shunyaueta.com/posts/2019-09-23/</link><pubDate>Mon, 23 Sep 2019 18:48:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-09-23/</guid><description>@pseudo_finite さんから
 「ビジネスでインパクトが出せるデータサイエンティストになるためには」
 をご恵贈していただいたので、感想をここに記します。
