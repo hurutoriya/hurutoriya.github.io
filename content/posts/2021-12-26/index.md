@@ -195,7 +195,7 @@ tags:
   - relevance sort は適切な検索結果が返ってくるが...
   - Customer review での平均でソートを行うと
     - relevance がぐちゃぐちゃになってしまう。もちろんカスタマーレビューはありがたい機能ですが...
-      - ![](/posts/2021-12-26/images/6.png)
+      - ![](/posts/2021-12-26/images/18.png)
   - 改善方法
     - `tv` というキーワードに対して 500 の製品タイプが Amazon catalog で存在する
     - {query, product type} のペアでスコアを計算する
@@ -206,7 +206,7 @@ tags:
       - TV→ テレビタイプ
     - これによって Customer review の平均でソートを行っても relevance が保たれるようになった
       - `tv`で customer review の平均で sort を行った際に 991 個の製品のみが表示され、relevance が向上した
-      - ![](/posts/2021-12-26/images/6.png)
+      - ![](/posts/2021-12-26/images/19.png)
 
 ### 蛇足
 
