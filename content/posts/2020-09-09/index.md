@@ -2,15 +2,15 @@
 title: "pandas を使って特定のディレクトリのCSVファイルをすべて連結して一つのCSVファイルを作成"
 date: 2020-09-09T23:49:37+09:00
 tags:
-- python
-- pandas
+  - python
+  - pandas
 ---
 
 ## 目的
 
-複数の同じフォーマットのCSVファイルが特定のディレクトリに配置されており、そのCSVファイル群を一つのCSVファイルに連結したい
+複数の同じフォーマットの CSV ファイルが特定のディレクトリに配置されており、その CSV ファイル群を一つの CSV ファイルに連結したい
 
-今回は、PythonのPandas とpathlibを使って上記の目的を実現します。
+今回は、Python の Pandas と pathlib を使って上記の目的を実現します。
 
 ### 実行環境
 
@@ -24,7 +24,7 @@ In [3]: import sys
 [Clang 11.0.3 (clang-1103.0.32.62)]
 ```
 
-目的となるcsvファイルは `tmp` ディレクトリに以下のような形式で配置されているとする
+目的となる csv ファイルは `tmp` ディレクトリに以下のような形式で配置されているとする
 
 ```bash
 tmp
@@ -42,7 +42,7 @@ id  name  created
 3   taro  2020/09/11
 ```
 
-以下のPythonスクリプトを実行
+以下の Python スクリプトを実行
 
 ```python
 import pathlib
@@ -61,7 +61,7 @@ df.to_csv('concat.csv', index=False)
 
 ```
 
-concat.csvを確認してみると
+concat.csv を確認してみると
 
 ```text
 id  name    created
@@ -79,10 +79,10 @@ id  name    created
 4   hanako  2020/09/12
 ```
 
-無事連結されたCSVを取得することができました
+無事連結された CSV を取得することができました
 
 ## 追記
 
-- 2020-09-12: @siumachi さんから[ご指摘](https://twitter.com/shiumachi/status/1304325924377096192)を受け、CSVファイル以外がディレクトリに混入していても問題ないように変更しました
+- 2020-09-12: @siumachi さんから[ご指摘](https://twitter.com/shiumachi/status/1304325924377096192)を受け、CSV ファイル以外がディレクトリに混入していても問題ないように変更しました
 
-> 拝見しました。forでディレクトリを走査するときは pathlib.Path.glob("*.csv")を使った方が、csv以外のファイルが混入したときの対策になると思ったのですが、いかがでしょう https://docs.python.org/ja/3/library/pathlib.html#pathlib.Path.glob
+> 拝見しました。for でディレクトリを走査するときは pathlib.Path.glob("\*.csv")を使った方が、csv 以外のファイルが混入したときの対策になると思ったのですが、いかがでしょう https://docs.python.org/ja/3/library/pathlib.html#pathlib.Path.glob

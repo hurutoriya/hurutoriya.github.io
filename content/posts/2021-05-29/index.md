@@ -8,7 +8,7 @@ tags:
   - machinelearning
 ---
 
-先日、同僚に「機械学習プロジェクトに興味があるんだけど、おすすめの資料があったら教えてほしい」と言われたので、Blog記事に現時点でのおすすめの資料としてまとめておいたら、数年後見返したら面白そうだと思ったので記事として公開しておく。
+先日、同僚に「機械学習プロジェクトに興味があるんだけど、おすすめの資料があったら教えてほしい」と言われたので、Blog 記事に現時点でのおすすめの資料としてまとめておいたら、数年後見返したら面白そうだと思ったので記事として公開しておく。
 
 ## おすすめの資料
 
@@ -35,13 +35,12 @@ tags:
 - [MLOps: 機械学習における継続的デリバリーと自動化のパイプライン](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
   - GCP による MLOps の解説。人によって、MLOps の定義って差異がありますが、自分はここで語られている `ML システム構築のすべてのステップで自動化とモニタリングを推進できます` こそが、 MLOps の骨子だなと思っています。クラウドサービスは、開発に関係する知識をパターン化して、資料を公開してくれるのでありがたいですね。
 - [Google Cloud で機械学習を実装するためのベスト プラクティス](https://cloud.google.com/architecture/ml-on-gcp-best-practices?hl=ja)
-  - この資料なんかは、GCPで機械学習を実践したい場合にはまず見ておけば困ることはなさそうですね
+  - この資料なんかは、GCP で機械学習を実践したい場合にはまず見ておけば困ることはなさそうですね
 - 各クラウドサービスの MLOps の white paper
   - AWS, Azure は普段使わないので深く言及しませんが、同様の資料は公開されたりしています。
     - [Practitioner Guide to MLOps by GCP](https://cloud.google.com/resources/mlops-whitepaper?hl=ja)
     - [MLOps: Continuous Delivery for Machine Learning on AWS](https://d1.awsstatic.com/whitepapers/mlops-continuous-delivery-machine-learning-on-aws.pdf)
     - [Azure Best practices for MLOps - DevOps for machine learning.](https://azure.microsoft.com/en-us/resources/mlops-infographic/)
-
 
 [Machine Learning Engineering for Production (MLOps)](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops) も気になっているが、手を出せていないのでまた受講が完了したら感想を書きたい。Andrew 先生の講義はハズレはないので非常に期待している。
 
