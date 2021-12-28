@@ -1,7 +1,6 @@
 ---
 title: "Jupyter でPandas DataFrame 内部に画像をURLから参照して表示させる"
 date: 2021-12-28T23:04:19+09:00
-draft: true
 lang: ja
 author: Shunya Ueta
 tags:
