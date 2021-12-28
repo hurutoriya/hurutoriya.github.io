@@ -1,4 +1,67 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>[抄訳] Daria Sorokina さんによる、 Amazon 検索での製品のランキング付けの楽しさ at MLconf SF 2016</title><link>https://shunyaueta.com/posts/2021-12-26/</link><pubDate>Sun, 26 Dec 2021 22:52:06 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-26/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Jupyter でPandas DataFrame 内部に画像をURLから参照して表示させる</title><link>https://shunyaueta.com/posts/2021-12-28/</link><pubDate>Tue, 28 Dec 2021 23:04:19 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-28/</guid><description>
+&lt;p>データ分析などをしていると、特定の CDN で提供されている画像を参照して、処理した結果を Jupyter Notebook 上で良い感じに表示させたいときがある。
+例えば、自分は画像と説明文がペアになっている画像を Jupyter 上で良い感じに表示させたいときが多々ある。&lt;/p>
+&lt;p>&lt;a href="https://tsukin.hateblo.jp/entry/2020/04/08/162605">url からとってきた画像を jupyter に表示する&lt;/a> でも同じような課題に取り組んでいるが、今回紹介する方法なら余計なパッケージを入れずに最小構成で Jupyter 上で表示できるのが利点。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="kn">import&lt;/span> &lt;span class="nn">pandas&lt;/span> &lt;span class="kn">as&lt;/span> &lt;span class="nn">pd&lt;/span>
+&lt;span class="kn">from&lt;/span> &lt;span class="nn">IPython.display&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">HTML&lt;/span>
+&lt;span class="c1"># NOTE: https://www.irasutoya.com/2021/01/onepiece.html から画像を参照&lt;/span>
+&lt;span class="n">onepiece&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="s2">&amp;#34;モンキー・D・ルフィ&amp;#34;&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;https://1.bp.blogspot.com/-uxIsaN0S5lQ/X-FcrvAAInI/AAAAAAABdD4/6uw_qNUh9dQrG0aUzIExybt84yTEmXOPwCNcBGAsYHQ/s200/onepiece01_luffy.png&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;ロロノア・ゾロ&amp;#34;&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;https://1.bp.blogspot.com/-rzRcgoXDqEg/YAOTCKoCpPI/AAAAAAABdOI/5Bl3_zhOxm07TUGzW8_83cXMOT9yy1VJwCNcBGAsYHQ/s200/onepiece02_zoro_bandana.png&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;ナミ&amp;#34;&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;https://1.bp.blogspot.com/-2ut_UQv3iss/X-Fcs_0oAII/AAAAAAABdD8/jrCZTd_xK-Y6CP1KwOtT_LpEpjp-1nvxgCNcBGAsYHQ/s200/onepiece03_nami.png&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;そげキング（ウソップ）&amp;#34;&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;https://1.bp.blogspot.com/-mZpzgXC1Sxk/YAOTCAKwWTI/AAAAAAABdOM/5B4hXli0KLU5N-BySHgjVbhZscKLSE-bQCNcBGAsYHQ/s200/onepiece04_usopp_sogeking.png&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="n">df&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pd&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">DataFrame&lt;/span>&lt;span class="p">({&lt;/span>&lt;span class="s2">&amp;#34;Name&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">onepiece&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">keys&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;span class="s2">&amp;#34;Image&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">onepiece&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">values&lt;/span>&lt;span class="p">()})&lt;/span>
+&lt;span class="k">def&lt;/span> &lt;span class="nf">path_to_image_html&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="n">f&lt;/span>&lt;span class="s1">&amp;#39;&amp;lt;img src=&amp;#34;{path}&amp;#34;/&amp;gt;&amp;#39;&lt;/span>
+&lt;span class="n">pd&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">set_option&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;display.max_colwidth&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="bp">None&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="n">HTML&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">df&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to_html&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">escape&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="bp">False&lt;/span> &lt;span class="p">,&lt;/span>&lt;span class="n">formatters&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nb">dict&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Image&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">path_to_image_html&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>結果はこうなる&lt;/p>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2021-12-28/images/1.png" alt="Jupyter 上でDataFrame内部に画像が表示されている">&lt;/p>
+&lt;p>やっていることとしては、&lt;/p>
+&lt;ol>
+&lt;li>Pandas の&lt;a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_html.html">DataFrame.to_html()&lt;/a>関数で、DataFrame を HTML に変換&lt;/li>
+&lt;li>変換時に、&lt;code>escape=False&lt;/code> にすることでエスケープせずに HTML を出力&lt;/li>
+&lt;li>&lt;code>formatters&lt;/code>では、特定のカラムに関数を適用して変換できる。この関数は文字列を返す関数でなくてはならない。&lt;/li>
+&lt;li>最後に出力された HTML を &lt;code>IPython.display&lt;/code> の&lt;code>HTML&lt;/code>モジュールで HTML を Jupyter 上で表示&lt;/li>
+&lt;/ol>
+&lt;h2 id="appendix">Appendix&lt;/h2>
+&lt;p>Gist はこちら&lt;/p>
+&lt;script src="https://gist.github.com/hurutoriya/0ebd3b83be391948fdec11e2dbfe5c83.js">&lt;/script>
+&lt;p>Colab でも公開しておきます&lt;/p>
+&lt;p>&lt;a href="https://colab.research.google.com/drive/1ufdIjcElRjmOLeYOy2RplgqXxaHXOgau?usp=sharing">Colab link&lt;/a>&lt;/p>
+&lt;h2 id="references">References&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://tsukin.hateblo.jp/entry/2020/04/08/162605">url からとってきた画像を jupyter に表示する&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/37365824/pandas-ipython-notebook-include-and-display-an-image-in-a-dataframe">Pandas / IPython Notebook: Include and display an Image in a dataframe&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>[抄訳] Daria Sorokina さんによる、 Amazon 検索での製品のランキング付けの楽しさ at MLconf SF 2016</title><link>https://shunyaueta.com/posts/2021-12-26/</link><pubDate>Sun, 26 Dec 2021 22:52:06 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-26/</guid><description>
 &lt;p>1 日遅れてしまいましたが、&lt;a href="https://adventar.org/calendars/6430">情報検索・検索技術 Advent Calendar 2021&lt;/a> 25 日目の記事です。&lt;/p>
 &lt;p>ついにアドベントカレンダー最終日を迎えました!
 今年はまだ検索領域のアドベントカレンダーが作られていないからということで、勢いで&lt;code>情報検索・検索技術 Advent Calendar 2021&lt;/code>を作りましたが、多くの方に投稿に協力していただきありがとうございました。&lt;/p>
