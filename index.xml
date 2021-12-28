@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Jupyter でPandas DataFrame 内部に画像をURLから参照して表示させる</title><link>https://shunyaueta.com/posts/2021-12-28/</link><pubDate>Tue, 28 Dec 2021 23:04:19 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-28/</guid><description>
-&lt;p>データ分析などをしていると、特定の CDN で提供されている画像を参照して、処理した結果を Jupyter Notebook 上で良い感じに表示させたいときがある。
-例えば、自分は画像と説明文がペアになっている画像を Jupyter 上で良い感じに表示させたいときが多々ある。&lt;/p>
+&lt;p>データ分析などをしていると、特定の CDN で提供されている画像を参照して、処理した結果を Jupyter Notebook 上で良い感じに表示させたいときがありませんか?&lt;/p>
+&lt;p>例えば、自分は画像と説明文がペアになっているデータを Jupyter 上で良い感じに表示させたいときが多々ある。&lt;/p>
 &lt;p>&lt;a href="https://tsukin.hateblo.jp/entry/2020/04/08/162605">url からとってきた画像を jupyter に表示する&lt;/a> でも同じような課題に取り組んでいるが、今回紹介する方法なら余計なパッケージを入れずに最小構成で Jupyter 上で表示できるのが利点。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
