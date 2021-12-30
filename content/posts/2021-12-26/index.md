@@ -212,4 +212,4 @@ tags:
 
 この論文は、過去に読んだサーベイ論文で面白そうとメモしておいたのがきっかけで知ることができた。サーベイ論文の紹介記事はこちら
 
-[e コマースの検索と推薦についてのサーベイ論文である 'Challenges and research opportunities in eCommerce search and recommendations' を社内勉強会で発表した](https://shunyaueta.com/posts/2021-07-10/)
+[e コマースの検索と推薦についてのサーベイ論文である 'Challenges and research opportunities in eCommerce search and recommendations' を社内勉強会で発表した](/posts/2021-07-10/)
