@@ -1,4 +1,73 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>2021 年振り返り</title><link>https://shunyaueta.com/posts/2021-12-29/</link><pubDate>Wed, 29 Dec 2021 22:42:08 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-29/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>2022年の目標</title><link>https://shunyaueta.com/posts/2022-01-01/</link><pubDate>Sat, 01 Jan 2022 21:34:30 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2022-01-01/</guid><description>
+&lt;h2 id="objective-1">Objective 1&lt;/h2>
+&lt;p>Search Enginner の領域で自分のスキルはシニアレベルだと自信を持てるようにする&lt;/p>
+&lt;h3 id="key-results-1">Key Results 1&lt;/h3>
+&lt;ul>
+&lt;li>国際会議・インダストリー会議のどちらでも良いので、外部発表できる成果を出す&lt;/li>
+&lt;/ul>
+&lt;h3 id="key-results-2">Key Results 2&lt;/h3>
+&lt;ul>
+&lt;li>Python, Go の両方を自信を持って書けるように。&lt;/li>
+&lt;/ul>
+&lt;p>TODO: 定量的に測定して数値化する&lt;/p>
+&lt;p>&lt;a href="https://johnresig.com/blog/write-code-every-day/">Write Code Every Day&lt;/a> とか良いのかもしれない?
+もしくは Atcoder とか?&lt;/p>
+&lt;h3 id="key-results-3-advance">Key Results 3 (Advance)&lt;/h3>
+&lt;ul>
+&lt;li>自前で検索サービスを開発・運用をしてみる&lt;/li>
+&lt;/ul>
+&lt;h2 id="objective-2">Objective 2&lt;/h2>
+&lt;p>有限な自分の時間の管理を生産的に行って、趣味プロジェクトでモノを作る&lt;/p>
+&lt;h3 id="key-results-1-1">Key Results 1&lt;/h3>
+&lt;ul>
+&lt;li>Toggl を積極的に使って、1 年間どれだけ生産的な時間を創出できてか可視化する&lt;/li>
+&lt;/ul>
+&lt;h3 id="key-results-2-1">Key Results 2&lt;/h3>
+&lt;ul>
+&lt;li>継続して、SNS は断つ(ダラダラと見ない)&lt;/li>
+&lt;/ul>
+&lt;p>2021 年も設定していたが、2022 年も引き続き。連絡手段と周知を行うことのみに特化して使うようにする。
+SNS での情報取得は辞めて、RSS や News letter などで情報を取得するようにしはじめた。今の所凄く良い。
+自分も News letter を過去にやって続かなかったりしたけど、なんかやってみたいなと思うようになりつつも Blog でいいのではと思ったり&amp;hellip;&lt;/p>
+&lt;h3 id="key-results-3">Key Results 3&lt;/h3>
+&lt;ul>
+&lt;li>2021 年の 5 月から開始している翻訳プロジェクトを一段落させて出版可能な状態まで持っていく&lt;/li>
+&lt;/ul>
+&lt;p>詳細はまで伏せますが、自分が発起人の翻訳プロジェクトがあるんですが、今年の年末までには出版可能な状態まで仕上げていきたい。
+友人 2 名を誘って始めたプロジェクトだが、初めての経験ということもあり学びが多い。&lt;/p>
+&lt;h3 id="key-results-4-advance">Key Results 4 (Advance)&lt;/h3>
+&lt;ul>
+&lt;li>自前で検索エンジンを運用した個人開発のサービスを作る。&lt;/li>
+&lt;/ul>
+&lt;p>同僚の&lt;a href="https://zenn.dev/k_yomo/articles/f5ddeabf06afb9">@yomo&lt;/a> さんが、個人で検索サービスを運営しているのですが、この取組が素晴らしいなと思ったので自分も真似したい。&lt;/p>
+&lt;p>@szdr さんの記事でも&lt;a href="https://www.szdrblog.info/entry/2021/01/01/193014">2021 年の目標とかキャリアなど&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>技術目標：自然言語処理 × 情報検索の技術を学び、サンドボックスでも良いから習得した技術を使って検索サービスを作る&lt;/p>
+&lt;/blockquote>
+&lt;p>書かれていたが、この点には非常に感銘を受けていて、知識だけでなくシステム運用・開発などもここで補えたらなと思っている。&lt;/p>
+&lt;h2 id="objective-3">Objective 3&lt;/h2>
+&lt;p>発音矯正と英語の基礎を見つめ直す&lt;/p>
+&lt;h3 id="key-results">Key Results&lt;/h3>
+&lt;ul>
+&lt;li>Elsa&lt;/li>
+&lt;li>英語の文法・英文構成本に取り組む&lt;/li>
+&lt;/ul>
+&lt;h2 id="objective-4">Objective 4&lt;/h2>
+&lt;p>健康的な習慣をつける&lt;/p>
+&lt;h3 id="key-results-4">Key Results&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://amzn.to/31gGl8F">RingFit&lt;/a> か &lt;a href="https://www.strong.app/">Strong&lt;/a> で設定しているトレーニングセットを週 5 回は維持する。&lt;/li>
+&lt;/ul>
+&lt;p>自宅勤務で 2021 年 6 月頃には 78kg まで太ってしまっていたが、積極的に子供と散歩をして一日最低 6000 歩を意識して歩くのと、糖質制限を行ったら 70kg まで体重を落とすことができた。
+だが、長時間デスクワークをしていると腰が少し傷んだり眠りが浅くなったりしがちだ。
+学生時代に部活を週 6 でやってたころが一番健康的な身体だったとおもうので、そこまでとは行かずとも深く眠れて元気に仕事を続けられるような習慣を復刻させたい。&lt;/p>
+&lt;hr>
+&lt;p>2021 年は、目標を立てはしたものの振り返りができずにグダグダだったので、以上の OKR を 3 ヶ月毎に定期的に振り返る。&lt;/p>
+&lt;p>去年は機械学習エンジニアから検索エンジニアに鞍替えをして、色々と自分の現状と目指すべき場所のギャップを体感できて、良くも悪くもストレスを感じていた。
+30 代に差し掛かる年なので、あらためて自分はやれると自信がつく年にしたい。&lt;/p>
+&lt;p>余談だが、オンラインで友人や知り合いと雑談をするのが凄く楽しかったので、今年も続けていきたい。
+子育ての関係で、自分はオフラインで交流することが難しくなったので逆にオンラインでのビデオチャットなどが気軽に誘えるようになったのはありがたい。&lt;/p>
+&lt;p>年末の振り返りにはやれることはやったなと言うぞ~ (完)&lt;/p></description></item><item><title>2021 年振り返り</title><link>https://shunyaueta.com/posts/2021-12-29/</link><pubDate>Wed, 29 Dec 2021 22:42:08 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-29/</guid><description>
 &lt;p>うなすけさんの wakatime を利用した振り返り方が面白かったので、来年は真似したいと思い導入してみた。&lt;/p>
 &lt;p>&lt;a href="https://blog.unasuke.com/2021/wrap-up-my-coding/">サーバーサイドエンジニアとして 2021 年に使った技術と来年の目標&lt;/a>&lt;/p>
 &lt;p>なので先週くらいから wakatime を使って、VSCode での利用統計をとってみることにした。&lt;/p>
@@ -3698,7 +3767,7 @@ python3 get-pip.py
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>で pip が実行できるようになりエラーが解消された&lt;/p>
-&lt;h2 id="appendix">Appendix&lt;/h2>
+&lt;h2 id="references">References&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://stackoverflow.com/questions/65866417/pip-install-failing-on-python2">pip install failing on python2&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>[抄訳] Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)</title><link>https://shunyaueta.com/posts/2021-01-17/</link><pubDate>Sun, 17 Jan 2021 00:18:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-01-17/</guid><description>
