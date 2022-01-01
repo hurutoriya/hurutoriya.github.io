@@ -42,6 +42,6 @@ python3 get-pip.py
 
 で pip が実行できるようになりエラーが解消された
 
-## Appendix
+## References
 
 - [pip install failing on python2](https://stackoverflow.com/questions/65866417/pip-install-failing-on-python2)
