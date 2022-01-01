@@ -3118,12 +3118,12 @@ Software Engineer という職に飽きるまでは Product Manager のキャリ
 &lt;/ul></description></item><item><title>Standard SQLで 列と列の組み合わせの数を集計したい</title><link>https://shunyaueta.com/posts/2021-02-09/</link><pubDate>Tue, 09 Feb 2021 23:27:37 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-02-09/</guid><description>
 &lt;p>group by は集計作業において根幹となる処理ですが、少し手の混んだ集計をしたいときに毎回調べていることが多かったのでここに学んだことをまとめておく&lt;/p>
 &lt;p>今回やりたいことは&lt;/p>
-&lt;p>A列がαになっている行のB列の種類を集計したい&lt;/p>
+&lt;p>A 列が α になっている行の B 列の種類を集計したい&lt;/p>
 &lt;p>です。&lt;/p>
 &lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>実際のデータを用意したほうが、理解が深まるので擬似的なテーブルを作成する。
-テーブルのデータの概略として、何日にsender (送信者) が receiver (受信者) にいくら送金(price)したかを格納しているテーブルとする。&lt;/p>
-&lt;p>StandardSQLはWITHを使って簡単にモックテーブルを作れるのが良いところ。&lt;/p>
+テーブルのデータの概略として、何日に sender (送信者) が receiver (受信者) にいくら送金(price)したかを格納しているテーブルとする。&lt;/p>
+&lt;p>StandardSQL は WITH を使って簡単にモックテーブルを作れるのが良いところ。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -3434,7 +3434,7 @@ Software Engineer という職に飽きるまでは Product Manager のキャリ
 &lt;li>day&lt;/li>
 &lt;li>sender&lt;/li>
 &lt;/ul>
-&lt;p>を&lt;code>group by&lt;/code> してCOUNT(distinct sender)で集計するアプローチがあるが、&lt;/p>
+&lt;p>を&lt;code>group by&lt;/code> して COUNT(distinct sender)で集計するアプローチがあるが、&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
@@ -3553,9 +3553,9 @@ Software Engineer という職に飽きるまでは Product Manager のキャリ
 &lt;/tbody>
 &lt;/table>
 &lt;p>の結果が得られる。&lt;/p>
-&lt;p>だが、&lt;code>day&lt;/code>を基準に送信者、&lt;code>A&lt;/code>と&lt;code>B&lt;/code>の情報を1行にまとめたい場合はどうすべきだろうか?&lt;/p>
-&lt;h3 id="1行に2列のパターン数をまとめて集計する">1行に2列のパターン数をまとめて集計する&lt;/h3>
-&lt;p>&lt;code>A&lt;/code>と&lt;code>B&lt;/code>が送り先の数を調べたいなどの目的がある際には、COUNT()を行う際にIF文で条件を集計することで上記を達成することができる。&lt;/p>
+&lt;p>だが、&lt;code>day&lt;/code>を基準に送信者、&lt;code>A&lt;/code>と&lt;code>B&lt;/code>の情報を 1 行にまとめたい場合はどうすべきだろうか?&lt;/p>
+&lt;h3 id="1-行に-2-列のパターン数をまとめて集計する">1 行に 2 列のパターン数をまとめて集計する&lt;/h3>
+&lt;p>&lt;code>A&lt;/code>と&lt;code>B&lt;/code>が送り先の数を調べたいなどの目的がある際には、COUNT()を行う際に IF 文で条件を集計することで上記を達成することができる。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -3607,8 +3607,8 @@ Software Engineer という職に飽きるまでは Product Manager のキャリ
 &lt;/div>&lt;p>流れを説明すると&lt;/p>
 &lt;ol>
 &lt;li>day で日次を基準にした計算を行う&lt;/li>
-&lt;li>IF(sender='A&amp;rsquo;, receiver, NULL) で、スキャン時に&lt;code>A&lt;/code>が送信した場合はその同行の&lt;code>reciver&lt;/code> を返し、&lt;code>A&lt;/code>でなかった場合はNULLを返す&lt;/li>
-&lt;li>2の結果の重複を排除して、その行数をカウントする&lt;/li>
+&lt;li>IF(sender='A&amp;rsquo;, receiver, NULL) で、スキャン時に&lt;code>A&lt;/code>が送信した場合はその同行の&lt;code>reciver&lt;/code> を返し、&lt;code>A&lt;/code>でなかった場合は NULL を返す&lt;/li>
+&lt;li>2 の結果の重複を排除して、その行数をカウントする&lt;/li>
 &lt;/ol>
 &lt;p>上記の処理のイメージ (&lt;code>2020-01-01&lt;/code>の場合)&lt;/p>
 &lt;ol>
@@ -3617,7 +3617,7 @@ Software Engineer という職に飽きるまでは Product Manager のキャリ
 &lt;li>COUNT((B,C,D))&lt;/li>
 &lt;li>3&lt;/li>
 &lt;/ol>
-&lt;p>となり、&lt;code>A&lt;/code>が&lt;code>2020-01-01&lt;/code>に送信した人数は3人となる。&lt;/p>
+&lt;p>となり、&lt;code>A&lt;/code>が&lt;code>2020-01-01&lt;/code>に送信した人数は 3 人となる。&lt;/p>
 &lt;h4 id="結果-1">結果&lt;/h4>
 &lt;table>
 &lt;thead>
@@ -3640,8 +3640,8 @@ Software Engineer という職に飽きるまでは Product Manager のキャリ
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>今回は(A,B)の組み合わせでAを固定した際のパターン数を集計したが、Aの種類が大規模な場合はSELECT文をすべて書ききるの現実ではないが、A自体が有限で集計したい場合はよくある処理なのでメモとしてまとめた。
-UUなどを計算したいときは必須の集計になると思います。&lt;/p>
+&lt;p>今回は(A,B)の組み合わせで A を固定した際のパターン数を集計したが、A の種類が大規模な場合は SELECT 文をすべて書ききるの現実ではないが、A 自体が有限で集計したい場合はよくある処理なのでメモとしてまとめた。
+UU などを計算したいときは必須の集計になると思います。&lt;/p>
 &lt;h4 id="ref">Ref&lt;/h4>
 &lt;ul>
 &lt;li>&lt;a href="https://stackoverflow.com/questions/52281618/syntax-to-count-the-number-of-unique-matching-values">Syntax to count the number of UNIQUE matching values&lt;/a>&lt;/li>
