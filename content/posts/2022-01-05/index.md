@@ -16,7 +16,7 @@ tags:
 https://www.deepl.com/ja/pro#developer
 
 まずアカウントを作成して、DeepL API Free の`API_KEY`を入手する。
-その後、以下のスクリプトを実行すれば完了。
+その後、以下のスクリプトを実行すれば、翻訳元のファイル名に`JA_`という接頭辞がついたファイルが保存される。
 
 ```python
 import requests
