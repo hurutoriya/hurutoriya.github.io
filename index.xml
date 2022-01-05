@@ -5,7 +5,7 @@
 個人利用する分にはこの文字数制限は特に大きな問題にはならないと思われる。&lt;/p>
 &lt;p>&lt;a href="https://www.deepl.com/ja/pro#developer">https://www.deepl.com/ja/pro#developer&lt;/a>&lt;/p>
 &lt;p>まずアカウントを作成して、DeepL API Free の&lt;code>API_KEY&lt;/code>を入手する。
-その後、以下のスクリプトを実行すれば完了。&lt;/p>
+その後、以下のスクリプトを実行すれば、翻訳元のファイル名に&lt;code>JA_&lt;/code>という接頭辞がついたファイルが保存される。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
