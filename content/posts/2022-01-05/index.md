@@ -1,5 +1,5 @@
 ---
-title: "PythonでDeepL API Free を利用してテキストファイルを翻訳する"
+title: "Python で DeepL API Free を利用してテキストファイルを翻訳する"
 date: 2022-01-05T23:02:06+09:00
 lang: ja
 author: Shunya Ueta
