@@ -36,7 +36,7 @@
 &lt;pre class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="kn">import&lt;/span> &lt;span class="nn">requests&lt;/span>
 &lt;span class="c1"># NOTE: put API KEY&lt;/span>
 &lt;span class="n">API_KEY&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nb">str&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;&amp;#39;&lt;/span>
-&lt;span class="c1"># NOTE: put&lt;/span>
+&lt;span class="c1"># NOTE: put target file path&lt;/span>
 &lt;span class="n">target_file&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nb">str&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>
 &lt;span class="k">with&lt;/span> &lt;span class="nb">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">target_file&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">f&lt;/span>&lt;span class="p">:&lt;/span>
 &lt;span class="n">txt&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">read&lt;/span>&lt;span class="p">()&lt;/span>
