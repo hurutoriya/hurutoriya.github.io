@@ -23,7 +23,7 @@ import requests
 
 # NOTE: put API KEY
 API_KEY:str = ''
-# NOTE: put
+# NOTE: put target file path
 target_file:str = ""
 
 with open(target_file) as f:
