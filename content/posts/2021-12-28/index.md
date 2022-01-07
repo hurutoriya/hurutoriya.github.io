@@ -1,5 +1,5 @@
 ---
-title: "Jupyter でPandas DataFrame 内部に画像をURLから参照して表示させる"
+title: "Jupyter で Pandas DataFrame 内部に画像をダウンロードせずに、URLから参照して表示させる"
 date: 2021-12-28T23:04:19+09:00
 lang: ja
 author: Shunya Ueta
