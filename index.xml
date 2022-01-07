@@ -274,7 +274,7 @@ SNS での情報取得は辞めて、RSS や News letter などで情報を取�
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>今年はグダグダな気がしているので、来年は胸を張ってあぁ、自分頑張ったなと言える一年にしたい。&lt;/p></description></item><item><title>Jupyter で Pandas DataFrame 内部に画像をダウンロードせずに、URLから参照して表示させる</title><link>https://shunyaueta.com/posts/2021-12-28/</link><pubDate>Tue, 28 Dec 2021 23:04:19 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-28/</guid><description>
+&lt;p>今年はグダグダな気がしているので、来年は胸を張ってあぁ、自分頑張ったなと言える一年にしたい。&lt;/p></description></item><item><title>Jupyter で Pandas DataFrame 内部にURLから画像を参照することで、画像をダウンロードすることなく表示させる</title><link>https://shunyaueta.com/posts/2021-12-28/</link><pubDate>Tue, 28 Dec 2021 23:04:19 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2021-12-28/</guid><description>
 &lt;p>データ分析などをしていると、画像はダウンロードせずに特定の CDN (GCP なら GCS, AWS なら S3 など)で提供されている画像を参照して、 Jupyter Notebook 上で良い感じに表示させたいときがありませんか?&lt;/p>
 &lt;p>例えば、画像と説明文がペアになっているデータを画像自体はダウンロードせずに Jupyter 上で画像と説明文を DataFrame として表示させたいときが多々ある。
 元の画像自体は CDN に格納されていて、画像をダウンロードする必要はなく参照するだけのときにはすごく便利。
