@@ -1,4 +1,164 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>2021 年良かったもの</title><link>https://shunyaueta.com/posts/2022-01-07/</link><pubDate>Fri, 07 Jan 2022 21:14:25 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2022-01-07/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shunya Ueta</title><link>https://shunyaueta.com/</link><description>Recent content on Shunya Ueta</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>OSSのアノテーションツール Label Studio を使って、快適にアノテーションする</title><link>https://shunyaueta.com/posts/2022-01-09/</link><pubDate>Sun, 09 Jan 2022 23:05:16 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2022-01-09/</guid><description>
+&lt;h2 id="google-spread-sheet-による即席アノテーションの限界">Google Spread Sheet による即席アノテーションの限界&lt;/h2>
+&lt;p>データ分析で、ラベルがないデータに対して、自分でアノテーション(ラベルを付与)してデータの傾向を素早く掴みたい時がある。
+例えば、文章に対してネガティブ・ポジティブなクラスを割り振ったり、画像に対して人が写り込んでいるか否かなどの簡単な分類タスクでは、お手軽に Google Spread Sheet などを使って、500 件のアノテーションはそこまで問題がなく気合でやれる。&lt;/p>
+&lt;p>実際の流れとしては、GCP を採用している場合、Google BigQuery から SQL でデータを抽出してそのまま Google Sprad Sheet に出力、&lt;code>=image()&lt;/code>関数で CDN から画像の URL を参照できたりなどなどかなり便利。
+Spread Sheet を共有して複数人でも作業ができるのも魅力的。&lt;/p>
+&lt;p>だが、文章の特定の部分を選択してタグを付けたかったり、クラス数が二桁など少し複雑なアノテーションタスクを行いたい場合 Google Spread Sheet では、アノテーションの生産性が劇的に落ちる、もしくは不可能になる。あくまで Google Spread Sheet はお手軽にラベリングを行うだけで、ラベリング専用ツールではないので当然の帰着ではある&amp;hellip;&lt;/p>
+&lt;h2 id="label-studio-とは">Label Studio とは&lt;/h2>
+&lt;p>今回紹介する&lt;a href="https://labelstud.io/">Label Studio&lt;/a>は OSS データのラベリング(アノテーション)ツールは、&lt;/p>
+&lt;ul>
+&lt;li>画像
+&lt;ul>
+&lt;li>画像分類&lt;/li>
+&lt;li>物体認識&lt;/li>
+&lt;li>セマンティックセグメンテーション&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>音声
+&lt;ul>
+&lt;li>音声分類&lt;/li>
+&lt;li>話者分類&lt;/li>
+&lt;li>感情認識&lt;/li>
+&lt;li>文字起こし&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>文章
+&lt;ul>
+&lt;li>文書分類&lt;/li>
+&lt;li>固有表現抽出(NER)&lt;/li>
+&lt;li>質疑応答&lt;/li>
+&lt;li>感情分析&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>時系列データ
+&lt;ul>
+&lt;li>時系列分類&lt;/li>
+&lt;li>時系列分割&lt;/li>
+&lt;li>イベント認識&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マルチモーダル
+&lt;ul>
+&lt;li>対話処理&lt;/li>
+&lt;li>文字認識(OCR)&lt;/li>
+&lt;li>ビデオ・音声の時系列分類&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>など多種多様なドメインに対してラベリングを行うことができるソフトウェアだ。&lt;/p>
+&lt;p>また、アカウント認証や、キーボードショートカットなどアノテーションの生産性を向上させる基本的な機能が標準で搭載されており、アノテーション効率の向上と管理が期待できる。&lt;/p>
+&lt;p>同様に OSS の自然言語タスクに特化したアノテーションツールの&lt;a href="https://github.com/doccano/doccano">doccano&lt;/a> も検討したが、Label Studio は自然言語以外にも画像やランキングなど多種多様なラベリングタスクに対応しているので、後々にアノテーションしたいデータの種類が増えたとしても Label Studio を活用できて便利そうなので、今回は Label Studio を選択した。&lt;/p>
+&lt;p>機能として&lt;/p>
+&lt;ul>
+&lt;li>アノテーションのインターフェイスは xml のような形式で、GUI で柔軟に作成可能。画像・文章を組み合わせて表示したいときでも容易に表現が可能。&lt;/li>
+&lt;li>Web アプリとして完結していて、よほど込み入ったことをしたいと思わない限り、Docker か pip でインストールしてコマンド実行するだけで良い。データを準備するだけで、コードを書かなくてよい&lt;/li>
+&lt;li>実行環境として Cloud Run で実行可能、pip でインストールして実行するだけでも起動可能なのでポータビリティが高い。&lt;/li>
+&lt;/ul>
+&lt;p>が気に入った。&lt;/p>
+&lt;p>また、今は使わないが&lt;/p>
+&lt;ul>
+&lt;li>機械学習モデルを組み込んで、アノテーションの補助が可能な点&lt;/li>
+&lt;li>AWS, GCP, Azure の CloudStorage と連携が可能&lt;/li>
+&lt;li>Webhook で連動させて、アノテーションが完了したらジョブを実行&lt;/li>
+&lt;/ul>
+&lt;p>が気になっている。&lt;/p>
+&lt;h2 id="label-studio-の活用方法">Label Studio の活用方法&lt;/h2>
+&lt;p>以下の画像の URL が格納されている &lt;code>onepiece.csv&lt;/code>を使って、各画像に指定のクラスを割り振るデータラベリングを Label Studio を使って実行する。&lt;/p>
+&lt;pre>&lt;code class="language-csv" data-lang="csv">image
+https://1.bp.blogspot.com/-uxIsaN0S5lQ/X-FcrvAAInI/AAAAAAABdD4/6uw_qNUh9dQrG0aUzIExybt84yTEmXOPwCNcBGAsYHQ/s200/onepiece01_luffy.png
+https://1.bp.blogspot.com/-rzRcgoXDqEg/YAOTCKoCpPI/AAAAAAABdOI/5Bl3_zhOxm07TUGzW8_83cXMOT9yy1VJwCNcBGAsYHQ/s200/onepiece02_zoro_bandana.png
+https://1.bp.blogspot.com/-2ut_UQv3iss/X-Fcs_0oAII/AAAAAAABdD8/jrCZTd_xK-Y6CP1KwOtT_LpEpjp-1nvxgCNcBGAsYHQ/s200/onepiece03_nami.png
+https://1.bp.blogspot.com/-mZpzgXC1Sxk/YAOTCAKwWTI/AAAAAAABdOM/5B4hXli0KLU5N-BySHgjVbhZscKLSE-bQCNcBGAsYHQ/s200/onepiece04_usopp_sogeking.png`
+&lt;/code>&lt;/pre>&lt;p>例とする画像の URL は&lt;a href="https://www.irasutoya.com/">いらすとや&lt;/a>さんを参照させていただいております。&lt;/p>
+&lt;p>今回はお手軽に Poetry で Label Studio をインストールして、ローカル環境で実行した。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="c1"># Requires &amp;gt;=Python3.6, &amp;lt;3.9&lt;/span>
+poetry add label-studio
+&lt;span class="c1"># Start the server at http://localhost:8080&lt;/span>
+poetry run label-studio
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="プロジェクトの作成">プロジェクトの作成&lt;/h2>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2022-01-09/images/1.png" alt="">&lt;/p>
+&lt;p>&lt;code>poetry run label-studio&lt;/code> で Lebel Studio を起動後、右上の Create ボタンからプロジェクトを作成する。プロジェクト = 必要なアノテーションデータの 1 単位と考えれば良い。
+上の 3 つのタブ&lt;/p>
+&lt;ul>
+&lt;li>Project Name : プロジェクトの概要を入力&lt;/li>
+&lt;li>Data Import : アノテーション対象のデータをアップロード&lt;/li>
+&lt;li>Labeling Setup : ラベリング方式の設定&lt;/li>
+&lt;/ul>
+&lt;h2 id="アノテーションテンプレート選択">アノテーションテンプレート選択&lt;/h2>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2022-01-09/images/2.png" alt="">&lt;/p>
+&lt;p>Labeling Setup では、様々なドメインのアノテーションタスクをテンプレートから選択が可能&lt;/p>
+&lt;h2 id="ラベリングインターフェイス">ラベリングインターフェイス&lt;/h2>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2022-01-09/images/3.png" alt="">&lt;/p>
+&lt;p>テンプレートを選択後、GUI でタグを自分で選択して編集する。
+Code タグを選択すれば、直接インターフェイスを xml ライクに宣言ができる。
+各種タグは&lt;/p>
+&lt;p>&lt;a href="https://labelstud.io/tags/">https://labelstud.io/tags/&lt;/a>&lt;/p>
+&lt;p>を参考にすれば、柔軟にアノテーションが組める。Web アプリ上で完結しつつ柔軟にインターフェイスを構築できるのは感動した。&lt;/p>
+&lt;h4 id="タグの豆知識">タグの豆知識&lt;/h4>
+&lt;p>&lt;code>&amp;lt;Header&amp;gt;&lt;/code> タグで、各種データの説明文を設定可能&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="nt">&amp;lt;Header&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;#34;説明文&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>タグの末尾に &lt;code>/&lt;/code> を入れることで閉じタグを省略できる。
+以下の 2 つは等価&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="nt">&amp;lt;Header&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;#34;$title&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;Header&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;#34;$title&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/Header&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>&amp;lt;TextArea&amp;gt;&lt;/code> タグを使えば、判断に困った際のデータに対してコメントを残せる
+&lt;code>toName&lt;/code> 要素で、何に対するコメントなのかを指定する。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="nt">&amp;lt;TextArea&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;comment&amp;#34;&lt;/span> &lt;span class="na">toName=&lt;/span>&lt;span class="s">&amp;#34;text&amp;#34;&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">&amp;#34;Enter Comment here...&amp;#34;&lt;/span> &lt;span class="na">maxSubmissions=&lt;/span>&lt;span class="s">&amp;#34;1&amp;#34;&lt;/span> &lt;span class="na">rows=&lt;/span>&lt;span class="s">&amp;#34;3&amp;#34;&lt;/span> &lt;span class="na">editable=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="プロジェクト画面">プロジェクト画面&lt;/h2>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2022-01-09/images/4.png" alt="">&lt;/p>
+&lt;p>プロジェクト画面では、アップロードされたデータやアノテーションの進捗具合などがひと目で把握できる。
+データセットに画像の URL があれば、カラムの属性を&lt;code>img&lt;/code>に変更すれば一覧画面でその画像が表示される。&lt;/p>
+&lt;h2 id="アノテーション画面">アノテーション画面&lt;/h2>
+&lt;p>&lt;img src="https://shunyaueta.com/posts/2022-01-09/images/5.png" alt="">&lt;/p>
+&lt;p>Mac だと Command + Enter で Submit, 例だと、例えばナミはキーボードで 3 を押せば選択される。これらのキーボードショートカット機能により高速にアノテーションが可能。&lt;/p>
+&lt;h2 id="実際の作業の撮影動画">実際の作業の撮影動画&lt;/h2>
+&lt;ol>
+&lt;li>Label Studio の起動&lt;/li>
+&lt;li>プロジェクトの作成&lt;/li>
+&lt;li>データのアップロード&lt;/li>
+&lt;li>アノテーションの実行&lt;/li>
+&lt;li>アノテーション結果のダウンロード&lt;/li>
+&lt;/ol>
+&lt;p>までの動画を撮影した。&lt;/p>
+&lt;p>動画で見ることで、Label Studio の魅力がわかるのではなかろうか。
+キーボードショートカットが搭載されていて、実際のアノテーション作業がとても快適に行える点がわかるのではなかろうか。&lt;/p>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lIuREkAdDa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;p>もう少し使い込んだら、また続編を書きたい。
+OSS でこのクオリティのアノテーションソフトウェアが公開されるようになっているのは本当に素晴らしい。&lt;/p></description></item><item><title>2021 年良かったもの</title><link>https://shunyaueta.com/posts/2022-01-07/</link><pubDate>Fri, 07 Jan 2022 21:14:25 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2022-01-07/</guid><description>
 &lt;h2 id="よかったモノ">よかったモノ&lt;/h2>
 &lt;h3 id="coronaコロナ-衣類乾燥除湿機-除湿量-18l-木造-20-畳--鉄筋-40-畳まで-日本製-httpsamznto3exeygm">&lt;a href="https://amzn.to/3eXeygM">CORONA(コロナ) 衣類乾燥除湿機 除湿量 18L (木造 20 畳 / 鉄筋 40 畳まで) 日本製 &lt;/a>&lt;/h3>
 &lt;p>&lt;em>ジメジメした空気とは無縁に&lt;/em>&lt;/p>
@@ -332,7 +492,6 @@ SNS での情報取得は辞めて、RSS や News letter などで情報を取�
 &lt;/span>&lt;span class="lnt">17
 &lt;/span>&lt;span class="lnt">18
 &lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="kn">import&lt;/span> &lt;span class="nn">pandas&lt;/span> &lt;span class="kn">as&lt;/span> &lt;span class="nn">pd&lt;/span>
