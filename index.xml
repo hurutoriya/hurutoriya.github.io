@@ -87,7 +87,20 @@ poetry add label-studio
 poetry run label-studio
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="プロジェクトの作成">プロジェクトの作成&lt;/h2>
+&lt;/div>&lt;h2 id="実際の作業の撮影動画">実際の作業の撮影動画&lt;/h2>
+&lt;ol>
+&lt;li>Label Studio の起動&lt;/li>
+&lt;li>プロジェクトの作成&lt;/li>
+&lt;li>データのアップロード&lt;/li>
+&lt;li>アノテーションの実行&lt;/li>
+&lt;li>アノテーション結果のダウンロード&lt;/li>
+&lt;/ol>
+&lt;p>までの動画を撮影した。&lt;/p>
+&lt;p>動画で見ることで、Label Studio の魅力がわかるのではなかろうか。
+キーボードショートカットが搭載されていて、実際のアノテーション作業がとても快適に行える点がわかるのではなかろうか。&lt;/p>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lIuREkAdDa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;p>以下に、実際の画面ごとの解説をしておく。&lt;/p>
+&lt;h2 id="プロジェクトの作成">プロジェクトの作成&lt;/h2>
 &lt;p>&lt;img src="https://shunyaueta.com/posts/2022-01-09/images/1.png" alt="">&lt;/p>
 &lt;p>&lt;code>poetry run label-studio&lt;/code> で Lebel Studio を起動後、右上の Create ボタンからプロジェクトを作成する。プロジェクト = 必要なアノテーションデータの 1 単位と考えれば良い。
 上の 3 つのタブ&lt;/p>
@@ -145,18 +158,6 @@ Code タグを選択すれば、直接インターフェイスを xml ライク�
 &lt;h2 id="アノテーション画面">アノテーション画面&lt;/h2>
 &lt;p>&lt;img src="https://shunyaueta.com/posts/2022-01-09/images/5.png" alt="">&lt;/p>
 &lt;p>Mac だと Command + Enter で Submit, 例だと、例えばナミはキーボードで 3 を押せば選択される。これらのキーボードショートカット機能により高速にアノテーションが可能。&lt;/p>
-&lt;h2 id="実際の作業の撮影動画">実際の作業の撮影動画&lt;/h2>
-&lt;ol>
-&lt;li>Label Studio の起動&lt;/li>
-&lt;li>プロジェクトの作成&lt;/li>
-&lt;li>データのアップロード&lt;/li>
-&lt;li>アノテーションの実行&lt;/li>
-&lt;li>アノテーション結果のダウンロード&lt;/li>
-&lt;/ol>
-&lt;p>までの動画を撮影した。&lt;/p>
-&lt;p>動画で見ることで、Label Studio の魅力がわかるのではなかろうか。
-キーボードショートカットが搭載されていて、実際のアノテーション作業がとても快適に行える点がわかるのではなかろうか。&lt;/p>
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lIuREkAdDa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
 &lt;p>もう少し使い込んだら、また続編を書きたい。
 OSS でこのクオリティのアノテーションソフトウェアが公開されるようになっているのは本当に素晴らしい。&lt;/p></description></item><item><title>2021 年良かったもの</title><link>https://shunyaueta.com/posts/2022-01-07/</link><pubDate>Fri, 07 Jan 2022 21:14:25 +0900</pubDate><author>Shunya Ueta</author><guid>https://shunyaueta.com/posts/2022-01-07/</guid><description>
 &lt;h2 id="よかったモノ">よかったモノ&lt;/h2>
