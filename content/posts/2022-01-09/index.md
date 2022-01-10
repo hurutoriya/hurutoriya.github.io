@@ -91,6 +91,23 @@ poetry add label-studio
 poetry run label-studio
 ```
 
+## 実際の作業の撮影動画
+
+1. Label Studio の起動
+1. プロジェクトの作成
+1. データのアップロード
+1. アノテーションの実行
+1. アノテーション結果のダウンロード
+
+までの動画を撮影した。
+
+動画で見ることで、Label Studio の魅力がわかるのではなかろうか。
+キーボードショートカットが搭載されていて、実際のアノテーション作業がとても快適に行える点がわかるのではなかろうか。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lIuREkAdDa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+以下に、実際の画面ごとの解説をしておく。
+
 ## プロジェクトの作成
 
 ![](/posts/2022-01-09/images/1.png)
@@ -155,21 +172,6 @@ https://labelstud.io/tags/
 ![](/posts/2022-01-09/images/5.png)
 
 Mac だと Command + Enter で Submit, 例だと、例えばナミはキーボードで 3 を押せば選択される。これらのキーボードショートカット機能により高速にアノテーションが可能。
-
-## 実際の作業の撮影動画
-
-1. Label Studio の起動
-1. プロジェクトの作成
-1. データのアップロード
-1. アノテーションの実行
-1. アノテーション結果のダウンロード
-
-までの動画を撮影した。
-
-動画で見ることで、Label Studio の魅力がわかるのではなかろうか。
-キーボードショートカットが搭載されていて、実際のアノテーション作業がとても快適に行える点がわかるのではなかろうか。
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lIuREkAdDa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 もう少し使い込んだら、また続編を書きたい。
 OSS でこのクオリティのアノテーションソフトウェアが公開されるようになっているのは本当に素晴らしい。
