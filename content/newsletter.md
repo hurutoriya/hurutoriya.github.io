@@ -9,7 +9,8 @@ type: section
 
 [Search Engineering Newsletter](https://www.getrevue.co/profile/hurutoriya)
 
-このページから直接購読も可能です。
+以下のフォームにメールアドレスを入力していただいて、直接購読も可能です。
+大手 Newsletter サービスの Revue から自動生成されたフォームなので、セキュリティ状も問題ありませんのでご安心ください
 
 <div id="revue-embed">
   <form action="https://www.getrevue.co/profile/hurutoriya/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
