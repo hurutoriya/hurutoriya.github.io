@@ -1,30 +1,65 @@
 baseurl: "https://shunyaueta.com/"
+defaultContentLanguage: "ja"
 languageCode: "ja"
 title: "Shunya Ueta"
-theme: "hugo-tania"
-paginate: 10
-enableGitInfo: true
+theme: "PaperMod"
+paginate: 5
 
+enableGitInfo: true
 frontmatter:
   lastmod:
     - lastmod
     - :git
+enableInlineShortcodes: true
+enableRobotsTXT: true
 googleAnalytics: UA-39994406-11
 
+languages:
+  ja:
+    languageName: "Japanese"
+    weight: 1
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: About
+          url: about
+          weight: 10
+        - name: Newsletter
+          url: "https://www.getrevue.co/profile/hurutoriya"
+          weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
   titleEmoji: "🦅"
+  homeInfoParams:
+    Title: Hello 👏
+    Content: >
+      - a.k.a @hurutoriya 🦅
 
-  # Limit how many categories filter show above search input.
-  # Default to 5
-  maxCategoryToShow: 10
+      - ソフトウェアエンジニアとして働いています。機械学習の実応用や検索領域に興味があります。
 
-  socialOptions:
-    github: https://github.com/hurutoriya
-    twitter: https://twitter.com/hurutoriya
-    linkedin: https://www.linkedin.com/in/hurutoriya/
-  siteName: "Shunya Ueta"
-  description: Shunya Ueta's blog
+      - _[→see more detail](/about)_
+  socialIcons:
+    - name: github
+      url: "https://github.com/hurutoriya"
+    - name: twitter
+      url: "https://twitter.com/hurutoriya"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/hurutoriya/"
+    - name: rss
+      url: "index.xml"
+  ShowPostNavLinks: true
   author: "Shunya Ueta"
+  title: "Shunya Ueta"
+  description: Shunya Ueta's blog
   images:
     - ogp.jpg
 
@@ -45,9 +80,12 @@ menu:
       url: "/newsletter/"
 
 markup:
-  highlight:
-    noClasses: false
-    lineNos: true
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    noClasses: false
+    style: monokai
