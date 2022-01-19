@@ -3,6 +3,9 @@ title: "OSSのアノテーションツール Label Studio を使って、快適�
 date: 2022-01-09T23:05:16+09:00
 lang: ja
 author: Shunya Ueta
+cover:
+  image: "/posts/2022-01-09/images/3.png"
+  caption: "Label Studio のスクリーンショット"
 tags:
   - annotation
   - machinelearning

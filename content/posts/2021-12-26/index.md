@@ -3,6 +3,9 @@ title: "[抄訳] Daria Sorokina さんによる、 Amazon 検索での製品の�
 date: 2021-12-26T22:52:06+09:00
 lang: ja
 author: Shunya Ueta
+cover:
+  image: "/posts/2021-12-26/images/1.png"
+  caption: "Amazon の検索改善事例"
 tags:
   - search
   - machinelearning

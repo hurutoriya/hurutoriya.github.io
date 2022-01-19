@@ -3,6 +3,9 @@ title: "Amazonがeコマース検索を Lucene により、どうスケールさ
 date: 2021-11-26T20:59:21+09:00
 lang: ja
 author: Shunya Ueta
+cover:
+  image: "/posts/2021-11-26/images/1.png"
+  caption: "Amazon search アーキテクチャ"
 tags:
   - search
   - amazon

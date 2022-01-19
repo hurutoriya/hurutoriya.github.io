@@ -2,8 +2,8 @@
 
 ![github page](https://github.com/hurutoriya/hurutoriya.github.io/workflows/github%20page/badge.svg)
 
-## How to update the theme
+## image path
 
-```bash
-git submodule foreach git pull origin main
-```
+example
+
+![](/posts/2021-12-29/images/1.png)
