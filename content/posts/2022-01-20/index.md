@@ -1,5 +1,5 @@
 ---
-title: "OSS の Google BigQuery UDF `bqutil.fn` を使えば UDF の独自実装を置き換えれるかもしれない"
+title: "OSS の Google BigQuery UDF `bqutil.fn` を使えば UDF の独自実装を置き換えられるかもしれない"
 date: 2022-01-20T00:03:07+09:00
 lang: ja
 author: Shunya Ueta
