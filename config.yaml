@@ -1,7 +1,7 @@
 baseurl: "https://shunyaueta.com/"
 defaultContentLanguage: "ja"
 languageCode: "ja"
-title: "Shunya Ueta"
+title: "🦅 hurutoriya"
 theme: "PaperMod"
 paginate: 5
 
@@ -38,12 +38,9 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  titleEmoji: "🦅"
   homeInfoParams:
     Title: Hello 👏
     Content: >
-      - a.k.a @hurutoriya 🦅
-
       - ソフトウェアエンジニアとして働いています。機械学習の実応用や検索領域に興味があります。
 
       - _[→see more detail](/about)_
@@ -63,7 +60,6 @@ params:
   images:
     - ogp.jpg
   comments: true
-
 
 menu:
   header:
