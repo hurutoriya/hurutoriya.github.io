@@ -1,8 +1,9 @@
 ---
-title: "Machine Learning Casual Talks #10 を開催しました #MLCT"
+title: "Machine Learning Casual Talks #10 を開催しました"
 date: 2019-06-15T22:01:27+09:00
 lang: ja
 tags:
+  - machinelearning
   - mlct
   - event
 ---
