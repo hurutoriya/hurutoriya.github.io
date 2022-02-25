@@ -1,5 +1,5 @@
 ---
-title: "3人以上のスケジュール調整をする際には、ベータ版だけど Calendly の Meeting pollがとても便利"
+title: "3人以上のスケジュール調整をする際には、ベータ版だけど Calendly の Meeting polls がとても便利"
 date: 2022-02-25T16:36:48+09:00
 lang: ja
 author: Shunya Ueta
