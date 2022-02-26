@@ -1,7 +1,9 @@
 ---
-title: "[抄訳] Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)"
+title: "TFXの歴史を振り返りつつ機械学習エンジニアリングを提案する論文「Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)」"
 date: 2021-01-17T00:18:47+09:00
 lang: ja
+author: Shunya Ueta
+ShowToc: true
 tags:
   - tensorflow
   - machinelearning

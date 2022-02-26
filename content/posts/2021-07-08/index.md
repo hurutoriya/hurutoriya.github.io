@@ -1,40 +1,42 @@
 ---
 title: "Streamlit でアップロードしたファイルのパスを取得して、特定の処理をする"
 date: 2021-07-08T22:40:37+09:00
-lang: en
+lang: ja
 author: Shunya Ueta
+cover:
+  image: "/posts/2021-07-08/images/1.png"
+  caption: "Streamlit スクリーンショット"
 tags:
-- python
-- streamlit
+  - python
+  - streamlit
 ---
 
 ## モチベーション
 
-[Streamlit](https://streamlit.io/) はPython code のみで簡単かつ高速にWebアプリを作成できる強力なパッケージ。
-Streamplit で作られたWebアプリ経由でファイルをアップロードして、そのファイルを処理したい際の具体的な実現方法がなかったので備忘録がてら残しておく。
+[Streamlit](https://streamlit.io/) は Python code のみで簡単かつ高速に Web アプリを作成できる強力なパッケージ。
+Streamplit で作られた Web アプリ経由でファイルをアップロードして、そのファイルを処理したい際の具体的な実現方法がなかったので備忘録がてら残しておく。
 
-## PDFファイルをアップロードして、画像に変換するWebアプリ
+## PDF ファイルをアップロードして、画像に変換する Web アプリ
 
 具体的に例を交えつつ説明する。
-Streamlit を使って、PDFファイルをアップロードしてアップロードされたPDFファイルを画像化するアプリを作成する。
-今回は、[Belval/pdf2image](https://github.com/Belval/pdf2image) というPDFパッケージを使用する。
-このパッケージは処理したいPDFのファイルパスを要求するインターフェースなので今回の実例に沿っていてわかりやすい。
+Streamlit を使って、PDF ファイルをアップロードしてアップロードされた PDF ファイルを画像化するアプリを作成する。
+今回は、[Belval/pdf2image](https://github.com/Belval/pdf2image) という PDF パッケージを使用する。
+このパッケージは処理したい PDF のファイルパスを要求するインターフェースなので今回の実例に沿っていてわかりやすい。
 ローカルマシンは MacOS を想定しており、`pdf2image` は[poppler](https://poppler.freedesktop.org/) の事前インストールが必須。
 
 ### 完成形のスクリーンショット
 
-![get the uploaded file path in Streamlit](/posts/2021-07-08/images/streamlit.png)
+![get the uploaded file path in Streamlit](/posts/2021-07-08/images/1.png)
 
+GitHub でもコードを公開しておきました。
 
-GitHubでもコードを公開しておきました。
-
- [hurutoriya/streamlist-file-uploader-example](https://github.com/hurutoriya/streamlist-file-uploader-example)
+[hurutoriya/streamlist-file-uploader-example](https://github.com/hurutoriya/streamlist-file-uploader-example)
 
 デモ動画はこちら
 
 [Demo Movie in Youtube](https://youtu.be/ILGVapirwlg)
 
-###  Makefile 
+### Makefile
 
 Makefile は依存パッケージを事前インストールするために採用
 
@@ -48,7 +50,7 @@ run:
 
 ### Poetry for package management
 
-環境構築はpoetry を使っています。
+環境構築は poetry を使っています。
 
 ```toml
 [tool.poetry]
@@ -70,7 +72,6 @@ pytest = "^5.2"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 ```
-
 
 ### Streamlit Python file
 
@@ -129,8 +130,8 @@ if __name__ == "__main__":
 
 これで、Streamlit 上でファイルをアップロードして、そのアップロードされたファイルに対する処理ができます。
 画像や音声など色々応用先があるので便利そう。
-動作が遅いという欠点はあれど、これだけ簡単にGUIをPython のみで構築できるのは驚き。
-Protly Dashも2年ほど前に使ったことがあるけど、UIのライフサイクルやHTMLを結構意識しないとかけなかったので辛かった記憶があるので、なおさら感動している。
+動作が遅いという欠点はあれど、これだけ簡単に GUI を Python のみで構築できるのは驚き。
+Protly Dash も 2 年ほど前に使ったことがあるけど、UI のライフサイクルや HTML を結構意識しないとかけなかったので辛かった記憶があるので、なおさら感動している。
 
 ## Reference
 

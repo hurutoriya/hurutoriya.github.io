@@ -1,7 +1,8 @@
 ---
-title: "[抄訳] What’s your ML test score? A rubric for ML production systems"
+title: "機械学習システムの信頼性を数値化する論文「 What’s your ML test score? A rubric for ML production systems」"
 date: 2020-04-19T22:18:10+09:00
 lang: ja
+ShowToc: true
 tags:
   - machinelearning
   - paper
@@ -9,9 +10,9 @@ tags:
   - mlops
 ---
 
-NIPS206 にて開催された [Reliable Machine Learning in the Wild - NIPS 2016 Workshop (2016)](https://sites.google.com/site/wildml2016nips/) という、`現実世界でどうやって信頼性の高い機械学習に取り組んでいくか`についてのワークショップがある
+NIPS206 にて開催された [Reliable Machine Learning in the Wild - NIPS 2016 Workshop (2016)](https://sites.google.com/site/wildml2016nips/) という、`現実世界でどうやって信頼性の高い機械学習に取り組んでいくか`についてのワークショップがある。
 
-ここで Google から発表された `What’s your ML test score? A rubric for ML production systems` がとても面白く、身になるものが多かったのでメモがてら抄訳を残しておく
+ここで Google から発表された `What’s your ML test score? A rubric for ML production systems` がとても面白く、身になるものが多かったのでメモがてら抄訳を残しておく。
 
 - [PDF](https://research.google/pubs/pub45742/)
 - [Slide](https://0586f9b3-a-62cb3a1a-s-sites.googlegroups.com/site/wildml2016nips/SculleySlides1.pdf?attachauth=ANoY7crr9fea9TxDl1EIyOScNG1yJSo3gBkHKOq5exLlPtetuZ_EiAKL3rJq7h17Nwcx82i0CSwmLWc97IQiQdTBODUaMhMm7CBrbpU7uQXx55Km8JFTLlOMIgFflPev0_chmj41VydTan6OjwAOfeQ_U5tRz7m-HHi0rKvumbALo74j5XV0NbPaXcQDbwInz3CdFaDamzvwOH7nn0V-DADxKf6Kqkv-SA%3D%3D&attredirects=0)

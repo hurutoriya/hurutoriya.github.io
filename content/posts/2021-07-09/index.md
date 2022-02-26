@@ -3,33 +3,34 @@ title: "How to get the uploaded file path and processing its file in  Streamlit"
 date: 2021-07-09T22:40:37+09:00
 lang: en
 author: Shunya Ueta
+cover:
+  image: "/posts/2021-07-09/images/1.png"
+  caption: "Streamlit app screen shot"
 tags:
-- python
-- streamlit
+  - python
+  - streamlit
 ---
 
 ## Motivation
 
 [Streamlit](https://streamlit.io/) is a powerful tools to quickliy build the demo application.
-If we use Streamlit file upload feature via WebBrowser  then we need to its file path to process the uploaded file.
+If we use Streamlit file upload feature via WebBrowser then we need to its file path to process the uploaded file.
 So I will introduce how to get uploaed file path in Streamlit.
 
 ## Example
 
-We buid the PDF File upload feature  in Streamlit and its PDF file convert to image.
+We buid the PDF File upload feature in Streamlit and its PDF file convert to image.
 We use [Belval/pdf2image](https://github.com/Belval/pdf2image) which is a populer PDF converting tool. It needs to file path to apply the module feature. we assume local machine is the MacOS then we need to install the [poppler](https://poppler.freedesktop.org/) to use `pdf2image`,
-
 
 ### Demo app screenshot and open sourced code
 
-![get the uploaded file path in Streamlit](/posts/2021-07-09/images/streamlit.png)
-
+![get the uploaded file path in Streamlit](/posts/2021-07-09/images/1.png)
 
 We also publised a code example at [hurutoriya/streamlist-file-uploader-example](https://github.com/hurutoriya/streamlist-file-uploader-example)
 
 [Demo Movie in Youtube](https://youtu.be/ILGVapirwlg)
 
-###  Makefile 
+### Makefile
 
 It worked task runner to install the dependency and run the app.
 
@@ -63,7 +64,6 @@ pytest = "^5.2"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 ```
-
 
 ### Streamlit Python file
 

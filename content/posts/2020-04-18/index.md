@@ -2,6 +2,9 @@
 title: "CourseraでHow Google does Machine Learning の講義を修了した"
 date: 2020-04-18T00:59:23+09:00
 lang: ja
+cover:
+  image: "/posts/2020-04-18/images/1.png"
+  caption: "Coursera の証明書"
 tags:
   - coursera
   - machilelearning
@@ -9,7 +12,7 @@ tags:
 
 Coursera で[How Google does Machine Learning](https://www.coursera.org/learn/google-machine-learning) の講義を修了した
 
-![coursera](/posts/2020-04-18/images/coursera.png)
+![coursera](/posts/2020-04-18/images/1.png)
 
 [Certificate](https://coursera.org/share/a4b6130f11ba4e96b80b16afe7277289) はこちら
 

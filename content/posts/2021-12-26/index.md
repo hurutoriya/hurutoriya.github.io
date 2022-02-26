@@ -1,11 +1,12 @@
 ---
-title: "[抄訳] Daria Sorokina さんによる、 Amazon 検索での製品のランキング付けの楽しさ at MLconf SF 2016"
+title: "Daria Sorokina さんによる、 Amazon 検索での製品のランキング付けの楽しさ at MLconf SF 2016"
 date: 2021-12-26T22:52:06+09:00
 lang: ja
 author: Shunya Ueta
 cover:
   image: "/posts/2021-12-26/images/1.png"
   caption: "Amazon の検索改善事例"
+ShowToc: true
 tags:
   - search
   - machinelearning

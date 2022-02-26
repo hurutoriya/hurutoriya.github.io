@@ -6,6 +6,7 @@ author: Shunya Ueta
 cover:
   image: "/posts/2021-11-26/images/1.png"
   caption: "Amazon search アーキテクチャ"
+ShowToc: true
 tags:
   - search
   - amazon
