@@ -150,6 +150,10 @@ LSH のアプローチでは、データの規模に対して線形にハッシ�
 この課題は web 規模のデータを扱うと容易にメモリが爆発を引き起こす。
 その課題を解決するために reservoir sampling algorithm[25] を使って解決している。
 
+reservoir sampling algorithm の日本語の解説記事はこちら
+
+[大量のテキストからランダムに少数の行を抽出したい - Reservoir Sampling](https://sucrose.hatenablog.com/entry/2014/01/11/004615)
+
 `NOTE`: ここ完全に理解不足なので言葉だけ理解。
 
 ![ROSE Alg 1](/posts/2022-03-03/images/alg-1.png)
