@@ -118,7 +118,7 @@ hash-tables と Bloom fillters によって、キャッシュは完全一致に�
 
 定数時間と定数メモリで実行可能なロバストなキャッシュの仕組みである「ROSE」提案する。
 
-### Locality-SEnsitive Hasing
+### Locality-Sensitive Hasing
 
 LSH の解説資料はこちらの資料がわかりやすかった。
 
