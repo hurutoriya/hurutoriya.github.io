@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>search on 🦅 hurutoriya</title><link>https://shunyaueta.com/tags/search/</link><description>Recent content in search on 🦅 hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 03 Mar 2022 09:35:29 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/search/index.xml" rel="self" type="application/rss+xml"/><item><title>Amazon の製品検索で使われるロバストなキャッシュ手法の論文「ROSE: Robust Caches for Amazon Product Search」</title><link>https://shunyaueta.com/posts/2022-03-03/</link><pubDate>Thu, 03 Mar 2022 09:35:29 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-03/</guid><description>Web 検索とデータマイニングのトップカンファレンス WSDM2022 のワークショップで The First International Workshop on INTERACTIVE AND SCALABLE INFORMATION RETRIEVAL METHODS FOR ECOMMERCE (ISIR-ecom) が先日開催された。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>search on 🦅 hurutoriya</title><link>https://shunyaueta.com/tags/search/</link><description>Recent content in search on 🦅 hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 04 Mar 2022 00:03:08 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/search/index.xml" rel="self" type="application/rss+xml"/><item><title>デスクトップのGoogle 検索の検索フォームUIがかなり変化していた</title><link>https://shunyaueta.com/posts/2022-03-04/</link><pubDate>Fri, 04 Mar 2022 00:03:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-04/</guid><description>現在 AB テスト中なのかもしれないが、かなり変化している。
+以前は QAC(Query Auto Completition) のみ、検索フォームにフォーカスがあたった時に表示していた記憶がある。 だが、現在は一度キーワードを検索して検索結果画面に遷移した後に、検索フォームにフォーカスすると
+の画面のように、Query Suggest や Knowledge graph の結果をキーワードフォームに表示するようになった。
+確かに、キーワードを再度検索する際に上記のコンポーネントを入れるのは試してみるのは良いのかもしれない。
+特にデスクトップの検索ならハコもかなり余っているのでまだ有効活用できる余地はありそう。
+でも、検索のユーザーインターフェースを紹介する書籍ではアンチパターンなのでどうなんだろうか。
+情報検索のためのユーザインタフェース
+1.1: KEEPING THE INTERFACE SIMPLE _https://searchuserinterfaces.com/book/sui_ch1_design.html_
+Figure 1.1: Search results listings from Infoseek in 1997 (left) and Google in 2007 (right), courtesy Jan Pedersen. 画像は上記から引用
+と思いつつも、今の Google 検索のインターフェイスも
+書籍の Google 検索と見比べてもかなりリッチになっているので、書籍が執筆された 2011 年からすると時代は変わっている感も否めない。
+スクリーンショットが取られた 2007 年から 15 年以上も経過してますしね
+なので 情報検索のためのユーザインタフェース も現状の状況も踏まえた 第 2 版が出ないのだろうか?と期待。</description></item><item><title>Amazon の製品検索で使われるロバストなキャッシュ手法の論文「ROSE: Robust Caches for Amazon Product Search」</title><link>https://shunyaueta.com/posts/2022-03-03/</link><pubDate>Thu, 03 Mar 2022 09:35:29 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-03/</guid><description>Web 検索とデータマイニングのトップカンファレンス WSDM2022 のワークショップで The First International Workshop on INTERACTIVE AND SCALABLE INFORMATION RETRIEVAL METHODS FOR ECOMMERCE (ISIR-ecom) が先日開催された。
 テーマは e コマース上での検索において
 検索システムのスケーラビリティ どうやって適合性(Relevancy)をシステムで改善したか システムの改善 についてをテーマにした検索エンジニアなら垂涎もののワークショップとなっている。
 同様の検索システムや実応用に注目したワークショップでは、以下のようなワークショップがある。
