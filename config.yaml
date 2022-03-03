@@ -56,6 +56,8 @@ params:
       url: "https://twitter.com/hurutoriya"
     - name: linkedin
       url: "https://www.linkedin.com/in/hurutoriya/"
+    - name: buymeacoffee
+      url: https://www.buymeacoffee.com/hurutoriya
     - name: rss
       url: "index.xml"
   ShowPostNavLinks: true
