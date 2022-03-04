@@ -27,7 +27,7 @@ tags:
 [情報検索のためのユーザインタフェース](https://amzn.to/3pA4xvz)
 
 > 1.1: KEEPING THE INTERFACE SIMPLE
-> _https://searchuserinterfaces.com/book/sui_ch1_design.html_
+> **https://searchuserinterfaces.com/book/sui_ch1_design.html**
 
 ![2022/03/04 時点のGoogle 検索のインターフェイス](/posts/2022-03-04/images/infoseek_vs_google.png)
 
@@ -43,4 +43,14 @@ tags:
 
 スクリーンショットが取られた 2007 年から 15 年以上も経過してますしね
 
-なので [情報検索のためのユーザインタフェース](https://amzn.to/3pA4xvz) も現状の状況も踏まえた 第 2 版が出ないのだろうか?と期待。
+@joho_hideo さんから面白いコメントがあったので追記しました。
+
+> @joho_hideo 特別事例ですが「COVID-19」の検索結果はよく設計されていると思います。
+> **https://twitter.com/joho_hideo/status/1499549278012055552**
+
+確かに、これぞまさに情報検索の真髄ですね。
+ダッシュボード的な情報を表示する
+
+![COVID-19 SERP](/posts/2022-03-04/images/www.google.com_search_q=COVID-19&oq=COVID-19&aqs=chrome..69i57j0i457i512j0i512l8.2087j0j4&sourceid=chrome&ie=UTF-8.png)
+
+[情報検索のためのユーザインタフェース](https://amzn.to/3pA4xvz) も現状の状況も踏まえた改訂版が出たら面白そう？
