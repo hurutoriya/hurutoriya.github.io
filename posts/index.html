@@ -6,12 +6,14 @@
 特にデスクトップの検索ならハコもかなり余っているのでまだ有効活用できる余地はありそう。
 でも、検索のユーザーインターフェースを紹介する書籍ではアンチパターンなのでどうなんだろうか。
 情報検索のためのユーザインタフェース
-1.1: KEEPING THE INTERFACE SIMPLE _https://searchuserinterfaces.com/book/sui_ch1_design.html_
+1.1: KEEPING THE INTERFACE SIMPLE https://searchuserinterfaces.com/book/sui_ch1_design.html
 Figure 1.1: Search results listings from Infoseek in 1997 (left) and Google in 2007 (right), courtesy Jan Pedersen. 画像は上記から引用
 と思いつつも、今の Google 検索のインターフェイスも
 書籍の Google 検索と見比べてもかなりリッチになっているので、書籍が執筆された 2011 年からすると時代は変わっている感も否めない。
 スクリーンショットが取られた 2007 年から 15 年以上も経過してますしね
-なので 情報検索のためのユーザインタフェース も現状の状況も踏まえた 第 2 版が出ないのだろうか?と期待。</p></section><footer class=entry-footer><span title="2022-03-04 00:03:08 +0900 +0900">March 4, 2022</span>&nbsp;·&nbsp;Shunya Ueta</footer><a class=entry-link aria-label="post link to デスクトップのGoogle 検索の検索フォームUIがかなり変化していた" href=https://shunyaueta.com/posts/2022-03-04/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://shunyaueta.com/posts/2022-03-03/images/fig-1.png alt="ROSE の概要"></figure><header class=entry-header><h2>Amazon の製品検索で使われるロバストなキャッシュ手法の論文「ROSE: Robust Caches for Amazon Product Search」</h2></header><section class=entry-content><p>Web 検索とデータマイニングのトップカンファレンス WSDM2022 のワークショップで The First International Workshop on INTERACTIVE AND SCALABLE INFORMATION RETRIEVAL METHODS FOR ECOMMERCE (ISIR-ecom) が先日開催された。
+@joho_hideo さんから面白いコメントがあったので追記しました。
+@joho_hideo 特別事例ですが「COVID-19」の検索結果はよく設計されていると思います。 https://twitter.com/joho_hideo/status/1499549278012055552
+確かに、これぞまさに情報検索の真髄ですね。 ダッシュボード的な情報を表示する...</p></section><footer class=entry-footer><span title="2022-03-04 00:03:08 +0900 +0900">March 4, 2022</span>&nbsp;·&nbsp;Shunya Ueta</footer><a class=entry-link aria-label="post link to デスクトップのGoogle 検索の検索フォームUIがかなり変化していた" href=https://shunyaueta.com/posts/2022-03-04/></a></article><article class=post-entry><figure class=entry-cover><img loading=lazy src=https://shunyaueta.com/posts/2022-03-03/images/fig-1.png alt="ROSE の概要"></figure><header class=entry-header><h2>Amazon の製品検索で使われるロバストなキャッシュ手法の論文「ROSE: Robust Caches for Amazon Product Search」</h2></header><section class=entry-content><p>Web 検索とデータマイニングのトップカンファレンス WSDM2022 のワークショップで The First International Workshop on INTERACTIVE AND SCALABLE INFORMATION RETRIEVAL METHODS FOR ECOMMERCE (ISIR-ecom) が先日開催された。
 テーマは e コマース上での検索において
 検索システムのスケーラビリティ どうやって適合性(Relevancy)をシステムで改善したか システムの改善 についてをテーマにした検索エンジニアなら垂涎もののワークショップとなっている。
 同様の検索システムや実応用に注目したワークショップでは、以下のようなワークショップがある。
