@@ -12,7 +12,7 @@ Figure 1.1: Search results listings from Infoseek in 1997 (left) and Google in 2
 スクリーンショットが取られた 2007 年から 15 年以上も経過してますしね
 @joho_hideo さんから面白いコメントがあったので追記しました。
 @joho_hideo 特別事例ですが「COVID-19」の検索結果はよく設計されていると思います。 https://twitter.com/joho_hideo/status/1499549278012055552
-確かに、これぞまさに情報検索の真髄ですね。 ダッシュボード的な情報を表示する</description></item><item><title>Amazon の製品検索で使われるロバストなキャッシュ手法の論文「ROSE: Robust Caches for Amazon Product Search」</title><link>https://shunyaueta.com/posts/2022-03-03/</link><pubDate>Thu, 03 Mar 2022 09:35:29 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-03/</guid><description>Web 検索とデータマイニングのトップカンファレンス WSDM2022 のワークショップで The First International Workshop on INTERACTIVE AND SCALABLE INFORMATION RETRIEVAL METHODS FOR ECOMMERCE (ISIR-ecom) が先日開催された。
+確かに、これぞまさに情報検索の真髄ですね。 ダッシュボード的な情報を表示している</description></item><item><title>Amazon の製品検索で使われるロバストなキャッシュ手法の論文「ROSE: Robust Caches for Amazon Product Search」</title><link>https://shunyaueta.com/posts/2022-03-03/</link><pubDate>Thu, 03 Mar 2022 09:35:29 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-03/</guid><description>Web 検索とデータマイニングのトップカンファレンス WSDM2022 のワークショップで The First International Workshop on INTERACTIVE AND SCALABLE INFORMATION RETRIEVAL METHODS FOR ECOMMERCE (ISIR-ecom) が先日開催された。
 テーマは e コマース上での検索において
 検索システムのスケーラビリティ どうやって適合性(Relevancy)をシステムで改善したか システムの改善 についてをテーマにした検索エンジニアなら垂涎もののワークショップとなっている。
 同様の検索システムや実応用に注目したワークショップでは、以下のようなワークショップがある。
