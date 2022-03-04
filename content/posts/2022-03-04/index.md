@@ -49,7 +49,7 @@ tags:
 > **https://twitter.com/joho_hideo/status/1499549278012055552**
 
 確かに、これぞまさに情報検索の真髄ですね。
-ダッシュボード的な情報を表示する
+ダッシュボード的な情報を表示している
 
 ![COVID-19 SERP](/posts/2022-03-04/images/www.google.com_search_q=COVID-19&oq=COVID-19&aqs=chrome..69i57j0i457i512j0i512l8.2087j0j4&sourceid=chrome&ie=UTF-8.png)
 
