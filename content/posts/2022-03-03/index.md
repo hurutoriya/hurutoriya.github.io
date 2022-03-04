@@ -222,6 +222,31 @@ ROSE による誤植修正のための Lexical Preserving Hashing によるマ�
 
 評価指標としては、一般的な Precision, Recall, F1 を採用。
 
+各指標の具体例としては、
+例えば「red nike shoes」という original intent となるクエリが存在するとする。この「red nike shoes」と original intent は同一だが、語彙的な誤りによって「red nike shoos」、「red nike shooes」などのクエリが存在する。
+
+これら、「red nike shoes」を original intent とするクエリ数が 20 件あり、以下のような分布になっている。
+
+- 「red nike shoes」: 10 件
+  - 「red nike shoos」: 5 件
+  - 「red nike shooes」: 5 件
+
+例えば、完全一致キャッシュでは、「red nike shoes」とう文字列に対して lool up を行い、
+
+- precision: 100%
+- recall: 50%
+
+となる。
+
+そして、ROSE-LP が 「red nike shoos」を「red nike shoes」に対して map ができたとする。(「red nike shooes」の map は失敗)
+
+- precision: 100%
+- recall: 75%
+
+となる。
+
+上記のように誤植が含まれるクエリをどれだけ各種手法で書き換えることができたかが、評価指標となっている。
+
 #### 全体を通した実験結果
 
 ##### 検索性能
@@ -240,6 +265,11 @@ ROSE-LP は 60m でインデックス生成を完了。ROSE-PT は 75m。
 
 ![ROSE Figure 3](/posts/2022-03-03/images/fig-3.png)
 
+図 3 では、ROSE が担っている２つのコンポーネントを解説。
+
+- (a) 誤植の問題を解決するクエリ書き換え。「nike shoos」という誤植のクエリが来た際に、「nike shoes」に書き換え
+- (b) 深層学習モデル高速化のためのキャッシュ上での製品タイプ予測。Cash Hit した場合、ROSE によってクエリ(q)の製品タイプ(PT)を返す。キャッシュヒットしなかった場合は、深層学習モデルによってクエリに製品タイプの推論を行い、返す。
+
 ## SYSTEM DEPLOYMENT IN AMAZON
 
 ### ROSE for Query Rewrite
@@ -247,7 +277,7 @@ ROSE-LP は 60m でインデックス生成を完了。ROSE-PT は 75m。
 顧客が誤植によるクエリクエリを入力してきた際にクエリ書き換えを行うために実際に ROSE をデプロイ。使った手法は ROSE-LP。これによって、検索結果がそもそも低品質なクエリが高品質な検索結果として提示されるようになった。
 
 オンラインのクエリ書き換えの結果はドメインエキスパートにり測定・評価され、良好な結果となった。
-また、いくつものビジネス指標も有意に改善された。
+また、複数のビジネス指標も有意に改善された。
 
 ![ROSE Table 2](/posts/2022-03-03/images/table-2.png)
 
