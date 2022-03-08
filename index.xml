@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>🦅 hurutoriya</title><link>https://shunyaueta.com/</link><description>Recent content on 🦅 hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 15 Jun 2019 19:25:33 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>デスクトップのGoogle 検索の検索フォームUIがかなり変化していた</title><link>https://shunyaueta.com/posts/2022-03-04/</link><pubDate>Fri, 04 Mar 2022 00:03:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-04/</guid><description>現在 AB テスト中なのかもしれないが、かなり変化している。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>🦅 hurutoriya</title><link>https://shunyaueta.com/</link><description>Recent content on 🦅 hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 15 Jun 2019 19:25:33 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Google が公開している、より良いデータ分析のためのガイドブック「Good Data Analysis」で、データ分析の要所が簡潔にまとめられていて感動した</title><link>https://shunyaueta.com/posts/2022-03-08/</link><pubDate>Tue, 08 Mar 2022 20:42:56 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-08/</guid><description>Google の非公式ブログで、The Unofficial Google Data Science Blog というデータサイエンスをテーマにしたブログがある。
+その中で、
+Practical advice for analysis of large, complex data sets
+の記事をにして作られた Google Developers Guides: Machine Learning Guides &amp;gt; Good Data Analysis を昨日見かけて読んでいたら素晴らしいドキュメントで、ここでその感動を共有したかったので記事を書いた。
+Good Data Analysis の概要 Technical: どのような技術を使ってデータを見るべきか Process: データへの取り組み方。どのような観点でデータを見るべきか Mindset: どのような考えでデータ分析をすすめていくべきか の三段構成でガイドブックが書かれている。
+特にガイドブックで自分が好きな言葉は Mindset 章の
+Data analysis starts with questions, not data or a technique
+データ分析は質問とともにのみ始まる、データや技術からデータ分析は始まらない
+と
+Be both skeptic and champion
+懐疑的であれ、そしてそのデータに一番詳しい存在(チャンピオン)であれ
+でした。
+最近課題の理解が本当に大事だなと痛感する出来事に直面した後にこのドキュメントを読んだので非常に刺さりました。</description></item><item><title>デスクトップのGoogle 検索の検索フォームUIがかなり変化していた</title><link>https://shunyaueta.com/posts/2022-03-04/</link><pubDate>Fri, 04 Mar 2022 00:03:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-04/</guid><description>現在 AB テスト中なのかもしれないが、かなり変化している。
 以前は QAC(Query Auto Completition) のみ、検索フォームにフォーカスがあたった時に表示していた記憶がある。 だが、現在は一度キーワードを検索して検索結果画面に遷移した後に、検索フォームにフォーカスすると
 の画面のように、Query Suggest や Knowledge graph の結果をキーワードフォームに表示するようになった。
 確かに、キーワードを再度検索する際に上記のコンポーネントを入れるのは試してみるのは良いのかもしれない。
