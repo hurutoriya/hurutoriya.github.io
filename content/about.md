@@ -4,6 +4,8 @@ date: 2019-06-15T19:25:33+09:00
 type: "page"
 ---
 
+Shunya Ueta (a.k.a. @hurutoriya)
+
 Software Engineer として働いています。
 Opinions are my own.
 
@@ -29,7 +31,7 @@ Opinions are my own.
 - 2018.07.13 [How to break the machine learning system barrier ?](https://mlct.connpass.com/event/88797/) at Machine Learning Casual Talks #5
   - [slideshare](https://www.slideshare.net/shunyaueta/how-to-break-the-machine-learning-system-barrier)
 
-### Published Book
+### Publish
 
 - 2021.08.18 [機械学習エンジニアの学会での論文発表のススメ。応募から査読通過までの流れ](https://offers.jp/media/sidejob/workstyle/a_1966)
   - Offers magazine というメディアに、業務での実績の論文化について寄稿
