@@ -13,7 +13,7 @@ Google の非公式ブログで、[The Unofficial Google Data Science Blog](http
 
 [Practical advice for analysis of large, complex data sets](https://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html)
 
-の記事を元にして作られた [Google Developers Guides: Machine Learning Guides > Good Data Analysis](https://developers.google.com/machine-learning/guides/good-data-analysis) を昨日見かけて読んでいたら素晴らしいドキュメントで、ここでその感動を共有したかったので記事を書いた。
+の記事を元にして作られた [Google Developers Guides: Machine Learning Guides > Good Data Analysis](https://developers.google.com/machine-learning/guides/good-data-analysis) を昨日見かけて読んでいたら素晴らしいドキュメントだったので、ここでその感動を共有したかったので筆をとったしだい。
 
 ## Good Data Analysis の概要
 
