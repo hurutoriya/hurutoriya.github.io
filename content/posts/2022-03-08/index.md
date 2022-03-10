@@ -39,12 +39,12 @@ Google の非公式ブログで、[The Unofficial Google Data Science Blog](http
 
 最近課題の理解が本当に大事だなと痛感する出来事に直面した後にこのドキュメントを読んだので非常に刺さりました。
 
-Google さんは、同様のガイドブックシリーズで
+Google は、同様のガイドブックシリーズで
 
 - [Rules of Machine Learning](https://developers.google.com/machine-learning/guides/rules-of-ml): 機械学習実践の聖書
 - [People+AI Guidebook](https://pair.withgoogle.com/guidebook/): 機械学習を用いた体験をどう作り込むかの知識とベストプラクティスがまとめられている
 
-を公開してくれていて非常にありがたい。
+を公開してくれていて、彼らが経験して本質的な知見を文章化して公開してくれるのは非常にありがたい。
 
 「Rules of ML」 も今回の 「Good Data Analysis」も本質的な事柄を選びぬいているので、時間が経過しても全く色褪せない。時間劣化が全くしない情報を文章として残して、それが知識として伝搬される。これぞまさに知の高速道路。
 
