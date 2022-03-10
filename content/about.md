@@ -1,11 +1,10 @@
 ---
-title: "About"
+title: "Shunya Ueta"
 date: 2019-06-15T19:25:33+09:00
 type: "page"
 ---
 
 Shunya Ueta (a.k.a. @hurutoriya)
-
 Software Engineer として働いています。
 Opinions are my own.
 
