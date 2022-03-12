@@ -1,10 +1,13 @@
 ---
-title: "Shunya Ueta"
-date: 2019-06-15T19:25:33+09:00
+title: "このサイトについて"
 type: "page"
 ---
 
-Shunya Ueta (a.k.a. @hurutoriya)
+## 著者
+
+上田隼也 (a.k.a. @hurutoriya) のブログです。
+機械学習の実応用や検索技術領域に興味があります。
+
 Software Engineer として働いています。
 Opinions are my own.
 
@@ -14,9 +17,9 @@ Opinions are my own.
 - [Slideshare](http://www.slideshare.net/shunyaueta)
 - [Google Scholar](https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ)
 
-## Activity
+## 活動履歴
 
-### Tech Talks
+### 登壇
 
 - 2020.08.07 [Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) at OpML20
   - 機械学習による C2C マーケットプレイスでの商品監視改善成果が MLOps の査読付き国際会議 OpML'20 にて登壇。
@@ -27,10 +30,10 @@ Opinions are my own.
   - [slideshare](https://www.slideshare.net/shunyaueta/introduction-to-tfx-tfdvtfttfma)
 - 2018.09.01 [Introduction to Kubeflow](https://tokyo2018.gdgjapan.org/ml) at GDG DevFest 2018 Tokyo
   - [slideshare](https://www.slideshare.net/shunyaueta/kubeflow-devfest18) in Japanese.
-- 2018.07.13 [How to break the machine learning system barrier ?](https://mlct.connpass.com/event/88797/) at Machine Learning Casual Talks #5
+- 2018.07.13 [How to break the machine learning system barrier?](https://mlct.connpass.com/event/88797/) at Machine Learning Casual Talks #5
   - [slideshare](https://www.slideshare.net/shunyaueta/how-to-break-the-machine-learning-system-barrier)
 
-### Publish
+### 執筆
 
 - 2021.08.18 [機械学習エンジニアの学会での論文発表のススメ。応募から査読通過までの流れ](https://offers.jp/media/sidejob/workstyle/a_1966)
   - Offers magazine というメディアに、業務での実績の論文化について寄稿
@@ -44,5 +47,5 @@ Opinions are my own.
 
 - [Machine Learning Casual Talks](https://mlct.connpass.com/)
   - 第 5 回から運営者として、機械学習の実応用をテーマにしたコミュニティを運営しています。
-- パターン認識と機械学習の勉強会 @筑波大学
-  - 2015.03-2017.03 まで主催していた筑波大学で開催される機械学習に関する勉強会
+- [パターン認識と機械学習の勉強会 @筑波大学](https://cs-cafe.connpass.com/)
+  - 大学在学時に 2015.03-2017.03 まで主催していた筑波大学で開催される機械学習に関する勉強会

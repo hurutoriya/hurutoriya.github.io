@@ -44,7 +44,7 @@ params:
   homeInfoParams:
     Title: Hello 👏
     Content: >
-      - ソフトウェアエンジニアとして働いています。機械学習の実応用や検索技術領域に興味があります。
+      - ソフトウェアエンジニアとして働いています。
 
       - ソフトウェア開発や機械学習、検索技術、データ分析、読んだ論文について主に執筆しています。
 
@@ -62,6 +62,10 @@ params:
       url: https://www.buymeacoffee.com/hurutoriya
     - name: rss
       url: "index.xml"
+  editPost:
+    URL: "https://github.com/hurutoriya/hurutoriya.github.io/tree/source/content"
+    Text: "Source"
+    appendFilePath: true # to append file path to Edit link
   ShowPostNavLinks: true
   author: "Shunya Ueta"
   title: "Shunya Ueta"
