@@ -29,8 +29,8 @@ languages:
         - name: Newsletter
           url: "https://www.getrevue.co/profile/hurutoriya"
           weight: 10
-        - name: Support
-          url: "https://www.buymeacoffee.com/hurutoriya"
+        - name: RSS
+          url: index.xml
           weight: 10
 
 outputs:
