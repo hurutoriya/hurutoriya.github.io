@@ -23,7 +23,8 @@ Opinions are my own.
 
 - `2020.08.07` [Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) at OpML20
   - 機械学習による C2C マーケットプレイスでの商品監視改善成果が MLOps の査読付き国際会議 OpML'20 にて登壇
-  - [YouTube](https://www.youtube.com/watch?v=_rvEcH_zyt4), [slide](https://www.slideshare.net/shunyaueta/auto-content-moderation-in-c2c-ecommerce)
+    - [YouTube](https://www.youtube.com/watch?v=_rvEcH_zyt4)
+    - [Slide](https://speakerdeck.com/hurutoriya/auto-content-moderation-in-c2c-e-commerce-at-opml20)
 
 ### 執筆
 
