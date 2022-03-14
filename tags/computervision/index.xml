@@ -43,7 +43,7 @@ MIT Media Lab Affective Computing Group のプロジェクト。
 論文のまとめスライドは以下
 One Slide Summary
 HCI 系の論文は初めてまともに読んだんですが、
-実験デザインが一番難しそう 人と計算機の関係を研究するので、必然的に人間の感性をどう評価する話にもつながってきてる? 手法に重きを置くというよりも、問題に重きを置いている印象 普段自分は、数値線形代数や機械学習、コンピュータビジョンを主にやっていて、精度をどれだけ出せるか、正解率をどれだけ向上や、速度をどれだけ上げれるかを理論的に保証、提案したりしていますが、面白い問題や興味深いデータを集めることも大事だなと思った。
+実験デザインが一番難しそう。人と計算機の関係を研究するので、必然的に人間の感性をどう評価する話にもつながってきてる? 手法に重きを置くというよりも、問題に重きを置いている印象 普段自分は、数値線形代数や機械学習、コンピュータビジョンを主にやっていて、精度をどれだけ出せるか、正解率をどれだけ向上や、速度をどれだけ上げれるかを理論的に保証、提案したりしていますが、面白い問題や興味深いデータを集めることも大事だなと思った。
 実験計画法¹もかなり重要で、メンターの人から実験計画法の成り立ちを教えてもらってとてもおもしろかった。</description></item><item><title>OpenCV 3.3から使えるDNNモジュールを使って物体検出</title><link>https://shunyaueta.com/posts/2017-11-14/</link><pubDate>Tue, 14 Nov 2017 11:36:43 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-14/</guid><description>OpenCV と MobileNet を使って物体検出を行った
 Object Detection with OpenCV dnn modules and MobileNetSSD on Jupyter Notebook
 Introduction 物体検出を Deep Leaning と OpenCV を用いて行う

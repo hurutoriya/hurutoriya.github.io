@@ -43,12 +43,15 @@ Overview クエリの p999 latency に対して非常に厳しい制限を行っ
 第一回は、発起人の一人である自分がクエリ分類について発表を行った。
 Query Understanding for Search Engines (The Information Retrieval Series, 46) の第二章を主にテーマとして取り上げて紹介した。
 メイントピックは KDDCup2005 として開催されたクエリ分類コンペの優勝者の手法について紹介を行ったので、気になる方はスライドを公開しているので御覧ください。
-Query Understanding for Search Engines. Chap2 Query Classification from Shunya Ueta このコンペの特徴として、
+このコンペの特徴として、
 データセットが生データ特有の問題として汚い そしてラベルデータの規模がとても少ない という鬼畜仕様だった。 だがコンペ参加者はそんな状態を物と物せずにありとあらゆる手段で精度向上に努めていてそれらの手法と姿勢がとても参考になった。
+Query Understanding の包括的な解説は 晋策さんが書かれた 検索体験を向上する Query Understanding とは がわかりやすいのでおすすめです。
 検索領域は本当に奥深い&amp;hellip;</description></item><item><title>eコマースの検索と推薦についてのサーベイ論文である 'Challenges and research opportunities in eCommerce search and recommendations' を社内勉強会で発表した</title><link>https://shunyaueta.com/posts/2021-07-10/</link><pubDate>Sat, 10 Jul 2021 23:20:58 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-07-10/</guid><description>SIGIR eCom を探索していたら発見したサーベイ論文の &amp;ldquo;Challenges and research opportunities in eCommerce search and recommendations&amp;quot;が面白かったので、社内の勉強会で発表してきた。
 和訳すると、「e コマースの検索と推薦における挑戦と研究トピック」で、e コマースにおける検索と推薦の課題が明瞭に書かれていて非常に面白い論文でした。 自分もまだ検索エンジニアとして日が浅いので、手持ちのパターンを増やせるように日々勉強していますが、この論文のおかげでかなり解像度が上がった。
-Introducing &amp;quot;Challenges and research opportunities in eCommerce search and recommendations&amp;quot; from Shunya Ueta 個人的に面白かったのは、
-そもそも、顧客が商品を検索するというタスクの奥深さと面白さが知れる Query Understanding は、非構造なクエリを構造化されたクエリに変換するのが究極的な目標 Learn to Rank(LtR)の実践的な課題点として、LtR 適用時に、Native Ranker とのギャップが発生して非連続な検索結果を返してしまうことがある 実際のクエリから、購入される商品はクエリと商品が関連性が高いとは限らないのでモデルを学習させる際には要注意 Amazon での実例として クエリ「ダイヤモンドリング」に対して LtR を適用すると、実際のクエリとそれに紐づくランキングシグナルから学習すると、「ダイヤモンドリング」というクエリで、「ジルコニウムリング」が大量に購買されていたので LtR では、「ダイヤモンドリング」というクエリに対して、「ジルコニウムリング」を表示するようになってしまった これは、学習データを全く見ないで適用するとそうなりそうだけど、広範囲に影響を及ぼす LtR の QA は非常に骨が折れそう Ref: Amazon Search: The Joy of Ranking Products スライド作成元の Markdown ファイルはhurutoriya/deckはこちらです。 スライド内のリンクに簡単にアクセスできます。</description></item><item><title>[抄訳] 検索エンジンの達成度と検索チームの成熟度モデル</title><link>https://shunyaueta.com/posts/2021-05-12/</link><pubDate>Wed, 12 May 2021 22:33:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-05-12/</guid><description>@rilmayer_jp さんのツイート をきっかけに、検索チームの成熟度モデルの存在を知りました。ありがとうございます!
+個人的に面白かったのは、
+そもそも、顧客が商品を検索するというタスクの奥深さと面白さが知れる Query Understanding は、非構造なクエリを構造化されたクエリに変換するのが究極的な目標 Learn to Rank(LtR)の実践的な課題点として、LtR 適用時に、Native Ranker とのギャップが発生して非連続な検索結果を返してしまうことがある 実際のクエリから、購入される商品はクエリと商品が関連性が高いとは限らないのでモデルを学習させる際には要注意 Amazon での実例として クエリ「ダイヤモンドリング」に対して LtR を適用すると、実際のクエリとそれに紐づくランキングシグナルから学習すると、「ダイヤモンドリング」というクエリで、「ジルコニウムリング」が大量に購買されていたので LtR では、「ダイヤモンドリング」というクエリに対して、「ジルコニウムリング」を表示するようになってしまった これは、学習データを全く見ないで適用するとそうなりそうだけど、広範囲に影響を及ぼす LtR の QA は非常に骨が折れそう Ref: Amazon Search: The Joy of Ranking Products スライド作成元の Markdown ファイルはhurutoriya/deckはこちらです。 スライド内のリンクに簡単にアクセスできます。
+e コマースでの検索に改善したいけど何したらいいかわからんという人は、とりあえずこれ見れば OK という論文だったので読めてよかった
+余談 Matching &amp;amp; Ranking の章までを解説したけど、それでも 45m 喋りっぱなしで最後のほうがかなり駆け足になってしまった。 また、英語での発表になったけど、やはり熟れたわかりやすい発表レベルに達するには、まだまだだなぁ感じた。精進せねば</description></item><item><title>[抄訳] 検索エンジンの達成度と検索チームの成熟度モデル</title><link>https://shunyaueta.com/posts/2021-05-12/</link><pubDate>Wed, 12 May 2021 22:33:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-05-12/</guid><description>@rilmayer_jp さんのツイート をきっかけに、検索チームの成熟度モデルの存在を知りました。ありがとうございます!
 Eric Pugh さんが、検索エンジンに関する会議で公演した内容で、検索チームがどのように成熟していくかをモデル化しており、それが面白かったので備忘録として残しておく
 更新 2021/05/13 : 原著者のEric Pugh さんから、抄訳のご快諾いただけました。ありがとうございます 翻訳元資料 Search Relevance Organizational Maturity Model slide Haystack LIVE! 2020 Search Relevance Organizational Maturity Model 検索エンジンのレベル 検索エンジンへの要求をどれだけ満たしているかをピラミッド構造でわかりやすく説明している
 検索チームの成熟度モデル 7 項目の検索チームの評価項目を考え、3 段階で評価を行う
