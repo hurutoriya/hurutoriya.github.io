@@ -13,7 +13,7 @@ SIGIR eCom を探索していたら発見したサーベイ論文の "Challenges
 和訳すると、「e コマースの検索と推薦における挑戦と研究トピック」で、e コマースにおける検索と推薦の課題が明瞭に書かれていて非常に面白い論文でした。
 自分もまだ検索エンジニアとして日が浅いので、手持ちのパターンを増やせるように日々勉強していますが、この論文のおかげでかなり解像度が上がった。
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/sOhCWPToy6AIL1" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shunyaueta/introducing-challenges-and-research-opportunities-in-ecommerce-search-and-recommendations" title="Introducing &quot;Challenges and research opportunities in eCommerce search and recommendations&quot;" target="_blank">Introducing &quot;Challenges and research opportunities in eCommerce search and recommendations&quot;</a> </strong> from <strong><a href="https://www.slideshare.net/shunyaueta" target="_blank">Shunya Ueta</a></strong> </div>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/0bf4e40afd9b4a87a8ae1cb030a572ff" title="Introducing &quot;Challenges and research opportunities in eCommerce search and recommendations&quot;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 個人的に面白かったのは、
 

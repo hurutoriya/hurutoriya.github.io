@@ -22,7 +22,7 @@ tags:
 
 メイントピックは KDDCup2005 として開催されたクエリ分類コンペの優勝者の手法について紹介を行ったので、気になる方はスライドを公開しているので御覧ください。
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/5KJ09u6AURGBVq" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shunyaueta/query-understanding-for-search-engines-chap2-query-classification" title="Query Understanding for Search Engines. Chap2 Query Classification" target="_blank">Query Understanding for Search Engines. Chap2 Query Classification</a> </strong> from <strong><a href="https://www.slideshare.net/shunyaueta" target="_blank">Shunya Ueta</a></strong> </div>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/a306435c7ec843adb7591ceddeb9c7a1" title="Query Understanding for Search Engines. Chap2 Query Classification" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 このコンペの特徴として、
 
@@ -31,5 +31,8 @@ tags:
 
 という鬼畜仕様だった。
 だがコンペ参加者はそんな状態を物と物せずにありとあらゆる手段で精度向上に努めていてそれらの手法と姿勢がとても参考になった。
+
+Query Understanding の包括的な解説は
+晋策さんが書かれた [検索体験を向上する Query Understanding とは](https://blog.recruit.co.jp/rtc/2019/12/25/query-understanding-overview/) がわかりやすいのでおすすめです。
 
 検索領域は本当に奥深い...

@@ -17,9 +17,7 @@ Podcast でも紹介しました
 
 ![image](/posts/2018-04-09/images/1.gif)
 
-TFX
-
-社内の勉強会で Google, Facebook が提供する機械学習基盤に関する論文を紹介したので、その資料を公開します#### 経緯
+社内の勉強会で Google, Facebook が提供する機械学習基盤に関する論文を紹介したので、その資料を公開します
 
 機械学習をサービスとして提供開始すると、継続的な学習やプロダクション環境での機械学習の提供はモデル構築以外にもいろいろと考える問題が多くなります ¹
 
@@ -41,9 +39,13 @@ TFX
 
 TFX: A tensor flow-based production-scale machine learning platform
 
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/328015ef8c90420599327a35fdc15703" title="TFX: A tensor flow-based production-scale machine learning platform" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 315px;" data-ratio="1.7777777777777777"></iframe>
+
 ### Facebook : FBLeaner
 
 Applied machine learning at facebook a datacenter infrastructure perspective HPCA18
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/ef0a7895bfb04e76849a7978292031e5" title="Applied machine learning at facebook a datacenter infrastructure perspective HPCA18" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 315px;" data-ratio="1.7777777777777777"></iframe>
 
 [ONNX](https://onnx.ai/) を見ていると TensorFlow VS. ONNX 陣営が出来つつありどちらのプラットフォームに乗るかの戦略が大事だなと思います。
 

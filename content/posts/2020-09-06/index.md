@@ -57,9 +57,9 @@ OpML20 で[推奨されるトピック](https://www.usenix.org/conference/opml20
 あらめて添削や執筆をともに行ってくれた同僚たちに感謝します。
 
 そして投稿の 1 ヶ月後に通知メールが来て採択を知りました。
-添削を何度も繰り返して時間が迫るなかなんとか投稿できたという状態  で、とりあえず投稿できて良かったなと感じていた最中だったので、採択通知が来て本当におどきました。
+添削を何度も繰り返して時間が迫るなかなんとか投稿できたという状態で、とりあえず投稿できて良かったなと感じていた最中だったので、採択通知が来て本当におどきました。
 
-査読システムの良い点として、自分たちの投稿内容がその会議で  発表足り得るものかがレビュアーからレビューされることです。
+査読システムの良い点として、自分たちの投稿内容がその会議で発表足り得るものかがレビュアーからレビューされることです。
 自分自身機械学習エンジニアとして働いていますが、その成果が査読を通して同じ分野で働いているエキスパートの第三者に認められたという事実が自分の仕事への自信に繋がりました。
 
 その後 Reviwer の方に指摘された点を意識しつつ修正を行って、Camera Ready を無事に提出しました。
@@ -70,16 +70,16 @@ OpML20 で[推奨されるトピック](https://www.usenix.org/conference/opml20
 採択された内容は以下のページにまとまっているので、もしご興味があればご覧ください。
 内容を簡単にまとめると、
 
-- C2C での投稿内容監視で機械学習を導入
+- C2C での投稿内容監視タスクで機械学習を導入
 - Human In The Loop と組み合わせたバックテストにより、リリース時の機械学習モデルの劣化を事前防止
 - 不均衡なデータ分布を考慮したモデルリリース後の新たな A/B テスト手法の考案による、意思決定の高速化
 
 です。
 
-[![Auto Content Moderation in C2C e-Commerce](/posts/2020-09-06/images/1.png)](https://www.usenix.org/conference/opml20/presentation/ueta)
-
 - [Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta)
 - [講演動画-Youtube](https://youtu.be/_rvEcH_zyt4)
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d53d0eceda754285aca160954f8f8896" title="Auto Content Moderation in C2C e-Commerce at OpML20" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 315px;" data-ratio="1.7777777777777777"></iframe>
 
 当日はオンライン開催で、発表内容は事前に YouTube で公開され、その後 Slack 上でリアルタイムに発表者に質問ができる Ask Me Anything (AMA)セッションが開催されました。
 また、今回はオンライン開催になった影響で参加費は無料となりました。
@@ -87,7 +87,7 @@ AMA セッションで Chair の方がファシリテーターとなり、予想
 
 オンライン開催になり、発表内容はすべて YouTube で公開され、アメリカへの渡航の必要がなくなり気軽に参加できるのは非常に良い流れだと思います。
 
-一方で、日本からの参加だと深夜 01:00-02:30 の参加だったのでその点のみ非常に辛かったです。
+一方で、日本からの参加だと深夜 `01:00`-`02:30` の参加だったのでその点のみ非常に辛かったです。
 懇親会などの偶発性を持った出会いなどはオンラインだとやはり、難しく感じました。
 
 ## 面白かった OpML'20 の発表まとめ
