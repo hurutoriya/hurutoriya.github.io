@@ -11,6 +11,8 @@ tags:
 - 
 ---
 
+![](/posts/2022-03-03/images/fig-2.png)
+
 ## References
 
 - []()
