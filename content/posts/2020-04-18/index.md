@@ -7,7 +7,7 @@ cover:
   caption: "Coursera の証明書"
 tags:
   - coursera
-  - machilelearning
+  - machinelearning
 ---
 
 Coursera で[How Google does Machine Learning](https://www.coursera.org/learn/google-machine-learning) の講義を修了した
