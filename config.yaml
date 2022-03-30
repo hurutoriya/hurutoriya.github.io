@@ -64,7 +64,7 @@ params:
       url: "index.xml"
   editPost:
     URL: "https://github.com/hurutoriya/hurutoriya.github.io/tree/source/content"
-    Text: "Source"
+    Text: "Edit this post (この記事を編集する)"
     appendFilePath: true # to append file path to Edit link
   ShowPostNavLinks: true
   author: "Shunya Ueta"
