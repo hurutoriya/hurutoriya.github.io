@@ -12,12 +12,14 @@ tags:
   - mlct
 ---
 
-先日の記事で告知した[^1]のですが、昨夜、「Human In The Loop」を題材にした勉強会を開催してきました。
+先日の記事で告知した[^hitl]のですが、昨夜、「Human In The Loop」を題材にした勉強会を開催してきました。
 
-[Machine Learning Casual Talks #13 (Online) ](https://mlct.connpass.com/event/239953/)
+実際に Human In The Loop を扱った MLOps の論文[^opml21] を過去に書いているくらい興味のある分野なので、この領域を盛り上げていくために開催できてよかった。
 
 オンライン勉強会でしたので、配信動画を Youtube で公開しております。
 Human In The Loop に興味のある方はぜひご覧ください。
+
+[Machine Learning Casual Talks #13 (Online) ](https://mlct.connpass.com/event/239953/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mPByIMURM8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -93,7 +95,8 @@ Youtube 配信が簡単に配信できる。認証すればすべてが Streamya
 
 オンライン配信ならではの楽しさとしては、オフラインだと 100 人が参加する会場を手配したり設営するだけでも大変ですが、オンラインだと 100 人閲覧というリアルタイムな参加者だけに着目するとパソコンだけで実現できるのでそれは素晴らしいことですね。
 
-[^1]: [機械学習モデルの改善手法の一つ、 Human In The Loop について](/post/2022-03-22)
+[^hitl]: [機械学習モデルの改善手法の一つ、 Human In The Loop について](/post/2022-03-22)
+[^opml21]: [MLOps の国際会議 OpML'20 に、機械学習を活用した商品監視の改善に関する論文が採択されたので登壇してきた](/posts/2020-09-06/)
 [^2]: [オンライン開催前提だからこそ可能な省エネ勉強会運営 ~勉強会運営再開してみた~](/posts/2022-02-22/)
 [^3]: [Machine Learning Casual Talks #12 (Online)](https://mlct.connpass.com/event/172550/)
 [^4]: [D. Sculley](https://scholar.google.com/citations?user=l_O64B8AAAAJ&hl=en) さんは、`Hidden technical debt in machine learning systems` や `The ML test score: A rubric for ML production readiness and technical debt reduction` の著者。機械学習エンジニアリングや MLOps の面白い論文を出しまくっているすごい人。

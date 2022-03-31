@@ -1,11 +1,11 @@
 ---
-title: "MLOps の国際会議 OpML'20 に論文が採択されたので登壇してきた"
+title: "MLOps の国際会議 OpML'20 に、機械学習を活用した商品監視の改善に関する論文が採択されたので登壇してきた"
 date: 2020-09-06T23:31:03+09:00
 author: Shunya Ueta
 ShowToc: true
 cover:
   image: "/posts/2020-09-06/images/1.png"
-  caption: "C2Ceコマースにおける機械学習による商品監視"
+  caption: "C2C eコマースにおける機械学習を活用した商品監視"
 lang: ja
 tags:
   - mlops
@@ -70,16 +70,21 @@ OpML20 で[推奨されるトピック](https://www.usenix.org/conference/opml20
 採択された内容は以下のページにまとまっているので、もしご興味があればご覧ください。
 内容を簡単にまとめると、
 
-- C2C での投稿内容監視タスクで機械学習を導入
+- C2C での出品商品への監視タスクで機械学習を導入して、Recall を改善
 - Human In The Loop と組み合わせたバックテストにより、リリース時の機械学習モデルの劣化を事前防止
 - 不均衡なデータ分布を考慮したモデルリリース後の新たな A/B テスト手法の考案による、意思決定の高速化
 
 です。
 
-- [Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta)
-- [講演動画-Youtube](https://youtu.be/_rvEcH_zyt4)
+[Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta)
+
+発表資料
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d53d0eceda754285aca160954f8f8896" title="Auto Content Moderation in C2C e-Commerce at OpML20" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 315px;" data-ratio="1.7777777777777777"></iframe>
+
+講演動画
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_rvEcH_zyt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 当日はオンライン開催で、発表内容は事前に YouTube で公開され、その後 Slack 上でリアルタイムに発表者に質問ができる Ask Me Anything (AMA)セッションが開催されました。
 また、今回はオンライン開催になった影響で参加費は無料となりました。
