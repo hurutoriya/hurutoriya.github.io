@@ -56,7 +56,9 @@ Search Engineering Newsletter By hurutoriya
 2022/04/04 追記 Search Engineering Newsletter - revue で 3 回配信してみた結果、自分のウェブサイトから情報配信することと、ニュースレターを通じた情報発信はあまり変わらないなと感じたので、revue でのニュースレター配信はやめて、自分の web サイトで記事を書いていくことにする。
 メールでの配信は一つのメリットかも知れないが、自分の場合は執筆物を自己のサイトに集積できることのほうが自分にとってメリットが大きいなと感じました。
 ニュースレター形式だと Twitter では届かない層
-だが、自分のサイトは公開しているので、RSS さえ登録してくれれば誰でも見れるのでリーチする層に差が出るわけでもなかったかなと今更ながら気づいてしまった。</description></item><item><title>Daria Sorokina さんによる、 Amazon の検索ランキングについて at MLconf SF 2016</title><link>https://shunyaueta.com/posts/2021-12-26/</link><pubDate>Sun, 26 Dec 2021 22:52:06 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-26/</guid><description>1 日遅れてしまいましたが、情報検索・検索技術 Advent Calendar 2021 25 日目の記事です。
+だが、自分のサイトは公開しているので、誰でも見れる。そのためリーチする層に差が出るわけでもなかったかなと今更ながら気づいた。
+newsletter のタグを付与した記事の RSS1 を作成しています。 手持ちの RSS リーダーに登録していただければ newsletter の更新時に簡単に閲覧ができます。
+newsletter RSS: https://shunyaueta.com//tags/newsletter/index.xml &amp;#x21a9;&amp;#xfe0e;</description></item><item><title>Daria Sorokina さんによる、 Amazon の検索ランキングについて at MLconf SF 2016</title><link>https://shunyaueta.com/posts/2021-12-26/</link><pubDate>Sun, 26 Dec 2021 22:52:06 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-26/</guid><description>1 日遅れてしまいましたが、情報検索・検索技術 Advent Calendar 2021 25 日目の記事です。
 ついにアドベントカレンダー最終日を迎えました! 今年はまだ検索領域のアドベントカレンダーが作られていないからということで、勢いで情報検索・検索技術 Advent Calendar 2021を作りましたが、多くの方に投稿に協力していただきありがとうございました。
 社内勉強会の発表でネタを探しており、2016 年と少し昔の情報ですが、Amazon の製品検索において、どのようにランキングを行っているかの公演動画が非常に面白かったので、勉強がてら残したメモを記事として公開します。
 今回の口頭発表は MLconf という開発者会議(非学会・非アカデミック)で発表されています。 自分が知る限り、MLconf は機械学習黎明期から高品質な発表が継続されて発信されており、非常に素晴らしいカンファレンスの一つ。 国際会議には投稿されていないが、実応用の観点からしてとても学びの多い発表がとても多いです。 機械学習の応用を考えている場合、世界の最先端事例を知ることができるので非常におすすめです。
