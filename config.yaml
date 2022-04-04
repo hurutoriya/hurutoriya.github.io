@@ -26,9 +26,6 @@ languages:
         - name: About
           url: about
           weight: 10
-        - name: Newsletter
-          url: "https://www.getrevue.co/profile/hurutoriya"
-          weight: 10
         - name: RSS
           url: index.xml
           weight: 10
@@ -73,18 +70,6 @@ params:
   images:
     - ogp.jpg
   comments: true
-
-menu:
-  header:
-    - name: All posts
-      url: "/articles/"
-  footer:
-    - name: RSS
-      url: "/index.xml"
-    - name: About
-      url: "/about/"
-    - name: Support
-      url: "https://www.buymeacoffee.com/hurutoriya"
 
 markup:
   goldmark:
