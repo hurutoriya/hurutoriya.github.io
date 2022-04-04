@@ -42,8 +42,6 @@ Industry Track は、理論と実践の剥離を防ぐため。
 
 System Demonstration は、NLP 周りのソフトウェアの OSS 公開の動機づけやコミュニティの成長にもつながるので良い仕組みだなと思いました。論文化できるのも、また嬉しいですね。
 
-## 自然言語処理トップ国際会議 System Demonstrations の一覧
-
 [^kdd]: [Call for Applied Data Science Track Papers KDD2022](https://kdd.org/kdd2022/cfpAppliedDS.html)
 [^rec]: [Call for Industry Talk Proposals recsys 2022](https://recsys.acm.org/recsys21/call/#content-tab-1-7-tab)
 [^ca]: [自然言語処理分野のトップカンファレンス「EMNLP 2021」の System Demonstration Track にて論文採択 ー モバイル端末用の効率的なアノテーションツールを提案 ー](https://www.cyberagent.co.jp/news/detail/id=26746)
