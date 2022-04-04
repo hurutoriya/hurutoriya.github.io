@@ -11,13 +11,6 @@ tags:
 以前に告知したとおり、検索領域と機械学習領域で面白かった記事をここで紹介していきます。
 ガッツリ量を書くために溜め込むよりも一定量溜まったら配信したほうが、書く側としても気が楽なので暫くその方針で行ってみます。
 
-感想は、
-
-- Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searchengineeringnewsletter) をつけてつぶやいていただくか
-- [Google フォーム](https://forms.gle/vbjf4He8RnoKGn8u6) での投稿
-
-をお待ちしております。
-
 ## Articles
 
 ### Search
@@ -168,3 +161,12 @@ Meta (旧名 Facebook) の機械学習による違反検知チームはかなり
 自分の最初の機械学習タスクも違反検知と健全化だったので、この分野には非常に興味がある。
 
 ここの記事経由で知った論文で面白そうなものは Blog でさっと解説記事を書いて、ニュースレターで深堀りして紹介しようかなと思います。
+
+---
+
+感想は、
+
+- Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searchengineeringnewsletter) をつけてつぶやいていただくか
+- [Google フォーム](https://forms.gle/vbjf4He8RnoKGn8u6) での投稿
+
+をお待ちしております。

@@ -78,8 +78,6 @@ menu:
   header:
     - name: All posts
       url: "/articles/"
-    - name: Newsletter
-      url: "/newsletter/"
   footer:
     - name: RSS
       url: "/index.xml"
@@ -87,8 +85,6 @@ menu:
       url: "/about/"
     - name: Support
       url: "https://www.buymeacoffee.com/hurutoriya"
-    - name: Newsletter
-      url: "/newsletter/"
 
 markup:
   goldmark:

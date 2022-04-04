@@ -197,17 +197,7 @@ Beam での Cross Language Transforms 周りの機能も気になるので試し
 確かに、企業で MLOps を開始したい際に、ワークショップなどの開催も同時に行えるのは AWS ならではの強みだなと思った。
 @icoxfog417 さんが AWS の DevRel へ転向されたのは驚きましたが、機械学習活用の普及を応援しています。
 
-## Support
-
-ニュースレターをお読みくださりありがとうございます。
-このニュースレターの配信を支援していただける方を募集しています。
-もしよろしければ、下のリンクからサポート(投げ銭)していただけると、情報発信のモチベーションに繋がります ✨
-
-[Buy me a cofee @hurutoriya](https://www.buymeacoffee.com/hurutoriya)
-
 ## 感想
 
 Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searchengineeringnewsletter?f=live) をつけてつぶやいていただくか、
 [Google フォーム](https://forms.gle/xFgMwRJbeqJxNtfe9) での感想投稿をお待ちしております。
-
-感想をいただくと配信の励みになります!
