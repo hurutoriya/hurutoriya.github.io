@@ -162,16 +162,12 @@ Meta (旧名 Facebook) の機械学習による違反検知チームはかなり
 
 ここの記事経由で知った論文で面白そうなものは Blog でさっと解説記事を書いて、ニュースレターで深堀りして紹介しようかなと思います。
 
----
+## 感想
 
-感想は、
-
-- Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searchengineeringnewsletter) をつけてつぶやいていただくか
-- [Google フォーム](https://forms.gle/vbjf4He8RnoKGn8u6) での投稿
-
-をお待ちしております。
+Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searchengineeringnewsletter?f=live) をつけてつぶやいていただくか、
+[Google フォーム](https://forms.gle/xFgMwRJbeqJxNtfe9) での感想投稿をお待ちしております。
 
 newsletter のタグを付与した記事の RSS[^newsletterrss] を作成しています。
-手持ちの RSS リーダーに登録していただければ newsletter の更新時に簡単に閲覧ができます。
+手持ちの RSS リーダーに登録していただければ newsletter の更新を把握することができます。
 
 [^newsletterrss]: newsletter RSS: https://shunyaueta.com//tags/newsletter/index.xml

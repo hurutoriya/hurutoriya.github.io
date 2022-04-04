@@ -203,6 +203,6 @@ Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searcheng
 [Google フォーム](https://forms.gle/xFgMwRJbeqJxNtfe9) での感想投稿をお待ちしております。
 
 newsletter のタグを付与した記事の RSS[^newsletterrss] を作成しています。
-手持ちの RSS リーダーに登録していただければ newsletter の更新時に簡単に閲覧ができます。
+手持ちの RSS リーダーに登録していただければ newsletter の更新を把握することができます。
 
 [^newsletterrss]: newsletter RSS: https://shunyaueta.com//tags/newsletter/index.xml

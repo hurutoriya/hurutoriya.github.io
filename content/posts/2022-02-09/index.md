@@ -138,16 +138,12 @@ LINE での大規模汎用言語モデルの開発裏話を @overlast さんが�
 の記事。日本語に特化した GPT 言語モデルを商用可能なライセンスで公開したのは素晴らしいですね。
 [Huggingface でモデルが公開](https://huggingface.co/rinna/japanese-gpt-1b)されていて、Web 上でどんな結果になるのかものすごくお手軽に試せるのは感動ですね。Notebook とか開くまでもなく、Web 上で推論結果をさっと試せれる Huggingfface のプラットフォームが凄い。
 
----
+## 感想
 
-感想は、
-
-- Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searchengineeringnewsletter) をつけてつぶやいていただくか
-- [Google フォーム](https://forms.gle/vbjf4He8RnoKGn8u6) での投稿
-
-をお待ちしております。
+Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searchengineeringnewsletter?f=live) をつけてつぶやいていただくか、
+[Google フォーム](https://forms.gle/xFgMwRJbeqJxNtfe9) での感想投稿をお待ちしております。
 
 newsletter のタグを付与した記事の RSS[^newsletterrss] を作成しています。
-手持ちの RSS リーダーに登録していただければ newsletter の更新時に簡単に閲覧ができます。
+手持ちの RSS リーダーに登録していただければ newsletter の更新を把握することができます。
 
 [^newsletterrss]: newsletter RSS: https://shunyaueta.com//tags/newsletter/index.xml
