@@ -39,8 +39,6 @@ Technology Radar という概念を検索技術領域に適用してみたよと
 The Rise of Neural Search
 Neural Search の定義としては、形態素ベースの検索を超えた検索手法の総称(広すぎる&amp;hellip;w)。 Neural Search は今はみんな使っていないけれども、近いうちに使い始める未来が来るんじゃないかという予想 Blossoming of Non Lucene-based Engines
 長年全文検索エンジンの Lucene ベースの検索サーバーである Elasticsearch, Solr がメインで使われてきたが。最近は非 Lucene ベースの検索エンジンも出てきた。例として挙げられたソフトウェアとしては Tantivy: Java 言語ではなく Rust で書かれた Lucene の再実装 milvus, weaviate: ベクトル検索エンジン メルカリの検索基盤の変遷について</description></item><item><title>Search Engineering Newsletter vol.01</title><link>https://shunyaueta.com/posts/2022-01-21/</link><pubDate>Fri, 21 Jan 2022 22:11:45 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-01-21/</guid><description>以前に告知したとおり、検索領域と機械学習領域で面白かった記事をここで紹介していきます。 ガッツリ量を書くために溜め込むよりも一定量溜まったら配信したほうが、書く側としても気が楽なので暫くその方針で行ってみます。
-感想は、
-Twitter で #searchengineeringnewsletter をつけてつぶやいていただくか Google フォーム での投稿 をお待ちしております。
 Articles Search elastic/elasticsearch - Integrate ANN search #78473
 elasticsearch 8.x では Lucene 9.0 から提供される ANN(近似近傍探索)機能が提供される予定。以前から提供されていた elasticsearch の exact k NN はプロダクション環境下では使えない性能だったが、Lucene の ANN 検索は結果がどうなるか非常に気になる。ES に組み込まれることで、ANN の結果に対して、フィルタリング、ハイブリッド検索など ES の検索エンジンと組み合わせた利用が期待できるので追っておきたい。
 apache/solr - SOLR-15880 #476
@@ -48,12 +46,17 @@ Solr も同じく ANN の提供を準備中。
 個人的には、ANN のことを kNN と書くのは紛らわしいのでやめてほしいし、ANN のことを Neural Search と読んでいて、え?いいの??と思ったりした。
 これが実装されれば、Vespaや、各 OSS やエンタープライズの近似近傍探索エンジンがどうなっていくのかは非常に面白い未来ですね。
 Reddit Search: A new API
-Reddit が検索 API を刷新したお話。 システム的にどう嬉しいかや、チーム編成が変わって、10 年間でインフラエンジニアが兼業で開発していた状態から、検索エンジニア、専任のクライアントエンジニアがフルタイムで改善していく体制に変わったなど、変化がしれて面白かった。</description></item><item><title>Search Engineering Newsletter vol.00 検索技術とその関連領域を取り扱うニュースレターを不定期配信します</title><link>https://shunyaueta.com/posts/2022-01-16/</link><pubDate>Sun, 16 Jan 2022 00:00:37 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-01-16/</guid><description>2022 年から心機一転として、情報発信を今まで Twitter メインでやっていましたが、ニュースレターで行っていこうと思っています。 以下の Revue のリンクから登録が可能です。
+Reddit が検索 API を刷新したお話。 システム的にどう嬉しいかや、チーム編成が変わって、10 年間でインフラエンジニアが兼業で開発していた状態から、検索エンジニア、専任のクライアントエンジニアがフルタイムで改善していく体制に変わったなど、変化がしれて面白かった。
+今までのreddit の検索システム Blog 記事シリーズも面白そうだったので読もう。
+Search at Shopify—Range in Data and Engineering is the Future</description></item><item><title>Search Engineering Newsletter vol.00</title><link>https://shunyaueta.com/posts/2022-01-16/</link><pubDate>Sun, 16 Jan 2022 00:00:37 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-01-16/</guid><description>検索技術とその関連領域を取り扱うニュースレターを不定期配信してみることにします。
+2022 年から心機一転として、情報発信を今まで Twitter メインでやっていましたが、ニュースレターで行っていこうと思っています。 以下の Revue のリンクから登録が可能です。
 Search Engineering Newsletter By hurutoriya
 扱うトピックとしては、検索エンジンと情報検索の周辺領域です。 経緯としては、自分の職域である情報は積極的に収集しており、どうせなら発信したいなと考えて Twiter や、機械学習エンジニア時代には Revue を使って MLOps 領域に特化してニュースレター配信を試しにやってみた(覚えているかたもいるかも?)ことがありましたが、結局 Twitter で配信すれば同じではと考えてしまい、なんだかんだ継続できませんでした。 ですが、最近は Twitter での情報取得から抜け出して、一息ついた状態で情報収集を行うようになりたいなと思うなかで、改めて Twitter の発信だけではなく、ニュースレターのように頻度は不定期だが高品質な情報が一箇所にまとまって届けることができたら面白いなと考えました。(またニュースレター形式だと Twitter では届かない層にも届くんじゃないのかなと) 現在は自分は検索エンジニアとして働いており、検索技術と情報検索の情報を積極的に収集しています。そのなかで自分が当該領域で注目したニュースレターを不定期に配信できればなと思ってニュースレターを再開してみました。 検索領域に関連する気になった記事や自分の Blog 記事の執筆などをここで紹介していきます。
 不定期配信ですが、興味を持っていただけたらぜひ購読をお願いします。
-2022/04/04 追記 https://www.getrevue.co/ で 3 回配信してみた結果、自分のウェブサイトから情報配信することと、ニュースレターを通じた情報発信はあまり変わらないなと感じたので、revue でのニュースレター配信はやめて、自分の web サイトで記事を書いていくことにする。
-メールでの配信は一つのメリットかも知れないが、自分の場合は執筆物を自己のサイトに集積できることのほうがメリットが大きいなと感じました。</description></item><item><title>Daria Sorokina さんによる、 Amazon の検索ランキングについて at MLconf SF 2016</title><link>https://shunyaueta.com/posts/2021-12-26/</link><pubDate>Sun, 26 Dec 2021 22:52:06 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-26/</guid><description>1 日遅れてしまいましたが、情報検索・検索技術 Advent Calendar 2021 25 日目の記事です。
+2022/04/04 追記 Search Engineering Newsletter - revue で 3 回配信してみた結果、自分のウェブサイトから情報配信することと、ニュースレターを通じた情報発信はあまり変わらないなと感じたので、revue でのニュースレター配信はやめて、自分の web サイトで記事を書いていくことにする。
+メールでの配信は一つのメリットかも知れないが、自分の場合は執筆物を自己のサイトに集積できることのほうが自分にとってメリットが大きいなと感じました。
+ニュースレター形式だと Twitter では届かない層
+だが、自分のサイトは公開しているので、RSS さえ登録してくれれば誰でも見れるのでリーチする層に差が出るわけでもなかったかなと今更ながら気づいてしまった。</description></item><item><title>Daria Sorokina さんによる、 Amazon の検索ランキングについて at MLconf SF 2016</title><link>https://shunyaueta.com/posts/2021-12-26/</link><pubDate>Sun, 26 Dec 2021 22:52:06 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-26/</guid><description>1 日遅れてしまいましたが、情報検索・検索技術 Advent Calendar 2021 25 日目の記事です。
 ついにアドベントカレンダー最終日を迎えました! 今年はまだ検索領域のアドベントカレンダーが作られていないからということで、勢いで情報検索・検索技術 Advent Calendar 2021を作りましたが、多くの方に投稿に協力していただきありがとうございました。
 社内勉強会の発表でネタを探しており、2016 年と少し昔の情報ですが、Amazon の製品検索において、どのようにランキングを行っているかの公演動画が非常に面白かったので、勉強がてら残したメモを記事として公開します。
 今回の口頭発表は MLconf という開発者会議(非学会・非アカデミック)で発表されています。 自分が知る限り、MLconf は機械学習黎明期から高品質な発表が継続されて発信されており、非常に素晴らしいカンファレンスの一つ。 国際会議には投稿されていないが、実応用の観点からしてとても学びの多い発表がとても多いです。 機械学習の応用を考えている場合、世界の最先端事例を知ることができるので非常におすすめです。
