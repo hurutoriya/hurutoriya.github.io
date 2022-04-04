@@ -31,4 +31,9 @@ tags:
 
 > ニュースレター形式だと Twitter では届かない層
 
-だが、自分のサイトは公開しているので、RSS さえ登録してくれれば誰でも見れるのでリーチする層に差が出るわけでもなかったかなと今更ながら気づいてしまった。
+だが、自分のサイトは公開しているので、誰でも見れる。そのためリーチする層に差が出るわけでもなかったかなと今更ながら気づいた。
+
+newsletter のタグを付与した記事の RSS[^newsletterrss] を作成しています。
+手持ちの RSS リーダーに登録していただければ newsletter の更新時に簡単に閲覧ができます。
+
+[^newsletterrss]: newsletter RSS: https://shunyaueta.com//tags/newsletter/index.xml

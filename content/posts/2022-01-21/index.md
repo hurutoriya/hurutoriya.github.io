@@ -170,3 +170,8 @@ Meta (旧名 Facebook) の機械学習による違反検知チームはかなり
 - [Google フォーム](https://forms.gle/vbjf4He8RnoKGn8u6) での投稿
 
 をお待ちしております。
+
+newsletter のタグを付与した記事の RSS[^newsletterrss] を作成しています。
+手持ちの RSS リーダーに登録していただければ newsletter の更新時に簡単に閲覧ができます。
+
+[^newsletterrss]: newsletter RSS: https://shunyaueta.com//tags/newsletter/index.xml
