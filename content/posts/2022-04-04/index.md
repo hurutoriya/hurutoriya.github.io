@@ -38,9 +38,9 @@ tags:
 
 と、発生した背景が違いそうですね。
 
-Industry Track は、理論と実践の剥離を防ぐため。
+Industry Track は、理論と実践の剥離を防ぐため。System Demonstration は、NLP 周りのソフトウェアの OSS 公開の動機づけやコミュニティの成長を狙っているのかなと。
 
-System Demonstration は、NLP 周りのソフトウェアの OSS 公開の動機づけやコミュニティの成長にもつながるので良い仕組みだなと思いました。論文化できるのも、また嬉しいですね。
+System Demonstration は良いツールを公開すれば、論文化するチャンスが発生するのは、良い仕組みですね。
 
 [^kdd]: [Call for Applied Data Science Track Papers KDD2022](https://kdd.org/kdd2022/cfpAppliedDS.html)
 [^rec]: [Call for Industry Talk Proposals recsys 2022](https://recsys.acm.org/recsys21/call/#content-tab-1-7-tab)
