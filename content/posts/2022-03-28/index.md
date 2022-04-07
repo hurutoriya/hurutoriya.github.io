@@ -2,6 +2,8 @@
 title: "Search Engineering Newsletter vol.03"
 date: 2022-03-28T22:17:33+09:00
 lang: ja
+cover:
+  image: "/posts/2022-01-16/images/1.png"
 author: Shunya Ueta
 tags:
   - newsletter

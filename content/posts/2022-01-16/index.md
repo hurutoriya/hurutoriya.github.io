@@ -3,6 +3,8 @@ title: "Search Engineering Newsletter vol.00"
 date: 2022-01-16T00:00:37+09:00
 lang: ja
 author: Shunya Ueta
+cover:
+  image: "/posts/2022-01-16/images/1.png"
 tags:
   - search
   - newsletter
@@ -24,18 +26,3 @@ tags:
 検索領域に関連する気になった記事や自分の Blog 記事の執筆などをここで紹介していきます。
 
 不定期配信ですが、興味を持っていただけたらぜひ購読をお願いします。
-
-## 2022/04/04 追記
-
-[Search Engineering Newsletter - revue](https://www.getrevue.co/profile/hurutoriya) で 3 回配信してみた結果、自分のウェブサイトから情報配信することと、ニュースレターを通じた情報発信はあまり変わらないなと感じたので、`revue` でのニュースレター配信はやめて、自分の web サイトで記事を書いていくことにする。
-
-メールでの配信は一つのメリットかも知れないが、自分の場合は執筆物を自己のサイトに集積できることのほうが自分にとってメリットが大きいなと感じました。
-
-> ニュースレター形式だと Twitter では届かない層
-
-だが、自分のサイトは公開しているので、誰でも見れる。そのためリーチする層に差が出るわけでもなかったかなと今更ながら気づいた。
-
-newsletter のタグを付与した記事の RSS[^newsletterrss] を作成しています。
-手持ちの RSS リーダーに登録していただければ newsletter の更新を把握することができます。
-
-[^newsletterrss]: newsletter RSS: https://shunyaueta.com//tags/newsletter/index.xml
