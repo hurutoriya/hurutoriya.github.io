@@ -39,6 +39,7 @@ Spacy の公式ドキュメントには、[^spacy]
 > force Jupyter rendering if auto-detection fails.
 
 と書かれており、本来は Jupyter ノートブックからの出力を自動検出してくれるらしいのだが、Google Colab 上では自動検出されてない模様。
+
 そのため、明示的に `jupyter=True` にすれば解決する。
 同じような質問が Stack Overflow[^colab] でも投稿されていた。
 
