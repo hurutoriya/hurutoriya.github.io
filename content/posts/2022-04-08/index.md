@@ -18,6 +18,7 @@ tags:
 ```python
 import spacy
 
+
 spacy.displacy.render(doc, style='ent')
 ```
 
@@ -43,6 +44,8 @@ Spacy の公式ドキュメントには、[^spacy]
 
 ```python
 import spacy
+
+
 nlp = spacy.load('ja_ginza_electra')
 doc = """
 2022年、日本人は震撼した。まだ恐怖は拭いきれておらず、ネコに癒やしを求めていた。ネコこそが癒やしなのである。もしくはフレンチブルドッグ。
