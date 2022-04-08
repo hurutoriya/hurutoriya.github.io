@@ -1,5 +1,5 @@
 ---
-title: "Google Colab で Spacy による NER の結果を表示するには、jupyter=True にする必要がある"
+title: "Google Colab で Spacy による NER の結果を表示するには、jupyter 引数を True にする必要がある"
 date: 2022-04-08T21:04:13+09:00
 lang: ja
 author: Shunya Ueta
