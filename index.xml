@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>🦅 hurutoriya</title><link>https://shunyaueta.com/</link><description>Recent content on 🦅 hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Search Engineering Newsletter vol.04</title><link>https://shunyaueta.com/posts/2022-04-07/</link><pubDate>Thu, 07 Apr 2022 14:13:02 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-04-07/</guid><description>Search Engineering Newsletter - revue で 3 回配信してみた結果、自分のウェブサイトから情報配信することと、ニュースレターを通じた情報発信はあまり変わらないなと感じた。
-結論 Revue での配信はやめて自分のブログでニュースレターを発信することにしました。 (メール配信ではないのでニュースレターと読んでいいかはわからん)
+結論 Revue での配信はやめて自分のブログでニュースレターを発信することにしました。 メール配信ではないのでニュースレターと読んでいいかはわかりませんが&amp;hellip;
+ニュースレターの記事をtagとしてまとめた記事一覧はこちらです。
+https://shunyaueta.com/tags/newsletter/
 経緯 例えば、過去に言及1した
 ニュースレター形式だと Twitter では届かない層
 だが、自分のサイトは公開しているので、誰でも見れる。 そのためリーチする層に差が出るわけでもなかったかなと今更ながら気づいた。
