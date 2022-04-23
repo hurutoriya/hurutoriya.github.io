@@ -5,8 +5,8 @@ lang: ja
 cover:
   image: "/posts/2022-01-16/images/1.png"
 author: Shunya Ueta
+categories: "newsletters"
 tags:
-  - newsletter
   - search
 ---
 

@@ -5,9 +5,9 @@ lang: ja
 author: Shunya Ueta
 cover:
   image: "/posts/2022-01-16/images/1.png"
+categories: "newsletters"
 tags:
   - search
-  - newsletter
 ---
 
 検索技術とその関連領域を取り扱うニュースレターを不定期配信してみることにします。
