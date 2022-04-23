@@ -18,10 +18,6 @@ languages:
   ja:
     languageName: "Japanese"
     weight: 1
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
     menu:
       main:
         - name: Archive
@@ -43,9 +39,11 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   homeInfoParams:
-    Title: 🏝
+    Title: Hello 👏
     Content: >
-      - ソフトウェア開発や機械学習、検索技術、データ分析、読んだ論文について主に記事を執筆しています。
+      - ソフトウェアエンジニアとして働いています。
+
+      - ソフトウェア開発や機械学習、検索技術、データ分析、読んだ論文について主に執筆しています。
 
       - _[→著者について詳しく](/about)_
   ShowCodeCopyButtons: true
