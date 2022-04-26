@@ -7,6 +7,7 @@ cover:
 author: Shunya Ueta
 tags:
   - newsletter
+  - search
 ---
 
 [Search Engineering Newsletter - revue](https://www.getrevue.co/profile/hurutoriya) で 3 回配信してみた結果、自分のウェブサイトから情報配信することと、ニュースレターを通じた情報発信はあまり変わらないなと感じた。
