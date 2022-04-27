@@ -7,7 +7,7 @@ tags:
   - blog
 ---
 
-slug とは、URL の末尾を識別子のこと[^slug]で、hugo では自分だと記事を書く際に Makefile で以下のコマンドで作成していた。
+slug とは、URL 末尾の識別子のこと[^slug]で、hugo では自分だと記事を書く際に Makefile で以下のコマンドで作成していた。
 
 ```Makefile
 new: ## Make new post with date as slug
