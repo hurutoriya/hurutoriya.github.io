@@ -207,4 +207,4 @@ Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searcheng
 newsletter のタグを付与した記事の RSS[^newsletterrss] を作成しています。
 手持ちの RSS リーダーに登録していただければ newsletter の更新を把握することができます。
 
-[^newsletterrss]: newsletter RSS: https://shunyaueta.com//tags/newsletter/index.xml
+[^newsletterrss]: newsletter RSS: https://shunyaueta.com/tags/newsletter/index.xml
