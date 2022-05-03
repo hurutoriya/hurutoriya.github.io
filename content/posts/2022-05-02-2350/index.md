@@ -123,12 +123,15 @@ Nvidia の Trion server(旧名は TensorRT Inference Server という名前だ�
 [Enable Amazon Kendra search for a scanned or image\-based text document \| AWS Machine Learning Blog](https://aws.amazon.com/jp/blogs/machine-learning/enable-amazon-kendra-search-for-a-scanned-or-image-based-text-document/)
 
 今回始めて知ったんですが、Amazon Kendra という、自然言語的なクエリでも検索可能な AWS の検索サービスがあるらしいです。
-この記事は、手元のスキャンした書類や画像、PDF や画像などを AWS Lambda を介して、Amazon Textract という API で文書化。その後 S3 起点で Amazon Kandera にその情報を同期させて検索可能にできるよという紹介記事。
+この記事は、手元のスキャンした書類や画像、PDF や画像などを AWS Lambda を介して、Amazon Textract という API で文書化。
+その後 S3 起点で Amazon Kandera にその情報を同期させて検索可能にできるよという紹介記事。
 社内の紙の書類なども検索可能になるという発想は面白い。
 
 [Elasticsearch 運用ノウハウ - メルカリ](https://engineering.mercari.com/blog/entry/20220311-97aec2a2f8/)
 
-メルカリでの Elasticsearch の運用方法をまとめた記事。最近メルカリの検索の内側を紹介する記事が増えているので良いことですね。インデックスをどう管理しているかや、Elasticsearch の各種設定をどう決定しているかなどを説明くれています。
+メルカリでの Elasticsearch の運用方法をまとめた記事。
+最近メルカリの検索の内側を紹介する記事が増えているので良いことですね。
+インデックスの管理方法や、Elasticsearch の各種設定を調整方法などが説明されています。
 
 [Building a Deep Learning Based Retrieval System for Personalized Recommendations](https://tech.ebayinc.com/engineering/building-a-deep-learning-based-retrieval-system-for-personalized-recommendations)
 
@@ -138,15 +141,17 @@ Nvidia の Trion server(旧名は TensorRT Inference Server という名前だ�
 1. オフラインとニアリアルタイム(NRT)のハイブリッド
 1. ニアリアルタイム
 
-のレベルでどう段階的に作り上げていったかの説明をしており、愚直に地道に作り上げた話から学びが多く良記事。
+のレベルで段階的にどのように作り上げていったかの説明をしており、愚直に地道に作り上げた話から学びが多く良記事。
 
 モデルの詳細は KDD2021 の推薦システムに関するワークショップ [IRS workshop 2021](https://irsworkshop.github.io/2021/) で発表されている[^ebay]。
-2-tower でモデルは構成されている。1 つめのタワーで商品、もう一つのタワーでユーザーの埋め込み空間を獲得。A 与えられた `user_id` の k 個の ANN による近似近傍探索の商品を返す。
+2-tower でモデルは構成されており、1 つめのタワーで商品、もう一つのタワーでユーザーの埋め込み空間を獲得。
+与えられた `user_id` の k 個の ANN による近似近傍探索の商品を返す。
 
 段階を経て、バッチ処理からストリーミング処理に変遷するのはお疲れさまでした感が凄い。
 非常に気になる話としては、バッチ処理からニアリアルタイムでのストリーミング処理に置き換えて、それに見合う成果がどれほどでているのかは表に出して欲しい~。
 
-論文[^ebay]では、モデルの投入によってコールドスタートや在庫なしの課題を有意に改善できたとのこと。読んだ感じだとこの論文執筆時では 1 段階目のバッチ処理のアーキテクチャっぽい。
+論文[^ebay]では、モデルの投入によってコールドスタートや在庫なしの課題を有意に改善できたとのこと。
+読んだ感じだとこの論文執筆時では 1 段階目のバッチ処理のアーキテクチャっぽい。
 
 [SearchSage: Learning Search Query Representations at Pinterest](https://medium.com/pinterest-engineering/searchsage-learning-search-query-representations-at-pinterest-654f2bb887fc)
 
@@ -211,7 +216,7 @@ XGBoost から DeepETA へ移行した経緯を読み取ってみると、深層
 結論でも書かれているが、モデル自体はこれからもいろんなアプローチで改善していくぜと書いてあるので、将来的な改善幅に投資したのでしょう。
 現状維持よりもさらなる改善を見据えた投資を行っているのが素晴らしい。
 
-Product Manager の方の Linkedin を見ていると
+Product Manager[^uberpm] の方の Linkedin を見ていると、DeepETA により
 
 > In 2021, I helped my team land +$100M of incremental revenue through shipping Deep Learning ETA models, XX% improvements to delivery time estimate accuracy, etc.
 
@@ -250,10 +255,12 @@ Linkedin 内では JVM スタックがメインだったが、Node.js をフロ�
 知らない日本語のデータセットも知れたり、法的な取り組みも知れたりと学びの多い資料が多い。
 日本語データセットの拡充は、まさに日本語自然言語の発展を促進させるので、自分も貢献したいなぁと思っている。 2023 年にも JED2023 が開催されるらしいので楽しみにしています。
 
-## 感想
+## 感想など
 
-Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searchengineeringnewsletter?f=live) をのハッシュタグでつぶやいていただくか、
+Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searchengineeringnewsletter?f=live) のハッシュタグでつぶやいていただくか、
 [Google フォーム](https://forms.gle/xFgMwRJbeqJxNtfe9) での感想投稿をお待ちしております。
+
+投稿の励みにさせていただきます。
 
 ## Search Engineering Newsletter の購読方法
 
@@ -261,11 +268,9 @@ Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searcheng
 
 また、今までの配信記事一覧もこちら[^newsletters]から閲覧できます。
 
-[^ebay]:
-    [Personalized Embedding-based e-Commerce Recommendations
-    at eBay](https://irsworkshop.github.io/2021/publications/IRS2021_paper_14.pdf), [YouTube](https://youtu.be/THwyB1gQrxs)
-
+[^ebay]: [Personalized Embedding-based e-Commerce Recommendations at eBay](https://irsworkshop.github.io/2021/publications/IRS2021_paper_14.pdf), [YouTube](https://youtu.be/THwyB1gQrxs)
 [^speedtest]: 速さ事正義を示す実験事例 [システムの応答速度は本質的な価値提供であることを示す A/B テストの実例](/posts/2021-08-13/)
 [^pqm]: OSS で公開されていた https://github.com/linkedin/performance-quality-models
 [^newsletterrss]: newsletter RSS: https://shunyaueta.com/tags/newsletter/index.xml
 [^newsletters]: https://shunyaueta.com/tags/newsletter/
+[^uberpm]: https://www.linkedin.com/in/wataru-ueno/
