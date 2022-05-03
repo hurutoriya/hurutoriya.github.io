@@ -211,6 +211,13 @@ XGBoost から DeepETA へ移行した経緯を読み取ってみると、深層
 結論でも書かれているが、モデル自体はこれからもいろんなアプローチで改善していくぜと書いてあるので、将来的な改善幅に投資したのでしょう。
 現状維持よりもさらなる改善を見据えた投資を行っているのが素晴らしい。
 
+Product Manager の方の Linkedin を見ていると
+
+> In 2021, I helped my team land +$100M of incremental revenue through shipping Deep Learning ETA models, XX% improvements to delivery time estimate accuracy, etc.
+
+と書かれており、100 億円以上の利益向上と書かれており、ギエピーとなりました。
+やはり規模の経済...。レバレッジが聞くところに機械学習をやるべきですね。
+
 [How LinkedIn Personalized Performance for Millions of Members using Tensorflow.js — The TensorFlow Blog](https://blog.tensorflow.org/2022/03/how-linkedin-personalized-performance.html)
 
 Linkedin は[Linkedin Lite](https://engineering.linkedin.com/blog/2018/03/linkedin-lite--a-lightweight-mobile-web-experience)というプロジェクトの一環で、クライアントの状況を Performance Quality Model (PQM)[^pqm]と呼ばれる機械学習モデルで予測を行い
