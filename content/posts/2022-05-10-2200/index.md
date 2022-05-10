@@ -10,11 +10,11 @@ tags:
   - jupyter
 ---
 
-データ分析のレポートを書く際は Google Colab がとても便利な事に気がついた。
+社内でデータ分析のレポートを書く際は Google Colab がとても便利な事に気がついた。
 
 ## Google Bigquery でデータを抽出、Google Sheets で可視化
 
-従来だと、簡単なデータ分析の際に自分がやっていた方法としては、
+従来だと、自分がやっていた方法として、
 
 1. Google BQ などで分析対象結果のデータを抽出
 1. その結果を Google Spread Sheet として保存して、Google Sheets の機能で可視化。元の SQL のコードは、別シートを作ってそこに貼り付けておく。
