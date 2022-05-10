@@ -1,5 +1,5 @@
 ---
-title: "社内でデータ分析結果の可視化・共有に Google Colab が便利"
+title: "社内でデータ分析結果を可視化・共有する際に Google Colab が便利"
 date: 2022-05-10T22:00:23+09:00
 lang: ja
 author: Shunya Ueta
