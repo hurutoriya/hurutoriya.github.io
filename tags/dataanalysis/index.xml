@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>dataanalysis on 🦅 hurutoriya</title><link>https://shunyaueta.com/tags/dataanalysis/</link><description>Recent content in dataanalysis on 🦅 hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 10 May 2022 22:00:23 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/dataanalysis/index.xml" rel="self" type="application/rss+xml"/><item><title>社内でデータ分析結果を可視化・共有する際に Google Colab が便利</title><link>https://shunyaueta.com/posts/2022-05-10-2200/</link><pubDate>Tue, 10 May 2022 22:00:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-05-10-2200/</guid><description>社内でデータ分析のレポートを書く際は Google Colab がとても便利な事に気がついた。
 Google Bigquery でデータを抽出、Google Sheets で可視化 従来だと、自分がやっていた方法として、
-Google BQ などで分析対象結果のデータを抽出 その結果を Google Spread Sheet として保存して、Google Sheets の機能で可視化。元の SQL のコードは、別シートを作ってそこに貼り付けておく。 利点としては、一度データソースを抽出した後は、Google Sheets で二次加工するさいに便利。 また、 Produc Manager が共有後に自分が出したい数値を Google Sheets を元にさっと計算することもできる。 だが、二次加工が便利なのはいいが、大抵の可視化ってパターンが決まっているので、SQL 取得とその可視化を一気通貫でできないかなと考えていた。
+Google BQ などで分析対象結果のデータを抽出 その結果を Google Spread Sheet として保存して、Google Sheets の機能で可視化。元の SQL のコードは、別シートを作ってそこに貼り付けておく。 利点としては、一度データを抽出した後は、Google Sheets で二次加工が簡単にできる点がとても便利。 また、 Google Sheet を共有後に Produc Manager が出したい数値を、Product Manager 自身が Google Sheets を元にさっと計算することもできる。
+だが、二次加工が便利なのはいいが、大抵の可視化ってパターンが決まっているかつ二次加工の状況が必ず発生するわけではないので、SQL 取得とその可視化を一気通貫でできないかなと考えていた。
 なにか良い方法無いかなと思っている矢先に、別のチームの同僚が、Google Colab を使って、BQ を dataframe として保存後 matplotlib で可視化しているのを見かけて、
-求めていたのは&amp;hellip;こ、これだ&amp;hellip;. となり、速攻取り入れました。
-良いと思ったところは積極的に真似するスタイル
-Google Colab なら、データの取得・加工・可視化までを完結可能 Google Colab の利点を列挙しておくと
-SQL のコード、データ抽出や可視化のロジックなどが Python で記述可能かつ、Google Colab で完結 matplotlib で可視化できるので、見やすく美しい可視化を簡単に行える。 そしてそのコードは他のデータ分析でも再利用可能 pandas dataframe で Google BQ からデータを取得するので、Standard SQL だけでは難しい計算も pandas、 numpy や scipy などを使ってデータ加工が簡単にできるのも、便利 Google Sheets 同様、簡単に社内で共有できる Markdown も Google Colab 内で書けるので、凝った文章などもいれてレポートも書ける マジックコマンドで、Google BQ の結果を dataframe として保存1したり、</description></item><item><title>Google が公開している、より良いデータ分析のためのガイドブック「Good Data Analysis」で、データ分析の要所が簡潔にまとめられていて感動した</title><link>https://shunyaueta.com/posts/2022-03-08/</link><pubDate>Tue, 08 Mar 2022 20:42:56 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-08/</guid><description>Google の非公式ブログで、The Unofficial Google Data Science Blog というデータサイエンスをテーマにしたブログがある。
+求めていたのは&amp;hellip;こ、これだ&amp;hellip;.
+となり、速攻取り入れました。
+良いと思ったところは積極的に真似する
+Google Colab なら、データの取得・加工・可視化までを完結可能 Google Colab の利点を列挙しておく
+SQL のコード、データ抽出や可視化のロジックなどが Python で記述可能かつ、Google Colab で完結 matplotlib で可視化できるので、見やすく美しい図を作れる そしてそのコードは他のデータ分析でも再利用可能 pandas dataframe で Google BQ からデータを取得するので、Standard SQL だけでは難しい計算も pandas、 numpy や scipy などを使ってデータ加工が簡単にできるのも、便利 Google Sheets 同様、簡単に社内で共有できる Markdown も Google Colab 内で書けるので、凝った文章などもいれてレポートも書ける マジックコマンドで、Google BQ の結果を dataframe として保存1したり、</description></item><item><title>Google が公開している、より良いデータ分析のためのガイドブック「Good Data Analysis」で、データ分析の要所が簡潔にまとめられていて感動した</title><link>https://shunyaueta.com/posts/2022-03-08/</link><pubDate>Tue, 08 Mar 2022 20:42:56 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-08/</guid><description>Google の非公式ブログで、The Unofficial Google Data Science Blog というデータサイエンスをテーマにしたブログがある。
 その中で、
 Practical advice for analysis of large, complex data sets
 の記事を元にして作られた Google Developers Guides: Machine Learning Guides &amp;gt; Good Data Analysis を昨日見かけて読んでいたら素晴らしいドキュメントだったので、ここでその感動を共有したかったので筆をとったしだい。
