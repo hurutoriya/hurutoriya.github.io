@@ -10,6 +10,9 @@ tags:
   - search
 ---
 
+5 回目のニュースレター配信です。更新頻度を保つために、1 時間で読めるだけ記事を読んで配信していくスタイルに次回からしようと思いました。
+本格的に精読したい面白い記事が来ると一時間なんて一瞬で潰れてしまう...
+
 ## Search
 
 [Introducing Natural Language Search for Podcast Episodes](https://engineering.atspotify.com/2022/03/introducing-natural-language-search-for-podcast-episodes)
@@ -191,7 +194,7 @@ Yahoo さんのこの底力は毎回凄い。人材の層が厚いですね。
 
 検索改善の考え方や向き合い方についての記事。
 検索改善で、システム面ではなく仮説検証から AB テストまでのメタ的な枠組みを文章化して説明してくれている記事は良い意味で珍しい気がします。
-DMM さんは最近おもしろい記事をたくさん書いてくれていて読んでいて楽しいですね。
+DMM さんは最近、検索や推薦領域でおもしろい記事をたくさん書いてくれていてありがたいですね。
 
 [大規模サービスで効率よくレコメンドを提供するために Tensorflow Recommenders を活用する \- DMM inside](https://inside.dmm.com/entry/2022/3/22/engineer-recommend)
 
@@ -216,12 +219,12 @@ XGBoost から DeepETA へ移行した経緯を読み取ってみると、深層
 結論でも書かれているが、モデル自体はこれからもいろんなアプローチで改善していくぜと書いてあるので、将来的な改善幅に投資したのでしょう。
 現状維持よりもさらなる改善を見据えた投資を行っているのが素晴らしい。
 
-Product Manager[^uberpm] の方の Linkedin を見ていると、DeepETA により
+...と思っていたら、 DeepETA の Product Manager[^uberpm] の方の Linkedin を見ていると、DeepETA により
 
 > In 2021, I helped my team land +$100M of incremental revenue through shipping Deep Learning ETA models, XX% improvements to delivery time estimate accuracy, etc.
 
 と書かれており、100 億円以上の利益向上と書かれており、ギエピーとなりました。
-やはり規模の経済...。レバレッジが聞くところに機械学習をやるべきですね。
+やはり規模の経済...。レバレッジが効くところに機械学習をブッこむべきですね。
 
 [How LinkedIn Personalized Performance for Millions of Members using Tensorflow.js — The TensorFlow Blog](https://blog.tensorflow.org/2022/03/how-linkedin-personalized-performance.html)
 
