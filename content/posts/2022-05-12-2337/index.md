@@ -39,10 +39,9 @@ tags:
 
 なのだが、全然使われない...
 
-はてぶで 969 件とかなりブックマークされた記事で、自分の Blog でもおそらく歴代最大の閲覧数を持つ記事でさえもコメントはされなかった。
-いや、はてぶやってるヒトははてぶでコメントすると思うので、単純にはいえないですが...一つの指標として
+はてぶで 969 件とかなりブックマーク[^hatena]された記事で、自分の Blog でもおそらく歴代最大の閲覧数を持つ記事でさえもコメントはされなかった。
 
-https://b.hatena.ne.jp/entry/s/shunyaueta.com/posts/2022-03-08/
+いや、はてぶやってるヒトははてぶでコメントすると思うので、単純にはいえないですが...一つの指標として
 
 はてなスターや、Medium の clap のような弱いシグナルが欲しくて導入したのだが、なかなか思い通りにいかない。
 
@@ -59,3 +58,4 @@ https://b.hatena.ne.jp/entry/s/shunyaueta.com/posts/2022-03-08/
 
 [^comments]: [GitHub discussion を使ったコメントシステム giscus を導入](/posts/2022-01-19/)
 [^reaction]: https://github.com/hurutoriya/hurutoriya.github.io/discussions/10
+[^hatena]: https://b.hatena.ne.jp/entry/s/shunyaueta.com/posts/2022-03-08/
