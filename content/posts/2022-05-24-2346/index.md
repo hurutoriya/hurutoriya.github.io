@@ -10,7 +10,7 @@ tags:
   - search
 ---
 
-六回目の配信です。
+6 回目の配信です。
 今回のイチオシは、DoorDash の検索システム刷新の記事です。
 
 ## Search
@@ -256,6 +256,14 @@ Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searcheng
 
 また、今までの配信記事一覧もこちら[^newsletters]から閲覧できます。
 
+## 余談
+
+前回と同じく、記事を書く時間の上限を決めた運用にしてみると、頻度も高まりうまく回っていると思う。
+DoorDash の記事が面白すぎて抄訳してたら、他の記事を書く時間が消えてしまった。
+だが、骨太な記事を公開してくれる DoorDash に感謝。
+
+また、Yuki さんという方から、[buymeacoffee](https://www.buymeacoffee.com/hurutoriya) で ☕ を 3 杯も買っていただき[^3coffee]、非常にテンションが上がりました。
+
 [^casualtalk]: @metalunk さんに Twitter で声をかけるといいらしいです https://twitter.com/metalunk
 [^opensaerch-knn]: [Approximate search \- OpenSearch documentation](https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/)
 [^doordash-saerch]: [Things Not Strings: Understanding Search Intent with Better Recall](https://doordash.engineering/2020/12/15/understanding-search-intent-with-better-recall/)
@@ -264,3 +272,4 @@ Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searcheng
 [^roblox]: https://blog.roblox.com/2020/05/scaled-bert-serve-1-billion-daily-requests-cpus/ 。知らなかったので後から読むリストに突っ込んだ。 ゲーム会社の Roblox がそんなに機械学習に力を入れているとは知らなかった...。面白い
 [^newsletterrss]: newsletter RSS: https://shunyaueta.com/tags/newsletter/index.xml
 [^newsletters]: newsltter 一覧ページ: https://shunyaueta.com/tags/newsletter/
+[^3coffee]: https://www.buymeacoffee.com/hurutoriya/c/3287909
