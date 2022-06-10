@@ -252,9 +252,9 @@ Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searcheng
 
 ## Search Engineering Newsletter の購読方法
 
-配信記事が蓄積される RSS[^newsletterrss] を作成しています。
+配信記事が蓄積される [RSS](https://shunyaueta.com/tags/newsletter/index.xml)を作成しています。
 
-また、今までの配信記事一覧もこちら[^newsletters]から閲覧できます。
+また、今までの配信記事一覧も[こちら](https://shunyaueta.com/tags/newsletter/)から閲覧できます。
 
 ## 余談
 
@@ -270,6 +270,4 @@ DoorDash の記事が面白すぎて抄訳してたら、他の記事を書く�
 [^doordash-ml]: [Machine Learning \- DoorDash Engineering Blog](https://doordash.engineering/category/data-science-and-machine-learning/)
 [^yelp]: [Yelp/nrtsearch: A high performance gRPC server on top of Apache Lucene](https://github.com/Yelp/nrtsearch)
 [^roblox]: https://blog.roblox.com/2020/05/scaled-bert-serve-1-billion-daily-requests-cpus/ 。知らなかったので後から読むリストに突っ込んだ。 ゲーム会社の Roblox がそんなに機械学習に力を入れているとは知らなかった...。面白い
-[^newsletterrss]: newsletter RSS: https://shunyaueta.com/tags/newsletter/index.xml
-[^newsletters]: newsltter 一覧ページ: https://shunyaueta.com/tags/newsletter/
 [^3coffee]: https://www.buymeacoffee.com/hurutoriya/c/3287909
