@@ -131,7 +131,7 @@ Twitter で [#searchengineeringnewsletter](https://twitter.com/hashtag/searcheng
 
 ## 余談
 
-前回の newsletter をきっかけに、szdr さんから[投げ銭](https://www.buymeacoffee.com/hurutoriya/c/3349194)をいただきました! ありがとうございます!
+前回の [newsletter](/posts/2022-05-24-2346/) をきっかけに、szdr さんから[投げ銭](https://www.buymeacoffee.com/hurutoriya/c/3349194)をいただきました! ありがとうございます!
 [良い書籍](https://www.lambdanote.com/blogs/news/ir-system)を世に出していただいたので、本来なら僕から贈りたいところですが...
 
 [^wolt]: [Transparency at Wolt](https://explore.wolt.com/en/hun/transparency)
