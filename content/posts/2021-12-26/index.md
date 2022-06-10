@@ -1,5 +1,5 @@
 ---
-title: "Daria Sorokina さんによる、 Amazon の検索ランキングについて at MLconf SF 2016"
+title: "Amazon検索ランキングに取り組む楽しさ at MLconf SF 2016"
 date: 2021-12-26T22:52:06+09:00
 lang: ja
 author: Shunya Ueta
