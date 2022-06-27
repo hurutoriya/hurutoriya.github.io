@@ -121,7 +121,7 @@ What problem does the proposed system address?
 Why is the system important and what is its impact?
 What is the novelty in the approach/technology on which this system is based?
 Who is the target audience?
-How does the system work?</description></item><item><title>Human In The Loop 🧐 🤝 🤖 を題材にした機械学習の勉強会を開催した</title><link>https://shunyaueta.com/posts/2022-03-31/</link><pubDate>Thu, 31 Mar 2022 00:30:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-31/</guid><description>先日の記事で告知した1のですが、昨夜、「Human In The Loop」を題材にした勉強会を開催してきました。
+How does the system work?</description></item><item><title>Human-in-the-Loop 🧐 🤝 🤖 を題材にした機械学習の勉強会を開催した</title><link>https://shunyaueta.com/posts/2022-03-31/</link><pubDate>Thu, 31 Mar 2022 00:30:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-31/</guid><description>先日の記事で告知した1のですが、昨夜、「Human In The Loop」を題材にした勉強会を開催してきました。
 実際に Human In The Loop を扱った MLOps の論文2 を過去に書いているくらい興味のある分野なので、この領域を盛り上げていくために開催できてよかった。
 オンライン勉強会でしたので、配信動画を Youtube で公開しております。 Human In The Loop に興味のある方はぜひご覧ください。
 Machine Learning Casual Talks #13 (Online)
@@ -135,7 +135,7 @@ Amazon 検索で使用されているロバストなキャッシュの仕組み�
 検索一筋 10 年のエンジニアが語る、1,800 万点の商品検索パーソナライズ化への挑戦- モノタロウ
 モノタロウさんの検索機能はとてもおもしろいんですが、その開発裏が書かれている記事。 例えばですが、工具の通販モノタロウ 測定・測量用品 測定用品 厚さ測定とかを見てるとわかるんですが、各商品に付随する商品のファセットの種類が鬼のように細かくてどう管理しているのか非常に気になりますね。
 例えば、キーワード入力の少しの違いでユーザーが必要としている商品が違ってくることもあり、全文検索機能だけでは計算ができない部分を外側から調整する仕組みなども構築してきました。わかりやすい例をあげると、「3m テープ」と検索された場合は、ブランドの 3M（スリーエム）社製のテープを求めているお客様が多く、「テープ 3m」と検索された場合は 3 メートルのテープを求めているお客様が多いなどを判定して検索結果を出し分けています。
-良い話ですね。確かに bi-gram としては一緒でも、Query intent は全く違いそう。</description></item><item><title>機械学習モデルの改善手法の一つ、 Human In The Loop について</title><link>https://shunyaueta.com/posts/2022-03-22/</link><pubDate>Tue, 22 Mar 2022 00:16:51 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-22/</guid><description>Human In The Loop は、機械学習のモデルのライフサイクルに人が介在することにより、機械学習モデルの改善を目指す手法。
+良い話ですね。確かに bi-gram としては一緒でも、Query intent は全く違いそう。</description></item><item><title>機械学習モデルの改善手法の一つ、 Human-in-the-Loop について</title><link>https://shunyaueta.com/posts/2022-03-22/</link><pubDate>Tue, 22 Mar 2022 00:16:51 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-22/</guid><description>Human In The Loop は、機械学習のモデルのライフサイクルに人が介在することにより、機械学習モデルの改善を目指す手法。
 Human In The Loop の定義 YANS2021 で公開された馬場先生の Human-in-the-Loop 機械学習 / Human-in-the-Loop Machine Learning の資料は、現状の HITL の取り組みをわかりやすく説明してくれています。
 ここでの Human In The Loop の定義が一番明瞭かなと個人的には思っており、
 Q. より良いモデルを効率的に学習するために人間をどう活用するか?
