@@ -1,5 +1,5 @@
 ---
-title: "機械学習モデルの改善手法の一つ、 Human In The Loop について"
+title: "機械学習モデルの改善手法の一つ、 Human-in-the-Loop について"
 date: 2022-03-22T00:16:51+09:00
 lang: ja
 author: Shunya Ueta
