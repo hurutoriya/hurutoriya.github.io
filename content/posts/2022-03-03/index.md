@@ -317,7 +317,7 @@ ROSE は受け取った tail query に対して、そのクエリをキャッシ
 
 振り返ってみると最近 Amazon が公開してくれている検索ネタを今回含めて 3 連続で読んで解説していたが
 
-- [Daria Sorokina さんによる、 Amazon の検索ランキングについて at MLconf SF 2016](https://shunyaueta.com/posts/2021-12-26/)
+- [Daria Sorokina さんによる、 Amazon検索ランキングの奥深さ at MLconf SF 2016](https://shunyaueta.com/posts/2021-12-26/)
 - [Amazon が e コマース検索を Lucene により、どうスケールさせているか at Berlin Buzzwords 2019](https://shunyaueta.com/posts/2021-11-26/)
 
 それくらい面白い論文が多いのと e コマース検索だと飛び抜けて先進的な取り組みをしている印象。
