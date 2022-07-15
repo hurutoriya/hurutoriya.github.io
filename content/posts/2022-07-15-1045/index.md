@@ -28,6 +28,11 @@ Retty で検索サービスをマイクロサービスとして切り出した�
 
 2020 年 6 月の記事で少し古いですが、ZOZO さんの検索結果をパーソナライズする機能をどのようにつくったかが紹介されています。
 
+[「新しいおうち探し」のための AI アシスト検索 〜 Yahoo\!不動産の技術紹介 \- Yahoo\! JAPAN Tech Blog](https://techblog.yahoo.co.jp/entry/2022052330303047/)
+
+不動産検索で、機械学習をどうやって活用しているかの紹介記事。
+アイデアとして面白いなと思ったのは、NIMA[^nima]という画像の審美的美しさを採点するモデルを使って、不動産の外観画像のスコアリングを行っていた点が面白かった。
+
 [Search architecture revamp](https://engineering.grab.com/search-architecture-revamp)
 Grab が検索システムをどう刷新したか。
 
@@ -149,11 +154,6 @@ OpenSearch の機械学習プラグイン[^opensearch-ml] の設計思想は面�
 また近似近傍探索も OpenSearch1.2 では faiss を使ってサポートされていたが、Lucene [^opensearch-ann]でも近似近傍探索がサポートされたので、今後どうバランスをとっていくのだろうか。
 
 大本の Elasticsearch とは異なる方向に進化していっているので、これからどう差別化されていくのか非常に期待している。
-
-[「新しいおうち探し」のための AI アシスト検索 〜 Yahoo\!不動産の技術紹介 \- Yahoo\! JAPAN Tech Blog](https://techblog.yahoo.co.jp/entry/2022052330303047/)
-
-不動産検索で、機械学習をどうやって活用しているかの紹介記事。
-アイデアとして面白いなと思ったのは、NIMA[^nima]という画像の審美的美しさを採点するモデルを使って、不動産の外観画像のスコアリングを行っていた点が面白かった。
 
 [One\-stop MLOps portal at LinkedIn \| LinkedIn Engineering](https://engineering.linkedin.com/blog/2022/one-stop-mlops-portal-at-linkedin)
 
