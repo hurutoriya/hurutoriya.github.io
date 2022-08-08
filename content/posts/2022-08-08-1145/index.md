@@ -12,6 +12,8 @@ tags:
 ---
 
 [リーダーの作法 ささいなことをていねいに](https://amzn.to/3QkQghf)を読み終えた。
+著者は Netscape でマネージャー、Apple でディレクター、Slack でエグゼクティブを経験した Michael Lopp さんで、過去に[Being Geek](https://amzn.to/3A5oG2m) や [Managing Humans](https://amzn.to/3zHGZcn) を書かれている。
+翻訳の質も高く楽しく読めた。
 
 そんなにマネジメント関係を読んでいるわけではないが、[HITH OUTPUT MANAGEMENT](https://amzn.to/3Sx9dzc) や、[エンジニアのためのマネジメントキャリアパス ―テックリードから CTO までマネジメントスキル向上ガイド](https://amzn.to/3P8MfM1)
 同じくらい良い書籍で、学びや共感を多く感じた。
