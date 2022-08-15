@@ -4,7 +4,7 @@ date: 2022-08-15T23:35:35+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - machine learning
+  - machinelearning
   - paper
 ---
 
