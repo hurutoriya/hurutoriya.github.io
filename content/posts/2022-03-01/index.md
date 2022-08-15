@@ -6,6 +6,7 @@ author: Shunya Ueta
 tags:
   - search
   - conference
+  - paper
 ---
 
 WSDM は web 検索とデータマイニングのトップカンファレンスの一つです。検索好きなら見てて楽しい論文がたくさん公開されており、毎年採択された研究を楽しみに見ています。
