@@ -5,7 +5,6 @@ lang: ja
 author: Shunya Ueta
 tags:
   - search
-  - conference
   - paper
 ---
 
