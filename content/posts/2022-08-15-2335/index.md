@@ -112,7 +112,7 @@ https://kdd.org/kdd2022/researchPosterAssignments.html
 - Lion: A GPU-Accelerated Online Serving System for Web-Scale Recommendation at Baidu
 - Semantic Retrieval at Walmart
 - Looper: An End-to-End ML Platform for Product Decisions
-  - [Looper: An End\-to\-End ML Platform for Product Decisions \- Igor Markov \| Stanford MLSys \#60 \- YouTube](https://www.youtube.com/watch?v=UAZHJK9VWPY) Stanford の講義で動画が公開されていた、Meta(Facebook)の
+  - [Looper: An End\-to\-End ML Platform for Product Decisions \- Igor Markov \| Stanford MLSys \#60 \- YouTube](https://www.youtube.com/watch?v=UAZHJK9VWPY) Stanford の講義で動画が公開されていた、Meta(Facebook)の機械学習プラットフォーム。従来の機械学習基盤である[FBLeaner](https://shunyaueta.com/posts/2018-04-09/) からこれに移行したのだろうか?
 - Amazon SageMaker Model Monitor: A System for Real-Time Insights into Deployed Machine Learning Models
 - Human-in-the-Loop Large-Scale Predictive Maintenance of Workstations
 - PinnerFormer: Sequence Modeling for User Representation at Pinterest
