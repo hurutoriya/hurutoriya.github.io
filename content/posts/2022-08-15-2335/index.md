@@ -35,7 +35,7 @@ An overview of AWS AI/ML’s recent contributions to open source ML tools: Accel
 - Reward Optimising Recommendation using Deep Learning and Fast Maximum Inner Product Search. Authors: Imad Aouali (ENS Paris-Saclay); Benjamin Heymann (Criteo); Martin Bompaire (Criteo); Achraf Ait Sidi Hammou (Criteo); Sergey Ivanov (Criteo); Amine Benhalloum (Criteo); DAVID J ROHDE (CRITEO)\*; Flavian Vasile (Criteo); Maxime VONO (Criteo); Otmane Sakhi (Criteo)
   - こちらも情報を発見できなかった
 - [Deep Search Relevance Ranking in Practice.](https://dlranking.github.io/dlrr/) Authors: Linsey Pang (Salesforce)\*; Wei Liu (University of Technology Sydney); Moumita Bhattacharya (neflix); Keng-hao Chang (Microsoft); Xue Li (Microsoft); xianjing liu (twitter); Stephen Guo (Walmart Labs)
-  - 検索のための深層学習によるレリバンスモデルの関するハンズオンチュートリアル。Jupyter notebook を通して手を動かしながら学習できる。
+  - 検索のための深層学習によるレリバンスモデルのハンズオンチュートリアル。Jupyter notebook を通して手を動かしながら学べる。
 
 ## Workshops
 
@@ -51,7 +51,7 @@ An overview of AWS AI/ML’s recent contributions to open source ML tools: Accel
   - オンラインマーケットプレイスでの課題をどう解決するかに焦点をあてたワークショップ。
 - [Document Intelligence Workshop @ KDD 2022 DI@KDD2022](https://document-intelligence.github.io/DI-2022/)
   - 今年で 3 回目の開催となるワークショップ。現実世界の書類をどのように理解(例えば OCR など)して活用するかについて焦点をあてている。
-  - 現実世界のデータって全部紙なので、それを構造化してデジタル化するってものすごく大変だけどやりきった先に競合優位性が発生するのととんでもない価値を生むと思うのでこの領域は気になっている。
+  - 現実世界のデータって全部紙なので、それを構造化してデジタル化するってものすごく大変だけどやりきった先に競合優位性が発生し、とんでもない価値を生むと思うのでこの領域は気になっている。
 - [First Content Understanding and Generation for E-commerce Workshop](https://content-generation.github.io/workshop/)
   - e コマースでのコンテンツ生成に関するワークショップ。e コマースに関わっている方ならおもしろトピック満載です。
 - [ESCI Challenge for Improving Product Search](https://amazonkddcup.github.io/)
@@ -67,44 +67,63 @@ An overview of AWS AI/ML’s recent contributions to open source ML tools: Accel
 Amazon Product Search
 https://www.aicrowd.com/challenges/esci-challenge-for-improving-product-search
 
-## Posters
+## Papers
 
 論文関係は数が多いので、見出しだけで面白そうだなと思った論文をリスト化した。
 時間がある時にこのリストから選んでみたい。
+全ての論文が網羅されているのページがこちら。
+https://kdd.org/kdd2022/toc.html
 
-### Applied Data Science Track Posters
-
-https://kdd.org/kdd2022/adsPosterAssignments.html
-
-- DuARE: Automatic Road Extraction with Aerial Images and Trajectory Data at Baidu Maps
-- AutoShard: Automated Embedding Table Sharding for Recommender Systems
-- Affective Signals in a Social Media Recommender System
-- Looper: an end-to-end ML platform for product decisions
-- A Meta Reinforcement Learning Approach for Predictive Autoscaling In the Cloud
-- Rax: Composable Learning-to-Rank using JAX
-- Persia: An Open, Hybrid System Scaling Deep Learning-based Recommenders up to 100 Trillion Parameters
-- Persia: An Open, Hybrid System Scaling Deep Learning-based Recommenders up to 100 Trillion Parameters
-- Sparx: Distributed Outlier Detection at Scale
-- No One Left Behind: Inclusive Federated Learning over Heterogeneous Devices
-- Profiling Deep Learning Workloads at Scale using Amazon SageMaker
-- NENYA: Cascade Reinforcement Learning for Cost-Aware Failure Mitigation at Microsoft 365
-- Improving Relevance Modeling via Heterogeneous Behavior Graph Learning in Bing Ads
-- Multi-Aspect Dense Retrieval
-- Amazon SageMaker Model Monitor: A System for Real-Time Insights into Deployed Machine Learning Models
-- CommerceMM: Large-Scale Commerce MultiModal Representation Learning with Omni Retrieval
-- Automatic Generation of Product-Image Sequence in E-commerce
-- Semantic Retrieval at Walmart
-- ItemSage: Learning Product Embeddings for Shopping Recommendations at Pinterest
-- Alexa Teacher Model: Pretraining and Distilling Multi-Billion-Parameter Encoders for Natural Language Understanding Systems
-- Device-Cloud Collaborative Recommendation via Meta Controller
-- Human-in-the-Loop Large-Scale Predictive Maintenance of Workstations
-- Recommendation in offline stores: A gamification approach for learning the spatiotemporal representation of indoor shopping
-
-### Research Posters
-
+KDD のサイトで提供されているトラックごとのページは抜け漏れ?がある模様
 https://kdd.org/kdd2022/researchPosterAssignments.html
+ポスターだけに絞っているからそうなっている?
 
-- Evaluating Knowledge Graph Accuracy Powered by Optimized Human-machine Collaboration
+会社ごとの論文は、会社によってはまとめられているので便利。
+自分は職業柄、e コマースに関するに関する課題に向き合っている Amazon の論文が好きな事が多い。
+
+- [KDD 2022 \- Amazon Science](https://www.amazon.science/conferences-and-events/kdd-2022)
+- [KDD 2022 \- Apple Machine Learning Research](https://machinelearning.apple.com/updates/apple-at-kdd-2022)
+
+## Research Track Full Papers
+
 - HyperLogLogLog: Cardinality Estimation With One Log More
-- Learning Backward Compatible Embeddings - 気になっていた、埋め込み空間に後方互換性をもたせる論文は上記リンクのリストにはなかったが、[予稿集](https://kdd.org/kdd2022/toc.html)
-  ページには掲載されていた。うーむ、ページ構造がわからない。
+- Streaming Graph Neural Networks with Generative Replay
+- Non-stationary A/B Tests
+- A Generalized Backward Compatibility Metric
+- On-Device Learning for Model Personalization with Large-Scale Cloud-Coordinated Domain Adaption
+
+## SESSION: ADS Track Papers
+
+- ItemSage: Learning Product Embeddings for Shopping Recommendations at Pinterest
+- Graph-based Multilingual Language Model: Leveraging Product Relations for Search Relevance
+- Amazon Shop the Look: A Visual Search System for Fashion and Home
+- TwHIN: Embedding the Twitter Heterogeneous Information Network for Personalized Recommendation
+- Automatic Generation of Product-Image Sequence in E-commerce
+- Alexa Teacher Model: Pretraining and Distilling Multi-Billion-Parameter Encoders for Natural Language Understanding Systems
+- Automatic Controllable Product Copywriting for E-Commerce
+- Learning Backward Compatible Embeddings
+  - 埋め込み空間の後方互換性に関する研究
+- Rax: Composable Learning-to-Rank Using JAX
+- A/B Testing Intuition Busters: Common Misunderstandings in Online Controlled Experiments
+- TaxoTrans: Taxonomy-Guided Entity Translation
+- Persia: An Open, Hybrid System Scaling Deep Learning-based Recommenders up to 100 Trillion Parameters
+  - [PersiaML/PERSIA: High performance distributed framework for training deep learning recommendation models based on PyTorch\.](https://github.com/PersiaML/PERSIA) PyTorch による深層学習ベースの推薦モデルを分散学習するためのフレームワーク。
+- User Behavior Pre-training for Online Fraud Detection
+- Lion: A GPU-Accelerated Online Serving System for Web-Scale Recommendation at Baidu
+- Semantic Retrieval at Walmart
+- Looper: An End-to-End ML Platform for Product Decisions
+  - [Looper: An End\-to\-End ML Platform for Product Decisions \- Igor Markov \| Stanford MLSys \#60 \- YouTube](https://www.youtube.com/watch?v=UAZHJK9VWPY) Stanford の講義で動画が公開されていた、Meta(Facebook)の
+- Amazon SageMaker Model Monitor: A System for Real-Time Insights into Deployed Machine Learning Models
+- Human-in-the-Loop Large-Scale Predictive Maintenance of Workstations
+- PinnerFormer: Sequence Modeling for User Representation at Pinterest
+- Improving Relevance Modeling via Heterogeneous Behavior Graph Learning in Bing Ads
+- Profiling Deep Learning Workloads at Scale using Amazon SageMaker
+- Recommendation in Offline Stores: A Gamification Approach for Learning the Spatiotemporal Representation of Indoor Shopping
+- Type Linking for Query Understanding and Semantic Search
+  - Huawei が書いている。
+- Interpretable Personalized Experimentation
+  - Meta が書いている。
+- Training Large-Scale News Recommenders with Pretrained Language Models in the Loop
+- Scale Calibration of Deep Ranking Models
+  - Google が書いている
+- Multilingual Taxonomic Web Page Classification for Contextual Targeting at Yahoo
