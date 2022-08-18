@@ -219,7 +219,7 @@ with pipeline as p:
 
 ```
 
-また、衝撃なのが、Apache Beam 2.41.0 移行は [Multi Language SDK](https://beam.apache.org/documentation/programming-guide/#multi-language-pipelines)によって、 Java からも RunInference API を使うことができるらしい。
+また驚きなのが、Apache Beam 2.41.0 移行は [Multi Language SDK](https://beam.apache.org/documentation/programming-guide/#multi-language-pipelines)によって、 Java からも RunInference API を使うことができるらしい。
 これってモデル構築は Python で行って、運用は安定した Java で実行可能ということなので凄い機能ですね。
 
 https://github.com/apache/beam/blob/master/sdks/java/extensions/python/src/main/java/org/apache/beam/sdk/extensions/python/transforms/RunInference.java
