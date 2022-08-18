@@ -60,10 +60,6 @@ params:
       url: https://www.buymeacoffee.com/hurutoriya
     - name: rss
       url: "index.xml"
-  editPost:
-    URL: "https://github.com/hurutoriya/hurutoriya.github.io/tree/source/content"
-    Text: "Edit this post (この記事を編集する)"
-    appendFilePath: true # to append file path to Edit link
   ShowPostNavLinks: true
   author: "Shunya Ueta"
   title: "Shunya Ueta"
