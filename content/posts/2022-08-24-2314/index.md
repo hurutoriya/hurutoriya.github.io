@@ -13,7 +13,7 @@ tags:
 
 ## Search
 
-[Elasticsearch の検索精度のチューニング 〜テストを作って高速かつ安全に〜](https://www.slideshare.net/takahi-i/elasticsearch-251621964?utm_source=pocket_mylist)
+[Elasticsearch の検索精度のチューニング 〜テストを作って高速かつ安全に〜](https://www.slideshare.net/takahi-i/elasticsearch-251621964)
 
 [ubie\-oss/esqa](https://github.com/ubie-oss/esqa)という Elasticsearch の検索品質をテストできる OSS の紹介。
 検索結果に対して、アサーションや過去と現在のランキングの比較を距離として計算してしきい値以上で計算する事ができるらしい。
@@ -41,17 +41,17 @@ tags:
 Relevance Engineer に対するインタビューの質問リストを Daniel さんが記事として公開してくれている。
 基礎的だが、実践的な質問も多いので、一覧するのがおすすめです。
 
-[検索改善を支える A/B testing Infrastructure アーキテクチャの概要 \- DMM inside](https://inside.dmm.com/entry/2022/5/17/engineer-search?utm_source=pocket_mylist)
+[検索改善を支える A/B testing Infrastructure アーキテクチャの概要 \- DMM inside](https://inside.dmm.com/entry/2022/5/17/engineer-search)
 DMM でどのように検索改善のための AB テストを行っているか。DMM さんは積極的に検索改善を自社でどのように行っているかを公開してくれていてとてもありがたいですね。
 
 検索システム本体に AB テストロジックをインテグレーションせずに、プロキシーサーバーを立ててそこで AB テストを行うのは疎結合に実験的な取り組みができるのは良い戦略ですね。
 
-[Rust 製の全文検索システム Tantivy を Ruby で使える Tantiny を導入した \- portal shit\!](https://portalshit.net/2022/05/16/using-tantivy-over-tantiny?utm_source=pocket_mylist)
+[Rust 製の全文検索システム Tantivy を Ruby で使える Tantiny を導入した \- portal shit\!](https://portalshit.net/2022/05/16/using-tantivy-over-tantiny)
 Rust のポータビリティの高さのおかげで、数時間で Ruby で全文検索を自分の Blog に提供したお話。
 
 ## Machine Learning
 
-[How We Scaled Bert To Serve 1\+ Billion Daily Requests on CPUs \- Roblox Blog](https://blog.roblox.com/2020/05/scaled-bert-serve-1-billion-daily-requests-cpus/?utm_source=pocket_mylist)
+[How We Scaled Bert To Serve 1\+ Billion Daily Requests on CPUs \- Roblox Blog](https://blog.roblox.com/2020/05/scaled-bert-serve-1-billion-daily-requests-cpus/)
 
 ゲーム会社の Roblox が 毎日 10 億以上の Bert を使った API へのリクエストをどうさばいているかのお話。
 
