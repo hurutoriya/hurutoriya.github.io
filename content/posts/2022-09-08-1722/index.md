@@ -105,6 +105,11 @@ Etsy での機械学習システムの監視に関する記事。Etsy ではほ�
 つまり高頻度な再学習によりモデルのドリフトを回避している。
 だが、再学習のコストは馬鹿にならないので、再学習頻度を抑える代わりに監視を行い、適切なタイミングで再学習を行うようにしたいという自然な動機。
 
+[Meta が公開したデータ処理の効率化・高速化を狙うエンジン Velox が面白そう](https://shunyaueta.com/posts/2022-09-01-2139/)
+
+Verox という Meta が公開した OSS の分散処理実行環境についてブログ記事を書きました。
+C++で Spark や Presto, TorchArrow を高速化するという技術的にカッコいいので気になる方は御覧ください。
+
 [Google BigQuery の隠れた名機能 \| Google Cloud Blog](https://cloud.google.com/blog/ja/topics/developers-practitioners/hidden-gems-google-bigquery)
 
 AUTO カラムやマルチステートメントトランザクションの機能は知らなかった。まだプレビューだけど、インデックス機能は、BQ にためたデータに対して制約条件を理解した上で検索したいときに大きく役立ちそうですね。
