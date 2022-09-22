@@ -115,8 +115,8 @@ C++で Spark や Presto, TorchArrow を高速化するという技術的にカ�
 AUTO カラムやマルチステートメントトランザクションの機能は知らなかった。まだプレビューだけど、インデックス機能は、BQ にためたデータに対して制約条件を理解した上で検索したいときに大きく役立ちそうですね。
 
 [faker\-ruby/faker: A library for generating fake data such as names, addresses, and phone numbers\.](https://github.com/faker-ruby/faker)
-S
-table Diffusion などで機械学習による人工的なデータ生成がキャズムを超えそうな気がしていますが、自然言語処理の分野で人工的なデータ生成ってあったけなと思い返すと、Ruby 製の Faker がありました。
+
+Stable Diffusion などで機械学習による人工的なデータ生成がキャズムを超えそうな気がしていますが、自然言語処理の分野で人工的なデータ生成ってあったけなと思い返すと、Ruby 製の Faker がありました。
 README を観てると Japanese media という章があり、[ジブリ](https://github.com/faker-ruby/faker/blob/master/doc/japanese_media/studio_ghibli.md)や[ドラゴンボール](https://github.com/faker-ruby/faker/blob/master/doc/japanese_media/dragon_ball.md)に対応していて驚いた。
 
 [Zig の TensorFlow Lite ライブラリを書いた。](https://zenn.dev/mattn/articles/af64c6a3eefad0)
@@ -138,6 +138,7 @@ README を観てると Japanese media という章があり、[ジブリ](https:
 学生の頃にコンピュータービジョンの論文を読み漁っていましたが、位置情報が付与された大量の画像を使って、世界の 26 個の都市構造を解析するという、面白い考えの論文[^cimave]が印象に残っています。それがきっかけで機械学習分野と都市構造など異なる分野を組合わた分析などが好きなネタになりました。
 
 [Step\-by\-Step MLOps and Microsoft Products \- Speaker Deck](https://speakerdeck.com/shisyu_gaku/step-by-step-mlops-and-microsoft-products)
+
 マイクロソフトによる MLOps の成熟度の定義と Azure を使ってどのように実現していくかの日本語の資料。
 他の大手クラウドベンダーの GCP[^gcp]や AWS[^aws]も同じような成熟度を定義していますが、クラウドベンダー毎に成熟度を定義してくれれば、各ベンダーでどんなサービスを具体的に使えば実現できるのかわかりやすそうです。
 
@@ -146,9 +147,10 @@ README を観てると Japanese media という章があり、[ジブリ](https:
   - [abeja/gpt2\-large\-japanese · Hugging Face](https://huggingface.co/abeja/gpt2-large-japanese)
 - [GPT\-neox の学習用にマルチノード並列学習環境を整えた with DeepSpeed \- ABEJA Tech Blog](https://tech-blog.abeja.asia/entry/abeja-gpt-neox-infra-202208)
 - [ABEJA GPT モデルにおけるアーキテクチャの工夫 \- ABEJA Tech Blog](https://tech-blog.abeja.asia/entry/abeja-gpt-model-202208)
-  ABEJA さんが取り組んだ大規模言語モデル GPT 構築に挑んだ際に得られた知見を惜しみなく公開してくれている記事。
-  学習データが巨大すぎて、前処理中にディスクオーバーしたりと、このタスクでしかなかなか味わえないような結果は読み応えがありました。
-  Hugging Face でモデルも公開されているのでもし興味があれば試してみるのも良さそうです。Web 上で文章生成をすぐに試せるのでそれだけでも楽しいです。
+
+ABEJA さんが取り組んだ大規模言語モデル GPT 構築に挑んだ際に得られた知見を惜しみなく公開してくれている記事。
+学習データが巨大すぎて、前処理中にディスクオーバーしたりと、このタスクでしかなかなか味わえないような結果は読み応えがありました。
+Hugging Face でモデルも公開されているのでもし興味があれば試してみるのも良さそうです。Web 上で文章生成をすぐに試せるのでそれだけでも楽しいです。
 
 ---
 
