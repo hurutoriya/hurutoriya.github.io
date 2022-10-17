@@ -39,6 +39,6 @@ $ gsutil cat `gs://bucket-name/data/airflow_env.json
 これで前回紹介したアプローチの欠点である GUI での操作に依存せず、CLI で完結してファイルを作成できるようになったのでミスも減りますね。
 このディレクトリと GCS のマッピング機能を考えた人は、頭いいなと思いました。
 
-まず CloudComposer を GCP 上で提供する上で DAG の同期のためにマッピング機能は不可欠なので、最初からこの機能があるんじゃないかと思うべきでした...
+まず CloudComposer を GCP 上で提供する上で DAG の同期のためにマッピング機能は不可欠なので、最初からこの機能があるんじゃないかと考えるべきでしたね... 反省
 
 [^cloudcomposer-cli]: [python \- Export all Airflow variables \- Stack Overflow](https://stackoverflow.com/questions/53206003/export-all-airflow-variables)
