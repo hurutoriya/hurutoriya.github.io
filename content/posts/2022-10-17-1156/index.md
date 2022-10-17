@@ -25,3 +25,7 @@ In [3]: for i,j in zip(a,b):
 
 `assert` とかで事前にコケるようにしておくとか必要そう。
 もしくは、両者の配列のサイズが同じことを明示的に確認するのが吉。
+
+以下の記事を見ていると、意図的に異なる大きさの配列を回したいときもあってその対処法も書いてあった。
+
+[How to zip two differently sized lists, repeating the shorter list? \- Stack Overflow](https://stackoverflow.com/questions/19686533/how-to-zip-two-differently-sized-lists-repeating-the-shorter-list)
