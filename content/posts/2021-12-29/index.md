@@ -36,7 +36,7 @@ Markdown が圧倒的に多いのは現在 Markdown で執筆活動をしてる�
 - Software
   - `New`: Apache Beam
     - Java は code reading, Python は自分で入門がてら形態素解析する Beam model を書いていた。Apache Beam Go SDK が GA になったので、なにか作りたい。原著論文も勉強会で今度話したいな。ストリーミングで処理を行いたい際には、選択肢の第一候補に入るソフトウェアかつ動いている仕組みがめちゃくちゃおもしろいので、もっと深堀りして書いていきたい。
-  - `New`: Apache AirFlow (CloudComposer)
+  - `New`: Apache Airflow (CloudComposer)
     - GCP の各サービスを組み合わせてゴニョゴニョしたいときにものすごく楽。なれるまではデバッグが辛かった。そんなにこなれたことやっていなかったとしても、ピタゴラスイッチ的なデバッグが必要になることが多いので、最初は辛かったけど、慣れたらめっちゃ便利。
   - `New`: Apache Lucene
     - 社内の code readning 勉強会で、近似近傍探索のロジックを眺めていた。
