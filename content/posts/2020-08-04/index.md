@@ -3,7 +3,7 @@ title: "AOJの「ITP I」40問をPythonで解いた"
 date: 2020-08-04T03:38:58+09:00
 lang: ja
 tags:
-- python
+  - python
 ---
 
 ## はじめに
@@ -14,7 +14,7 @@ tags:
 
 > 全部で 44 問ありますが、最後の 4 問は競プロとはあまり関係ないので、ITP1_1-A から ITP1_10-D までの 40 問を解くことをお勧めします。
 
-まずは最初におすすめされた、AOJのITP1_1-A から ITP1_10-D までの 40 問を解いてみた
+まずは最初におすすめされた、AOJ の ITP1_1-A から ITP1_10-D までの 40 問を解いてみた
 無料でこのサービスが提供されてるの素晴らしい
 標準入力、出力の整形が少し手間取ったけど、あとは愚直に解いていった
 
@@ -22,11 +22,11 @@ tags:
 
 感想としては、
 
-- やってみたら、意外と楽しい。特に自分で諦めずに試行錯誤して、オンラインで一発でACもらえるとめちゃくちゃ嬉しい
+- やってみたら、意外と楽しい。特に自分で諦めずに試行錯誤して、オンラインで一発で AC もらえるとめちゃくちゃ嬉しい
 - テストケースに通る、すなわち正しい、それが書けたら達成感がある
 - 何かしらのお題に沿って、コードを書くという動機ができるので、書くことに慣れたい場合も有用そう
 
-togglで時間計測しながら、やって見直してみたら15h46m 費やしていた。大体1問25mくらい
+toggl で時間計測しながら、やって見直してみたら 15h46m 費やしていた。大体 1 問 25m くらい
 
 ![統計](/posts/2020-08-04/images/1.png)
 ![統計](/posts/2020-08-04/images/2.png)
@@ -38,40 +38,40 @@ togglで時間計測しながら、やって見直してみたら15h46m 費や�
 
 当面は、以下の２つに投資していきます
 
-- 機械学習だけに縛られない、SWEとしてスキル底上げ
+- 機械学習だけに縛られない、SWE としてスキル底上げ
 - 機械学習関係の確固たる基礎知識と実装力
 
 以下に自分が書いた回答例を放流しておきます。
 
-***
+---
 
 ## Rule
 
-- 15分試行錯誤しても、緒がわからない場合は諦める
+- 15 分試行錯誤しても、緒がわからない場合は諦める
 - わからなかったとき、もっと上手な書き方は以下を参考にしました
 - https://qiita.com/cmtennis1042/items/5f1e7f071081176e857f
 
-## ITP1_1_A:   Hello World
+## ITP1_1_A: Hello World
 
 ```python
 print('Hello world')
 ```
 
-## ITP1_1_B:   X Cubic
+## ITP1_1_B: X Cubic
 
 ```python
 x = input()
 print(x ** 3)
 ```
 
-## ITP1_1_C:   Rectangle
+## ITP1_1_C: Rectangle
 
 ```python
 a, b = map(int, input().split())
 print(a*b, 2*(a+b))
 ```
 
-## ITP1_1_D:   Watch
+## ITP1_1_D: Watch
 
 ```python
 second = int(input())
@@ -80,7 +80,7 @@ print(second//(60**2),':',(second%(60**2))//60,':',second%60,sep='')
 
 `//` は整数の商を算出する
 
-## ITP1_2_A:   Small, Large, or Equal
+## ITP1_2_A: Small, Large, or Equal
 
 ```python
 a, b = map(int, input().split())
@@ -92,7 +92,7 @@ elif a < b:
     print("a < b")
 ```
 
-## ITP1_2_B:   Range
+## ITP1_2_B: Range
 
 ```python
 a, b, c = map(int, input().split())
@@ -102,7 +102,7 @@ else:
     print("No")
 ```
 
-## ITP1_2_C:   Sorting Three Numbers
+## ITP1_2_C: Sorting Three Numbers
 
 ```python
 l = list(map(int, input().split()))
@@ -112,7 +112,7 @@ print(l[0],l[1],l[2], sep=' ')
 print(*three_numbers)
 ```
 
-## ITP1_2_D:   Circle in a Rectangle
+## ITP1_2_D: Circle in a Rectangle
 
 ```python
 w,h,x,y,r = map(int, input().split())
@@ -124,13 +124,13 @@ else:
 
 一発で通って、めちゃくちゃ興奮した!!
 
-## ITP1_3_A:   Print Many Hello World
+## ITP1_3_A: Print Many Hello World
 
 ```python
 [print("Hello World") for _ in range(1000)]
 ```
 
-##　ITP1_3_B:   Print Test Cases
+##　 ITP1_3_B: Print Test Cases
 
 ```python
 a = []
@@ -143,7 +143,7 @@ while True:
 [print(f'Case {i+1}: {num}') for i, num in enumerate(a)]
 ```
 
-## ITP1_3_C:   Swapping Two Numbers
+## ITP1_3_C: Swapping Two Numbers
 
 ```python
 pairs = []
@@ -158,7 +158,7 @@ for pair in pairs:
     print(*pair)
 ```
 
-## ITP1_3_D:   How Many Divisors?
+## ITP1_3_D: How Many Divisors?
 
 ```python
 a, b, c = map(int, input().split())
@@ -175,14 +175,14 @@ for k in range(a,b+1):
 print(cnt)
 ```
 
-## ITP1_4_A:   A / B Problem
+## ITP1_4_A: A / B Problem
 
 ```python
 a, b = map(int, input().split())
 print('%i %i %-5f' % (a//b, a%b, a/b))
 ```
 
-## ITP1_4_B:   Circle
+## ITP1_4_B: Circle
 
 ```python
 import math
@@ -190,25 +190,25 @@ r = float(input())
 print('%-5f %-5f' % (math.pi*r*r, 2* math.pi * r))
 ```
 
-## ITP1_4_C:   Simple Calculator
+## ITP1_4_C: Simple Calculator
 
-'''python
+```python
 while True:
-    a, op, b = input().split()
-    a, b = map(int, [a, b])
-    if op == '?':
-        break
-    elif op == "+":
-        print(a+b)
-    elif op == "-":
-        print(a-b)
-    elif op == "*":
-        print(a*b)
-    elif op == "/":
-        print(a//b)
-'''
+a, op, b = input().split()
+a, b = map(int, [a, b])
+if op == '?':
+break
+elif op == "+":
+print(a+b)
+elif op == "-":
+print(a-b)
+elif op == "*":
+print(a*b)
+elif op == "/":
+print(a//b)
+```
 
-## ITP1_4_D:   Min, Max and Sum	
+## ITP1_4_D: Min, Max and Sum
 
 '''python
 n = int(input())
@@ -216,7 +216,7 @@ a = list(map(int, input().split()))
 print(min(a), max(a), sum(a))
 '''
 
-## ITP1_5_A:   Print a Rectangle
+## ITP1_5_A: Print a Rectangle
 
 ```python
 a = []
@@ -241,7 +241,7 @@ while True:
     print()
 ```
 
-## ITP1_5_B:   Print a Frame
+## ITP1_5_B: Print a Frame
 
 ```python
 while True:
@@ -259,8 +259,7 @@ while True:
                 print(f"#", "." * (w - 2), "#", sep='')
 ```
 
-## ITP1_5_C:   Print a Chessboard
-
+## ITP1_5_C: Print a Chessboard
 
 ```python
 while True:
@@ -286,9 +285,9 @@ while True:
         print()
 ```
 
-## ITP1_5_D:   Structured Programming
+## ITP1_5_D: Structured Programming
 
-C++のコードで3がつくものというロジックが読めなかった。。。10で割ってあまりが3だけだと、`31` とかがエッジケースで通らなかった。。
+C++のコードで 3 がつくものというロジックが読めなかった。。。10 で割ってあまりが 3 だけだと、`31` とかがエッジケースで通らなかった。。
 
 ```python
 n = int(input())
@@ -308,7 +307,7 @@ for i in range(1,N+1):
 print()
 ```
 
-## ITP1_6_A:   Reversing Numbers
+## ITP1_6_A: Reversing Numbers
 
 ```python
 n = int(input())
@@ -316,7 +315,7 @@ a = list(map(int, input().split()))
 print(*reversed(a))
 ```
 
-## ITP1_6_B:   Finding Missing Cards
+## ITP1_6_B: Finding Missing Cards
 
 ```python
 all_cards = [(s, n) for s in ['S', 'H', 'C', 'D'] for n in range(1, 14)]
@@ -334,7 +333,7 @@ for card in all_cards:
 
 `in` は`O(n)`なので注意が必要
 
-## ITP1_6_C:   Official House
+## ITP1_6_C: Official House
 
 ```python
 n = int(input())
@@ -376,11 +375,11 @@ for b in range(4):
         print('#'*20)
 ```
 
-入力時に、`位置情報:値` をpairで持つ辞書を作って全部屋をforで回して、マッチした時にその部屋の値を変更していくようにした。
-1つめのtest caseは成功したが、２つ目のtest caseで同じ位置情報が入力された時に、辞書の`key`が上書きされてうまく動かなくなった。
+入力時に、`位置情報:値` を pair で持つ辞書を作って全部屋を for で回して、マッチした時にその部屋の値を変更していくようにした。
+1 つめの test case は成功したが、２つ目の test case で同じ位置情報が入力された時に、辞書の`key`が上書きされてうまく動かなくなった。
 解決法として、入力値を全てリストで保持、その入力値を使って、直接その要素の値を逐次計算するようにした
 
-## ITP1_6_D:   Matrix Vector Multiplication
+## ITP1_6_D: Matrix Vector Multiplication
 
 ```python
 n, m = map(int, input().split())
@@ -393,7 +392,7 @@ for i, row in enumerate(mat):
 [print(ans[i]) for i in range(n)]
 ```
 
-## ITP1_7_A:   Grading
+## ITP1_7_A: Grading
 
 ```python
 while True:
@@ -415,7 +414,7 @@ while True:
             print('D')
 ```
 
-## ITP1_7_B:   How many ways?
+## ITP1_7_B: How many ways?
 
 全探索で探索してみたけど、O(N^3)かかるかつ、選択されたものが再度選択されてしまう。set()で扱っても、探索候補からキューとして扱わないといけないことには気づいたがどう扱えばいいか考えつかず断念
 その後、回答例を見ると、たしかにループで、外側とかぶらないように変数管理すればうまく重複排除できることに気がついた...!
@@ -434,7 +433,7 @@ while True:
     print(cnt)
 ```
 
-## ITP1_7_C:   Spreadsheet
+## ITP1_7_C: Spreadsheet
 
 ```python
 r, c = map(int, input().split())
@@ -450,8 +449,7 @@ print(*c_sum, end=' ')
 print(sum(c_sum))
 ```
 
-## ITP1_7_D:   Matrix Multiplication
-
+## ITP1_7_D: Matrix Multiplication
 
 ```python
 n, m, l = map(int, input().split())
@@ -468,8 +466,7 @@ for i in range(n):
     print(*row)
 ```
 
-
-## ITP1_8_A:   Toggling Cases
+## ITP1_8_A: Toggling Cases
 
 ```python
 input_str = input()
@@ -482,7 +479,7 @@ for i in input_str:
 print()
 ```
 
-## ITP1_8_B:   Sum of Numbers
+## ITP1_8_B: Sum of Numbers
 
 ```python
 while True:
@@ -492,7 +489,7 @@ while True:
     print(sum(list(map(int, list(a)))))
 ```
 
-## ITP1_8_C:   Counting Characters
+## ITP1_8_C: Counting Characters
 
 入力が複数行で何行入力されるか不明な場合は、`sys.stdin.read()`を使う
 
@@ -510,7 +507,7 @@ for i in s:
 [print(f'{k} : {v}') for k, v in a.items()]
 ```
 
-## 	ITP1_8_D:   Ring
+## ITP1_8_D: Ring
 
 ```python
 s = input()
@@ -522,7 +519,7 @@ else:
     print('No')
 ```
 
-## ITP1_9_A:   Finding a Word
+## ITP1_9_A: Finding a Word
 
 ```python
 w = input()
@@ -535,7 +532,7 @@ while True:
 print(sentents.lower().split().count(w))
 ```
 
-## ITP1_9_B:   Shuffle
+## ITP1_9_B: Shuffle
 
 ```python
 while True:
@@ -549,7 +546,7 @@ while True:
     print(d)
 ```
 
-## 	ITP1_9_C:   Card Game
+## ITP1_9_C: Card Game
 
 ```python
 n = int(input())
@@ -567,7 +564,7 @@ for card in cards:
 print(p_t, p_h)
 ```
 
-## 	ITP1_9_D:   Transformation
+## ITP1_9_D: Transformation
 
 - スライス表記で、`l[start:end:step]`を理解できるとかける
 - `end` の記法が前から違和感あったんだけど、 @reto_nayuta さんにしていただいた説明がとてもわかり易かった!! 感謝
@@ -595,7 +592,7 @@ for order in orders:
         s = s[0:a] + s[a:b+1][::-1] + s[b + 1:]
 ```
 
-## ITP1_10_D:   Distance II
+## ITP1_10_D: Distance II
 
 ```python
 import math
@@ -603,7 +600,7 @@ x1, y1, x2, y2 = map(float, input().split())
 print(math.hypot(x2 - x1, y2 - y1))
 ```
 
-## ITP1_10_B:   Triangle
+## ITP1_10_B: Triangle
 
 ```python
 import math
@@ -616,7 +613,7 @@ L = a+b+c
 print(S, L, h, sep="\n")
 ```
 
-## ITP1_10_C:   Standard Deviation
+## ITP1_10_C: Standard Deviation
 
 ```python
 import math
@@ -629,7 +626,7 @@ while True:
     print(math.sqrt((sum([(i - m)** 2 for i in s]) / n)))
 ```
 
-## ITP1_10_D:   Distance II
+## ITP1_10_D: Distance II
 
 チェビシェフ距離、学生の頃を思い出して懐かしかった。
 `zip`できれいに書けた
