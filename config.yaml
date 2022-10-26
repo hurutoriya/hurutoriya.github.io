@@ -12,6 +12,7 @@ frontmatter:
     - :git
 enableInlineShortcodes: true
 enableRobotsTXT: true
+googleAnalytics: G-JMJRQJT0Q3
 
 languages:
   ja:
