@@ -38,6 +38,13 @@ Vespa の開発者の Jo さんも同様の点[^jo]について触れていま�
 
 それを実現するための関連するチケット[^hybridsearch-issue]などはあったのでいつか実現してほしいなと思っていましたが、Linkedin の投稿で Elasticsearch のエンジニアの方が遂に実現できたよ!!と紹介しており[^es-hybrid-linkedin] 、早速試してみたいと思います。
 
+2022/10/30 追記: [Elasticsearch version 8\.2\.0 \| Elasticsearch Guide \[8\.2\] \| Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/8.2/release-notes-8.2.0.html) のリリースで
+
+> Integrate filtering support for ANN #84734 (issue: #81788)
+
+と書かれており、ANN でのフィルタリングサポートは Elasticsearch 8.2 からサポートされていたみたいです。
+なので正確には Elasticsearch 8.4 からは検索クエリが使えるようになったということですね。
+
 ## ハイブリッド検索
 
 Elasticsearch の公式ドキュメントはこちら[^es-hybrid]
