@@ -53,6 +53,7 @@ Typesense という OSS の検索エンジンが紹介する検索エンジン�
   - 本番環境で自動 mapping 使われている場合ってあるんだな?と自分は思ったが、実際みんな使うのだろうか? 怖くないかなと思ったり。ここは読者の方の反応が知りたい。ネットスーパーの検索システムは肝となる体験だと思うのでやりがいがありそう。
 
 [オンラインドキュメントと日本語全文検索](https://voluntas.medium.com/%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%81%A8%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%85%A8%E6%96%87%E6%A4%9C%E7%B4%A2-30cc38d7b1c3)
+
 Rust 製の検索エンジン Meilisearch を使って、Sphinx のドキュメントを日本語で全文検索可能にしたお話。こういう需要って多そうだけどサクッと実現できるようになったのは素晴らしいですね。例えば、前回紹介した[お手軽な検索 API 構築 | メルカリエンジニアリング](https://engineering.mercari.com/blog/entry/20210906-46976c788c/)でも同じようなことは実現できそうです。
 
 [Amazon Search Query Understanding Page](https://amazonsearchqu.github.io/)
