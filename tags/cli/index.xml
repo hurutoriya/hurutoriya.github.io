@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>cli on 🦅 hurutoriya</title><link>https://shunyaueta.com/tags/cli/</link><description>Recent content in cli on 🦅 hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 04 Nov 2022 17:27:50 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/cli/index.xml" rel="self" type="application/rss+xml"/><item><title>env Studio No such file or directory というVisual Studio Code 起因のエラーへの対処方法</title><link>https://shunyaueta.com/posts/2022-11-04-1727/</link><pubDate>Fri, 04 Nov 2022 17:27:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-11-04-1727/</guid><description>VSCode をcodeコマンドから実行可能にするとPATHに Visual Studio Code の空白スペースが含まれてしまうことが原因でこのエラーが発生する。
+具体的には VSCcode の PATH が以下のように登録されてしまっている。
+1 PATH = ...PATH:/Applications/Applications/Visual Studio Code.app/Contents/Resources/app/bin 自分が遭遇したエラーは、環境変数を参照する make コマンドで
+1 2 make test env: Studio: No such file or directory というエラーが出てくるようになり、make task が実行できなくなってしまった。
+原因として自分の場合は、brew で VSCode をインストールしなおしたら、このエラーが出てくるようになった。
+対処方法 公式ページに書いてあるとおりの方式1でパスを通せば解決する。 具体的に解説すると
+VS Code を起動 コマンドパレット(Cmd+Shift+P)を開いて、shell commandと打ち込み、Shell Command: Install 'code' command in PATH を選択して実行 でこのエラーが出てこなくなる。
+もしくは、ダブルクォーテーションでPATHを登録すればこの問題は回避可能
+1 export PATH=&amp;#34;\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&amp;#34; https://code.</description></item></channel></rss>
