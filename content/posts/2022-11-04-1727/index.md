@@ -44,8 +44,7 @@ export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/
 ```
 
 [^vscodecli]:
-    https://code.visualstudio.com/docs/setup/ma
-    [Launching from the command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
+    [Visual Studio Code on macOS](https://code.visualstudio.com/docs/setup/mac)
     You can also run VS Code from the terminal by typing 'code' after adding it to the path:
 
     - Launch VS Code.
