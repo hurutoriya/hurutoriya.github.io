@@ -6,7 +6,7 @@
 対処方法 公式ページに書いてあるとおりの方式1でパスを通せば解決する。 具体的に解説すると
 VS Code を起動 コマンドパレット(Cmd+Shift+P)を開いて、shell commandと打ち込み、Shell Command: Install 'code' command in PATH を選択して実行 でこのエラーが出てこなくなる。
 もしくは、ダブルクォーテーションでPATHを登録すればこの問題は回避可能
-1 export PATH=&amp;#34;\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&amp;#34; https://code.</description></item><item><title>How to connect the Google Compute Engine via Visual Studio Code</title><link>https://shunyaueta.com/posts/2019-09-24/</link><pubDate>Tue, 24 Sep 2019 17:35:05 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-09-24/</guid><description>1. Generate SSH config file using gcloud command line 1 gcloud compute config-ssh https://cloud.google.com/sdk/gcloud/reference/compute/config-ssh
+1 export PATH=&amp;#34;\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&amp;#34; Visual Studio Code on macOS You can also run VS Code from the terminal by typing &amp;lsquo;code&amp;rsquo; after adding it to the path:</description></item><item><title>How to connect the Google Compute Engine via Visual Studio Code</title><link>https://shunyaueta.com/posts/2019-09-24/</link><pubDate>Tue, 24 Sep 2019 17:35:05 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-09-24/</guid><description>1. Generate SSH config file using gcloud command line 1 gcloud compute config-ssh https://cloud.google.com/sdk/gcloud/reference/compute/config-ssh
 You cant get ssh config for your Google Compute Engine project!
 Notice: you need choose target GCP project before run below command.
 1 gcloud config set project &amp;lt;your-project-id&amp;gt; 2. Install Remote SSH extention in Visual Studio Code. https://code.visualstudio.com/blogs/2019/07/25/remote-ssh

@@ -6,4 +6,4 @@
 対処方法 公式ページに書いてあるとおりの方式1でパスを通せば解決する。 具体的に解説すると
 VS Code を起動 コマンドパレット(Cmd+Shift+P)を開いて、shell commandと打ち込み、Shell Command: Install 'code' command in PATH を選択して実行 でこのエラーが出てこなくなる。
 もしくは、ダブルクォーテーションでPATHを登録すればこの問題は回避可能
-1 export PATH=&amp;#34;\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&amp;#34; https://code.</description></item></channel></rss>
+1 export PATH=&amp;#34;\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&amp;#34; Visual Studio Code on macOS You can also run VS Code from the terminal by typing &amp;lsquo;code&amp;rsquo; after adding it to the path:</description></item></channel></rss>
