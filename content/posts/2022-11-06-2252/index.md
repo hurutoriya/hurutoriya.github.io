@@ -4,7 +4,7 @@ date: 2022-11-06T22:52:09+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - beam
+  - apachebeam
 ---
 
 毎年開催される Apache Beam の会議、[Beam Summit 2022](https://2022.beamsummit.org/) で講演資料が公開されていたので、気になる資料を読んだ。
