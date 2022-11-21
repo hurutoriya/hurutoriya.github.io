@@ -41,9 +41,9 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   homeInfoParams:
-    Title: 🏖
+    Title: 🍁
     Content: >
-      - ソフトウェア開発や機械学習、検索技術、データ分析、読んだ論文について主に執筆しています。
+      - 主にソフトウェア開発や検索技術、機械学習について記事を執筆していきます。
 
       - _[→著者について詳しく](/about)_
   ShowCodeCopyButtons: true
@@ -53,6 +53,8 @@ params:
       url: "https://github.com/hurutoriya"
     - name: twitter
       url: "https://twitter.com/hurutoriya"
+    - name: mastodon
+      url: https://mstdn.jp/web/@hurutoriya
     - name: linkedin
       url: "https://www.linkedin.com/in/hurutoriya/"
     - name: buymeacoffee
