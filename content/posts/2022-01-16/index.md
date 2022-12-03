@@ -15,7 +15,7 @@ tags:
 2022 年から心機一転として、情報発信を今まで Twitter メインでやっていましたが、ニュースレターで行っていこうと思っています。
 以下の Revue のリンクから登録が可能です。
 
-[Search Engineering Newsletter By hurutoriya](https://www.getrevue.co/profile/hurutoriya)
+[Search Engineering Newsletter By hurutoriya](https://searchengineeringnewsletter.substack.com/)
 
 扱うトピックとしては、検索エンジンと情報検索の周辺領域です。
 経緯としては、自分の職域である情報は積極的に収集しており、どうせなら発信したいなと考えて Twiter や、機械学習エンジニア時代には Revue を使って MLOps 領域に特化してニュースレター配信を試しにやってみた(覚えているかたもいるかも?)ことがありましたが、結局 Twitter で配信すれば同じではと考えてしまい、なんだかんだ継続できませんでした。
