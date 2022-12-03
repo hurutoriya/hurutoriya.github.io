@@ -5,11 +5,6 @@ title: "hurutoriya"
 theme: "PaperMod"
 paginate: 5
 
-enableGitInfo: true
-frontmatter:
-  lastmod:
-    - lastmod
-    - :git
 enableInlineShortcodes: true
 enableRobotsTXT: true
 
