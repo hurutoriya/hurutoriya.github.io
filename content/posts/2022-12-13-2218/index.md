@@ -26,6 +26,11 @@ ES8 以降のサポートをどうするか決めあぐねている現状の経�
 
 Buy Me a Coffee] というサービスで [Olivere さんを支援](https://www.buymeacoffee.com/Bjd96U8fm)できるので、もしご機会のある方は支援しても良いかもしれません。[^bmc]
 
+**追記**
+勢いで Buy Me a Coffee で支援したら 10m くらいで Olivere さんから熱い返信が来て、テンションがぶち上がりました。
+
+> Thank you very much! It was my way of paying back just a tiny bit for all the libraries that I've been using throughout all of my career. We are all truly standing on the shoulder of giants. (And everyone should help wherever possible.) Thanks you again.
+
 ## 余談
 
 この issues がきっかけで知りましたが、Typed API や specification の存在をしりましたが、とても面白そうですね。
