@@ -1,5 +1,5 @@
 ---
-title: "2021 年買って愛用しているもの"
+title: "2021年に買って愛用しているもの"
 date: 2022-01-07T21:14:25+09:00
 lang: ja
 author: Shunya Ueta
