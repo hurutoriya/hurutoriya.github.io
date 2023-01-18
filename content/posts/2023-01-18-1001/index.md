@@ -1,12 +1,8 @@
 ---
-title: "2023 01 18 1001"
+title: "「私たちは子どもに何ができるのか」を読んだ"
 date: 2023-01-18T10:01:56+09:00
-draft: true
 lang: ja
 author: Shunya Ueta
-# cover:
-#   image: "/posts/2022-11-26/images/"
-#   caption: ""
 tags:
   - book
 ---
