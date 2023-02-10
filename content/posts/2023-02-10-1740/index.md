@@ -1,5 +1,5 @@
 ---
-title: "redis-cli の結果を標準出力として受け取って jq できれいに表示したい"
+title: "redis-cli の結果を標準出力として受け取って jq でわかりやすく表示したい"
 date: 2023-02-10T17:40:23+09:00
 lang: ja
 author: Shunya Ueta
