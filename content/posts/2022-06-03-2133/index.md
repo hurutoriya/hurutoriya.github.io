@@ -5,6 +5,8 @@ lang: ja
 author: Shunya Ueta
 tags:
   - note
+  - tool
+  - productivity
 ---
 
 ## ノートアプリを Joplin から Obsidian へ
