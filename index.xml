@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>hurutoriya</title><link>https://shunyaueta.com/</link><description>Recent content on hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 10 Feb 2023 17:40:23 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>redis-cli の結果を標準出力として受け取って jq でわかりやすく表示したい</title><link>https://shunyaueta.com/posts/2023-02-10-1740/</link><pubDate>Fri, 10 Feb 2023 17:40:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-10-1740/</guid><description>動機 Redis を扱っているのだが、その際にデバッグ用途で、内部で保存されているデータを redis-cli で対象の redis に対してコマンドを実行して確認する。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>hurutoriya</title><link>https://shunyaueta.com/</link><description>Recent content on hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 12 Feb 2023 01:33:29 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/index.xml" rel="self" type="application/rss+xml"/><item><title>時間計測アプリを toggl から Session へと乗り換えてみた</title><link>https://shunyaueta.com/posts/2023-02-12-0133/</link><pubDate>Sun, 12 Feb 2023 01:33:29 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-12-0133/</guid><description>自分はかなり前から、タスクの時間計測のために toggl の無料枠を使わせてもらっていたが、作業計測をそもそも忘れたりしてしまい、振り返っても計測自体ができていないことが多かった。 あとはどこまで詳しく取るべきかの切り分けが出来ず、結局最近は個人プロジェクトの書籍翻訳の時間計測のためにしか利用できていなかった。
+最近集中力が散漫になっていることを課題に感じていたので、良い機会なのでこの機会にツールを乗り換えてみて、日々の生産性を向上できないか試してみる。
+色々と比較したが、 Session - Pomodoro focus timer with analytics が一番自分の求めているものに近かった。
+OSS が可能なら良かったが、単純なポモドーロタイマーならあるが、自分が求めている以下のような機能が無い。
+非 Web アプリ 統計機能 web サイトとアプリのブロック 音楽を流す ポモドーロごとへの感想 なので、 Best Pomodoro Time Alternatives - 2023 | Product Hunt　で良さげなポモドーロタイマーアプリを探してみた。
+Flow – Pomodoro timer for Mac, iPhone, and iPadもミニマルなデザインかつ、月 1$ で、買い切り 30$と値段は非常に魅力的なのだが、session と比べると、細かい機能差があり、手に馴染みそうだったのが、session だと思ったので、こちらを使い始めてみる。
+特に session の統計画面は見返していて楽しそうである。
+Apple のプラットフォームでしか使えないのは一つの懸念点だが、自分はなんだかんだ当面の間 Apple 製品を使うことになると思うので、その時が来たらまた別のツールを考えれば良い。
+今までは可能なら購読形式のツールは使いたくなかったが、このツールで自分の集中力を向上できるなら年課金したとしても安い買い物かなと思って開き直ってきた。 お金で、生産性を買う姿勢&amp;hellip;
+とりあえず、一ヶ月くらい使ってみます。
+以下のページで機能更新やカスタム方法などを公開してくれているが、こういうアップデート系統の記事って見るの楽しいですよね。過去の軌跡を追いかけることができますし。
+Session - Changelog
+一つの欠点は、非常に気に入っていた toggl と Obsidian の連携プラグインである</description></item><item><title>redis-cli の結果を標準出力として受け取って jq でわかりやすく表示したい</title><link>https://shunyaueta.com/posts/2023-02-10-1740/</link><pubDate>Fri, 10 Feb 2023 17:40:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-10-1740/</guid><description>動機 Redis を扱っているのだが、その際にデバッグ用途で、内部で保存されているデータを redis-cli で対象の redis に対してコマンドを実行して確認する。
 だがこのままだとコマンドの結果が JSON として返されるが見にくいので見やすく整形したいのが動機。
 詳細 自分が知っている方法だと
 1 redis-cli で、対象の redis に対してコマンドを実行できるインタラクティブモードに入る。 そして以下のコマンドを実行すると、VALUE の結果が確認できる。

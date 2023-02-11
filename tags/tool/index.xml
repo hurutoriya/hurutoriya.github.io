@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>tool on hurutoriya</title><link>https://shunyaueta.com/tags/tool/</link><description>Recent content in tool on hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 12 Feb 2023 01:33:29 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/tool/index.xml" rel="self" type="application/rss+xml"/><item><title>時間計測アプリを toggl から Session へと乗り換えてみた</title><link>https://shunyaueta.com/posts/2023-02-12-0133/</link><pubDate>Sun, 12 Feb 2023 01:33:29 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-12-0133/</guid><description>自分はかなり前から、タスクの時間計測のために toggl の無料枠を使わせてもらっていたが、作業計測をそもそも忘れたりしてしまい、振り返っても計測自体ができていないことが多かった。 あとはどこまで詳しく取るべきかの切り分けが出来ず、結局最近は個人プロジェクトの書籍翻訳の時間計測のためにしか利用できていなかった。
+最近集中力が散漫になっていることを課題に感じていたので、良い機会なのでこの機会にツールを乗り換えてみて、日々の生産性を向上できないか試してみる。
+色々と比較したが、 Session - Pomodoro focus timer with analytics が一番自分の求めているものに近かった。
+OSS が可能なら良かったが、単純なポモドーロタイマーならあるが、自分が求めている以下のような機能が無い。
+非 Web アプリ 統計機能 web サイトとアプリのブロック 音楽を流す ポモドーロごとへの感想 なので、 Best Pomodoro Time Alternatives - 2023 | Product Hunt　で良さげなポモドーロタイマーアプリを探してみた。
+Flow – Pomodoro timer for Mac, iPhone, and iPadもミニマルなデザインかつ、月 1$ で、買い切り 30$と値段は非常に魅力的なのだが、session と比べると、細かい機能差があり、手に馴染みそうだったのが、session だと思ったので、こちらを使い始めてみる。
+特に session の統計画面は見返していて楽しそうである。
+Apple のプラットフォームでしか使えないのは一つの懸念点だが、自分はなんだかんだ当面の間 Apple 製品を使うことになると思うので、その時が来たらまた別のツールを考えれば良い。
+今までは可能なら購読形式のツールは使いたくなかったが、このツールで自分の集中力を向上できるなら年課金したとしても安い買い物かなと思って開き直ってきた。 お金で、生産性を買う姿勢&amp;hellip;
+とりあえず、一ヶ月くらい使ってみます。
+以下のページで機能更新やカスタム方法などを公開してくれているが、こういうアップデート系統の記事って見るの楽しいですよね。過去の軌跡を追いかけることができますし。
+Session - Changelog
+一つの欠点は、非常に気に入っていた toggl と Obsidian の連携プラグインである</description></item><item><title>愛用しているツールを更新: Joplin→Obsidian &amp; TickTick → Todoist</title><link>https://shunyaueta.com/posts/2022-06-03-2133/</link><pubDate>Fri, 03 Jun 2022 21:33:01 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-06-03-2133/</guid><description>ノートアプリを Joplin から Obsidian へ 2021-03-13 に notion から joplin に乗り換えた。 理由としては
+notion を マークダウンのメモ帳としか使わない DB 機能やテンプレート機能は必要としていない
+なのでロックインされずに自分で管理できる OSS の joplin のほうが良いなと思って乗り換えました。 必要な機能は全て満たしてるので満足 と Joplin に乗り換えて大きな不満は無く使い続けていたのですが、Obsidian に乗り換えました。
+きっかけは ryuzeee さんの記事1 なんですが、以前から存在は知っていたObsidian をとりあえず食わず嫌いせずに触って見ようかと思い立ち、Joplinの記事を Obsidian のフォーマットにすべて変換2して使い始めてみたところ、とても心地よい使い心地で感動して乗り換えを決定した。
+元の Joplin がそもそも Obsidian と同じローカルのプレーンテキストを扱うという思想なので移行がとても簡単でした。
+乗り換えを決めた点として、
+daily note プラグインと Calendar プラグインで日誌がめちゃくちゃ快適に書けるようになった。自分は日誌という形でログを残しつつ作業をしているのだが、このプラグインで毎日の日誌の記入がとても快適になった。 ぷーおんさんが書いてくれている記事3が、このプラグインの魅力をわかりやすく紹介されています。
+またバックリンクの機能がやはり強力で、プラグインも PKM(Personal Knowledge Management) を目的に作成されたツールが多いので、それも気に入った。(ランダムノートを開いて、ノートを整備する機能はなるほど!となる便利さ)
+Joplin でもバックリンクのプラグインはあり使っていたが、Obsidian のバックリンク機能は比較してとても完成度が高い。バックリンクを使った繋がりの提案や、つながりが無いノートも見つける機能があったりと書いていて楽しい。
+また、自分は料理を良くするのだが、普段参照するレシピも PKM で管理することで有機的な管理ができるようになりとても楽しい。これぞ PKM という事例だなとしみじみ。
+logseqというアプリも気になったのだが、アウトライナーアプリで、自分は文章として作成したいので今回は Obsidian を選んだ。
+一つ困った点としては、Joplin では Dropbox 経由で Mac と Android 間でノートを同期できていたのだが、Obsidian では Dropbox を使った同期ができなくなった。 だが、スマホでメモを見たくなる用途は主にレシピを見たいときだけだった。どうしても我慢できなくなったら頑張ってデバイス間同期をしてみる。</description></item></channel></rss>
