@@ -7,7 +7,8 @@ cover:
   image: "/posts/2023-02-17-0005/images/1.png"
   caption: "購読者遷移"
 tags:
-  - searchengineeringnewsletter
+  - search
+  - newsletter
 ---
 
 ## 記事ストックの改善
