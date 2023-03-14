@@ -1,27 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>note on hurutoriya</title><link>https://shunyaueta.com/tags/note/</link><description>Recent content in note on hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 17 Feb 2023 01:26:13 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/note/index.xml" rel="self" type="application/rss+xml"/><item><title>2023年の目標</title><link>https://shunyaueta.com/posts/2023-02-17-0126/</link><pubDate>Fri, 17 Feb 2023 01:26:13 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-17-0126/</guid><description>書籍の翻訳プロジェクトを完遂させて、2023 年中には出版されるように努める
-見返すと 2021-05-10 からこの企画が始まっている。現時点で一番の山場は終わっており、今は粛々と第 3 者レビュアーからの結果を取り込んで、体裁を整えている。 Apache Lucene のコントリビューターを目指して日々活動する
-OSS 活動自体に興味はあったが、ドキュメント集成くらいしか出来ていなかったので、コントリビューターを目指しつつ Lucene がどう動いているのかの理解を深めていく PR を作成したり、マージされたなどの定量指標は予想しづらいので、Lucene の深堀り記事を何本かけたかで振り返ってみたい。今年を振り返った後に Lucene の理解が深まっていれば大勝利 今年も SNS に振り回されないように時間を浪費しないために使わない。連絡ツール、告知ツールとしてのみ今年も利用
-SNS のタイムラインを眺める時間をやめた浮いた時間で以下のことを行なう。 最低でも月に 1 冊本を読んで、Obsidian にまとめる 英語学習を習慣化
-普段の仕事はほぼ英語なのだが、隔月に一度あるチームビルディングでランチを食べている際に以下のような事が 3-4 回ほどありモチベーションが湧いている。
-恥ずかしいほど多人数でガヤガヤしている場合の英語が聞き取れない 日常会話での単語がわからない また、毎週開催されるオンラインのチームビルディングランチがあるのだが、そこでも込み入った話題を話せない体験がとても歯がゆかいのも良いモチベーションになっている
-同僚が非常に意欲的に英語学習を行っていてそれも良いモチベーションに。
-2021 年 強さへの旅 - 運河 の英語学習の習慣化記事が非常に刺さったのでこれを踏襲したい
-定量的行動</description></item><item><title>2022年分の確定申告</title><link>https://shunyaueta.com/posts/2023-02-06-2305/</link><pubDate>Mon, 06 Feb 2023 23:05:42 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-06-2305/</guid><description>今年は、副業を行っていなかったので、寄附金控除のみ。 時間を計測していたが、今年は 30 分で確定申告できた。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>note on hurutoriya</title><link>https://shunyaueta.com/tags/note/</link><description>Recent content in note on hurutoriya</description><image><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 06 Feb 2023 23:05:42 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/note/index.xml" rel="self" type="application/rss+xml"/><item><title>2022年分の確定申告</title><link>https://shunyaueta.com/posts/2023-02-06-2305/</link><pubDate>Mon, 06 Feb 2023 23:05:42 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-06-2305/</guid><description>今年は、副業を行っていなかったので、寄附金控除のみ。 時間を計測していたが、今年は 30 分で確定申告できた。
 2020 年は紙の寄附金の証明書を集めておいて、手作業で入力後、寄附金控除アップロードした覚えがある。寄附金の証明書管理が面倒くさかった。 2021 年は寄附金控除は xml で吐き出せるようになったので、freee で xml を読み込んで提出1 。医療費控除や青色申告もあったのでまとめると 24 時間ほどを要した。 納税先とマイナポータルが連携しており、事前に設定しておけば、数クリックですべてのデータが連携されるのは非常に快適な体験だった。
 e-tax 連携のおかげで、寄附金の証明書を管理しなくて良くなったのは、良いことですね。 特にこれだけの規模の書類は全体で見ると決して小さくない数だと思うので、意味のあるペーパーレス化ですね。
 e-tax は毎年どんどん快適になるので、素晴らしいサービスだなと思っています。 マイナンバーと保険証連携による、医療費控除も数年後には実現しているのかなと思うと、更に確定申告が楽になりそうですね。 開発に携わっている方に感謝です。
-2021 年分の確定申告 &amp;#x21a9;&amp;#xfe0e;</description></item><item><title>愛用しているツールを更新: Joplin→Obsidian &amp; TickTick → Todoist</title><link>https://shunyaueta.com/posts/2022-06-03-2133/</link><pubDate>Fri, 03 Jun 2022 21:33:01 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-06-03-2133/</guid><description>ノートアプリを Joplin から Obsidian へ 2021-03-13 に notion から joplin に乗り換えた。 理由としては
-notion を マークダウンのメモ帳としか使わない DB 機能やテンプレート機能は必要としていない
-なのでロックインされずに自分で管理できる OSS の joplin のほうが良いなと思って乗り換えました。 必要な機能は全て満たしてるので満足 と Joplin に乗り換えて大きな不満は無く使い続けていたのですが、Obsidian に乗り換えました。
-きっかけは ryuzeee さんの記事1 なんですが、以前から存在は知っていたObsidian をとりあえず食わず嫌いせずに触って見ようかと思い立ち、Joplinの記事を Obsidian のフォーマットにすべて変換2して使い始めてみたところ、とても心地よい使い心地で感動して乗り換えを決定した。
-元の Joplin がそもそも Obsidian と同じローカルのプレーンテキストを扱うという思想なので移行がとても簡単でした。
-乗り換えを決めた点として、
-daily note プラグインと Calendar プラグインで日誌がめちゃくちゃ快適に書けるようになった。自分は日誌という形でログを残しつつ作業をしているのだが、このプラグインで毎日の日誌の記入がとても快適になった。 ぷーおんさんが書いてくれている記事3が、このプラグインの魅力をわかりやすく紹介されています。
-またバックリンクの機能がやはり強力で、プラグインも PKM(Personal Knowledge Management) を目的に作成されたツールが多いので、それも気に入った。(ランダムノートを開いて、ノートを整備する機能はなるほど!となる便利さ)
-Joplin でもバックリンクのプラグインはあり使っていたが、Obsidian のバックリンク機能は比較してとても完成度が高い。バックリンクを使った繋がりの提案や、つながりが無いノートも見つける機能があったりと書いていて楽しい。
-また、自分は料理を良くするのだが、普段参照するレシピも PKM で管理することで有機的な管理ができるようになりとても楽しい。これぞ PKM という事例だなとしみじみ。
-logseqというアプリも気になったのだが、アウトライナーアプリで、自分は文章として作成したいので今回は Obsidian を選んだ。
-一つ困った点としては、Joplin では Dropbox 経由で Mac と Android 間でノートを同期できていたのだが、Obsidian では Dropbox を使った同期ができなくなった。 だが、スマホでメモを見たくなる用途は主にレシピを見たいときだけだった。どうしても我慢できなくなったら頑張ってデバイス間同期をしてみる。</description></item><item><title>Re:プログラム雑談 188回：ゲスト回：MessagePassingの話とか</title><link>https://shunyaueta.com/posts/2022-05-12-2337/</link><pubDate>Thu, 12 May 2022 23:37:15 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-05-12-2337/</guid><description>自分が大好きだった、Message Passing はなしをふったりふられたの後日談を @karino2 さんが、Podcast で語ってくれていたので、アンサーソング。
+2021 年分の確定申告 &amp;#x21a9;&amp;#xfe0e;</description></item><item><title>Re:プログラム雑談 188回：ゲスト回：MessagePassingの話とか</title><link>https://shunyaueta.com/posts/2022-05-12-2337/</link><pubDate>Thu, 12 May 2022 23:37:15 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-05-12-2337/</guid><description>自分が大好きだった、Message Passing はなしをふったりふられたの後日談を @karino2 さんが、Podcast で語ってくれていたので、アンサーソング。
 読者としては、Message Passing という共著ブログは RSS に登録して毎回とても楽しみにしていた。 著者陣はなぜかやってよかった、大成功だね! という感想を出している方が少なく @morrita さんが
 特に皆が書いてくれたものを読むのはすごく楽しかったので、うまくいった気もしています。 https://messagepassing.github.io/023-s1/04-morrita/
 というポジティブな感想を残してくれており、読者としても著者陣が良い体験として経験されているとすごく嬉しい。 続編を期待しております。
