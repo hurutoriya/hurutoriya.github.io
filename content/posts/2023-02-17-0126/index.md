@@ -4,7 +4,7 @@ date: 2023-02-17T01:26:13+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - note
+  - essay
 ---
 
 - 書籍の翻訳プロジェクトを完遂させて、2023 年中には出版されるように努める
