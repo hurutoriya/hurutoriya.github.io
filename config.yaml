@@ -36,7 +36,7 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   homeInfoParams:
-    Title: 🦅 ☃️
+    Title: 🦅 🌸
     Content: >
       - 主にソフトウェア開発や検索技術、機械学習について記事を執筆していきます。
 
