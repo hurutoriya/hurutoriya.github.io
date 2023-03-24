@@ -16,4 +16,5 @@ NOTE: json を例題に key の抽出にしたほうが実際の状況に沿い�
 実は Google の公式ドキュメントでも推奨されています。
 https://cloud.google.com/bigquery/docs/pandas-gbq-migration https://cloud.google.com/bigquery/docs/bigquery-storage-python-pandas 方法は以下の２つ。
 google-cloud-bigquery をインストールして、マジックコマンドで Google BQ を実行 BQ 実行 →BigQuery table として保存 →GCS へ保存 → gsutil でマシンへコピー 1 番目は、Jupyter 上でマジックコマンドで Google BQ が実行できて、速度も pandas.rad_gbq よりも高速です 2 番目はそもそも実行結果が巨大な場合で、目安としては1GB以上なら 2 番目の方法を使えば楽です。
-1, google-cloud-bigquery をインストールして、Jupyter Notebook のマジックコマンドで Google BQ を実行 1 pip install --upgrade google-cloud-bigquery[bqstorage,pandas] magic command を実行</description></item></channel></rss>
+1, google-cloud-bigquery をインストールして、Jupyter Notebook のマジックコマンドで Google BQ を実行 1 pip install --upgrade google-cloud-bigquery[bqstorage,pandas] magic command を実行
+1 %load_ext google.</description></item></channel></rss>

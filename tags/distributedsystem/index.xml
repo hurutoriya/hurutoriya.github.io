@@ -8,4 +8,10 @@ Unified ストリーミング、バッチの両者のケースに一つのプロ
 自分はPythonが一眼手軽に書けるのでこの記事ではPythonで紹介していきます。
 Version 2.14.0 からPython 3がサポートされたのは非常にありがたいですね。それまではPython 2のみをサポートしており、その影響で技術選定時に採用しづらかったのでは無いのでしょうか?
 Spotify が作成しているApach BeamとDataflowのScala APIであるscioが開発されており、そちらも気になっています。
-https://github.com/spotify/scio https://engineering.</description></item></channel></rss>
+https://github.com/spotify/scio https://engineering.atspotify.com/2017/10/16/big-data-processing-at-spotify-the-road-to-scio-part-1/ では、まずは実際に動かしながら学んでみようということで
+https://beam.apache.org/get-started/try-apache-beam/
+を参考にApache Beam をPython SDKで試してみます
+COLABで実行を試せるので便利ですね
+ですが、Python2で実行されるように設定されているのでPython3で実行してみました。
+実行したcolab のコードを見ていきます。
+環境準備 apache-beam のinstallとGCSからApache beamで処理を行うテキストファイルをダウンロードします。</description></item></channel></rss>

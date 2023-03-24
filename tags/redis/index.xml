@@ -6,4 +6,4 @@
 解決方法 よく見ると公式ドキュメントに書かれていた1。
 以下のように redis-cli と同じ行で、redis に対して実行したいコマンドを追記して実行すれば、標準出力として表示される。
 1 redis-cli get KEY この結果が JSON として出力され、可読性を向上させるために jq2 で整形したい場合は、以下のようなコマンドを実行すればよい
-1 redis-cli get KEY | jq . To run a Redis command and return a standard output at the terminal, include the command to execute as separate arguments of redis-cli.</description></item></channel></rss>
+1 redis-cli get KEY | jq . To run a Redis command and return a standard output at the terminal, include the command to execute as separate arguments of redis-cli. https://redis.</description></item></channel></rss>

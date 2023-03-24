@@ -9,7 +9,7 @@ Meta 社内では、Presto や Spark に適用して処理の高速化、PyTorch
 SQL の分析、ストリーミング処理や機械学習のためのデータ処理など実際の処理内容は似通っているが、様々なフレームワークが使われ、独立して進化している。 この断片化によって、保守と拡張が困難になっていたが、それらを統合する形で実行可能にするのが Verox Presto, Spark などのデータ処理エンジンは、一見異なるように見えるが、レイヤー構造で考えると非常に似通っている。 Verox は一般的に実行エンジンレイヤーの代わりとなり、式評価、集約、ソート、結合などの処理を提供する。(一般的に data plane と呼ばれる) 実例と結果 Presto は Java で実行されるが、それを C++の Velox で置き換えた。Prestissimo というプロジェクト名で進んだ。(カッコいいね) Java での実行と比べると、大体 6 倍ほど高速化された Spark 上では、Gluten とよばれるプロジェクトで Velox と同じように C++での実行を試みるプロジェクトが公開されている。 PyTorch の TorchArrowを Velox 上で実行可能 最終的には、Velox で従来のデータマネジメントの部分と機械学習インフラストラクチャの部分の垣根を統一することを狙っている。</description></item><item><title>[抄訳] Data engineers vs. data scientists</title><link>https://shunyaueta.com/posts/2018-04-24/</link><pubDate>Tue, 24 Apr 2018 02:18:46 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-24/</guid><description>データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア
 紹介記事 Data engineers vs. data scientists
 紹介記事を同僚から教えてもらい、面白かったので抄訳した
-[](https://twitter.com/chezou/status/980349709339394048) &amp;gt; Aki Ariga さんが言及していた記事と方向性が同一で面白かった。
+&amp;gt; Aki Ariga さんが言及していた記事と方向性が同一で面白かった。
 Data Scientists : ビジネスサイドを理解し、他者にわかりやすく可視化と言語化できる職能。そして高度な数学的知識に基づいたモデリングやアルゴリズム提案スキルも持っている。Data Scientists には高度な Programming skill は必ずしも必須ではない、なぜならモデリングやアルゴリズムを実装するためにプログラミングを習得した人が多いからだ。システムデザインや Programming スキルは、Software Engineer や DataEngineer からみると見れたものではない(そしてそうでなくてはならない、なぜならスペシャリストだから)
 Data Engineer : 分散プログラミングを意識して構築できる職能。DE は卓越したプログラミングスキルとシステム構成力を持つ。定義 : つまりビッグデータに対してシステム的に解決できるスキル。クラスタ設計までが Data Engineer の役割であり運用(Ops)はやらない
 from : https://www.oreilly.com/ideas/data-engineers-vs-data-scientists

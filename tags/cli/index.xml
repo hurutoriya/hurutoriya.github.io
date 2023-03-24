@@ -6,7 +6,7 @@
 解決方法 よく見ると公式ドキュメントに書かれていた1。
 以下のように redis-cli と同じ行で、redis に対して実行したいコマンドを追記して実行すれば、標準出力として表示される。
 1 redis-cli get KEY この結果が JSON として出力され、可読性を向上させるために jq2 で整形したい場合は、以下のようなコマンドを実行すればよい
-1 redis-cli get KEY | jq . To run a Redis command and return a standard output at the terminal, include the command to execute as separate arguments of redis-cli.</description></item><item><title>env Studio No such file or directory というVisual Studio Code 起因のエラーへの対処方法</title><link>https://shunyaueta.com/posts/2022-11-04-1727/</link><pubDate>Fri, 04 Nov 2022 17:27:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-11-04-1727/</guid><description>VSCode をcodeコマンドから実行可能にするとPATHに Visual Studio Code の空白スペースが含まれてしまうことが原因でこのエラーが発生する。
+1 redis-cli get KEY | jq . To run a Redis command and return a standard output at the terminal, include the command to execute as separate arguments of redis-cli. https://redis.</description></item><item><title>env Studio No such file or directory というVisual Studio Code 起因のエラーへの対処方法</title><link>https://shunyaueta.com/posts/2022-11-04-1727/</link><pubDate>Fri, 04 Nov 2022 17:27:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-11-04-1727/</guid><description>VSCode をcodeコマンドから実行可能にするとPATHに Visual Studio Code の空白スペースが含まれてしまうことが原因でこのエラーが発生する。
 具体的には VSCcode の PATH が以下のように登録されてしまっている。
 1 PATH = ...PATH:/Applications/Applications/Visual Studio Code.app/Contents/Resources/app/bin 自分が遭遇したエラーは、環境変数を参照する make コマンドで
 1 2 make test env: Studio: No such file or directory というエラーが出てくるようになり、make task が実行できなくなってしまった。

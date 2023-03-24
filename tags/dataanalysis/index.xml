@@ -19,7 +19,9 @@ Data analysis starts with questions, not data or a technique
 Be both skeptic and champion
 懐疑的であれ、そしてそのデータに一番詳しい存在(チャンピオン)であれ
 でした。
-最近課題の理解が本当に大事だなと痛感する出来事に直面した後にこのドキュメントを読んだので非常に刺さりました。</description></item><item><title>Standard SQLで 列と列の組み合わせの数を集計したい</title><link>https://shunyaueta.com/posts/2021-02-09/</link><pubDate>Tue, 09 Feb 2021 23:27:37 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-02-09/</guid><description>group by は集計作業において根幹となる処理ですが、少し手の混んだ集計をしたいときに毎回調べていることが多かったのでここに学んだことをまとめておく
+最近課題の理解が本当に大事だなと痛感する出来事に直面した後にこのドキュメントを読んだので非常に刺さりました。
+Google は、同様のガイドブックシリーズで
+Rules of Machine Learning: 機械学習実践の聖書 People+AI Guidebook: 機械学習を用いた体験をどう作り込むかの知識とベストプラクティスがまとめられている を公開してくれていて、彼らが経験して本質的な知見を文章化して公開してくれるのは非常にありがたい。</description></item><item><title>Standard SQLで 列と列の組み合わせの数を集計したい</title><link>https://shunyaueta.com/posts/2021-02-09/</link><pubDate>Tue, 09 Feb 2021 23:27:37 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-02-09/</guid><description>group by は集計作業において根幹となる処理ですが、少し手の混んだ集計をしたいときに毎回調べていることが多かったのでここに学んだことをまとめておく
 今回やりたいことは
 A 列が α になっている行の B 列の種類を集計したい
 です。

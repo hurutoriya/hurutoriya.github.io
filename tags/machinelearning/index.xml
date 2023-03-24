@@ -14,8 +14,7 @@ Tutorias KDD 2022 Tutorials Schedule に Tutorial の情報がまとまってい
 Graph-based Representation Learning for Web-scale Recommender Systems. Authors: Ahmed El-Kishky (Twitter)*; Michael Bronstein (Twitter); Ying Xiao (Twitter); Aria Haghighi (Twitter) Twitter が開催する Tutorial で、すごく面白そうなのだが全く情報が見つからなかった。Twitter Cortex にも情報が更新されていないので、しばらくしたら公開されていることを祈る。 New Frontiers of Scientific Text Mining: Tasks, Data, and Tools.</description></item><item><title>Human-in-the-Loop 🧐 🤝 🤖 を題材にした機械学習の勉強会を開催した</title><link>https://shunyaueta.com/posts/2022-03-31/</link><pubDate>Thu, 31 Mar 2022 00:30:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-31/</guid><description>先日の記事で告知した1のですが、昨夜、「Human In The Loop」を題材にした勉強会を開催してきました。
 実際に Human In The Loop を扱った MLOps の論文2 を過去に書いているくらい興味のある分野なので、この領域を盛り上げていくために開催できてよかった。
 オンライン勉強会でしたので、配信動画を Youtube で公開しております。 Human In The Loop に興味のある方はぜひご覧ください。
-Machine Learning Casual Talks #13 (Online)
-各発表について 各発表の説明は割愛して、一言感想を述べさせていただきます。
+Machine Learning Casual Talks #13 (Online) 各発表について 各発表の説明は割愛して、一言感想を述べさせていただきます。
 Editors-in-the-loop なニュース記事要約システムの提案 by @upura 業務成果を国際会議のワークショップに通されたの素晴らしいですね 👏 (自分も論文を出したことがありますが)、論文を書くことが目的ではない職種で論文を出すのはそもそも体力が必要なので、提出してなおかつ採択されたのは素晴らしいの一言!
 Active Learning for Auto Annotation by @tkc79 自分たちのプロダクトで実際に能動学習の効果を検証して学びを得るというのは得難い経験ですね。尊い! 実際にやってみた上での実践的な経験を語ってくれたのが面白かったです。
 NeurIPS Data-Centric AI Workshop by @K_Ryuichirou Data Centric AI Workshop の要約を話して頂きました。 The Godfather of MLOps である D.Sculley さん 3が 「Technical Debt in ML: A Data-Centric View」の話をされていたらしいのですが、これは見なければ&amp;hellip;!</description></item><item><title>機械学習モデルの改善手法の一つ、 Human-in-the-Loop について</title><link>https://shunyaueta.com/posts/2022-03-22/</link><pubDate>Tue, 22 Mar 2022 00:16:51 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-22/</guid><description>Human In The Loop は、機械学習のモデルのライフサイクルに人が介在することにより、機械学習モデルの改善を目指す手法。
@@ -32,18 +31,21 @@ Human In The Loop はちょっと意味が広めになりがちな言葉でも�
 Human In The Loop について浅く広くまとめられていているので、Human In The Loop の概観を知りたい人には良いかも知れない。</description></item><item><title>Googleによる機械学習の実応用をテーマにしたCoursera の講義は、機械学習プロジェクトに携わるなら一度は見ておいても損はない</title><link>https://shunyaueta.com/posts/2022-03-17/</link><pubDate>Thu, 17 Mar 2022 22:44:05 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-17/</guid><description>過去に執筆した記事1を見返していたら
 そういえば講師陣がめちゃくちゃ良いこと言ってるんだけど記事内に掲載してなかったなと思い、動画を見返すと今でも学びが多かったので、講義のスクリーンショットを見返しつつ筆をとってみた。
 今見たら、日本語版の講義 How Google does Machine Learning 日本語版も公開されているので、興味の湧いた方はぜひ受講しましょう。Certificate を発行しないなら無料で受講できると思います。 講義内容の説明は、過去記事1で行っているので気になる方は御覧ください。
-機械学習プロジェクトの努力の割当: 期待と現実 ML Surprise _https://www.coursera.org/learn/google-machine-learning/lecture/aUjhG/ml-surprise_
+機械学習プロジェクトの努力の割当: 期待と現実 ML Surprise https://www.coursera.org/learn/google-machine-learning/lecture/aUjhG/ml-surprise
 Hidden Technical Debt in Machine Learning Systemsと同じ話ですね。上記の論文でよく参照される図よりも、
 Hidden Technical Debt in Machine Learning Systems から引用
 機械学習プロジェクトを
 KPI の定義 データ収集 インフラ構築 モデルの最適化 システムインテグレーション 上の 5 項目で分けて、棒グラフの各項目が割合と順序を示しているので更にわかりやすいですね。
 機械学習のシステム面かプロジェクト面のどちらに注力しているかという話ですが、プロジェクト面まで包括して説明しているのは良いですね。
-機械学習で避けるべき上位 10 個の落とし穴 The secret sauce _https://www.coursera.org/learn/google-machine-learning/lecture/BdsV6/the-secret-sauce_
+機械学習で避けるべき上位 10 個の落とし穴 The secret sauce https://www.coursera.org/learn/google-machine-learning/lecture/BdsV6/the-secret-sauce
 講師陣が Google 内部でのインタビューを行い、機械学習プロジェクトのアンチパターンのランキング Top10 を公開してくれています。
 アンチパターンの列挙ですが、肯定文と否定文が混じっているので、否定文で統一しています。
 機械学習の知識と同じくらい、ソフトウェア開発とインフラストラクチャの知識・経験を要求される
 まだデータを収集していなかった
-データが既に使える状態だと仮定していた</description></item><item><title>Amazon の製品検索で使われるロバストなキャッシュ手法の論文「ROSE: Robust Caches for Amazon Product Search」</title><link>https://shunyaueta.com/posts/2022-03-03/</link><pubDate>Thu, 03 Mar 2022 09:35:29 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-03/</guid><description>Web 検索とデータマイニングのトップカンファレンス WSDM2022 のワークショップで The First International Workshop on INTERACTIVE AND SCALABLE INFORMATION RETRIEVAL METHODS FOR ECOMMERCE (ISIR-ecom) が先日開催された。
+データが既に使える状態だと仮定していた
+NOTE: 例えばデータは収集されているが使える状態ではないとかですね。CSV ではなく、PDF でデータが保存されていたり、目当てのデータを取得するのに前処理をしないとそもそも取得できないなど&amp;hellip; 過去に主催した勉強会でも同じような事が言及されてます。 @yuzutas0 さん、あらためて登壇ありがとうございました!
+データマネジメントなき ML は、破綻する。 #MLCT
+Human In The Loop を維持していなかった</description></item><item><title>Amazon の製品検索で使われるロバストなキャッシュ手法の論文「ROSE: Robust Caches for Amazon Product Search」</title><link>https://shunyaueta.com/posts/2022-03-03/</link><pubDate>Thu, 03 Mar 2022 09:35:29 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-03/</guid><description>Web 検索とデータマイニングのトップカンファレンス WSDM2022 のワークショップで The First International Workshop on INTERACTIVE AND SCALABLE INFORMATION RETRIEVAL METHODS FOR ECOMMERCE (ISIR-ecom) が先日開催された。
 テーマは e コマース上での検索において
 検索システムのスケーラビリティ どうやって適合性(Relevancy)をシステムで改善したか システムの改善 についてをテーマにした検索エンジニアなら垂涎もののワークショップとなっている。
 同様の検索システムや実応用に注目したワークショップでは、以下のようなワークショップがある。
@@ -68,7 +70,9 @@ Machine Learning Casual Talks #5 を開催しました
 実際の流れとしては、GCP を採用している場合、Google BigQuery から SQL でデータを抽出してそのまま Google Sprad Sheet に出力、=image()関数で CDN から画像の URL を参照できたりなどなどかなり便利。 Spread Sheet を共有して複数人でも作業ができるのも魅力的。
 だが、文章の特定の部分を選択してタグを付けたかったり、クラス数が二桁など少し複雑なアノテーションタスクを行いたい場合 Google Spread Sheet では、アノテーションの生産性が劇的に落ちる、もしくは不可能になる。あくまで Google Spread Sheet はお手軽にラベリングを行うだけで、ラベリング専用ツールではないので当然の帰着ではある&amp;hellip;
 Label Studio とは 今回紹介するLabel Studioは OSS データのラベリング(アノテーション)ツールは、
-画像 画像分類 物体認識 セマンティックセグメンテーション 音声 音声分類 話者分類 感情認識 文字起こし 文章 文書分類 固有表現抽出(NER) 質疑応答 感情分析 時系列データ 時系列分類 時系列分割 イベント認識 マルチモーダル 対話処理 文字認識(OCR) ビデオ・音声の時系列分類 など多種多様なドメインに対してラベリングを行うことができるソフトウェアだ。</description></item><item><title>Amazon検索ランキングの奥深さ at MLconf SF 2016</title><link>https://shunyaueta.com/posts/2021-12-26/</link><pubDate>Sun, 26 Dec 2021 22:52:06 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-26/</guid><description>1 日遅れてしまいましたが、情報検索・検索技術 Advent Calendar 2021 25 日目の記事です。
+画像 画像分類 物体認識 セマンティックセグメンテーション 音声 音声分類 話者分類 感情認識 文字起こし 文章 文書分類 固有表現抽出(NER) 質疑応答 感情分析 時系列データ 時系列分類 時系列分割 イベント認識 マルチモーダル 対話処理 文字認識(OCR) ビデオ・音声の時系列分類 など多種多様なドメインに対してラベリングを行うことができるソフトウェアだ。
+また、アカウント認証や、キーボードショートカットなどアノテーションの生産性を向上させる基本的な機能が標準で搭載されており、アノテーション効率の向上と管理が期待できる。
+同様に OSS の自然言語タスクに特化したアノテーションツールのdoccano も検討したが、Label Studio は自然言語以外にも画像やランキングなど多種多様なラベリングタスクに対応しているので、後々にアノテーションしたいデータの種類が増えたとしても Label Studio を活用できて便利そうなので、今回は Label Studio を選択した。</description></item><item><title>Amazon検索ランキングの奥深さ at MLconf SF 2016</title><link>https://shunyaueta.com/posts/2021-12-26/</link><pubDate>Sun, 26 Dec 2021 22:52:06 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-26/</guid><description>1 日遅れてしまいましたが、情報検索・検索技術 Advent Calendar 2021 25 日目の記事です。
 ついにアドベントカレンダー最終日を迎えました! 今年はまだ検索領域のアドベントカレンダーが作られていないからということで、勢いで情報検索・検索技術 Advent Calendar 2021を作りましたが、多くの方に投稿に協力していただきありがとうございました。
 社内勉強会の発表でネタを探しており、2016 年と少し昔の情報ですが、Amazon の製品検索において、どのようにランキングを行っているかの公演動画が非常に面白かったので、勉強がてら残したメモを記事として公開します。
 今回の口頭発表は MLconf という開発者会議(非学会・非アカデミック)で発表されています。 自分が知る限り、MLconf は機械学習黎明期から高品質な発表が継続されて発信されており、非常に素晴らしいカンファレンスの一つ。 国際会議には投稿されていないが、実応用の観点からしてとても学びの多い発表がとても多いです。 機械学習の応用を考えている場合、世界の最先端事例を知ることができるので非常におすすめです。
@@ -95,12 +99,16 @@ design, development, test, deploy, operate, support
 を1チームが一気通貫で責任を持つスタイルをNetflixが提唱している。
 今所属している会社もMicro Serviceでの開発に注力していて、まさにFull Cycleスタイルで機械学習サービス開発を行っている。 個人的に機械学習プロジェクトとこの方式の相性の良いところは、例えば、職能ごとにモデル開発、システム開発と運用を行うメンバーを分割すると、
 モデルを作ってデプロイはしたが運用は他人任せになってしまい継続的な改善が回しづらい 役割が分離されていることで、モデルの詳細を完全に把握できないので実際のトラブル発生時に対応が困難 運用を考えてモデルがデザインされていないので運用者にしわ寄せがくる などアンチパターンが数多く存在する
-Micro Serviceでの開発は上記の課題を解決して、作って終わりではなく自分たちでシステムデザインからサポートまで行うことで、そのサービスの継続的な改善に責任と自由を手にして開発することできる また、プロジェクトデザインの段階からシステム開発・運用を念頭に動くことができるので、やってみてうまく動かないなどの不確実性を大きく減少させる</description></item><item><title>MLOps の国際会議 OpML'20 に、機械学習を活用した商品監視の改善に関する論文が採択されたので登壇してきた</title><link>https://shunyaueta.com/posts/2020-09-06/</link><pubDate>Sun, 06 Sep 2020 23:31:03 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-06/</guid><description>MLOps の査読付き国際会議 2020 USENIX Conference on Operational Machine Learning (略称 OpML&amp;rsquo;20)に論文が採択されたので、登壇してきた。
+Micro Serviceでの開発は上記の課題を解決して、作って終わりではなく自分たちでシステムデザインからサポートまで行うことで、そのサービスの継続的な改善に責任と自由を手にして開発することできる また、プロジェクトデザインの段階からシステム開発・運用を念頭に動くことができるので、やってみてうまく動かないなどの不確実性を大きく減少させる
+Machine Learning Engineer as Product Manager 機械学習プロジェクトは、POCなどで検証を行いプロジェクトが始まりますが最初の壁である
+機械学習で解ける余地のある大きなインパクト(やる価値)のある問題 をまず自分たちのサービスで発見する必要があります。(正直コレが一番難しい)
+CourseraでHow Google does Machine Learning の講義を修了したの講義でもGoogleでの機械学習プロジェクトのマネジメントについて言及されていますが、
+そもそもデータがない Human In The Loopを導入していない(継続的なデータの自浄作用が存在しない) などそれらの要素が欠けるだけで簡単にプロジェクトは失敗します。</description></item><item><title>MLOps の国際会議 OpML'20 に、機械学習を活用した商品監視の改善に関する論文が採択されたので登壇してきた</title><link>https://shunyaueta.com/posts/2020-09-06/</link><pubDate>Sun, 06 Sep 2020 23:31:03 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-09-06/</guid><description>MLOps の査読付き国際会議 2020 USENIX Conference on Operational Machine Learning (略称 OpML'20)に論文が採択されたので、登壇してきた。
 Podcast でも紹介しました。
 #1 MLOps の国際会議 OpML20 について at just4fun.fm
 MLOps の査読付き国際会議と OpML の立ち位置 機械学習エンジニアリング・MLOps の領域の会議でも一番有名なものとして 2018 年に発足したMLSysがあります。(ちなみに最初は SysML という名前でした) このカンファレンスの傾向としては、アカデミアの研究者主体の発足経緯からアカデミアからインダストリーへの橋渡し的立ち位置となっています。 具体的には、発表者はアカデミアの方が大半でハードウェアから、モデルの OSS 公開など幅広く機械学習エンジニアリング・MLOps の周辺領域をカバーしています。
 OpML はその一年後に、USENIXが母体の会議として MLOps を軸にした会議として誕生しました。 USENIX は SRECON、OSDI などを開催している団体です。 学術的なスタイルに則り、先端的な計算機システムの成果を論文として公開されています。MLSys と対称的にこちらはインダストリーからアカデミアへの橋渡し的立ち位置となっています。発表内容は企業での発表者が多く、実際の運用で得られた各企業の MLOps のベストプラクティスなどがメインで話されています。 個人的には OpML のほうが、MLOps のど真ん中を主体に置いているので MLSys よりも盛り上がってほしいなと思っています。
-OpML&amp;rsquo;19 がどのような様子だったかは、以下の記事がわかりやすいです。
+OpML'19 がどのような様子だったかは、以下の記事がわかりやすいです。
 OpML ‘19 参加レポート The first conference of Operational Machine Learning: OpML ‘19 自分自身、機械学習エンジニアリングや MLOps 周りのカンファレンス情報などを追いかけていますが、この分野で査読付きかつ論文として残せる形式の国際会議は主に上記の２つの認識です。</description></item><item><title>Machine Learning Casual Talks # 12 を開催しました</title><link>https://shunyaueta.com/posts/2020-06-13/</link><pubDate>Sat, 13 Jun 2020 23:06:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-06-13/</guid><description>Machine Learning Casual Talks 第 12 回を開催しました。 前回から少し開きがあり、7 ヶ月ぶりの開催となりました。
 https://mlct.connpass.com/event/172550/
 今回の個人的なテーマはベストプラクティスとアンチパターンです。
@@ -111,10 +119,14 @@ Google Meet と YouTube Live でオンラインミートアップの配信をし
 自分が思うに、オンライン参加も配信動画を後から見るのも、リアルタイムで質問ができないこと以外は大きな差異が無いと思っていたのだが、参加者側からすると大きく異なるようで新鮮だった。
 オンライン勉強会開催側のコツ 最低でも
 配信者 司会者 配信の監視を行う監視者 の 3 役がいないとオンライン開催は難しいことがわかった
-ライブ配信視聴者数は、以下のような遷移となりました。 500 人参加申込みがあり、最大視聴者数が 252 人とギリギリ 5 割を超えました。</description></item><item><title>機械学習システムの信頼性を数値化し、技術的負債を解消する論文「 The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction」</title><link>https://shunyaueta.com/posts/2020-04-25/</link><pubDate>Sat, 25 Apr 2020 01:35:20 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-25/</guid><description>[抄訳] What’s your ML test score? A rubric for ML production systemsで紹介した論文の続編があったので読んでみました。
-注意)この翻訳記事は原著論文の著者陣からレビューはされていません Shunya Ueta, are providing a translation and abridgment, which has not been reviewed by the authors. Change log 2021/02/03 ML Test Score を簡単に計算できるGoogle Spread Sheets を公開 2020/06/24 著者の Eric Breck さんに連絡をし、抄訳の公開を快諾していただきました。ありがとうございます。 完全な citation 情報を追記しました。 この翻訳記事が著者のレビューを受けていないことを追記しました。 Citation Eric Breck, Shanqing Cai, Michael Salib, . The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction.</description></item><item><title>機械学習システムの信頼性を数値化する論文「 What’s your ML test score? A rubric for ML production systems」</title><link>https://shunyaueta.com/posts/2020-04-19/</link><pubDate>Sun, 19 Apr 2020 22:18:10 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-19/</guid><description>NIPS206 にて開催された Reliable Machine Learning in the Wild - NIPS 2016 Workshop (2016) という、現実世界でどうやって信頼性の高い機械学習に取り組んでいくかについてのワークショップがある。
+ライブ配信視聴者数は、以下のような遷移となりました。 500 人参加申込みがあり、最大視聴者数が 252 人とギリギリ 5 割を超えました。
+今までのオフラインでの開催は 6-8 割くらいだったので、それと比較すると上出来かなと思います。 また、オンライン開催はオフライン開催と比べて会場の確保コストや懇親会おじさんの発生などを抑えられるので、その点もありがたかったです。 オフライン開催だと、会場撤収が効率的に終わっても 22:00、家に帰ると 23:00 なので、イベント主催者にとっても開催しやすい気がしますね。</description></item><item><title>機械学習システムの信頼性を数値化し、技術的負債を解消する論文「 The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction」</title><link>https://shunyaueta.com/posts/2020-04-25/</link><pubDate>Sat, 25 Apr 2020 01:35:20 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-25/</guid><description>[抄訳] What’s your ML test score? A rubric for ML production systemsで紹介した論文の続編があったので読んでみました。
+注意)この翻訳記事は原著論文の著者陣からレビューはされていません Shunya Ueta, are providing a translation and abridgment, which has not been reviewed by the authors. Change log 2021/02/03 ML Test Score を簡単に計算できるGoogle Spread Sheets を公開 2020/06/24 著者の Eric Breck さんに連絡をし、抄訳の公開を快諾していただきました。ありがとうございます。 完全な citation 情報を追記しました。 この翻訳記事が著者のレビューを受けていないことを追記しました。 Citation Eric Breck, Shanqing Cai, Michael Salib, . The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction. In 2017 IEEE International Conference on Big Data (Big Data) (pp.</description></item><item><title>機械学習システムの信頼性を数値化する論文「 What’s your ML test score? A rubric for ML production systems」</title><link>https://shunyaueta.com/posts/2020-04-19/</link><pubDate>Sun, 19 Apr 2020 22:18:10 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-19/</guid><description>NIPS206 にて開催された Reliable Machine Learning in the Wild - NIPS 2016 Workshop (2016) という、現実世界でどうやって信頼性の高い機械学習に取り組んでいくかについてのワークショップがある。
 ここで Google から発表された What’s your ML test score? A rubric for ML production systems がとても面白く、身になるものが多かったのでメモがてら抄訳を残しておく。
-PDF Slide 発表動画もワークショップページにて公開されています。 change logs 2021-04-25 この原著論文の完全版になっている論文の抄訳を新たに公開しています。 [抄訳]: The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction 概略 現実世界のプロダクションシステムで機械学習を使う際に、機械学習の研究実験と異なる、小さなもしくは小さくない問題がある テストとモニタリングはプロダクションレディの機械学習システムにとって必要不可欠 しかし、どれくらいのテストとモニタリングをすれば十分と言えるのだろうか? この論文では、それらの問題を解決する ML Test Score という基準を提案する Introduciton Google 内で積み重ねたベストプラクティスをもとに、実行可能なテスト、そしてその機械学習システムがどのていどプロダクションレディなのかを示すスコアシステムを提案</description></item><item><title>CourseraでHow Google does Machine Learning の講義を修了した</title><link>https://shunyaueta.com/posts/2020-04-18/</link><pubDate>Sat, 18 Apr 2020 00:59:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-18/</guid><description>Coursera でHow Google does Machine Learning の講義を修了した
+PDF Slide 発表動画もワークショップページにて公開されています。 change logs 2021-04-25 この原著論文の完全版になっている論文の抄訳を新たに公開しています。 [抄訳]: The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction 概略 現実世界のプロダクションシステムで機械学習を使う際に、機械学習の研究実験と異なる、小さなもしくは小さくない問題がある テストとモニタリングはプロダクションレディの機械学習システムにとって必要不可欠 しかし、どれくらいのテストとモニタリングをすれば十分と言えるのだろうか? この論文では、それらの問題を解決する ML Test Score という基準を提案する Introduciton Google 内で積み重ねたベストプラクティスをもとに、実行可能なテスト、そしてその機械学習システムがどのていどプロダクションレディなのかを示すスコアシステムを提案
+このスコアは、機械学習を始めたばかるのチームからエキスパートがあつまるチームまで幅広く適用可能
+注意: 一般的な Sofware Engineering のベストプラクティスは含んでいない
+そのかわり、学習とサービングのための Unit Test Coverage の計算方法など機械学習に必要不可欠な点を抑えている</description></item><item><title>CourseraでHow Google does Machine Learning の講義を修了した</title><link>https://shunyaueta.com/posts/2020-04-18/</link><pubDate>Sat, 18 Apr 2020 00:59:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-04-18/</guid><description>Coursera でHow Google does Machine Learning の講義を修了した
 Certificate はこちら
 7 割が、機械学習プロジェクトの始め方、実際のハマりどころなどが Google 内の実例などに基づいて語られていて面白かった。 特に、
 Secret Sourse ML Sutprise の部分が、アンチパターンや成功方法などが語られていて実際に実務で機械学習をやっている自分としてはわかる~~~~と共感がすごくできて面白かった。初めて機械学習プロジェクトを担当する PM の方にも良い教材なのではと思いました。
@@ -155,7 +167,9 @@ Machine Learning Casual Talks #7 — 資料一覧 — connpass
 なぜかというとドタキャンやノーショーの方の影響で本当に参加したい方や初回参加の方の機会が喪失してしまうのはいただけないので、それを解決したなと思ったのが始まりです。
 初回参加枠を設けることで、新規参加者が増えて内輪感が解消されるのも狙ってみました。その影響か前回と比較して 2 割ほど参加率が増えてよかったです :)
 パネルディスカッション 登壇者 2 名と僕がモデレーターを行い、パネルディスカッションを行いました。単なる発表保の質疑応答時よりも話が盛り上がってなによりでした~
-次回予告 次回 MLCT 第 8 回は 2019/01/28 に参加予定です!</description></item><item><title>Machine Learning Casual Talks #6 を開催しました</title><link>https://shunyaueta.com/posts/2018-10-14/</link><pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-10-14/</guid><description>機械学習の信頼性が熱いよねというお話
+次回予告 次回 MLCT 第 8 回は 2019/01/28 に参加予定です!
+現実世界での機械学習の辛みを共有したい・語りたいという方はゼヒご参加ください~
+Machine Learning Casual Talks #8 (2019/01/28 18:30〜)</description></item><item><title>Machine Learning Casual Talks #6 を開催しました</title><link>https://shunyaueta.com/posts/2018-10-14/</link><pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-10-14/</guid><description>機械学習の信頼性が熱いよねというお話
 柚餅子 さんの発表風景
 2018/09/25 の MLCT #6 を開催しました。
 MLCT とは
@@ -184,7 +198,7 @@ chezou さんとの出会いと MLCT 復活の狼煙 その後、
 あらためて、突然飛び込んできた見知らぬ人物の運営への参加を快諾してくださった、 @chezou さん、 @tetsuroito さん、 @komiya_atsushi さんありがとうございました 🙇</description></item><item><title>[抄訳] Data engineers vs. data scientists</title><link>https://shunyaueta.com/posts/2018-04-24/</link><pubDate>Tue, 24 Apr 2018 02:18:46 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-04-24/</guid><description>データサイエンティストとデータエンジニアの定義とその誤解による悲劇、そしてそれを救う存在である機械学習エンジニア
 紹介記事 Data engineers vs. data scientists
 紹介記事を同僚から教えてもらい、面白かったので抄訳した
-[](https://twitter.com/chezou/status/980349709339394048) &amp;gt; Aki Ariga さんが言及していた記事と方向性が同一で面白かった。
+&amp;gt; Aki Ariga さんが言及していた記事と方向性が同一で面白かった。
 Data Scientists : ビジネスサイドを理解し、他者にわかりやすく可視化と言語化できる職能。そして高度な数学的知識に基づいたモデリングやアルゴリズム提案スキルも持っている。Data Scientists には高度な Programming skill は必ずしも必須ではない、なぜならモデリングやアルゴリズムを実装するためにプログラミングを習得した人が多いからだ。システムデザインや Programming スキルは、Software Engineer や DataEngineer からみると見れたものではない(そしてそうでなくてはならない、なぜならスペシャリストだから)
 Data Engineer : 分散プログラミングを意識して構築できる職能。DE は卓越したプログラミングスキルとシステム構成力を持つ。定義 : つまりビッグデータに対してシステム的に解決できるスキル。クラスタ設計までが Data Engineer の役割であり運用(Ops)はやらない
 from : https://www.oreilly.com/ideas/data-engineers-vs-data-scientists
@@ -197,7 +211,8 @@ Podcast でも紹介しました
 要するに機械学習をサービスとして届けるには、実はめちゃんこ大変なんだよという話なんですが、みんな同じ問題にぶち当たります。
 そのためプロダクションレディなレベルで機械学習を提供できるプラットフォームを各社が提案しておりその中でも Google, Facebook の事例を提供します。
 TL; DR; FBLearner: MLaaS の事例として最初に読むべき論文、MLaaS をどのような戦略で提供しているかを抽象的にまなべるため、鳥瞰図として読みましょう TFX は逆に機械学習基盤が必要とする技術スタックや要件などを詳細に説明しており、教科書的な立ち位置です。社内で機械学習基盤を内製したい場合に詳しく読み込むこと必須 両社とも MLaaS をスケーラブルに提供する環境ができており、サービスのコアテクノロジーになっている Google : Tensorflow Expand TFX: A tensor flow-based production-scale machine learning platform
-Facebook : FBLeaner Applied machine learning at facebook a datacenter infrastructure perspective HPCA18</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
+Facebook : FBLeaner Applied machine learning at facebook a datacenter infrastructure perspective HPCA18
+ONNX を見ていると TensorFlow VS.</description></item><item><title>メルカリのTeam AI Meetup #1 に参加してきた #mercari_ai</title><link>https://shunyaueta.com/posts/2018-02-13/</link><pubDate>Tue, 13 Feb 2018 15:35:48 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-02-13/</guid><description>メルカリが主催する機械学習のミートアップに参加してきたので備忘録がてらメモ書きです。書きなぐったメモなので意訳として捉えて下さい
 発表者の顔は隠しています。なにか問題があればお伝え下さい。
 Team AI Meetup #1 (2018/02/13 19:00〜)
 Twitter: #mercari_ai
@@ -205,7 +220,8 @@ Twitter: #mercari_ai
 画像での商品検索に向けて - Mercari Engineering Blog
 【Mercari Summer Internship】商品画像の色推定を行いました! - Mercari Engineering Blog
 工藤さん 運用を継続すると色んな問題が出てきたので、それを解決する基盤環境を作成しはじめた e.g. 学習データのバージョン管理、モデルのデプロイ, etc 最終的には OSS としての公開も考えているとのこと メルカリの今年 1 年間の機械学習の取り組みとこれから - Mercari Engineering Blog
-ML Ops Study (仮) #1の発表内容も今回の機械学習の運用周りの Tips が共有されているので興味のある方はオススメです</description></item><item><title>Analyzing Free-standing Conversational Groups: A Multimodal Approach (ACMMM15) を読んだ</title><link>https://shunyaueta.com/posts/2018-01-14/</link><pubDate>Sun, 14 Jan 2018 10:41:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-14/</guid><description>スタンディングディスカッション形式での会話を評価した研究
+ML Ops Study (仮) #1の発表内容も今回の機械学習の運用周りの Tips が共有されているので興味のある方はオススメです
+機械学習基盤といえば、最近Polyaxonという OSS が公開されてました。</description></item><item><title>Analyzing Free-standing Conversational Groups: A Multimodal Approach (ACMMM15) を読んだ</title><link>https://shunyaueta.com/posts/2018-01-14/</link><pubDate>Sun, 14 Jan 2018 10:41:12 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-01-14/</guid><description>スタンディングディスカッション形式での会話を評価した研究
 Summary Slide
 X Alameda-Pineda, Y Yan, E Ricci, O Lanz, N Sebe
 “Analyzing Free-standing Conversational Groups: A Multimodal Approach”, in 2015 ACM Multimedia Conference
@@ -248,7 +264,7 @@ Summaly
 著者は NASA の JPL(ジェット推進研究所)、カリフォルニア工科大学に所属する Kiri L.
 Kiri L. Wagstaff
 発表動画を探してみたんですが、ICML2012 で発表した際のビデオはサーバのクラッシュにより喪失したとのこと。
-The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPoint は下記リンク先に配布されています。http://www.</description></item><item><title>OpenCV 3.3から使えるDNNモジュールを使って物体検出</title><link>https://shunyaueta.com/posts/2017-11-14/</link><pubDate>Tue, 14 Nov 2017 11:36:43 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-14/</guid><description>OpenCV と MobileNet を使って物体検出を行った
+The video for my controversial ICML 2012 talk is no longer available (lost in a server crash). However, you can read the original paper: Machine Learning that Matters (pdf, 6 pages, 234K) and see the slides from a subsequent invited AAAI talk: Challenges for Machine Learning Impact on the Real World (1.6M). PowerPoint は下記リンク先に配布されています。http://www.wkiri.com/research/papers/wagstaff-MLmatters-slides-AAAI.pptx</description></item><item><title>OpenCV 3.3から使えるDNNモジュールを使って物体検出</title><link>https://shunyaueta.com/posts/2017-11-14/</link><pubDate>Tue, 14 Nov 2017 11:36:43 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-11-14/</guid><description>OpenCV と MobileNet を使って物体検出を行った
 Object Detection with OpenCV dnn modules and MobileNetSSD on Jupyter Notebook
 Introduction 物体検出を Deep Leaning と OpenCV を用いて行う
 OpenCV 3.3 からdnnモジュールが正式にリリースされた

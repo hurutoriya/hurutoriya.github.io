@@ -6,4 +6,4 @@
 date '+%Y-%m-%d' → date '+%Y-%m-%d-%H%M'
 にして、 date コマンドに時間と分数を末尾に追加するように slug 作成コマンドを変更した。
 これで、同じ日に複数の記事を書けるようになった。
-Why ‘slug’ and not ‘permalink’ &amp;#x21a9;&amp;#xfe0e;</description></item></channel></rss>
+Why ‘slug’ and not ‘permalink’&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item></channel></rss>

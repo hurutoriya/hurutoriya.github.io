@@ -8,4 +8,4 @@ Berlin Buzzwords はドイツで毎年開催されている OSS を利用した�
 検索関係のシステムに携わっている場合、毎年面白い内容が目白押しなのでぜひとも見てほしい。
 今回は Berlin Buzzwords 2019 で発表された「Amazon では Lucene をどう活用して e コマース検索をスケールさせているか」の講演動画を社内勉強会で紹介するために視聴したので、そのメモを公開する。
 E-Commerce search at scale on Apache Lucene YouTube Web page PDF 自分の所感などを切り分けるため、自分の意見は IMO ではじめた文にして、メモっています。
-Overview クエリの p999 latency に対して非常に厳しい制限を行っている IMO このクエリの p999 latency 定義は、Lucene+(おそらく内製で今も開発している、response を返すための Lucene server?)が返す検索のレスポンスを指していると思われる p99.9 latency を SLA として、監視しているのはたしかにとてもシビアな基準だと感じる。 Amazon の query rate はめちゃくちゃピーキー (daily, weekly, yearly) Why Lucene?</description></item></channel></rss>
+Overview クエリの p999 latency に対して非常に厳しい制限を行っている IMO このクエリの p999 latency 定義は、Lucene+(おそらく内製で今も開発している、response を返すための Lucene server?)が返す検索のレスポンスを指していると思われる p99.9 latency を SLA として、監視しているのはたしかにとてもシビアな基準だと感じる。 Amazon の query rate はめちゃくちゃピーキー (daily, weekly, yearly) Why Lucene? Lucene は成熟しており、豊富な検索エンジンの機能が揃っている 情熱を持ったコミュニティが存在している Uber, Airbnb, Linkedin 全部 Lucene を使っている maxscore scoring , Weak AND, Lucene 8.</description></item></channel></rss>

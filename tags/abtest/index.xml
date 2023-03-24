@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>abtest on hurutoriya</title><link>https://shunyaueta.com/tags/abtest/</link><description>Recent content in abtest on hurutoriya</description><image><title>hurutoriya</title><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 13 Aug 2021 23:41:08 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/abtest/index.xml" rel="self" type="application/rss+xml"/><item><title>システムの応答速度は本質的な価値提供であることを示す A/B テストの実例</title><link>https://shunyaueta.com/posts/2021-08-13/</link><pubDate>Fri, 13 Aug 2021 23:41:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-08-13/</guid><description>内容 システム提供において、基本的に高速であればあるほど顧客は嬉しいものだが、実際のところ高速なシステムを提供して、どの程度の価値が発生するのかが気になったので、調べてみた。
 2021/08/14 追記 A/Bテスト実践ガイド　真のデータドリブンへ至る信用できる実験とは の書籍で同様な事例が紹介されているとのこと。情報提供ありがとうございます。 実務でA/Bテストに向き合った人間であれば必ず一度は考えたことのあるトピックについて、アメリカのテックカンパニー（Airbnb, Google, LinkedInなど）勤務の著者らが国際会議で発表された研究もちゃんと引用して見解を述べており説得力がある。 従って、現時点における最高レベルの意思決定をデータ（A/Bテスト）に基づいて行いたいと思うなら、一度は目を通しておくべきであり関係者必携だと思う。 ※個人的には”Webサービスのレイテンシーと利益の関係（５章や”多くのスピード問題”の節）”がお気に入りで、サイトのレイテンシー改善がいかに収益に貢献し得るか、つまりCodeの実行速度というエンジニアのアウトプットがダイレクトに収益に貢献できるか？をデータに基づいてきちんと測っているのが印象的で興味深かった内容でした。 Amazon review
-Three Challenges in Building Industrial-Scale Recommender Systems&amp;rdquo; - Keynote for ORSUM@RecSys&amp;rsquo;20 3rd Workshop on Online Recommender Systems and User Modeling でのkeynote session で発表された内容
+Three Challenges in Building Industrial-Scale Recommender Systems&amp;quot; - Keynote for ORSUM@RecSys'20 3rd Workshop on Online Recommender Systems and User Modeling でのkeynote session で発表された内容
 講演者は Sebastian Schelter さんという方で、アカデミックもインダストリーもどちらもバリバリにこなしている人だった。日本だとこういう経歴の人ってかなり珍しい気がするので、やはり層が厚い
 ふと@hagino3000 さんのツイートが印象に残っていたので、記録のためにこちらに。1年くらい前のやり取りだけど、印象に残っていて今回この記事を書いたきっかけでもある。
 推薦システムのレイテンシが15msと32msで差が出るかA/B Testしたって。推薦結果は同じで片方はあえて遅らせたって事だよな、はじめて聴く実験だ。15msの方がrevenueが良かったとの事。 twitter
 公開されている動画はこちら
-Three Challenges in Building Industrial-Scale Recommender Systems&amp;rdquo; - Keynote for ORSUM@RecSys&amp;rsquo;20
+Three Challenges in Building Industrial-Scale Recommender Systems&amp;quot; - Keynote for ORSUM@RecSys'20
 19,20枚目のスライド
 要約すると、
-既存の研究では、検索エンジン上で人工的に応答速度を遅らせた際にネガティブな影響が発生した。</description></item></channel></rss>
+既存の研究では、検索エンジン上で人工的に応答速度を遅らせた際にネガティブな影響が発生した。
+では、逆に応答速度を早めた場合どのような影響になるのだろうか? とてもおもしろい事例があるので是非紹介したい、
+オンプレのシステムからGoogle Cloud に移行するイベントを利用した実験を行った。マイグレーション時にサービングシステムの最適化などを行い、マイグレーション後のシステム性能向上した。この最適化により、モデルやシステム構成は全く同じだが、p90 の応答速度がオンプレのシステムでは 32ms だったものが、GCPでは15ms に向上した。 これにより生じた差異を活用して、以下のA/B テストを行った。 32ms をcontroll, 15ms をtest 群に分けてA.</description></item></channel></rss>

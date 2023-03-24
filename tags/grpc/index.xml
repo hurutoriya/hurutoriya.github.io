@@ -6,4 +6,5 @@ gRPC リフレクションはなにをしているか？
 ローカルの 5000 番のポートをリモートサーバの 5000 番ポートにフォワード (port-forward)しているとします。 例えば、kubectl だと以下のような実行コマンドになります。
 Forward a local port to a port on the Pod
 1 kubectl port-forward pods/hoge-asas32s 5000:5000 そして、ポートフォワードのシェルは保持した上で、別にシェルを起動します。
-この際に 対象となるlocalhost:5000 に対して、--host, --port オプションで指定してやれば evans の REPL モードが起動します。</description></item></channel></rss>
+この際に 対象となるlocalhost:5000 に対して、--host, --port オプションで指定してやれば evans の REPL モードが起動します。
+REPL 1 2 3 4 5 6 7 8 9 10 &amp;gt; evans -r --host localhost --port 5000 ______ | ____| | |__ __ __ __ _ _ __ ___ | __| \ \ / / / _.</description></item></channel></rss>

@@ -2,7 +2,7 @@
 2020 年は紙の寄附金の証明書を集めておいて、手作業で入力後、寄附金控除アップロードした覚えがある。寄附金の証明書管理が面倒くさかった。 2021 年は寄附金控除は xml で吐き出せるようになったので、freee で xml を読み込んで提出1 。医療費控除や青色申告もあったのでまとめると 24 時間ほどを要した。 納税先とマイナポータルが連携しており、事前に設定しておけば、数クリックですべてのデータが連携されるのは非常に快適な体験だった。
 e-tax 連携のおかげで、寄附金の証明書を管理しなくて良くなったのは、良いことですね。 特にこれだけの規模の書類は全体で見ると決して小さくない数だと思うので、意味のあるペーパーレス化ですね。
 e-tax は毎年どんどん快適になるので、素晴らしいサービスだなと思っています。 マイナンバーと保険証連携による、医療費控除も数年後には実現しているのかなと思うと、更に確定申告が楽になりそうですね。 開発に携わっている方に感謝です。
-2021 年分の確定申告 &amp;#x21a9;&amp;#xfe0e;</description></item><item><title>Re:プログラム雑談 188回：ゲスト回：MessagePassingの話とか</title><link>https://shunyaueta.com/posts/2022-05-12-2337/</link><pubDate>Thu, 12 May 2022 23:37:15 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-05-12-2337/</guid><description>自分が大好きだった、Message Passing はなしをふったりふられたの後日談を @karino2 さんが、Podcast で語ってくれていたので、アンサーソング。
+2021 年分の確定申告&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item><item><title>Re:プログラム雑談 188回：ゲスト回：MessagePassingの話とか</title><link>https://shunyaueta.com/posts/2022-05-12-2337/</link><pubDate>Thu, 12 May 2022 23:37:15 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-05-12-2337/</guid><description>自分が大好きだった、Message Passing はなしをふったりふられたの後日談を @karino2 さんが、Podcast で語ってくれていたので、アンサーソング。
 読者としては、Message Passing という共著ブログは RSS に登録して毎回とても楽しみにしていた。 著者陣はなぜかやってよかった、大成功だね! という感想を出している方が少なく @morrita さんが
 特に皆が書いてくれたものを読むのはすごく楽しかったので、うまくいった気もしています。 https://messagepassing.github.io/023-s1/04-morrita/
 というポジティブな感想を残してくれており、読者としても著者陣が良い体験として経験されているとすごく嬉しい。 続編を期待しております。
@@ -17,7 +17,9 @@ Blog 記事の感想は欲しい。。。が今だと一方通行。Twitter で�
 いや、はてぶやってるヒトははてぶでコメントすると思うので、単純にはいえないですが&amp;hellip;一つの指標として
 はてなスターや、Medium の clap のような弱いシグナルが欲しくて導入したのだが、なかなか思い通りにいかない。
 海外の有名所の Blog 記事だとコメントが殺到しているので、これも日本独特の問題なのか? それとも到達する数の規模が違うからそのぶんコメントが多くなる傾向などがあるのだろうか?
-increments などの雑誌に比べて Message Passsing は、他の著者が書いた記事に返信していくような形式なので、重複した内容が少ないのが良い点 @morrita さん</description></item><item><title>2022年、はじめてのまともな確定申告</title><link>https://shunyaueta.com/posts/2022-05-04-2243/</link><pubDate>Wed, 04 May 2022 22:43:11 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-05-04-2243/</guid><description>2022 年、初めてまともな確定申告をやったので、所感をメモ。
+increments などの雑誌に比べて Message Passsing は、他の著者が書いた記事に返信していくような形式なので、重複した内容が少ないのが良い点 @morrita さん
+自分もそう思うな~。MEssage Passing の面白さは著者陣がリレー記事のように言及しあって相互作用が発生しているのが面白い点だと思う。
+意見表明だけだと偉そう</description></item><item><title>2022年、はじめてのまともな確定申告</title><link>https://shunyaueta.com/posts/2022-05-04-2243/</link><pubDate>Wed, 04 May 2022 22:43:11 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-05-04-2243/</guid><description>2022 年、初めてまともな確定申告をやったので、所感をメモ。
 実際には 2021 年に初めて確定申告を行ったのだが、ふるさと納税と医療費控除のみだったので、まとも?な確定申告は 2022 年がはじめてといってもいいだろう。
 会計ソフトはマネーフォワードと迷ったが、クラウド会計ソフト freee 会計を採用した。 前評判では会計知識がある人からすると抽象化されすぎており、むず痒くなるという記事を見たのだが会計知識がない自分からすると全く問題なく使えた。 会計周りもすべてクレカ経由でしか支出していないのでひたすら振り分けて終わり。 これらは実質作業時間 15 時間程度。 振替項目が何が適切なのかの調査に一番時間が取られた。 書類提出も Andorid のアプリと連携することで free で完結して、ネット上で提出できて良い体験だった。 来年もしやることがあればものすごく早く終わりそう。 マネーフォワードの確定申告は、最初の画面で心が折れて回れ右をした。
 freee が「寄附金控除に関する証明書」の xml を読み込める機能に対応しており、ポチポチで終わった。 事前の証明書を発行するための手続きが若干煩雑だったが、今までに比べると圧倒的に楽だった。 証明書の管理もしなくて良くなったのは革命では? 実作業時間は 30 分程度。 紙がもったいないので、個人的には自治体から書類は送らないで欲しい。
@@ -27,7 +29,7 @@ freee が「寄附金控除に関する証明書」の xml を読み込める機
 国税庁が用意した Safari の拡張機能周りが魔窟で、当時のサイトを忘れたがマニュアルにかかれていない設定をしないとマイナンバー読み込みプログラムがそもそも起動しなかった。 リベンジできてなにより。 完全に無用になった IC カードリーダーは即売却した。
 総評 年々システムが改善されて自動化されていて、素晴らしい。
 賛否両論あると思うが、医療費もマイナンバーの保険証化2によりデータが収集されるらしいのでぜひ浸透してほしい。 最近のニュースでは別途診察代金が請求される方式らしく3、ここに税金使わないで何に使うんだろうかと思ったが、予算が取れなかったのかなと色々と考えをめぐらした。 せっかく良い活用が期待できるのに、使う動機を無くすのはもったいない。
-e-Tax、スマホがあれば IC カードリーダーは不要に - ケータイ Watch &amp;#x21a9;&amp;#xfe0e;</description></item><item><title>子供の就寝時に使っているホワイトノイズマシンをGoogle Home から Dreamegg に変更</title><link>https://shunyaueta.com/posts/2022-04-26-2320/</link><pubDate>Tue, 26 Apr 2022 23:20:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-04-26-2320/</guid><description>過去に 1 歳児の時点で育児の際に役立ったものに関する記事1を書いた。 今回は、その中で重宝していたホワイトノイズマシンを Google Home mini からDreamegg ホワイトノイズマシンに置き換えたので備忘録がてらメモ。
+e-Tax、スマホがあれば IC カードリーダーは不要に - ケータイ Watch&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item><item><title>子供の就寝時に使っているホワイトノイズマシンをGoogle Home から Dreamegg に変更</title><link>https://shunyaueta.com/posts/2022-04-26-2320/</link><pubDate>Tue, 26 Apr 2022 23:20:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-04-26-2320/</guid><description>過去に 1 歳児の時点で育児の際に役立ったものに関する記事1を書いた。 今回は、その中で重宝していたホワイトノイズマシンを Google Home mini からDreamegg ホワイトノイズマシンに置き換えたので備忘録がてらメモ。
 ホワイトノイズマシンとしての Google Home mini の欠点 当初は既に持っている Google Home mini がホワイトノイズマシンとして使えることが分かり、とてもありがたがったが使っていくうちに課題点が見えてきた。
 まず一つ目が、ウェイクワードによる起動が手間がかかる。 子供が寝ているときや寝る前にホワイトノイズマシンを起動するのだが、その際に
 自分「OK Google, ホワイトノイズを流して」
@@ -46,7 +48,7 @@ utterances GitHub issues をベースにしたコメントシステム giscus �
 だが、giscus は コメントを取り扱うなら issues ではなく Discussions のほうが適しているという動機から作られた。
 giscus は記事に対してリアクションができたり、コメントに関する voting もあるので、迷わず giscus を採用する流れとなった。
 確かに issues よりも GitHub Discussions のほうがコメントという概念に適していると思う。
-というわけで GitHub でサインインすれば記事末尾にて、giscus を通じてコメントやリアクションができるようになったので、リアクションお待ちしております&amp;hellip;!</description></item><item><title>投げ銭サービスのBuy me a cofee をBlog に導入してみた</title><link>https://shunyaueta.com/posts/2021-12-04/</link><pubDate>Sat, 04 Dec 2021 22:24:38 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-04/</guid><description>@potato4d さんや @takuti さんがBlog に Buy me a cofeeを導入していて、自分も導入したいと思いたち、導入してみた。
+というわけで GitHub でサインインすれば記事末尾にて、giscus を通じてコメントやリアクションができるようになったので、リアクションお待ちしております&amp;hellip;! 👇</description></item><item><title>投げ銭サービスのBuy me a cofee をBlog に導入してみた</title><link>https://shunyaueta.com/posts/2021-12-04/</link><pubDate>Sat, 04 Dec 2021 22:24:38 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-04/</guid><description>@potato4d さんや @takuti さんがBlog に Buy me a cofeeを導入していて、自分も導入したいと思いたち、導入してみた。
 やったこととして、Blog記事の末尾に、サポート機能として自分のbuy me a cofeeページへのリンクが表示されるようにした。
 導入経緯 以下のポストに強く共感と興味を持った。特に良い文章は抜粋しておく
 情報に対して価値を感じてくれた人に還元してもらえるのは素直に嬉しい
@@ -65,14 +67,15 @@ just4fun.fm Google Podcasts Apple Podcasts Pocket Casts ご感想などは Twitt
 なぜ Podcast なのか？ 以前からPodcastは日常的に聴いていて、自分の中でもすごく好きなメディアのうちの一つです。 前からやってみようかなと思っていたんですが、周りの人たちがPodcastを始めたのを機によし自分もやるかと始めてみました
 Blogと比べてみると、
 ブログ書くよりかはサラッと配信できる、音声で配信するのも新鮮で面白い その代わり、換気扇とかの音が気になり音源環境とかはめちゃくちゃ気を使う 発表レベルの構造化したトークよりも雑談レベルでワイワイするほうがPodcastは向いてる感じはする。前者だと準備やらなんやらで公開できずに死の谷に落ちそう 喋っているうちに思考が洗練されていくので、あまり気負いすぎずに喋りたい事を発信していくのが良さそう しばらく試験的に続けていきたいと思います。
-Anchor 凄い AnchorでPodcastを始めると、自動的にAppole Podcast, Google Podcast, Pocket CastなどPodcastのプラットフォームに自動配信される。 Google Podcastは、配信開始と通知が来ても実際は2-3日後に視聴可能になると問い合わせたら返信がきた Support here. Sorry for the confusion with your podcast on Google. Allow me to explain this to you.</description></item><item><title>機械学習・コンピュータビジョンを活かしたビジネスを手掛ける株式会社ABEJAでインターンしてきた</title><link>https://shunyaueta.com/posts/2014-08-23/</link><pubDate>Sat, 23 Aug 2014 17:18:02 +0000</pubDate><guid>https://shunyaueta.com/posts/2014-08-23/</guid><description>株式会社 ABEJA という会社に 2013/8/25~2013/9/26 間に 2 週間弱インターンシップに参加してきました。
+Anchor 凄い AnchorでPodcastを始めると、自動的にAppole Podcast, Google Podcast, Pocket CastなどPodcastのプラットフォームに自動配信される。 Google Podcastは、配信開始と通知が来ても実際は2-3日後に視聴可能になると問い合わせたら返信がきた Support here. Sorry for the confusion with your podcast on Google. Allow me to explain this to you. We have noted that for some users the podcast link takes a week or so to become active, so it should begin working soon!</description></item><item><title>機械学習・コンピュータビジョンを活かしたビジネスを手掛ける株式会社ABEJAでインターンしてきた</title><link>https://shunyaueta.com/posts/2014-08-23/</link><pubDate>Sat, 23 Aug 2014 17:18:02 +0000</pubDate><guid>https://shunyaueta.com/posts/2014-08-23/</guid><description>株式会社 ABEJA という会社に 2013/8/25~2013/9/26 間に 2 週間弱インターンシップに参加してきました。
 2013 年当時のサイトのスクショ
 What’S ABEJA? ABEJA について詳しく知りたい方は下記のリンクを見るとわかりやすいです。
 マーケティングから決済まで、人認証技術 × ビジネスプロデュースで未来を変える ABEJA の挑戦【連載:NEO ジェネ！】 いまそこにある、リアルタイムデータ解析。ぼくらの暮らしを変える、日本のスタートアップ 3 社 この会社をはじめて知ったのは、ミクシィでのインターンシップに参加してた時に別グループでインターンしていた知り合いの人に教えてもらったのがキッカケです。 機械学習や画像解析を用いて、現実世界の問題を解決して更にビジネスにまで昇華させている点に痺れました。
 本来なら一ヶ月近く参加予定だったんですが、もう一つ挑戦していたリクルートのインターンに運良く合格したので結果的には 2 週間弱という短めのインターンになりました。
 What do you doing in ABEJA intern? インターンの内容は Python を使って社内用のツールをゴニョゴニョしてました。
 郷に従います。(StyleGuide 見てなかった…) / 他 2 コメント http://t.co/5I0nThs4rU “PEP 8 — Style Guide for Python Code” http://t.co/in7q9lD6cy&amp;gt; — UEDA (@hurutoriya) 2014, 9 月 25
-普段は matlab か Ruby 書いてるんですが、普段書いてない言語を書くとあまりよろしくないコードになったので StyleGuide 導入しました。</description></item><item><title>ミクシィにインターンしてきた</title><link>https://shunyaueta.com/posts/2013-08-21/</link><pubDate>Fri, 23 Aug 2013 17:04:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-08-21/</guid><description>株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。 2013 年当時のスクリーンショットを探してたが、無かったので 2017/12/24 のを撮ってきた。良い意味であまり変わってない(ライさんの謎のくるまアプリとか)
+普段は matlab か Ruby 書いてるんですが、普段書いてない言語を書くとあまりよろしくないコードになったので StyleGuide 導入しました。
+_“vim で python 開発するとき pyflakes + PEP8 = flake8 が便利 _http://t.</description></item><item><title>ミクシィにインターンしてきた</title><link>https://shunyaueta.com/posts/2013-08-21/</link><pubDate>Fri, 23 Aug 2013 17:04:38 +0000</pubDate><guid>https://shunyaueta.com/posts/2013-08-21/</guid><description>株式会社ミクシイに 2013/8/9~2013/9/20 までインターンしてきました。 2013 年当時のスクリーンショットを探してたが、無かったので 2017/12/24 のを撮ってきた。良い意味であまり変わってない(ライさんの謎のくるまアプリとか)
 Dive into mixi
 なぜインターンに行こうと思ったのか 僕は高専から筑波大学の情報系に今年度から編入したんですが、
 編入してから同期の編入生や先輩、内部生の人達に会って 「このままじゃダメだ、もっと面白く!もっと楽しく生きる!!」 と感じたので参加しました。
@@ -86,4 +89,5 @@ DeployGate チームは社員二人、インターン三人という謎構成で
 今回のミクシィインターンは 6 週間を超える長期のインターンで実際に提供されているサービスの開発に参加すること t ができます。
 デメリット 基本的に無いです。
 強いて言うなら夏休みが 4/5 ほど持ってかれたことですね。
-何をやった？ 基本的に Github に issue に上がってるチケットを消化していく感じでした。 自分でこれがあったら便利だなと思う機能を追加したり、不便な箇所を改修したりして、GO サインが出たら Depoloy していきます。</description></item></channel></rss>
+何をやった？ 基本的に Github に issue に上がってるチケットを消化していく感じでした。 自分でこれがあったら便利だなと思う機能を追加したり、不便な箇所を改修したりして、GO サインが出たら Depoloy していきます。
+今年度のインターン生は何人? 内定生のインターンを除くと両手で数えられるほどでした。</description></item></channel></rss>

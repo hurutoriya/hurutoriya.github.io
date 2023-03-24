@@ -5,7 +5,8 @@ once deployed the label selectors of kubernetes service can not be updated until
 ref: MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutabl #508
 らしく、一度デプロイされたk8s service の label selector は、既存のdeployment を削除しないとアップデートは不可能らしい。
 なので、field is immutableというエラー文は正しいわけですね。
-そのdeployment を削除しても良い状態なら、以下のコマンドを実行後再度デプロイすれば、k8s service のlabel selector は実行されます。</description></item><item><title>GKE でローリングアップデート後、ローカルからポートフォワードでリクエストを投げるとcurl: (52) Empty reply from server と返ってくるときの対処方法</title><link>https://shunyaueta.com/posts/2021-02-21/</link><pubDate>Sun, 21 Feb 2021 23:46:30 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-02-21/</guid><description>前提 ローカルからkubectlでポートフォワードして、GKEにリクエストを投げて確認を行っている
+そのdeployment を削除しても良い状態なら、以下のコマンドを実行後再度デプロイすれば、k8s service のlabel selector は実行されます。
+1 kubectl delete deploy &amp;lt;deployment-name&amp;gt; もしくは、k8s service のlabel selectorの変更を諦めて既存のまま運用するのがもう一つの正解でしょうか。</description></item><item><title>GKE でローリングアップデート後、ローカルからポートフォワードでリクエストを投げるとcurl: (52) Empty reply from server と返ってくるときの対処方法</title><link>https://shunyaueta.com/posts/2021-02-21/</link><pubDate>Sun, 21 Feb 2021 23:46:30 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-02-21/</guid><description>前提 ローカルからkubectlでポートフォワードして、GKEにリクエストを投げて確認を行っている
 発生した問題 deployment のローリングアップデート前は問題なくポートフォワードを通してリクエストが返っていた。コードに変更を加えてGKE上でも確認をしたかったので、まずローカルで確認をして問題がなかった変更が、ローリングアップデート後ポートフォワード でGKE にリクエストを投げると curl: (52) Empty reply from server と返ってくる。
 TL; DR; ポートフォワードはrolling update が終わったら貼り直そう。なぜなら、ポートフォワードの接続先はローリングアップデート前後で変化するため。 エラーメッセージ curl でリクエストした際のメッセージ
 1 curl: (52) Empty reply from server Port foward の出力
