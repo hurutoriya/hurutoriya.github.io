@@ -3,7 +3,7 @@ defaultContentLanguage: "ja"
 languageCode: "ja"
 title: "hurutoriya"
 theme: "PaperMod"
-paginate: 5
+paginate: 20
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
