@@ -120,8 +120,8 @@ if __name__ == "__main__":
 
 ## Conclusion
 
-[Streamlit](https://streamlit.io/) is a powerful tools to quickliy build the demo application.
-You leand about how to get the uploade file path from Streamlit in this post.
+- [Streamlit](https://streamlit.io/) is a powerful tools to quickly build the demo application.
+- Learn about how to get the uploaded file path from Streamlit in this post.
 
 ## Reference
 
