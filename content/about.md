@@ -3,7 +3,7 @@ title: "著者について"
 menu: "main"
 ---
 
-上田隼也 (a.k.a. @hurutoriya) のブログです。
+上田隼也(Shunya Ueta) a.k.a. @hurutoriya のブログです。
 
 検索技術領域、機械学習の実応用やプロダクト開発に興味があります。
 
