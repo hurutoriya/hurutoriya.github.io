@@ -2,79 +2,22 @@ baseurl: "https://shunyaueta.com/"
 defaultContentLanguage: "ja"
 languageCode: "ja"
 title: "hurutoriya"
-theme: "PaperMod"
-paginate: 20
+theme: "hugo-bearblog"
 
-enableInlineShortcodes: true
+# Generate a nice robots.txt for SEO
 enableRobotsTXT: true
 
-languages:
-  ja:
-    languageName: "Japanese"
-    weight: 1
-    menu:
-      main:
-        - name: Archive
-          url: archives
-          weight: 5
-        - name: About
-          url: about
-          weight: 10
-        - name: Newsletter
-          url: https://searchengineeringnewsletter.substack.com/
-          weight: 10
-        - name: RSS
-          url: index.xml
-          weight: 10
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
+disableKinds:
+  - taxonomy
+ignoreErrors:
+  - error-disable-taxonomy
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  homeInfoParams:
-    Title: 🦅 🌸
-    Content: >
-      - 主にソフトウェア開発や検索技術、機械学習について記事を執筆していきます。
-
-      - _[→著者について詳しく](/about)_
-
-      - また、検索技術で面白かった記事をまとめて配信する[ニュースレター](https://searchengineeringnewsletter.substack.com/)を配信しています。
-
-      - 最新号は、ニュースレターの購読者のみメールで配信されて先読みできるので、興味のある方はぜひご購読ください。無料です。
-  ShowCodeCopyButtons: true
-  ShowFullTextinRSS: false
-  socialIcons:
-    - name: github
-      url: "https://github.com/hurutoriya"
-    - name: twitter
-      url: "https://twitter.com/hurutoriya"
-    - name: mastodon
-      url: https://mstdn.jp/web/@hurutoriya
-    - name: linkedin
-      url: "https://www.linkedin.com/in/hurutoriya/"
-    - name: buymeacoffee
-      url: https://www.buymeacoffee.com/hurutoriya
-    - name: rss
-      url: "index.xml"
-  ShowPostNavLinks: true
   author: "Shunya Ueta"
   title: "Shunya Ueta"
   description: Shunya Ueta's blog
+  dateFormat: "2006-01-02"
   images:
     - ogp.jpg
-  comments: true
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  highlight:
-    codeFences: true
-    guessSyntax: true
-    lineNos: true
-    noClasses: false
-    style: monokai
