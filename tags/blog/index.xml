@@ -20,4 +20,13 @@ zenn や note でも良い記事だなと思った際には、投げ銭をした
 もし自分が価値ある情報を提供することで、誰かの助けになり、その人達が還元してくれたなら凄くよいなと思った。業界全体がその流れになると面白いと思う。
 早速、この前書いた記事 を友人に送ったら、メンテナンスお疲れ様の意をこめて Coffee ☕️ を奢ってくれた。
 へんたい運用お疲れ様でした link
-手探りで作った記憶が蘇る。開発、メンテとありがとう link</description></item></channel></rss>
+手探りで作った記憶が蘇る。開発、メンテとありがとう link</description></item><item><title>Hugo で記事の更新日をgitと連携して自動的に取得して表示させる</title><link>https://shunyaueta.com/posts/2021-10-06/</link><pubDate>Wed, 06 Oct 2021 20:38:58 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-10-06/</guid><description>最近昔書いていた技術記事の情報が古くなりすぎて不正確なこともあったので、書き直すときがあったのだが、そのときに自動的に最終更新日を記事に表記できないか探していたら、実現方法があったのでメモしておきます。
+やっていることは Last Modified Date with Hugo の記事をと完全に一緒だが、日本語での情報が無かったので備忘録がてら記録を残す。
+Hugo は各ページに関する情報をFront Matter Variables という仕組みで Markdown 上に定義します。 主に YAML 形式で記述されていることが多いです。
+lastmod という変数が更新日を表す変数であり、この変数に対して更新日の情報を与えてやれば記事の最終更新日を表現することができる。
+Front Matter に lastmod: &amp;quot;2021-03-31&amp;quot; の形式で与えておけば、以下の形式で記事作成日と最終更新日を表記できる。
+{{ $date := .Date.Format &amp;#34;02.01.2006&amp;#34; }} {{ $lastmod := .Lastmod.Format &amp;#34;02.01.2006&amp;#34; }} &amp;lt;p&amp;gt;Published on: {{ $date }}&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Edited on: {{ $lastmod }}&amp;lt;/p&amp;gt; だが、毎回記事を編集するたびに lastmod 変数を追記するのは面倒なので自動化できるなら自動化したい。
+config.yaml で、以下の設定を行う。
+enableGitInfo: true enableGitInfoを trueにすることで、各ページに対してGit 情報を更新日として付与してくれる。
+最後にconfig.yaml で以下の設定を行えば、 Front Matter の lastmod 変数に対して、 Front Matter で定義されているlastmod、もしその情報がなければ各ページの gitの最終コミット日を返すという設定がされる。
+frontmatter: lastmod: - lastmod - :git 参考になると思うので、当ブログでの実際の変更点はこちら</description></item></channel></rss>
