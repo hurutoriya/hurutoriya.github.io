@@ -4,16 +4,18 @@ menu: "main"
 ---
 
 上田隼也 (a.k.a. @hurutoriya) のブログです。
-機械学習の実応用や検索技術領域に興味があります。
 
-Software Engineer として働いています。
+検索技術領域、機械学習の実応用やプロダクト開発に興味があります。
+
+現在は Software Engineer として東京で働いています。
+
 Opinions are my own.
 
-- [Linkedin](https://www.linkedin.com/in/hurutoriya)
-- [GitHub](https://github.com/hurutoriya)
-- [Twitter](https://twitter.com/hurutoriya)
-- [Speaker Deck](https://speakerdeck.com/hurutoriya)
-- [Google Scholar](https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ)
+- Linkedin: https://www.linkedin.com/in/hurutoriya
+- GitHub: https://github.com/hurutoriya
+- Twitter: https://twitter.com/hurutoriya
+- Speaker Deck: https://speakerdeck.com/hurutoriya
+- Google Scholar: https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ
 
 ## 活動履歴
 
