@@ -35,7 +35,7 @@ Opinions are my own.
 - `2020.07.08` [データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～](https://johokiko.co.jp/publishing/BC200701.php)
   - `マルチモーダルによる規約違反出品検知への応用と運用について` を共著にて執筆
 
-## Misc
+## コミュニティ運営活動
 
 - [Machine Learning Casual Talks](https://mlct.connpass.com/)
   - 第 5 回から運営者として、機械学習の実応用をテーマにしたコミュニティを運営しています。
