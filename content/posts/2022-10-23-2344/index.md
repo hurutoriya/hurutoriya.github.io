@@ -7,7 +7,7 @@ cover:
   image: "/posts/2022-10-23-2344/images/01.gif"
   caption: "デモアプリの動画"
 tags:
-  - elasticsaerch
+  - elasticsearch
   - python
   - huggingface
   - machinelearning
