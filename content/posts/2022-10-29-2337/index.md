@@ -4,11 +4,8 @@ date: 2022-10-29T23:37:35+09:00
 lang: ja
 author: Shunya Ueta
 ShowToc: true
-cover:
-  image: "/posts/2022-10-29-2337/images/1.png"
-  caption: "従来の検索結果、近似近傍探索、ハイブリッド検索の比較"
 tags:
-  - Elasticsearch
+  - elasticsearch
   - search
 ---
 
