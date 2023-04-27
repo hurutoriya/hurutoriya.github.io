@@ -1,3 +1,2 @@
-User-agent: *
-Disallow:
+User-Agent: *
 Sitemap: https://shunyaueta.com/sitemap.xml

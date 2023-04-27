@@ -1,17 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>cli on hurutoriya</title><link>https://shunyaueta.com/tags/cli/</link><description>Recent content in cli on hurutoriya</description><image><title>hurutoriya</title><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 10 Feb 2023 17:40:23 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/cli/index.xml" rel="self" type="application/rss+xml"/><item><title>redis-cli の結果を標準出力として受け取って jq でわかりやすく表示したい</title><link>https://shunyaueta.com/posts/2023-02-10-1740/</link><pubDate>Fri, 10 Feb 2023 17:40:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-10-1740/</guid><description>動機 Redis を扱っているのだが、その際にデバッグ用途で、内部で保存されているデータを redis-cli で対象の redis に対してコマンドを実行して確認する。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>cli on hurutoriya</title><link>https://shunyaueta.com/tags/cli/</link><description>Recent content in cli on hurutoriya</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 10 Feb 2023 17:40:23 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/cli/index.xml" rel="self" type="application/rss+xml"/><item><title>redis-cli の結果を標準出力として受け取って jq でわかりやすく表示したい</title><link>https://shunyaueta.com/posts/2023-02-10-1740/</link><pubDate>Fri, 10 Feb 2023 17:40:23 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-10-1740/</guid><description>動機 Redis を扱っているのだが、その際にデバッグ用途で、内部で保存されているデータを redis-cli で対象の redis に対してコマンドを実行して確認する。
 だがこのままだとコマンドの結果が JSON として返されるが見にくいので見やすく整形したいのが動機。
 詳細 自分が知っている方法だと
-1 redis-cli で、対象の redis に対してコマンドを実行できるインタラクティブモードに入る。 そして以下のコマンドを実行すると、VALUE の結果が確認できる。
-1 get KEY この結果は JSON として出力されるが、ターミナル上では整形されず非常に見づらかった。
+redis-cli で、対象の redis に対してコマンドを実行できるインタラクティブモードに入る。 そして以下のコマンドを実行すると、VALUE の結果が確認できる。
+get KEY この結果は JSON として出力されるが、ターミナル上では整形されず非常に見づらかった。
 解決方法 よく見ると公式ドキュメントに書かれていた1。
 以下のように redis-cli と同じ行で、redis に対して実行したいコマンドを追記して実行すれば、標準出力として表示される。
-1 redis-cli get KEY この結果が JSON として出力され、可読性を向上させるために jq2 で整形したい場合は、以下のようなコマンドを実行すればよい
-1 redis-cli get KEY | jq . To run a Redis command and return a standard output at the terminal, include the command to execute as separate arguments of redis-cli. https://redis.</description></item><item><title>env Studio No such file or directory というVisual Studio Code 起因のエラーへの対処方法</title><link>https://shunyaueta.com/posts/2022-11-04-1727/</link><pubDate>Fri, 04 Nov 2022 17:27:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-11-04-1727/</guid><description>VSCode をcodeコマンドから実行可能にするとPATHに Visual Studio Code の空白スペースが含まれてしまうことが原因でこのエラーが発生する。
+redis-cli get KEY この結果が JSON として出力され、可読性を向上させるために jq2 で整形したい場合は、以下のようなコマンドを実行すればよい
+redis-cli get KEY | jq . To run a Redis command and return a standard output at the terminal, include the command to execute as separate arguments of redis-cli. https://redis.io/docs/ui/cli/
+&amp;#160;&amp;#x21a9;&amp;#xfe0e; jq - jq is a lightweight and flexible command-line JSON processor.</description></item><item><title>env Studio No such file or directory というVisual Studio Code 起因のエラーへの対処方法</title><link>https://shunyaueta.com/posts/2022-11-04-1727/</link><pubDate>Fri, 04 Nov 2022 17:27:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-11-04-1727/</guid><description>VSCode をcodeコマンドから実行可能にするとPATHに Visual Studio Code の空白スペースが含まれてしまうことが原因でこのエラーが発生する。
 具体的には VSCcode の PATH が以下のように登録されてしまっている。
-1 PATH = ...PATH:/Applications/Applications/Visual Studio Code.app/Contents/Resources/app/bin 自分が遭遇したエラーは、環境変数を参照する make コマンドで
-1 2 make test env: Studio: No such file or directory というエラーが出てくるようになり、make task が実行できなくなってしまった。
+PATH = ...PATH:/Applications/Applications/Visual Studio Code.app/Contents/Resources/app/bin 自分が遭遇したエラーは、環境変数を参照する make コマンドで
+make test env: Studio: No such file or directory というエラーが出てくるようになり、make task が実行できなくなってしまった。
 原因として自分の場合は、brew で VSCode をインストールしなおしたら、このエラーが出てくるようになった。
 対処方法 公式ページに書いてあるとおりの方式1でパスを通せば解決する。 具体的に解説すると
 VS Code を起動 コマンドパレット(Cmd+Shift+P)を開いて、shell commandと打ち込み、Shell Command: Install 'code' command in PATH を選択して実行 でこのエラーが出てこなくなる。
 もしくは、ダブルクォーテーションでPATHを登録すればこの問題は回避可能
-1 export PATH=&amp;#34;\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&amp;#34; Visual Studio Code on macOS You can also run VS Code from the terminal by typing &amp;lsquo;code&amp;rsquo; after adding it to the path:</description></item></channel></rss>
+export PATH=&amp;#34;\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin&amp;#34; Visual Studio Code on macOS You can also run VS Code from the terminal by typing &amp;lsquo;code&amp;rsquo; after adding it to the path:</description></item></channel></rss>
