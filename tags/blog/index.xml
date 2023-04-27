@@ -8,4 +8,16 @@ new: ## Make new post with date as slug hugo new posts/$(shell date &amp;#39;+%Y
 date '+%Y-%m-%d' → date '+%Y-%m-%d-%H%M'
 にして、 date コマンドに時間と分数を末尾に追加するように slug 作成コマンドを変更した。
 これで、同じ日に複数の記事を書けるようになった。
-Why ‘slug’ and not ‘permalink’&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item></channel></rss>
+Why ‘slug’ and not ‘permalink’&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item><item><title>投げ銭サービスのBuy me a cofee をBlog に導入してみた</title><link>https://shunyaueta.com/posts/2021-12-04/</link><pubDate>Sat, 04 Dec 2021 22:24:38 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-12-04/</guid><description>@potato4d さんや @takuti さんが Blog に Buy me a cofeeを導入していて、自分も導入したいと思いたち、導入してみた。
+やったこととして、Blog 記事の末尾に、サポート機能として自分のbuy me a cofeeページへのリンクが表示されるようにした。
+導入経緯 以下のポストに強く共感と興味を持った。特に良い文章は抜粋しておく
+情報に対して価値を感じてくれた人に還元してもらえるのは素直に嬉しい
+ブログに Buy Me a Coffee の投げ銭導線を設置した @shu223 さんの とにかく、「技術の発信」でも収入が得られる時代が到来しつつある
+技術書でご飯は食べられるのか？ #技術書典 技術で稼げるようになった今、内発的動機（興味）があっても外発的動機（お金）が伴わないと優先度が上がりにくいということは起きていて、だからこそ勉強自体でも稼げるようよう仕組み化したいと思っていて、それが去年から試行錯誤してる「技術情報発信のマネタイズ」です。 tweet
+の方針に凄く興味と共感が持てた。
+拝金主義というわけではなく、投げ銭文化自体が凄く良い文化なので自分もその波に乗ってみたさがあり、導入してみた。
+zenn や note でも良い記事だなと思った際には、投げ銭をしたりするが、個人 Blog でも簡単にその機能が作れるのは良い時代になった。
+もし自分が価値ある情報を提供することで、誰かの助けになり、その人達が還元してくれたなら凄くよいなと思った。業界全体がその流れになると面白いと思う。
+早速、この前書いた記事 を友人に送ったら、メンテナンスお疲れ様の意をこめて Coffee ☕️ を奢ってくれた。
+へんたい運用お疲れ様でした link
+手探りで作った記憶が蘇る。開発、メンテとありがとう link</description></item></channel></rss>
