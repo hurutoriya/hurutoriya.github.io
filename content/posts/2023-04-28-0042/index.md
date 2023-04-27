@@ -12,4 +12,6 @@ tags:
 https://github.com/adityatelange/hugo-PaperMod → https://github.com/janraasch/hugo-bearblog
 
 [Masellum/hugo\-theme\-nostyleplease: a \(nearly\) no\-CSS, fast, minimalist Hugo theme ported from riggraz/no\-style\-please\.](https://github.com/Masellum/hugo-theme-nostyleplease)の究極の簡潔さも非常に気になったのだが、code block や tag を扱っていないなど担保したい機能も削ぎ落とされていたので、今回は採用は見送った。
-が、発送はとても良かった。
+が、この発想はしびれました。
+
+見た目も Web 1.0 の更にその前な感じがしてもはや面白い
