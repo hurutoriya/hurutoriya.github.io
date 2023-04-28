@@ -12,7 +12,11 @@ tags:
 
 ## Earlybird とは?
 
-Twitter の検索システムであり、 Apache Lucene をベースにした、リアルタイム検索システム。論文は[ここ](https://notes.stephenholiday.com/Earlybird.pdf) で、Blog 記事は [The Engineering Behind Twitter’s New Search Experience](https://blog.twitter.com/engineering/en_us/a/2011/the-engineering-behind-twitter-s-new-search-experience)は 2011 年に公開されている。
+Twitter の検索システムであり、 Apache Lucene をベースにした、リアルタイム検索システム。
+論文は[ここ](https://notes.stephenholiday.com/Earlybird.pdf)で、
+Blog 記事は [The Engineering Behind Twitter’s New Search Experience](https://blog.twitter.com/engineering/en_us/a/2011/the-engineering-behind-twitter-s-new-search-experience)は 2011 年に公開されている。
+
+`TODO`: 論文に書かれず、Blog 記事にのみ書かれている内容もあったので読んで追記しておく
 
 - Web 検索はある程度成熟してきた分野だが、SNS のリアルタイム検索はまだ 2011 年当時いまだ未成熟で未開拓な分野
   - Twitter で新たに開発したのが、 Earlybird と呼ばれるリアルタイム検索に特化した検索エンジン
@@ -94,8 +98,6 @@ ChatPDF での質問
 また、左ペインにアップロードした PDF が表示されて、ドラッグアンドドロップで選択した範囲の文章に対して要約させたり、説明させたりできるのはすごい便利です。
 
 ![scispace](/posts/2023-04-29-0030/images/scispace.png)
-
-- [The Engineering Behind Twitter’s New Search Experience](https://blog.twitter.com/engineering/en_us/a/2011/the-engineering-behind-twitter-s-new-search-experience) 2011-05-31 公開
 
 [^twitter-series-1st]: [Twitter の検索システムを学ぶ - 概要編](/posts/2023-04-17-2252)
 [^OSS-twitter-search]: https://github.com/twitter/the-algorithm/tree/main/src/java/com/twitter/search
