@@ -1,15 +1,15 @@
 ---
-title: "著者について"
+title: "このサイトについて"
 menu: "main"
 ---
 
-上田隼也(Shunya Ueta) a.k.a. @hurutoriya のブログです。
+## 著者概要
+
+上田隼也 / Shunya Ueta / hurutoriya
 
 検索技術領域、機械学習の実応用やプロダクト開発に興味があります。
 
 現在は Software Engineer として東京で働いています。
-
-Opinions are my own.
 
 - Linkedin: https://www.linkedin.com/in/hurutoriya
 - GitHub: https://github.com/hurutoriya
@@ -17,16 +17,14 @@ Opinions are my own.
 - Speaker Deck: https://speakerdeck.com/hurutoriya
 - Google Scholar: https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ
 
-## 活動履歴
-
-### 主な登壇歴
+## 主な登壇歴
 
 - `2020.08.07` [Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) at OpML20
   - 機械学習による C2C マーケットプレイスでの商品監視改善成果が MLOps の査読付き国際会議 OpML'20 にて登壇
     - [YouTube](https://www.youtube.com/watch?v=_rvEcH_zyt4)
     - [Slide](https://speakerdeck.com/hurutoriya/auto-content-moderation-in-c2c-e-commerce-at-opml20)
 
-### 執筆
+## 執筆歴
 
 - `2021.08.18` [機械学習エンジニアの学会での論文発表のススメ。応募から査読通過までの流れ](https://offers.jp/media/sidejob/workstyle/a_1966)
   - Offers magazine というメディアに、業務での実績の論文化について寄稿
