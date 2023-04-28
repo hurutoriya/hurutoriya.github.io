@@ -4,11 +4,10 @@ date: 2022-01-19T00:21:05+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - note
+  - blog
 ---
 
-Blog にコメントシステムを採用したいなと思って [giscus](https://github.com/giscus/giscus)
-を入れてみた。
+Blog にコメントシステムを採用したいなと思って [giscus](https://github.com/giscus/giscus)を入れてみた。
 
 ## 経緯
 
@@ -21,8 +20,8 @@ Medium だと clap 👏 だったり、はてなだとはてなスター ⭐️ 
 
 コメントシステムの採用候補は２つ
 
-- [utterances](https://github.com/utterance/utterances) GitHub issues をベースにしたコメントシステム
-- [giscus](https://github.com/giscus/giscus) は GitHub Discussions をベースにしたコメントシステム
+- [utterances](https://github.com/utterance/utterances) : GitHub issues をベースにしたコメントシステム
+- [giscus](https://github.com/giscus/giscus): GitHub Discussions をベースにしたコメントシステム
 
 両者とも OSS で、コメントのデータを GitHub 上で保持できるのが魅力的。
 [DISQUS](https://disqus.com/)も同じ機能を提供してくれているが、自分のデータは自分で持ちたいかつデザインが激しめな印象があるので、uttrances, giscus が候補に残った。
@@ -35,12 +34,13 @@ giscus は記事に対してリアクションができたり、コメントに�
 
 確かに issues よりも GitHub Discussions のほうがコメントという概念に適していると思う。
 
-というわけで GitHub でサインインすれば記事末尾にて、giscus を通じてコメントやリアクションができるようになったので、リアクションお待ちしております...! 👇
+というわけで GitHub でサインインすれば記事末尾にて、giscus を通じてコメントやリアクションができるようになりました。
+Hugo への組み込みは、同じ Hugo で giscus を導入している方の記事[^giscus]を参考にしました。
+
+リアクションお待ちしております...! 👇
 
 ## 余談
 
 [Webmention](https://www.w3.org/TR/webmention/) などの仕組みも気になるのだが、ちょっと採用するまでの仕組みが重いので不採用にした
 
-## References
-
-- [Giscus: The New Commenting Engine for My Website](https://zhauniarovich.com/post/2021/2021-06-giscus/)
+[^giscus]: [Giscus: The New Commenting Engine for My Website](https://zhauniarovich.com/post/2021/2021-06-giscus/)
