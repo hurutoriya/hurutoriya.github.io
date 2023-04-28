@@ -7,9 +7,10 @@ tags:
   - blog
 ---
 
-もっと完結なテーマにしたいなとふと思い立ち、良さそうなテーマを見つけたので変更した。
+PaperMod は非常に綺麗な見た目で気に入っていたが、もっと簡潔なテーマにしたいなとふと思い立ち、良さそうなテーマを見つけたので変更した。
 
-https://github.com/adityatelange/hugo-PaperMod → https://github.com/janraasch/hugo-bearblog
+- 変更前: https://github.com/adityatelange/hugo-PaperMod
+- 変更後: https://github.com/janraasch/hugo-bearblog
 
 [Masellum/hugo\-theme\-nostyleplease: a \(nearly\) no\-CSS, fast, minimalist Hugo theme ported from riggraz/no\-style\-please\.](https://github.com/Masellum/hugo-theme-nostyleplease)の究極の簡潔さも非常に気になったのだが、code block や tag を扱っていないなど担保したい機能も削ぎ落とされていたので、今回は採用は見送った。
 が、この発想はしびれました。
