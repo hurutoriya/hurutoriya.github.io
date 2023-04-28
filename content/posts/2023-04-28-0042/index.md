@@ -5,6 +5,7 @@ lang: ja
 author: Shunya Ueta
 tags:
   - blog
+  - hugo
 ---
 
 PaperMod は非常に綺麗な見た目で気に入っていたが、もっと簡潔なテーマにしたいなとふと思い立ち、良さそうなテーマを見つけたので変更した。
