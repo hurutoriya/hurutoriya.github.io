@@ -11,16 +11,19 @@ menu: "main"
 
 現在は Software Engineer として東京で働いています。
 
+## SNS
+
 - Linkedin: https://www.linkedin.com/in/hurutoriya
 - GitHub: https://github.com/hurutoriya
 - Twitter: https://twitter.com/hurutoriya
+- Mastdon: https://mstdn.jp/@hurutoriya
 - Speaker Deck: https://speakerdeck.com/hurutoriya
 - Google Scholar: https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ
 
 ## 主な登壇歴
 
 - `2020.08.07` [Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) at OpML20
-  - 機械学習による C2C マーケットプレイスでの商品監視改善成果が MLOps の査読付き国際会議 OpML'20 にて登壇
+  - 機械学習による C2C マーケットプレイスでの商品監視の改善成果について。 MLOps の査読付き国際会議 OpML'20 にて採択され、登壇
     - [YouTube](https://www.youtube.com/watch?v=_rvEcH_zyt4)
     - [Slide](https://speakerdeck.com/hurutoriya/auto-content-moderation-in-c2c-e-commerce-at-opml20)
 
@@ -31,7 +34,7 @@ menu: "main"
 - `2020.08.07` [Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) at OpML20
   - 機械学習による C2C マーケットプレイスでの商品監視改善成果が MLOps の査読付き国際会議 OpML'20 にて論文が採択 [PDF](https://www.usenix.org/system/files/opml20_paper_ueta_0.pdf)
 - `2020.07.08` [データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～](https://johokiko.co.jp/publishing/BC200701.php)
-  - `マルチモーダルによる規約違反出品検知への応用と運用について` を共著にて執筆
+  - `マルチモーダルによる規約違反出品検知への応用と運用について` を@shido さんと共著にて執筆
 
 ## コミュニティ運営活動
 
