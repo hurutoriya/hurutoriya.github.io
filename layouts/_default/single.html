@@ -1,6 +1,6 @@
 {{ define "main" }}
-{{ if eq .Type "blog" }}{{ if not .Params.menu }}
 <h1>{{ .Title }}</h1>
+{{ if not .Params.menu }}
 <p>
   <i>
     <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
@@ -8,7 +8,7 @@
     </time>
   </i>
 </p>
-{{ end }}{{ end }}
+{{ end }}
 <content>
   {{ .Content }}
   {{ partial "related.html" . }}
