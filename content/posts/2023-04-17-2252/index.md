@@ -11,7 +11,7 @@ tags:
 [Twitter's Recommendation Algorithm](https://blog.twitter.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm) Elon Mask が以前から計画していた、Twitter の検索&推薦関連のシステムが GitHub で公開された。
 良い機会なので、いままでの Twitter 検索の記事をまとめつつ、コードも読んでみます。
 
-この記事はシリーズになっており、以下の構成で進めていく。
+単発の記事でまとめようとするとドデカ記事になってしまうので、一連の記事を通じて Twitter の検索システムを学んでいきたいと思っており、以下の構成で進めていく。
 
 1. 概要編
 1. 論文解説
