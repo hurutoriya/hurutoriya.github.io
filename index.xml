@@ -466,16 +466,16 @@ References GitHub と Slack を連携させる integrations/slack</description><
 GCP による OSS UDF の bqutil.fn なのでお手軽に BigQuery の結果の型を確認したい時になにか良い方法がないかなと調べていたら、OSS でbqutil.fnという UDF が GCP から提供されていた。
 例えば型の確認の場合、以下の ユーザー定義関数（UDF) はどの GCP プロジェクトから実行しても実行可能
 bqutil.fn.typeof() このbqutil.fn はbigquery-utils/udfs/community/のディレクトリに格納されている UDF がbqutil という GCP プロジェクトのfn データセットに同期されているので、どの GCP プロジェクトの Google BigQuery から実行しても bqutil.fn.typeof()を実行可能にしているらしい。 頭良い
-This directory contains community contributed user-defined functions to extend BigQuery for more specialized usage patterns. Each UDF within this directory will be automatically synchronized to the bqutil project within the fn dataset for reference in queries.</description></item><item><title>GitHub discussion を使ったコメントシステム giscus を導入</title><link>https://shunyaueta.com/posts/2022-01-19/</link><pubDate>Wed, 19 Jan 2022 00:21:05 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-01-19/</guid><description>Blog にコメントシステムを採用したいなと思って giscus を入れてみた。
+This directory contains community contributed user-defined functions to extend BigQuery for more specialized usage patterns. Each UDF within this directory will be automatically synchronized to the bqutil project within the fn dataset for reference in queries.</description></item><item><title>GitHub discussion を使ったコメントシステム giscus を導入</title><link>https://shunyaueta.com/posts/2022-01-19/</link><pubDate>Wed, 19 Jan 2022 00:21:05 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-01-19/</guid><description>Blog にコメントシステムを採用したいなと思って giscusを入れてみた。
 経緯 Blog を読んだ際にコメントするまでではないけど、書いた人に対するシグナルとして、絵文字リアクションという仕組みがとても好き。 Medium だと clap 👏 だったり、はてなだとはてなスター ⭐️ ですね。また Slack や GitHub の emoji reaction も同じ発明だと思う
 また、はてぶや Twitter 以外でも感想が書ける場所があると良いのではと思いコメントシステムを Blog に導入してみた。
 選定基準 コメントシステムの採用候補は２つ
-utterances GitHub issues をベースにしたコメントシステム giscus は GitHub Discussions をベースにしたコメントシステム 両者とも OSS で、コメントのデータを GitHub 上で保持できるのが魅力的。 DISQUSも同じ機能を提供してくれているが、自分のデータは自分で持ちたいかつデザインが激しめな印象があるので、uttrances, giscus が候補に残った。
+utterances : GitHub issues をベースにしたコメントシステム giscus: GitHub Discussions をベースにしたコメントシステム 両者とも OSS で、コメントのデータを GitHub 上で保持できるのが魅力的。 DISQUSも同じ機能を提供してくれているが、自分のデータは自分で持ちたいかつデザインが激しめな印象があるので、uttrances, giscus が候補に残った。
 両者ともデザインシンプルで良い。
 だが、giscus は コメントを取り扱うなら issues ではなく Discussions のほうが適しているという動機から作られた。
 giscus は記事に対してリアクションができたり、コメントに関する voting もあるので、迷わず giscus を採用する流れとなった。
 確かに issues よりも GitHub Discussions のほうがコメントという概念に適していると思う。
-というわけで GitHub でサインインすれば記事末尾にて、giscus を通じてコメントやリアクションができるようになったので、リアクションお待ちしております&amp;hellip;! 👇</description></item><item><title>Search Engineering Newsletter vol.00</title><link>https://shunyaueta.com/posts/2022-01-16/</link><pubDate>Sun, 16 Jan 2022 00:00:37 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-01-16/</guid><description>検索技術とその関連領域を取り扱うニュースレターを不定期配信してみることにします。
+というわけで GitHub でサインインすれば記事末尾にて、giscus を通じてコメントやリアクションができるようになりました。 Hugo への組み込みは、同じ Hugo で giscus を導入している方の記事1を参考にしました。</description></item><item><title>Search Engineering Newsletter vol.00</title><link>https://shunyaueta.com/posts/2022-01-16/</link><pubDate>Sun, 16 Jan 2022 00:00:37 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-01-16/</guid><description>検索技術とその関連領域を取り扱うニュースレターを不定期配信してみることにします。
 2022 年から心機一転として、情報発信を今まで Twitter メインでやっていましたが、ニュースレターで行っていこうと思っています。 以下の Revue のリンクから登録が可能です。
 Search Engineering Newsletter By hurutoriya
 扱うトピックとしては、検索エンジンと情報検索の周辺領域です。 経緯としては、自分の職域である情報は積極的に収集しており、どうせなら発信したいなと考えて Twiter や、機械学習エンジニア時代には Revue を使って MLOps 領域に特化してニュースレター配信を試しにやってみた(覚えているかたもいるかも?)ことがありましたが、結局 Twitter で配信すれば同じではと考えてしまい、なんだかんだ継続できませんでした。
