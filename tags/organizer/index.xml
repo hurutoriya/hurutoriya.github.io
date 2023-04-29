@@ -10,4 +10,37 @@
 今回は、主にオンライン雑談を通じて知り合った検索&amp;amp;推薦システムに関わっている人や、弊社の検索チーム、推薦チームの同僚たちを招待して、オフラインでワイワイする予定です。
 というわけで最近、勉強会運営?というかイベント運営で考えていることをまとめてみました。
 また開催後に感想記事を書こうかなと思います。
-ではでは</description></item></channel></rss>
+ではでは</description></item><item><title>Human-in-the-Loop を題材にした機械学習の勉強会を開催した</title><link>https://shunyaueta.com/posts/2022-03-31/</link><pubDate>Thu, 31 Mar 2022 00:30:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-31/</guid><description>先日の記事で告知した1のですが、昨夜、「Human In The Loop」を題材にした勉強会を開催してきました。
+実際に Human In The Loop を扱った MLOps の論文2 を過去に書いているくらい興味のある分野なので、この領域を盛り上げていくために開催できてよかった。
+オンライン勉強会でしたので、配信動画を Youtube で公開しております。 Human In The Loop に興味のある方はぜひご覧ください。
+Machine Learning Casual Talks #13 (Online) 各発表について 各発表の説明は割愛して、一言感想を述べさせていただきます。
+Editors-in-the-loop なニュース記事要約システムの提案 by @upura 業務成果を国際会議のワークショップに通されたの素晴らしいですね 👏 (自分も論文を出したことがありますが)、論文を書くことが目的ではない職種で論文を出すのはそもそも体力が必要なので、提出してなおかつ採択されたのは素晴らしいの一言!
+Active Learning for Auto Annotation by @tkc79 自分たちのプロダクトで実際に能動学習の効果を検証して学びを得るというのは得難い経験ですね。尊い! 実際にやってみた上での実践的な経験を語ってくれたのが面白かったです。
+NeurIPS Data-Centric AI Workshop by @K_Ryuichirou Data Centric AI Workshop の要約を話して頂きました。 The Godfather of MLOps である D.Sculley さん 3が 「Technical Debt in ML: A Data-Centric View」の話をされていたらしいのですが、これは見なければ&amp;hellip;!</description></item><item><title>イベント運営に便利なsli.do の使いこなしかた</title><link>https://shunyaueta.com/posts/2018-06-17/</link><pubDate>Sun, 17 Jun 2018 15:03:27 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-06-17/</guid><description>イベント運営者必見 sli.do の使い方
+sli.do のディスプレイ画面
+sli.do という便利な質問投稿・回答サービスがあります。このサービスですが、イベント運営者あるあるの
+オフラインだと活発に質問が出ない Twitter は盛り上がってるが実際の反応はわからない Google Form はいまいち回答率が悪い などの問題点を解決してくれるサービスです
+Slido - Audience Interaction Made Easy
+基本的な使い方は以下の公式動画がサクッとまとめられていて分かりやすいです
+これ見れば sli.do の機能は全て俯瞰できる
+UI が良く操作に迷うことはないので、各機能のスクショを貼りつつ紹介していきます
+イベント設定 設定画面
+イベントの名前や、 短縮コード(イベントのハッシュタグにしておくと分かりやすい)を設定して導線をわかりやすくできる
+投票機能 無料版だと 3 つの投票までできる。大きなイベントでなければ十分。もちろん回答結果はシークレットにもできます。
+3 つの投票機能
+複数選択肢
+自由記入式
+星によるレーティング
+各投票機能はアクティブにすると参加者は一つだけ投票可能になる
+参加者からの質問・回答結果のライブ表示 右上のトグルボタンをクリックすると、投票結果をライブ表示できる。勉強会の発表中にサイドディスプレイがあれば常時表示しておくとライブ感が出て良いと思う
+ライブ画面への切り替え
+質問一覧
+回答ライブ画面
+上部のスイッチ画面から次の投票に切り替えることができる
+回答解析機能 管理画面から回答のインフォグラフィックを生成することもできる
+といたせりつくせりの機能が提供されています。
+まとめると
+イベント参加者からのオープンな質問投稿(匿名・非匿名) 各質問・回答のライブ表示 運営者からのサーベイ(イベントの感想など) の 3 点が sli.do では使えます
+Tips 唯一惜しい機能としては、イベント管理者が単一ユーザーでしか管理できない点ですが共同アカウント作れば大丈夫そうです。
+How do I add more admins to my event?
+Google Slides でも QA 機能ありませんかとかありますが、sli.</description></item></channel></rss>
