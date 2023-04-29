@@ -1,7 +1,6 @@
 ---
 title: "イベント運営に便利なsli.do の使いこなしかた"
 date: 2018-06-17T15:03:27.683Z
-lastmod: 2019-06-16T18:18:09+09:00
 lang: ja
 tags:
   - organizer
