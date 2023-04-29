@@ -1,5 +1,5 @@
 ---
-title: "2021年05月時点で自分が実践しているMLOpsの情報収集方法"
+title: "2021年05月時点で自分が実践している MLOps の情報収集方法"
 date: 2021-05-29T22:32:58+09:00
 lang: ja
 author: Shunya Ueta
@@ -47,7 +47,7 @@ tags:
 ### 論文
 
 - [eugeneyan/applied-ml](https://github.com/eugeneyan/applied-ml)
-  - @euganeyan さんがまとめてくれている、機械学習の応用例をまとめてくれているリポジトリ。事例を探したいならまずここを見れば間違いない
+  - @eugeneyan さんがまとめてくれている、機械学習の応用例をまとめてくれているリポジトリ。事例を探したいならまずここを見れば間違いない
 - [The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://research.google/pubs/pub46555/)
   - 機械学習システムの完成度を点数化できて、どの部分を改善していけばいいか明瞭にしてくれます。一度プロダクションにリリース後に、チームでスコアを計算してみて、次に何を改善するのか議論すると楽しいです。 [日本語での抄訳](https://shunyaueta.com/posts/2020-04-25/)
 
@@ -91,3 +91,5 @@ tags:
   - こちらは、実践的な麺をメインにした Podcast。D Sculley さんがゲストとしてきていた、[The Godfather Of MLOps](https://anchor.fm/mlops/episodes/The-Godfather-Of-MLOps--D-Scully--MLOps-Coffee-Sessions-32-eskt3q) は神回なのでおすすめ。
 
 読んだ記事は [はてぶでまとめている](https://b.hatena.ne.jp/hurutoriya/AppliedML/)ので、興味のある方はフォローすると役立つかもしれません。Twitter のほうにもはてぶと連携して放流しているので、そちらの[フォロー](https://twitter.com/hurutoriya)も是非。
+
+`[2023/04/30 追記]` Twitter やはてぶで記録するのはやめて、[Search Engineering Newsletter](https://searchengineeringnewsletter.substack.com/) というニュースレター形式で、検索技術・機械学習関係で面白かった記事配信しています。
