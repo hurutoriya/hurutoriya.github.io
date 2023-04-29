@@ -53,16 +53,16 @@ SIGIR Workshop On eCommerce 2017 年から毎年開催。累計 5 回開催 Inte
 機械学習系の国際会議でも手法ではなく、どう現実世界に適用したかに注目したワークショップが益々誕生しており非常に良い流れ。
 ACCEPTED PAPERS は 5 本あり、
 Amazon: 2 eBay: 1 The Home depot: 2 と企業関係者による論文が 100%となっている。
-https://github.com/ISIR-eCom/ISIR-eCom.github.io/tree/main/papers 最後の PDF 番号が 9 なので、最低でも 9 本の投稿はあった模様。</description></item><item><title>オンライン開催前提だからこそ可能な省エネ勉強会運営 ~勉強会運営再開してみた~</title><link>https://shunyaueta.com/posts/2022-02-22/</link><pubDate>Tue, 22 Feb 2022 22:21:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-02-22/</guid><description>自分はMachine Learing Casual Talksという勉強会の運営を @chezou さん、 @tetsuroito さん、 @komiya_atsushi さんの運営陣に合流する形で 2018/7 に再開しました。
+https://github.com/ISIR-eCom/ISIR-eCom.github.io/tree/main/papers 最後の PDF 番号が 9 なので、最低でも 9 本の投稿はあった模様。</description></item><item><title>オンライン開催前提だからこそ可能な省エネ勉強会運営に振ってみて、勉強会運営を再開した</title><link>https://shunyaueta.com/posts/2022-02-22/</link><pubDate>Tue, 22 Feb 2022 22:21:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-02-22/</guid><description>自分はMachine Learing Casual Talksという勉強会の運営を @chezou さん、 @tetsuroito さん、 @komiya_atsushi さんの運営陣に合流する形で 2018/7 に再開しました。
 もともと自分は根底として勉強会運営が好きで、つくばにいた頃から、tsukuba.rb や PRML勉強会などの勉強会運営をしていたというのもある。
 詳しい経緯は過去に記事に書いていた。 見返すとなかなかにエモい文章ですね。
 Machine Learning Casual Talks #5 を開催しました
 その後子供が産まれる直前の 2020/05 に12 回目を開催して以降、育児で時間的・精神的余裕がなくなって開催が途絶えてしまっていた。
-2021/06 に社内チャットで、
-育児で運営が途絶えてしまったんですが、皆さんどう克服しましたか?
-という質問したら、要約すると
+2021/06 に社内チャットで、イベント・コミュニティの運営者が集まる福利厚生度が高いチャンネルがあるのですが、そこで
+「育児で運営が途絶えてしまったんですが、皆さんどう克服しましたか?」
+という質問したら、
 @lestrrat さん 燃え尽きてもいいじゃないか by @lestrrat @sinmetal さん 志低く、無くならないようにしようぐらいの気持ちです。 と多種多様な考えを聞けて自分の中でも色々と考えが深まりました。
-当時の僕の反応を拾ってみるとこんな感じ
+当時の Slack での僕の反応を拾ってみるとこんな感じ
 志が低いというのはとても良いですね。存続させるの大事だなぁと痛感してます:relaxed: 僕も学生でつくばにいた頃東京の勉強会は参加できないけど、資料公開してくれるのありがてぇ、そしてこの分野(機械学習エンジニア) に興味あるけどそもそも鶏卵問題で経験がないと参入できないから知見を公開してくれるの助かるなぁという思い出があったなと今思い出しました w 今は実務でバリバリ触れているからこそ初心を忘れてしまったのかもしれないので、情報発信の大事さを今一度噛み締めました
 で、 2022/02 の現在ふとリアル開催?の時に比べるとオンライン開催ってめちゃくちゃ省エネで開催できるなと気が付きました&amp;hellip;!
 開催の手間 やるべきことを簡単に洗い出してみます。
