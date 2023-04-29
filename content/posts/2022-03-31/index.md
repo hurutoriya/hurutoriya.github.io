@@ -9,6 +9,7 @@ cover:
 tags:
   - machinelearning
   - event
+  - organizer
   - mlct
 ---
 
