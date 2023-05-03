@@ -5,6 +5,7 @@ lang: ja
 author: Shunya Ueta
 tags:
   - lucene
+  - search
 ---
 
 [初心者だけど Apache Lucene に貢献したい場合におすすめのチケットラベル](/posts/2023-03-11-1727/)のチケットを眺めていたときに面白いチケットがあった。
