@@ -4,7 +4,7 @@ date: 2022-01-07T21:14:25+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - essay
+  - review
 ---
 
 2021 年に購入して、今も愛用しているものを記しておく。
