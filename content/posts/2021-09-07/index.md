@@ -1,13 +1,14 @@
 ---
-title: "gcloud commands で PubSub に jsonファイルをメッセージとして公開 (Pusblish) する"
+title: "gcloud commands で Pub/Sub に jsonファイルをメッセージとして公開 (Pusblish) する"
 date: 2021-09-07T12:22:16+09:00
 lang: ja
 author: Shunya Ueta
 tags:
   - gcp
+  - pubsub
 ---
 
-gcloud commands で PubSub に json ファイルをメッセージとして公開 (Pusblish) する
+gcloud commands で Pub/Sub に json ファイルをメッセージとして公開 (Pusblish) する
 
 `jq` コマンドが必要になるが、一番簡単に実現できるのは
 
