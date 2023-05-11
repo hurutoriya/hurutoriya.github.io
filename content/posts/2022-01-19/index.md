@@ -5,6 +5,7 @@ lang: ja
 author: Shunya Ueta
 tags:
   - blog
+  - hugo
 ---
 
 Blog にコメントシステムを採用したいなと思って [giscus](https://github.com/giscus/giscus)を入れてみた。
