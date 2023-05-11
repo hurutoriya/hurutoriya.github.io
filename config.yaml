@@ -21,3 +21,4 @@ params:
   dateFormat: "2006-01-02"
   images:
     - ogp.jpg
+  ShowFullTextinRSS: false
