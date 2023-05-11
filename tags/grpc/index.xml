@@ -1,10 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>grpc on hurutoriya</title><link>https://shunyaueta.com/tags/grpc/</link><description>Recent content in grpc on hurutoriya</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 19 Aug 2021 16:51:05 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/grpc/index.xml" rel="self" type="application/rss+xml"/><item><title>gRPC client evans で portforward 先のリモートサーバーにリクエストを行う</title><link>https://shunyaueta.com/posts/2021-08-19/</link><pubDate>Thu, 19 Aug 2021 16:51:05 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-08-19/</guid><description>evans
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>grpc on hurutoriya</title><link>https://shunyaueta.com/tags/grpc/</link><description>Recent content in grpc on hurutoriya</description><image><title>hurutoriya</title><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 19 Aug 2021 16:51:05 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/grpc/index.xml" rel="self" type="application/rss+xml"/><item><title>gRPC client evans で portforward 先のリモートサーバーにリクエストを行う</title><link>https://shunyaueta.com/posts/2021-08-19/</link><pubDate>Thu, 19 Aug 2021 16:51:05 +0900</pubDate><guid>https://shunyaueta.com/posts/2021-08-19/</guid><description>evans
 evans は対象のサーバーの gRPC のリフレクション機能が起動されていれば、proto ファイルを参照せずに便利な [REPL mode](gRPC のリフレクション機能) を使用できます。
-If your server is enabling gRPC reflection, you can launch Evans with only -r (&amp;ndash;reflection) option.
-gRPC のリフレクション機能については evans 作者の ktr0731 さんが解説している記事が非常にわかりやすいです。
-gRPC リフレクションはなにをしているか？
-ローカルの 5000 番のポートをリモートサーバの 5000 番ポートにフォワード (port-forward)しているとします。 例えば、kubectl だと以下のような実行コマンドになります。
-Forward a local port to a port on the Pod
-kubectl port-forward pods/hoge-asas32s 5000:5000 そして、ポートフォワードのシェルは保持した上で、別にシェルを起動します。
-この際に 対象となるlocalhost:5000 に対して、--host, --port オプションで指定してやれば evans の REPL モードが起動します。
-REPL &amp;gt; evans -r --host localhost --port 5000 ______ | ____| | |__ __ __ __ _ _ __ ___ | __| \ \ / / / _.</description></item></channel></rss>
+If your server is enabling gRPC reflection, y... [Please access the original web page to read the full text]</description></item></channel></rss>

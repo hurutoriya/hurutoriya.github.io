@@ -1,50 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>productivity on hurutoriya</title><link>https://shunyaueta.com/tags/productivity/</link><description>Recent content in productivity on hurutoriya</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 12 Feb 2023 01:33:29 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/productivity/index.xml" rel="self" type="application/rss+xml"/><item><title>時間計測アプリを toggl から Session へと乗り換えてみた</title><link>https://shunyaueta.com/posts/2023-02-12-0133/</link><pubDate>Sun, 12 Feb 2023 01:33:29 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-12-0133/</guid><description>自分はかなり前から、タスクの時間計測のために toggl の無料枠を使わせてもらっていたが、作業計測をそもそも忘れたりしてしまい、振り返っても計測自体ができていないことが多かった。 あとはどこまで詳しく取るべきかの切り分けが出来ず、結局最近は個人プロジェクトの書籍翻訳の時間計測のためにしか利用できていなかった。
-最近集中力が散漫になっていることを課題に感じていたので、良い機会なのでこの機会にツールを乗り換えてみて、日々の生産性を向上できないか試してみる。
-色々と比較したが、 Session - Pomodoro focus timer with analytics が一番自分の求めているものに近かった。
-OSS が可能なら良かったが、単純なポモドーロタイマーならあるが、自分が求めている以下のような機能が無い。
-非 Web アプリ 統計機能 web サイトとアプリのブロック 音楽を流す ポモドーロごとへの感想 なので、 Best Pomodoro Time Alternatives - 2023 | Product Hunt　で良さげなポモドーロタイマーアプリを探してみた。
-Flow – Pomodoro timer for Mac, iPhone, and iPadもミニマルなデザインかつ、月 1$ で、買い切り 30$と値段は非常に魅力的なのだが、session と比べると、細かい機能差があり、手に馴染みそうだったのが、session だと思ったので、こちらを使い始めてみる。
-特に session の統計画面は見返していて楽しそうである。
-Apple のプラットフォームでしか使えないのは一つの懸念点だが、自分はなんだかんだ当面の間 Apple 製品を使うことになると思うので、その時が来たらまた別のツールを考えれば良い。
-今までは可能なら購読形式のツールは使いたくなかったが、このツールで自分の集中力を向上できるなら年課金したとしても安い買い物かなと思って開き直ってきた。 お金で、生産性を買う姿勢&amp;hellip;
-とりあえず、一ヶ月くらい使ってみます。
-以下のページで機能更新やカスタム方法などを公開してくれているが、こういうアップデート系統の記事って見るの楽しいですよね。過去の軌跡を追いかけることができますし。
-Session - Changelog
-一つの欠点は、非常に気に入っていた toggl と Obsidian の連携プラグインである
-mcndt/obsidian-toggl-integration: A Toggl integration plugin for the popular knowledge base application Obsidian.</description></item><item><title>愛用しているツールを更新: Joplin→Obsidian &amp; TickTick → Todoist</title><link>https://shunyaueta.com/posts/2022-06-03-2133/</link><pubDate>Fri, 03 Jun 2022 21:33:01 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-06-03-2133/</guid><description>ノートアプリを Joplin から Obsidian へ 2021-03-13 に notion から joplin に乗り換えた。 理由としては
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>productivity on hurutoriya</title><link>https://shunyaueta.com/tags/productivity/</link><description>Recent content in productivity on hurutoriya</description><image><title>hurutoriya</title><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 12 Feb 2023 01:33:29 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/productivity/index.xml" rel="self" type="application/rss+xml"/><item><title>時間計測アプリを toggl から Session へと乗り換えてみた</title><link>https://shunyaueta.com/posts/2023-02-12-0133/</link><pubDate>Sun, 12 Feb 2023 01:33:29 +0900</pubDate><guid>https://shunyaueta.com/posts/2023-02-12-0133/</guid><description>自分はかなり前から、タスクの時間計測のために toggl の無料枠を使わせてもらっていたが、作業計測をそもそも忘れたりしてしまい、振り返っても計測自体ができていないことが多かった。 あとはどこまで詳しく取るべきかの切り分けが出来ず、結局最近は個人プロジェクトの書籍翻訳の時間計測のためにしか利用できて... [Please access the original web page to read the full text]</description></item><item><title>愛用しているツールを更新: Joplin→Obsidian &amp; TickTick → Todoist</title><link>https://shunyaueta.com/posts/2022-06-03-2133/</link><pubDate>Fri, 03 Jun 2022 21:33:01 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-06-03-2133/</guid><description>ノートアプリを Joplin から Obsidian へ 2021-03-13 に notion から joplin に乗り換えた。 理由としては
 notion を マークダウンのメモ帳としか使わない DB 機能やテンプレート機能は必要としていない
-なのでロックインされずに自分で管理できる OSS の joplin のほうが良いなと思って乗り換えました。 必要な機能は全て満たしてるので満足 と Joplin に乗り換えて大きな不満は無く使い続けていたのですが、Obsidian に乗り換えました。
-きっかけは ryuzeee さんの記事1 なんですが、以前から存在は知っていたObsidian をとりあえず食わず嫌いせずに触って見ようかと思い立ち、Joplinの記事を Obsidian のフォーマットにすべて変換2して使い始めてみたところ、とても心地よい使い心地で感動して乗り換えを決定した。
-元の Joplin がそもそも Obsidian と同じローカルのプレーンテキストを扱うという思想なので移行がとても簡単でした。
-乗り換えを決めた点として、
-daily note プラグインと Calendar プラグインで日誌がめちゃくちゃ快適に書けるようになった。自分は日誌という形でログを残しつつ作業をしているのだが、このプラグインで毎日の日誌の記入がとても快適になった。 ぷーおんさんが書いてくれている記事3が、このプラグインの魅力をわかりやすく紹介されています。
-またバックリンクの機能がやはり強力で、プラグインも PKM(Personal Knowledge Management) を目的に作成されたツールが多いので、それも気に入った。(ランダムノートを開いて、ノートを整備する機能はなるほど!となる便利さ)
-Joplin でもバックリンクのプラグインはあり使っていたが、Obsidian のバックリンク機能は比較してとても完成度が高い。バックリンクを使った繋がりの提案や、つながりが無いノートも見つける機能があったりと書いていて楽しい。
-また、自分は料理を良くするのだが、普段参照するレシピも PKM で管理することで有機的な管理ができるようになりとても楽しい。これぞ PKM という事例だなとしみじみ。
-logseqというアプリも気になったのだが、アウトライナーアプリで、自分は文章として作成したいので今回は Obsidian を選んだ。
-一つ困った点としては、Joplin では Dropbox 経由で Mac と Android 間でノートを同期できていたのだが、Obsidian では Dropbox を使った同期ができなくなった。 だが、スマホでメモを見たくなる用途は主にレシピを見たいときだけだった。どうしても我慢できなくなったら頑張ってデバイス間同期をしてみる。</description></item><item><title>タスク管理ツールを Todoist から TickTick へ試しに乗り換えてみた</title><link>https://shunyaueta.com/posts/2022-03-13/</link><pubDate>Sun, 13 Mar 2022 00:13:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-13/</guid><description>2022 年、タスク管理を TickTick で行うで、TickTick の存在をしり興味が湧いたので、Todoist のサブスクリプションの更新期限も近かったので実験的に乗り換えてみた。
-タスクのインポート自体は、TickTick 自体がよくできていて、Todoist で TickTick のアプリの認証をするだけですべて完了するのは楽だった。Todoist 自体には何の不満も感じずプレミアム登録を 4 年ほど継続していた。
-自分のタスク管理ツール遍歴 OmniFocus 2013.05-2016.09
-買い切り型の Mac, iPhone アプリが提供されているとても手触りの良いタスク管理アプリ。使い心地に全く不満はなかったが、Android, Linux, Web の提供がなかったので、Todoist に乗り換えた。高専 4 年から修士 1 年くらいまで使っていた記憶。今でも良い思い出があるくらいには使い心地とデザインが良かった。特に Todoist でも似たような最近追加されたが、予定されているタスクと左側の Mini calendar でどれくらいの量があるか把握できる Focus 機能がとても良かった。 この時の体験のおかげで Mac の有料アプリは質が高いなぁという印象がついた。あと買い切り型のアプリだったので今思えばそれもありがたかった。
-Mac App: 4000 円 iOS App: 2000 円
-と少しお高めの値段だが、買い切りでこのクォリティだったので非常に大満足。
-今だと、Mac, iOS 以外に Web 版も提供していると聞いて、Web に手を出していることに驚いた。 そのまま Android アプリも作ってくれないだろうか
-Todoist 2016.10-2022.02
-Apple 製品でしか使えない製品は嫌だと思って乗り換えたので Todoist。仕様当初は予定されるタスクの一覧機能がなかった覚えがあるが、2020 年位?から近日中のタスクという機能が提供され始めて嬉しかった。 機能改善のアップデートが頻繁にあり、マークダウンでコメントをかけるようになったり、カンバン表示、サブタスクにも対応したりしていて好印象。乗り換えた TickTick と比べると全体的に使い心地が良かった。そこらへんは後述します。
-購読型で年額 4056 円
-TickTick 2022.</description></item><item><title>3人以上のスケジュール調整をする際には、ベータ版だけど Calendly の Meeting polls がとても便利</title><link>https://shunyaueta.com/posts/2022-02-25/</link><pubDate>Fri, 25 Feb 2022 16:36:48 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-02-25/</guid><description>予定調整サービスのCalendly 皆さん使われていますか?
+なのでロックインされずに自分で管理できる OSS ... [Please access the original web page to read the full text]</description></item><item><title>タスク管理ツールを Todoist から TickTick へ試しに乗り換えてみた</title><link>https://shunyaueta.com/posts/2022-03-13/</link><pubDate>Sun, 13 Mar 2022 00:13:08 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-13/</guid><description>2022 年、タスク管理を TickTick で行うで、TickTick の存在をしり興味が湧いたので、Todoist のサブスクリプションの更新期限も近かったので実験的に乗り換えてみた。
+タスクのインポート自体は、TickTick 自体がよくできていて、Todoist で TickTick のアプ... [Please access the original web page to read the full text]</description></item><item><title>3人以上のスケジュール調整をする際には、ベータ版だけど Calendly の Meeting polls がとても便利</title><link>https://shunyaueta.com/posts/2022-02-25/</link><pubDate>Fri, 25 Feb 2022 16:36:48 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-02-25/</guid><description>予定調整サービスのCalendly 皆さん使われていますか?
 僕は COVID-19 の影響でオンライン雑談を始めたのですが、カレンダーと連動したスケジュール調整とビデオチャットの準備が同時にされる点が便利すぎて感動して、ずっと愛用してます。
-チャットで Calendly の自分の予約ページへのリンクを共有するだけで、スケジュール調整がすべて終わるのでまぁ便利。
-社内だと相手のスケジュールが見えるので問題ないのですが、社外の方だとスケジュールが把握できないので、オンライン雑談は社外の人が主なので、重宝しています。
-チャットで従来は
-「&amp;ndash;日の&amp;ndash;の時間帯はいかがでしょうか?」 「一応カレンダーを抑えておきたいので、メールアドレスを教えてもらってもよろしいでしょうか? カレンダーを招待させていただいております」 のコミュニケーションが必要だったんですが完全になくなりました。最高
-今までの Calendly 使用履歴を見ると 20 件以上使っていました。そんなにオンライン雑談をしていたのか&amp;hellip;!
-ですが、スケジュール調整って自分と相手の２人だけ参加するパターン以外に自分を入れて 3 人以上参加する場合もあります。その場合は Calendly の仕様にあっていなかったので、泣く泣く従来の方法で確認をとっていました。
-ですが、2021 年の年末にMeeting Polls という自分以外に複数人の参加者がいる場合の調整機能がリリースされました。
-機能説明などは、以下の公式 Blog 記事がわかりやすいです。
-日本語で簡単に説明すると
-Calendly Meeting Polls の流れ 主催者: スケジュール候補の時間帯を複数選択 ここが Calendly らしい顧客のことを考えた機能なんですが、候補として選ばれた時間帯は Calendly がスケジュールを作成して自分のカレンダー上で時間を抑えておいてくれます。そのおかげで、スケジュールが確定する前に「あれ、自分で候補にあげたスケジュールを抑えていなくて、別のスケジュールで埋まってしまった&amp;hellip;」という悲しい事態を防げます。最高 主催者: 参加予定のメンバーにリンクを送信 参加者: メンバーは複数の候補の参加可能かどうか投票を行う。その際にスケジュールの招待をするための、名前とメールアドレスを入力。 主催者: 全員が参加できるスケジュールを選択する 主催者: 候補日のスケジュールはすべて削除され、参加者が招待されたスケジュールのみカレンダー上に残る 参加者: カレンダー上でスケジュール招待される この機能ですが、無料枠で使えるようにしてくれているので、非常に太っ腹。 誰でも使えます。
-自分の場合は、勉強会の運営時に登壇者の方々のスケジュール調整や、オンライン雑談が自分含めて 3 人以上の際に便利に使わせてもらっています。
-Calendly のプロダクト開発の姿勢は非常に大好きで、僕が Meeting Polls を使った履歴から対象にしていると思うんですが、メールで、Meeting Polls でみんなが待望していた機能を実装したよお知らせが来ていて、「これが本来のもらって嬉しい情報だよなぁ、気持ちの良いメール配信だ」と毎回感動しています。 顧客のことを考え抜いたプロダクト開発は、所作に現れますね~。
-というわけで、
-3 人以上のスケジュール調整をする際には、ベータ版だけど Calendly の Meeting poll がとても便利だからみんな使おうというお話でした。</description></item></channel></rss>
+チャットで Calendly の自分の予約ページへのリン... [Please access the original web page to read the full text]</description></item></channel></rss>

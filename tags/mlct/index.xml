@@ -1,93 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mlct on hurutoriya</title><link>https://shunyaueta.com/tags/mlct/</link><description>Recent content in mlct on hurutoriya</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 31 Mar 2022 00:30:50 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/mlct/index.xml" rel="self" type="application/rss+xml"/><item><title>Human-in-the-Loop を題材にした機械学習の勉強会を開催した</title><link>https://shunyaueta.com/posts/2022-03-31/</link><pubDate>Thu, 31 Mar 2022 00:30:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-31/</guid><description>先日の記事で告知した1のですが、昨夜、「Human In The Loop」を題材にした勉強会を開催してきました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mlct on hurutoriya</title><link>https://shunyaueta.com/tags/mlct/</link><description>Recent content in mlct on hurutoriya</description><image><title>hurutoriya</title><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 31 Mar 2022 00:30:50 +0900</lastBuildDate><atom:link href="https://shunyaueta.com/tags/mlct/index.xml" rel="self" type="application/rss+xml"/><item><title>Human-in-the-Loop を題材にした機械学習の勉強会を開催した</title><link>https://shunyaueta.com/posts/2022-03-31/</link><pubDate>Thu, 31 Mar 2022 00:30:50 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-03-31/</guid><description>先日の記事で告知した1のですが、昨夜、「Human In The Loop」を題材にした勉強会を開催してきました。
 実際に Human In The Loop を扱った MLOps の論文2 を過去に書いているくらい興味のある分野なので、この領域を盛り上げていくために開催できてよかった。
-オンライン勉強会でしたので、配信動画を Youtube で公開しております。 Human In The Loop に興味のある方はぜひご覧ください。
-Machine Learning Casual Talks #13 (Online) 各発表について 各発表の説明は割愛して、一言感想を述べさせていただきます。
-Editors-in-the-loop なニュース記事要約システムの提案 by @upura 業務成果を国際会議のワークショップに通されたの素晴らしいですね 👏 (自分も論文を出したことがありますが)、論文を書くことが目的ではない職種で論文を出すのはそもそも体力が必要なので、提出してなおかつ採択されたのは素晴らしいの一言!
-Active Learning for Auto Annotation by @tkc79 自分たちのプロダクトで実際に能動学習の効果を検証して学びを得るというのは得難い経験ですね。尊い! 実際にやってみた上での実践的な経験を語ってくれたのが面白かったです。
-NeurIPS Data-Centric AI Workshop by @K_Ryuichirou Data Centric AI Workshop の要約を話して頂きました。 The Godfather of MLOps である D.Sculley さん 3が 「Technical Debt in ML: A Data-Centric View」の話をされていたらしいのですが、これは見なければ&amp;hellip;!</description></item><item><title>オンライン開催前提だからこそ可能な省エネ勉強会運営に振ってみて、勉強会運営を再開した</title><link>https://shunyaueta.com/posts/2022-02-22/</link><pubDate>Tue, 22 Feb 2022 22:21:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-02-22/</guid><description>自分はMachine Learing Casual Talksという勉強会の運営を @chezou さん、 @tetsuroito さん、 @komiya_atsushi さんの運営陣に合流する形で 2018/7 に再開しました。
-もともと自分は根底として勉強会運営が好きで、つくばにいた頃から、tsukuba.rb や PRML勉強会などの勉強会運営をしていたというのもある。
-詳しい経緯は過去に記事に書いていた。 見返すとなかなかにエモい文章ですね。
-Machine Learning Casual Talks #5 を開催しました
-その後子供が産まれる直前の 2020/05 に12 回目を開催して以降、育児で時間的・精神的余裕がなくなって開催が途絶えてしまっていた。
-2021/06 に社内チャットで、イベント・コミュニティの運営者が集まる福利厚生度が高いチャンネルがあるのですが、そこで
-「育児で運営が途絶えてしまったんですが、皆さんどう克服しましたか?」
-という質問したら、
-@lestrrat さん 燃え尽きてもいいじゃないか by @lestrrat @sinmetal さん 志低く、無くならないようにしようぐらいの気持ちです。 と多種多様な考えを聞けて自分の中でも色々と考えが深まりました。
-当時の Slack での僕の反応を拾ってみるとこんな感じ
-志が低いというのはとても良いですね。存続させるの大事だなぁと痛感してます:relaxed: 僕も学生でつくばにいた頃東京の勉強会は参加できないけど、資料公開してくれるのありがてぇ、そしてこの分野(機械学習エンジニア) に興味あるけどそもそも鶏卵問題で経験がないと参入できないから知見を公開してくれるの助かるなぁという思い出があったなと今思い出しました w 今は実務でバリバリ触れているからこそ初心を忘れてしまったのかもしれないので、情報発信の大事さを今一度噛み締めました
-で、 2022/02 の現在ふとリアル開催?の時に比べるとオンライン開催ってめちゃくちゃ省エネで開催できるなと気が付きました&amp;hellip;!
-開催の手間 やるべきことを簡単に洗い出してみます。
-共通部分 開催前 登壇者探す connpass 作成 Twitter 告知 当日 Twitter 実況 司会 リアル開催 数ヶ月前 会場確保(自分の場合メルカリの会場を毎回スポンサーとしてお借りしていた)。なぜならメルカリが勉強会会場として高頻度で使われるのでハコを抑えるのが毎回激戦区だった。 スポンサーしてもらうために申請 当日(会社にて) 開催ビルで準備。入場用の道具(入場用、案内用の看板設営、ポスター印刷して看板に挿入) 開始時間 1 時間前から動き出す 懇親会のデリバリー受け取り、配備 会場の音響設備、接続確認 100 個以上の椅子や机を勉強会スタイルに並び替える(これがマンパワーが必要で地味にきつい、これを運営のみんなでやっていた) 登壇者全員の接続確認 懇親会終了後撤収 ゴミなどがちゃんとゴミ箱に捨てられているかの確認と清掃 机・椅子などもきれいに全部拭いて、元の形に戻す。基本的に準備したものをすべてもとに戻していく 9 回目以降は、撤収ボランティア枠を設けて手伝ってもらっていた。確か 8 回目の時に @keisuke_umezawa さんや @nasuka さんが手伝いますよと自発的に行ってもらえてめちゃくちゃ感激した覚えがある(実際は 4-5 人に手伝ってもらいましたが全員は覚えてないです、すみません)。この場面は本当~に良い記憶として残っている。なんか運営していてよかったと思った一番の記憶かもしれない。その後毎回無償で手伝ってもらうのは申し訳ないので、抽選枠ではなく、ボランティア枠と撤収作業を手伝ってもらえると、確実に勉強会に参加できますよという仕組みを作った覚えがある。 21:30 に撤収開始で、終わるのは 22:30 くらい。帰宅は日付が変わるか変わらないかという感じ オンライン開催 前日 配信が問題なくできているかのリハーサル 当日(自宅にて) 開催 30m 前に登壇者にビデオチャットに参加していただき、接続確認 懇親会終了後、そこはすでに自宅。例えば 23 時に終わったとしても、23 時には家にいるこれって凄い。 とオンライン開催のコストは比類できないほど低いことがわかりますね。</description></item><item><title>Machine Learning Casual Talks # 12 を開催しました</title><link>https://shunyaueta.com/posts/2020-06-13/</link><pubDate>Sat, 13 Jun 2020 23:06:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-06-13/</guid><description>Machine Learning Casual Talks 第 12 回を開催しました。 前回から少し開きがあり、7 ヶ月ぶりの開催となりました。
+オンライン... [Please access the original web page to read the full text]</description></item><item><title>オンライン開催前提だからこそ可能な省エネ勉強会運営に振ってみて、勉強会運営を再開した</title><link>https://shunyaueta.com/posts/2022-02-22/</link><pubDate>Tue, 22 Feb 2022 22:21:47 +0900</pubDate><guid>https://shunyaueta.com/posts/2022-02-22/</guid><description>自分はMachine Learing Casual Talksという勉強会の運営を @chezou さん、 @tetsuroito さん、 @komiya_atsushi さんの運営陣に合流する形で 2018/7 に再開しました。
+もともと自分は根底として勉強会運営が好きで、つくばにいた頃から、ts... [Please access the original web page to read the full text]</description></item><item><title>Machine Learning Casual Talks # 12 を開催しました</title><link>https://shunyaueta.com/posts/2020-06-13/</link><pubDate>Sat, 13 Jun 2020 23:06:44 +0900</pubDate><guid>https://shunyaueta.com/posts/2020-06-13/</guid><description>Machine Learning Casual Talks 第 12 回を開催しました。 前回から少し開きがあり、7 ヶ月ぶりの開催となりました。
 https://mlct.connpass.com/event/172550/
 今回の個人的なテーマはベストプラクティスとアンチパターンです。
-@keigohtr さんには、AWS の各種サービスを使った機械学習実験基盤をアベジャの適用事例と重ね合わせて、説得力のあるベストプラクティスを語っていただきました。 @yuzutas0 さんには、機械学習の前に、データのマネジメントがいかに必要かを語っていただきました。建設的に改善していこうぜという未来が語られていて、個人的にお話を依頼した甲斐がありました 同僚の @overs_5121 さんには、メルカリ : TensorFlow Lite で、気付きにくい便利機能をユーザーに提唱 の裏話や、適用までの泥臭い事例をお話していただきました。 登壇者の皆様、改めて登壇の依頼をご快諾いただきありがとうございました。
-また、コロナウイルスの影響もあり試験的ですが完全なオンライン開催となりました。 配信面は今回は完全に @chezou さんに頼らせていただきました。 プロフェッショナルな配信ありがとうございました！ 配信のベストプラクティスや様子などは、こちらを御覧ください
-Google Meet と YouTube Live でオンラインミートアップの配信をした
-勉強会の資料と動画 資料ページ Machine Learning Casual Talks #12 - YouTube 所感としては、以前から配信 NG の発表以外は積極的に YouTube で公開していたのだが、参加者の皆様からはオンライン開催でありがたいと声が大きく、個人的に驚きました。
-自分が思うに、オンライン参加も配信動画を後から見るのも、リアルタイムで質問ができないこと以外は大きな差異が無いと思っていたのだが、参加者側からすると大きく異なるようで新鮮だった。
-オンライン勉強会開催側のコツ 最低でも
-配信者 司会者 配信の監視を行う監視者 の 3 役がいないとオンライン開催は難しいことがわかった
-ライブ配信視聴者数は、以下のような遷移となりました。 500 人参加申込みがあり、最大視聴者数が 252 人とギリギリ 5 割を超えました。
-今までのオフラインでの開催は 6-8 割くらいだったので、それと比較すると上出来かなと思います。 また、オンライン開催はオフライン開催と比べて会場の確保コストや懇親会おじさんの発生などを抑えられるので、その点もありがたかったです。 オフライン開催だと、会場撤収が効率的に終わっても 22:00、家に帰ると 23:00 なので、イベント主催者にとっても開催しやすい気がしますね。</description></item><item><title>Machine Learning Casual Talks #10 を開催しました</title><link>https://shunyaueta.com/posts/2019-06-15/</link><pubDate>Sat, 15 Jun 2019 22:01:27 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-06-15/</guid><description>MLCT #10 を開催しました。
+@kei... [Please access the original web page to read the full text]</description></item><item><title>Machine Learning Casual Talks #10 を開催しました</title><link>https://shunyaueta.com/posts/2019-06-15/</link><pubDate>Sat, 15 Jun 2019 22:01:27 +0900</pubDate><guid>https://shunyaueta.com/posts/2019-06-15/</guid><description>MLCT #10 を開催しました。
 Machine Learning Casual Talks とは
 実サービスにおける機械学習の経験をカジュアルに語り合おう
 を目的としたコミュニティです。
-スポンサー 前回と同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会の提供を受け開催することができました。 スポンサー依頼を快諾いただきありがとうございました!
-配信動画はこちら!
-Sli.do がパネルディスカッションでめっちゃ便利な件 今回は、パネルディスカッションで sli.do をスクリーンにフルスクリーンで表示してモデレーションを行いました。
-手元のスマートフォンで質問をハイライトして、回答を終えたものはアーカイブという運用でしたが、とても快適なのでみなさんぜひお試しください。 スクリーンでの表示画面が SPA で同期されているので、手元のスマートフォンで更新すればリアルタイムで同期されるのがとても便利です。</description></item><item><title>Machine Learning Casual Talks #8 を開催しました</title><link>https://shunyaueta.com/posts/2019-02-02/</link><pubDate>Sat, 02 Feb 2019 18:41:32 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-02-02/</guid><description>Machine Learning Casual Talks 第 8 回の開催を無事終えました
+スポンサー 前回と同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会の提供を受け開催することが... [Please access the original web page to read the full text]</description></item><item><title>Machine Learning Casual Talks #8 を開催しました</title><link>https://shunyaueta.com/posts/2019-02-02/</link><pubDate>Sat, 02 Feb 2019 18:41:32 +0000</pubDate><guid>https://shunyaueta.com/posts/2019-02-02/</guid><description>Machine Learning Casual Talks 第 8 回の開催を無事終えました
 MLCT とは
 実サービスにおける機械学習の経験をカジュアルに語り合う
 コミュニティです
-スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました!
-Machine Learning Casual Talks #8 (2019/01/28 18:30〜)
-当日の配信動画はこちら
-当日の発表資料はすべてこちらにあります
-Machine Learning Casual Talks #8 - 資料一覧 - connpass
-エムスリー 西場さん
-BEDORE すみのさん
-TL;DR; エムスリーの西場さん、すべてをこなす toB の機械学習サービス、システムアーキテクチャデザインかなり考えないとキツイ 懇親会での 🍣 の需給予測失敗しかけた 次回挑戦したいこと 今回会場撤収時に有志の参加者、登壇者の方が撤収作業を手伝っていただき非常に助かりました。次回は有志で会場撤収ボランティアの参加枠を作ろうかなと思いました。運営コストを下げるのは、継続で一番大事だなと思っているので、お手伝いいただいた皆様ありがとうございました。助かるという感情が出てくる前に、素直にめちゃくちゃ嬉しかったです!
-参加率も 8 割を超えていて欠席率が非常に少なかったのも継続していきたい</description></item><item><title>Machine Learning Casual Talks #7 を開催しました</title><link>https://shunyaueta.com/posts/2018-12-15/</link><pubDate>Sat, 15 Dec 2018 19:29:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-12-15/</guid><description>Machine Learning Casual Talks 第七回を無事開催しました
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができまし... [Please access the original web page to read the full text]</description></item><item><title>Machine Learning Casual Talks #7 を開催しました</title><link>https://shunyaueta.com/posts/2018-12-15/</link><pubDate>Sat, 15 Dec 2018 19:29:59 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-12-15/</guid><description>Machine Learning Casual Talks 第七回を無事開催しました
 Machine Learning Casual Talks #7 (2018/11/20 18:30〜)
 MLCT とは
 実サービスにおける機械学習の経験をカジュアルに語り合おう
 というコミュニティです。
-スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました!
-遺伝異常により髪が青く変色してしまったタカヤナギ=サン
-ABEJA の機械学習導入事例と辛い話を大田黒さんにお話していただきました!
-今回の勉強会資料は以下にまとまっています。
-Machine Learning Casual Talks #7 — 資料一覧 — connpass
-今回の内容を今北産業
-機械学習エンジニアとしてのキャリアのお話を タカヤナギ=サン 実世界に根付いた IOT と機械学習サービスはかなり辛い 各社の機械学習エンジニアの定義が揺らいでいるので、世界が壊れる 今回の改善点 参加枠の多様性 絶対参加するぞ枠 一般参加枠 初回参加枠 SNS 枠 Blog 枠 と今までは一つの枠で扱っていたものを、5 つの枠に分散して用意してみました。
-なぜかというとドタキャンやノーショーの方の影響で本当に参加したい方や初回参加の方の機会が喪失してしまうのはいただけないので、それを解決したなと思ったのが始まりです。
-初回参加枠を設けることで、新規参加者が増えて内輪感が解消されるのも狙ってみました。その影響か前回と比較して 2 割ほど参加率が増えてよかったです :)
-パネルディスカッション 登壇者 2 名と僕がモデレーターを行い、パネルディスカッションを行いました。単なる発表保の質疑応答時よりも話が盛り上がってなによりでした~
-次回予告 次回 MLCT 第 8 回は 2019/01/28 に参加予定です!
-現実世界での機械学習の辛みを共有したい・語りたいという方はゼヒご参加ください~
-Machine Learning Casual Talks #8 (2019/01/28 18:30〜)</description></item><item><title>Machine Learning Casual Talks #6 を開催しました</title><link>https://shunyaueta.com/posts/2018-10-14/</link><pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-10-14/</guid><description>機械学習の信頼性が熱いよねというお話
+スポンサ... [Please access the original web page to read the full text]</description></item><item><title>Machine Learning Casual Talks #6 を開催しました</title><link>https://shunyaueta.com/posts/2018-10-14/</link><pubDate>Sun, 14 Oct 2018 03:01:01 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-10-14/</guid><description>機械学習の信頼性が熱いよねというお話
 柚餅子 さんの発表風景
 2018/09/25 の MLCT #6 を開催しました。
 MLCT とは
 実務における機械学習の話や経験をカジュアルに語り合おう
 というコミュニティです。
-スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました!
-Machine Learning Casual Talks #6 (2018/09/25 19:00〜)
-発表資料一覧 👇(スライドと配信動画) Machine Learning Casual Talks #6 - 資料一覧 - connpass
-柚餅子さん リブセンスにおける機械学習システムの信頼性エンジニアリング SRE の考えを機械学習システムに取り入れるというお話ですが、筋が良さそう。特に SLO 周りはうちでも取り入れないなぁと思いました Naomichi Agata さん ユーザーフィードバックと機械学習 半教師あり学習で解くというアプローチは非常に筋が良さそうで気になった。技術書典の書籍も気になる 👀 gamella さん マーケット予測モデルの PCDA の回し方 ms 単位のデータを学習データにして株価の UP/DOWN を予測する。。。。適用するドメインの難易度が鬼ゲーすぎて、ハラハラしそうだけど解きがいがありそう @yu-ya4 さん Big Query ML を使ってみた話 さらっと BQML を試して成果が出ましたと言っていたが、良い問題を探し出す嗅覚がすごいなと思いました。実際 BQ だけで過不足なくモデリングが終わるなら理想の世界ですね~ Kosuke Kitahara さん 発表資料は後日公開されます。謎の力により Youtube 配信はされていません KPT Keep 動画配信を問題なく完了できた 魅力ある発表内容を維持できた Problem 参加率が低かった。前回は 65%程度の参加率でしたが、今回は雨の影響もありますが 40% と低くなっていた 倍率も毎回 1.</description></item><item><title>Machine Learning Casual Talks #5 を開催しました</title><link>https://shunyaueta.com/posts/2018-07-15/</link><pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-07-15/</guid><description>2018/07/13 に MLCT #5 を開催してきたお話
+スポンサー 今回も同じく本イベントは株式会社メルカリにスポンサーとして会場と懇親... [Please access the original web page to read the full text]</description></item><item><title>Machine Learning Casual Talks #5 を開催しました</title><link>https://shunyaueta.com/posts/2018-07-15/</link><pubDate>Sun, 15 Jul 2018 09:31:28 +0000</pubDate><guid>https://shunyaueta.com/posts/2018-07-15/</guid><description>2018/07/13 に MLCT #5 を開催してきたお話
 Opening Talk by Aki Ariga
 Machine Learning Casual Talks #5 (2018/07/13 19:30〜)
-本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催することができました。スポンサー依頼を快諾いただきありがとうございました。
-発表資料はこちら 👉 here (YouTube 配信もあります)
-この記事では、技術的なお話というよりも開催に至るまでの話をメインに書いていきます。
-Start 構想開始時期は 2018/04 頃に考えていて、弊社開催の
-MLOps Nightと呼ばれるイベントの準備を行っているときに、社内だけではなく
-社外の人の機械学習の辛い話をうんうんと頷きながら聞きたいなぁ
-と思ったのが事の始まりです。
-そのあと、とりあえず日程と発表者は事前に集めておかねばと思い @hagino3000 さんにラブコールを送っていた。
-発表依頼の様子
-chezou さんとの出会いと MLCT 復活の狼煙 その後、
-勉強会の名前どうしよう 🤔 運営の方針どうすべきか 🤔 を迷いつつ時間が過ぎていき業務の一環として機械学習工学キックオフシンポジウム に参加していたら、そういえば Aki Ariga さんって MLCT 開催してたよな、あの勉強会すごく参考になること多かったから復活できないかなと思い始め、気がついたら懇親会で hagino3000 さんに chezou さんを紹介してもらい
-「MLCT 復活させたいです!!! 場所と運営準備は僕主体でやります!」
-と提案したら、あっさりと快諾され運営者に混ぜてもらえることになりました
-メッセージ投げかけから 1 分で承認される
-あらためて、突然飛び込んできた見知らぬ人物の運営への参加を快諾してくださった、 @chezou さん、 @tetsuroito さん、 @komiya_atsushi さんありがとうございました 🙇</description></item></channel></rss>
+本イベントは株式会社メルカリにスポンサーとして会場と懇親会を提供を受け開催するこ... [Please access the original web page to read the full text]</description></item></channel></rss>

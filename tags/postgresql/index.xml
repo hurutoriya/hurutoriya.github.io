@@ -1,15 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>postgresql on hurutoriya</title><link>https://shunyaueta.com/tags/postgresql/</link><description>Recent content in postgresql on hurutoriya</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 27 Dec 2017 08:12:17 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>HerokuのDBにpgadmin4で接続してローカルにデータをダウンロードする</title><link>https://shunyaueta.com/posts/2017-12-27/</link><pubDate>Wed, 27 Dec 2017 08:12:17 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-27/</guid><description>pyadmin4 で Heroku 上の DB に接続する記事が日本語になかったので、メモ
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>postgresql on hurutoriya</title><link>https://shunyaueta.com/tags/postgresql/</link><description>Recent content in postgresql on hurutoriya</description><image><title>hurutoriya</title><url>https://shunyaueta.com/ogp.jpg</url><link>https://shunyaueta.com/ogp.jpg</link></image><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 27 Dec 2017 08:12:17 +0000</lastBuildDate><atom:link href="https://shunyaueta.com/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>HerokuのDBにpgadmin4で接続してローカルにデータをダウンロードする</title><link>https://shunyaueta.com/posts/2017-12-27/</link><pubDate>Wed, 27 Dec 2017 08:12:17 +0000</pubDate><guid>https://shunyaueta.com/posts/2017-12-27/</guid><description>pyadmin4 で Heroku 上の DB に接続する記事が日本語になかったので、メモ
 接続前の準備 Heroku にログインして、対象の App の DB のページへ
 Heroku App DB page
 そこから DB のセッティングページにある credential ボタンをクリック
-click credential button
-そこに記載されている各種情報を pgadmin4 に入力して Heroku 上の DB に接続する
-Copy information
-pgadmin4 で Heroku の DB に接続 以下のページから pgAdmin4 をダウンロード
-Download
-そこからアプリを開くと下記の画面になるので、Add new Serverをクリック
-Click Add New Server
-Heroku 上の DB の情報を入力していく。Server の名前は適当で大丈夫です。
-接続されるとこんな感じになります。
-Query Tool Query Toolを使うことで Heroku 上の DB に対して SQL クエリを投げる事ができます。
-Query Toolは上部のツールバーからアクセス可能です。 注意) 左カラムのテーブルをクリックした後でないとアクティブになりません。</description></item></channel></rss>
+cl... [Please access the original web page to read the full text]</description></item></channel></rss>
