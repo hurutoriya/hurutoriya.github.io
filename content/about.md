@@ -5,11 +5,12 @@ menu: "main"
 
 ## 著者概要
 
-上田隼也 / Shunya Ueta / hurutoriya
+上田隼也 / Shunya Ueta / a.k.a. hurutoriya
 
-検索技術領域、機械学習の実応用やプロダクト開発に興味があります。
-
-現在は Software Engineer として東京で働いています。
+- 検索技術領域、機械学習の実応用やプロダクト開発に興味があります。現在は Software Engineer として東京で働いています。
+- 専門: MLOps(機械学習システムの運用、オペレーションの改善と自動化やプロジェクト推進)、検索システムの構築と運用改善
+- 連絡先: 仕事のご依頼はこちらの [Google Form](https://forms.gle/u4By33EpvdUoGbhTA) から承っております。
+  副業で機械学習に関するアドバイザーや講演などをしています。
 
 ## SNS
 
