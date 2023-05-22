@@ -19,6 +19,7 @@ menu: "main"
 - Twitter: https://twitter.com/hurutoriya
 - Mastdon: https://mstdn.jp/@hurutoriya
 - Speaker Deck: https://speakerdeck.com/hurutoriya
+- 検索技術で面白かった記事をまとめて配信するニュースレター: https://searchengineeringnewsletter.substack.com/
 - Google Scholar: https://scholar.google.com.au/citations?hl=en&user=ghbIA8gAAAAJ
 
 ## 主な登壇歴
