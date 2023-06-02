@@ -22,7 +22,7 @@ tags:
 
 メイントピックは KDDCup2005 として開催されたクエリ分類コンペの優勝者の手法について紹介を行ったので、気になる方はスライドを公開しているので御覧ください。
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/a306435c7ec843adb7591ceddeb9c7a1" title="Query Understanding for Search Engines. Chap2 Query Classification" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+[Query Understanding for Search Engines\. Chap2 Query Classification \- Speaker Deck](https://speakerdeck.com/hurutoriya/query-understanding-for-search-engines-chap2-query-classification)
 
 このコンペの特徴として、
 
