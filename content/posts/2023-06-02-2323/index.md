@@ -26,7 +26,7 @@ tags:
     [Improving information retrieval in the Elastic Stack: Introducing Elastic Learned Sparse Encoder, our new retrieval model \| Elastic Blog](https://www.elastic.co/jp/blog/may-2023-launch-information-retrieval-elasticsearch-ai-model)
   - 実際問題、自前でモデルを作成して、調整してというのはかなり手間がかかるので、Elastic Cloud さえ契約しておけば、ゼロコストでセマンティック検索を試せるというのはかなり魅力的に見えます。しかもモデルの利用に当たってライセンスの心配が不要。これ重要ですね。
   - 詳細はこちらの記事にかかれています。[Introducing Elastic Learned Sparse Encoder: Elastic’s AI model for semantic search \| Elastic Blog](https://www.elastic.co/jp/blog/may-2023-launch-sparse-encoder-ai-model)
-- Elasticsearch の最大次元数が 2048 次元に!
+- Elasticsearch のベクトル検索の最大次元数が 2048 次元に!
   - [Increase max number of vector dims to 2048 by mayya\-sharipova · Pull Request \#95257 · elastic/elasticsearch](https://github.com/elastic/elasticsearch/pull/95257)
   - OpenAI API で提供されるベクトルの次元数は 1024 次元以上で、Lucene 側の制約によって扱うことができなかった[^luceneann]が、多くの要望によって 2048 次元まで拡張されたとのこと。これは良い意味で Elasticsearch っぽくないというか、かなり意外な動きで驚きました。競合の OpenSearch はすでに OpenAI API を扱えるので、その点をなんとかしたいという意欲が感じ取れて非常に好感触です。
 - Reciprocal Rank Fusion (RRF) [^RRF]という複数のランキングを統合する手法がビルトインで利用可能に
