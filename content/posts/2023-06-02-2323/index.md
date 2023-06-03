@@ -30,7 +30,22 @@ tags:
   - [Increase max number of vector dims to 2048 by mayya\-sharipova · Pull Request \#95257 · elastic/elasticsearch](https://github.com/elastic/elasticsearch/pull/95257)
   - OpenAI API で提供されるベクトルの次元数は 1024 次元以上で、Lucene 側の制約によって扱うことができなかった[^luceneann]が、多くの要望によって 2048 次元まで拡張されたとのこと。これは良い意味で Elasticsearch っぽくないというか、かなり意外な動きで驚きました。競合の OpenSearch はすでに OpenAI API を扱えるので、その点をなんとかしたいという意欲が感じ取れて非常に好感触です。
 - Reciprocal Rank Fusion (RRF) [^RRF]という複数のランキングを統合する手法がビルトインで利用可能に
+
   - 利用用途としては、BM25 のランキングとベクトル検索でのランキングを統合したいときが挙げられる。過去の自分のブログ記事でもハイブリッド検索(BM25 とベクトル検索の融合)[^hybrid]を試したが、各ランキングスコアの統合はどうすればいいか正直分からなかったので、こんな手法があるなんて知らなかったので非常に面白い
+  - `NOTE` 2023/06/03 追記。@takuya-a さんが教えてくれたがこの RRF も Elastic Cloud のプラチナプラン契約者のみ使える機能らしいです。(元は @johtani さんが、PR の内容を確認して、それを @takuya-a さんに教えてくれたとのこと)
+    確かに共有してもらった、PR の行を見てみると、`License.OperationMode.PLATINUM`が引数に使われていました。(OSS とは...??)
+    https://github.com/elastic/elasticsearch/pull/93396/files#diff-f114b9c6a904654185114e728e20cc230425a57054f160bfbfcb63f8dc27b67fR26
+
+    ```java
+    public static final LicensedFeature.Momentary RANK_RRF_FEATURE = LicensedFeature.momentary(
+        null,
+        "rank-rrf",
+        License.OperationMode.PLATINUM
+    );
+    ```
+
+    Elastic Cloud の新機能なのか、OSS の Elasticsearch の新機能なのか不明瞭なのは混乱するので、リリースノートにも明確に記述してほしいところですね。実際今回 @takuya-a さんに教えてもらえるまで完全に誤解していました。
+    ライセンス縛りするなら、Elasticsearch Stateless みたいに OSS にしないほうがいいじゃないのかなと思いました。でも Open にはしてくれることで、例えば OpenSearch にすぐに移植できる利点とかはありそうです。
 
 [^luceneann]: 前にこの議論について解説記事を書きました。 今でも Lucene のメーリングリストで激論が繰り広げられています。 [現在 Lucene の KNN ベクトルの最大次元数は 1024 次元 だが、それを 2048 次元に変更できないかという議論](/posts/2023-03-26-2208)
 [^RRF]: https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf
