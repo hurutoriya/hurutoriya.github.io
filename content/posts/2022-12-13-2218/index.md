@@ -6,6 +6,7 @@ author: Shunya Ueta
 tags:
   - elasticsearch
   - go
+  - search
 ---
 
 Elasticsearch を Go lang から利用できるクライアントライブラリで、非公式なパッケージでは[olivere/elastic](https://github.com/olivere/elastic)があります。
