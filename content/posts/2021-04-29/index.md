@@ -1,5 +1,5 @@
 ---
-title: "Pythonで、変数を挿入して柔軟にSQLクエリを構築する"
+title: "Pythonで変数を挿入してSQLクエリを柔軟に構築する"
 date: 2021-04-29T22:52:25+09:00
 lang: ja
 author: Shunya Ueta
@@ -9,14 +9,17 @@ tags:
 ---
 
 データ処理のタスクをこなしていると、Python で SQL に変数を挿入し柔軟に SQL クエリを構築したくなる。
+
 例えば、
 
 - 中間テーブルを作るために Airflow などで定期的なジョブを実行し、SQL の `created`の時間を当日のものに変更する
 - `training`, `dev`, `test` でデータを分割する際に、`created`の条件を変更して 3 パターンのデータを取得する
 
-などが考えられる。
+のような状況が考えられる。
 
-変数を SQL に組み込んで実行したい際には、[kayak/pypika](https://github.com/kayak/pypika)のような SQL builder もあるが、個人的に可読性が悪くなったり、SQL クエリの作成のためだけに余計なパッケージをいれたくない。そのためパッケージを入れずにシンプルに完結する方法をここでは紹介する。
+変数を SQL に組み込んで実行したい際には、[kayak/pypika](https://github.com/kayak/pypika)のような SQL builder もあるが、個人的には可読性が悪くなるし、SQL クエリの作成のためだけに余計なパッケージをいれたくない。
+
+そのためパッケージを入れずに簡潔なクエリ構築方法をここでは紹介する。
 
 ## 編集履歴
 
@@ -25,15 +28,15 @@ tags:
 
 ## 1. 単なる文字列として SQL クエリを構築
 
+f-string で文字列に変数を挿入して、SQL クエリを構築する
+
 ```python
 def get_guery(num: int, category: str):
 	sql=f"SELECT field1, field2, field3, field4 FROM TABLE WHERE condition1={num} AND condition2={category}"
 	return sql
 ```
 
-- f-string で文字列に変数を挿入して、SQL クエリを構築
-
-だが、
+### 欠点
 
 - SQL が長くなると PEP8 に準拠せず、[E501 line too long](https://www.flake8rules.com/rules/E501.html)に抵触する
 - 視認性が低く、SQL クエリの実行内容を理解しづらい
@@ -51,9 +54,9 @@ def get_guery(num: int, category: str):
 	return sql
 ```
 
-- 1 番目と比較すると、複数行を扱える[string literal-longstring](https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals)を採用することで、SQL クエリが複数行になることでで見やすい (@cocu_tan さん、[ご指摘](https://twitter.com/cocu_tan/status/1392481952662310925)ありがとうございます!)
+1 番目と比較すると、複数行を扱える[string literal-longstring](https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals)を採用することで、SQL クエリが複数行になることでで見やすい (@cocu_tan さん、[ご指摘](https://twitter.com/cocu_tan/status/1392481952662310925)ありがとうございます!)
 
-だが
+### 欠点
 
 - SQL 構文に関する lint や フォーマッターを活用できない
 - SQL へのシンタックスハイライトが無いので、視認性が低い
@@ -147,8 +150,6 @@ Twitter でみんなの管理方法をお聞きできたので、記しておく
 
 ### @shuhei_fujiwara さん
 
-https://twitter.com/shuhei_fujiwara/status/1387815866436243458
-
 > BigQuery の話だけど僕は
 >
 > - ほとんどの場合 => parameterized query
@@ -156,28 +157,25 @@ https://twitter.com/shuhei_fujiwara/status/1387815866436243458
 > - どうにもならんとき => 3
 >   https://cloud.google.com/bigquery/docs/parameterized-queries
 >   3 はわかるんだけど、Python コードで読み込む前提よりは SQL ファイル単体で成立している方が好きなので可能なら避けてます
+>   https://twitter.com/shuhei_fujiwara/status/1387815866436243458
 
 単体で成立したい気持ち、たしかに分かる~
 
 ### @satoshihirose さん
 
-https://twitter.com/satoshihirose/status/1387776005943840772
-
-> Airflow のみの話にはなってしまいますが、sql はファイルとして管理して基本 jinja template 対応のオペレーター使ってましたね https://qiita.com/munaita_/items/6bdcfb10f36c8c6b4753
+> Airflow のみの話にはなってしまいますが、sql はファイルとして管理して基本 jinja template 対応のオペレーター使ってましたね https://qiita.com/munaita_/items/6bdcfb10f36c8c6b4753 > https://twitter.com/satoshihirose/status/1387776005943840772
 
 Airflow のときに jinja 使えるんですね。今度から使います!
 
 ### @reto_nayuta さん
 
-https://twitter.com/reto_nayuta/status/1387801584512364544
-
 > 私も（Airflow ではないですが）jinja 使うことが多いですね
+> https://twitter.com/reto_nayuta/status/1387801584512364544
 
 ### @SassaHero さん
 
-https://twitter.com/SassaHero/status/1387878168481075200
-
 > 3 を、from string import Template で変数置き換えを実現してます！
+> https://twitter.com/SassaHero/status/1387878168481075200
 
 `from string import Template` 知らなかった
 
