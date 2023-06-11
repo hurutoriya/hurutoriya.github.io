@@ -7,7 +7,8 @@
   {{ end }}
   <ul class="blog-posts">
     {{ $pages := where .Site.Pages "Section" "posts" }}
-    {{ range $pages }}
+    {{ $recentPages := $pages | first .Site.Params.latestPostNum }}
+    {{ range $recentPages }}
     <!-- Exclude Posts in listed items -->
     {{ if ne .Title "Posts" }}
     <li>
@@ -23,14 +24,5 @@
     {{ end }}
     {{ end }}
   </ul>
-  {{ if .Data.Singular }}
-  {{else}}
-    <small>
-      <div>
-        {{ range .Site.Taxonomies.tags }}
-        <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;
-        {{ end }}
-      </div>
-    </small>
-    {{ end }}
+  <a href="/posts/">すべての記事一覧へ</a>
 </content>

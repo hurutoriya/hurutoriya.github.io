@@ -19,6 +19,7 @@ params:
   title: "Shunya Ueta"
   description: Shunya Ueta's blog
   dateFormat: "2006-01-02"
+  latestPostNum: 10
   images:
     - ogp.jpg
   RSSTruncateNum: 150
