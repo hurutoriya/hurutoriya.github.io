@@ -11,10 +11,7 @@
 {{ end }}
 <content>
   {{ .Content }}
-  {{ partial "related.html" . }}
-  {{ partial "support.html" . }}
-  <p>--</p>
-  {{ partial "promotion.html" . }}  
+  {{ partial "post-footer.html" . }}
 </content>
 <p>
   {{ range (.GetTerms "tags") }}
