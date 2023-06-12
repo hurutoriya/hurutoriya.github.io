@@ -16,8 +16,8 @@ ignoreErrors:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   author: "Shunya Ueta"
-  title: "Shunya Ueta"
-  description: Shunya Ueta's blog
+  title: "hurutoriya"
+  description: Shunya Ueta a.k.a. hurutoriya 's web site
   dateFormat: "2006-01-02"
   latestPostNum: 10
   images:
