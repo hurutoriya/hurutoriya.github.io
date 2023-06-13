@@ -18,5 +18,5 @@ tags:
 今まで giscus でコメントいただいた皆様ありがとうございました。これからはおたより機能でお願いします。
 
 [^comment]: [GitHub discussion を使ったコメントシステム giscus を導入](/posts/2022-01-19/)
-[^zen]: この気持ちは、個人ブログに回帰しているかたがたの記事が非常に良く、自分も強く共感した。 [心のざわめきを無くして日記を書くということ / secon\.dev への移転 \- A Day in the Life](https://secon.dev/entry/2020/09/03/172016/), [心穏やかに暮らす \- Glide Note](https://glidenote.com/posts/2020/12/29/) , [ウェブ縄文時代の到来 \- portal shit\!](https://portalshit.net/2020/09/04/the-internet-jomon-period), [ウェブ縄文時代の到来 \- portal shit\!](https://portalshit.net/2020/09/04/the-internet-jomon-period). [個人サイトについて](https://r7kamura.com/articles/2020-09-21-personal-website)
+[^zen]: この気持ちは、個人ブログに回帰しているかたがたの記事が非常に良く、自分も強く共感した。 [心のざわめきを無くして日記を書くということ / secon\.dev への移転 \- A Day in the Life](https://secon.dev/entry/2020/09/03/172016/), [心穏やかに暮らす \- Glide Note](https://glidenote.com/posts/2020/12/29/) , [ウェブ縄文時代の到来 \- portal shit\!](https://portalshit.net/2020/09/04/the-internet-jomon-period), [個人サイトについて](https://r7kamura.com/articles/2020-09-21-personal-website)
 [^copy]: おたより機能は、@secon さんのサイトのアイデアをそのままパクりました。素敵なアイデアをありがとうございます。
