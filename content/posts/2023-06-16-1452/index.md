@@ -7,7 +7,7 @@ tags:
   - obsidian
 ---
 
-Obsidian-Memos という拡張機能を Twittier で見かけて[^twitter]ためしてみたら、Obsidian が更に便利になったので紹介。
+Obsidian-Memos という Obsidian のプラグインを Twittier で見かけて[^twitter]ためしてみたら、Obsidian が更に便利になったので紹介。
 
 https://github.com/Quorafind/Obsidian-Memos
 
