@@ -15,11 +15,11 @@ https://github.com/Quorafind/Obsidian-Memos
 
 Memos の画面
 
-![Memos in PC](/posts/2023-06-16-1452/images/Memos-pc.png)
+![Memos in PC](/posts/2023-06-16-1452/images/memos-pc.png)
 
 `Daily Note` にはこんな感じで書き込まれる。
 
-![Memos in daily note](/posts/2023-06-16-1452/images/Memos-in-daily-note.png)
+![Memos in daily note](/posts/2023-06-16-1452/images/memos-in-daily-note.png)
 
 これらの内容は以下のような形式で `Daily Note` にリスト or タスク形式で書き込まれていく。
 
@@ -38,7 +38,7 @@ Memos の画面
     - また、改行とかしてちゃんとした文書を書こうとすると、おっとちゃんと文章を書く前にまず書きなぐれと意識ができるようになった。
 - モバイルも完全に対応しているので、スマホからも気軽にタイムスタンプを付与しつつメモを残せるようになった。敷居が下がるとどんどんメモの量が増えていく傾向にある気がする。最高
 
-  - ![Memos in Android](/posts/2023-06-16-1452/images/Memos-android.png)
+  - ![Memos in Android](/posts/2023-06-16-1452/images/memos-android.png)
 
 - Memos の投稿は HOT KEY を設定可能なので、自分は `Cmd + Shift + Enter` で投稿できるように設定した。デフォルトだと毎回ボタンをポチらないと投稿できないので、設定したほうが気軽に投稿できます。
   - `2023-06-17 追記` おたよりでおしえていただきましたが、デフォルトだと `Cmd + Enter` で投稿できるみたいです。自分の場合、他の機能で既に割り当てているので衝突しまっていたみたいです。僕も`Shift`を毎回押すのはつかれるので、僕もこの設定にしました。ありがとうございます。
@@ -50,10 +50,16 @@ Memos の画面
   - `2023-06-17 追記` おたよりで知りましたが、プラグイン設定内に "Use tags in vault" という設定項目があり、これを ON にすると既存のタグをすべて参照できるみたいです。便利になりました! ありがとうございます!!
 - また、Obsidian の native editor ではなく独自 editor も変更できないかなと思ったが、Memos 自体が複雑な文章を書くための考えではないので、たしかに単純なことしか書けなくするのは哲学として良い。
 
+`2023-06-17 追記` 唯一心配な点としては、このプラグインの更新が 2022 年 11 月移行されておらず、個人開発や OSS あるあるの難しいところではありますが、先行きがちょっと心配な点はあります。[^github]
+
 というわけでしばらく使ってみます。今のところものすごく快適です。
 感動すぎて作者の Buy Me a Cofee 宛に投げ銭をしておいた[^bmc]。
 
 特に、モバイルからのメモ書きがめっちゃ捗るようになった。
+
+[^github]:
+    メジャーアップデートの PR を見かけたけどビッグバン PR で、個人開発だ~~となりテンションが上がりました。
+    https://github.com/Quorafind/Obsidian-Memos/pull/282 GitHub issue は 150 個以上溜まっており、非常に人気ですね。
 
 [^bmc]: https://www.buymeacoffee.com/boninall で投げ銭できます。
 [^twitter]: [vorotamoroz aka きみのぶさんは Twitter を使っています: 「これ本当に神ですごく嬉しい。 https://t\.co/yjDoTooMba」 / Twitter](https://twitter.com/vorotamoroz/status/1669315863777021954)
