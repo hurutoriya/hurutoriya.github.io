@@ -6,6 +6,7 @@ author: Shunya Ueta
 tags:
   - tool
   - productivity
+  - obsidian
 ---
 
 ## ノートアプリを Joplin から Obsidian へ
