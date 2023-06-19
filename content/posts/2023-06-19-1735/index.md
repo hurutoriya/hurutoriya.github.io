@@ -1,5 +1,5 @@
 ---
-title: "jisho.org が提供している漢字検索のためのfacet UI が便利かつ斬新で、検索エンジニアとして学びがあった"
+title: "jisho.org が提供している漢字検索のためのfacet UI が便利かつ斬新で検索エンジニアとして学びがあった"
 date: 2023-06-19T17:35:15+09:00
 lang: ja
 author: Shunya Ueta
