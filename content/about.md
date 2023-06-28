@@ -38,7 +38,7 @@ menu: "main"
 
 - 2021: 同社にて検索チームへ移籍し、検索エンジニアとして働く
 
-## コミュニティ運営活動
+### コミュニティ運営活動
 
 - [Machine Learning Casual Talks](https://mlct.connpass.com/)
   - 第 5 回から運営者として、機械学習の実応用をテーマにしたコミュニティを運営
