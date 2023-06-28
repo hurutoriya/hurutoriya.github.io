@@ -11,11 +11,11 @@
 {{ end }}
 <content>
   {{ .Content }}
-  {{ partial "post-footer.html" . }}
 </content>
 <p>
   {{ range (.GetTerms "tags") }}
-  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+  Tags: <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
 </p>
+{{ partial "post-footer.html" . }}
 {{ end }}
