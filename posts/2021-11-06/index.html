@@ -50,8 +50,7 @@ NOTE: json を例題に key の抽出にしたほうが実際の状況に沿い�
 </span></span><span style=display:flex><span>created
 </span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> menues
 </span></span></code></pre></div><h4 id=結果>結果</h4><table><thead><tr><th>title</th><th>created</th></tr></thead><tbody><tr><td>うどん</td><td>2021/10/06</td></tr><tr><td>ラーメン</td><td>2021/10/07</td></tr><tr><td>そば</td><td>2021/10/08</td></tr><tr><td>カツ丼</td><td>2021/10/09</td></tr><tr><td>カツ丼</td><td>2021/10/09</td></tr><tr><td>カレー</td><td>2021/10/10</td></tr></tbody></table><p>上記の結果のように<code>COALESCE</code> を使えば２つの時間経過によって別れてしまったカラムを一つのカラムとして併合することができました。
-常に便利ですね。</p><h2 id=references>References</h2><p><a href=https://cloud.google.com/bigquery/docs/reference/standard-sql/conditional_expressions#coalesce>BigQuery Conditional expressions- COALESCE</a></p></content><p>Tags:
-<a href=https://shunyaueta.com/tags/sql/>#sql</a>
+常に便利ですね。</p><h2 id=references>References</h2><p><a href=https://cloud.google.com/bigquery/docs/reference/standard-sql/conditional_expressions#coalesce>BigQuery Conditional expressions- COALESCE</a></p></content><p><a href=https://shunyaueta.com/tags/sql/>#sql</a>
 <a href=https://shunyaueta.com/tags/bigquery/>#bigquery</a></p><h2>関連しているかもしれない記事</h2><ul><li><a href=/posts/2021-04-29/>Pythonで変数を挿入してSQLクエリを柔軟に構築する</a></li><li><a href=/posts/2021-02-09/>Standard SQLで 列と列の組み合わせの数を集計したい</a></li><li><a href=/posts/2019-10-03/>遅すぎる `pandas.read_gbq` を使わずに、Google BigQueryから高速にデータを読み込む</a></li></ul><pre>
 ---
 
