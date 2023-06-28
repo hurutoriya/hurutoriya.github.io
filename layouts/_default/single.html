@@ -13,8 +13,9 @@
   {{ .Content }}
 </content>
 <p>
+  Tags:
   {{ range (.GetTerms "tags") }}
-  Tags: <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
 </p>
 {{ partial "post-footer.html" . }}
