@@ -6,7 +6,17 @@
     <a href="/posts/">Remove filter</a>
   </small>
   {{ end }}
-  <ul class="blog-posts">
+  
+  {{- range site.RegularPages.GroupByPublishDate "2006" }}
+  {{- if ne .Key "0001" }}
+  <h2>
+    {{- replace .Key "0001" "" }}<sups style="font-size: smaller;">({{ len .Pages }})</sup>
+  </h2>
+  {{- range .Pages.GroupByDate "January" }}
+  <h3>
+    {{- replace .Key "0001" "" }}<sups style="font-size: smaller;">({{ len .Pages }})</sup>
+  </h3>
+ <ul class="blog-posts">
     {{ range .Pages }}
     <li>
       <span>
@@ -18,12 +28,14 @@
       </span>
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </li>
-    {{ else }}
-    <li>
-      No posts yet
-    </li>
-    {{ end }}
-  </ul>
+  {{ end }}
+  {{ end }}
+  <br>
+  <hr>
+  <br>
+  {{ end }}
+  {{ end }}
+  
   {{ if .Data.Singular }}
   {{else}}
     <small>
