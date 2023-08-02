@@ -1,5 +1,5 @@
 ---
-title: "愛用する時間計測アプリでSession からToggl へと舞い戻ったのと、 Obsidian の Toggl plugin がやっぱり最高だぞというお話"
+title: "時間計測において、やはりToggl は最高で、なおかつObsidian の Toggl plugin がやっぱり最高だぞというお話"
 date: 2023-08-01T01:44:01+09:00
 lang: ja
 author: Shunya Ueta
@@ -8,7 +8,6 @@ tags:
   - tools
 ---
 
-半年間 Session を使ってみて、結果的に 基に愛用していた
 最近は作業メモを Obsidian Memos で取るようにした。[^memos]
 その、副次的な影響で作業メモを取りながら、working out loud 的に作業がはかどるようになり集中力がました。
 
