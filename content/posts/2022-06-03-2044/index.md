@@ -1,11 +1,11 @@
 ---
-title: "Label Studio を k8s にデプロイする"
+title: "Label Studio を kubernetes にデプロイする"
 date: 2022-06-03T20:44:01+09:00
 lang: ja
 author: Shunya Ueta
 tags:
   - annotation
-  - k8s
+  - kubernetes
 ---
 
 前回 Label Studio の紹介記事[^labelstudio-past-post]を書きましたが、自分以外にもチーム全体で Label Studio を使いたいという要望があったので Web アプリとして labelstudio をホストしました。
