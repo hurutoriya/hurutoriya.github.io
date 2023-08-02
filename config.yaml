@@ -1,7 +1,11 @@
 baseurl: "https://shunyaueta.com/"
+
+title: "Shunya Ueta"
+author: "Shunya Ueta"
+copyright: "Copyright © 2013, Shunya Ueta."
+
 defaultContentLanguage: "ja"
 languageCode: "ja"
-title: "Shunya Ueta"
 theme: "hugo-bearblog"
 
 # Generate a nice robots.txt for SEO
@@ -14,8 +18,6 @@ ignoreErrors:
   - error-disable-taxonomy
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  author: "Shunya Ueta"
   title: "Shunya Ueta"
   description: Shunya Ueta a.k.a. hurutoriya 's web site
   dateFormat: "2006-01-02"
