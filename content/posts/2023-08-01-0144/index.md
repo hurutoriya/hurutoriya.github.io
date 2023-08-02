@@ -1,5 +1,5 @@
 ---
-title: "時間計測において、やはりToggl は最高で、なおかつObsidian の Toggl plugin がやっぱり最高だぞというお話"
+title: "Toggl に舞い戻り、Obsidian の Toggl plugin がやっぱり最高だぞというお話"
 date: 2023-08-01T01:44:01+09:00
 lang: ja
 author: Shunya Ueta
