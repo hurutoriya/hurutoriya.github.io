@@ -1,7 +1,7 @@
 baseurl: "https://shunyaueta.com/"
 defaultContentLanguage: "ja"
 languageCode: "ja"
-title: "hurutoriya"
+title: "Shunya Ueta"
 theme: "hugo-bearblog"
 
 # Generate a nice robots.txt for SEO
@@ -16,7 +16,7 @@ ignoreErrors:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   author: "Shunya Ueta"
-  title: "hurutoriya"
+  title: "Shunya Ueta"
   description: Shunya Ueta a.k.a. hurutoriya 's web site
   dateFormat: "2006-01-02"
   latestPostNum: 10
