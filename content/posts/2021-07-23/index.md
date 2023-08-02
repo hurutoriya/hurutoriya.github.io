@@ -4,7 +4,8 @@ date: 2021-07-23T22:22:56+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - note
+  - kids
+  - review
 ---
 
 去年の秋頃に子供を授かり、色々と役に立った情報や製品、サービスなどがあったので備忘録がてら残しておく。

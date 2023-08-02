@@ -4,7 +4,8 @@ date: 2022-04-26T23:20:44+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - note
+  - kids
+  - review
 ---
 
 過去に 1 歳児の時点で育児の際に役立ったものに関する記事[^childcare]を書いた。
