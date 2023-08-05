@@ -1,7 +1,6 @@
 ---
 title: "ありがとう、さようなら、僕らの愛したTwitter"
 date: 2023-08-06T00:00:09+09:00
-slug: goodbye-thank-you-twitter
 lang: ja
 author: Shunya Ueta
 tags:

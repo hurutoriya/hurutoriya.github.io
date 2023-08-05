@@ -2,7 +2,6 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-slug: example
 lang: ja
 author: Shunya Ueta
 tags:
