@@ -6,19 +6,15 @@
 もちろんお返事を希望せずに単なる感想だけでも大歓迎です。
 <br>
 <br>
-
 このサイトの更新情報を<a href="/index.xml">RSS</a>で配信しています。
 お好きなフィードリーダーで購読してみてください。
 <br>
 <br>
 このウェブサイトの運営や著者の活動を支援していただける方を募集しています。
-<br>
 もしよろしければ、<a href="https://www.buymeacoffee.com/hurutoriya">Buy Me a Coffee</a> からサポート(投げ銭)していただけると、著者の活動のモチベーションに繋がります✨
 <br>
----
 <br>
 <p>関連しているかもしれない記事</p>
-
 {{ $related := .Site.RegularPages.Related . | first 5 }} {{ with $related }}
 <ul>
   {{ range . }}
@@ -26,3 +22,9 @@
   {{ end }}
 </ul>
 {{ end }}
+
+<p>Tags: 
+  {{ range (.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+  {{ end }}
+</p>
