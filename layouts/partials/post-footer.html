@@ -1,23 +1,28 @@
+---
+<br>
+📮 📧 🐏: 記事への<a href="https://docs.google.com/forms/d/e/1FAIpQLScgZVDrjQiKLbQRovfs88oweCITzjtvt1PlgwL14JfWPOrpPQ/viewform?usp=pp_url&entry.838298670={{ .Permalink }}">感想</a>のおたよりをおまちしてます。
+お気軽にお送りください。
+メールアドレス入力があればメールで返信させていただきます。
+もちろんお返事を希望せずに単なる感想だけでも大歓迎です。
+<br>
+<br>
+
+このサイトの更新情報を<a href="/index.xml">RSS</a>で配信しています。
+お好きなフィードリーダーで購読してみてください。
+<br>
+<br>
+このウェブサイトの運営や著者の活動を支援していただける方を募集しています。
+<br>
+もしよろしければ、<a href="https://www.buymeacoffee.com/hurutoriya">Buy Me a Coffee</a> からサポート(投げ銭)していただけると、著者の活動のモチベーションに繋がります✨
+<br>
+---
+<br>
+<p>関連しているかもしれない記事</p>
+
 {{ $related := .Site.RegularPages.Related . | first 5 }} {{ with $related }}
-<h2>関連しているかもしれない記事</h2>
 <ul>
   {{ range . }}
   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
   {{ end }}
 </ul>
 {{ end }}
-
----
-<br>
-このサイトの更新情報を<a href="/index.xml">RSS</a>で配信しています。お好きなフィードリーダーで購読してみてください。
-<br>
-👏このウェブサイトの運営を支援していただける方を募集しています。
-<br>
-もしよろしければ、<a href="https://www.buymeacoffee.com/hurutoriya">Buy Me a Coffee</a> からサポート(投げ銭)していただけると、著者の活動のモチベーションに繋がります✨
-<br>
-📮おたより
-<br>
-記事への感想の<a href="https://docs.google.com/forms/d/e/1FAIpQLScgZVDrjQiKLbQRovfs88oweCITzjtvt1PlgwL14JfWPOrpPQ/viewform?usp=pp_url&entry.838298670={{ .Permalink }}">おたより</a>をおまちしてます。
-お気軽にお送りください。
-お返事はメールアドレス入力があればメールでさせていただきます。
-もちろんお返事を希望せずに単なる感想だけでも大歓迎です。
