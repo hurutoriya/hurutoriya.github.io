@@ -1,4 +1,13 @@
 ---
+
+<p>関連しているかもしれない記事</p>
+{{ $related := .Site.RegularPages.Related . | first 5 }} {{ with $related }}
+<ul>
+  {{ range . }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+{{ end }}
 <br>
 📮 📧 🐏: 記事への<a href="https://docs.google.com/forms/d/e/1FAIpQLScgZVDrjQiKLbQRovfs88oweCITzjtvt1PlgwL14JfWPOrpPQ/viewform?usp=pp_url&entry.838298670={{ .Permalink }}">感想</a>のおたよりをおまちしてます。
 お気軽にお送りください。
@@ -14,16 +23,8 @@
 もしよろしければ、<a href="https://www.buymeacoffee.com/hurutoriya">Buy Me a Coffee</a> からサポート(投げ銭)していただけると、著者の活動のモチベーションに繋がります✨
 <br>
 <br>
-<p>関連しているかもしれない記事</p>
-{{ $related := .Site.RegularPages.Related . | first 5 }} {{ with $related }}
-<ul>
-  {{ range . }}
-  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-  {{ end }}
-</ul>
-{{ end }}
 
-<p>Tags: 
+<p>
   {{ range (.GetTerms "tags") }}
   <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
