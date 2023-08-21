@@ -1,5 +1,5 @@
 ---
-title: "さよなら Todoist、よろしく todo.tx"
+title: "さよなら Todoist、よろしく todo.txt"
 date: 2023-08-21T22:33:26+09:00
 lang: ja
 author: Shunya Ueta
