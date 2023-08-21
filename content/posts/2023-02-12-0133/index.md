@@ -4,7 +4,7 @@ date: 2023-02-12T01:33:29+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - tool
+  - tools
   - productivity
 ---
 

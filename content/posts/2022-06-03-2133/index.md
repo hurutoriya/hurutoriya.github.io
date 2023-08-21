@@ -4,7 +4,7 @@ date: 2022-06-03T21:33:01+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - tool
+  - tools
   - productivity
   - obsidian
 ---
