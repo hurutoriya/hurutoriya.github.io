@@ -4,6 +4,7 @@ date: {{ .Date }}
 draft: true
 lang: ja
 author: Shunya Ueta
+slug: "hoge"
 tags:
 - 
 ---
