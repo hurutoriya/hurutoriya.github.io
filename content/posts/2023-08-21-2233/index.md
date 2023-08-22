@@ -1,9 +1,8 @@
 ---
-title: "さよなら Todoist、よろしく todo.tx"
+title: "さよなら Todoist、よろしく todo.txt"
 date: 2023-08-21T22:33:26+09:00
 lang: ja
 author: Shunya Ueta
-slug: "goodbye-todoist-hello-todotxt"
 tags:
   - tools
 ---
@@ -81,7 +80,7 @@ todo.txt の開発経緯の記事を発見したが、今でもこのモチベ�
 
 FOSS、Plain text as DB という概念で実現された todo.txt は最高なので乗り換えた。
 
-[愛用する時間計測アプリで Session から Toggl へと舞い戻ったのと、 Obsidian の Toggl plugin がやっぱり最高だぞというお話](/posts/2023-08-21-2233/) でも購読型のサービスをやめたが、これで年間 9000 円程度浮いたことになる。
+前回の記事でも[^session]:購読型のサービスをやめたが、これで年間 9000 円程度浮いたことになる。
 
 購読型のサービスは気がつくと積み上がっているので、本当にお金を払わないと実現できないというというプロダクトにガンガン投資していきたい[^sekiyuo]。
 今のところはそれが 1Password だ。
@@ -89,6 +88,7 @@ FOSS、Plain text as DB という概念で実現された todo.txt は最高な�
 [^tasktxt]: [TaskTXT](https://tasktxt.com/) というモダンなアプリもあったが、これはマルチプラットフォームではなかったので除外しました。
 [^recurring-task]: https://updatenotes.blog/todotxt-recurring-tasks/
 [^sekiyuo]: 石油王になれば好きなプロダクトにガンガン投資したいのだが... しがないサラリーマンなので、厳しい世界です。BuyMeaCofee なんかの一発限りのワンショット投げ銭は躊躇なく行っているんですが...
+[^session]: [Toggl に舞い戻り、Obsidian の Toggl plugin がやっぱり最高だぞというお話](/posts/2023-08-01-0144/)
 [^no-exit]:
     とくにこの思想は痺れる。資本主義からの脱却! 一生使える タスク管理ツール
     。[Why We Don’t Have an Exit Strategy](https://blog.doist.com/no-exit-strategy/)
