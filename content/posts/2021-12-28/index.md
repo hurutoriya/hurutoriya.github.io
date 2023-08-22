@@ -3,9 +3,6 @@ title: "Jupyter Notebook で画像をダウンロードすることなく、URL�
 date: 2021-12-28T23:04:19+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2021-12-28/images/1.png"
-  caption: "DataFrame 内部にURLから参照して画像表示"
 tags:
   - python
   - pandas

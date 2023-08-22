@@ -3,9 +3,6 @@ title: "Airflow 1系で設定されている環境変数を JSON ファイルと
 date: 2022-10-04T15:49:30+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2022-10-04-1549/images/1.png"
-  caption: "Airflow で環境変数をJSONファイルとしてお手軽に書き出す方法"
 tags:
   - airflow
   - gcp

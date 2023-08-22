@@ -3,9 +3,6 @@ title: "Slack bot の Eeny がスクラムイベントのファシリテータ�
 date: 2023-03-02T11:32:47+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2023-03-02-1132/images/1.png"
-  caption: "Slack bot Eeny"
 tags:
   - tips
   - slack

@@ -3,8 +3,6 @@ title: "Search Engineering Newsletter を substack へ移行します"
 date: 2022-12-04T00:03:06+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2022-01-16/images/1.png"
 tags:
   - newsletter
   - search

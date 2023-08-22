@@ -3,12 +3,10 @@ title: "「リーダーの作法」マネジメントに限らず、エンジニ
 date: 2022-08-08T11:45:24+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2022-08-08-1145/images/1.png"
-  caption: "リーダーの作法 ささいなことをていねいに"
 tags:
   - book
   - management
+  - review
 ---
 
 [リーダーの作法 ささいなことをていねいに](https://amzn.to/3QkQghf)を読み終えた。

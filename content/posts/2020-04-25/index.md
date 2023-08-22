@@ -2,10 +2,6 @@
 title: "機械学習システムの信頼性を数値化し、技術的負債を解消する論文「 The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction」"
 date: 2020-04-25T01:35:20+09:00
 lang: ja
-ShowToc: true
-cover:
-  image: "/posts/2020-04-25/images/fig-1.png"
-  caption: "機械学習システムはテストとモニタリングへの投資が大事"
 tags:
   - paper
   - translation

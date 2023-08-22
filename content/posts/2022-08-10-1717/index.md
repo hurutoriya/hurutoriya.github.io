@@ -2,9 +2,6 @@
 title: "poetry show でパッケージ名に (!) が付与されている意味"
 date: 2022-08-10T17:17:29+09:00
 lang: ja
-cover:
-  image: "/posts/2022-08-10-1717/images/1.png"
-  caption: "poetry show の実行結果"
 author: Shunya Ueta
 tags:
   - python

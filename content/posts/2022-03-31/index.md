@@ -3,9 +3,6 @@ title: "Human-in-the-Loop を題材にした機械学習の勉強会を開催し
 date: 2022-03-31T00:30:50+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2022-03-31/images/1.png"
-  caption: "Machine Learning Casual Talks 13回目を開催"
 tags:
   - machinelearning
   - event

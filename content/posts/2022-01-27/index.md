@@ -3,9 +3,6 @@ title: "Slack チャンネルに GitHub の特定リポジトリのrelease を�
 date: 2022-01-27T11:44:11+09:00
 lang: ja
 author: Shunya Ueta
-# cover:
-#   image: "/posts/2022-11-26/images/"
-#   caption: ""
 tags:
   - slack
   - github

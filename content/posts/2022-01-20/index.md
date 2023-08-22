@@ -3,10 +3,6 @@ title: "OSS の Google BigQuery UDF `bqutil.fn` を使えば UDF の独自実装
 date: 2022-01-20T00:03:07+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2022-01-20/images/1.png"
-  alt: "bqutil.fn.typeof() の実行結果"
-  caption: "bqutil.fn.typeof() の実行結果"
 tags:
   - bigquery
   - gcp

@@ -3,8 +3,6 @@ title: "Meta が公開したデータ処理の効率化・高速化を狙うエ�
 date: 2022-09-01T21:39:30+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2022-09-01-2139/images/velox.svg"
 tags:
   - dataengineering
 ---

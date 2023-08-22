@@ -2,8 +2,6 @@
 title: "[抄訳] Data engineers vs. data scientists"
 date: 2018-04-24T02:18:46.954Z
 lang: ja
-cover:
-  image: "/posts/2018-04-24/images/1.png"
 tags:
   - datascience
   - dataengineering

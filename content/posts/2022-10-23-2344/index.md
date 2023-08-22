@@ -3,9 +3,6 @@ title: "Elasticsearchの近似近傍探索を使って、ドラえもんのひ�
 date: 2022-10-23T23:44:13+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2022-10-23-2344/images/01.gif"
-  caption: "デモアプリの動画"
 tags:
   - elasticsearch
   - python

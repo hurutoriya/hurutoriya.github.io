@@ -3,11 +3,8 @@ title: "Google Colab で Spacy による NER の結果を表示するには、ju
 date: 2022-04-08T21:04:13+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2022-04-08/images/1.png"
-  caption: "Spacy による NERの結果を Google Colab 上で可視化"
 tags:
-  - colabratory
+  - colaboratory
   - jupyter
   - python
   - nlp

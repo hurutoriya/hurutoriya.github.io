@@ -2,9 +2,6 @@
 title: "デスクトップのGoogle 検索の検索フォームUIがかなり変化していた"
 date: 2022-03-04T00:03:08+09:00
 author: Shunya Ueta
-cover:
-  image: "/posts/2022-03-04/images/1.png"
-  caption: "Google 検索キーワード候補"
 tags:
   - search
 ---

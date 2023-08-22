@@ -3,9 +3,6 @@ title: "究極手抜きのフワフワだし巻きたまご"
 date: 2023-03-16T12:03:37+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2023-03-16-1203/images/1.jpg"
-  caption: "究極手抜きのだし巻きたまご"
 tags:
   - cooking
 ---

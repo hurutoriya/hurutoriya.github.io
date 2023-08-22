@@ -3,9 +3,6 @@ title: "Streamlit でアップロードしたファイルのパスを取得し�
 date: 2021-07-08T22:40:37+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2021-07-08/images/1.png"
-  caption: "Streamlit スクリーンショット"
 tags:
   - python
   - streamlit

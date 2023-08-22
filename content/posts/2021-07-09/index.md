@@ -3,9 +3,6 @@ title: "How to get the uploaded file path and processing its file in  Streamlit"
 date: 2021-07-09T22:40:37+09:00
 lang: en
 author: Shunya Ueta
-cover:
-  image: "/posts/2021-07-09/images/1.png"
-  caption: "Streamlit app screen shot"
 tags:
   - python
   - streamlit

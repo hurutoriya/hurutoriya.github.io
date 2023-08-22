@@ -2,10 +2,6 @@
 title: "MLOps の国際会議 OpML'20 に、機械学習を活用した商品監視の改善に関する論文が採択されたので登壇してきた"
 date: 2020-09-06T23:31:03+09:00
 author: Shunya Ueta
-ShowToc: true
-cover:
-  image: "/posts/2020-09-06/images/1.png"
-  caption: "C2C eコマースにおける機械学習を活用した商品監視"
 lang: ja
 tags:
   - mlops

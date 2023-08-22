@@ -3,9 +3,6 @@ title: "ニュースレター近況"
 date: 2023-02-17T00:05:59+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2023-02-17-0005/images/1.png"
-  caption: "購読者遷移"
 tags:
   - search
   - newsletter

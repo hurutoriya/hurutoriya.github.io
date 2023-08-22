@@ -3,9 +3,6 @@ title: "Googleによる機械学習の実応用をテーマにしたCoursera の
 date: 2022-03-17T22:44:05+09:00
 lang: ja
 author: Shunya Ueta
-cover:
-  image: "/posts/2022-03-17/images/3.png"
-  caption: "機械学習プロジェクトの努力配分のギャップ"
 tags:
   - machinelearning
   - mlops
