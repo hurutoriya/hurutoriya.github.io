@@ -4,7 +4,7 @@ date: 2023-04-25T11:53:15+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - note
+  - kids
 ---
 
 表題のとおりです。

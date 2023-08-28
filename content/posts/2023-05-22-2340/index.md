@@ -5,7 +5,6 @@ lang: ja
 author: Shunya Ueta
 tags:
   - event
-  - essay
   - search
 ---
 

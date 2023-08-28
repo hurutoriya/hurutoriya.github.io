@@ -5,6 +5,7 @@ lang: ja
 author: Shunya Ueta
 tags:
   - book
+  - kids
 ---
 
 [私たちは子どもに何ができるのか――非認知能力を育み、格差に挑む](https://amzn.to/3w9jmIm)を読んだ。

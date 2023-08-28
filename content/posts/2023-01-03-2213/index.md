@@ -5,6 +5,7 @@ lang: ja
 author: Shunya Ueta
 tags:
   - review
+  - kids
 ---
 
 恒例の買って愛用しているものの振り返り記事です。
