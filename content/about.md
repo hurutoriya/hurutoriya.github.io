@@ -17,6 +17,7 @@ menu: "main"
 - Linkedin: https://www.linkedin.com/in/hurutoriya
 - GitHub: https://github.com/hurutoriya
 - Twitter: https://twitter.com/hurutoriya
+- Bluesky: https://bsky.app/profile/hurutoriya.bsky.social
 - Mastdon: https://mstdn.jp/@hurutoriya
 - Speaker Deck: https://speakerdeck.com/hurutoriya
 - 検索技術で面白かった記事をまとめて配信するニュースレター: https://searchengineeringnewsletter.substack.com/
