@@ -1,5 +1,5 @@
 ---
-title: "2022 年の目標"
+title: "2022年の目標"
 date: 2022-01-01T21:34:30+09:00
 lang: ja
 author: Shunya Ueta
