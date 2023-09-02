@@ -86,7 +86,9 @@ HANDSTAND PUSHUPS は、今の体重では怪我をせずに STEP を進める�
 
 https://shunyaueta.com/convict-conditioning-rep-player/
 
-このアプリについては、別途記事を書く。
+このアプリについては、別途記事を書いた
+
+[プリズナートレーニングのワークアウトに集中するための Web アプリを作った](/posts/2023-09-03-0319)
 
 ## 蛇足
 
