@@ -5,6 +5,7 @@ lang: ja
 author: Shunya Ueta
 tags:
   - machinelearning
+  - kdd
   - paper
 ---
 

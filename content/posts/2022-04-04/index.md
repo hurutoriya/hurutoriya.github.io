@@ -5,6 +5,8 @@ lang: ja
 author: Shunya Ueta
 tags:
   - nlp
+  - conference
+  - paper
 ---
 
 仕事でご縁ができた方と、自然言語処理(NLP)領域での国際会議で Industry track に相当する文化って何かありますかねとお聞きした話が面白かったので文章にしておく。
