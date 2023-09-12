@@ -10,7 +10,7 @@ tags:
   - machinelearning
 ---
 
-自分の嗜好は、現実世界に即した面白い機械学習、検索システムなどを KDD2023 に求めています。
+自分の嗜好は、現実世界に即した面白い機械学習、検索システムなどを KDD2023 には求めています。
 
 ## Tutorials
 
@@ -26,6 +26,10 @@ tags:
 ## Accepted Papers
 
 SESSION: Applied Data Track Full Papers を眺めました。
+
+Amazon が発表した採択論文はここにまとめられている。
+
+[KDD 2023 \- Amazon Science](https://www.amazon.science/conferences-and-events/kdd-2023)
 
 - CADENCE: Offline Category Constrained and Diverse Query Generation for E-commerce Autosuggest
 - RankFormer: Listwise Learning-to-Rank Using Listwide Labels
@@ -46,3 +50,5 @@ SESSION: Applied Data Track Full Papers を眺めました。
 - Revisiting Neural Retrieval on Accelerators
   - Meta
 - Towards Disentangling Relevance and Bias in Unbiased Learning to Rank
+
+もしほかにも気になる論文やおもしろ論文などありましたら、ページ下部のおたよりから教えてくれるとめっちゃ嬉しいです。
