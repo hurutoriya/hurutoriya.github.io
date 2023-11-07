@@ -16,7 +16,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.111.3"
+          hugo-version: "0.120.3"
 
       - name: Build
         run: hugo --gc --minify --cleanDestinationDir
