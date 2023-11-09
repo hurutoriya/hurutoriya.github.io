@@ -29,12 +29,18 @@ menu: "main"
 - 2015: 筑波大学情報学群情報科学類卒業
 - 2017: 筑波大学システム情報工学研究科コンピュータサイエンス専攻卒業
 - 2018: 株式会社メルカリに機械学習エンジニアとして入社
+- 2021: 同社にて検索チームへ異動し、検索エンジニアとして働く
 
-  - `2020.07.08` [データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～](https://johokiko.co.jp/publishing/BC200701.php) の `マルチモーダルによる規約違反出品検知への応用と運用について`の章を　@shido さんと共著にて執筆
-  - `2020.08.07` MLOps の査読付き国際会議 OpML'20 にて、[Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) が採択され、登壇する。[YouTube](https://www.youtube.com/watch?v=_rvEcH_zyt4)
-    , [Slide](https://speakerdeck.com/hurutoriya/auto-content-moderation-in-c2c-e-commerce-at-opml20)
+### 書籍
 
-- 2021: 同社にて検索チームへ移籍し、検索エンジニアとして働く
+- `2023.12.25`: 翻訳書籍 [Human-in-the-Loop 機械学習: 人間参加型 AI のための能動学習とアノテーション](https://amzn.to/47u5tFz):
+  機械学習に関わるなら絶対に切っても切り離せないと言っても過言ではない、データの作成方法についてがテーマの書籍です。能動学習とアノテーションの実践的な知識がまとめられています。
+- `2020.07.08`: [データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～](https://johokiko.co.jp/publishing/BC200701.php) の `マルチモーダルによる規約違反出品検知への応用と運用について`の章を　@shido さんと共著にて執筆
+
+### 国際会議
+
+- `2020.08.07`: MLOps の査読付き国際会議 USENIX OpML'20 にて、[Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) が採択され、登壇。[YouTube](https://www.youtube.com/watch?v=_rvEcH_zyt4)
+  , [Slide](https://speakerdeck.com/hurutoriya/auto-content-moderation-in-c2c-e-commerce-at-opml20)
 
 ### コミュニティ運営活動
 
