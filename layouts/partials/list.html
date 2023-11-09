@@ -1,4 +1,5 @@
 <content>
+  <h2> 最新記事</h2> 
   <ul class="blog-posts">
     {{ $pages := where .Site.Pages "Section" "posts" }}
     {{ $recentPages := $pages | first .Site.Params.latestPostNum }}
