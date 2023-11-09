@@ -16,7 +16,7 @@ menu: "main"
 
 - Linkedin: https://www.linkedin.com/in/hurutoriya
 - GitHub: https://github.com/hurutoriya
-- Twitter: https://twitter.com/hurutoriya
+- X(Twitter): https://twitter.com/hurutoriya
 - Bluesky: https://bsky.app/profile/hurutoriya.bsky.social
 - Mastdon: https://mstdn.jp/@hurutoriya
 - Speaker Deck: https://speakerdeck.com/hurutoriya
@@ -31,10 +31,8 @@ menu: "main"
 - 2018: 株式会社メルカリに機械学習エンジニアとして入社
 
   - `2020.07.08` [データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～](https://johokiko.co.jp/publishing/BC200701.php) の `マルチモーダルによる規約違反出品検知への応用と運用について`の章を　@shido さんと共著にて執筆
-  - `2020.08.07` MLOps の査読付き国際会議 OpML'20 にて、[Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) が採択され、登壇
-  - 機械学習による C2C マーケットプレイスでの商品監視の改善成果について: [YouTube](https://www.youtube.com/watch?v=_rvEcH_zyt4)
+  - `2020.08.07` MLOps の査読付き国際会議 OpML'20 にて、[Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) が採択され、登壇する。[YouTube](https://www.youtube.com/watch?v=_rvEcH_zyt4)
     , [Slide](https://speakerdeck.com/hurutoriya/auto-content-moderation-in-c2c-e-commerce-at-opml20)
-  - `2021.08.18` [機械学習エンジニアの学会での論文発表のススメ。応募から査読通過までの流れ](https://offers.jp/media/sidejob/workstyle/a_1966): Offers magazine というメディアに、業務での実績の論文化について寄稿
 
 - 2021: 同社にて検索チームへ移籍し、検索エンジニアとして働く
 
