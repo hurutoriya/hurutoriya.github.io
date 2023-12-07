@@ -48,6 +48,10 @@ menu: "main"
 - [出版社公式ページ](https://johokiko.co.jp/publishing/BC200701.php)
 - `マルチモーダルによる規約違反出品検知への応用と運用について`の章を同僚と共著にて執筆
 
+#### 第三者レビュー
+
+- `2021.04.23`: [仕事ではじめる機械学習 第 2 版 ](https://amzn.to/3RtVTgy) を第三者レビュアーとしてレビュー
+
 ### 国際会議
 
 - `2020.08.07`: MLOps の査読付き国際会議 USENIX OpML'20 にて、[Auto Content Moderation in C2C e-Commerce](https://www.usenix.org/conference/opml20/presentation/ueta) が採択され、登壇。[YouTube](https://www.youtube.com/watch?v=_rvEcH_zyt4)
