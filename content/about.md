@@ -38,7 +38,7 @@ menu: "main"
 [![Human-in-the-Loop 機械学習: 人間参加型 AI のための能動学習とアノテーション](/images/hitlbook-cover.jpg)](https://amzn.to/47u5tFz)
 
 - 出版日: `2023.12.25`
-- [Amazon](https://amzn.to/47u5tFz), [共立出版公式ページ](https://www.kyoritsu-pub.co.jp/book/b10039888.html)
+- [Amazon](https://amzn.to/47u5tFz), [共立出版公式ページ](https://www.kyoritsu-pub.co.jp/book/b10039888.html), [著者による紹介記事](/posts/2023-11-14-2336/)
 - 当書籍の翻訳プロジェクトの発起人であり、1,7,8,11,12 章の翻訳の責任者を務めた。また。翻訳プロジェクトの全体的なプロジェクトマネジメントも行った。
 - 機械学習に関わるなら絶対に切っても切り離せないと言っても過言ではない、データの作成方法がテーマの書籍です。能動学習とアノテーションの実践的な知識がまとめられています。
 
