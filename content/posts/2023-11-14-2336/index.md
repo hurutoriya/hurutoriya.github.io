@@ -242,4 +242,4 @@ https://twitter.com/kaeru_nantoka/status/1735629196515475457
 翻訳の裏話などは、また別の記事として書く予定です[^honyaku-urabanashi]。
 ご期待あれ...!
 
-[^honyaku-urabanashi]: 書きました! [「Human-in-the-Loop 機械学習」の出版を通じた技術書翻訳体験記 #hitlbook](posts/2023-11-20-2220)
+[^honyaku-urabanashi]: 書きました! [「Human-in-the-Loop 機械学習」の出版を通じた技術書翻訳体験記 #hitlbook](/posts/2023-11-20-2220)
