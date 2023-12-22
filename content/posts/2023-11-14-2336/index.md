@@ -239,6 +239,10 @@ https://twitter.com/kaeru_nantoka/status/1735629196515475457
 > ML システムと人間との関わりが定式化されたたり色々議論されたりしています(大事やね)
 > みんなも人間と仲良くしような！！！☺️🤝☺️🤝☺️🤝☺️🤝☺️
 
+@K_Ryuichirou https://twitter.com/K_Ryuichirou/status/1738138548031893594
+
+> 献本いただきました、レビューから参加していたのですが Active Learning のアルゴリズム面や運用上の注意、高品質なアノテーションを行うための工夫や注意点といった世に出てきにくいノウハウの詰まった本で、発見がとても多かったです Human-in-the-Loop 機械学習 https://www.kyoritsu-pub.co.jp/book/b10039888.html
+
 翻訳の裏話などは、また別の記事として書く予定です[^honyaku-urabanashi]。
 ご期待あれ...!
 
