@@ -17,6 +17,9 @@ tags:
 
 原著は、[Human\-in\-the\-Loop Machine Learning - Active learning and annotation for human-centered AI](https://www.manning.com/books/human-in-the-loop-machine-learning)で、2021 年 6 月に MANNING 社から出版されています。
 
+共訳者のNSKさんも書籍出版に関して記事を書いてくれました。
+[Human\-in\-the\-Loop Machine Learningという技術書を日本語に翻訳した \| NSK's log](https://nasuka.info/20231225/)
+
 ## 本書の概要
 
 書籍の概要文を引用します。自分が作成した文章なので、記事の内容に対して引用が多すぎるというツッコミはご安心ください。
