@@ -168,7 +168,13 @@ A.3　Human-in-the-Loop機械学習システムの性能測定
 ハッシュタグは #hitlbook となります。
 書籍の感想などはこのハッシュタグを使ってくださると嬉しいです。
 
-## 読者様の声
+## 正誤表
+
+極力誤りはないように執筆しましたが、誤りを共有可能なようにGitHub レポジトリで正誤表を管理しています。誤植やミスなどが見つかりましたら報告していただけると幸いです。
+
+https://github.com/human-in-the-loop-ml-book-ja/errata
+
+## 読者さまの声
 
 @upura0 https://twitter.com/hurutoriya/status/1735341781011804335
 
