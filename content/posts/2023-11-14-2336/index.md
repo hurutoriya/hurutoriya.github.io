@@ -17,8 +17,8 @@ tags:
 
 原著は、[Human\-in\-the\-Loop Machine Learning - Active learning and annotation for human-centered AI](https://www.manning.com/books/human-in-the-loop-machine-learning)で、2021 年 6 月に MANNING 社から出版されています。
 
-共訳者のNSKさんも書籍出版に関して記事を書いてくれました。
-[Human\-in\-the\-Loop Machine Learningという技術書を日本語に翻訳した \| NSK's log](https://nasuka.info/20231225/)
+共訳者の NSK さんも書籍出版に関して記事を書いてくれました。
+[Human\-in\-the\-Loop Machine Learning という技術書を日本語に翻訳した \| NSK's log](https://nasuka.info/20231225/)
 
 ## 本書の概要
 
@@ -170,11 +170,25 @@ A.3　Human-in-the-Loop機械学習システムの性能測定
 
 ## 正誤表
 
-極力誤りはないように執筆しましたが、誤りを共有可能なようにGitHub レポジトリで正誤表を管理しています。誤植やミスなどが見つかりましたら報告していただけると幸いです。
+極力誤りはないように執筆しましたが、誤りを共有可能なように GitHub レポジトリで正誤表を管理しています。誤植やミスなどが見つかりましたら報告していただけると幸いです。
 
 https://github.com/human-in-the-loop-ml-book-ja/errata
 
-## 読者さまの声
+## 反響
+
+### ブログ記事
+
+[『Human\-in\-the\-Loop 機械学習』 \- ｼﾞｮｲｼﾞｮｲｼﾞｮｲ](https://joisino.hatenablog.com/entry/2023/12/27/175940)
+
+> 今までほとんど無かった、機械学習用のデータを作成するための書籍です。実用性を強く重視しており、まさに今から機械学習データを用意しようと考えている方にとっては大いに役立つ本だと思います。研究者にとっては良い面と悪い面がありますが、新しいトピックに触れたい方や、逆にアカデミア流に凝り固まった考えをほぐしたい方にはぴったりだと思います。
+
+### X(Twitter)
+
+@smly https://twitter.com/smly/status/1739795728736882887
+
+> Human-in-the-Loop 機械学習を献本いただきました。データセット作成を計画しているすべての人にオススメです。
+> 特に好きなのがアノテーションパート。技術的な話に終始せず、動機づけ・品質管理など著者の経験に基づいたアドバイスがグサグサと刺さります。https://amazon.co.jp/dp/4320125746/
+> 金言 > “私が見てきたどの業界でも、長期間トップレベルを維持した最先端のモデルは、新しいアルゴリズムではなく、より良い学習データに支えられていました。(snip)。高品質なデータは、競合他社の機械学習サービスに打ち負かされないサービスを提供するための障壁となるのです。”
 
 @upura0 https://twitter.com/hurutoriya/status/1735341781011804335
 
@@ -213,6 +227,7 @@ https://twitter.com/kaeru_nantoka/status/1735629196515475457
 
 > Human in the loop 機械学習。翻訳レビューに参加したご縁で訳者様からご恵贈いただきました
 > 学習データのアノテーションに割ける労力に限りがある中で、どのデータを優先的にアノテーションするのが効率がいいのかという能動学習の問題と、具体的なアノテーション方法の話題を扱ってます。
+> こちら本日発売されたようです。能動学習の理論的な話から、アノテーションのためのインターフェースや、アノテーションに従事するワーカーの雇用ややりがいの話まで、色々なことが書いてあります ☺️
 
 @whitphx_ja https://twitter.com/whitphx_ja/status/1735928022627450935
 
@@ -252,6 +267,40 @@ https://twitter.com/kaeru_nantoka/status/1735629196515475457
 
 > 献本いただきました、レビューから参加していたのですが Active Learning のアルゴリズム面や運用上の注意、高品質なアノテーションを行うための工夫や注意点といった世に出てきにくいノウハウの詰まった本で、発見がとても多かったです Human-in-the-Loop 機械学習 https://www.kyoritsu-pub.co.jp/book/b10039888.html
 
+@\_stakaya https://twitter.com/_stakaya/status/1739070197875831241
+
+> 著者の @hurutoriya さんから「Human-in-the-Loop 機械学習」を献本いただきました！
+> 「能動学習、アノテーションを順に説明してから Human-in-the-Loop 機械の話に入る」というユニークな構成になっています。
+> 本日から販売です、皆さん是非ッ！！！
+
+@kosuke_tsujino https://twitter.com/kosuke_tsujino/status/1739108423923560674
+
+> 訳者の @hurutoriya さんに新刊『 Human-In-The-Loop 機械学習』を贈って頂きました。ありがとうございます!!
+> active learning やアノテーションの品質管理など、ML アルゴリズムの教科書ではあまりカバーされないが実務では役立つ情報が詰まっています。
+
+@PINTO03091 https://twitter.com/PINTO03091/status/1739118500273418553
+
+> 実家に PC 持っていくと怒られそうなので暇つぶし用に買った。"Human-in-the-Loop 機械学習: 人間参加型 AI のための能動学習とアノテーション"
+> 新幹線車内で Human-in-the-Loop 機械学習の本を読み始めたんだけど、最初の４ページ目からいきなり僕が発表資料のアノテーション方針に書いた内容そのものが書かれている。経験豊富な方々がおっしゃるぐらいだから方向性はほとんど間違っていなかったのかもしれない。
+
+@cocu_tan https://twitter.com/cocu_tan/status/1739611953100960180
+
+> Human-in-the-Loop の日本語訳を翻訳をされた @hurutoriya さんから恵贈していただきましたっ
+> active learning やアノテーションの品質管理などがメインのようです。Human-centered AI や蒸留の文脈でもホットになっていきそう。
+
+@shunk031 https://twitter.com/shunk031/status/1739254733913924047
+
+> 共立出版社さまと @naohachi89 さんのご厚意により「Human-in-the-Loop 機械学習」をご恵贈いただきました。企業に就職してアノテーションの重要さを感じるようになったちょうどよいタイミングで最高の本に出会えました！特にアノテータのアノテーション結果をどう評価するかはとても参考になりました
+
+@natsutan https://twitter.com/natsutan/status/1739667860363100181
+
+> Human-in-the-Loop 機械学習 出だしから良いことしか書いて無くて、年明けにでも社内勉強会したい。
+
+@inunu_hossie https://twitter.com/inunu_hossie/status/1739931305863737616
+
+> 共立出版「Human-in-the-Loop 機械学習」を購入。以前英語版を電子書籍で買ったのだがついに和訳版出たので即決買い。機械学習界隈でやや軽視されがちな「学習データの準備」や能動学習を主役にした、B4 で 400 頁弱の本格本。私は唯一無二の本だと思ってる。さあこれを熟読し、データを準備しよう！
+
+昨日発売されたようなので興味ある方はぜひっ
 翻訳の裏話などは、また別の記事として書く予定です[^honyaku-urabanashi]。
 ご期待あれ...!
 
