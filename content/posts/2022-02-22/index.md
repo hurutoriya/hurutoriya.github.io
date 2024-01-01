@@ -4,7 +4,6 @@ date: 2022-02-22T22:21:47+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - essay
   - machinelearning
   - mlct
   - event

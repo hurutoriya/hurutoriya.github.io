@@ -5,6 +5,7 @@ lang: ja
 author: Shunya Ueta
 tags:
   - essay
+  - machinelearning
 ---
 
 ここ最近友人といろんな妄想を議論して楽しかったのでここで吐き出しておく
