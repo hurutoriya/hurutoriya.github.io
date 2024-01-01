@@ -4,7 +4,7 @@ date: 2018-02-09T14:00:31.850Z
 lastmod: 2019-06-16T18:17:52+09:00
 lang: ja
 tags:
-  - diary
+  - retrospective
 ---
 
 2018 年 1 月の振り返りをざっくりと

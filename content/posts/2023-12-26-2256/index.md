@@ -1,10 +1,10 @@
 ---
-title: "2023年の振り返り"
+title: "2023年を振り返る"
 date: 2023-12-26T22:56:32+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - essay
+  - retrospective
 ---
 
 ## 目標に掲げていたこと

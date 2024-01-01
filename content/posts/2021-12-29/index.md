@@ -1,10 +1,10 @@
 ---
-title: "2021 年振り返り"
+title: "2021年を振り返る"
 date: 2021-12-29T22:42:08+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - diary
+  - retrosoective
 ---
 
 うなすけさんの wakatime を利用した振り返り方が面白かったので、来年は真似したいと思い導入してみた。

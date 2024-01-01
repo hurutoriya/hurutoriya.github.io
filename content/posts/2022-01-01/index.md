@@ -4,7 +4,7 @@ date: 2022-01-01T21:34:30+09:00
 lang: ja
 author: Shunya Ueta
 tags:
-  - diary
+  - goal
 ---
 
 ## Objective 1
