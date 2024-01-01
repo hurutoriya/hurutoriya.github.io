@@ -5,7 +5,6 @@ lang: ja
 author: Shunya Ueta
 tags:
   - kids
-  - diary
 ---
 
 近況報告です。
