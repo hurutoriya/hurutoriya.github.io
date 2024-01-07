@@ -1,5 +1,5 @@
 ---
-title: "能動学習とアノテーションをテーマにした翻訳書籍 「Human-in-the-Loop機械学習」が出版されます #hitlbook"
+title: "能動学習とアノテーションをテーマにした書籍 「Human-in-the-Loop機械学習」を翻訳しました #hitlbook"
 date: 2023-11-14T23:36:59+09:00
 lang: ja
 author: Shunya Ueta
