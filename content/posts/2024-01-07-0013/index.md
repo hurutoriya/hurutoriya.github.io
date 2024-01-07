@@ -23,7 +23,7 @@ Error: intellij-idea-ce: It seems the App source '/Applications/IntelliJ IDEA CE
 `--force` オプションを追加すると無事にインストールできる [^brew-error]
 
 ```bash
-brew install --cask intellij-idea-ce
+brew install --cask intellij-idea-ce --force
 ```
 
 [^brew-error]: [homebrew \- is it possible to override the legacy app when install using brew \- Ask Different](https://apple.stackexchange.com/questions/435745/is-it-possible-to-override-the-legacy-app-when-install-using-brew)
