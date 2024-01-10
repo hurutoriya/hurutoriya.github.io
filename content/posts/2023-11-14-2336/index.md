@@ -186,6 +186,10 @@ https://github.com/human-in-the-loop-ml-book-ja/errata
 
 > 本書の大きな特徴はアノテーターとの協働に多くのページを割いている所でしょう。私はアノテーション要員を確保したものの彼らのモチベーション維持が難しく期待通りのアウトプットが得られなかったプロジェクトやアノテーション用の画面をどこまで作り込めば良いか悩んだ経験があったので、本書があれば助けになっただろうなというのが最初の感想です。
 
+[Human\-in\-the\-Loop 機械学習 社内勉強会資料 \- ぱたへね](https://natsutan.hatenablog.com/entry/2024/01/10/185211)
+
+> 翻訳もとても読みやすく、機械学習や Deep Learning のモデルを継続的に改善している人にはお勧めです。 ... 少しでも興味があれば買って読んでみてください。
+
 ### X(Twitter)
 
 @smly https://twitter.com/smly/status/1739795728736882887
@@ -270,6 +274,7 @@ https://twitter.com/kaeru_nantoka/status/1735629196515475457
 @K_Ryuichirou https://twitter.com/K_Ryuichirou/status/1738138548031893594
 
 > 献本いただきました、レビューから参加していたのですが Active Learning のアルゴリズム面や運用上の注意、高品質なアノテーションを行うための工夫や注意点といった世に出てきにくいノウハウの詰まった本で、発見がとても多かったです Human-in-the-Loop 機械学習 https://www.kyoritsu-pub.co.jp/book/b10039888.html
+> 同僚が読んだのですが激賞してました、この手の情報、とくにアノテーションの品質管理について、体制や雇用契約を含めて解説したものってほぼ無いのでとくに有用だと思います
 
 @\_stakaya https://twitter.com/_stakaya/status/1739070197875831241
 
