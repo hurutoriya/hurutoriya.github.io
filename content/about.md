@@ -33,7 +33,7 @@ menu: "main"
 
 ### 書籍
 
-#### Human-in-the-Loop 機械学習: 人間参加型 AI のための能動学習とアノテーション] #hitlbook
+#### Human-in-the-Loop 機械学習: 人間参加型 AI のための能動学習とアノテーション #hitlbook
 
 [![Human-in-the-Loop 機械学習: 人間参加型 AI のための能動学習とアノテーション](/images/hitlbook-cover.jpg)](https://amzn.to/47u5tFz)
 
@@ -48,7 +48,7 @@ menu: "main"
 - [出版社公式ページ](https://johokiko.co.jp/publishing/BC200701.php)
 - `マルチモーダルによる規約違反出品検知への応用と運用について`の章を同僚と共著にて執筆
 
-#### 第三者レビュー
+### 書籍の第三者レビューとして参加
 
 - `2021.04.23`: [仕事ではじめる機械学習 第 2 版 ](https://amzn.to/3RtVTgy) を第三者レビュアーとしてレビュー
 
