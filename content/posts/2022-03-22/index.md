@@ -7,6 +7,8 @@ tags:
   - machinelearning
 ---
 
+2024-01-21: [Human-in-the-Loop 機械学習: 人間参加型 AI のための能動学習とアノテーション](https://amzn.to/47u5tFz) という技術書を翻訳しました。この記事を読んでいる方は興味がある内容だと思うので、ぜひ御覧ください。
+
 Human In The Loop は、機械学習のモデルのライフサイクルに人が介在することにより、機械学習モデルの改善を目指す手法。
 
 ## Human In The Loop の定義
