@@ -8,6 +8,7 @@ tags:
   - oss
   - community
   - organizer
+  - 検索エンジンOSS勉強会
 ---
 
 タイトルのとおりですが、検索エンジン OSS 勉強会 という Lucene や OpenSearch などの検索エンジン OSS への貢献を念頭にした勉強会を立ち上げてみました。
@@ -40,7 +41,7 @@ X(Twitter)以外で潜在層にリーチする方法が欲しいですね。。�
     - https://github.com/apache/lucene/issues?q=is%3Aissue+is%3Aclosed
     - https://github.com/opensearch-project/OpenSearch/pulls?q=is%3Apr+is%3Aclosed
     - 著者は、Apache Lucene, OpenSearch, Apache Beam などに興味がある。
-- 開催場所は Discord で行う。(招待リンクはGoogle Docs を参照してください)
+- 開催場所は Discord で行う。(招待リンクは Google Docs を参照してください)
   - 専用の行動規範は作成していませんが、みんなが気持ちよく活動できるようにしてください。参考
     - https://www.ubuntulinux.jp/community/conduct
 - 開催結果や議論などは極力透明性を持って公開していく。
