@@ -1,0 +1,226 @@
+<!doctype html><html lang=ja><head><meta http-equiv=X-Clacks-Overhead content="GNU Terry Pratchett"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Apache Lucene の PR #12962 Speedup concurrent multi-segment HNSW graph search 2 を理解したい 検索エンジンOSS勉強会 | Shunya Ueta</title>
+<meta name=title content="Apache Lucene の PR #12962 Speedup concurrent multi-segment HNSW graph search 2 を理解したい 検索エンジンOSS勉強会"><meta name=description content="検索エンジン OSS 勉強会 Meetup 第一回の発表資料です。 発表での議論を基にこの資料は改修予定です。
+https://home.apache.org/~mikemccand/lucenebench/VectorSearch.html
+768 次元の word embedding のベクトルに対して、近似近傍探索の結果のベンチマーキング。
+Lucene Nightly Benchmarking での大きな改善
+GE: 104QPS → 219QPS
+GE: 近似近傍探索で複数セグメントに対して並行に検索 Speedup concurrent multi-segment HNSW graph search 2 by mayya-sharipova · Pull Request #12962 · apache/lucene
+Elasticsearch のエンジニアの人が作成している
+Lucene のセグメントの概念
+docs→file→segment→index
++- Index 5 ------------------------------------------+ | | | +- Segment _0 ---------------------------------+ | | | | | | | +- file 1 -------------------------------+ | | | | | | | | | | | +- L."><meta name=keywords content="lucene,検索エンジンOSS勉強会,"><meta property="og:title" content="Apache Lucene の PR #12962 Speedup concurrent multi-segment HNSW graph search 2 を理解したい 検索エンジンOSS勉強会"><meta property="og:description" content="検索エンジン OSS 勉強会 Meetup 第一回の発表資料です。 発表での議論を基にこの資料は改修予定です。
+https://home.apache.org/~mikemccand/lucenebench/VectorSearch.html
+768 次元の word embedding のベクトルに対して、近似近傍探索の結果のベンチマーキング。
+Lucene Nightly Benchmarking での大きな改善
+GE: 104QPS → 219QPS
+GE: 近似近傍探索で複数セグメントに対して並行に検索 Speedup concurrent multi-segment HNSW graph search 2 by mayya-sharipova · Pull Request #12962 · apache/lucene
+Elasticsearch のエンジニアの人が作成している
+Lucene のセグメントの概念
+docs→file→segment→index
++- Index 5 ------------------------------------------+ | | | +- Segment _0 ---------------------------------+ | | | | | | | +- file 1 -------------------------------+ | | | | | | | | | | | +- L."><meta property="og:type" content="article"><meta property="og:url" content="https://shunyaueta.com/posts/2024-03-11-0120/"><meta property="og:image" content="https://shunyaueta.com/ogp.jpg"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-03-11T01:20:34+09:00"><meta property="article:modified_time" content="2024-03-11T01:20:34+09:00"><meta property="og:site_name" content="Shunya Ueta"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://shunyaueta.com/ogp.jpg"><meta name=twitter:title content="Apache Lucene の PR #12962 Speedup concurrent multi-segment HNSW graph search 2 を理解したい 検索エンジンOSS勉強会"><meta name=twitter:description content="検索エンジン OSS 勉強会 Meetup 第一回の発表資料です。 発表での議論を基にこの資料は改修予定です。
+https://home.apache.org/~mikemccand/lucenebench/VectorSearch.html
+768 次元の word embedding のベクトルに対して、近似近傍探索の結果のベンチマーキング。
+Lucene Nightly Benchmarking での大きな改善
+GE: 104QPS → 219QPS
+GE: 近似近傍探索で複数セグメントに対して並行に検索 Speedup concurrent multi-segment HNSW graph search 2 by mayya-sharipova · Pull Request #12962 · apache/lucene
+Elasticsearch のエンジニアの人が作成している
+Lucene のセグメントの概念
+docs→file→segment→index
++- Index 5 ------------------------------------------+ | | | +- Segment _0 ---------------------------------+ | | | | | | | +- file 1 -------------------------------+ | | | | | | | | | | | +- L."><meta itemprop=name content="Apache Lucene の PR #12962 Speedup concurrent multi-segment HNSW graph search 2 を理解したい 検索エンジンOSS勉強会"><meta itemprop=description content="検索エンジン OSS 勉強会 Meetup 第一回の発表資料です。 発表での議論を基にこの資料は改修予定です。
+https://home.apache.org/~mikemccand/lucenebench/VectorSearch.html
+768 次元の word embedding のベクトルに対して、近似近傍探索の結果のベンチマーキング。
+Lucene Nightly Benchmarking での大きな改善
+GE: 104QPS → 219QPS
+GE: 近似近傍探索で複数セグメントに対して並行に検索 Speedup concurrent multi-segment HNSW graph search 2 by mayya-sharipova · Pull Request #12962 · apache/lucene
+Elasticsearch のエンジニアの人が作成している
+Lucene のセグメントの概念
+docs→file→segment→index
++- Index 5 ------------------------------------------+ | | | +- Segment _0 ---------------------------------+ | | | | | | | +- file 1 -------------------------------+ | | | | | | | | | | | +- L."><meta itemprop=datePublished content="2024-03-11T01:20:34+09:00"><meta itemprop=dateModified content="2024-03-11T01:20:34+09:00"><meta itemprop=wordCount content="954"><meta itemprop=image content="https://shunyaueta.com/ogp.jpg"><meta itemprop=keywords content="lucene,検索エンジンOSS勉強会,"><meta name=referrer content="no-referrer-when-downgrade"><style>body{font-family:Verdana,sans-serif;margin:auto;padding:20px;max-width:720px;text-align:left;background-color:#fff;word-wrap:break-word;overflow-wrap:break-word;line-height:1.5;color:#444}h1,h2,h3,h4,h5,h6,strong,b{color:#222}a{color:#3273dc}.title{text-decoration:none;border:0}.title span{font-weight:400}nav a{margin-right:10px}textarea{width:100%;font-size:16px}input{font-size:16px}content{line-height:1.6}table{width:100%}img{max-width:100%}code{padding:2px 5px;background-color:#f2f2f2}pre code{color:#222;display:block;padding:20px;white-space:pre-wrap;font-size:14px;overflow-x:auto}div.highlight pre{background-color:initial;color:initial}div.highlight code{background-color:unset;color:unset}blockquote{border-left:1px solid #999;color:#222;padding-left:20px;font-style:italic}footer{padding:25px;text-align:center}.helptext{color:#777;font-size:small}.errorlist{color:#eba613;font-size:small}ul.blog-posts{list-style-type:none;padding:unset}ul.blog-posts li{display:flex}ul.blog-posts li span{flex:0 0 130px}ul.blog-posts li a:visited{color:#8b6fcb}@media(prefers-color-scheme:dark){body{background-color:#333;color:#ddd}h1,h2,h3,h4,h5,h6,strong,b{color:#eee}a{color:#8cc2dd}code{background-color:#777}pre code{color:#ddd}blockquote{color:#ccc}textarea,input{background-color:#252525;color:#ddd}.helptext{color:#aaa}}</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-JMJRQJT0Q3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-JMJRQJT0Q3")</script></head><body><header><a href=/ class=title><h2>Shunya Ueta</h2></a><nav><a href=/about/>著者について</a>
+<a href=/index.xml>RSS</a></nav></header><main><h1>Apache Lucene の PR #12962 Speedup concurrent multi-segment HNSW graph search 2 を理解したい 検索エンジンOSS勉強会</h1><p><i><time datetime=2024-03-11 pubdate>2024-03-11</time></i></p><content><p>検索エンジン OSS 勉強会 Meetup 第一回の発表資料です。
+発表での議論を基にこの資料は改修予定です。</p><p><a href=https://home.apache.org/~mikemccand/lucenebench/VectorSearch.html>https://home.apache.org/~mikemccand/lucenebench/VectorSearch.html</a></p><p><img src=/posts/2024-03-11-0120/images/knn-benchmarking.png alt></p><p>768 次元の word embedding のベクトルに対して、近似近傍探索の結果のベンチマーキング。</p><p>Lucene Nightly Benchmarking での大きな改善</p><p>GE: 104QPS → 219QPS</p><h2 id=ge-近似近傍探索で複数セグメントに対して並行に検索>GE: 近似近傍探索で複数セグメントに対して並行に検索</h2><p><a href=https://github.com/apache/lucene/pull/12962>Speedup concurrent multi-segment HNSW graph search 2 by mayya-sharipova · Pull Request #12962 · apache/lucene</a></p><p>Elasticsearch のエンジニアの人が作成している</p><p>Lucene のセグメントの概念</p><p>docs→file→segment→index</p><pre tabindex=0><code>+- Index 5 ------------------------------------------+
+|                                                    |
+|  +- Segment _0 ---------------------------------+  |
+|  |                                              |  |
+|  |  +- file 1 -------------------------------+  |  |
+|  |  |                                        |  |  |
+|  |  | +- L.Doc1-+  +- L.Doc2-+  +- L.Doc3-+  |  |  |
+|  |  | |         |  |         |  |         |  |  |  |
+|  |  | | field 1 |  | field 1 |  | field 1 |  |  |  |
+|  |  | | field 2 |  | field 2 |  | field 2 |  |  |  |
+|  |  | | field 3 |  | field 3 |  | field 3 |  |  |  |
+|  |  | |         |  |         |  |         |  |  |  |
+|  |  | +---------+  +---------+  +---------+  |  |  |
+|  |  |                                        |  |  |
+|  |  +----------------------------------------+  |  |
+|  |                                              |  |
+|  |                                              |  |
+|  |  +- file 2 -------------------------------+  |  |
+|  |  |                                        |  |  |
+|  |  | +- L.Doc4-+  +- L.Doc5-+  +- L.Doc6-+  |  |  |
+|  |  | |         |  |         |  |         |  |  |  |
+|  |  | | field 1 |  | field 1 |  | field 1 |  |  |  |
+|  |  | | field 2 |  | field 2 |  | field 2 |  |  |  |
+|  |  | | field 3 |  | field 3 |  | field 3 |  |  |  |
+|  |  | |         |  |         |  |         |  |  |  |
+|  |  | +---------+  +---------+  +---------+  |  |  |
+|  |  |                                        |  |  |
+|  |  +----------------------------------------+  |  |
+|  |                                              |  |
+|  +----------------------------------------------+  |
+|                                                    |
+|  +- Segment _1 (optional) ----------------------+  |
+|  |                                              |  |
+|  +----------------------------------------------+  |
++----------------------------------------------------+
+</code></pre><blockquote><p>Ref: <a href=https://stackoverflow.com/questions/2703432/what-are-segments-in-lucene>What are segments in Lucene? - Stack Overflow</a></p></blockquote><p>この StackOverflow で共有されているこの公式ドキュメントは理解しやすかった</p><p><a href=https://lucene.apache.org/core/2_9_4/fileformats.html>Apache Lucene - Index File Formats</a></p><ul><li><input disabled type=checkbox> 2.9.4 のやつなので最新版の page を探しだせれば差し替える</li></ul><h3 id=lucene-の-knn-の解説>Lucene の KNN の解説</h3><p>Lucene comitter の Mike Sokolov さんの発表がわかりやすい</p><ul><li><a href=https://www.apachecon.com/acna2022/slides/04_lucene_vector_search_sokolov.pdf>The making of Apache Lucene vector search</a><ul><li><a href=https://issues.apache.org/jira/browse/LUCENE-9004>https://issues.apache.org/jira/browse/LUCENE-9004</a></li><li>ANN の機能開発チケット</li><li><a href=https://github.com/apache/lucene-solr/pull/2022>LUCENE-9004: KNN vector search using NSW graphs by msokolov · Pull Request #2022 · apache/lucene-solr</a></li></ul></li></ul><h1 id=実際に作成された-pr-を読んでみる>実際に作成された PR を読んでみる</h1><h2 id=実際の複数セグメントを並行検索する処理の例-refhttpsgithubcomapachelucenepull12962filesdiff-0a10fed5fe4af3bba13deab713dea47f98a298d3962361a88d5c2a073c4892a7>実際の複数セグメントを並行検索する処理の例 <a href=https://github.com/apache/lucene/pull/12962/files#diff-0a10fed5fe4af3bba13deab713dea47f98a298d3962361a88d5c2a073c4892a7>ref</a></h2><p><code>AbstractKnnVectorQuery.java</code> 内で KNN ベクトル検索の並行検索がサポートされた
+このクラスは名前の通り、近似近傍探索(kNN)を扱うクラス。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#75715e>// k は kNNの k, IndexSearcher は名前のまんま</span>
+</span></span><span style=display:flex><span>KnnCollectorManager knnCollectorManager <span style=color:#f92672>=</span> getKnnCollectorManager(k, indexSearcher);
+</span></span><span style=display:flex><span><span style=color:#75715e>// TaskExecutor は平行実行を担当する</span>
+</span></span><span style=display:flex><span>TaskExecutor taskExecutor <span style=color:#f92672>=</span> indexSearcher.<span style=color:#a6e22e>getTaskExecutor</span>();
+</span></span><span style=display:flex><span><span style=color:#75715e>// LeafReaderContext はセグメントレベルで検索を効率的に実行可能なコンポーネント</span>
+</span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>LeafReaderContext<span style=color:#f92672>&gt;</span> leafReaderContexts <span style=color:#f92672>=</span> reader.<span style=color:#a6e22e>leaves</span>();
+</span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>Callable<span style=color:#f92672>&lt;</span>TopDocs<span style=color:#f92672>&gt;&gt;</span> tasks <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> ArrayList<span style=color:#f92672>&lt;&gt;</span>(leafReaderContexts.<span style=color:#a6e22e>size</span>());
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> (LeafReaderContext context : leafReaderContexts) {
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  tasks.<span style=color:#a6e22e>add</span>(() <span style=color:#f92672>-&gt;</span> searchLeaf(context, filterWeight, knnCollectorManager));
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=leafreadercontext-の解説>LeafReaderContext の解説</h3><p>Lucene での検索処理における   <a href=https://github.com/apache/lucene/blob/main/lucene/core/src/java/org/apache/lucene/index/LeafReaderContext.java>LeafReaderContext</a>   の役割とその重要性を、より具体的な例を交えて解説。 Leaf はセグメントを意味していると解釈</p><p>Lucene におけるインデックスは、複数のセグメントに分けられており、各セグメントは独立したインデックスとして扱われる。このアーキテクチャにより、データの更新や検索の効率化が図られている。
+たとえば、大規模なドキュメント集合に対する更新や追加が発生したとき、全体のインデックスを一から再構築するのではなく、新しいセグメントが作成され、最終的には既存のセグメントとマージされることでインデックスが更新される。</p><h4 id=具体例-検索処理>具体例: 検索処理</h4><p>ユーザーが &ldquo;Lucene&rdquo; というキーワードでドキュメントを検索する場面を想定
+Lucene のインデックスは複数のセグメントから構成されているため、検索処理は以下のステップで行われる</p><ol><li><strong>クエリ解析</strong>: ユーザーの入力から検索クエリが生成されます。この例では、&ldquo;Lucene&rdquo; という単語を検索するクエリです。</li><li><strong>セグメントごとの検索</strong>: Lucene は、インデックス内の各セグメントに対してクエリを実行します。ここが  <code>LeafReaderContext</code>  の出番。インデックスの全セグメントに対応する  <code>LeafReaderContext</code>  オブジェクトのリストを通じて、それぞれのセグメントに対して独立してクエリが実行されます。</li></ol><p>例えば、インデックスに 3 つのセグメントがあった場合、</p><ul><li><code>LeafReaderContext1</code>  を使って segment 1 を検索</li><li><code>LeafReaderContext2</code>  を使って segment 2 を検索</li><li><code>LeafReaderContext3</code>  を使って segment 3 を検索</li></ul><p>各  <code>LeafReaderContext</code>  からは、そのセグメント固有の情報（ドキュメント ID、頻度など）にアクセスするためのインターフェースが提供されます。この手順により、各セグメントから &ldquo;Lucene&rdquo; が含まれるドキュメントが検索されます。</p><ol><li><strong>結果の集約</strong>: セグメントごとの検索結果を集約して、最終的な検索結果をユーザーに表示します。このプロセスでは、各セグメントから得られたドキュメント ID を、全体のインデックスにおける一意のドキュメント ID に割り当て直す必要があります。この割り当ても、<code>LeafReaderContext</code>  を通じて処理されます。</li></ol><p>この例では、<code>LeafReaderContext</code>  の役割がセグメントレベルでの検索処理の実行とその結果の取り扱いにどのように影響するかを示している。具体的には、<code>LeafReaderContext</code>  は検索クエリのセグメントごとの実行を助け、セグメント内の情報に対するアクセスを提供し、さらに全体の検索結果を集約する際の橋渡しをします。また、新しいデータがインデックスに追加された場合や、セグメントがマージされた場合にも、<code>LeafReaderContext</code>  が更新されることで、検索クエリの正確さと迅速さを保証している。</p><h3 id=この-pr-で導入された-knncollectormanager-について>この PR で導入された KnnCollectorManager について</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>protected</span> KnnCollectorManager <span style=color:#a6e22e>getKnnCollectorManager</span>(<span style=color:#66d9ef>int</span> k, IndexSearcher searcher) {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>new</span> TopKnnCollectorManager(k, searcher);
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><ul><li><a href=https://github.com/apache/lucene/blob/d095ed02a2a7742235e73320fa992eabfeecbecc/lucene/core/src/java/org/apache/lucene/search/knn/KnnCollectorManager.java>KNNCollectorManager</a> は <a href=https://github.com/apache/lucene/blob/6445bc0a14ee22d107c072f4ef7b133faf780fe1/lucene/core/src/java/org/apache/lucene/search/KnnCollector.java>KnnCollector</a>を管理<ul><li><ul><li><a href=https://github.com/apache/lucene/blob/6445bc0a14ee22d107c072f4ef7b133faf780fe1/lucene/core/src/java/org/apache/lucene/search/KnnCollector.java>KnnCollector</a> は、近傍結果から kNN 結果を収集する</li></ul></li></ul></li><li><a href=https://github.com/apache/lucene/blob/main/lucene/core/src/java/org/apache/lucene/search/knn/TopKnnCollectorManager.java>TopKNNCollectormanager</a> は KNNCollectorManager のサブクラス(のようなもの)<ul><li><code>concurrency</code> がサポートされている場合、BlockingFloatHeap 内に、すべての葉のグローバルトップスコアが収集される (既存の CollectorManager を基に作成したらしい)</li></ul></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>TopKnnCollectorManager</span> <span style=color:#66d9ef>implements</span> KnnCollectorManager {
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 何個のドキュメントを収集するか</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> <span style=color:#66d9ef>int</span> k;
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// すべてのセグメントを跨いで収集されたトップスコアを追跡するために使用される、グローバルスコアキュー</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> BlockingFloatHeap globalScoreQueue;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#a6e22e>TopKnnCollectorManager</span>(<span style=color:#66d9ef>int</span> k, IndexSearcher indexSearcher) {
+</span></span><span style=display:flex><span>	  <span style=color:#75715e>// 複数のセグメントが存在するかを確認</span>
+</span></span><span style=display:flex><span>	  <span style=color:#75715e>// ここでやっと理解したが、 leaves って segment を指している模様... (segment は index の leaves と考えられるから? )</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>boolean</span> isMultiSegments <span style=color:#f92672>=</span> indexSearcher.<span style=color:#a6e22e>getIndexReader</span>().<span style=color:#a6e22e>leaves</span>().<span style=color:#a6e22e>size</span>() <span style=color:#f92672>&gt;</span> 1;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>k</span> <span style=color:#f92672>=</span> k;
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 複数のセグメントがあった場合に、k要素を持つBlockingFloatHeapインスタンスを初期化してglobalScoreQueueに割り当てる。そうでなければ、globalScoreQueueをnullに設定</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>globalScoreQueue</span> <span style=color:#f92672>=</span> isMultiSegments <span style=color:#f92672>?</span> <span style=color:#66d9ef>new</span> BlockingFloatHeap(k) : <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> KnnCollector <span style=color:#a6e22e>newCollector</span>(<span style=color:#66d9ef>int</span> visitedLimit, LeafReaderContext context) <span style=color:#66d9ef>throws</span> IOException {
+</span></span><span style=display:flex><span>	 <span style=color:#75715e>// 単一セグメントの場合</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (globalScoreQueue <span style=color:#f92672>==</span> <span style=color:#66d9ef>null</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>new</span> TopKnnCollector(k, visitedLimit);
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 複数セグメントの場合</span>
+</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>	   <span style=color:#75715e>// 複数セグメントを並行検索する MultiLeafKnnCollector を利用する</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>new</span> MultiLeafKnnCollector(k, globalScoreQueue, <span style=color:#66d9ef>new</span> TopKnnCollector(k, visitedLimit));
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h4 id=検索対象のセグメントが複数セグメントの場合に並行検索を実行する-multileafknncollector>検索対象のセグメントが複数セグメントの場合に、並行検索を実行する MultiLeafKnnCollector</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>final</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>MultiLeafKnnCollector</span> <span style=color:#66d9ef>implements</span> KnnCollector {
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>//  [0,1] の範囲で探索の貪欲度を制御する定数。値が1に近づくほど、より多くの最高類似度を局所的に保持しようとする。</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>final</span> <span style=color:#66d9ef>float</span> DEFAULT_GREEDINESS <span style=color:#f92672>=</span> 0.<span style=color:#a6e22e>9f</span>;
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 全てのセグメントを通じて収集された最高の類似度スコアを保持するグローバルなキュー。</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> BlockingFloatHeap globalSimilarityQueue;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// そのセグメントがグローバルレベルで競争力を持たない場合に、最高の類似度（類似性スコア）をローカルに蓄積するためのキュー</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> FloatHeap nonCompetitiveQueue;
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 初期値DEFAULT_GREEDINESSを使用する探索の貪欲度</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> <span style=color:#66d9ef>float</span> greediness;
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 定期的にグローバルキューに更新る局所的な類似度スコアを保持するキュー</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> FloatHeap updatesQueue;
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 局所的なキューとグローバルなキューを同期するための訪問されたベクターの数の間隔</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> <span style=color:#66d9ef>int</span> interval <span style=color:#f92672>=</span> 0xff; <span style=color:#75715e>// 255</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>boolean</span> kResultsCollected <span style=color:#f92672>=</span> <span style=color:#66d9ef>false</span>;
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>float</span> cachedGlobalMinSim <span style=color:#f92672>=</span> Float.<span style=color:#a6e22e>NEGATIVE_INFINITY</span>;
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// サブコレクター、つまり局所的な収集を行う抽象的なコレクター実装</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> AbstractKnnCollector subCollector;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>/**
+</span></span></span><span style=display:flex><span><span style=color:#75715e>   * Create a new MultiLeafKnnCollector.   *   * @param k 収集する近似近傍探索の結果数
+</span></span></span><span style=display:flex><span><span style=color:#75715e>   * @param globalSimilarityQueue 全セグメントで収集された最高類似度スコアのグローバルキュー
+</span></span></span><span style=display:flex><span><span style=color:#75715e>  * @param subCollector 局所的な収集を行うためのサブコレクター
+</span></span></span><span style=display:flex><span><span style=color:#75715e>   */</span>  <span style=color:#66d9ef>public</span> <span style=color:#a6e22e>MultiLeafKnnCollector</span>(
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>int</span> k, BlockingFloatHeap globalSimilarityQueue, AbstractKnnCollector subCollector) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>greediness</span> <span style=color:#f92672>=</span> DEFAULT_GREEDINESS;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>subCollector</span> <span style=color:#f92672>=</span> subCollector;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>globalSimilarityQueue</span> <span style=color:#f92672>=</span> globalSimilarityQueue;
+</span></span><span style=display:flex><span>	 <span style=color:#75715e>// 例えば、`k`が10で、`greediness`が0.9（90%の貪欲度）の場合、`(1 - 0.9) * 10` に基づいてこのキューのサイズは `1`（最小でも1）となります。これは、セグメントがグローバルに競争力がない場合にも、少なくとも1つの最高類似度スコアをローカルに保持することを保証します。</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>nonCompetitiveQueue</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> FloatHeap(Math.<span style=color:#a6e22e>max</span>(1, Math.<span style=color:#a6e22e>round</span>((1 <span style=color:#f92672>-</span> greediness) <span style=color:#f92672>*</span> k)));
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>updatesQueue</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> FloatHeap(k);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>boolean</span> <span style=color:#a6e22e>earlyTerminated</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> subCollector.<span style=color:#a6e22e>earlyTerminated</span>();
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>incVisitedCount</span>(<span style=color:#66d9ef>int</span> count) {
+</span></span><span style=display:flex><span>    subCollector.<span style=color:#a6e22e>incVisitedCount</span>(count);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>long</span> <span style=color:#a6e22e>visitedCount</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> subCollector.<span style=color:#a6e22e>visitedCount</span>();
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>long</span> <span style=color:#a6e22e>visitLimit</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> subCollector.<span style=color:#a6e22e>visitLimit</span>();
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>int</span> <span style=color:#a6e22e>k</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> subCollector.<span style=color:#a6e22e>k</span>();
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 与えられた document id と類似度スコアから、サブコレクターとローカル、グローバルキューにそれを追加する</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>boolean</span> <span style=color:#a6e22e>collect</span>(<span style=color:#66d9ef>int</span> docId, <span style=color:#66d9ef>float</span> similarity) {
+</span></span><span style=display:flex><span>	 <span style=color:#75715e>// localSimUpdated は ローカルで類似度の更新があったかどうかのフラグ</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>boolean</span> localSimUpdated <span style=color:#f92672>=</span> subCollector.<span style=color:#a6e22e>collect</span>(docId, similarity);
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 最初にk結果が全部集まった瞬間かどうかを判断する。</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>boolean</span> firstKResultsCollected <span style=color:#f92672>=</span>
+</span></span><span style=display:flex><span>        (kResultsCollected <span style=color:#f92672>==</span> <span style=color:#66d9ef>false</span> <span style=color:#f92672>&amp;&amp;</span> subCollector.<span style=color:#a6e22e>numCollected</span>() <span style=color:#f92672>==</span> k());
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// この瞬間に一度だけkResultsCollectedをtrueに設定する。</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (firstKResultsCollected) {
+</span></span><span style=display:flex><span>      kResultsCollected <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    updatesQueue.<span style=color:#a6e22e>offer</span>(similarity);
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// グローバルレベルで更新が生じたかどうかを判定するフラグ</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>boolean</span> globalSimUpdated <span style=color:#f92672>=</span> nonCompetitiveQueue.<span style=color:#a6e22e>offer</span>(similarity);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (kResultsCollected) {
+</span></span><span style=display:flex><span>      <span style=color:#75715e>// もしk件の結果が既に集まっていれば、与えられた間隔（interval）ごとに、updatesQueueの内容をglobalSimilarityQueueに送り、キャッシュされたグローバル最小類似度(cachedGlobalMinSim)を更新し、updatesQueueをクリアする。</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (firstKResultsCollected <span style=color:#f92672>||</span> (subCollector.<span style=color:#a6e22e>visitedCount</span>() <span style=color:#f92672>&amp;</span> interval) <span style=color:#f92672>==</span> 0) {
+</span></span><span style=display:flex><span>        cachedGlobalMinSim <span style=color:#f92672>=</span> globalSimilarityQueue.<span style=color:#a6e22e>offer</span>(updatesQueue.<span style=color:#a6e22e>getHeap</span>());
+</span></span><span style=display:flex><span>        updatesQueue.<span style=color:#a6e22e>clear</span>();
+</span></span><span style=display:flex><span>        globalSimUpdated <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>;
+</span></span><span style=display:flex><span>      }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// ローカルまたはグローバルキュのどちらかが更新された場合にtrueを返す。つまり、呼び出し元はさらなる探索を適切に調整できるようになる。</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> localSimUpdated <span style=color:#f92672>||</span> globalSimUpdated;
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 競争力のある最小類似度（つまり、これより低い類似度のドキュメントは考慮しない基準類似度）を返す</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>float</span> <span style=color:#a6e22e>minCompetitiveSimilarity</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (kResultsCollected <span style=color:#f92672>==</span> <span style=color:#66d9ef>false</span>) {
+</span></span><span style=display:flex><span>	    <span style=color:#75715e>// k件の結果が集まっていない場合、Float.NEGATIVE_INFINITYを返すことで、現存するすべての類似度が競争力を持っているとみなす</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span> Float.<span style=color:#a6e22e>NEGATIVE_INFINITY</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// k件集まっている場合、サブコレクターの競争力のある最小類似度と`nonCompetitiveQueue`の最高類似度（または`cachedGlobalMinSim`）を比較して大きい方を返す。これにより、ローカルとグローバルの両方のコンテキストでの最小限の競争力のある類似度が確定される。</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> Math.<span style=color:#a6e22e>max</span>(
+</span></span><span style=display:flex><span>        subCollector.<span style=color:#a6e22e>minCompetitiveSimilarity</span>(),
+</span></span><span style=display:flex><span>        Math.<span style=color:#a6e22e>min</span>(nonCompetitiveQueue.<span style=color:#a6e22e>peek</span>(), cachedGlobalMinSim));
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  ...
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=今回の実装のパフォーマンス比較実験>今回の実装のパフォーマンス比較実験</h2><p>Recall は 1-10%下がっているが、QPS が最大 3 倍になる。トレードオフはあるが OPS の向上に価値があるので、Recall の毀損は無視</p><p><a href=https://github.com/apache/lucene/pull/12962#issuecomment-1919701631>https://github.com/apache/lucene/pull/12962#issuecomment-1919701631</a></p><p><img src=/posts/2024-03-11-0120/images/knn-benchmarking.png alt></p><h2 id=まとめ>まとめ</h2><p><a href=https://github.com/apache/lucene/pull/12962>Speedup concurrent multi-segment HNSW graph search 2 by mayya-sharipova · Pull Request #12962 · apache/lucene</a></p><p>で複数セグメントに対して、並行して近似近傍探索を実行できるようになり、recall は少し既存しているが、QPS は Nightly Benchmarking で 2 倍ほど改善された。</p></content>---<p>関連しているかもしれない記事</p><ul><li><a href=/posts/2024-03-05-2323/>Community Over Code North America 2023 にて Lucene 関係で気になった発表まとめ</a></li><li><a href=/posts/2024-01-12-2308/>検索エンジンOSS勉強会: Lucene や OpenSearch など検索エンジンOSSへの貢献を念頭にしたオンライン勉強会を立ち上げてみた</a></li><li><a href=/posts/2023-04-17-2252/>Twitter の検索システムを学ぶ - 概要編</a></li><li><a href=/posts/2023-03-26-2208/>現在 Lucene の KNN ベクトルの最大次元数は1024次元 だが、それを2048次元に変更できないかという議論</a></li><li><a href=/posts/2023-03-11-1727/>初心者だけど Apache Lucene に貢献したい場合におすすめのチケットラベル</a></li></ul><br>📮 📧 🐏: 記事への<a href="https://docs.google.com/forms/d/e/1FAIpQLScgZVDrjQiKLbQRovfs88oweCITzjtvt1PlgwL14JfWPOrpPQ/viewform?usp=pp_url&entry.838298670=https%3a%2f%2fshunyaueta.com%2fposts%2f2024-03-11-0120%2f">感想</a>のおたよりをおまちしてます。
+お気軽にお送りください。
+メールアドレス入力があればメールで返信させていただきます。
+もちろんお返事を希望せずに単なる感想だけでも大歓迎です。<br><br>このサイトの更新情報を<a href=/index.xml>RSS</a>で配信しています。
+お好きなフィードリーダーで購読してみてください。<br><br>このウェブサイトの運営や著者の活動を支援していただける方を募集しています。
+もしよろしければ、<a href=https://www.buymeacoffee.com/hurutoriya>Buy Me a Coffee</a> からサポート(投げ銭)していただけると、著者の活動のモチベーションに繋がります✨<br><br><p><a href=https://shunyaueta.com/tags/lucene/>#lucene</a>
+<a href=https://shunyaueta.com/tags/%E6%A4%9C%E7%B4%A2%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3oss%E5%8B%89%E5%BC%B7%E4%BC%9A/>#検索エンジンOSS勉強会</a></p></main><footer>Made with <a href=https://github.com/janraasch/hugo-bearblog/>Hugo ʕ•ᴥ•ʔ Bear</a></footer></body></html>
