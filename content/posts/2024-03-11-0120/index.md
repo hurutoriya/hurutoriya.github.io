@@ -8,7 +8,7 @@ tags:
   - 検索エンジンOSS勉強会
 ---
 
-検索エンジン OSS 勉強会 Meetup 第一回の発表資料です。
+検索エンジン OSS 勉強会 第一回の発表資料です。
 発表での議論を基にこの資料は改修予定です。
 
 https://home.apache.org/~mikemccand/lucenebench/VectorSearch.html
