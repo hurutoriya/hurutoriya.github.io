@@ -35,5 +35,5 @@ tags:
 ## 今回の余談
 
 - Go 言語製の検索エンジン bleve に https://github.com/blevesearch/bleve/releases 2.4 から vector serach が可能になった話がきになったり、 backend は faiss っぽいです。
-- NVIDIA の cu family の一環で cuvs という OSS が作成されていた。https://github.com/rapidsai/cuvs
+- NVIDIA の cu family の一環で cuvs という OSS が作成されていた。 https://github.com/rapidsai/cuvs
 - qdrant ですが、ANN の filtering の問題は、Lucene, OpenSearch とは異なる独自の方法で解決してるっぽいですね https://qdrant.tech/articles/filtrable-hnsw/ 。 @gteu さんに教えてもらいました。

@@ -42,6 +42,11 @@ menu: "main"
 - 当書籍の翻訳プロジェクトの発起人であり、1,7,8,11,12 章の翻訳の責任者を務めた。また。翻訳プロジェクトの全体的なプロジェクトマネジメントも行った。
 - 機械学習に関わるなら絶対に切っても切り離せないと言っても過言ではない、データの作成方法がテーマの書籍です。能動学習とアノテーションの実践的な知識がまとめられています。
 
+##### 付随する発表
+
+- [第 8 回 Data\-Centric AI 勉強会 ~Human\-in\-the\-Loop 機械学習 特別回~ \- connpass](https://dcai-jp.connpass.com/event/315963/)
+  - [20 分で分かる Human\-in\-the\-Loop 機械学習におけるアノテーションとヒューマンコンピューターインタラクションの真髄 \- Speaker Deck](https://speakerdeck.com/hurutoriya/20fen-defen-karu-human-in-the-loop-ji-jie-xue-xi-niokeruanotesiyontohiyumankonpiyutaintarakusiyonnozhen-sui?slide=26)
+
 #### データ分析の進め方及び AI・機械学習導入の指南 ～データ収集・前処理・分析・評価結果の実務レベル対応～
 
 - 出版日: `2020.07.08`
