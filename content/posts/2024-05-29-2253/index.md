@@ -1,5 +1,5 @@
 ---
-title: "第8回 Data-Centric AI勉強会 ~Human-in-the-Loop機械学習 特別回~ で登壇した。"
+title: "第8回 Data-Centric AI勉強会 ~Human-in-the-Loop機械学習 特別回~ で登壇した"
 date: 2024-05-29T22:53:26+09:00
 lang: ja
 author: Shunya Ueta
