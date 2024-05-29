@@ -7,6 +7,7 @@ tags:
   - 検索エンジンOSS勉強会
   - lucene
   - vespa
+  - event
 ---
 
 検索エンジン OSS 勉強会 の第一回を開催した。

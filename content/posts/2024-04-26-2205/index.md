@@ -8,6 +8,7 @@ tags:
   - vespa
   - opensearch
   - lucene
+  - event
 ---
 
 検索エンジン OSS 勉強会の第 2 回を開催しました。
