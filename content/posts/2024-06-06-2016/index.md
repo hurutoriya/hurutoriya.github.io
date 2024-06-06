@@ -10,7 +10,7 @@ tags:
 - python
 ---
 
-Goの全文検索ライブラリである blevesearch の最新リリースを眺めていると
+[全文検索エンジン Bleve で日本語形態素解析をおこなう](https://zenn.dev/ikawaha/articles/20240324-5f5a051ee203c7) で bleze x kagome が気になってやろうとしたが、どうせなら一捻りしたいなと思い、Goの全文検索ライブラリである blevesearch の最新リリースを眺めていると
 
 https://github.com/blevesearch/bleve/releases/tag/v2.4.0
 
