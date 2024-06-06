@@ -10,7 +10,12 @@ tags:
 - python
 ---
 
-最初は、kagome x blevesearch x ANN の構成で vector indexing, query のベクトル化もGo 言語かつ検索サーバーを運用しないで完結する構成による近似近傍探索をやろうと思っていた。。。が、文章をベクトル化するお手軽な方法(Python だとが Go で見つけられなかった。
+Goの全文検索ライブラリである blevesearch の最新リリースを眺めていると
+
+https://github.com/blevesearch/bleve/releases/tag/v2.4.0
+
+`v0.2.4` からvector serach が可能に backend は faiss。
+テンションが上ったので、最初は、kagome x blevesearch x ANN の構成で vector indexing, query のベクトル化もGo 言語かつ検索サーバーを運用しないで完結する構成による近似近傍探索をやろうと思っていた。。。が、文章をベクトル化するお手軽な方法(Python だとが Go で見つけられなかった。
 
 同じモチベーションらしきGoライブラリ
 
